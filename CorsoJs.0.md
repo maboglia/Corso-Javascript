@@ -1,4 +1,4 @@
-##Strutture del linguaggio Variabili, 
+## Strutture del linguaggio Variabili, 
 dichiarazioni ed espressioni Funzioni Array, oggetti e classi 
 
 Stringhe Risorse del browser Cattura eventi JSON AJAX 
@@ -6,37 +6,37 @@ Risorse disponibili
 w3schools (JavaScript tutorial) 
 Javascript reference (Mozilla Developer Network) 
 
-##JavaScript è un linguaggio 
+## JavaScript è un linguaggio 
 di programmazione utilizzato comunemente come parte dell'esperienza di navigazione, permette di creareinterazioni con l'utente, controllare la navigazione, gestire la comunicazione asincrona, e modificare il contenuto del documento . 
 Fonte: https://en.wikipedia.org/wiki/JavaScript 
 
-##design web
+## design web
 
 Html: contenuto
 Css: presentazione
 Js: comportamento
 
-##Layout engines
+## Layout engines
 Gecko
 Trident
 Blink
 
-##JavaScript engines
+## JavaScript engines
 SpiderMonkey
 Jscript
 V8
 
-##Hello world
+## Hello world
 Hello world nel browser
 alert('Hello world')
 
 Hello world nel terminale
 console.log('Hello world')
 
-##Esecuzione del codice
+## Esecuzione del codice
 Interpretazione in una pagina web Interpretazione con firebug Interpretazione in terminal (node.js) 
 
-##Interpretazione in una pagina web (I)
+## Interpretazione in una pagina web (I)
 <!doctype html>
 <html>
     <head></head>
@@ -47,7 +47,7 @@ Interpretazione in una pagina web Interpretazione con firebug Interpretazione in
     </body>
 </html>
 
-##Interpretazione in una pagina web (II)
+## Interpretazione in una pagina web (II)
 <!doctype html>
 <html>
     <head></head>
@@ -56,13 +56,13 @@ Interpretazione in una pagina web Interpretazione con firebug Interpretazione in
     </body>
 </html>
 
-##esempio.js
+## esempio.js
 alert('Hello world')
 
 #Commenti, Literals,  
 Identificatori parole chiave Punto e virgola (;) 
 
-##Commenti
+## Commenti
 Esistono due tipi di commenti:
 // commento semplice
 
@@ -70,7 +70,7 @@ Esistono due tipi di commenti:
 su diverse
 righe */
 
-##Literals
+## Literals
 Numeri interi:
 192
 Numeri float:
@@ -86,7 +86,7 @@ null
 Valore undefined:
 undefined
 
-##Identificatori
+## Identificatori
 Gli identificatori in javascript cominciano con una lettera, una underline (_), o un carattere di dollaro ($); seguito da lettere, numeri, underline, e caratteri di dollaro
 Esempi
 var contatore;
@@ -95,30 +95,30 @@ var $indice;
 var $__$__$;
 
 
-##parole chiave
+## parole chiave
 abstract else instanceof super boolean enum int switch break export interface synchronized byte extends let this case false long throw catch final native throws char finally new transient class float null true const for package try continue function private typeof debugger goto protected var default if public void delete implements return volatile do import short while double in static with
 
-##Punto e virgola (;)
+## Punto e virgola (;)
 E' possibile l'uso del carattere (;) per la separazione di frasi,si può omettere se queste si trovano su linee differenti (non fatelo!)
 Gli interpreti di JavaScript trattano i fine linea come fine frase, se e solo se, la frase successiva non può interpretarsi come continuazione della precedente.
 si possono individuare vari criteri per prendere una decisione.
 Maggiori informazioni: Semicolons in JavaScript are optional
 
-##Variabili, dichiarazioni, e espressioni
+## Variabili, dichiarazioni, e espressioni
 Tipi di dati Condizioni Iterazioni Cattura di exceptions 
 Tipi di dati
 Esistono due categorie:
-###Tipi primitivi:
+## #Tipi primitivi:
 Numeri 
 Stringhe di testo 
 Valori logici 
-###Tipi oggetto:
+## #Tipi oggetto:
 Oggetti 
 array 
 Funzioni 
 Numeri
 
-##Esempi:
+## Esempi:
   12 // numero intero in base decimale.
 0345 // numero intero in base ottale.
 0xFF // numero intero in base esadecimale.
@@ -127,18 +127,18 @@ Numeri
 .234955     // numero decimale.
 6.023e23    // numero decimale in notazione esponenziale.
                 
-##Number
+## Number
 Number è la rappresentazione di tipo oggetto di un tipo numerico.
-##Math
+## Math
 Math è l'oggetto che concentra molte constanti e funzioni matematicas.
 
-##Date
+##  Date
 Date è l'oggetto utilizzato per la rappresentazione di date.
 Internamente, questa rappresentazione è un numero che rappresenta i millisecondi trascorsi dalla data: 1 di gennaio del 1970.
-##Maggiori informazioni: 
+## Maggiori informazioni: 
 http://en.wikipedia.org/wiki/System_time
 
-##Stringhe di testo
+## Stringhe di testo
 Si possono usare gli apici semplici o gli apici doppi come delimitatori validi per la dichiarazione di una variabile tipo stringa di testo.
 Esempi:
 var a='stringa di testo'
@@ -158,12 +158,12 @@ Escape
 \\          Backslash
 \x[XX]      The Latin-1
 \u[XXXX]    The Unicode character
-##Parsing di Stringhe (I)
+## Parsing di Stringhe (I)
 Una stringa può vedersi come un array di caratteri immutabile.
 Esempi:
 var a='stringa di testo'
 console.log(a[5]) // a
-##Funzioni di stringa
+## Funzioni di stringa
 var s = "hello, world"
 s.charAt(0)          // => "h"
 s.charAt(s.length-1) // => "d"
@@ -186,9 +186,9 @@ null
 -0
 NaN
 ''
-##String
+## String
 String è la rappresentazione di tipo oggetto di una stringa.
-##Boolean
+## Boolean
 Boolean è la rappresentazione di tipo oggetto di una variabile logica.
 valore nullo e valore undefined
 Rappresentano la assenza di un valore in una variabile o nel ritorno di una function.
