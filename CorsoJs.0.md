@@ -101,18 +101,18 @@ abstract else instanceof super boolean enum int switch break export interface sy
 ## Punto e virgola (;)
 E' possibile l'uso del carattere (;) per la separazione di frasi,si può omettere se queste si trovano su linee differenti (non fatelo!)
 Gli interpreti di JavaScript trattano i fine linea come fine frase, se e solo se, la frase successiva non può interpretarsi come continuazione della precedente.
-si possono individuare vari criteri per prendere una decisione.
+
 Maggiori informazioni: Semicolons in JavaScript are optional
 
 ## Variabili, dichiarazioni, e espressioni
 Tipi di dati Condizioni Iterazioni Cattura di exceptions 
 Tipi di dati
 Esistono due categorie:
-## #Tipi primitivi:
+### Tipi primitivi:
 Numeri 
 Stringhe di testo 
 Valori logici 
-## #Tipi oggetto:
+### Tipi oggetto:
 Oggetti 
 array 
 Funzioni 
