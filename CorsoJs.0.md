@@ -215,3 +215,97 @@ Rappresentano la assenza di un valore in una variabile o nel ritorno di una func
 var a=null
 var b=undefined
 ```
+
+
+
+
+## Condizioni
+Le condizioni sono definite come in Java.
+```javascript
+if else if switch 
+if
+if(expresion){
+    frasi
+}
+if(expresion){
+    frasi
+}else{
+    frasi
+}
+else if
+if(expresion){
+    frasi
+}else if{
+    frasi
+}else{
+    frasi
+}
+```
+## switch
+
+```javascript
+switch(expresion){
+    case 1:
+        frasi
+        break
+    case n:
+        frasi
+        break
+    default:
+	  frasi
+}
+```
+
+# Iteratori
+while do/while for for/in 
+
+## while
+```javascript
+while(expresion){
+    frasi
+}
+```
+
+## do/while
+```javascript
+do {
+    frasi
+while(expresion)
+```
+## for
+```javascript
+for(inizializzazione;valutatore;incrementatore){
+    frasi
+}
+```
+## for/in
+```javascript
+for(variabile in collezion){
+    frasi
+}
+```
+## Cattura di errori
+```javascript
+try{
+    frasi
+}catch(e){
+    frasi
+}finally{
+    frasi
+}
+```
+## instanceof
+Verifica se un oggetto è instanza di qualche prototipo.
+## typeof
+Ritorna una stringa indicando il tipo di dato che ha una variabile.
+## var
+Parola chiave per la dichiarazione di una variabile.
+## delete
+Operatore che rimuove proprietà di un oggetto.
+## use strict
+Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
+## Funzioni
+Le funzioni se dichiarano con la parola riservata funzione.
+function f(x,y){
+    return x+y
+}
