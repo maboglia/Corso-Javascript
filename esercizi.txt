@@ -1,0 +1,42 @@
+JavaScript
+
+    Creare uno script che chieda il nome e il cognome all'utente prima che la pagina venga caricata.
+    Provare a chiamare una finestra di dialogo (di tipo alert) che contenga la scritta "Benvenuto"+ nome + cognome.
+    In fondo alla pagina deve essere scritto "Benvenuto"+ nome + cognome.
+    mdificare lo script per mostrare il messaggio di benvenuto solo se l'utente è accreditato
+
+	
+
+    Creare una pagina che chieda all'utente di fornire la propria autorizzazione al trattamento dei dati.
+    Nel caso non sia data, scrivere "Autorizzazione non concessa".
+    Nel caso contrario scrivere "Autorizzazione concessa".
+
+	
+
+    Creare una pagina in cui il sistema chiede all'utente il proprio nome
+    Il sistema verifica il nome e comunica all'utente se è un amministratore o meno
+    E' dato un array di nomi che hanno i diritti di amministratore
+
+	
+
+    Chiedere tre colori in input all'utente: uno per il testo, uno per lo sfondo e uno per il titolo.
+    Chiedere alll'utente la dimensione del carattere di base (da 1 a 7).
+    Determinare la dimensione e le caratteristiche di H1 (+3, grassetto), H2 (+2) e H3 (+1, grassetto, corsivo) rispetto alle caratteristiche inserite dall'utente per il carattere.
+    Creare un testo in cui siano evidenti queste caratteristiche.
+
+    Controllare che il colore dello sfondo, quello del titolo e quello del testo siano diversi.
+    Nel caso due o più dei colori assegnati dall'utente siano uguali, devono essere presenti regole che determinino che colore devono assumere titolo, testo e sfondo.
+    Nel caso l'utente inserisca al posto dei tre colori il testo "*"deve essere caricato un foglio di stile esterno.
+
+	
+
+Versione semplificata dell'esercizio precedente.
+
+Creare uno script JavaScript che:
+
+    chieda all'utente la dimensione del carattere e il colore per i tag p, body, h1
+    chieda all'utente il colore dello sfondo per il tab body
+    derivi automaticamente la dimensione del carattere dei tag h1 e h3 da quella del tag h1
+    generi un foglio di stile interno in base a queste specifiche
+
+	
