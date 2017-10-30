@@ -1,0 +1,9 @@
+elenco.txt
+sports-q-c-400-300-1.jpg
+sports-q-c-400-300-2.jpg
+sports-q-c-400-300-3.jpg
+sports-q-c-400-300-5.jpg
+sports-q-c-400-300-6.jpg
+sports-q-c-400-300-7.jpg
+sports-q-c-400-300-8.jpg
+sports-q-c-400-300-9.jpg

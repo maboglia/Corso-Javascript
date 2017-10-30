@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<meta lang="it"/>
+		<meta charset="utf-8"/> 
+		<title>contenitore di script</title>
+
+	</head>
+
+	<body>
+		<input id="listItem" type="text"/> 
+
+		<button id="btn1">inserisci</button>
+		
+		<div id="output">
+
+		</div>
+
+
+		<script>
+			var btn = document.getElementById("btn1");
+			var voce;
+			var output="";
+			var ingredienti = [];
+
+			function stampa(argument) {
+					output = "";
+					output += "<ul>";
+					argument.sort();
+				for(var i=0 ; i < argument.length; i++){
+					output += "<li><a href='#'>"  + argument[i] + "</a></li>";
+				}
+					output += "</ul>";
+				document.getElementById("output").innerHTML = output;	
+			}
+
+			btn.onclick = function () {
+				voce = document.getElementById("listItem").value;
+				if (voce.length > 0 && ingredienti.indexOf(voce) == -1  ) ingredienti.push(voce);
+				document.getElementById("listItem").value = "";
+				stampa(ingredienti);
+				console.log(ingredienti);
+			};
+
+
+
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button onclick="incrementa()">scorri</button>
+	<div id="test" name="test">
+		<img ondblclick="decrementa()" id="modificabile" src='' alt='mia immagine' />
+
+		<p id="didascalia"></p>
+	</div>
+
+<script type="text/javascript">
+	
+	var contatore = 0;
+	var immagini  = [
+		"sports-q-c-400-300-1.jpg",
+		"sports-q-c-400-300-2.jpg",
+		"sports-q-c-400-300-3.jpg",
+		"sports-q-c-400-300-5.jpg",
+		"sports-q-c-400-300-6.jpg",
+		"sports-q-c-400-300-7.jpg",
+		"sports-q-c-400-300-8.jpg",
+		"sports-q-c-400-300-9.jpg",
+
+	];
+	var didascalie = [
+		"sports calcio",
+		"sports tennis",
+		"sports corsa",
+		"sports automobilismo",
+		"sports pallavolo",
+		"sports karate",
+		"sports golf",
+		"sports skateboarding",
+	];
+	var dida = document.getElementById("didascalia");
+	var test = document.getElementById("test");
+	var img = document.getElementById("modificabile");
+	var path = "img/";
+	
+	/*
+	var x = document.createElement("IMG");
+	x.setAttribute("class", "red");
+	x.setAttribute("src", "img/sports-q-c-400-300-9.jpg");
+	test.appendChild(x);
+	*/
+
+	function visualizza(numero){
+		img.src = path + immagini[numero];
+		
+		dida.innerHTML = didascalie[numero];		
+	}
+
+	function incrementa () {
+		
+		if (contatore == immagini.length)
+			contatore = 0;
+			visualizza(contatore);
+		console.log(contatore++);
+
+	}
+	function decrementa () {
+		
+		if (contatore == 0)
+			contatore = immagini.length -1;
+		visualizza(contatore);
+		console.log(contatore--);
+
+	}
+console.log("ciao");
+//setInterval(incrementa, 3000);
+
+</script>
+</body>
+</html>
