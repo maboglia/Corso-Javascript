@@ -75,6 +75,11 @@ Interpretazione in terminale (node.js)
 alert('Hello world')
 ```
 
+## Come mostrare a video i dati
+        window.alert()
+        document.write()
+        innerHTML
+        console.log()
 
 ## Variabili
     identificatore univoco
@@ -456,12 +461,63 @@ function f(x,y){
 * ciclo vita delle variabili
 
 
+## Una funzione può essere assegnata a una variabile.
+var f=function(x){
+    console.log(x)
+}
+f(10)
 
-### mostrare a video i dati
-        window.alert()
-        document.write()
-        innerHTML
-        console.log()
+## Come una funzione può essere assegnata a una variabile, è possibile che una funzione riceva altre funzioni come parte di suoi parametri.
+function f(x,g){
+    return g(x)
+}
+
+var a=f(10,function(x){return x*2})
+console.log(a) // 20
+
+## Inoltre una funzione può essere di forma anonima, E si può eseguire nella definizione.
+var a=(function(x,y){
+    return x+y
+}(1,2))
+
+console.log(a) // 3
+
+## Altra caratteristica importante sulle funzioni in JavaScript, è che può definirsi una funzione dentro un'altra funzione.
+function a(){
+    var x=10
+    function b(){
+        return x+1
+    }
+    return b()
+}
+console.log(a())
+
+
+## Varargs
+Come in Java, una funzione può essere invocata con più parametri di quelli definiti, o con meno.
+Tutti i parametri che sono stati inviati a una funzione possono essere acceduti attraverso l'oggetto "arguments".
+function a(){
+    console.log(arguments)
+}
+
+a(1,2,3,4,5,6)
+
+
+## Hoisting
+Le variabili in JavaScript hanno ambito di funzione, questo significa che tutte le variabili dichiarate in una funzione sono visibili nel corpo della funzione. Anche prima di essere dichiarate.
+Più informazioni: 
+http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html 
+
+Esempi
+var a='asdf';
+(function b(){
+    console.log(a)
+})() // asdf
+var a='asdf';
+(function b(){
+    console.log(a)
+    var a='qwer'
+})() // undefined
 
 
 ### Date 
