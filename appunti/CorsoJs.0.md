@@ -583,7 +583,7 @@ http://en.wikipedia.org/wiki/System_time
     cose utili da fare con gli oggetti
         tieni traccia delle spese
         raccogli informazioni sui tuoi film preferiti
-[JS Objects](Lesson6_data_structure.md)
+[JS Objects](Lesson7_intro_to_object_oriented_programming_part_1.md)
 
 
 
