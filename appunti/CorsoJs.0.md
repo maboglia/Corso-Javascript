@@ -74,6 +74,24 @@ Interpretazione in terminale (node.js)
 alert('Hello world')
 ```
 
+
+## Variabili
+    identificatore univoco
+    operatori di assignment
+    dichiarazione/creazione di variabili
+    dichiarazione/creazione su una sola riga
+    value undefined
+
+## operatori
+    operatori aritmetici
+    operatori di assegnamento
+    operatori su stringhe
+    aggiungere stringhe e numeri
+    comparazione e operatori logici
+    operatori e operandi
+    precedenza degli operatori
+
+
 ## Commenti
 Esistono due tipi di commenti:
 ```javascript
@@ -139,18 +157,21 @@ Gli interpreti di JavaScript trattano i fine linea come fine frase, se e solo se
     incrementare e decrementare
     +=
     -=
+
+
+## tipi di dato
+    tipi dinamici
     stringhe
-        metodi dellestringhe
-        unire le stringhe
-        trovare la lunghezza di una stringa
-        trovare un carattere in una stringa
-        tagliare le stringhe
-        modificare le stringhe: tutto maiuscolo/minuscolo
-    Booleans
-        operazioni logiche
-        comparazione tra numeri e valori booleani
-    undefined e null
-    Boolean() verifica se un'espressione è booleana
+    numeri
+    booleans
+    arrays
+    objects
+    operatore typeof
+    undefined
+    empty values
+    null
+    differenza tra null e undefined
+
 
 
 
@@ -186,12 +207,6 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 ### Math
 Math è l'oggetto che concentra molte constanti e funzioni matematiche.
 
-###  Date
-Date è l'oggetto utilizzato per la rappresentazione di date.
-Internamente, questa rappresentazione è un numero che rappresenta i millisecondi trascorsi dalla data: 1 di gennaio del 1970.
-
-### Maggiori informazioni: 
-http://en.wikipedia.org/wiki/System_time
 
 # String
 String è la rappresentazione di tipo oggetto di una stringa.
@@ -226,11 +241,19 @@ sequenza | significato
 ### Parsing di Stringhe (I)
 Una stringa può vedersi come un array di caratteri immutabile.
 Esempi:
+```javascript
 var a='stringa di testo'
 console.log(a[5]) // a
+```
 
 ### Funzioni di stringa
 
+    metodi delle stringhe
+    unire le stringhe
+    trovare la lunghezza di una stringa
+    trovare un carattere in una stringa
+    tagliare le stringhe
+    modificare le stringhe: tutto maiuscolo/minuscolo
     length
     caratteri speciali
         apici, doppi apici, escape
@@ -288,6 +311,15 @@ NaN
 ## Boolean
 Boolean è la rappresentazione di tipo oggetto di una variabile logica.
 
+
+Booleans
+        operazioni logiche
+        comparazione tra numeri e valori booleani
+    undefined e null
+    Boolean() verifica se un'espressione è booleana
+
+
+
 ## valore nullo e valore undefined
 
 Rappresentano la assenza di un valore in una variabile o nel ritorno di una function.
@@ -295,6 +327,14 @@ Rappresentano la assenza di un valore in una variabile o nel ritorno di una func
 var a=null
 var b=undefined
 ```
+
+
+
+
+
+
+
+
 
 # Condizioni
 * if 
@@ -392,9 +432,20 @@ Operatore che rimuove proprietà di un oggetto.
 Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
 ## Funzioni
 Le funzioni se dichiarano con la parola riservata funzione.
+```javascript
 function f(x,y){
     return x+y
 }
+```
+* sintassi
+* invocare le funzioni
+* return
+* perché usare le funzioni
+* l'operatore () chiama la funzione
+* funzioni usate come variabili
+* scope delle variabili: variabili globali e locali
+* ciclo vita delle variabili
+
 
 
 ### mostrare a video i dati
@@ -402,46 +453,24 @@ function f(x,y){
         document.write()
         innerHTML
         console.log()
-### statements, semicolon
-### Values
-### Literals
-### Variabili
-    identificatore univoco
-    operatori di assignment
-    dichiarazione/creazione di variabili
-    dichiarazione/creazione su una sola riga
-    value undefined
-### operatori
-    operatori aritmetici
-    operatori di assegnamento
-    operatori su stringhe
-    aggiungere stringhe e numeri
-    comparazione e operatori logici
-    operatori e operandi
-    precedenza degli operatori
-### tipi di dato
-    tipi dinamici
-    stringhe
-    numeri
-    booleans
-    arrays
-    objects
-    operatore typeof
-    undefined
-    empty values
-    null
-    differenza tra null e undefined
-### funzioni ed eventi
-    sintassi
-    invocare le funzioni
-    return
-    perché usare le funzioni
-    l'operatore () chiama la funzione
-    funzioni usate come variabili
-    scope delle variabili, variabili globali (automatiche) e locali
-    ciclo vita delle variabili
 
-## events
+
+### Date 
+    mostrare le date
+    creare l'oggetto Date()
+    formati e metodi per le date
+    metodi get e metodi set
+
+
+###  Date
+Date è l'oggetto utilizzato per la rappresentazione di date.
+Internamente, questa rappresentazione è un numero che rappresenta i millisecondi trascorsi dalla data: 1 di gennaio del 1970.
+
+### Maggiori informazioni: 
+http://en.wikipedia.org/wiki/System_time    
+
+
+# events
     HTML eventi
         onchange
         onclick
@@ -451,7 +480,7 @@ function f(x,y){
         onload
         cosa può fare * JS utilizzando i gestori di eventi (handlers)
 
-## Arrays
+# Array
     perché devi saper utilizzare gli array
     creazione di un array
     accesso a i dati di un array
@@ -467,7 +496,7 @@ function f(x,y){
         crea un generatore di frasi random
 [JS array](Lesson2_array.md)
 
-### Objects
+# Objects
     oggetti della vita reale (e classi)
     proprietà e metodi
     definizione di oggetti
@@ -489,20 +518,7 @@ function f(x,y){
         raccogli informazioni sui tuoi film preferiti
 [JS Objects](Lesson6_data_structure.md)
 
-## Comparazione e Operatori  logici
 
-
-### cicli/loop
-    ciclo while
-    ciclo for
-
-###  Date 
-    mostrare le date
-    creare l'oggetto Date()
-    formati e metodi per le date
-    metodi get e metodi set
-
-    
 
 
 
