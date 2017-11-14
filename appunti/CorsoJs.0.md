@@ -207,7 +207,7 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 
 ### Math
 Math è l'oggetto che concentra molte constanti e funzioni matematiche.
-[es Math](../esempi/Lesson1_05_MathObject.js)
+[es Math](./Lesson1_05_MathObject.md)
 
 
 # String
