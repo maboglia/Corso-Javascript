@@ -3,19 +3,20 @@
 ## JavaScript è un linguaggio di programmazione 
 utilizzato comunemente come parte dell'esperienza di navigazione, permette di creare interazioni con l'utente, 
 controllare la navigazione, gestire la comunicazione asincrona, e modificare il contenuto del documento. 
+
 Fonte: https://en.wikipedia.org/wiki/JavaScript 
 
 ## Strutture del linguaggio 
-Variabili, 
-dichiarazioni ed espressioni 
-Funzioni 
-Array, 
-oggetti e classi 
-Stringhe 
-Risorse del browser 
-Cattura eventi 
-JSON 
-AJAX 
+* Variabili, 
+* dichiarazioni ed espressioni 
+* Funzioni 
+* Array, 
+* oggetti e classi 
+* Stringhe 
+* Risorse del browser 
+* Cattura eventi 
+* JSON 
+* AJAX 
 
 
 
@@ -206,6 +207,7 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 
 ### Math
 Math è l'oggetto che concentra molte constanti e funzioni matematiche.
+[es Math](../esempi/Lesson1_05_MathObject.js)
 
 
 # String
@@ -337,9 +339,9 @@ var b=undefined
 
 
 # Condizioni
-* if 
-* else if 
-* else 
+* if
+* if ... else
+* if ... else if ... else
 * switch
 * operatore ternario
 
@@ -357,7 +359,7 @@ if(expresion){
 }
 ```
 
-## else if
+## if else if
 
 ```javascript
 if(expresion){
@@ -382,6 +384,10 @@ switch(expresion){
 	  frasi
 }
 ```
+## operatore ternario
+```javascript
+(condizione) ? true : false ;
+```
 
 # Iteratori (cicli)
 
@@ -391,6 +397,9 @@ while(expresion){
     frasi
 }
 ```
+### codice
+[es data](../esempi/02_while_testa_croce.js)
+
 
 ## do/while
 ```javascript
