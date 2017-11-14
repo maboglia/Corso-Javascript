@@ -51,7 +51,7 @@ var students = ['Paperino', 'Pippo', 'Pluto', 'Paperina', 'Topolino', 'Minnie', 
 * JS non supporta gli array associativi
 * la differenza tra array e oggetti
 ---
-##alcuni metodi
+## metodi principali
     valueOf() e toString() convertire array a stringhe
     join() come to string, ma puoi usare un separatore
     push() aggiunge elementi all'array

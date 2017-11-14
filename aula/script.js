@@ -3,6 +3,7 @@ function Studente(nome, cognome, year) {
     this.cognome = cognome;
     this.year = year;
     this.anni = 2017 - this.year;
+    this.challengeJS = [];
 
     this.presentaStudente = function() {
         var stu = "Lo studente " + this.nome;
@@ -36,7 +37,9 @@ var studenti = [
     new Studente("fabio", "caccia", 1997),
     new Studente("davide", "tacchino", 1995)
 ];
-
+studenti[8].challengeJS = 1;
+studenti[9].challengeJS = 1;
+studenti[16].challengeJS = 1;
 
 
 for (var i = 0; i < studenti.length; i++) {
@@ -46,11 +49,15 @@ for (var i = 0; i < studenti.length; i++) {
         document.body.appendChild(divClear);
     }
     var divStudente = document.createElement("div");
-    divStudente.setAttribute("style", "border:1px solid #ccc; float:left;width:125px;height:140px;padding:5px; margin:5px;");
+    divStudente.setAttribute("style", "border:1px solid #ccc; float:left;width:125px;height:160px;padding:5px; margin:5px;");
     divStudente.innerHTML = (studenti[i].cognome) ?
         "<h4>" + studenti[i].nome + "</h4>" +
         "<h3>" + studenti[i].cognome + "</h3>" +
         "<h4>" + studenti[i].anni + "</h4>" : "";
+    if (studenti[i].challengeJS > 0) {
+        divStudente.innerHTML += "<h4>" + studenti[i].challengeJS + "</h4>";
+        divStudente.className = "green";
+    }
     document.body.appendChild(divStudente);
 
     console.log(studenti[i].presentaStudente());

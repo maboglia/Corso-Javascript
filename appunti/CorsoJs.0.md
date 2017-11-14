@@ -1,40 +1,50 @@
-## Strutture del linguaggio Variabili, 
-dichiarazioni ed espressioni Funzioni Array, oggetti e classi 
+# Corso Javascript
 
-Stringhe Risorse del browser Cattura eventi JSON AJAX 
-Risorse disponibili
-w3schools (JavaScript tutorial) 
-Javascript reference (Mozilla Developer Network) 
-
-## JavaScript è un linguaggio 
-di programmazione utilizzato comunemente come parte dell'esperienza di navigazione, permette di creareinterazioni con l'utente, controllare la navigazione, gestire la comunicazione asincrona, e modificare il contenuto del documento . 
+## JavaScript è un linguaggio di programmazione 
+utilizzato comunemente come parte dell'esperienza di navigazione, permette di creare interazioni con l'utente, 
+controllare la navigazione, gestire la comunicazione asincrona, e modificare il contenuto del documento. 
 Fonte: https://en.wikipedia.org/wiki/JavaScript 
 
-## design web
+## Strutture del linguaggio 
+Variabili, 
+dichiarazioni ed espressioni 
+Funzioni 
+Array, 
+oggetti e classi 
+Stringhe 
+Risorse del browser 
+Cattura eventi 
+JSON 
+AJAX 
+
+
+
+
+## Risorse disponibili online
+Javascript reference (Mozilla Developer Network) 
+w3schools (JavaScript tutorial)
+html.it
+
+## ruolo di js nel web design
 
 Html: contenuto
 Css: presentazione
 Js: comportamento
 
-## Layout engines
-Gecko
-Trident
-Blink
-
-## JavaScript engines
-SpiderMonkey
-Jscript
-V8
-
 ## Hello world
 Hello world nel browser
+```javascript
 alert('Hello world')
-
+```
 Hello world nel terminale
+```javascript
 console.log('Hello world')
+```
 
 ## Esecuzione del codice
-Interpretazione in una pagina web Interpretazione con firebug Interpretazione in terminal (node.js) 
+Interpretazione in una pagina web 
+Interpretazione in  una console del browser 
+Interpretazione in terminale (node.js) 
 
 ## Javascript incorporato in una pagina html (I)
 
@@ -74,25 +84,30 @@ su diverse
 righe */
 ```
 
-## Literals
-    Numeri interi:
-    192
-    Numeri float:
-    1.4
-    Stringhe di testo:
-    "Hello World!", 'Hello World!'
-    Valori logici:
-    true, false
-    espressioni regolari
-    /[A-Za-z]/
-    Valore nullo:
-    null
-    Valore undefined:
-    undefined
+
+## Literals - Letterali (valori letterali per i tipi di dato)
+tipo                |    esempio
+------------ | -------------
+Numeri interi       |    192
+Numeri float        |    1.4
+Stringhe di testo   |    "Hello World!", 'Hello World!'
+Valori logici       |    true, false
+espressioni regolari |     /[A-Za-z]/
+Valore nullo        |    null
+Valore undefined    |    undefined
+
+# JavaScript è __CASE SENSITIVE__
+
+### convenzioni di naming: 
+* CamelCase, 
+* camelCase, 
+* snake_case
 
 ## Identificatori
 Gli identificatori in javascript cominciano con una lettera, una underline (_), o un carattere di dollaro ($); seguito da lettere, numeri, underline, e caratteri di dollaro
-Esempi
+
+### Esempi
+
 ```javascript
 var contatore;
 var _indice;
@@ -102,7 +117,12 @@ var $__$__$;
 
 ## parole chiave
 ```javascript
-abstract else instanceof super boolean enum int switch break export interface synchronized byte extends let this case false long throw catch final native throws char finally new transient class float null true const for package try continue function private typeof debugger goto protected var default if public void delete implements return volatile do import short while double in static with
+abstract else instanceof super boolean enum int switch break export 
+interface synchronized byte extends let this case false long throw 
+catch final native throws char finally new transient class float null 
+true const for package try continue function private typeof debugger goto 
+protected var default if public void delete implements return volatile 
+do import short while double in static with
 ```
 
 ## Punto e virgola (;)
@@ -110,18 +130,32 @@ E' possibile l'uso del carattere (;) per la separazione di frasi,si può ometter
 Gli interpreti di JavaScript trattano i fine linea come fine frase, se e solo se, la frase successiva non può interpretarsi come continuazione della precedente.
 
 ## Tipi di dati
-Esistono due categorie:
-### Tipi primitivi:
-Numeri 
-Stringhe di testo 
-Valori logici 
-### Tipi oggetto:
-Oggetti 
-array 
-Funzioni 
-Numeri
+* Tipi primitivi:
+* Tipi oggetto:
 
-## Esempi:
+## tipi di dati e variabili
+    convenzioni di naming
+    crea una nuova varibile usando Math
+    incrementare e decrementare
+    +=
+    -=
+    stringhe
+        metodi dellestringhe
+        unire le stringhe
+        trovare la lunghezza di una stringa
+        trovare un carattere in una stringa
+        tagliare le stringhe
+        modificare le stringhe: tutto maiuscolo/minuscolo
+    Booleans
+        operazioni logiche
+        comparazione tra numeri e valori booleani
+    undefined e null
+    Boolean() verifica se un'espressione è booleana
+
+
+
+
+### Esempi:
 ```javascript
   12 // numero intero in base decimale.
 0345 // numero intero in base ottale.
@@ -131,18 +165,36 @@ Numeri
 .234955     // numero decimale.
 6.023e23    // numero decimale in notazione esponenziale.
 ```                
-## Number
+### Number
 Number è la rappresentazione di tipo oggetto di un tipo numerico.
 
-## Math
-Math è l'oggetto che concentra molte constanti e funzioni matematicas.
+### JS numbers
+    sono SEMPRE float a 64-bit
+    il numero massimo di decimali è 17 e la virgola mobile non è sempre accurata
+    il prefisso 0x permette di usare i numeri esadecimali
+    In *    JS esiste Infinity e -Infinity
+    NaN not a number: operazioni aritmetiche con le stringhe restituiscono NaN
+    proprietà e metodi
+        Number()
+        parseFloat()
+        parseInt()
+        toString()
+        toFixed()
+        toPrecision()
+        valueOf()
 
-##  Date
+### Math
+Math è l'oggetto che concentra molte constanti e funzioni matematiche.
+
+###  Date
 Date è l'oggetto utilizzato per la rappresentazione di date.
 Internamente, questa rappresentazione è un numero che rappresenta i millisecondi trascorsi dalla data: 1 di gennaio del 1970.
 
-## Maggiori informazioni: 
+### Maggiori informazioni: 
 http://en.wikipedia.org/wiki/System_time
+
+# String
+String è la rappresentazione di tipo oggetto di una stringa.
 
 ## Stringhe di testo
 Si possono usare gli apici semplici o gli apici doppi come delimitatori validi per la dichiarazione di una variabile tipo stringa di testo.
@@ -156,25 +208,50 @@ var d="un esempio 'Più'"
 ```
 
 ### Sequenze di Escape 
-    \O          The NULL character
-    \b          Backspace
-    \t          Horizontal tab
-    \n          Newline
-    \v          Vertical tab
-    \f          Form feed
-    \r          Carriage return
-    \"          Double quote
-    \'          Apostrophe or single quote
-    \\          Backslash
-    \x[XX]      The Latin-1
-    \u[XXXX]    The Unicode character
+sequenza | significato
+---|---
+\O          | The NULL character
+\b          | Backspace
+\t          | Horizontal tab
+\n          | Newline
+\v          | Vertical tab
+\f          | Form feed
+\r          | Carriage return
+\"          | Double quote
+\'          | Apostrophe or single quote
+\\          | Backslash
+\x[XX]      | The Latin-1
+\u[XXXX]    | The Unicode character
 
-## Parsing di Stringhe (I)
+### Parsing di Stringhe (I)
 Una stringa può vedersi come un array di caratteri immutabile.
 Esempi:
 var a='stringa di testo'
 console.log(a[5]) // a
-## Funzioni di stringa
+
+### Funzioni di stringa
+
+    length
+    caratteri speciali
+        apici, doppi apici, escape
+    spezzare lunghe linee di codice
+    
+metodo | operazione
+---|---
+indexOf() | cerca una stringa
+search() | cerca una stringa nella stringa data
+slice(start, end) | estrai parti di stringa
+substring(start, end) | estrai parti di stringa \nnon accetta indici negativi
+substr(start, length) | estrai parti di stringa
+replace() | sostituisce stringhe
+toUpperCase() |
+toLowerCase() |
+concat() |
+charAt(position) |
+charCodeAt(position) | ritorna il carattere Unicode
+split(separatore) | converte una stringa in un array
+
+### esempi
 ```javascript
 var s = "hello, world"
 s.charAt(0)          // => "h"
@@ -189,7 +266,11 @@ s.split(", ")        // => ["hello", "world"]
 s.replace("h", "H")  // => "Hello, world"
 s.toUpperCase()      // => "HELLO, WORLD"
 ```
-### Valori logici
+
+
+
+
+## Valori logici
 ```javascript
 var a=true
 var b=false
@@ -203,8 +284,7 @@ null
 NaN
 ''
 ```
-## String
-String è la rappresentazione di tipo oggetto di una stringa.
+
 ## Boolean
 Boolean è la rappresentazione di tipo oggetto di una variabile logica.
 
@@ -216,23 +296,30 @@ var a=null
 var b=undefined
 ```
 
+# Condizioni
+* if 
+* else if 
+* else 
+* switch
+* operatore ternario
 
 
-
-## Condizioni
-Le condizioni sono definite come in Java.
+## if
 ```javascript
-if else if switch 
-if
 if(expresion){
     frasi
 }
+
 if(expresion){
     frasi
 }else{
     frasi
 }
-else if
+```
+
+## else if
+
+```javascript
 if(expresion){
     frasi
 }else if{
@@ -256,8 +343,7 @@ switch(expresion){
 }
 ```
 
-# Iteratori
-while do/while for for/in 
+# Iteratori (cicli)
 
 ## while
 ```javascript
@@ -284,7 +370,7 @@ for(variabile in collezion){
     frasi
 }
 ```
-## Cattura di errori
+# Cattura di errori
 ```javascript
 try{
     frasi
@@ -309,3 +395,116 @@ Le funzioni se dichiarano con la parola riservata funzione.
 function f(x,y){
     return x+y
 }
+
+
+### mostrare a video i dati
+        window.alert()
+        document.write()
+        innerHTML
+        console.log()
+### statements, semicolon
+### Values
+### Literals
+### Variabili
+    identificatore univoco
+    operatori di assignment
+    dichiarazione/creazione di variabili
+    dichiarazione/creazione su una sola riga
+    value undefined
+### operatori
+    operatori aritmetici
+    operatori di assegnamento
+    operatori su stringhe
+    aggiungere stringhe e numeri
+    comparazione e operatori logici
+    operatori e operandi
+    precedenza degli operatori
+### tipi di dato
+    tipi dinamici
+    stringhe
+    numeri
+    booleans
+    arrays
+    objects
+    operatore typeof
+    undefined
+    empty values
+    null
+    differenza tra null e undefined
+### funzioni ed eventi
+    sintassi
+    invocare le funzioni
+    return
+    perché usare le funzioni
+    l'operatore () chiama la funzione
+    funzioni usate come variabili
+    scope delle variabili, variabili globali (automatiche) e locali
+    ciclo vita delle variabili
+
+## events
+    HTML eventi
+        onchange
+        onclick
+        onmouseover
+        onmouseout
+        onkeydown
+        onload
+        cosa può fare * JS utilizzando i gestori di eventi (handlers)
+
+## Arrays
+    perché devi saper utilizzare gli array
+    creazione di un array
+    accesso a i dati di un array
+    array non omogenei
+    lavorare con gli array
+        trova la lunghezza di un array
+        aggiungere elementi a un array
+        aggiungere array
+        trasformare un array in una stringa
+    cose utili da fare con un array
+        trova la strada di casa
+        decision maker
+        crea un generatore di frasi random
+[JS array](Lesson2_array.md)
+
+### Objects
+    oggetti della vita reale (e classi)
+    proprietà e metodi
+    definizione di oggetti
+    accedere alle proprietà degli oggetti
+    accedere ai metodi degli oggetti
+    non dichiarare stringhe, numeri e booleans come oggetti
+
+
+    creare un oggetto
+        chiavi senza quote
+    accedere ai valori di un oggetto
+    aggiungere valori ad un oggetto
+        aggiungere chiavi con dot notation
+    combinare array e oggetti
+        un array di amici
+    eslporare gli oggetti in console
+    cose utili da fare con gli oggetti
+        tieni traccia delle spese
+        raccogli informazioni sui tuoi film preferiti
+[JS Objects](Lesson6_data_structure.md)
+
+## Comparazione e Operatori  logici
+
+
+### cicli/loop
+    ciclo while
+    ciclo for
+
+###  Date 
+    mostrare le date
+    creare l'oggetto Date()
+    formati e metodi per le date
+    metodi get e metodi set
+
+    
+
+
+
+
+
