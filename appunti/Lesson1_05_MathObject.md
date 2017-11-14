@@ -1,4 +1,4 @@
-##Math Object
+## Math Object
     Math.min()
     Math.max()
     Math.random()
