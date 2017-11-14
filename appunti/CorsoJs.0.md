@@ -469,6 +469,8 @@ Internamente, questa rappresentazione è un numero che rappresenta i millisecond
 ### Maggiori informazioni: 
 http://en.wikipedia.org/wiki/System_time    
 
+### codice
+[es data](esempi/01_date.js)
 
 # events
     HTML eventi
