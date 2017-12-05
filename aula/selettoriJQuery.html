@@ -1,0 +1,200 @@
+ <table summary="Selettori jQuery">
+<caption>Selettori jQuery</caption>
+<tbody>
+<tr>
+<th align="left">Selettore</th>
+<th align="left">Esempio</th>
+<th align="left">Seleziona</th>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td><code>$("*")</code></td>
+<td>Tutti gli elementi</td>
+</tr>
+<tr>
+<td><code>#id</code></td>
+<td><code>$("#lastname")</code></td>
+<td>L’elemento con id <code>lastname</code></td>
+</tr>
+<tr>
+<td><code>.class</code></td>
+<td><code>$(".intro")</code></td>
+<td>Tutti gli elementi con classe <code>intro</code></td>
+</tr>
+<tr>
+<td><code>element</code></td>
+<td><code>$("p")</code></td>
+<td>Tutti gli elementi <code>p</code></td>
+</tr>
+<tr>
+<td><code>.class.class</code></td>
+<td><code>$(".intro.demo")</code></td>
+<td>Tutti gli elementi con le classi <code>intro</code> e <code>demo</code></td>
+</tr>
+<tr>
+<td><code>:first</code></td>
+<td><code>$("p:first")</code></td>
+<td>Il primo elemento <code>p</code></td>
+</tr>
+<tr>
+<td><code>:last</code></td>
+<td><code>$("p:last")</code></td>
+<td>L’ultimo elemento <code>p</code></td>
+</tr>
+<tr>
+<td><code>:even</code></td>
+<td><code>$("tr:even")</code></td>
+<td>Tutti gli elementi <code>tr</code> pari</td>
+</tr>
+<tr>
+<td><code>:odd</code></td>
+<td><code>$("tr:odd")</code></td>
+<td>Tutti gli elementi <code>tr</code> dispari</td>
+</tr>
+<tr>
+<td><code>:eq(index)</code></td>
+<td><code>$("ul li:eq(3)")</code></td>
+<td>Il quarto elemento nella lista (l’indice parte da 0)</td>
+</tr>
+<tr>
+<td><code>:gt(no)</code></td>
+<td><code>$("ul li:gt(3)")</code></td>
+<td>Elementi della lista con indice superiore a 3</td>
+</tr>
+<tr>
+<td><code>:lt(no)</code></td>
+<td><code>$("ul li:lt(3)")</code></td>
+<td>Elementi della lista con indice minore di 3</td>
+</tr>
+<tr>
+<td><code>:not(selector)</code></td>
+<td><code>$("input:not(:empty)")</code></td>
+<td>Tutti gli input che non sono vuoti</td>
+</tr>
+<tr>
+<td><code>:header</code></td>
+<td><code>$(":header")</code></td>
+<td>Tutte le intestazioni (<code>h1</code>, <code>h2</code> ecc.)</td>
+</tr>
+<tr>
+<td><code>:animated</code></td>
+<td><code>$(":animated")</code></td>
+<td>Tutti gli elementi animati</td>
+</tr>
+<tr>
+<td><code>:contains(text)</code></td>
+<td><code>$(":contains('test')")</code></td>
+<td>Tutti gli elementi che contengono la stringa specificata</td>
+</tr>
+<tr>
+<td><code>:empty</code></td>
+<td><code>$(":empty")</code></td>
+<td>Tutti gli elementi privi di nodi figlio</td>
+</tr>
+<tr>
+<td><code>:hidden</code></td>
+<td><code>$("p:hidden")</code></td>
+<td>Tutti gli elementi <code>p</code> nascosti</td>
+</tr>
+<tr>
+<td><code>:visible</code></td>
+<td><code>$("table:visible")</code></td>
+<td>Tutte le tabelle visibili</td>
+</tr>
+<tr>
+<td><code>s1</code>,<code>s2</code>,<code>s3</code></td>
+<td><code>$("th,td,.intro")</code></td>
+<td>Tutti gli elementi a cui corrispondono i rispettivi selettori</td>
+</tr>
+<tr>
+<td><code>[attribute]</code></td>
+<td><code>$("a[href]")</code></td>
+<td>Tutti gli elementi <code>a</code> con un attributo <code>href</code></td>
+</tr>
+<tr>
+<td><code>[attribute=value]</code></td>
+<td><code>$("a[href='default.htm']")</code></td>
+<td>Tutti gli elementi <code>a</code> con attributo <code>href</code> uguale a <code>default.htm</code></td>
+</tr>
+<tr>
+<td><code>[attribute!=value]</code></td>
+<td><code>$("a[href!='default.htm']")</code></td>
+<td>Tutti gli elementi <code>a</code> con attributo <code>href</code> diverso da <code>default.htm</code></td>
+</tr>
+<tr>
+<td><code>[attribute$=value]</code></td>
+<td><code>$("img[src$='.jpg']")</code></td>
+<td>Tutti gli elementi <code>img</code> con attributo <code>src</code> che termina con <code>.jpg</code></td>
+</tr>
+<tr>
+<td><code>:input</code></td>
+<td><code>$(":input")</code></td>
+<td>Tutti gli elementi di input (<code>input</code>, <code>textarea</code> ecc.)</td>
+</tr>
+<tr>
+<td><code>:text</code></td>
+<td><code>$(":text")</code></td>
+<td><code>&lt;input type="text"/&gt;</code></td>
+</tr>
+<tr>
+<td><code>:password</code></td>
+<td><code>$(":password")</code></td>
+<td><code>&lt;input type="password"/&gt;</code></td>
+</tr>
+<tr>
+<td><code>:radio</code></td>
+<td><code>$(":radio")</code></td>
+<td><code>&lt;input type="radio"/&gt;</code></td>
+</tr>
+<tr>
+<td><code>:checkbox</code></td>
+<td><code>$(":checkbox")</code></td>
+<td><code>&lt;input type="checkbox"/&gt;</code></td>
+</tr>
+<tr>
+<td><code>:submit</code></td>
+<td><code>$(":submit")</code></td>
+<td><code>&lt;input type="submit"/&gt;</code></td>
+</tr>
+<tr>
+<td><code>:reset</code></td>
+<td><code>$(":reset")</code></td>
+<td><code>&lt;input type="reset"/&gt;</code></td>
+</tr>
+<tr>
+<td><code>:button</code></td>
+<td><code>$(":button")</code></td>
+<td><code>&lt;input type="button"/&gt;</code></td>
+</tr>
+<tr>
+<td><code>:image</code></td>
+<td><code>$(":image")</code></td>
+<td><code>&lt;input type="image"/&gt;</code></td>
+</tr>
+<tr>
+<td><code>:file</code></td>
+<td><code>$(":file")</code></td>
+<td><code>&lt;input type="file"/&gt;</code></td>
+</tr>
+<tr>
+<td><code>:enabled</code></td>
+<td><code>$(":enabled")</code></td>
+<td>Elementi di input attivi</td>
+</tr>
+<tr>
+<td><code>:disabled</code></td>
+<td><code>$(":disabled")</code></td>
+<td>Elementi di input disabilitati</td>
+</tr>
+<tr>
+<td><code>:selected</code></td>
+<td><code>$(":selected")</code></td>
+<td>Elementi di input selezionati</td>
+</tr>
+<tr>
+<td><code>:checked</code></td>
+<td><code>$(":checked")</code></td>
+<td>Elementi di input spuntati (checkbox)</td>
+</tr>
+</tbody>
+</table>

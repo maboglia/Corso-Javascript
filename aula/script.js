@@ -4,6 +4,7 @@ function Studente(nome, cognome, year) {
     this.year = year;
     this.anni = 2017 - this.year;
     this.challengeJS = [];
+    this.challengeJava = [];
 
     this.presentaStudente = function() {
         var stu = "Lo studente " + this.nome;
@@ -14,6 +15,15 @@ function Studente(nome, cognome, year) {
 
 }
 
+var colori = [
+    'white',
+    'yellow',
+    'orange',
+    'green',
+    'blue',
+    'brown',
+    'black',
+];
 
 var studenti = [
     new Studente("bryan", "folleco", 1999),
@@ -37,10 +47,18 @@ var studenti = [
     new Studente("fabio", "caccia", 1997),
     new Studente("davide", "tacchino", 1995)
 ];
+studenti[4].challengeJava = 1;
+studenti[6].challengeJava = 1;
+studenti[7].challengeJS = 1;
 studenti[8].challengeJS = 1;
 studenti[9].challengeJS = 1;
+studenti[10].challengeJava = 1;
+studenti[11].challengeJava = 1;
+studenti[12].challengeJava = 1;
+studenti[13].challengeJava = 1;
+studenti[15].challengeJS = 1;
 studenti[16].challengeJS = 1;
-
+studenti[16].coloreCapelli = "castano";
 
 for (var i = 0; i < studenti.length; i++) {
     if (i > 0 && (i % 6) == 0) {
@@ -49,17 +67,40 @@ for (var i = 0; i < studenti.length; i++) {
         document.body.appendChild(divClear);
     }
     var divStudente = document.createElement("div");
-    divStudente.setAttribute("style", "border:1px solid #ccc; float:left;width:125px;height:160px;padding:5px; margin:5px;");
+    var divCinturaJS = document.createElement("div");
+    var divCinturaJava = document.createElement("div");
+
+    divStudente.setAttribute("style", "border:1px solid #ccc; float:left;width:125px;height:200px;padding:5px; margin:5px;");
+    divCinturaJS.setAttribute("style", "margin:2px auto;width:96%;height:20px;border:1px solid #ccc;");
+    divCinturaJava.setAttribute("style", "margin:2px auto;width:96%;height:20px;border:1px solid #ccc;");
+
     divStudente.innerHTML = (studenti[i].cognome) ?
         "<h4>" + studenti[i].nome + "</h4>" +
         "<h3>" + studenti[i].cognome + "</h3>" +
         "<h4>" + studenti[i].anni + "</h4>" : "";
+
     if (studenti[i].challengeJS > 0) {
-        divStudente.innerHTML += "<h4>" + studenti[i].challengeJS + "</h4>";
-        divStudente.className = "green";
+        //divStudente.innerHTML += "<h4>" + studenti[i].challengeJS + "</h4>";
+        //divCinturaJS.setAttribute("style", "background-color:" + colori[studenti[i].challengeJS]);
+        var testo = document.createTextNode("Javascript");
+        divCinturaJS.appendChild(testo);
+        divCinturaJS.setAttribute("onclick", "console.dir(this.parentElement.innerHTML)");
+        divCinturaJS.className = colori[studenti[i].challengeJS];
+        divStudente.appendChild(divCinturaJS);
+        //divStudente.innerHTML += "<h4>" + studenti[i].challengeJava + "</h4>";
+
     }
+    if (studenti[i].challengeJava > 0) {
+        var testo = document.createTextNode("Java");
+        divCinturaJava.appendChild(testo);
+        divCinturaJava.className = colori[studenti[i].challengeJava];
+        divStudente.appendChild(divCinturaJava);
+}
+
+
     document.body.appendChild(divStudente);
 
     console.log(studenti[i].presentaStudente());
 
 }
+

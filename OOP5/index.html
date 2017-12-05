@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+    <script>
+        function Auto(marca) {
+            this.marca = marca;
+        }
+        //primo metodo per creare oggetti
+        var auto1 = new Object();
+        auto1.marca = "Fiat";
+
+        //secondo metodo per creare oggetti
+        var auto2 = new Auto("Ferrari");
+
+        //terzo metodo 
+        var auto3 = {
+            "marca": "Volvo",
+            "modello giuditta": 12
+        };
+
+        var automobili = [auto1, auto2, auto3];
+
+        for (let index = 0; index < automobili.length; index++) {
+            var a = automobili[index];
+            console.log(a['marca'])
+            console.log(a['modello giuditta']);
+        }
+    </script>
+
+</body>
+
+</html>

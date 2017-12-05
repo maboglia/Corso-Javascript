@@ -1,3 +1,27 @@
+.white {
+    background-color: white;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
 .green {
-    background-color: greenyellow;
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.black {
+    background-color: black;
 }
