@@ -1,9 +1,5 @@
-
-
-The JavaScript 
-Language 
-CLIENT- SIDE JAVASCRIPT 
-  - 
+# The JavaScript Language 
+### CLIENT-SIDE JAVASCRIPT 
 
 What you need to know…  
 * Client-Side JavaScript 
@@ -36,7 +32,7 @@ after a specified amount of time 
 functions 
  
 // Set the location property to navigate to a new web page 
-window.location = "http://www.polito.it/"; 
+window.location = "https://www.w3schools.com"; 
 // Wait 2 seconds and then say hello 
 setTimeout(function() { alert("hello world"); }, 2000); 
 
@@ -202,6 +198,7 @@ Inline JavaScript code 
 window.onload = displayTime;   // Start displaying the time when document loads. 
 </script> 
 ```
+---
 JavaScript 
 10 
 
@@ -235,6 +232,7 @@ Inline JavaScript code 
 </html> 
 ```
 
+---
 JavaScript 
 11 
 
@@ -257,6 +255,7 @@ different web pages 
 </html> 
 ```
 
+---
 JavaScript 
 12 
 
@@ -278,6 +277,7 @@ onclick="document.bgColor=changeColor()"/> 
 <input type='reset' value='White' id='theReset'  
 onclick="document.bgColor='white'"/> 
 
+---
 JavaScript 
 13 
 
@@ -296,6 +296,7 @@ Basic interaction methods 
 </script> 
 </head> 
 ```
+---
 JavaScript 
 14 
 
@@ -317,6 +318,7 @@ consent on any option 
   } 
 </script> 
 ```
+---
 JavaScript 
 15 
 
@@ -338,6 +340,7 @@ Cancel 
 //--> 
 </script> 
 ```
+---
 JavaScript 
 16 
 
@@ -350,6 +353,7 @@ JavaScript display possibilities 
  
 http://www.w3schools.com/js/js_output.asp  
 
+---
 JavaScript 
 17 
 
@@ -374,6 +378,7 @@ HTML 
 </html>
 ```
 
+---
 JavaScript 
 18 
 
@@ -400,6 +405,7 @@ document.getElementById(id) method 
  
 ``` 
 
+---
 JavaScript 
 19 
 
