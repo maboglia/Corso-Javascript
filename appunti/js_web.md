@@ -371,8 +371,8 @@ HTML 
    onclick="document.write(5 + 6)">Prova</button> 
  
 </body> 
-</html> 
-``` 
+</html>
+```
 
 JavaScript 
 18 
@@ -394,8 +394,10 @@ document.getElementById(id) method 
 <button type="button" 
    onclick="document.getElementById('demo').innerHTML  
            = 5 + 6;">Prova</button> 
+
 </body> 
-</html> 
+</html>
+ 
 ``` 
 
 JavaScript 
