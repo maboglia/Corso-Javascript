@@ -167,9 +167,9 @@ JavaScript 
 Embedding JavaScript in HTML 
 * Client-side JavaScript code is embedded within 
 HTML documents in four ways: 
-* Inline, between a pair of <script> and </script> tags 
+* Inline, between a pair of script and /script tags 
 * From an external file specified by the src  attribute of a 
-<script> tag 
+script tag 
 * In an HTML event handler attribute, such as onclick or 
 onmouseover 
 * In a URL that uses the special javascript: protocol. 
@@ -177,14 +177,14 @@ onmouseover 
 JavaScript argues that content (HTML) and 
 behavior (JavaScript code) should  as much as 
 possible be kept separate 
-* JavaScript is best embedded in HTML documents using 
-<script> elements with src attributes 
+* JavaScript is best embedded in HTML documents using script elements with src attributes 
 
+---
 JavaScript 
 9 
 
 
-Inline JavaScript code 
+### Inline JavaScript code 
 * Between <script> and </script> tags 
 * Example: simple digital clock 
 ```html
