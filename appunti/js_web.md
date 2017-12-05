@@ -394,22 +394,6 @@ document.getElementById(id) method 
 * The id attribute defines the HTML element 
 * The innerHTML property defines the HTML content 
 
-```html
-<!DOCTYPE html> 
-<html> 
-<body> 
- 
-<h1>Esempio</h1> 
-<p>Quanto fa 5 + 6 ?</p> 
-<p id="demo"></p> 
-<button type="button" 
-   onclick="document.getElementById('demo').innerHTML  
-           = 5 + 6;">Prova</button> 
-
-</body> 
-</html>
- 
-``` 
 
 ---
 JavaScript 
