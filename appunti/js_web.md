@@ -389,8 +389,7 @@ JavaScript 
 18 
 
 ### JavaScript display possibilities 
-* To access an HTML element, JavaScript can use the 
-document.getElementById(id) method 
+* To access an HTML element, JavaScript can use the document.getElementById(id) method 
 * The id attribute defines the HTML element 
 * The innerHTML property defines the HTML content 
 
@@ -438,8 +437,8 @@ JavaScript 
 20 
 
 ### JavaScript display possibilities 
-* In your browser, you can use the console.log() 
-method to display data 
+* In your browser, you can use the console.log() method to display data 
+
 ```html
 <!DOCTYPE html> 
 <html> 
@@ -464,19 +463,15 @@ JavaScript 
 21 
 
 ### Scripting documents 
-* Client-side JavaScript exists to turn static HTML 
-documents into interactive web applications 
-* Scripting the content of web pages is the central purpose of 
-JavaScript 
+* Client-side JavaScript exists to turn static HTML documents into interactive web applications 
+* Scripting the content of web pages is the central purpose of JavaScript 
 * Overview 
 * Basic architecture of the DOM 
 * How to query or select individual elements from a document 
-* How to traverse a document as a tree of nodes: how to find the 
-ancestors, siblings, and descendants of any document element 
+* How to traverse a document as a tree of nodes: how to find the ancestors, siblings, and descendants of any document element 
 * How to query and set the attributes of document elements 
 * How to query, set, and modify the content of a document 
-* How to modify the structure of a document by creating, 
-inserting, and deleting nodes 
+* How to modify the structure of a document by creating, inserting, and deleting nodes 
 * How to work with HTML forms 
 
 ---
@@ -485,11 +480,8 @@ JavaScript 
 
 
 ### Document Object Model (DOM) 
-* The Document Object Model, or DOM, is the 
-fundamental API for representing and manipulating 
-the content of HTML (and XML) documents 
-* HTML or XML document are represented in the 
-DOM as a tree of objects 
+* The Document Object Model, or DOM, is the fundamental API for representing and manipulating the content of HTML (and XML) documents 
+* HTML or XML document are represented in the DOM as a tree of objects 
 
 ---
 JavaScript 
@@ -523,19 +515,18 @@ Tree structure 
         </div> 
         <div> 
             This link is <em>not</em> active, but it it were, the answer to this 
-            <a><img src="exercise.jpg"></a> would be there. But <em>do the 
-                exercise anyway!</em> 
+            <a><img src="exercise.jpg"></a> would be there. But <em>do the exercise anyway!</em> 
         </div> 
     </div> 
 </body> 
 </html> 
 ```
 
-Cascading Style Sheets 
+### Cascading Style Sheets 
 25 
 
 
-Tree structure 
+### Tree structure 
 ```html
 <html lang="en"> 
 <head> 
@@ -563,20 +554,17 @@ Tree structure 
 </html> 
 ```
 
-Cascading Style Sheets 
+### Cascading Style Sheets 
 26 
 
 The DOM structure 
 * The entire document is a Document node 
-* If you want to access objects in an HTML page, you 
-always start with accessing the document object 
+* If you want to access objects in an HTML page, you always start with accessing the document object 
 * Every HTML tag is an Element node 
-* The texts contained in the HTML elements are 
-Text nodes 
+* The texts contained in the HTML elements are Text nodes 
 * Every HTML attribute is an Attribute node 
 * Comments are Comment nodes 
-* Nodes have a hierarchical relationship to each 
-other 
+* Nodes have a hierarchical relationship to each other 
  
 
 ---
@@ -592,13 +580,9 @@ JavaScript 
 28 
 
 ### Selecting document elements 
-* Most client-side JavaScript programs work by 
-manipulating one or more document elements 
-* They must obtain or select the Element objects that refer 
-to those document elements 
-* The DOM defines a number of ways to select 
-elements: you can query a document for an 
-element (or elements) 
+* Most client-side JavaScript programs work by manipulating one or more document elements 
+* They must obtain or select the Element objects that refer to those document elements 
+* The DOM defines a number of ways to select elements: you can query a document for an element (or elements) 
 * with a specified id attribute 
 * with a specified name attribute 
 * with the specified tag name 
@@ -612,11 +596,10 @@ JavaScript 
 ### Selecting elements by id 
 * Any HTML element can have an id attribute 
 * The value of this attribute must be unique within the document  
-* You can select an element based on this unique id with 
-the getElementById() method of the Document object 
-* The simplest and most commonly used way to select elements 
+* You can select an element based on this unique id with the getElementById() method of the Document object 
+* The simplest and most commonly used way to select elements
+ 
 ```javascript
-
 var section1 = document.getElementById("section1"); 
 /* 
 * This function expects any number of string arguments. It treats each 
@@ -634,6 +617,7 @@ function getElements(/*ids...*/) { 
   return elements; // Return id to element map 
 } 
 ```
+
 ---
 JavaScript 
 30 
