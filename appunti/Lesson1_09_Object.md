@@ -29,30 +29,36 @@ Instanziazione di classi.
 
 ## 1ª Forma: Definizione literal
 E' una definizione di proprietà di tipo chiave:valore.
+```javascript
 a={
     x:1,
     y:[1,2,3,4,5],
     z:function(a){return a}
 }
-
+```
 ## 2ª Forma: Instanziazione di classi
 Altra maniera per definire un oggetto è instanziando una classe di un tipo di oggetto pre-definito in JavaScript o con una propria definizione di classe.
+```javascript
 a=new Object()
 b=new String('asdf')
-
+```
 ## Oggetti come array associativo
 Le variabili di un oggetto si possono accedere come se fossero array associativi:
+```javascript
 a={x:1,y:2}
 console.log(a.x)
 console.log(a['x'])
+```
 
 #Classi
 Una classe in JavaScript è una collezione di oggetti che ereditano proprietà di un medesimo prototipo.
+```javascript
 function A(){
     this.a=10
     this.b=11
 }
 a=new A()
+```
 
 # Prototipi
 Un prototipo è un oggetto associato all'oggetto che sta definendo, e del quale va a ereditare proprietà.
@@ -60,27 +66,33 @@ E' stabilito quando l'oggetto è creato.
 Si può accedere attraverso la variabile prototype
 Usi
 Si usa per aggregare funzioni a una definizione anche dopo aver istanziato l'oggetto.
+```javascript
 a=new String('asdf')
 String.prototype.salutare=function(){
     return 'ciao'
 }
 console.log(a.salutare())
+```
+
 Questa non è una pratica raccomandata!
 Maggiori informazioni: stackoverflow
 Usi
 può servire per realizzare ereditarietà tra oggetti.
+```javascript
 function A(){
     this.a=100
     this.x=function(){
         return this.a
-}}t
+}}
 function B(){this.b=100}
 B.prototype=new A()
 b=new B()
 console.log(b.x())
-3ª Forma: Object.create
+```
+
+## 3ª Forma: Object.create
 Costruisce un nuovo oggetto a partire da un prototipo stabilito.
-                
+```javascript                
 function A(){
     this.f=function(){return 'asdf'}
 }
@@ -95,26 +107,117 @@ function A(){
     this.y=2
 }
 console.log(Object.keys(new A()))
-Object
+```
+
+## Object
 La classe Object, possiede vari metodi:
-toString()
+`toString()`
 Ritorna la rappresentazione in stringa di un oggetto.
-valueOf()
+`valueOf()`
 Ritorna la forma primitiva di un oggetto.
 
 
 
+# Recap 
+
+### 1. Nouns & Verbs 
+Let's go back to the analogy of computer languages being like regular spoken languages. In English, you have nouns (which you can think of as "things") and verbs (which you can think of as "actions"). Until now, our nouns (data, such as numbers, strings, or variables) and verbs (functions) have been separate.
+
+No longer!
+
+Using **objects**, we can put our information and the functions that use that information in the same place.
+
+You can also think of objects as combinations of key-value pairs (like arrays), only their keys don't have to be numbers like 0, 1, or 2: they can be strings and variables.
+
+```javascript
+var phonebookEntry = {};
+
+phonebookEntry.name = 'Oxnard Montalvo';
+phonebookEntry.number = '(555) 555-5555';
+phonebookEntry.phone = function() {
+  console.log('Calling ' + this.name + ' at ' + this.number + '...');
+};
+
+phonebookEntry.phone();
+```
+
+### 2. Object Syntax
+
+Did you see that? The `phonebookEntry` object handled data (a name and a telephone number) as well as a procedure (the function that printed who it was calling).
+
+In that example, we gave the **key** `name` the **value** `'Oxnard Montalvo'` and the key `number` the value `'(555) 555-5555'`. An object is like an array in this way, except its keys can be variables and strings, not just numbers.
+
+Objects are just collections of information (keys and values) between curly braces, like this:
+
+```javascript
+var myObject = {
+    key: value,
+    key: value,
+    key: value
+};
+```
+
+### 3. Creating new Object
+2 ways of creating object 
+1. Object Literal Notation (What you did earlier)
+2. Object Constructor
+
+**Literal notation** is just creating an object with curly braces, like this:
+
+```javascript
+var myObj = {
+    type: 'fancy',
+    disposition: 'sunny'
+};
+
+var emptyObj = {};
+```
+
+When you use the **constructor**, the syntax looks like this:
+
+```javascript
+var myObj = new Object();
+
+```
+
+This tells JavaScript: "I want you to make me a `new` thing, and I want that thing to be an `Object`.
+
+You can add keys to your object after you've created it in two ways:
+
+```javascript
+myObj["name"] = "Charlie";
+myObj.name = "Charlie";
+```
+
+**2 Literal Syntax**
+
+```javascript
+var myObj = {
+    key1: value,
+    key2: value
+};
+
+```
+OR
+
+```javascript
+var myObj = {};
+myObj.key1 = value;
+myObj['key2'] = value;
+
+```
+
+**Object Constructor**
+
+```javascript
+var myObj = new Object();
+myObj.key1 = value;
+myObj['key2'] = value;
+```
 
 
-
-
-
-# Lesson7 Object Oriented Programming(OOP) Part 1
-## Intro to OOP
-
-We have discussed four data types: numbers, strings, booleans and arrays.
-
-In this lesson, we focus on a fifth data type: **objects**. This data type is a little bit more complex. **Objects** allow us to represent in code real world things and entities (such as a person or bank account). We do this by storing all relevant information in one place—an object.
+## Data type **object**. 
+This data type is a little bit more complex. **Objects** allow us to represent in code real world things and entities (such as a person or bank account). We do this by storing all relevant information in one place—an object.
 
 How do we create an object? 
 Like declaring a variable, or defining a function, we use var, followed by the name of the object and an equals sign. Each object then:
@@ -584,5 +687,3 @@ Here, we have included a `Circle` object, with a `radius` property representing 
 ## Add-Ons 
 ### Building Mini Project 
 Utilize what you have learn in this lesson to build an address book. 
-
-[Sample Code Here](https://github.com/yclim95/CodeAcademy-JavaScript/blob/master/Lesson7_intro_to_object_oriented_programming_part_1/script.js)
