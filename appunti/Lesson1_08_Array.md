@@ -19,7 +19,6 @@
         decision maker
         crea un generatore di frasi random
 
-
 ---
 
 *   JS array

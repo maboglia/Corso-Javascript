@@ -1,3 +1,27 @@
+# Costrutti iterativi (Loop): While 
+
+## while
+```javascript
+while(expresion){
+    frasi
+}
+```
+### codice
+[es data](../esempi/02_while_testa_croce.js)
+
+
+## do/while
+```javascript
+do {
+    frasi
+while(expresion)
+```
+
+
+
+
+
+
 #Lesson4 Loop : While
 Currently You know what is for loops. Just to remind, here is the syntax for for loop :
 

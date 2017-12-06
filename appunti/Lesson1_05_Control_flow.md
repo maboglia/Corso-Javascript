@@ -1,3 +1,55 @@
+# Condizioni
+* if
+* if ... else
+* if ... else if ... else
+* switch
+* operatore ternario
+
+
+## if
+```javascript
+if(expresion){
+    frasi
+}
+
+if(expresion){
+    frasi
+}else{
+    frasi
+}
+```
+
+## if else if
+
+```javascript
+if(expresion){
+    frasi
+}else if{
+    frasi
+}else{
+    frasi
+}
+```
+## switch
+
+```javascript
+switch(expresion){
+    case 1:
+        frasi
+        break
+    case n:
+        frasi
+        break
+    default:
+	  frasi
+}
+```
+## operatore ternario
+```javascript
+(condizione) ? true : false ;
+```
+
+
 #Lesson5 Control Flow
 ## If/Else & Else-IF & Loop
 Quick Refresher : 

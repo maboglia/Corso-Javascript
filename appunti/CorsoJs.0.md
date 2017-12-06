@@ -4,19 +4,13 @@
 utilizzato comunemente come parte dell'esperienza di navigazione, permette di creare interazioni con l'utente, 
 controllare la navigazione, gestire la comunicazione asincrona, e modificare il contenuto del documento. 
 
-Fonte: https://en.wikipedia.org/wiki/JavaScript 
+___Fonte: https://en.wikipedia.org/wiki/JavaScript___ 
 
-## Strutture del linguaggio 
-* Variabili, 
-* dichiarazioni ed espressioni 
-* Funzioni 
-* Array, 
-* Oggetti e Classi 
-* Stringhe
-* Risorse del browser 
-* Eventi: cattura e gestione 
-* Formati di scambio: JSON e XML 
-* Servizi REST e asincroni: AJAX 
+## ruolo di js nel web design
+
+* Html: contenuto
+* Css: presentazione
+* Js: comportamento
 
 ## Risorse disponibili online
 * [Javascript reference](https://developer.mozilla.org/it/docs/Web/JavaScript) 
@@ -27,28 +21,22 @@ Fonte: https://en.wikipedia.org/wiki/JavaScript
 * [Udacity Course](https://www.udacity.com/course/intro-to-javascript--ud803)
 * [html.it](http://www.html.it/guide/guida-javascript-di-base/)
 
-## ruolo di js nel web design
-
-Html: contenuto
-Css: presentazione
-Js: comportamento
-
-## Hello world
-Hello world nel browser
+## Hello, World!
+Hello, World! nel browser
 ```javascript
-alert('Hello world')
+alert('Hello, World!')
 ```
-Hello world nel terminale
+Hello, World! nel terminale
 ```javascript
-console.log('Hello world')
+console.log('Hello, World!')
 ```
 
 ## Esecuzione del codice
-Interpretazione in una pagina web 
-Interpretazione in  una console del browser 
-Interpretazione in terminale (node.js) 
+* Interpretazione in una pagina web 
+* Interpretazione in  una console del browser 
+* Interpretazione in terminale (node.js) 
 
-## Javascript incorporato in una pagina html (I)
+## Javascript incorporato in una pagina html
 
 ```javascript
 <!doctype html>
@@ -61,7 +49,8 @@ Interpretazione in terminale (node.js)
     </body>
 </html>
 ```
-## Javascript collegato ad una pagina html (II)
+
+## Javascript collegato ad una pagina html
 ```html
 <!doctype html>
 <html>
@@ -71,16 +60,90 @@ Interpretazione in terminale (node.js)
     </body>
 </html>
 ```
+
 ```javascript
 // file esempio.js
 alert('Hello world')
 ```
-
 ## Come mostrare a video i dati
         window.alert()
         document.write()
         innerHTML
         console.log()
+
+
+# Strutture del linguaggio 
+
+## JavaScript è __CASE SENSITIVE__
+
+## Convenzioni di naming: 
+* CamelCase, 
+* camelCase, 
+* snake_case
+
+## Identificatori
+Gli identificatori in javascript cominciano con 
+* una lettera,
+* una underline (_),
+* un carattere di dollaro ($); 
+seguito da 
+* lettere,
+* numeri,
+* underline,
+* e caratteri di dollaro
+
+### Per esempio
+
+```javascript
+var contatore;
+var _indice;
+var $indice;
+var $__$__$;
+```
+
+## Parole chiave riservate
+-|-|-|-
+---|---|---|---
+abstract | else | instanceof | super 
+boolean | enum | int | switch
+break | export | interface | synchronized
+byte | extends | let | this
+case | false | long | throw
+catch | final | native | throws
+char | finally | new | transient
+class | float | null | true
+const | for | package | try
+continue | function | private | typeof
+debugger | goto | protected | var
+default | if | public | void
+delete | implements | return | volatile
+do | import | short | while
+double | in | static | with
+
+### Per esempio
+
+#### instanceof
+Verifica se un oggetto è instanza di qualche prototipo.
+
+#### typeof
+Ritorna una stringa indicando il tipo di dato che ha una variabile.
+
+#### var
+Parola chiave per la dichiarazione di una variabile.
+
+#### delete
+Operatore che rimuove proprietà di un oggetto.
+
+#### use strict
+Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
+
+
+
+## Punto e virgola (;)
+    E' possibile l'uso del carattere (;) per la separazione di frasi, 
+    si può omettere se queste si trovano su linee differenti (non fatelo!)
+    Gli interpreti di JavaScript trattano i fine linea come fine istruzione, se 
+    la istruzione successiva non può interpretarsi come continuazione della precedente.
 
 ## Variabili
     identificatore univoco
@@ -102,11 +165,16 @@ alert('Hello world')
 ## Commenti
 Esistono due tipi di commenti:
 ```javascript
-// commento semplice
+//  commento su una riga
 
-/* commento
-su diverse
-righe */
+//puoi usarlo per commentare un'istruzione:
+var a = 5; //assegno la variabile
+
+/* 
+    commento
+    su diverse
+    righe 
+*/
 ```
 
 
@@ -121,123 +189,39 @@ espressioni regolari |     /[A-Za-z]/
 Valore nullo        |    null
 Valore undefined    |    undefined
 
-# JavaScript è __CASE SENSITIVE__
+---
 
-### convenzioni di naming: 
-* CamelCase, 
-* camelCase, 
-* snake_case
+# Strutture del linguaggio
 
-## Identificatori
-Gli identificatori in javascript cominciano con una lettera, una underline (_), o un carattere di dollaro ($); seguito da lettere, numeri, underline, e caratteri di dollaro
+## Costrutti di controllo del flusso
+    * [Strutture condizionali](./Lesson1_05_Control_flow.md)
 
-### Esempi
+## Costrutti di iterazione
+    * [For Loop](./Lesson1_05_Control_flow.md) 
+    * [While Loop](./Lesson1_05_Control_flow.md) 
+
+
+# Tipi di dato
+
+## Boolean
+Boolean è la rappresentazione di tipo oggetto di una variabile logica.
+Booleans
+    operazioni logiche
+    comparazione tra numeri e valori booleani
+    undefined e null
+    Boolean() verifica se un'espressione è booleana
+
+---
+
+### Per esempio
 
 ```javascript
-var contatore;
-var _indice;
-var $indice;
-var $__$__$;
-```
-
-## parole chiave
--|-|-|-
----|---|---|---
-abstract | else | instanceof | super 
-boolean | enum | int | switch
-break | export | interface | synchronized
-byte | extends | let | this
-case | false | long | throw
-catch | final | native | throws
-char | finally | new | transient
-class | float | null | true
-const | for | package | try
-continue | function | private | typeof
-debugger | goto | protected | var
-default | if | public | void
-delete | implements | return | volatile
-do | import | short | while
-double | in | static | with
-
-## Punto e virgola (;)
-E' possibile l'uso del carattere (;) per la separazione di frasi,si può omettere se queste si trovano su linee differenti (non fatelo!)
-Gli interpreti di JavaScript trattano i fine linea come fine frase, se e solo se, la frase successiva non può interpretarsi come continuazione della precedente.
-
-## Tipi di dati
-* Tipi primitivi:
-* Tipi oggetto:
-
-## tipi di dati e variabili
-    convenzioni di naming
-    crea una nuova varibile usando Math
-    incrementare e decrementare
-    +=
-    -=
-
-
-## tipi di dato
-    tipi dinamici
-    stringhe
-    numeri
-    booleans
-    arrays
-    objects
-    operatore typeof
-    undefined
-    empty values
-    null
-    differenza tra null e undefined
-
-
-
-
-
-### Esempi:
-```javascript
-  12 // numero intero in base decimale.
-0345 // numero intero in base ottale.
-0xFF // numero intero in base esadecimale.
-
-3.141592654 // numero decimale.
-.234955     // numero decimale.
-6.023e23    // numero decimale in notazione esponenziale.
-```                
-### Number
-Number è la rappresentazione di tipo oggetto di un tipo numerico.
-
-### JS numbers
-    sono SEMPRE float a 64-bit
-    il numero massimo di decimali è 17 e la virgola mobile non è sempre accurata
-    il prefisso 0x permette di usare i numeri esadecimali
-    In *    JS esiste Infinity e -Infinity
-    NaN not a number: operazioni aritmetiche con le stringhe restituiscono NaN
-    proprietà e metodi
-        Number()
-        parseFloat()
-        parseInt()
-        toString()
-        toFixed()
-        toPrecision()
-        valueOf()
-
-### Math
-Math è l'oggetto che concentra molte constanti e funzioni matematiche.
-[es Math](./Lesson1_05_MathObject.md)
-
-
-# String
-String è la rappresentazione di tipo oggetto di una stringa.
-[es String](./Lesson1_06_StringObject.md)
-
-
-
-
-## Valori logici
-```javascript
+//Valori logici
 var a=true
 var b=false
 ```
-Son valori falsi i seguenti:
+Sono valori falsi i seguenti:
+
 ```javascript
 undefined
 null
@@ -247,135 +231,58 @@ NaN
 ''
 ```
 
-## Boolean
-Boolean è la rappresentazione di tipo oggetto di una variabile logica.
+## Number
+Number è la rappresentazione di tipo oggetto di un tipo numerico.
+    
+### JS numbers
+    i numeriin JS sono SEMPRE float a 64-bit
+    il numero massimo di decimali è 17 e la virgola mobile non è sempre accurata
+    il prefisso 0x permette di usare i numeri esadecimali
+    In JS esiste Infinity e -Infinity
+    NaN not a number: p.es. operazioni aritmetiche con le stringhe restituiscono NaN
+    proprietà e metodi principali
+        Number()
+        parseFloat()
+        parseInt()
+        toString()
+        toFixed()
+        toPrecision()
+        valueOf()
 
+### Per esempio:
+```javascript
+  12 // numero intero in base decimale.
+0345 // numero intero in base ottale.
+0xFF // numero intero in base esadecimale.
 
-Booleans
-        operazioni logiche
-        comparazione tra numeri e valori booleani
-    undefined e null
-    Boolean() verifica se un'espressione è booleana
+3.141592654 // numero decimale.
+.234955     // numero decimale.
+6.023e23    // numero decimale in notazione esponenziale.
+```                
+
+### Math Object
+Per lavorare con i Number, puoi usare Math che è l'oggetto che concentra molte constanti e funzioni matematiche.
+* [Math Object](./Lesson1_05_MathObject.md)
+
+---
+
+## String
+String è la rappresentazione di tipo oggetto di una stringa.
+* [String Object](./Lesson1_06_StringObject.md)
+
+---
 
 
 
 ## valore nullo e valore undefined
 
-Rappresentano la assenza di un valore in una variabile o nel ritorno di una function.
+Rappresentano l'assenza di un valore in una variabile o nel ritorno di una function.
 ```javascript
 var a=null
 var b=undefined
 ```
 
 
-
-
-
-
-
-
-
-# Condizioni
-* if
-* if ... else
-* if ... else if ... else
-* switch
-* operatore ternario
-
-
-## if
-```javascript
-if(expresion){
-    frasi
-}
-
-if(expresion){
-    frasi
-}else{
-    frasi
-}
-```
-
-## if else if
-
-```javascript
-if(expresion){
-    frasi
-}else if{
-    frasi
-}else{
-    frasi
-}
-```
-## switch
-
-```javascript
-switch(expresion){
-    case 1:
-        frasi
-        break
-    case n:
-        frasi
-        break
-    default:
-	  frasi
-}
-```
-## operatore ternario
-```javascript
-(condizione) ? true : false ;
-```
-
-# Iteratori (cicli)
-
-## while
-```javascript
-while(expresion){
-    frasi
-}
-```
-### codice
-[es data](../esempi/02_while_testa_croce.js)
-
-
-## do/while
-```javascript
-do {
-    frasi
-while(expresion)
-```
-## for
-```javascript
-for(inizializzazione;valutatore;incrementatore){
-    frasi
-}
-```
-## for/in
-```javascript
-for(variabile in collezion){
-    frasi
-}
-```
-# Cattura di errori
-```javascript
-try{
-    frasi
-}catch(e){
-    frasi
-}finally{
-    frasi
-}
-```
-## instanceof
-Verifica se un oggetto è instanza di qualche prototipo.
-## typeof
-Ritorna una stringa indicando il tipo di dato che ha una variabile.
-## var
-Parola chiave per la dichiarazione di una variabile.
-## delete
-Operatore che rimuove proprietà di un oggetto.
-## use strict
-Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
 
 ## Funzioni
 Le funzioni se dichiarano con la parola riservata funzione.
@@ -386,6 +293,44 @@ function f(x,y){
 ```
 [Funzioni](./Lesson1_07_Functions.md) 
 
+
+---
+
+## Date Object 
+* Date è l'oggetto utilizzato per la rappresentazione di date.
+* Internamente, questa rappresentazione è un numero che rappresenta i millisecondi trascorsi dalla data: 1 di gennaio del 1970.
+* mostrare le date
+* creare l'oggetto Date()
+* formati e metodi per le date
+* metodi get e metodi set
+
+### Maggiori informazioni: 
+http://en.wikipedia.org/wiki/System_time    
+
+### codice esempio
+[es data](../esempi/01_date.js)
+
+---
+
+## Array
+* [JS array](Lesson1_08_Array.md)
+
+---
+
+## Objects
+* [JS Objects](./Lesson1_09_Object.md)
+
+
+## events
+cosa può fare JS utilizzando i gestori di eventi (handlers)
+    eventi HTML 
+        onchange
+        onclick
+        onmouseover
+        onmouseout
+        onkeydown
+        onload
+---
 
 ## Hoisting
 Le variabili in JavaScript hanno ambito di funzione, questo significa che tutte le variabili dichiarate in una funzione sono visibili nel corpo della funzione. Anche prima di essere dichiarate.
@@ -403,168 +348,28 @@ var a='asdf';
     var a='qwer'
 })() // undefined
 
+---
 
-### Date 
-    mostrare le date
-    creare l'oggetto Date()
-    formati e metodi per le date
-    metodi get e metodi set
-
-
-###  Date
-Date è l'oggetto utilizzato per la rappresentazione di date.
-Internamente, questa rappresentazione è un numero che rappresenta i millisecondi trascorsi dalla data: 1 di gennaio del 1970.
-
-### Maggiori informazioni: 
-http://en.wikipedia.org/wiki/System_time    
-
-### codice
-[es data](../esempi/01_date.js)
-
-# events
-    HTML eventi
-        onchange
-        onclick
-        onmouseover
-        onmouseout
-        onkeydown
-        onload
-        cosa può fare * JS utilizzando i gestori di eventi (handlers)
-
-# Array
-    perché devi saper utilizzare gli array
-    creazione di un array
-    accesso a i dati di un array
-    array non omogenei
-    lavorare con gli array
-        trova la lunghezza di un array
-        aggiungere elementi a un array
-        aggiungere array
-        trasformare un array in una stringa
-    cose utili da fare con un array
-        trova la strada di casa
-        decision maker
-        crea un generatore di frasi random
-[JS array](Lesson2_array.md)
-
-# Objects
-    oggetti della vita reale (e classi)
-    proprietà e metodi
-    definizione di oggetti
-    accedere alle proprietà degli oggetti
-    accedere ai metodi degli oggetti
-    non dichiarare stringhe, numeri e booleans come oggetti
-
-
-    creare un oggetto
-        chiavi senza quote
-    accedere ai valori di un oggetto
-    aggiungere valori ad un oggetto
-        aggiungere chiavi con dot notation
-    combinare array e oggetti
-        un array di amici
-    eslporare gli oggetti in console
-    cose utili da fare con gli oggetti
-        tieni traccia delle spese
-        raccogli informazioni sui tuoi film preferiti
-[JS Objects](Lesson7_intro_to_object_oriented_programming_part_1.md)
-
-
-
-
-
-
-# javascript: 
-    ideazione e sviluppo pagina web le ricette del mondo per scambio con allievi corso cucina
-
-    array e oggetti
-    DOM
-    Array e Oggetti in JS
-    Oggetti in Javascript
-    esempi js 22-27
-
-## gioco matematico 01 - rock, scissors, paper
-* 02RockScissorsPaper
-    * css
-    * style.css
-    * index.html
-    * js
-        * script.js
-        * masterJS
-    * css
-    * style.css
-    * index.html
-    * js
-        * script.js
-
-* javascript
-    *   javascript funzionale
-    *   oggetti javascript
-    *   primo JSON short bio studente
-
-*   Javascript
-
-        esercizi base
-            operatori, booleans, logici
-        gioco
-            trenino che si muove, collisione
-                
-
-
-##javascript: 
-array, stringhe (metodi sulle stringhe)
-* esercizi: 
-    todo-list, 
-    slideshow banksy, 
-    lampadina accendi-spegni
-
-
-    proviamo un altro IDE: IntelliJIdea
-    gestione delle eccezioni, vd cartella appunti
-    blocco try-catch-finally
-    le parole chiave throws e throw
-    esercitazione-homework progetto negozio alimentari, come da specifiche
-    
-
-
-
-    javascript: 
-    ideazione e sviluppo pagina web le ricette del mondo per scambio con allievi corso cucina
-
-    Javascript: ricette del mondo
-    Javascript: ricette del mondo
-    Javascript calcolatrice
-    Javascript calcolatrice
-    Javascript
-        localstorage
-        sessionstorage
-        drag & drop
-        canvas
-        nodejs, npm
-        AngularJs vs Angular2 
-        hello Angular 2
-    angularjs
-    angularjs
-        Angular2
-    JS: Angular components, routing
-    JS: Angular components, routing
-    JS: Angular services
-    JS: Html5 Canvas
-
-
-    Javascript introduzione, variabili e tipi
-
-*   esercizi javascript per la gestione degli eventi
-
-
-    jquery: effetti, eventi
-
-    jquery
-        hide
-        fade
-        slide
-
-
+# Ricapitolando
+* Variabili, 
+* dichiarazioni ed espressioni 
+* Tipi primitivi
+* Tipi oggetto
+* tipi dinamici
+* operatore typeof
+* undefined
+* null
+* empty values
+* Boolean
+* [Funzioni](./Lesson1_07_Functions.md) 
+* [Number](./Lesson1_05_MathObject.md)
+* [String](./Lesson1_06_StringObject.md)
+* [Array](./Lesson1_08_Array.md)
+* [Object](./Lesson1_09_Object.md)
+* Risorse del browser 
+* Eventi: cattura e gestione 
+* Formati di scambio: JSON e XML 
+* Servizi REST e asincroni: AJAX
 
 
 

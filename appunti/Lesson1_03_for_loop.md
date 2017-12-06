@@ -1,4 +1,40 @@
 #Costrutti iterativi (Loop): For 
+
+
+
+## for
+```javascript
+for(inizializzazione;valutatore;incrementatore){
+    frasi
+}
+```
+## for/in
+```javascript
+for(variabile in collezion){
+    frasi
+}
+```
+# Cattura di errori
+```javascript
+try{
+    frasi
+}catch(e){
+    frasi
+}finally{
+    frasi
+}
+```
+
+
+
+
+
+
+
+
+
+
+
 ## Perché usaree i *for* loops ? 
 Invece di scrivere 5 linee di codice.... 
 
