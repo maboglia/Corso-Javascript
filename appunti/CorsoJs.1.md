@@ -62,7 +62,7 @@ La manipolazione del contenuto nel browser dipende da un congiunto di funzioni e
 
 # Selezionare elementi
 ## Selettori (I)
-Esistono molti metodi di selezione di elementi.
+Sono disponibili molti metodi di selezione di elementi.
 * document.getElementById(id) 
 * document.getElementsByName(name) 
 * document.getElementsByTagName(tagname) 
@@ -72,7 +72,7 @@ Addizionalmente ci sono selettori di tipo CSS.
 * document.querySelector(selector) 
 * document.querySelectorAll(selector)
 
-# Atraversare il DOM
+# Attraversare il DOM
 
 ## Traversing(I)
 Una volta stabilito un punto di partenza, si può percorrere la ramificazione
@@ -95,42 +95,42 @@ i nodi hanno alcune proprietà che si possono consultare, per vederne le caratte
 * previousElementSibling 
 * childElementCount 
 
-## Manipolazione di elementi
+# Manipolare elementi del DOM
 Una volta visti i metodi per selezione e introspezione, vediamo come manipolare il DOM.
 
 ## Attributi
-Esistono metodi specifici per l'accesso agli attributi di un elemento.
-* getAttribute 
-* setAttribute 
-* hasAttribute 
-* removeAttribute 
+Sono disponibili metodi specifici per l'accesso agli attributi di un elemento.
+* getAttribute() 
+* setAttribute() 
+* hasAttribute() 
+* removeAttribute() 
 ## Contenuti (I)
-Esistono metodi per la manipolazione del contenuto.
+Sono disponibili metodi per la manipolazione del contenuto.
 * innerHTML 
 * outerHTML 
-* insertAdjacentHTML 
-* beforebegin 
-* afterbegin 
-* beforeend 
-* afterend 
+* insertAdjacentHTML() 
+* beforebegin() 
+* afterbegin() 
+* beforeend() 
+* afterend() 
 ## Contenuti (II)
 per accedere al contenuto di un elemento, esistono due metodi
 * textContext, per HTMLElement
 * data, per Node
 
 ## Creazione di nodi
-Esistono tre metodi per la creazione di nuovi nodi.
-* createElement 
-* createTextNode 
-* cloneNode 
+Sono disponibili tre metodi per la creazione di nuovi nodi.
+* createElement() 
+* createTextNode() 
+* cloneNode() 
 ## Manipolazione di elementi
-Ci sono alcune funzioni per la manipulazione di nodi dell'albero.
-* appendChild 
-* insertBefore 
-* removeChild 
-* replaceChild 
+Ci sono metodi per la manipolazione di nodi dell'albero.
+* appendChild() 
+* insertBefore() 
+* removeChild() 
+* replaceChild() 
 ## Posizionamento (I)
-Esistono vari metodi utili per conoscere le posizioni degli elementi, E le loro dimensioni.
+Sono disponibili vari metodi utili per conoscere le posizioni degli elementi, E le loro dimensioni.
 * w.pageXOffset 
 * w.pageYOffset 
 * w.innerWidth 
@@ -164,7 +164,7 @@ Un evento è qualcosa che scatena una azione specifica nel browser.
 * Clicca un button. 
 * Esegue azioni col mouse o la taastiera. 
 
-Esistono molte forme di aggiungere eventi ad una pagina.
+Sono disponibili moltimodi per aggiungere eventi ad una pagina.
 * Categorie di eventi
 * Device-dependent input events.
 * Tastiera, mouse, dispositivi Touch.
@@ -181,7 +181,7 @@ Esistono molte forme di aggiungere eventi ad una pagina.
 
 ## Cattura di eventi
 
-Esistono due metodi per registrare eventi.
+Sono disponibili due metodi per registrare eventi.
 ```javascript
 b.onclick=function(){console.log('asdf')}
 ```
@@ -214,7 +214,7 @@ ajax.send()
     Fonte: https://en.wikipedia.org/wiki/JSON 
 
 ## Trasformazione
-Esistono due metodi per la transformazione tra JSON e Oggetti di JavaScript.
+Sono disponibili due metodi per la transformazione tra JSON e Oggetti di JavaScript.
 
     JSON.stringify Oggetto -> JSON
     Ritorna una stringa in formato JSON corrispondente ad un valore specificato.
