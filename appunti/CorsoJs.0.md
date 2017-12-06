@@ -194,11 +194,11 @@ Valore undefined    |    undefined
 # Strutture del linguaggio
 
 ## Costrutti di controllo del flusso
-    * [Strutture condizionali](./Lesson1_05_Control_flow.md)
+* [Strutture condizionali](./Lesson1_05_Control_flow.md)
 
 ## Costrutti di iterazione
-    * [For Loop](./Lesson1_05_Control_flow.md) 
-    * [While Loop](./Lesson1_05_Control_flow.md) 
+* [For Loop](./Lesson1_05_Control_flow.md) 
+* [While Loop](./Lesson1_05_Control_flow.md) 
 
 
 # Tipi di dato
