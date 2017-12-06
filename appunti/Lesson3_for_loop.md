@@ -1,6 +1,6 @@
-#Lesson3 Loop : For
-## Why use *for* loops ? 
-Instead of writing 5 lines of code.... 
+#Costrutti iterativi (Loop): For 
+## Perché usaree i *for* loops ? 
+Invece di scrivere 5 linee di codice.... 
 
 ```javascript
 console.log(1);
@@ -10,7 +10,7 @@ console.log(4);
 console.log(5);
 ```
 
-By using the for loop, you are able the lines of code and it is much more efficient. 
+Usando il for loop, si può scrivere un codice più efficiente. 
 
 ```javascript
 for (var counter = 1; counter < 6; counter++) {
@@ -18,8 +18,8 @@ for (var counter = 1; counter < 6; counter++) {
 }
 ```
 
-## Syntax for loops 
-### 1. Starting
+## Syntassi for loops 
+### 1. Partenza
 
 ```javascript
 for (var i = 1; i < 11; i = i + 1) {
