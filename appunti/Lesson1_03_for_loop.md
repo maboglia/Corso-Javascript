@@ -1,4 +1,4 @@
-#Costrutti iterativi (Loop): For 
+# Costrutti iterativi (Loop): For 
 
 
 
@@ -26,16 +26,7 @@ try{
 ```
 
 
-
-
-
-
-
-
-
-
-
-## Perché usaree i *for* loops ? 
+## Perché usare i *for* loops ? 
 Invece di scrivere 5 linee di codice.... 
 
 ```javascript

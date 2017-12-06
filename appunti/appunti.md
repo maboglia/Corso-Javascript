@@ -1,7 +1,7 @@
 # appunti  
 
 
-##javascript 
+## javascript 
 * esercizi: 
     * todo-list, 
     * slideshow banksy, 
