@@ -1,8 +1,10 @@
 # appunti  
 
 
-## javascript 
-* esercizi: 
+## javascript
+
+**esercizi**
+
     * todo-list, 
     * slideshow banksy, 
     * lampadina accendi-spegni
@@ -12,7 +14,9 @@
     * trenino che si muove, collisione
     * RockScissorsPaper
     * Guess the number
-* Javascript advanced
+
+**Javascript advanced**
+
     * localstorage
     * sessionstorage
     * drag & drop
