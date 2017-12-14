@@ -84,3 +84,34 @@ e sapendo che l’importo annuale è 240 € e il tasso è il 5%.
 * 2. Definire in JavaScript una funzione che calcola e restituisce la somma delle cifre di un intero che appartiene all’intervallo [0, 100].
     * La funzione ha un parametro: n.
     * Invocare la funzione con i seguenti valori: 0, 1, 23, 99.
+
+
+## Esercizi 
+1. La media aritmetica semplice di n numeri è così definita [Wikipedia, alla
+voce Media (statistica)]:
+m = (x1 + x2 ... + xn) / n
+
+1. Definire in JavaScript una funzione che calcola e restituisce la media arit-
+metica semplice degli elementi di un array a formato da n numeri.
+    La funzione ha un parametro: a.
+    Invocare la funzione con i seguenti valori:
+    [3, 12, 24]
+    [5, 7, 9, -12, 0].
+2. Dato un array a e un valore k, il numero di occorrenze di k in a è definito
+    come il numero degli elementi di a il cui valore è uguale a k.
+    * Definire in JavaScript una funzione che calcola e restituisce il numero di
+    occorrenze del valore k nell’array a.
+    * La funzione ha due parametri: a, k.
+    * Invocare la funzione con i seguenti valori:
+        * [10, −5, 34, 0], 1
+        * [10, −5, 34, 0], −5.
+3. Definire in JavaScript un predicato che verifica se ogni elemento di un array di numeri (tranne il primo) è pari alla somma degli elementi che lo precedono.
+    La funzione ha un parametro: a.
+    Invocare la funzione con i seguenti valori:
+        [1, 2, 6, 10, 32]
+        [1, 2, 6, 8, 31].
+4. Definire in JavaScript una funzione che ha come parametro un array a di numeri e che restituisce un nuovo array che contiene le differenze tra gli elementi adiacenti di a.
+    La funzione ha un parametro: a.
+    Invocare la funzione con i seguenti valori:
+    [1, 2, -6, 0, 3]
+    [2, 2, 3, 3, 4, 4].    
