@@ -93,7 +93,7 @@ caso contrario, il campo di testo non deve essere visibile.
 3. Calcolare il costo di un biglietto aereo acquistato una settimana prima della partenza, sapendo che il costo di base è pari a 200 € (se acquistato il giorno della partenza) e che questo costo diminuisce del 2,3% al giorno (se acquistato prima del giorno della partenza).
 4. Calcolare il costo di un prodotto usando la seguente formula costo=( prezzo prezzo * 0,20 ) − sconto e sapendo che il prezzo è 100 € e lo sconto è 30 €.
 5. Calcolare la rata mensile di un mutuo annuale usando la seguente formula 
-    * rata = importo * (1tasso) / 12
+    * rata = importo * (1+tasso) / 12
     * e sapendo che l'importo annuale è 240 € e il tasso è il 5%.
 6. Definire in JavaScript una funzione che verifica se l'intersezione dell'intervallo [a, b) con l'intervallo [c, d) è vuota.
     * la funzione ha quattro parametri: a, b, c, d.
