@@ -66,10 +66,13 @@ console.log('Hello, World!')
 alert('Hello world')
 ```
 ## Come mostrare a video i dati
-        window.alert()
-        document.write()
-        innerHTML
-        console.log()
+* dialogs
+    * [window.alert()]()
+    * [window.prompt()](../esempi/01_basic_foundations/009_prompt.html)
+    * [window.confirm()](../esempi/01_basic_foundations/010_confirm.html)
+* document.write()
+* innerHTML
+* console.log()
 
 
 # Strutture del linguaggio 
@@ -199,6 +202,7 @@ Valore undefined    |    undefined
 
 ## Costrutti di iterazione
 * [For Loop](./Lesson1_05_Control_flow.md) 
+    * [esempi](../esempi/02_control_flow/02_for_loop.js)
 * [While Loop](./Lesson1_05_Control_flow.md) 
 
 
