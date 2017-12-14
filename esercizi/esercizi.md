@@ -1,10 +1,10 @@
 # Esercizi JavaScript
 
 ## prompt + alert
-    Creare uno script che chieda il nome e il cognome all'utente prima che la pagina venga caricata.
-    Provare a chiamare una finestra di dialogo (di tipo alert) che contenga la scritta "Benvenuto"+ nome + cognome.
-    In fondo alla pagina deve essere scritto "Benvenuto"+ nome + cognome.
-    mdificare lo script per mostrare il messaggio di benvenuto solo se l'utente è accreditato
+Creare uno script che chieda il nome e il cognome all'utente prima che la pagina venga caricata.
+Provare a chiamare una finestra di dialogo (di tipo alert) che contenga la scritta "Benvenuto"+ nome + cognome.
+In fondo alla pagina deve essere scritto "Benvenuto"+ nome + cognome.
+mdificare lo script per mostrare il messaggio di benvenuto solo se l'utente è accreditato
 
 
 ## prompt()	
