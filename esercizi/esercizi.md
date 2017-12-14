@@ -23,7 +23,8 @@ Calcolare il numero dei minuti di una giornata, di una settimana, di un mese di 
 Verificare se conviene acquistare una camicia che costa 63 € in un nego- zio che applica uno sconto fisso di 10 € o in un altro che applica uno sconto del 17%.	
 
 ## warm up 11
-prompt() + alert()* Creare uno script che chieda il nome e il cognome all'utente prima che la pagina venga caricata.
+prompt() + alert()
+* Creare uno script che chieda il nome e il cognome all'utente prima che la pagina venga caricata.
 * Provare a chiamare una finestra di dialogo (di tipo alert) che contenga la scritta "Benvenuto"+ nome + cognome.
 * In fondo alla pagina deve essere scritto "Benvenuto"+ nome + cognome.
 
@@ -35,13 +36,15 @@ prompt()
 
 	
 ## warm up 13
-prompt() + array[] * Creare una pagina in cui il sistema chiede all'utente il proprio nome
+prompt() + array[] 
+* Creare una pagina in cui il sistema chiede all'utente il proprio nome
 * Il sistema verifica il nome e comunica all'utente se è un amministratore o meno
 * E' dato un array di nomi che hanno i diritti di amministratore
 
 	
 ## warm up 14
-3 colori* Chiedere tre colori in input all'utente: uno per il testo, uno per lo sfondo e uno per il titolo.
+3 colori
+* Chiedere tre colori in input all'utente: uno per il testo, uno per lo sfondo e uno per il titolo.
 * Chiedere alll'utente la dimensione del carattere di base (da 1 a 7).
 * Determinare la dimensione e le caratteristiche di H1 (+3, grassetto), H2 (+2) e H3 (+1, grassetto, corsivo) rispetto alle caratteristiche inserite dall'utente per il carattere.
 * Creare un testo in cui siano evidenti queste caratteristiche.
@@ -52,34 +55,34 @@ prompt() + array[] * Creare una pagina in cui il sistema chiede all'utente il pr
 
 
 ## warm up 15
-Creare una finestra pop-up per chiedere il nome dell'utente e scrivere sulla pagina HTML il messaggio
-"Ciao nome" formattato come heading di primo livello (tag h1). Se l'utente non inserisce il nome scrivere
-il messaggio "Ciao Utente Anonimo!"
+* Creare una finestra pop-up per chiedere il nome dell'utente e scrivere sulla pagina HTML il messaggio "Ciao nome" formattato come heading di primo livello (tag h1). 
+*Se l'utente non inserisce il nome scrivere il messaggio "Ciao Utente Anonimo!"
 
 ## warm up 16
-Preparare uno script che mostri saluto adatto all'ora del giorno (es: Buon pomeriggio, Buona notte,
-ecc.). Usare l'oggetto Date() e cercare il metodo adatto su un sito di reference JavaScript, es:
-http://www.w3schools.com/jsref/default.asp
+* Preparare uno script che mostri saluto adatto all'ora del giorno 
+* (es: Buon pomeriggio, Buona notte, ecc.). 
+* Usare l'oggetto Date() e cercare il metodo adatto su un sito di reference JavaScript, 
+* http://www.w3schools.com/jsref/default.asp
 
 ## warm up 17
-Creare un form HTML in cui l'utente deve introdurre username e passwork. 
+* Creare un form HTML in cui l'utente deve introdurre username e password. 
 * Non consentire all'utente di schiacciare il bottone Submit se
 * Non ha inserito lo username
 * La password non ha almeno 5 caratteri
 
-In questi casi, segnalare un opportuno messaggio di errore a fianco del relativo campo del form.
+* In questi casi, segnalare un opportuno messaggio di errore a fianco del relativo campo del form.
 
 ## warm up 18
-Creare una pagina HTML il cui colore di sfondo vari a seconda delle preferenze dell'utente, che lo seleziona tramite un'interfaccia.
+* Creare una pagina HTML il cui colore di sfondo vari a seconda delle preferenze dell'utente, che lo seleziona tramite un'interfaccia.
 
 ## warm up 19
-Creare un form HTML per selezionare un colore di sfondo da un menu a tendina. Dopo aver scelto il colore dal menu, l'utente deve premere il bottone "Change color".
+* Creare un form HTML per selezionare un colore di sfondo da un menu a tendina. Dopo aver scelto il colore dal menu, l'utente deve premere il bottone "Change color".
 
 ## warm up 20
-Creare un form HTML per selezionare un colore di sfondo da un menu a tendina. La lista di elementi include
-alcuni colori e l'opzione "Altro...". Se l'utente sceglie "Altro", deve comparire un campo di testo in cui
-scrivere il colore desiderato (in inglese, così potete usarlo direttamente come attributo del background). In
-caso contrario, il campo di testo non deve essere visibile.
+* Creare un form HTML per selezionare un colore di sfondo da un menu a tendina. 
+* La lista di elementi include alcuni colori e l'opzione "Altro...". 
+* Se l'utente sceglie "Altro", deve comparire un campo di testo in cui scrivere il colore desiderato (in inglese, così potete usarlo direttamente come attributo del background). 
+* In caso contrario, il campo di testo non deve essere visibile.
 
 
 
