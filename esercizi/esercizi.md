@@ -54,3 +54,39 @@ Verificare se l’area di un quadrato di lato quattro è minore dell’area di 
 Calcolare il numero dei minuti di una giornata, di una settimana, di un mese di 30 giorni, di un anno non bisestile.
 ### es 10. 
 Verificare se conviene acquistare una camicia che costa 63 € in un nego- zio che applica uno sconto fisso di 10 € o in un altro che applica uno sconto del 17%.	
+
+
+## Esercizi
+
+* 1. Calcolare il costo di un viaggio in automobile, sapendo che la lunghezza è
+750 Km, che il consumo di gasolio è 3,2 litri ogni 100 Km, che un litro di
+gasolio costa 1,432 €, che due terzi del percorso prevedono un pedaggio
+pari a 1,2 € ogni 10 Km.
+* 2. Calcolare il costo di una telefonata, sapendo che la durata è pari a 4 mi-
+nuti e 23 secondi, che il costo alla chiamata è pari a 0,15 €, che i primi 30
+secondi sono gratis, che il resto della telefonata costa 0,24 € al minuto.
+* 3. Calcolare il costo di un biglietto aereo acquistato una settimana prima
+della partenza, sapendo che il costo di base è pari a 200 € (se acquistato
+il giorno della partenza) e che questo costo diminuisce del 2,3% al giorno
+(se acquistato prima del giorno della partenza).
+* 4. Calcolare il costo di un prodotto usando la seguente formula
+costo= prezzo prezzo⋅0,20−sconto
+e sapendo che il prezzo è 100 € e lo sconto è 30 €.
+* 5. Calcolare la rata mensile di un mutuo annuale usando la seguente formu-
+la
+importo
+rata=
+⋅1tasso
+12
+e sapendo che l’importo annuale è 240 € e il tasso è il 5%.
+
+## Esercizi
+* 1. Definire in JavaScript un predicato che verifica se l’intersezione dell’in-
+tervallo [a, b) con l’intervallo [c, d) è vuota.
+Il predicato ha quattro parametri: a, b, c, d.
+Invocare il predicato con i seguenti valori: 2, 4, 5, 7; 2, 4, 4, 7; 2, 4, 3, 7; 5,
+7, 2, 4; 4, 7, 2, 4; 3, 7, 2, 4.
+* 2. Definire in JavaScript una funzione che calcola e restituisce la somma
+delle cifre di un intero che appartiene all’intervallo [0, 100).
+La funzione ha un parametro: n.
+Invocare la funzione con i seguenti valori: 0, 1, 23, 99.
