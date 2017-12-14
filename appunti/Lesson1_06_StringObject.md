@@ -79,3 +79,4 @@ s.replace("h", "H")  // => "Hello, world"
 s.toUpperCase()      // => "HELLO, WORLD"
 ```
 
+[esempi](../esempi/03_arrays_strings)
