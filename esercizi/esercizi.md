@@ -56,7 +56,7 @@ Verificare se conviene acquistare una camicia che costa 63 € in un nego- zio c
 
 ## Creare una finestra pop-up per chiedere 
 il nome dell'utente e scrivere sulla pagina HTML il messaggio
-"Ciao nome" formattato come heading di primo livello (tag <h1>). Se l'utente non inserisce il nome scrivere
+"Ciao nome" formattato come heading di primo livello (tag h1). Se l'utente non inserisce il nome scrivere
 il messaggio "Ciao Utente Anonimo!"
 
 ## Preparare uno scritp che mostri saluto adatto 
