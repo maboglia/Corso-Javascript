@@ -128,9 +128,6 @@ Verifica se un oggetto è instanza di qualche prototipo.
 #### typeof
 Ritorna una stringa indicando il tipo di dato che ha una variabile.
 
-#### var
-Parola chiave per la dichiarazione di una variabile.
-
 #### delete
 Operatore che rimuove proprietà di un oggetto.
 
@@ -145,12 +142,16 @@ Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
     Gli interpreti di JavaScript trattano i fine linea come fine istruzione, se 
     la istruzione successiva non può interpretarsi come continuazione della precedente.
 
+#### var, let
+Parola chiave per la dichiarazione di una variabile.
+
 ## Variabili
     identificatore univoco
     operatori di assignment
     dichiarazione/creazione di variabili
     dichiarazione/creazione su una sola riga
-    value undefined
+    valore undefined
+[esempi](../esempi/01_basic_foundations/001_var.html)
 
 ## operatori
     operatori aritmetici
@@ -160,7 +161,7 @@ Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
     comparazione e operatori logici
     operatori e operandi
     precedenza degli operatori
-
+[esempi](../esempi/01_basic_foundations/011_precedenzaOperatori.html)
 
 ## Commenti
 Esistono due tipi di commenti:
@@ -230,6 +231,10 @@ null
 NaN
 ''
 ```
+[esempi](../esempi/01_basic_foundations/012_boolean.html)
+[esempi](../esempi/01_basic_foundations/018_ANDLogico.html)
+[esempi](../esempi/01_basic_foundations/019_ORLogico.html)
+[esempi](../esempi/01_basic_foundations/020_ORLogico.html)
 
 ## Number
 Number è la rappresentazione di tipo oggetto di un tipo numerico.
