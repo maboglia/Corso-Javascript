@@ -22,29 +22,26 @@ Calcolare il numero dei minuti di una giornata, di una settimana, di un mese di 
 ### warm up 10. 
 Verificare se conviene acquistare una camicia che costa 63 € in un nego- zio che applica uno sconto fisso di 10 € o in un altro che applica uno sconto del 17%.	
 
-
-
-
-## prompt() + alert()
-* Creare uno script che chieda il nome e il cognome all'utente prima che la pagina venga caricata.
+## warm up 11
+prompt() + alert()* Creare uno script che chieda il nome e il cognome all'utente prima che la pagina venga caricata.
 * Provare a chiamare una finestra di dialogo (di tipo alert) che contenga la scritta "Benvenuto"+ nome + cognome.
 * In fondo alla pagina deve essere scritto "Benvenuto"+ nome + cognome.
 
-## prompt()	
-
+## warm up 12
+prompt()	
 * Creare una pagina che chieda all'utente di fornire la propria autorizzazione al trattamento dei dati.
 * Nel caso non sia data, scrivere "Autorizzazione non concessa".
 * Nel caso contrario scrivere "Autorizzazione concessa".
 
 	
-## prompt() + array[] 
-* Creare una pagina in cui il sistema chiede all'utente il proprio nome
+## warm up 13
+prompt() + array[] * Creare una pagina in cui il sistema chiede all'utente il proprio nome
 * Il sistema verifica il nome e comunica all'utente se è un amministratore o meno
 * E' dato un array di nomi che hanno i diritti di amministratore
 
 	
-## 3 colori
-* Chiedere tre colori in input all'utente: uno per il testo, uno per lo sfondo e uno per il titolo.
+## warm up 14
+3 colori* Chiedere tre colori in input all'utente: uno per il testo, uno per lo sfondo e uno per il titolo.
 * Chiedere alll'utente la dimensione del carattere di base (da 1 a 7).
 * Determinare la dimensione e le caratteristiche di H1 (+3, grassetto), H2 (+2) e H3 (+1, grassetto, corsivo) rispetto alle caratteristiche inserite dall'utente per il carattere.
 * Creare un testo in cui siano evidenti queste caratteristiche.
@@ -54,32 +51,32 @@ Verificare se conviene acquistare una camicia che costa 63 € in un nego- zio c
 * Nel caso l'utente inserisca al posto dei tre colori il testo "*"deve essere caricato un foglio di stile esterno.
 
 
-## Creare una finestra pop-up per chiedere 
-il nome dell'utente e scrivere sulla pagina HTML il messaggio
+## warm up 15
+Creare una finestra pop-up per chiedere il nome dell'utente e scrivere sulla pagina HTML il messaggio
 "Ciao nome" formattato come heading di primo livello (tag h1). Se l'utente non inserisce il nome scrivere
 il messaggio "Ciao Utente Anonimo!"
 
-## Preparare uno script che mostri saluto adatto 
-all'ora del giorno (es: Buon pomeriggio, Buona notte,
+## warm up 16
+Preparare uno script che mostri saluto adatto all'ora del giorno (es: Buon pomeriggio, Buona notte,
 ecc.). Usare l'oggetto Date() e cercare il metodo adatto su un sito di reference JavaScript, es:
 http://www.w3schools.com/jsref/default.asp
 
-## Creare un form HTML 
-in cui l'utente deve introdurre username e passwork. 
+## warm up 17
+Creare un form HTML in cui l'utente deve introdurre username e passwork. 
 * Non consentire all'utente di schiacciare il bottone Submit se
 * Non ha inserito lo username
 * La password non ha almeno 5 caratteri
 
 In questi casi, segnalare un opportuno messaggio di errore a fianco del relativo campo del form.
 
-## Creare una pagina HTML il cui colore di sfondo vari 
-a seconda delle preferenze dell'utente, che lo seleziona tramite un'interfaccia.
+## warm up 18
+Creare una pagina HTML il cui colore di sfondo vari a seconda delle preferenze dell'utente, che lo seleziona tramite un'interfaccia.
 
-## Creare un form HTML per selezionare un colore di sfondo 
-da un menu a tendina. Dopo aver scelto il colore dal menu, l'utente deve premere il bottone "Change color".
+## warm up 19
+Creare un form HTML per selezionare un colore di sfondo da un menu a tendina. Dopo aver scelto il colore dal menu, l'utente deve premere il bottone "Change color".
 
-## Creare un form HTML per selezionare un colore di sfondo 
-da un menu a tendina. La lista di elementi include
+## warm up 20
+Creare un form HTML per selezionare un colore di sfondo da un menu a tendina. La lista di elementi include
 alcuni colori e l'opzione "Altro...". Se l'utente sceglie "Altro", deve comparire un campo di testo in cui
 scrivere il colore desiderato (in inglese, così potete usarlo direttamente come attributo del background). In
 caso contrario, il campo di testo non deve essere visibile.
@@ -138,11 +135,7 @@ caso contrario, il campo di testo non deve essere visibile.
         * [2, 2, 3, 3, 4, 4].    
 
 
----
-
-
-## Scrivere un documento HTML contenente un form 
-con i seguenti campi:
+13. Scrivere un documento HTML contenente un form con i seguenti campi:
 * cognome (casella di testo editabile lunga 40 caratteri)
 * nome (casella di testo editabile lunga 30 caratteri)
 * matricola (casella di testo editabile lunga 12 caratteri)
@@ -152,19 +145,19 @@ con i seguenti campi:
 * richieste particolari (area di testo editabile di 12 righe per 60 colonne)
 * bottone di invio
 * bottone di reset
-### Aggiungere al documento HTML una funzione JavaScript 
-che esegue i seguenti controlli:
+
+Aggiungere al documento HTML una funzione JavaScript che esegue i seguenti controlli:
 * verifica che il cognome non sia vuoto;
 * verifica che il nome non sia vuoto;
 * verifica che la matricola sia un numero;
 * verifica che sia stata selezionata una regione;
 * verifica che o l'email o il telefono siano non vuoti.
-### Fare in modo che, nel documento HTML, tale funzione JavaScript venga eseguita quando l'utente invia il modulo.
+
+Fare in modo che, nel documento HTML, tale funzione JavaScript venga eseguita quando l'utente invia il modulo.
 
 
 
-## Scrivere un documento HTML contenente una form contenente i seguenti
-campi:
+14. Scrivere un documento HTML contenente una form contenente i seguenti campi:
 * cognome e nome (casella di testo editabile lunga 50 caratteri)
 * sesso (selezionabile tramite due bottoni radio)
 * corso (da scegliere da un menu che riporta diversi corsi)
@@ -173,7 +166,8 @@ campi:
 * descrizione del lavoro svolto (casella di testo editabile lunga 80 caratteri)
 * bottone di invio
 * bottone di reset
-(b) Aggiungere al documento HTML una funzione JavaScript che esegue i seguenti controlli:
+
+Aggiungere al documento HTML una funzione JavaScript che esegue i seguenti controlli:
 * mentre l'utente edita i campi della form:
     * subito dopo che l'utente ha editato il campo CAP, deve verificare che tale campo sia un numero di 5 cifre;
     * subito dopo che l'utente ha editato il campo nome e cognome, deve verificare che tale campo non sia un numero;
