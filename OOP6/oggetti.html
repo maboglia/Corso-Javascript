@@ -1,0 +1,47 @@
+<html>
+<head></head>	
+
+<body>
+	
+
+
+
+
+
+
+	<script>
+		
+
+		var film1 = {
+			titolo: 'avenger',
+			attore: 'johansson'
+		};
+
+		var film2 = {
+			titolo: 'il gladiatore',
+			attore: 'crowe'
+		};
+
+		var film = [];
+
+		film.push(film1);
+		film.push(film2);
+
+
+		document.writeln('<pre>');
+		for (var i = film.length - 1; i >= 0; i--) {
+			document.writeln(film[i].titolo);
+			document.writeln(film[i].attore);
+		}
+		document.writeln('</pre>');
+
+
+
+
+	</script>
+</body>
+
+
+
+
+</html>
