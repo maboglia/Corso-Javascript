@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Esempio di ereditarietà in Javascript</title>
+<script type="text/javascript">
+function Rettangolo(w,h) {
+	this.width = w;
+	this.height = h;
+}
+Rettangolo.prototype.area = function() {
+	return (this.width * this.height);
+}
+Rettangolo.prototype.toString = function() {
+	return "Rettangolo of width: " + this.width + " and height: " + this.height;
+}
+Rettangolo.prototype.valueOf = function() {
+	return this.area();
+}
+Rettangolo.prototype.equals = function(oRect) {
+	return (this.width == oRect.width && this.height == oRect.height);
+}
+Rettangolo.prototype.compareTo = function(oRect) {
+	return (this.area() - oRect.area());
+}
+
+function RettangoloTreDim(w,h,d) {
+	Rettangolo.call(this,w,h);
+	this.treDim = d;
+}
+RettangoloTreDim.prototype = new Rettangolo();
+RettangoloTreDim.prototype.constructor = RettangoloTreDim;
+
+RettangoloTreDim.prototype.volume = function() {
+	return (this.area() * this.treDim);
+}
+RettangoloTreDim.prototype.toString = function() {
+	return "RettangoloTreDim with width: " + this.width + " & height: " + this.height + " & depth: " + this.treDim;
+}
+
+var mioRettangolo = new Rettangolo(5,6);
+var mioRettangoloTreDim = new RettangoloTreDim(7,8,9);
+
+alert(mioRettangoloTreDim.volume());
+alert(mioRettangoloTreDim.area());
+
+alert(mioRettangolo instanceof RettangoloTreDim);
+
+/*
+var mioRettangolo2 = new Rettangolo(7,8);
+var mioRettangolo3 = new Rettangolo(5,6);
+var mioRettangolo4 = mioRettangolo;
+
+alert(typeof mioRettangolo);
+alert(mioRettangolo instanceof Rettangolo);
+alert(mioRettangolo instanceof Object);
+alert(mioRettangolo.toString());
+
+alert (mioRettangolo.equals(mioRettangolo2));
+alert (mioRettangolo.equals(mioRettangolo3));
+alert (mioRettangolo.equals(mioRettangolo4));
+*/
+</script>
+</head>
+
+<body>
+</body>
+
+</html>
