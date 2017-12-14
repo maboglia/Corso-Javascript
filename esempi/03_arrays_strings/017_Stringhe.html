@@ -1,48 +1,69 @@
 <!DOCTYPE html/>
 <html>
-	<head>
-		<title>Stringhe</title>
-		<meta charset="utf-8">
-	</head>
-	<body>
-		<h1>todo list</h1>
-		<input type="text" id="todo" />
-		<button onclick="inserisciLista()">Aggiungi</button>
-	
-	<ul id="test">
 
-	</ul>
+<head>
+    <title>Metodo indexOf() su Stringhe</title>
+    <meta charset="utf-8">
+</head>
 
-	<script type="text/javascript">
-
-		//stringa mioTesto di prova
-		var mioTesto = "Lorem ipsum qualche cosa qua";
-		var temp = mioTesto.indexOf("qua");
-		alert(mioTesto.indexOf("qua", temp + 1));
-		var todoItem = document.getElementById('todo');
-		var testJS = document.getElementById('test');
-		//alert(testJS.innerHTML);
-
-		testJS.innerHTML = mioTesto + " è lungo " +mioTesto.length + " caratteri";
+<body>
+    <script>
+        document.write(document.title);
+    </script>
 
 
-		 if(mioTesto.indexOf("ipsum") > -1) 
-		 	testJS.innerHTML += "la parola ipsum è contenuta nel tuo testo"  ;
-		 else
-		 	testJS.innerHTML = "la parola ipsum NON è contenuta nel tuo testo"  ;
+    <ul id="test">
 
-		 testJS.innerHTML = test.innerHTML + " ciao";
+    </ul>
+    <script type="text/javascript">
+        var mioTesto = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officia nisi maxime rem eos perspiciatis perferendis optio iusto repudiandae consequatur voluptate, accusamus mollitia atque amet sint aliquam dolorum exercitationem ipsum!";
+        var posizione1 = mioTesto.indexOf("ipsum");
+        var messaggio1 = ("ho trovato ipsum alla posizione: " + posizione1);
+        var messaggio2 = ("ho trovato ipsum anche alla posizione: " + mioTesto.indexOf("ipsum", posizione1 + 1));
+        var testJS = document.getElementById('test');
+        console.log(testJS);
+        testJS.innerHTML = "<li>" + mioTesto + "</li>";
+        testJS.innerHTML += "<li>" + "Questo testo è lungo " + mioTesto.length + " caratteri " + "</li>";
+
+        testJS.innerHTML += "<li>" + messaggio1 + "</li>";
+        console.log(messaggio1);
+
+        testJS.innerHTML += "<li>" + messaggio2 + "</li>";
+        console.log(messaggio2);
+
+        if (posizione1 > -1)
+            testJS.innerHTML += "<li>la parola ipsum è contenuta nel tuo testo</li>";
+        else
+            testJS.innerHTML = "<li>la parola ipsum NON è contenuta nel tuo testo</li>";
+
+        testJS.innerHTML = test.innerHTML + "<li>fine eleborazione :)</li>";
+    </script>
+
+    <script>
+        var text = "Bla bla bla bla bla bla Paperino  " +
+            "bla bla bla Paperino bla bla Paperino bla bla " +
+            "bla bla bla bla bla Paperino ";
+
+        var nome = "Paperino";
+        var ricorrenze = [];
+
+        // Cerco la "P"
+        for (var i = 0; i < text.length; i++) {
+            if (text[i] === "P") {
+                for (var j = i; j < (nome.length + i); j++) {
+                    ricorrenze.push(text[j]);
+                }
+            }
+        }
+
+        if (ricorrenze.length === 0) {
+            console.log("Nome trovato!");
+        } else {
+            console.log(ricorrenze);
+        }
+    </script>
 
 
-function inserisciLista() {
-	
-	testJS.innerHTML += ("<li>" + todoItem.value +"</li>");
+</body>
 
-}
-
-
-	</script>
-
-
-	</body>
 </html>

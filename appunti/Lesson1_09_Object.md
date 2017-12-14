@@ -117,6 +117,10 @@ Ritorna la rappresentazione in stringa di un oggetto.
 Ritorna la forma primitiva di un oggetto.
 
 
+### Esempi
+[objects](../esempi/04_objects)
+
+
 
 # Recap 
 

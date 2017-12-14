@@ -1,23 +1,32 @@
 <!DOCTYPE html/>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>document metodo typeof</title>
-	</head>
-	<body>
 
-		
+<head>
+    <meta charset="utf-8" />
+    <title>document metodo typeof</title>
+</head>
 
-		<script type="text/javascript">
-			document.write(typeof 69, "<br/>");
-			document.write(typeof ("ciao ciao"), "<br/>");
-			document.write(typeof (true), "<br/>");
+<body>
 
 
 
-		</script>
+    <script type="text/javascript">
+        document.write(typeof 69, "<br/>");
+        document.write(typeof("ciao ciao"), "<br/>");
+        document.write(typeof(true), "<br/>");
 
 
 
-	</body>
+        //controllo complesso di una variabile usando typeOf e valueOf
+        if (((typeof unknownVariable != 'undefined ' && unknownVariable) &&
+                unknownVariable.length() > 0) &&
+            typeof unknownVariable.valueOf() == 'string ') {
+            //istruzioni
+        }
+    </script>
+
+
+
+</body>
+
 </html>
