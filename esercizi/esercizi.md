@@ -70,23 +70,17 @@ della partenza, sapendo che il costo di base è pari a 200 € (se acquistato
 il giorno della partenza) e che questo costo diminuisce del 2,3% al giorno
 (se acquistato prima del giorno della partenza).
 * 4. Calcolare il costo di un prodotto usando la seguente formula
-costo= prezzo prezzo⋅0,20−sconto
+costo=( prezzo prezzo * 0,20 ) − sconto
 e sapendo che il prezzo è 100 € e lo sconto è 30 €.
-* 5. Calcolare la rata mensile di un mutuo annuale usando la seguente formu-
-la
-importo
-rata=
-⋅1tasso
-12
+* 5. Calcolare la rata mensile di un mutuo annuale usando la seguente formula 
+ rata = importo * (1tasso) / 12
 e sapendo che l’importo annuale è 240 € e il tasso è il 5%.
 
 ## Esercizi
-* 1. Definire in JavaScript un predicato che verifica se l’intersezione dell’in-
-tervallo [a, b) con l’intervallo [c, d) è vuota.
-Il predicato ha quattro parametri: a, b, c, d.
-Invocare il predicato con i seguenti valori: 2, 4, 5, 7; 2, 4, 4, 7; 2, 4, 3, 7; 5,
+* 1. Definire in JavaScript una funzione che verifica se l’intersezione dell’intervallo [a, b) con l’intervallo [c, d) è vuota.
+    * la funzione ha quattro parametri: a, b, c, d.
+    * Invocare la funzione con i seguenti valori: 2, 4, 5, 7; 2, 4, 4, 7; 2, 4, 3, 7; 5,
 7, 2, 4; 4, 7, 2, 4; 3, 7, 2, 4.
-* 2. Definire in JavaScript una funzione che calcola e restituisce la somma
-delle cifre di un intero che appartiene all’intervallo [0, 100).
-La funzione ha un parametro: n.
-Invocare la funzione con i seguenti valori: 0, 1, 23, 99.
+* 2. Definire in JavaScript una funzione che calcola e restituisce la somma delle cifre di un intero che appartiene all’intervallo [0, 100].
+    * La funzione ha un parametro: n.
+    * Invocare la funzione con i seguenti valori: 0, 1, 23, 99.
