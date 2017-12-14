@@ -1,24 +1,32 @@
 # Esercizi JavaScript
 
-
 ### warm up 1. 
 Calcolare la somma dei primi quattro multipli di 13.
+
 ### warm up 2. 
 Verificare se la somma dei primi sette numeri primi è maggiore della somma delle prime tre potenze di due.
+
 ### warm up 3. 
 Verificare se 135 è dispari, 147 è pari, 12 è dispari, 200 è pari.
+
 ### warm up 4. 
 Calcolare l'area di un triangolo rettangolo i cui cateti sono 23 e 17.
+
 ### warm up 5. 
 Calcolare la circonferenza di un cerchio il cui raggio è 14.
+
 ### warm up 6. 
 Calcolare l'area di un cerchio il cui diametro è 47.
+
 ### warm up 7. 
 Calcolare l'area di un trapezio la cui base maggiore è 48, quella minore è 25 e l'altezza è 13.
+
 ### warm up 8. 
 Verificare se l'area di un quadrato di lato quattro è minore dell'area di un cerchio di raggio tre.
+
 ### warm up 9. 
 Calcolare il numero dei minuti di una giornata, di una settimana, di un mese di 30 giorni, di un anno non bisestile.
+
 ### warm up 10. 
 Verificare se conviene acquistare una camicia che costa 63 € in un nego- zio che applica uno sconto fisso di 10 € o in un altro che applica uno sconto del 17%.	
 
