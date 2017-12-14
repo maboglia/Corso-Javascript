@@ -59,7 +59,7 @@ il nome dell'utente e scrivere sulla pagina HTML il messaggio
 "Ciao nome" formattato come heading di primo livello (tag h1). Se l'utente non inserisce il nome scrivere
 il messaggio "Ciao Utente Anonimo!"
 
-## Preparare uno scritp che mostri saluto adatto 
+## Preparare uno script che mostri saluto adatto 
 all'ora del giorno (es: Buon pomeriggio, Buona notte,
 ecc.). Usare l'oggetto Date() e cercare il metodo adatto su un sito di reference JavaScript, es:
 http://www.w3schools.com/jsref/default.asp
