@@ -66,11 +66,13 @@ console.log('Hello, World!')
 alert('Hello world')
 ```
 ## Come mostrare a video i dati
-* dialogs
+* window
     * [window.alert()]()
     * [window.prompt()](../esempi/01_basic_foundations/009_prompt.html)
     * [window.confirm()](../esempi/01_basic_foundations/010_confirm.html)
-* document.write()
+* document
+    * [document.write()](../esempi/01_basic_foundations/003_document_write.html)
+    * document.writeln()
 * innerHTML
 * console.log()
 
@@ -78,6 +80,13 @@ alert('Hello world')
 # Strutture del linguaggio 
 
 ## JavaScript è __CASE SENSITIVE__
+
+## Terminare le istruzioni con punto e virgola (;)
+* E' possibile l'uso del carattere (;) per la separazione di frasi, 
+    si può omettere se queste si trovano su linee differenti (non fatelo!)
+* Gli interpreti di JavaScript trattano i fine linea come fine istruzione, se 
+    la istruzione successiva non può interpretarsi come continuazione della precedente.
+
 
 ## Convenzioni di naming: 
 * CamelCase, 
@@ -89,6 +98,7 @@ Gli identificatori in javascript cominciano con
 * una lettera,
 * una underline (_),
 * un carattere di dollaro ($); 
+
 seguito da 
 * lettere,
 * numeri,
@@ -123,13 +133,13 @@ delete | implements | return | volatile
 do | import | short | while
 double | in | static | with
 
-### Per esempio
 
 #### instanceof
 Verifica se un oggetto è instanza di qualche prototipo.
 
 #### typeof
-Ritorna una stringa indicando il tipo di dato che ha una variabile.
+Ritorna una stringa indicante il tipo di dato che ha una variabile.
+[esempio](../esempi/01_basic_foundations/010_confirm.html)
 
 #### delete
 Operatore che rimuove proprietà di un oggetto.
@@ -137,34 +147,26 @@ Operatore che rimuove proprietà di un oggetto.
 #### use strict
 Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
 
-
-
-## Punto e virgola (;)
-    E' possibile l'uso del carattere (;) per la separazione di frasi, 
-    si può omettere se queste si trovano su linee differenti (non fatelo!)
-    Gli interpreti di JavaScript trattano i fine linea come fine istruzione, se 
-    la istruzione successiva non può interpretarsi come continuazione della precedente.
+#### const
+Parola chiave per la dichiarazione di una costante.
+[esempio](../esempi/01_basic_foundations/008_const.html)
 
 #### var, let
 Parola chiave per la dichiarazione di una variabile.
 
 ## Variabili
-    identificatore univoco
-    operatori di assignment
-    dichiarazione/creazione di variabili
-    dichiarazione/creazione su una sola riga
-    valore undefined
-[esempi](../esempi/01_basic_foundations/001_var.html)
+* identificatore e visibilità (scope)
+* dichiarazione e inizializzazione di variabili
+* [esempi](../esempi/01_basic_foundations/001_var.html)
 
 ## operatori
-    operatori aritmetici
-    operatori di assegnamento
-    operatori su stringhe
-    aggiungere stringhe e numeri
-    comparazione e operatori logici
-    operatori e operandi
-    precedenza degli operatori
-[esempi](../esempi/01_basic_foundations/011_precedenzaOperatori.html)
+* [precedenza degli operatori](../esempi/01_basic_foundations/011_precedenzaOperatori.html)
+* [operatori di assegnamento](../esempi/01_basic_foundations/013_assignment.html)
+* [operatori di comparazione](../esempi/01_basic_foundations/016_confronto.html)
+* [operatori unari](../esempi/01_basic_foundations/014_operatoriUnari.html)
+* [operatori logici AND](../esempi/01_basic_foundations/018_ANDLogico.html)
+* [operatori logici OR](../esempi/01_basic_foundations/019_ORLogico.html)
+* [operatori su stringhe](../esempi/03_arrays_strings/017_comparaStringhe.html)
 
 ## Commenti
 Esistono due tipi di commenti:
@@ -199,11 +201,14 @@ Valore undefined    |    undefined
 
 ## Costrutti di controllo del flusso
 * [Strutture condizionali](./Lesson1_05_Control_flow.md)
+    * [esempio if](../esempi/01_basic_foundations/018_ANDLogico.html)
+    * [esempio switch](../esempi/02_control_flow/02_switch.js)
 
-## Costrutti di iterazione
+## Costrutti di iterazione (cicli)
 * [For Loop](./Lesson1_05_Control_flow.md) 
     * [esempi](../esempi/02_control_flow/02_for_loop.js)
 * [While Loop](./Lesson1_05_Control_flow.md) 
+    * [esempi](../esempi/02_control_flow/02_while_loop.js)
 
 
 # Tipi di dato
@@ -235,10 +240,11 @@ null
 NaN
 ''
 ```
-[esempi](../esempi/01_basic_foundations/012_boolean.html)
-[esempi](../esempi/01_basic_foundations/018_ANDLogico.html)
-[esempi](../esempi/01_basic_foundations/019_ORLogico.html)
-[esempi](../esempi/01_basic_foundations/020_ORLogico.html)
+[es: boolean](../esempi/01_basic_foundations/012_boolean.html)
+[es: AND Logico](../esempi/01_basic_foundations/018_ANDLogico.html)
+[es: OR Logico](../esempi/01_basic_foundations/019_ORLogico.html)
+[es: OR Logico](../esempi/01_basic_foundations/020_ORLogico.html)
+
 
 ## Number
 Number è la rappresentazione di tipo oggetto di un tipo numerico.
