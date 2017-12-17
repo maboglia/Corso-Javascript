@@ -16,3 +16,7 @@ switch (lunch) {
     default:
         console.log("Mi dispiace! Abbiamo terminato " + lunch + ". Preparo un panino?");
 }
+
+
+
+var decisione = Math.random() * 10
