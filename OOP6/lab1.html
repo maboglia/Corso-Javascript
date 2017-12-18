@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <button type="">vai ad oggetti</button>
+
+    <script>
+        var d = document.getElementsByTagName("button");
+
+        //console.dir(d[0]);
+        d[0].onclick = function(e) {
+            console.dir(e);
+            e.target.textContent = "test";
+            window.location.href = "oggetti.html";
+        };
+    </script>
+</body>
+
+</html>
