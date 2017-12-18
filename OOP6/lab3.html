@@ -6,17 +6,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .nascondi {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
 
     <button id="mioBottone">cliccami</button>
-    <div id="test"></div>
+    <button>prova</button>
+    <button>prova 2</button>
+    <div id="test"><img class="nascondi" src="https://www.greenme.it/images/stories/Abitare/accessori/albero_di_natale_finto.jpg" /> </div>
+    <div id="red"></div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script>
         $("#mioBottone").click(function() {
-            $("#test").html("<p>ciao jquery</p>").css("color", "red");
+            var oggi = new Date();
+            //$("#test").html("<p>ciao jquery, oggi è il " + oggi.toLocaleString() + "</p>").css("color", "red");
+            $(this).next().prev().text("nascondi");
+            $("img").toggle(2000);
         });
     </script>
 
