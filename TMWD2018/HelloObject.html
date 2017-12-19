@@ -21,8 +21,9 @@
 </head>
 
 <body>
-
+    <button id="nextMovie" onclick="nextMovie()">next</button>
     <div class="container">
+
         <h1 id="titolo"></h1>
         <figure>
             <img id="locandina" src="">
@@ -73,12 +74,31 @@
         var anno = document.getElementById("anno");
         var genere = document.getElementById("genere");
 
+        function trovaFilm(index) {
 
-        titolo.innerHTML = film1.titolo;
-        locandina.src = film1.locandina;
-        durata.innerHTML = film1.durata;
-        anno.innerHTML = film1.anno;
-        genere.innerHTML = film1.genere;
+            titolo.innerHTML = film[index].titolo;
+            locandina.src = film[index].locandina;
+            var elenco = "";
+            for (let index = 0; index < film.length; index++) {
+                elenco += "<li>" + film[index].attori[index] + "</li>";
+
+            }
+            attori.innerHTML = elenco;
+            durata.innerHTML = "durata: " + film[index].durata;
+            anno.innerHTML = "anno: " + film[index].anno;
+            genere.innerHTML = film[index].genere;
+
+
+        }
+        var contatore = 0;
+
+        function nextMovie() {
+            if (contatore >= film.length) contatore = 0;
+            trovaFilm(contatore);
+            contatore++;
+
+        }
+        //        trovaFilm(1);
     </script>
 </body>
 
