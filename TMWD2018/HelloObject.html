@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .container {
+            border: 1px solid #ccc;
+            width: 600px;
+            margin: 0 auto;
+        }
+        
+        img {
+            width: 140px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="titolo"></h1>
+        <figure>
+            <img id="locandina" src="">
+        </figure>
+        <ul id="attori">
+
+        </ul>
+        <p id="durata"></p>
+        <p id="anno"></p>
+        <p id="genere"></p>
+    </div>
+
+
+
+
+
+    <script>
+        var film1 = {
+            titolo: "Star Wars",
+            durata: 152,
+            anno: 2017,
+            locandina: "http://pad.mymovies.it/filmclub/2012/11/107/locandina.jpg",
+            genere: "Fantascienza",
+            attori: ["Mark Hamill", "Carrie Fisher"]
+
+        };
+
+        var film2 = {
+            titolo: "Fargo",
+            durata: 98,
+            anno: 1996,
+            locandina: "http://pad.mymovies.it/filmclub/2006/04/161/locandina.jpg",
+            genere: "Drammatico",
+            attori: ["William H.Macy", "Steve Buscemi"]
+
+        };
+
+        //var film = [film1, film2];
+
+        var film = [];
+        film.push(film1);
+        film.push(film2);
+
+        var titolo = document.getElementById("titolo");
+        var locandina = document.getElementById("locandina");
+        var attori = document.getElementById("attori");
+        var durata = document.getElementById("durata");
+        var anno = document.getElementById("anno");
+        var genere = document.getElementById("genere");
+
+
+        titolo.innerHTML = film1.titolo;
+        locandina.src = film1.locandina;
+        durata.innerHTML = film1.durata;
+        anno.innerHTML = film1.anno;
+        genere.innerHTML = film1.genere;
+    </script>
+</body>
+
+</html>
