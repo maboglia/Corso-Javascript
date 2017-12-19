@@ -1,10 +1,11 @@
 # Corso Javascript
 
 ## JavaScript è un linguaggio di programmazione 
+
 utilizzato comunemente come parte dell'esperienza di navigazione, permette di creare interazioni con l'utente, 
 controllare la navigazione, gestire la comunicazione asincrona, e modificare il contenuto del documento. 
 
-___Fonte: https://en.wikipedia.org/wiki/JavaScript___ 
+___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 
 ## ruolo di js nel web design
 
@@ -13,6 +14,7 @@ ___Fonte: https://en.wikipedia.org/wiki/JavaScript___
 * Js: comportamento
 
 ## Risorse disponibili online
+
 * [Javascript reference](https://developer.mozilla.org/it/docs/Web/JavaScript) 
 * [JS the right way](http://jstherightway.org/)
 * [JSinfo](https://javascript.info/)
@@ -21,12 +23,17 @@ ___Fonte: https://en.wikipedia.org/wiki/JavaScript___
 * [Udacity Course](https://www.udacity.com/course/intro-to-javascript--ud803)
 * [html.it](http://www.html.it/guide/guida-javascript-di-base/)
 
-## Hello, World!
+## Hello, World
+
 Hello, World! nel browser
+
 ```javascript
 alert('Hello, World!')
+
 ```
+
 Hello, World! nel terminale
+
 ```javascript
 console.log('Hello, World!')
 ```

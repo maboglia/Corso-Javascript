@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <button type="">localizzami</button>
+
+    <script>
+        var d = document.getElementsByTagName("button");
+        //dichiaro la fun stampa per ricevere (attraverso argomento) le info sulla mia  posizione
+        function stampaPosizione(argomento) {
+            console.info("qui vi parla la funzione stampaPosizione");
+            console.log(argomento.coords.latitude);
+            console.log(argomento.coords.longitude);
+
+            location.href = "https://www.google.it/maps/@" +
+                argomento.coords.latitude +
+                "," +
+                argomento.coords.longitude;
+
+
+        }
+
+
+        d[0].addEventListener("click", function(params) {
+            console.info("qui vi parla l'eventListener'");
+            var posizione = navigator.geolocation.getCurrentPosition(stampaPosizione);
+            console.log(posizione);
+        });
+    </script>
+</body>
+
+</html>
