@@ -41,31 +41,45 @@
 
 
     <script>
-        var film1 = {
-            titolo: "Star Wars",
-            durata: 152,
-            anno: 2017,
-            locandina: "http://pad.mymovies.it/filmclub/2012/11/107/locandina.jpg",
-            genere: "Fantascienza",
-            attori: ["Mark Hamill", "Carrie Fisher"]
+        var film = [{
+                titolo: "Star Wars",
+                durata: 152,
+                anno: 2017,
+                locandina: "http://pad.mymovies.it/filmclub/2012/11/107/locandina.jpg",
+                genere: "Fantascienza",
+                attori: ["Mark Hamill", "Carrie Fisher"]
 
-        };
+            },
 
-        var film2 = {
-            titolo: "Fargo",
-            durata: 98,
-            anno: 1996,
-            locandina: "http://pad.mymovies.it/filmclub/2006/04/161/locandina.jpg",
-            genere: "Drammatico",
-            attori: ["William H.Macy", "Steve Buscemi"]
+            {
+                titolo: "Fargo",
+                durata: 98,
+                anno: 1996,
+                locandina: "http://pad.mymovies.it/filmclub/2006/04/161/locandina.jpg",
+                genere: "Drammatico",
+                attori: ["William H.Macy", "Steve Buscemi"]
 
-        };
+            },
+
+            {
+                titolo: "Harry Potter e la pietra filosofale ",
+                durata: 151,
+                anno: 2001,
+                link: "http://www.mymovies.it/film/2001/harrypotterelapietrafilosofale/",
+                locandina: "http://pad.mymovies.it/filmclub/2001/12/001/locandinapg1.jpg",
+                genere: "Fantastico",
+                attori: ["Daniel Radcliffe", "Rupert Grint", "Emma Watson", "John Cleese", "Richard Harris"]
+
+            }
+
+        ];
 
         //var film = [film1, film2];
 
-        var film = [];
-        film.push(film1);
-        film.push(film2);
+        // var film = [];
+        // film.push(film1);
+        // film.push(film2);
+        // film.push(film3);
 
         var titolo = document.getElementById("titolo");
         var locandina = document.getElementById("locandina");
@@ -79,8 +93,8 @@
             titolo.innerHTML = film[index].titolo;
             locandina.src = film[index].locandina;
             var elenco = "";
-            for (let index = 0; index < film.length; index++) {
-                elenco += "<li>" + film[index].attori[index] + "</li>";
+            for (let i = 0; i < film[index].attori.length; i++) {
+                elenco += "<li><a href='https://it.wikipedia.org/wiki/" + film[index].attori[i].replace(" ", "_") + "'>" + film[index].attori[i] + "</li>";
 
             }
             attori.innerHTML = elenco;
@@ -98,7 +112,8 @@
             contatore++;
 
         }
-        //        trovaFilm(1);
+        var casuale = Math.floor(Math.random() * film.length);
+        trovaFilm(casuale);
     </script>
 </body>
 
