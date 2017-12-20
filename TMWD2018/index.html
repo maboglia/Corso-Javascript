@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+     </style>
+</head>
+<body>
+	
+		<input type="text" id = "mio_testo" name = "">
+	
+
+	<button id="bottone" onclick="inserimento()">inserisci</button>
+
+	<button id="bottone2" onclick="riordina()">riordina</button>
+	
+
+	 <ul id="elenco">
+
+        </ul>
+<script>
+	var mio_testo = document.getElementById('mio_testo');
+	var bottone = document.getElementById('bottone');
+	var elenco = document.getElementById('elenco');
+	var cosedafare= [];
+	var html = "";
+
+	function inserimento(argument) {
+		 cosedafare.push(mio_testo.value);
+		console.dir(cosedafare);
+		stampaelenco();
+	}
+		console.dir(cosedafare);
+
+	function stampaelenco(argument) {
+		html = "";
+
+		for (var i = cosedafare.length - 1; i >= 0; i--) {
+			html = html + "<li>" + cosedafare[i] + "</li>";
+		}
+		elenco.innerHTML = html;
+		}
+		
+		function riordina(argument) {
+		html = "";
+
+		for (var i = 0;	i < cosedafare.length ; i++) {
+			html = html + "<li>" + cosedafare[i] + "</li>";
+		}
+		elenco.innerHTML = html;
+	}
+	
+</script>
+</body>
+
+</html>

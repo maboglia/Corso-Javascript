@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Selectors and Filters</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $("document").ready(function() {
+            // $("p").css("border", "3px solid red");
+            // $(".selectors").css("border", "3px solid red");
+            // $("#intro").css("border", "3px solid red");
+            //$("p:first").css("border", "3px solid red");
+            //$("h2:not(.selectors)").css("border", "3px solid red");
+        });
+    </script>
+</head>
+
+<body>
+    <h1 id="intro">Introduction to jQuery Selectors and Filters</h1>
+    <p>Selectors and Filters provide a way of finding and extracting information from Web pages.</p>
+    <h2 class="selectors">Selectors</h2>
+    <p>Selectors are used to select parts of the Web page using a common CSS-style syntax.</p>
+    <p>For example, <code>$("p")</code> will select all of the paragraph tags in a document and return them as a list that can be further operated upon.</p>
+    <h2 class="filters">Filters</h2>
+    <p>Filters are used to further refine the results returned from selectors.</p>
+    <p>For example, <code>$("p:first")</code> will select the first paragraph in the returned set from <code>$("p")</code>.</p>
+</body>
+
+</html>

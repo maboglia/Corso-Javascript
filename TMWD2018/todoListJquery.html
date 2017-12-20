@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="mio_testo" name="">
+
+
+    <button id="bottone">inserisci</button>
+
+    <button id="bottone2" onclick="riordina()">riordina</button>
+
+
+    <ul id="elenco">
+
+    </ul>
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        var mio_testo = $('#mio_testo');
+        var bottone = $('#bottone');
+        var elenco = $('#elenco');
+        var cosedafare = [];
+        var html = "";
+
+        $('#bottone').click(function(params) {
+            cosedafare.push($('#mio_testo').val());
+            console.dir(cosedafare);
+            stampaelenco();
+        });
+
+        function inserimento(argument) {
+            cosedafare.push($('#mio_testo').val());
+            console.dir(cosedafare);
+            stampaelenco();
+        }
+        console.dir(cosedafare);
+
+        function stampaelenco(argument) {
+            html = "";
+
+            for (var i = cosedafare.length - 1; i >= 0; i--) {
+                html = html + "<li>" + cosedafare[i] + "</li>";
+            }
+            elenco.html(html);
+        }
+
+        function riordina(argument) {
+            html = "";
+
+            for (var i = 0; i < cosedafare.length; i++) {
+                html = html + "<li>" + cosedafare[i] + "</li>";
+            }
+            elenco.innerHTML = html;
+        }
+    </script>
+</body>
+
+</html>
