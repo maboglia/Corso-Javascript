@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Capitolo 10: Esempio 11</title>
+</head>
+
+<body>
+    <img id="img0" src="usa.gif" />
+    <div id="status"></div>
+
+    <script>
+        var myImages = [
+            "http://lorempixel.com/output/animals-q-c-640-480-9.jpg",
+            "http://lorempixel.com/output/animals-q-c-640-480-1.jpg",
+            "http://lorempixel.com/output/animals-q-c-640-480-3.jpg",
+            "http://lorempixel.com/output/animals-q-c-640-480-5.jpg"
+        ];
+
+
+        function changeImg(e) {
+            var el = e.srcElement;
+            var newImgNumber = Math.round(Math.random() * 3);
+
+            while (el.src.indexOf(myImages[newImgNumber]) != -1) {
+                newImgNumber = Math.round(Math.random() * 3);
+            }
+
+            el.src = myImages[newImgNumber];
+        }
+
+        function updateStatus(e) {
+            var el = e.srcElement;
+            var status = document.getElementById("status");
+
+            status.innerHTML = "The image changed to " + el.src;
+
+            if (el.src.indexOf("mexico") > -1) {
+                el.detachEvent("onclick", changeImg);
+                el.detachEvent("onclick", updateStatus);
+            }
+        }
+
+        var imgObj = document.getElementById("img0");
+
+        imgObj.attachEvent("onclick", updateStatus);
+        imgObj.attachEvent("onclick", changeImg);
+    </script>
+</body>
+
+</html>

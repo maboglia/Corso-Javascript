@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Capitolo 13: Esempio 2a</title>
+</head>
+<body>
+    <h1>Welcome to Esempio 2a</h1>
+
+    <div id="whatsNew"></div>
+
+    <script src="cookiefunctions.js"></script>
+    <script>
+        var lastUpdated = new Date("Tue, 28 Dec 2020");
+        var lastVisit = getCookieValue("LastVisit");
+
+        if (lastVisit) {
+            lastVisit = new Date(lastVisit);
+
+            if (lastVisit < lastUpdated) {
+                document.getElementById("whatsNew").innerHTML = "<a href='ch13_Esempio2b.html'>What's New?</a>";
+            }
+        }
+
+        var now = new Date();
+        setCookie("LastVisit", now.toUTCString());
+    </script>
+
+</body>
+</html>

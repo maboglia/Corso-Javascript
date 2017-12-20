@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Capitolo 11: Esempio 8</title>
+</head>
+<body>
+    <form action="" name="theForm">
+        <select name="theDay" size="5">
+            <option value="0" selected="selected">Monday</option>
+            <option value="1">Tuesday</option>
+            <option value="2">Wednesday</option>
+            <option value="3">Thursday</option>
+            <option value="4">Friday</option>
+            <option value="5">Saturday</option>
+            <option value="6">Sunday</option>
+        </select>
+        <br />
+        <input type="button" value="Remove Wednesday" name="btnRemoveWed" />
+        <input type="button" value="Add Wednesday" name="btnAddWed" />
+        <br />
+    </form>
+
+    <script>
+        var theForm = document.theForm;
+
+        function btnRemoveWedClick() {
+            var days = theForm.theDay;
+
+            if (days.options[2].text == "Wednesday") {
+                days.remove(2);
+            } else {
+                alert("There is no Wednesday here!");
+            }
+        }
+
+        function btnAddWedClick() {
+            var days = theForm.theDay;
+            var options = days.options;
+
+            if (options[2].text != "Wednesday") {
+                var option = new Option("Wednesday", 2);
+                var thursdayOption = options[2];
+
+                try {
+                    days.add(option, thursdayOption);
+                }
+                catch (error) {
+                    days.add(option, 2);
+                }
+            } else {
+                alert("Do you want to have TWO Wednesdays?");
+            }
+        }
+
+        theForm.btnRemoveWed.addEventListener("click", btnRemoveWedClick);
+        theForm.btnAddWed.addEventListener("click", btnAddWedClick);
+    </script>
+</body>
+</html>

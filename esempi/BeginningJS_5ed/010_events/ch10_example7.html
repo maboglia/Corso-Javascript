@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Capitolo 10: Esempio 7</title>
+</head>
+
+<body>
+    <img id="img0" src="http://lorempixel.com/output/animals-q-c-640-480-9.jpg" />
+    <div id="status"></div>
+
+    <script>
+        var myImages = [
+            "http://lorempixel.com/output/animals-q-c-640-480-9.jpg",
+            "http://lorempixel.com/output/animals-q-c-640-480-8.jpg",
+            "http://lorempixel.com/output/animals-q-c-640-480-7.jpg",
+            "http://lorempixel.com/output/animals-q-c-640-480-6.jpg"
+        ];
+
+        function changeImg(e) {
+            var el = e.target;
+            var newImgNumber = Math.round(Math.random() * 3);
+
+            while (el.src.indexOf(myImages[newImgNumber]) != -1) {
+                newImgNumber = Math.round(Math.random() * 3);
+            }
+
+            el.src = myImages[newImgNumber];
+        }
+
+        function updateStatus(e) {
+            var el = e.target;
+            var status = document.getElementById("status");
+
+            status.innerHTML = "The image changed to " + el.src;
+
+            if (el.src.indexOf("animals") > -1) {
+                el.removeEventListener("click", changeImg);
+                el.removeEventListener("click", updateStatus);
+            }
+        }
+
+        var imgObj = document.getElementById("img0");
+
+        imgObj.addEventListener("click", changeImg);
+        imgObj.addEventListener("click", updateStatus);
+    </script>
+</body>
+
+</html>

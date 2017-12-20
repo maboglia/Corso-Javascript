@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Capitolo 14: Esempio 2</title>
+    <style>
+        .fieldname {
+            text-align: right;
+        }
+
+        .submit {
+            text-align: right;
+        }
+
+        #hiddenFrame {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td class="fieldname">
+                    Username:
+                </td>
+                <td>
+                    <input type="text" id="username" />
+                </td>
+                <td>
+                    <a id="usernameAvailability" href="#">Check Availability</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="fieldname">
+                    Email:
+                </td>
+                <td>
+                    <input type="text" id="email" />
+                </td>
+                <td>
+                    <a id="emailAvailability" href="#">Check Availability</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="fieldname">
+                    Password:
+                </td>
+                <td>
+                    <input type="text" id="password" />
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="fieldname">
+                    Verify Password:
+                </td>
+                <td>
+                    <input type="text" id="password2" />
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="submit">
+                    <input type="submit" value="Submit" />
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+    <iframe src="about:blank" id="hiddenFrame" name="hiddenFrame"></iframe>
+    <script>
+        function checkUsername(e) {
+            e.preventDefault();
+
+            var userValue = document.getElementById("username").value;
+
+            if (!userValue) {
+                alert("Please enter a user name to check!");
+                return;
+            }
+
+            var url = "ch14_iframevalidator.php?username=" + userValue;
+
+            frames["hiddenFrame"].location = url;
+        }
+
+        function checkEmail(e) {
+            e.preventDefault();
+
+            var emailValue = document.getElementById("email").value;
+
+            if (!emailValue) {
+                alert("Please enter an email address to check!");
+                return;
+            }
+
+            var url = "ch14_iframevalidator.php?email=" + emailValue;
+
+            frames["hiddenFrame"].location = url;
+        }
+
+        function handleResponse(responseText) {
+            var response = JSON.parse(responseText);
+
+            if (response.available) {
+                alert(response.searchTerm + " is available!");
+            } else {
+                alert("We're sorry, but " + response.searchTerm + " is not available.");
+            }
+        }
+
+        document.getElementById("usernameAvailability").addEventListener("click", checkUsername);
+        document.getElementById("emailAvailability").addEventListener("click", checkEmail);
+    </script>
+</body>
+</html>

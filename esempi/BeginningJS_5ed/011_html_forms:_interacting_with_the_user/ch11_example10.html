@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Capitolo 11: Esempio 10</title>
+</head>
+<body>
+    <form name="form1">
+        <p>
+            <label for="minValue">Min: </label>
+            <input type="number" id="minValue" name="minValue" />
+        </p>
+        <p>
+            <label for="maxValue">Max: </label>
+            <input type="number" id="maxValue" name="maxValue" />
+        </p>
+        <p>
+            <label for="stepValue">Step: </label>
+            <input type="number" id="stepValue" name="stepValue" />
+        </p>
+        <p>
+            <input type="range" id="slider" name="slider" />
+        </p>
+    </form>
+    <div id="output"></div>
+
+    <script>
+        var myForm = document.form1;
+        var output = document.getElementById("output");
+
+        function formInputChange() {
+            var slider = myForm.slider;
+
+            slider.min = parseFloat(myForm.minValue.value);
+            slider.max = parseFloat(myForm.maxValue.value);
+            slider.step = parseFloat(myForm.stepValue.value);
+
+            output.innerHTML = slider.value;
+        }
+
+        myForm.addEventListener("input", formInputChange);
+    </script>
+</body>
+</html>

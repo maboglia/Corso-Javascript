@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Capitolo 18: Esempio 4</title>
+</head>
+<body>
+    <script>
+        function writeTimesTable(timesTable) {
+            var writeString;
+            for (var counter = 1; counter < 12; counter++) {
+                writeString = counter + " * " + timesTable + " = ";
+                writeString = writeString + (timesTable * counter);
+                writeString = writeString + "<br />";
+                document.write(writeString);
+            }
+        }
+
+        for (var timesTable = 1; timesTable <= 12; timesTable++) {
+            document.write("<p>");
+            writeTimesTable(timesTable);
+            document.write("</p>");
+        }
+    </script>
+</body>
+
+</html>

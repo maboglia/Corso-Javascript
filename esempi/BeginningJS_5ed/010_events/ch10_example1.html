@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Capitolo 10: Esempio 1</title>
+</head>
+
+<body>
+    <img src="http://lorempixel.com/output/animals-q-c-640-480-9.jpg" onclick="changeImg(this)" />
+    <img src="http://lorempixel.com/output/animals-q-c-640-480-1.jpg" onclick="changeImg(this)" />
+
+    <script>
+        var myImages = [
+            "http://lorempixel.com/output/animals-q-c-640-480-9.jpg",
+            "http://lorempixel.com/output/animals-q-c-640-480-1.jpg",
+            "http://lorempixel.com/output/animals-q-c-640-480-3.jpg",
+            "http://lorempixel.com/output/animals-q-c-640-480-5.jpg"
+        ];
+
+        function changeImg(that) {
+            var newImgNumber = Math.round(Math.random() * 3);
+
+            while (that.src.indexOf(myImages[newImgNumber]) != -1) {
+                newImgNumber = Math.round(Math.random() * 3);
+            }
+
+            that.src = myImages[newImgNumber];
+        }
+    </script>
+</body>
+
+</html>

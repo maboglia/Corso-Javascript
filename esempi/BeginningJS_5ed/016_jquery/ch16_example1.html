@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Capitolo 16: Esempio 1</title>
+    <style>
+        .tabStrip {
+            background-color: #E4E2D5;
+            padding: 3px;
+            height: 22px;
+        }
+
+        .tabStrip div {
+            float: left;
+            font: 14px arial;
+            cursor: pointer;
+        }
+
+        .tabStrip-tab {
+            padding: 3px;
+        }
+
+        .tabStrip-tab-hover {
+            border: 1px solid #316AC5;
+            background-color: #C1D2EE;
+            padding: 2px;
+        }
+
+        .tabStrip-tab-click {
+            border: 1px solid #facc5a;
+            background-color: #f9e391;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabStrip">
+        <div data-tab-number="1" class="tabStrip-tab">Tab 1</div>
+        <div data-tab-number="2" class="tabStrip-tab">Tab 2</div>
+        <div data-tab-number="3" class="tabStrip-tab">Tab 3</div>
+    </div>
+    <div id="descContainer"></div>
+    <script src="jquery-2.1.1.min.js"></script>
+    <script>
+        function handleEvent(e) {
+            var target = $(e.target);
+            var type = e.type;
+
+            if (type == "mouseover" || type == "mouseout") {
+                target.toggleClass("tabStrip-tab-hover");
+            } else if (type == "click") {
+                target.addClass("tabStrip-tab-click");
+
+                var num = target.attr("data-tab-number");
+                showDescription(num);
+            }
+        }
+
+        function showDescription(num) {
+            var text = "Description for Tab " + num;
+
+            $("#descContainer").text(text);
+        }
+
+        $(".tabStrip > div").on("mouseover mouseout click", handleEvent);
+    </script>
+</body>
+</html>

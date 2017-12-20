@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Capitolo 10: Esempio 18</title>
+    <style>
+        .drop-zone {
+            width: 300px;
+            padding: 20px;
+            border: 2px dashed #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="dropZone" class="drop-zone">Drop Zone!</div>
+    <div id="dropStatus"></div>
+
+    <script>
+        function handleDragEnter(e) {
+            dropStatus.innerHTML = "You're dragging something!";
+        }
+
+        var dropZone = document.getElementById("dropZone");
+        var dropStatus = document.getElementById("dropStatus");
+
+        dropZone.addEventListener("dragenter", handleDragEnter);
+    </script>
+</body>
+</html>

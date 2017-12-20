@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Capitolo 6, Esempio 6</title>
+</head>
+    <body>
+        <script src="ch6_Esempio6.js"></script>
+        <script>
+            var phoneNumber = prompt("Please enter a phone number.", "");
+            
+            if (isValidTelephoneNumber(phoneNumber)) {
+                alert("Valid Phone Number");
+            } else {
+                alert("Invalid Phone Number");
+            }
+
+            var postalCode = prompt("Please enter a postal code.", "");
+
+            if (isValidPostalCode(postalCode)) {
+                alert("Valid Postal Code");
+            } else {
+                alert("Invalid Postal Code");
+            }
+
+            var email = prompt("Please enter an email address.", "");
+
+            if (isValidEmail(email)) {
+                alert("Valid Email Address");
+            } else {
+                alert("Invalid Email Address");
+            }
+        </script>
+    </body>
+</html>
