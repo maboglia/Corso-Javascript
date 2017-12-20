@@ -1,4 +1,4 @@
-#Jquery     
+# Jquery     
 
     Riassunto delle funzioni di base
 
@@ -24,7 +24,7 @@ $(document).ready(function() {
 });
 ```
 
-#Selezionare gli elementi
+# Selezionare gli elementi
 
 La principale caratteristica della funzione jQuery() (abbreviata in $() ) è quella di selezionare elementi HTML per modificarli: basta passare un parametro stringa (tra apici doppi ["] o singoli ['] ) come negli esempi che seguono:
 
@@ -37,7 +37,7 @@ $("ul li a.nav");
 ```
 
 
-##selettori css 2 / css 3
+## selettori css 2 / css 3
 
 jQuery supporta tutti i selettori anche quelli avanzati e quelli del CSS3
 
@@ -50,7 +50,7 @@ $("li:first-child");
 ```
 
 
-##jQuery supporta poi alcuni selettori custom:
+## jQuery supporta poi alcuni selettori custom:
 
 ```javascript
 $(":animated");
@@ -61,7 +61,7 @@ $(":checked");
 $(":header"); selects header elements (h1, h2, h3, etc.)
 ```
 
-#Accedere e modificare le classi CSS
+# Accedere e modificare le classi CSS
 
 Con jQuery è facile aggiungere, scambiare o rimuovere classi CSS: ecco i tre metodi
 
@@ -70,12 +70,6 @@ $("div").addClass("content");
 $("div").removeClass("content"); removes class "content" from all <div> elements
 $("div").toggleClass("content");
 ```
-
-
-
-// toggles the class "content" on all <div> elements (adds it if it doesn't exist, and removes it if it does)
-You can also check to see if a selected element has a particular CSS class, and then run some code if it does. You would check this using an if statement. Here is an example:
-view plain?
 
 Se un elemento è di una determinata classe allora esegui il codice:
 
@@ -86,10 +80,7 @@ if ($("#myElement").hasClass("content")) {
 
 ```
 
-
-
-
-Gestire gli stili Css con Jquery
+## Gestire gli stili Css con Jquery
 
 Ecco come modificare i css con jQuery:
 
@@ -100,51 +91,34 @@ $("#myElement").css("color", "blue") makes text color blue on element #myElement
 $("ul").css("border", "solid 1px #ccc")
 ```
 
-Aggiungere e rimuovere contenuto e inserire elementi
+## Aggiungere e rimuovere contenuto e inserire elementi
 
-There are a number of ways to manipulate groups of elements with jQuery, including manipulating the content of those elements (whether text, inline elements, etc).
 
-Ottenere l'elemento html
+### Ottenere l'elemento html
 
 ```javascript
 var myElementHTML = $("#myElement").html();
 ```
 
-
-
-// variable contains all HTML (including text) inside #myElement
-
-Ottenere solo il testo contenuto nel tag
+### Ottenere solo il testo contenuto nel tag
 
 ```javascript
 var myElementHTML = $("#myElement").text();
 ```
 
-
-
-
-Cambiare l'HTML e/o il Testo
+### Cambiare l'HTML e/o il Testo
 
 ```javascript
 $("#myElement").html("<p>Questo è il nuovo contenuto</p>");
 $("#myElement").text("Questo è il nuovo contenuto."); // questo sostituisce il testo presente
 ```
-
-
-
-
-
-Far seguire (appendere) del contenuto ad un elemento
+### Far seguire (appendere) del contenuto ad un elemento
 
 ```javascript
 $("#myElement").append("<p>Questo lo aggiungo.</p>");
 $("p").append("<p>Questo pure.</p>"); // Aggiunge questo contenuto ad ogni paragrafo
 ```
-
-
-
-
-Altri comandi
+### Altri comandi
 
 ```javascript
     appendTo()
@@ -158,13 +132,12 @@ Altri comandi
 
 
 lavorano in modo simile con specifiche peculiarità
-
 Ulteriori informazioni  jQuery.com-
 
-Gli Eventi in jQuery
+## Gli Eventi in jQuery
 
 
-Ecco come intercettare il click del mouse con jQuery:
+### Intercettare il click del mouse con jQuery:
 
 ```javascript
 $("a").click(function() {
@@ -172,10 +145,7 @@ $("a").click(function() {
 });
 ```
 
-
-
-
-#Il codice dentro function() viene eseguito quando un link viene cliccato. Ecco altri comuni eventi inclusi injQuery:
+###  Il codice dentro function() viene eseguito quando un link viene cliccato. Ecco altri comuni eventi inclusi injQuery:
 
     blur
     focus
@@ -188,9 +158,7 @@ $("a").click(function() {
     submit
     select
 
-
-Lista completa  jQuery.com -
-#Mostrare e nascondere elementi con il jQuery
+### Mostrare e nascondere elementi con il jQuery
 
 Ecco la sintassi :
 
@@ -209,12 +177,6 @@ $("#myElement").toggle(1000, function() {
 ```
 
 
-
-
-Remember that the “toggle” command will change whatever state the element currently has, and the parameters are both optional. The first parameter indicates the speed of the showing/hiding. If no speed is set, it will occur instantly, with no animation. A number for “speed” represents the speed in milliseconds. The second parameter is an optional function that will run when the command is finished executing.
-
-You can also specifically choose to fade an element in or out, which is always done by animation:
-
 ```javascript
     $("#myElement").fadeOut("slow", function() {
     do something when fade out finished
@@ -225,19 +187,12 @@ You can also specifically choose to fade an element in or out, which is always d
     do something when fade in finished
     }
 ```
-##To fade an element only partially, either in or out:
-view plain?
 
 ```javascript
     $("#myElement").fadeTo(2000, 0.4, function() {
     // do something when fade is finished
     }
 ```
-
-The second parameter (0.4) represents “opacity”, and is similar to the way opacity is set in CSS. Whatever the opacity is to start with, it will animate (fadeTo) until it reaches the setting specified, at the speed set (2000 milliseconds). The optional function (called a “callback function”) will run when the opacity change is complete. This is the way virtually all callback functions in jQuery work.
-jQuery Animations and Effects
-You can slide elements, animate elements, and even stop animations in mid-sequence. To slide elements up or down:
-view plain?
 
 ```javascript
     $("#myElement").slideDown("fast", function() {
@@ -254,8 +209,7 @@ view plain?
     }
 ```
 
-##To animate an element, you do so by telling jQuery the CSS styles that the item should change to. jQuery will set the new styles, but instead of setting them instantly (as CSS or raw JavaScript would do), it does so gradually, animating the effect at the chosen speed:
-view plain?
+## Animate
 
 ```javascript
     $("#myElement").animate(
@@ -269,18 +223,18 @@ view plain?
     );
 ```
 
-#Oggetto jQuery() $()
+# Oggetto jQuery() $()
 
     jQuery() oppure $() Permette di selezionare e creare elementi del DOM Può avere come parametro:
  
     Selettore CSS $("p.evidenziato") Restituisce un array di oggetti, eventualmente vuoto
-    Oggetti javascript $(this.value) Restituisce un array di oggetti contenente l’elemento passatocome parametro
+    Oggetti javascript $(this.value) Restituisce un array di oggetti contenente l’elemento passato come parametro
     Codice HTML $("Ciao Mondo")      Crea un elemento del DOM e restituisce un array di oggetti contenente l’elemento appena creato
 
-#SELETTORI
+# SELETTORI
 
 
-##Selettori CSS
+## Selettori CSS
 
 ```javascript
 $(elemento)
@@ -294,7 +248,7 @@ $(elemento)
 
 
 
-##Selettori CSS
+## Selettori CSS
 
 ```javascript
 $(#idelemento)
@@ -313,7 +267,7 @@ attributo id="principale"
     Essendo l’id univoco all’interno della pagina la
 selezione del div poteva essere omessa
 
-##Selettori CSS
+## Selettori CSS
 
 ```javascript
 $(.nomeclasse)
@@ -330,7 +284,7 @@ classe evidenziato
     $(".evidenziato")
      
 
-##Selettori CSS
+## Selettori CSS
 
 ```javascript
 $(elemento[attributo])
@@ -347,7 +301,7 @@ specificato l’attributo value
     $("img[title]")
      
 
-##Selettori CSS
+## Selettori CSS
 
 ```javascript
 $(elemento[attributo=x])
@@ -364,7 +318,7 @@ di tipo radio
     $("img[title=‘logo’]")
      
 
-##Selettori CSS
+## Selettori CSS
 
 ```javascript
 $(elemento[attributoˆ=x])
@@ -381,7 +335,7 @@ non relativo
     $("img[title^='logo']")
      
 
-##Selettori CSS
+## Selettori CSS
 
 ```javascript
 $(elemento[attributo$=x])
@@ -397,7 +351,7 @@ estensione png
     $("a[href$='.pdf']")
 tutti i link a file pdf
 
-##Selettori CSS
+## Selettori CSS
 
 ```javascript
 $(elemento[attributo*=x])
@@ -409,12 +363,12 @@ pagina che hanno l’attributo passato come
 parametro che contiene la stringa X
 tutte le immagini in cui
 l’attributo titolo contiene la stringa ‘logo’
-$("a[href*='polito.it']") tutti i link che
-contengono nell’indirizzo la stringa ‘polito.it’
+$("a[href*='it.wikipedia.org']") tutti i link che
+contengono nell’indirizzo la stringa ‘it.wikipedia.org’
     $("img[title*='logo']")
      
 
-##Selettori CSS
+## Selettori CSS
 
 ```javascript
 $(padre > figli)
@@ -433,7 +387,7 @@ contenuti in elementi ul o ol
     $(div > ul)
      
 
-##Selettori CSS
+## Selettori CSS
 
 ```javascript
 $(fratello+sorelle)
@@ -468,7 +422,7 @@ $(".A + .B")
 
 
 
-##Selettori CSS
+## Selettori CSS
 
 ```javascript
 $(fratello~sorelle)
@@ -486,7 +440,7 @@ $(".A ~ .B")
 
 
 
-##Selettori CSS
+## Selettori CSS
 
 ```javascript
 $(padri:has(discendenti))
@@ -503,7 +457,7 @@ discendente almeno un’immagine
     $("ul:has(a)")
      
 
-##Selettori di Posizione
+## Selettori di Posizione
 $(:first) $(:last)
 
     Permettono
@@ -518,7 +472,7 @@ contenga nell’indirizzo la parola logo
      
      
 
-##Selettori di Posizione
+## Selettori di Posizione
 
     $(:first-child) $(:last-child) Per selezionare il primo (:first-child) e l’ultimo (:last-child) elemento discendente
     $("p.evidenziato:first-child") Per selezionare il primo elemento contenuto in ogni paragrafo con class "evidenziato" 
@@ -531,7 +485,7 @@ contenga nell’indirizzo la parola logo
 Questo selettore utilizza come indice iniziale
 lo 0
 
-##Selettori di Posizione
+## Selettori di Posizione
 $(:nth-child(n)) $(:nth-child(even|odd))
 
     Permettono
@@ -549,7 +503,7 @@ pari in ogni tr
 dispari in ogni tr
 gli elementi in posizione
 
-##Selettori di Posizione
+## Selettori di Posizione
 $(:eq(n)) $(:lt(n)) $(:gt(n))
 
     Permettono
@@ -564,7 +518,7 @@ i primi cinque tr
 dal sesto tr in poi
 Questo selettore utilizza come indice iniziale lo 0
 
-##Selettori Custom
+## Selettori Custom
      
      
      
@@ -594,7 +548,7 @@ testo "cerca"
 
 
 
-#Operazione su gli oggetti selezionati/creati
+# Operazione su gli oggetti selezionati/creati
 
 Navigazione del DOM
 
@@ -617,7 +571,7 @@ dell'elemento selezionato
 
 $(selettore).find(selettore)
 
-#Operazione su gli oggetti selezionati/creati
+# Operazione su gli oggetti selezionati/creati
 Manipolazione del DOM
 
     Inserimento
@@ -634,7 +588,7 @@ Stile
 hide, show, toggle
 
 
-#Operazione su gli oggetti selezionati/creati
+# Operazione su gli oggetti selezionati/creati
 Esempi Manipolazione del DOM
 
 ```javascript
@@ -657,7 +611,7 @@ stringa passata come parametro
 $("img.logo").css("border","solid orange 3px");
 //cambia lo stile a tutte le immagini di classe logo
 ```
-#Operazione su gli oggetti selezionati/creati
+# Operazione su gli oggetti selezionati/creati
 
 ```javascript
 $(selettore).each()
@@ -672,7 +626,7 @@ $(img).each(function(i){
 })
 ```
 
-#Operazione su gli oggetti selezionati/creati
+# Operazione su gli oggetti selezionati/creati
 Concatenazione operazioni
 
     E' possibile concatenare più azione su uno
@@ -687,7 +641,7 @@ $("").attr("src","img/test.jpg").addClass("logo")
 //crea un immagine con attributo src="img/test.jpg", di classe
 logo e la appende al div con id principale
 
-#Operazione su gli oggetti selezionati/creati
+# Operazione su gli oggetti selezionati/creati
 Concatenazione Avanzata .end()
 
     Alcune
@@ -715,7 +669,7 @@ paragrafo di ogni div)
 6.  Modifica lo stile del bordo
 $(div p:first)
 
-#Eventi supportati
+# Eventi supportati
 click
 dblclick
 load
@@ -736,7 +690,7 @@ mouseup
 mouseover
 error
 
-#Tipologia di Eventi Javascript
+# Tipologia di Eventi Javascript
 EVENTO | DESCRIZIONE
 ------ | -----------
 blur, focus | Inviati ad un elemento quando rispettivamente perde il focus od ottiene il focus.
@@ -754,7 +708,7 @@ change | Evento inviato ad un elemento che ha cambiato il proprio valore.
 submit | Evento inviato quando l'utente tenta di fare il submit di un form
 
 
-#bind
+# bind
 $(selettore).bind(evento,[dati],function(evento){...})
 Permette di collegare gli eventi ad un selettore e di
 eseguire la funzione associata
@@ -768,7 +722,7 @@ inserimento quando il focus è sull'oggetto e rimuove
 la stessa classe quando il focus non è più
 dell'oggetto
 
-#Sintassi abbreviata eventi
+# Sintassi abbreviata eventi
 $(selettore).bind(evento,[dati],function(evento){...})
 $(selettore).evento([dati],function(evento){...})
 $("li").click(function(){$(this).hide()})
@@ -783,7 +737,7 @@ var messaggio="ciao mondo"
 $("li").click({msg:messaggio},function(evento){
 alert(evento.data.msg)});
 
-#Proprietà Oggetto evento
+# Proprietà Oggetto evento
   Le funzioni di callback (richiamate al verificarsi di ogni evento) hanno come parametro un oggetto che descrive l'evento occorso.
   proprietà Descrizione
   .currentTarget Elemento del DOM che ha rilanciato l'evento
@@ -798,7 +752,7 @@ alert(evento.data.msg)});
   Per avere informazioni sul carattere inserito si
   utilizza .keyCode
 
-#Funzioni Oggetto evento
+# Funzioni Oggetto evento
 L'oggetto evento offre alcuni utili metodi
 Metodo Descrizione
 .preventDefault() Non fa eseguire la funzione di default legata
@@ -811,7 +765,7 @@ evento.preventDefault();
 .stopImmediatePropagation() Impedisce l'inoltro dell'evento ad ogni altro elemento del DOM
 
 
-#Lanciare eventi
+# Lanciare eventi
 
     E' possibile tramite jQuery lanciare eventi, sia standard che personalizzati
 $(selettore).trigger(evento, [dati])

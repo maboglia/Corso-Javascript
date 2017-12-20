@@ -1,5 +1,3 @@
-##Selettori jQuery 
-
 Selettore | Esempio | Seleziona
 --- | --- | ---
  * | $("*") | Tutti gli elementi
