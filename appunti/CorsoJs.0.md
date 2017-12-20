@@ -352,13 +352,10 @@ Sono funzioni invocate dopo un tempo determinato.
 
 funzione | significato
 --- | ---
-`setTimeout()` | Pianifica la invocazione dopo un tempo determinato.
-
-`setInterval()` | Pianifica l'invocazione dopo un intervallo di tempo.
-
-`clearTimeout()` | Resetta i timer.
-
-`clearInterval()` | Resetta i timer.
+`setTimeout()` | Pianifica la invocazione dopo un tempo determinato
+`setInterval()` | Pianifica l'invocazione dopo un intervallo di tempo
+`clearTimeout()` | Resetta i timer
+`clearInterval()` | Resetta i timer
 
 ### Per esempio
 
