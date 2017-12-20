@@ -96,14 +96,14 @@ prompt() + array[]
 
 ## Esercizi
 
-1. Calcolare il costo di un viaggio in automobile, sapendo che la lunghezza è 750 Km, che il consumo di gasolio è 3,2 litri ogni 100 Km, che un litro di gasolio costa 1,432 €, che due terzi del percorso prevedono un pedaggio pari a 1,2 € ogni 10 Km.
-2. Calcolare il costo di una telefonata, sapendo che la durata è pari a 4 minuti e 23 secondi, che il costo alla chiamata è pari a 0,15 €, che i primi 30 secondi sono gratis, che il resto della telefonata costa 0,24 € al minuto.
-3. Calcolare il costo di un biglietto aereo acquistato una settimana prima della partenza, sapendo che il costo di base è pari a 200 € (se acquistato il giorno della partenza) e che questo costo diminuisce del 2,3% al giorno (se acquistato prima del giorno della partenza).
-4. Calcolare il costo di un prodotto usando la seguente formula costo=( prezzo prezzo * 0,20 ) − sconto e sapendo che il prezzo è 100 € e lo sconto è 30 €.
-5. Calcolare la rata mensile di un mutuo annuale usando la seguente formula 
+### 1. Calcolare il costo di un viaggio in automobile, sapendo che la lunghezza è 750 Km, che il consumo di gasolio è 3,2 litri ogni 100 Km, che un litro di gasolio costa 1,432 €, che due terzi del percorso prevedono un pedaggio pari a 1,2 € ogni 10 Km.
+### 2. Calcolare il costo di una telefonata, sapendo che la durata è pari a 4 minuti e 23 secondi, che il costo alla chiamata è pari a 0,15 €, che i primi 30 secondi sono gratis, che il resto della telefonata costa 0,24 € al minuto.
+### 3. Calcolare il costo di un biglietto aereo acquistato una settimana prima della partenza, sapendo che il costo di base è pari a 200 € (se acquistato il giorno della partenza) e che questo costo diminuisce del 2,3% al giorno (se acquistato prima del giorno della partenza).
+### 4. Calcolare il costo di un prodotto usando la seguente formula costo=( prezzo prezzo * 0,20 ) − sconto e sapendo che il prezzo è 100 € e lo sconto è 30 €.
+### 5. Calcolare la rata mensile di un mutuo annuale usando la seguente formula 
     * rata = importo * (1+tasso) / 12
     * e sapendo che l'importo annuale è 240 € e il tasso è il 5%.
-6. Definire in JavaScript una funzione che verifica se l'intersezione dell'intervallo [a, b) con l'intervallo [c, d) è vuota.
+### 6. Definire in JavaScript una funzione che verifica se l'intersezione dell'intervallo [a, b) con l'intervallo [c, d) è vuota.
     * la funzione ha quattro parametri: a, b, c, d.
     * Invocare la funzione con i seguenti valori: 
         * 2, 4, 5, 7;
@@ -112,21 +112,21 @@ prompt() + array[]
         * 5, 7, 2, 4; 
         * 4, 7, 2, 4; 
         * 3, 7, 2, 4.
-7. Definire in JavaScript una funzione che calcola e restituisce la somma delle cifre di un intero che appartiene all'intervallo [0, 100].
+### 7. Definire in JavaScript una funzione che calcola e restituisce la somma delle cifre di un intero che appartiene all'intervallo [0, 100].
     * La funzione ha un parametro: n.
     * Invocare la funzione con i seguenti valori: 0, 1, 23, 99.
 
 
-8. La media aritmetica semplice di n numeri è così definita 
+### 8. La media aritmetica semplice di n numeri è così definita 
     * [Wikipedia, alla voce Media (statistica)]:
     * m = (x1 + x2 ... + xn) / n
 
-9. Definire in JavaScript una funzione che calcola e restituisce la media aritmetica semplice degli elementi di un array a formato da n numeri.
+### 9. Definire in JavaScript una funzione che calcola e restituisce la media aritmetica semplice degli elementi di un array a formato da n numeri.
     * La funzione ha un parametro: a.
     * Invocare la funzione con i seguenti valori:
         * [3, 12, 24]
         * [5, 7, 9, -12, 0].
-10. Dato un array a e un valore k, il numero di occorrenze di k in a è definito
+### 10. Dato un array a e un valore k, il numero di occorrenze di k in a è definito
     come il numero degli elementi di a il cui valore è uguale a k.
     * Definire in JavaScript una funzione che calcola e restituisce il numero di
     occorrenze del valore k nell'array a.
@@ -134,19 +134,19 @@ prompt() + array[]
     * Invocare la funzione con i seguenti valori:
         * [10, −5, 34, 0], 1
         * [10, −5, 34, 0], −5.
-11. Definire in JavaScript un predicato che verifica se ogni elemento di un array di numeri (tranne il primo) è pari alla somma degli elementi che lo precedono.
+### 11. Definire in JavaScript un predicato che verifica se ogni elemento di un array di numeri (tranne il primo) è pari alla somma degli elementi che lo precedono.
     * La funzione ha un parametro: a.
     * Invocare la funzione con i seguenti valori:
         * [1, 2, 6, 10, 32]
         * [1, 2, 6, 8, 31].
-12. Definire in JavaScript una funzione che ha come parametro un array a di numeri e che restituisce un nuovo array che contiene le differenze tra gli elementi adiacenti di a.
+### 12. Definire in JavaScript una funzione che ha come parametro un array a di numeri e che restituisce un nuovo array che contiene le differenze tra gli elementi adiacenti di a.
     * La funzione ha un parametro: a.
     * Invocare la funzione con i seguenti valori:
         * [1, 2, -6, 0, 3]
         * [2, 2, 3, 3, 4, 4].    
 
 
-13. Scrivere un documento HTML contenente un form con i seguenti campi:
+### 13. Scrivere un documento HTML contenente un form con i seguenti campi:
 * cognome (casella di testo editabile lunga 40 caratteri)
 * nome (casella di testo editabile lunga 30 caratteri)
 * matricola (casella di testo editabile lunga 12 caratteri)
@@ -168,7 +168,7 @@ Fare in modo che, nel documento HTML, tale funzione JavaScript venga eseguita qu
 
 
 
-14. Scrivere un documento HTML contenente una form contenente i seguenti campi:
+### 14. Scrivere un documento HTML contenente una form contenente i seguenti campi:
 * cognome e nome (casella di testo editabile lunga 50 caratteri)
 * sesso (selezionabile tramite due bottoni radio)
 * corso (da scegliere da un menu che riporta diversi corsi)
