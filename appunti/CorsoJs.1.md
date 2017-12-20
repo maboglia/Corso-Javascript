@@ -8,24 +8,7 @@
 
 L'oggetto __Window__ è il più alto livello di oggetti JavaScript che corrispondono alla finestra del browser.
 
-## Timers
-Sono funzioni invocate dopo un tempo determinato.
 
-`setTimeout()` 
-Pianifica la invocazione dopo un tempo determinato.
-
-`setInterval()` 
-Pianifica l'invocazione dopo un intervallo di tempo.
-
-`clearTimeout()`, `clearInterval()` 
-Resetta i timer.
-
-### Per esempio
-
-    setTimeout(function(){alert('asdf')},10000)
-
-    setInterval(function(){alert('asdf')},10000)
-                
 ## API Window
 
 `location` 
@@ -158,38 +141,39 @@ Inoltre è possibile strutturare un documento in modo che scambiarsi delle class
 # Eventi
 Un evento è qualcosa che scatena una azione specifica nel browser.
 
-## Un evento accade quando un utente:
+## Un evento accade quando:
 
-* Termina di caricare una pagina. 
-* Clicca un button. 
-* Esegue azioni col mouse o la taastiera. 
+* Termina il caricamento di un elemento della pagina. 
+* L'utente esegue azioni col mouse o la tastiera. 
 
-Sono disponibili moltimodi per aggiungere eventi ad una pagina.
-* Categorie di eventi
-* Device-dependent input events.
-* Tastiera, mouse, dispositivi Touch.
-* Device-independent input events
-* Click.
-* User interface events
-* Fuoco, cambi, submit.
-* State-change events
-* Cambio di stato in generale.
-* API-specific events
-* DnD, Players.
-* Timers and error handlers
-* Temporizzatori, errori.
+* Eventi associati ad una pagina
+    * Device-dependent input events
+    * Tastiera, mouse, dispositivi Touch
+    * Device-independent input events
+    * Click
+    * User interface events
+    * Fuoco, cambi, submit
+    * State-change events
+    * Cambio di stato in generale
+    * API-specific events
+    * DnD, Players
+    * Timers and error handlers
+    * Temporizzatori, errori
 
 ## Cattura di eventi
 
 Sono disponibili due metodi per registrare eventi.
+
 ```javascript
-b.onclick=function(){console.log('asdf')}
+b.onclick=function(){console.log('asdf')};
 ```
+
 ```javascript
 b.addEventListener('click',function(){
     console.log('asd')
-},false)
+},false);
 ```
+
 Maggiori informazioni: http://www.quirksmode.org/js/events_mouse.html
 
 
@@ -237,3 +221,26 @@ Sono disponibili due metodi per la transformazione tra JSON e Oggetti di JavaScr
     }
 }
 ```
+
+
+## Hoisting
+Le variabili in JavaScript hanno ambito di funzione, questo significa che tutte le variabili dichiarate in una funzione sono visibili nel corpo della funzione. Anche prima di essere dichiarate.
+
+Più informazioni: 
+
+http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html 
+
+### Esempi
+
+```javascript
+var a='asdf';
+(function b(){
+    console.log(a)
+})() // asdf
+var a='asdf';
+(function b(){
+    console.log(a)
+    var a='qwer'
+})() // undefined
+```
+---

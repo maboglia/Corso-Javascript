@@ -1,0 +1,438 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"></head><body>{
+ "records": [  
+
+			 {"idfilm": 87921,
+			 	 "colonna": "colonna1",
+			 	 "ordinamento": 0,
+	        	 "titolo": "Parisienne", 
+	        	 "sezione": "",
+	        	 "descrizione_film": "A met�&nbsp; degli anni Novanta, la 
+diciottenne Lina arriva dal Libano a Parigi per studiare e lasciarsi 
+alle spalle una vita difficile.",
+
+	        	 "url_live": 
+"http://www.mymovies.it/film/2015/parisienne/live/",
+	        	 "url_scheda": "http://www.mymovies.it/film/2015/parisienne/",
+
+	        	 "img_cover": 
+"http:\/\/pad.mymovies.it\/filmclub\/2015\/11\/006\/coverlg.jpg",
+	        	 "img": 
+"http:\/\/pad.mymovies.it\/filmclub\/2015\/11\/006\/locandina.jpg", 
+	        	 "anno": 2015, 
+	        	 "durata": 119, 
+	        	 "tipo": "film", 
+	        	 "urltrailer": 
+"http:\/\/pad.mymovies.it\/filmclub\/2015\/11\/006\/trailer.mp4", 
+	        	 
+	        	 "rank": 0, 
+	        	 "genere": "Drammatico", 
+	        	 "lancio": "Coming of age fortemente autobiografico, intimo e 
+generosamente sincero", 
+	        	 "idevento": 3603, 
+	        	 "stelle": 3, 
+
+	        	 "premiere": "lunedì 16/01 ore 21:00",
+	        	 "fino_al": "lunedì 13/02",
+	        	 "repliche": "",
+	        	 "ondemand": "",
+
+	        	 "registi": "Danielle Arbid",
+	        	 "attori": "Manal Issa, Vincent Lacoste, Paul Hamy, Damien 
+Chapelle, Clara Ponsot", 
+	        	 "produzione": "Francia",
+	        	 "stato_streaming": "ondemand",
+
+	        	 "distribuzione": ""},
+			 
+
+
+
+			 {"idfilm": 85682,
+			 	 "colonna": "colonna2",
+			 	 "ordinamento": 0,
+	        	 "titolo": "Marguerite e Julien", 
+	        	 "sezione": "",
+	        	 "descrizione_film": "Marguerite e suo fratello Julien si 
+amano teneramente fin dalla primissima infanzia e non desiderano altro 
+che stare l'uno accanto all'altro. Crescendo, il loro affetto si 
+converte in un sentimento amoroso definitivo, inaccettabile per la 
+societ�&nbsp; di ieri, come per quella di oggi.",
+
+	        	 "url_live": 
+"http://www.mymovies.it/film/2015/margueriteetjulien/live/",
+	        	 "url_scheda": 
+"http://www.mymovies.it/film/2015/margueriteetjulien/",
+
+	        	 "img_cover": 
+"http:\/\/pad.mymovies.it\/filmclub\/2015\/04\/181\/coverlg.jpg",
+	        	 "img": 
+"http:\/\/pad.mymovies.it\/filmclub\/2015\/04\/181\/locandina.jpg", 
+	        	 "anno": 2015, 
+	        	 "durata": 103, 
+	        	 "tipo": "film", 
+	        	 "urltrailer": 
+"http:\/\/pad.mymovies.it\/filmclub\/2015\/04\/181\/trailer1.mp4", 
+	        	 
+	        	 "rank": 0, 
+	        	 "genere": "Commedia drammatica", 
+	        	 "lancio": "Attraverso la miscela di epoche diverse, la 
+Donzelli cerca una via ibrida e nuova che annulli i confini temporali 
+della storia", 
+	        	 "idevento": 3604, 
+	        	 "stelle": 2, 
+
+	        	 "premiere": "martedì 17/01 ore 21:00",
+	        	 "fino_al": "lunedì 13/02",
+	        	 "repliche": "",
+	        	 "ondemand": "",
+
+	        	 "registi": "Valérie Donzelli",
+	        	 "attori": "Anaïs Demoustier, Jérémie Elkaïm, Frédéric 
+Pierrot, Aurelia Petit, Raoul Fernandez", 
+	        	 "produzione": "Francia",
+	        	 "stato_streaming": "ondemand",
+
+	        	 "distribuzione": ""},
+
+
+			 {"idfilm": 87799,
+			 	 "colonna": "colonna3",
+			 	 "ordinamento": 0,
+	        	 "titolo": "Je ne suis pas un salaud", 
+	        	 "sezione": "",
+	        	 "descrizione_film": "Eddie vive in periferia. Una sera è 
+aggredito con brutalit�&nbsp; da alcuni balordi. Quando la polizia gli 
+mostra gli indiziati lui denuncia Ahmed sapendo che non c'entra niente 
+con l'aggressione. Il giovane di origini maghrebine viene arrestato, 
+mentre Eddie riprende il suo difficile rapporto con la moglie e il 
+figlio.",
+
+	        	 "url_live": 
+"http://www.mymovies.it/film/2015/jenesuispasunsalaud/live/",
+	        	 "url_scheda": 
+"http://www.mymovies.it/film/2015/jenesuispasunsalaud/",
+
+	        	 "img_cover": 
+"http:\/\/pad.mymovies.it\/filmclub\/2015\/10\/129\/coverlg.jpg",
+	        	 "img": 
+"http:\/\/pad.mymovies.it\/filmclub\/2015\/10\/129\/locandina.jpg", 
+	        	 "anno": 2015, 
+	        	 "durata": 106, 
+	        	 "tipo": "film", 
+	        	 "urltrailer": 
+"http:\/\/pad.mymovies.it\/filmclub\/2015\/10\/129\/trailer.mp4", 
+	        	 
+	        	 "rank": 0, 
+	        	 "genere": "Drammatico", 
+	        	 "lancio": "Il tema dell'integrazione raccontato in chiave 
+noir", 
+	        	 "idevento": 3605, 
+	        	 "stelle": -1, 
+
+	        	 "premiere": "mercoledì 18/01 ore 21:00",
+	        	 "fino_al": "lunedì 13/02",
+	        	 "repliche": "",
+	        	 "ondemand": "",
+
+	        	 "registi": "Emmanuel Finkiel",
+	        	 "attori": "Nicolas Duvauchelle, Melanie Thierry, Driss Ramdi,
+ Maryne Cayon, Nicolas Bridet", 
+	        	 "produzione": "Francia",
+	        	 "stato_streaming": "ondemand",
+
+	        	 "distribuzione": ""},
+
+
+			 {"idfilm": 91679,
+			 	 "colonna": "colonna4",
+			 	 "ordinamento": 0,
+	        	 "titolo": "Préjudice", 
+	        	 "sezione": "",
+	        	 "descrizione_film": "Durante una cena in famiglia la sorella 
+di Cédric annuncia di aspettare un bambino. La notizia rende tutti 
+felici tranne Cédric che non è ancora indipendente e vive in casa con i
+ genitori. La sua frustrazione personale gli fa montare la rabbia che 
+comincia a sfogare sugli altri componenti della famiglia.",
+
+	        	 "url_live": 
+"http://www.mymovies.it/film/2015/prejudice/live/",
+	        	 "url_scheda": "http://www.mymovies.it/film/2015/prejudice/",
+
+	        	 "img_cover": 
+"http:\/\/pad.mymovies.it\/filmclub\/2017\/01\/022\/coverlg.jpg",
+	        	 "img": 
+"http:\/\/pad.mymovies.it\/filmclub\/2017\/01\/022\/locandina.jpg", 
+	        	 "anno": 2015, 
+	        	 "durata": 105, 
+	        	 "tipo": "film", 
+	        	 "urltrailer": 
+"http:\/\/pad.mymovies.it\/filmclub\/2017\/01\/022\/trailer1.mp4", 
+	        	 
+	        	 "rank": 0, 
+	        	 "genere": "Drammatico", 
+	        	 "lancio": "I pregiudizi di una famiglia", 
+	        	 "idevento": 3606, 
+	        	 "stelle": -1, 
+
+	        	 "premiere": "giovedì 19/01 ore 21:00",
+	        	 "fino_al": "lunedì 13/02",
+	        	 "repliche": "",
+	        	 "ondemand": "",
+
+	        	 "registi": "Antoine Cuypers",
+	        	 "attori": "Ariane Labed, Nathalie Baye, Julien Baumgartner, 
+Eric Caravaca, Thomas Blanchard", 
+	        	 "produzione": "Belgio, Lussemburgo, Paesi Bassi",
+	        	 "stato_streaming": "ondemand",
+
+	        	 "distribuzione": ""},
+
+
+
+
+			 {"idfilm": 91678,
+			 	 "colonna": "colonna1",
+			 	 "ordinamento": 0,
+	        	 "titolo": "Les démons", 
+	        	 "sezione": "",
+	        	 "descrizione_film": "Félix ha dieci anni e ha appena finito 
+la scuola a Old Longueuil, un anonimo sobborgo dall'apparenza pacifica. 
+Il suo carattere non è tra i più semplici: ha paura di tutto e dentro 
+di lui vivono dei demoni che, a poco a poco, cominciano a mescolarsi con
+ i demoni reali che lo circondano. E che si fanno sempre più 
+inquietanti.",
+
+	        	 "url_live": 
+"http://www.mymovies.it/film/2015/lesdemons/live/",
+	        	 "url_scheda": "http://www.mymovies.it/film/2015/lesdemons/",
+
+	        	 "img_cover": 
+"http:\/\/pad.mymovies.it\/filmclub\/2017\/01\/020\/coverlg.jpg",
+	        	 "img": 
+"http:\/\/pad.mymovies.it\/filmclub\/2017\/01\/020\/locandina.jpg", 
+	        	 "anno": 2015, 
+	        	 "durata": 118, 
+	        	 "tipo": "film", 
+	        	 "urltrailer": 
+"http:\/\/pad.mymovies.it\/filmclub\/2017\/01\/020\/trailer1.mp4", 
+	        	 
+	        	 "rank": 0, 
+	        	 "genere": "Drammatico", 
+	        	 "lancio": "Quando i demoni non sono solo interiori", 
+	        	 "idevento": 3607, 
+	        	 "stelle": -1, 
+
+	        	 "premiere": "venerdì 20/01 ore 21:00",
+	        	 "fino_al": "lunedì 13/02",
+	        	 "repliche": "",
+	        	 "ondemand": "",
+
+	        	 "registi": "Philippe Lesage",
+	        	 "attori": "Édouard Tremblay-Grenier, Pier-Luc Funk, Vassili 
+Schneider, Sarah Mottet, Laurent Lucas", 
+	        	 "produzione": "Francia",
+	        	 "stato_streaming": "ondemand",
+
+	        	 "distribuzione": ""},
+
+
+
+
+			 {"idfilm": 87463,
+			 	 "colonna": "colonna2",
+			 	 "ordinamento": 0,
+	        	 "titolo": "The New Kid", 
+	        	 "sezione": "",
+	        	 "descrizione_film": "Benoit, 14 anni, lascia la campagna per 
+trasferirsi a Parigi. Il primo giorno di scuola si rivela più difficile
+ del previsto e viene immediatamente isolato. Finché un giorno, 
+Johanna, una giovane ragazza svedese arriva in classe. Benoit decide di 
+organizzare una festa a casa ma solo tre persone si presentano: tre 
+nerd.",
+
+	        	 "url_live": 
+"http://www.mymovies.it/film/2015/thenewkid/live/",
+	        	 "url_scheda": "http://www.mymovies.it/film/2015/thenewkid/",
+
+	        	 "img_cover": 
+"http:\/\/pad.mymovies.it\/filmclub\/2015\/09\/179\/coverlg.jpg",
+	        	 "img": 
+"http:\/\/pad.mymovies.it\/filmclub\/2015\/09\/179\/locandina.jpg", 
+	        	 "anno": 2015, 
+	        	 "durata": 80, 
+	        	 "tipo": "film", 
+	        	 "urltrailer": 
+"http:\/\/pad.mymovies.it\/filmclub\/2015\/09\/179\/trailer1.mp4", 
+	        	 
+	        	 "rank": 0, 
+	        	 "genere": "Drammatico", 
+	        	 "lancio": "Diventare un ragazzo popolare a scuola è così 
+importante?", 
+	        	 "idevento": 3608, 
+	        	 "stelle": -1, 
+
+	        	 "premiere": "sabato 21/01 ore 21:00",
+	        	 "fino_al": "lunedì 13/02",
+	        	 "repliche": "",
+	        	 "ondemand": "",
+
+	        	 "registi": "Rudi Rosenberg",
+	        	 "attori": "Réphaël Ghrenassia, Joshua Raccah, Géraldine 
+Martineau, Guillaume Cloud-Roussel", 
+	        	 "produzione": "Francia",
+	        	 "stato_streaming": "ondemand",
+
+	        	 "distribuzione": ""},
+
+
+
+			 {"idfilm": 89257,
+			 	 "colonna": "colonna3",
+			 	 "ordinamento": 0,
+	        	 "titolo": "Ce sentiment de l'été", 
+	        	 "sezione": "",
+	        	 "descrizione_film": "In piena estate, il trentenne Sasha, 
+muore improvvisamente. Spiazzati e lasciati con un enorme dolore, il suo
+ migliore amico Lawrence e sua sorelle Zoe condividono come meglio 
+possono il peso dell'assenza. Tra Berlino, Parigi e New York cercheranno
+ di riemergere dalle tenebre, guidati dal ricordo di colui che 
+amavano.",
+
+	        	 "url_live": 
+"http://www.mymovies.it/film/2016/cesentimentdelete/live/",
+	        	 "url_scheda": 
+"http://www.mymovies.it/film/2016/cesentimentdelete/",
+
+	        	 "img_cover": 
+"http:\/\/pad.mymovies.it\/filmclub\/2016\/03\/244\/coverlg.jpg",
+	        	 "img": 
+"http:\/\/pad.mymovies.it\/filmclub\/2016\/03\/244\/locandina.jpg", 
+	        	 "anno": 2015, 
+	        	 "durata": 106, 
+	        	 "tipo": "film", 
+	        	 "urltrailer": 
+"http:\/\/pad.mymovies.it\/filmclub\/2016\/03\/244\/trailer1.mp4", 
+	        	 
+	        	 "rank": 0, 
+	        	 "genere": "Drammatico", 
+	        	 "lancio": "La perdita improvvisa di una persona cara colpisce
+ una coppia di amici, costretti a confrontarsi con la morte", 
+	        	 "idevento": 3609, 
+	        	 "stelle": -1, 
+
+	        	 "premiere": "domenica 22/01 ore 21:00",
+	        	 "fino_al": "lunedì 13/02",
+	        	 "repliche": "",
+	        	 "ondemand": "",
+
+	        	 "registi": "Mikhael Hers",
+	        	 "attori": "Anders Danielsen Lie, Judith Chemla, Marie 
+Rivière, Féodor Atkine, Dounia Sichov", 
+	        	 "produzione": "Francia, Germania",
+	        	 "stato_streaming": "ondemand",
+
+	        	 "distribuzione": ""},
+
+
+
+			 {"idfilm": 88848,
+			 	 "colonna": "colonna4",
+			 	 "ordinamento": 0,
+	        	 "titolo": "Je suis �&nbsp; vous tout de suite", 
+	        	 "sezione": "",
+	        	 "descrizione_film": "La trentenne Hanna ha due 
+caratteristiche: è molto affascinante e non è capace di dire di no. La
+ donna è affetta dalla nevrosi della gentilezza, sindrome di cui 
+soffrono anche suo padre Omar, droghiere sociale, e sua madre Simone, 
+psicologa a domicilio. I rapporti con suo fratello Hakim, concentrato 
+solo sulle sue radici algerine e sulla sua religione, sono sempre 
+peggiori. Finché un evento inaspettato non obbliga i due a 
+ritrovarsi...",
+
+	        	 "url_live": 
+"http://www.mymovies.it/film/2015/jesuisavoustoutdesuite/live/",
+	        	 "url_scheda": 
+"http://www.mymovies.it/film/2015/jesuisavoustoutdesuite/",
+
+	        	 "img_cover": 
+"http:\/\/pad.mymovies.it\/filmclub\/2017\/01\/018\/coverlg.jpg",
+	        	 "img": 
+"http:\/\/pad.mymovies.it\/filmclub\/2017\/01\/018\/locandina.jpg", 
+	        	 "anno": 2015, 
+	        	 "durata": 100, 
+	        	 "tipo": "film", 
+	        	 "urltrailer": 
+"http:\/\/pad.mymovies.it\/filmclub\/2017\/01\/018\/trailer.mp4", 
+	        	 
+	        	 "rank": 0, 
+	        	 "genere": "Commedia", 
+	        	 "lancio": "Il rapporto ritrovato tra due fratelli", 
+	        	 "idevento": 3610, 
+	        	 "stelle": -1, 
+
+	        	 "premiere": "lunedì 23/01 ore 21:00",
+	        	 "fino_al": "lunedì 13/02",
+	        	 "repliche": "",
+	        	 "ondemand": "",
+
+	        	 "registi": "Baya Kasmi",
+	        	 "attori": "Vimala Pons, Mehdi Djaadi, Agnès Jaoui, Ramzy 
+Bedia, Laurent Capelluto", 
+	        	 "produzione": "Francia",
+	        	 "stato_streaming": "ondemand",
+
+	        	 "distribuzione": ""},
+
+
+
+
+			 {"idfilm": 5603,
+			 	 "colonna": "colonna1",
+			 	 "ordinamento": 0,
+	        	 "titolo": "Cléo dalle 5 alle 7", 
+	        	 "sezione": "",
+	        	 "descrizione_film": "Una giovane cantante teme d'essere 
+minacciata da un male incurabile. In attesa della diagnosi, per due ore,
+ considerer�&nbsp; in modo diverso i suoi rapporti con le persone e con 
+la vita.",
+
+	        	 "url_live": 
+"http://www.mymovies.it/film/1962/cleodalle5alle7/live/",
+	        	 "url_scheda": 
+"http://www.mymovies.it/film/1962/cleodalle5alle7/",
+
+	        	 "img_cover": 
+"http:\/\/pad.mymovies.it\/filmclub\/2017\/01\/021\/coverlg.jpg",
+	        	 "img": 
+"http:\/\/pad.mymovies.it\/filmclub\/2017\/01\/021\/locandina.jpg", 
+	        	 "anno": 1962, 
+	        	 "durata": 85, 
+	        	 "tipo": "film", 
+	        	 "urltrailer": 
+"http:\/\/pad.mymovies.it\/filmclub\/2017\/01\/021\/trailer.mp4", 
+	        	 
+	        	 "rank": 0, 
+	        	 "genere": "Drammatico", 
+	        	 "lancio": "Vedere la vita sotto una nuova prospettiva", 
+	        	 "idevento": 3611, 
+	        	 "stelle": -1, 
+
+	        	 "premiere": "martedì 24/01 ore 21:00",
+	        	 "fino_al": "lunedì 13/02",
+	        	 "repliche": "",
+	        	 "ondemand": "",
+
+	        	 "registi": "Agnès Varda",
+	        	 "attori": "Eddie Constantine, Jean-Claude Brialy, Danièle 
+Delorme, Corinne Marchand, Serge Korber", 
+	        	 "produzione": "Francia",
+	        	 "stato_streaming": "ondemand",
+
+	        	 "distribuzione": ""}
+
+
+
+
+
+]}</body></html>

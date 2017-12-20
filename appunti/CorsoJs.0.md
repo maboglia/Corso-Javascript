@@ -221,14 +221,13 @@ Valore undefined    |    undefined
 # Tipi di dato
 
 ## Boolean
-Boolean è la rappresentazione di tipo oggetto di una variabile logica.
-Booleans
-    operazioni logiche
-    comparazione tra numeri e valori booleani
-    undefined e null
-    Boolean() verifica se un'espressione è booleana
+* Boolean è la rappresentazione di tipo oggetto di una variabile logica.
+* Booleans
+    * operazioni logiche
+    * comparazione tra numeri e valori booleani
+    * undefined e null
+    * Boolean() verifica se un'espressione è booleana
 
----
 
 ### Per esempio
 
@@ -247,31 +246,36 @@ null
 NaN
 ''
 ```
-[es: boolean](../esempi/01_basic_foundations/012_boolean.html)
-[es: AND Logico](../esempi/01_basic_foundations/018_ANDLogico.html)
-[es: OR Logico](../esempi/01_basic_foundations/019_ORLogico.html)
-[es: OR Logico](../esempi/01_basic_foundations/020_ORLogico.html)
+
+### Altri esempi
+
+* [esempio boolean](../esempi/01_basic_foundations/012_boolean.html)
+* [esempio AND Logico](../esempi/01_basic_foundations/018_ANDLogico.html)
+* [esempio OR Logico](../esempi/01_basic_foundations/019_ORLogico.html)
+* [esempio OR Logico](../esempi/01_basic_foundations/020_ORLogico.html)
 
 
 ## Number
 Number è la rappresentazione di tipo oggetto di un tipo numerico.
     
 ### JS numbers
-    i numeriin JS sono SEMPRE float a 64-bit
-    il numero massimo di decimali è 17 e la virgola mobile non è sempre accurata
-    il prefisso 0x permette di usare i numeri esadecimali
-    In JS esiste Infinity e -Infinity
-    NaN not a number: p.es. operazioni aritmetiche con le stringhe restituiscono NaN
-    proprietà e metodi principali
-        Number()
-        parseFloat()
-        parseInt()
-        toString()
-        toFixed()
-        toPrecision()
-        valueOf()
+
+* i numeri in JS sono SEMPRE float a 64-bit
+* il numero massimo di decimali è 17 e la virgola mobile non è sempre accurata
+* il prefisso 0x permette di usare i numeri esadecimali
+* In JS esiste Infinity e -Infinity
+* NaN not a number: p.es. operazioni aritmetiche con le stringhe restituiscono NaN
+* proprietà e metodi principali
+    * Number()
+    * parseFloat()
+    * parseInt()
+    * toString()
+    * toFixed()
+    * toPrecision()
+    * valueOf()
 
 ### Per esempio:
+
 ```javascript
   12 // numero intero in base decimale.
 0345 // numero intero in base ottale.
@@ -280,45 +284,45 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 3.141592654 // numero decimale.
 .234955     // numero decimale.
 6.023e23    // numero decimale in notazione esponenziale.
-```                
+```
 
 ### Math Object
+
 Per lavorare con i Number, puoi usare Math che è l'oggetto che concentra molte constanti e funzioni matematiche.
+
 * [Math Object](./Lesson1_05_MathObject.md)
 
 ---
 
 ## String
+
 String è la rappresentazione di tipo oggetto di una stringa.
+
 * [String Object](./Lesson1_06_StringObject.md)
-
----
-
-
 
 ## valore nullo e valore undefined
 
 Rappresentano l'assenza di un valore in una variabile o nel ritorno di una function.
+
 ```javascript
 var a=null
 var b=undefined
 ```
 
-
-
 ## Funzioni
+
 Le funzioni se dichiarano con la parola riservata funzione.
+
 ```javascript
 function f(x,y){
     return x+y
 }
 ```
+
 [Funzioni](./Lesson1_07_Functions.md) 
 
-
----
-
 ## Date Object 
+
 * Date è l'oggetto utilizzato per la rappresentazione di date.
 * Internamente, questa rappresentazione è un numero che rappresenta i millisecondi trascorsi dalla data: 1 di gennaio del 1970.
 * mostrare le date
@@ -326,82 +330,59 @@ function f(x,y){
 * formati e metodi per le date
 * metodi get e metodi set
 
-### Maggiori informazioni: 
-http://en.wikipedia.org/wiki/System_time    
 
 ### codice esempio
+
 [es data](../esempi/01_date.js)
 
----
 
 ## Array
+
 * [JS array](Lesson1_08_Array.md)
 
 ---
 
 ## Objects
+
 * [JS Objects](./Lesson1_09_Object.md)
 
+## Timers
 
-## events
-cosa può fare JS utilizzando i gestori di eventi (handlers)
-    eventi HTML 
-        onchange
-        onclick
-        onmouseover
-        onmouseout
-        onkeydown
-        onload
----
+Sono funzioni invocate dopo un tempo determinato.
+funzione                |    significato
+------------ | -------------
+`setTimeout()` | Pianifica la invocazione dopo un tempo determinato.
 
-## Hoisting
-Le variabili in JavaScript hanno ambito di funzione, questo significa che tutte le variabili dichiarate in una funzione sono visibili nel corpo della funzione. Anche prima di essere dichiarate.
-Più informazioni: 
-http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html 
+`setInterval()` | Pianifica l'invocazione dopo un intervallo di tempo.
 
-Esempi
-var a='asdf';
-(function b(){
-    console.log(a)
-})() // asdf
-var a='asdf';
-(function b(){
-    console.log(a)
-    var a='qwer'
-})() // undefined
+`clearTimeout()` | Resetta i timer.
 
----
+`clearInterval()` | Resetta i timer.
+
+### Per esempio
+
+```javascript
+setTimeout(function(){
+    alert('asdf')
+    }, 10000);
+
+setInterval(function(){
+    alert('asdf')
+    }, 10000);
+```
 
 # Ricapitolando
-* Variabili, 
-* dichiarazioni ed espressioni 
+
+* Convenzioni del linguaggio e dialogs
+* Variabili
+* Operatori 
+* Costrutti condizionali e iterativi 
 * Tipi primitivi
-* Tipi oggetto
-* tipi dinamici
-* operatore typeof
-* undefined
-* null
-* empty values
-* Boolean
-* [Funzioni](./Lesson1_07_Functions.md) 
+* Tipi reference
+* Booleans
+* [Function](./Lesson1_07_Functions.md) 
 * [Number](./Lesson1_05_MathObject.md)
 * [String](./Lesson1_06_StringObject.md)
 * [Array](./Lesson1_08_Array.md)
 * [Object](./Lesson1_09_Object.md)
-* Risorse del browser 
-* Eventi: cattura e gestione 
-* Formati di scambio: JSON e XML 
-* Servizi REST e asincroni: AJAX
-
-
-
-
-
-
-
-
-
-
-
-
- 
+* Timers
