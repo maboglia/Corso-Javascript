@@ -349,8 +349,9 @@ function f(x,y){
 ## Timers
 
 Sono funzioni invocate dopo un tempo determinato.
-funzione                |    significato
------------- | -------------
+
+funzione | significato
+--- | ---
 `setTimeout()` | Pianifica la invocazione dopo un tempo determinato.
 
 `setInterval()` | Pianifica l'invocazione dopo un intervallo di tempo.
