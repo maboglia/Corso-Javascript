@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		h1, h2 {font-size: 18px;}
+		img {width: 200px;height: 140px;}
+	</style>
+</head>
+<body>
+
+	<h1>ciao, mondo</h1>
+	<h2>ciao, mondo</h2>
+
+<script type="text/javascript">
+	//document.body.style.backgroundColor = "#CCC";
+
+	var cane1 = "bobi";
+	var cane2 = "fido";
+	var cane3 = "laki";
+
+	console.log(cane1);
+	console.log(cane2);
+	console.log(cane3);
+/*
+	//primo modo di definire array  
+	var cani = new Array();
+
+	cani[0] = "bobi";
+	cani[1] = "fido";
+	cani[2] = "laky";
+	cani[3] = "yuky";
+*/
+/*
+	//secondo modo di definire array  
+	var cani = new Array("bobi","fido","laky","yuky");
+*/	
+
+	var cani = ["bobi","fido","laky","yuky"];
+	var imgCani = [];
+	var output = "";
+
+	for (var i = 0; i < cani.length; i++) {
+		console.log(cani[i]);
+		var immagine = "img/cane" + i + ".jpg";
+		output = output +
+				 "<h1>" + cani[i] + "</h1>" +
+				 "<img src='" + immagine + "'>" +
+				  "";
+
+	}
+	var vecchioHTML = document.body.innerHTML;
+	document.body.innerHTML = vecchioHTML + output;
+	console.log(output);
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
