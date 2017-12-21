@@ -1,9 +1,9 @@
-##Selettori jQuery 
+# Principali selettori jQuery 
 
 Selettore | Esempio | Seleziona
 --- | --- | ---
- * | $("*") | Tutti gli elementi
- #id | $("#lastname") | L'elemento con id lastname
+ \* | $("*") | Tutti gli elementi
+ \#id | $("#lastname") | L'elemento con id lastname
  .class | $(".intro") | Tutti gli elementi con classe intro
  element | $("p") | Tutti gli elementi p
  .class.class | $(".intro.demo") | Tutti gli elementi con le classi intro e demo
