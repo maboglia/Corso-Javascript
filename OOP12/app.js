@@ -108,7 +108,7 @@ document.getElementById("aggiorna").addEventListener("click", stampaCarrello);
 //     document.getElementById("carrello").appendChild(params.target);
 // }, false);
 function stampaCarrello() {
-    document.getElementById("aggiorna").innerHTML = "";
+    document.getElementById("carrello").innerHTML = "";
     prodottiAcquistati.forEach(function(params) {
         var temp = creaOggetto("li", params);
         document.getElementById("carrello").appendChild(temp);
