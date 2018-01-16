@@ -175,3 +175,70 @@ function myFunction() {
         'border = "0" > < /a>');
 </script>
 ```
+
+
+```javascript
+<html>
+<head><title>Navigator Object</title></head>
+<body>
+  <big>
+    <script type="text/javascript">
+      for(var property in navigator){
+         str="navigator"+"."+ property;
+         document.write(property+ "&nbsp;&nbsp;<em>"+   
+               str+"</em><br />");   
+       }
+    </script>
+  </big>
+</body>
+</html>	
+```
+```javascript
+
+<html><head><title>The Navigator Object</title></head>
+<body>
+	<h2>About The Browser</h2>
+	<script language="JavaScript">
+		var BrowserName= navigator.appName;
+		var BrowserVersion = navigator.appVersion;
+		var BrowserAgent= navigator.userAgent;
+		var platform=navigator.platform;
+		document.write("<font size='+1'>");
+		document.write("<b>The Browser's name  is:</b> " +
+		               BrowserName + "<br>");
+		document.write("<b>The Browser version is:</b> " +
+		               BrowserVersion + "<br>");
+		document.write("<b>The Browser's \"user agent\" is:</b> " +
+		               BrowserAgent + "<br>");
+		document.write("<b>The Browser's platform is:</b> " +
+		               platform + "<br>");
+		document.write("</font>");
+	</script>
+</body>
+</html>
+
+```
+```javascript
+
+```
+```javascript
+
+```
+```javascript
+
+```
+```javascript
+
+```
+```javascript
+
+```
+```javascript
+
+```
+```javascript
+
+```
+```javascript
+
+```
