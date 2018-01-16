@@ -143,3 +143,35 @@ function myFunction() {
 </body>
 </html> 
 ```
+
+## Banner a rotazione
+
+```javascript
+<script>
+    var img_width = "468";
+    var img_height = "60";
+    var img_title = "Click Here";
+
+    var ad = new Array()
+        // inserire qui le immagini sorgente
+    ad[0] = 'images / Banner01.jpg';
+    ad[1] = 'images / Banner01.jpg';
+    ad[2] = 'images / Banner01.jpg';
+    ad[3] = 'images / Banner01.jpg';
+
+    var links = new Array()
+        // inserire qui i link
+    links[0] = 'http: //www.link01.com';
+    links[1] = 'http: //www.ink02.com';
+    links[2] = 'http: //www.ink03.com';
+    links[3] = 'http: //www.ink04.com';
+    var xy = Math.floor(Math.random() * ad.length);
+
+    document.write(' < a href = ' + links[xy] + '+
+        'target = "_blank" > < img src = ' + ad[xy] + '+
+        'width = "' + img_width + '"' +
+        'height = "' + img_height + '"' +
+        'alt = "' + img_title + '"' +
+        'border = "0" > < /a>');
+</script>
+```

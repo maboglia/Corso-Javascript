@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.red {color:red;}
+		.green {color:green;}
+	</style>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$("document").ready(function () { // inizia ready()
+			$("button").click(function (argument) {
+				
+				var scelta = $(this).text();
+				//console.log(scelta);
+				$("#sceltaUmano").text(scelta);
+
+				var sceltaPC;
+				var casuale = Math.random(); 
+				if (casuale < 0.34)
+					sceltaPC = "Pietra";
+				else if (casuale < 0.67)
+					sceltaPC = "Forbici";
+				else 
+					sceltaPC = "Carta";
+
+				$("#sceltaComputer").text(sceltaPC);
+
+				$("#risultato").text(trovaVincitore(scelta, sceltaPC));
+
+			});//fine click
+			
+
+
+		});//fine metodo ready()
+
+function trovaVincitore(sceltaUmano, sceltaComputer) {
+	var risultato;
+	if(sceltaUmano == sceltaComputer) 
+	risultato = "pareggio";
+	else {
+
+		switch(sceltaUmano){
+			case "Pietra":
+				if (sceltaComputer == "Carta") 
+						risultato = "vince PC";
+				else
+						risultato = "vince umano";
+			break;
+
+			case "Forbici":
+				if (sceltaComputer == "Pietra") 
+						risultato = "vince PC";
+				else
+						risultato = "vince umano";
+			break;
+
+			case "Carta":
+				if (sceltaComputer == "Forbici") 
+						risultato = "vince PC";
+				else
+						risultato = "vince umano";
+			break;
+
+
+		}
+
+	}
+	return risultato;
+}
+
+	</script>
+</head>
+<body>
+<h1>Selettori jQuery</h1>
+
+<div class="container">
+
+	<button id="bPietra">Pietra</button>
+	<button id="bForbici">Forbici</button>
+	<button id="bCarta">Carta</button>
+
+	<div id="sceltaUmano"></div>
+	<div id="sceltaComputer"></div>
+	<div id="risultato"></div>
+
+</div>
+
+
+</body>
+</html>
+
+
+
+
+

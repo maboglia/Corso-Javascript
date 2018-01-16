@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.red {color:red;}
+		.green {color:green;}
+	</style>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$("document").ready(function () { //qui inizia il metodo ready()
+				//questo codice sarà eseguito solo quando l'intero documento è stato scaricato
+			$("#esempio").children().css("border", "1px dotted black");
+			var elSel = $("#parag1");
+
+			$("#mioBottone").click(function (argument) {
+
+				var numeroDellaFortuna = Math.random();
+				if (numeroDellaFortuna < 0.5){
+					console.log("testa");
+					elSel.prev().text("testa").addClass('red');
+				} //fine dell'if
+				else {
+					console.log("croce");
+				}
+
+	
+
+			});//qui finisce
+			
+		});//fine metodo ready()
+
+
+	</script>
+</head>
+<body>
+<h1>Selettori jQuery</h1>
+
+<div class="container">
+	<p>I selettori servono per selezionare gli elementi</p>
+
+	<p>I selettori tutilizzano una sintassi CSS-like</p>
+
+	<ul id="lista1">
+		<li class="a"><code>$("tag")</code> Seleziona gli elementi corrispondenti a tag</li>
+	</ul>
+	<button id="mioBottone">cliccami</button>
+	<div id="esempio">
+		<p class="a">Questo è il paragrafo 1</p>		
+		<p class="b">Questo è il paragrafo 2</p>		
+		<p id="parag1">Questo è il paragrafo 3</p>		
+		<p id="parag2">Questo è il paragrafo 4</p>		
+		<p class="a" lang="en-us">Questo è il paragrafo 5</p>		
+	</div>
+
+	<table>
+		<tr><th>nome</th><th>citta</th><th>numero</th></tr>
+		<tr><td>Carlo</td><td>Torino</td><td>10</td></tr>
+		<tr><td>Piero</td><td>Milano</td><td>20</td></tr>
+		<tr><td>Lella</td><td>Roma</td><td>25</td></tr>
+	</table>
+
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
