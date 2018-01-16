@@ -1,6 +1,5 @@
 # appunti
 
-
 ## javascript
 
 **esercizi**
