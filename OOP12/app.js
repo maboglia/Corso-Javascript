@@ -80,7 +80,7 @@ for (let index = 0; index < prodotti.length; index++) {
 var body = titolo[0].parentNode;
 
 
-body.appendChild(ul);
+body.insertBefore(ul, body.children[0]);
 
 var test = document.getElementById("miaLista").children[0];
 //document.getElementById("miaLista").removeChild(ul.lastElementChild);
@@ -99,6 +99,11 @@ for (let i = 0; i < puntiElenco.length; i++) {
         prodottiAcquistati.push(params.target.textContent);
 
     });
+}
+
+//per scorrere una HTMLcollection
+for (var item of puntiElenco) {
+    console.log(item);
 }
 
 document.getElementById("aggiorna").addEventListener("click", stampaCarrello);

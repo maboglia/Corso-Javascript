@@ -257,22 +257,19 @@ $(elemento)
 $(elemento[attributo])
 ```
 
-    Permette di selezionare gli elementi della pagina che hanno l’attributo passato come parametro tutte le immagini in cui è
-specificato l’attributo title
-$("input[value]") tutti gli elementi input in cui è
-specificato l’attributo value
-    $("img[title]")
-     
+Permette di selezionare gli elementi della pagina che hanno l’attributo passato come parametro tutte le immagini in cui è
 
+$("img[title]") tutti gli elementi img in cui è specificato l’attributo title
+$("input[value]") tutti gli elementi input in cui è specificato l’attributo value
 
 ```javascript
 $(elemento[attributo=x])
 ```
 
-    Permette di selezionare gli elementi della pagina che hanno l’attributo passato come parametro uguale al valore X tutte le immagini in cui l’attributo titolo è uguale a ‘logo’
-$("input[type=‘radio’]") tutti gli elementi input
-di tipo radio
-    $("img[title=‘logo’]")
+    Permette di selezionare gli elementi della pagina che hanno l’attributo passato come parametro uguale al valore X 
+    
+$("img[title=‘logo’]") tutte le immagini in cui l’attributo titolo è uguale a ‘logo’
+$("input[type=‘radio’]") tutti gli elementi input di tipo radio
      
 
 
