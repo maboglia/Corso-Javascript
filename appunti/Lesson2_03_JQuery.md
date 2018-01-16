@@ -152,9 +152,10 @@ YASMINE|RM|assente
 
 ## FILTRI
 
-$("th").css("background-color", "#9bbb59");
-$("tr:odd").css ("background-color", "#dee7d1");
-$("tr:even").css ("background-color", "#eff3ea");
+* ```$("th").css("background-color", "#9bbb59");```
+* ```$("tr:odd").css ("background-color", "#dee7d1");```
+* ```$("tr:even").css ("background-color", "#eff3ea");```
+
 Cognome | Provincia | #
 ---|---|---
 MAURO|TO|presente
@@ -168,7 +169,8 @@ YASMINE|RM|assente
 
 ## FILTRI
 
-$( "td:contains('assente')" ).css('color','red');
+* ```$( "td:contains('assente')" ).css('color','red');```
+
 Cognome | Provincia | #
 ---|---|---
 MAURO|TO|presente
@@ -182,7 +184,8 @@ YASMINE|RM|assente
 
 ## FILTRI
 
-$( "td[align=left]").css('text-align','center');
+* ```$( "td[align=left]").css('text-align','center');```
+
 Cognome | Provincia | #
 ---|---|---
 MAURO|TO|presente
