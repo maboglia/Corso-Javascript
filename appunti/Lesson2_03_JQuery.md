@@ -271,7 +271,7 @@ alert(stringa);
 ```
 
 
-## MANIPOLIAMO IL DOM
+## Gestione del DOM
 Vedremo alcune funzioni che ci permettono di
 manipolare il DOM, per un elenco completo
 vedi la documentazione su
@@ -279,7 +279,7 @@ http://api.jquery.com/category/manipulation/
 
 ---
 
-## MANIPOLIAMO IL DOM
+## Gestione del DOM
 Prendiamo in esempio questa porzione di html
 
 ```javascript
@@ -295,7 +295,7 @@ $("h1").prepend("<span>Primo</span>");
 ```
 
 
-## MANIPOLIAMO IL DOM
+## Gestione del DOM
 Prendiamo in esempio questa porzione di html
 
 ```javascript
@@ -313,7 +313,7 @@ $("h1").before("<span>Primo</span>");
 
 ---
 
-## MANIPOLIAMO IL DOM
+## Gestione del DOM
 Prendiamo in esempio questa porzione di html
 
 ```javascript
@@ -330,7 +330,7 @@ $("h1").append("<span>Primo</span>");
 
 ---
 
-## MANIPOLIAMO IL DOM
+## Gestione del DOM
 Prendiamo in esempio questa porzione di html
 
 ```javascript
@@ -348,7 +348,7 @@ $("h1").after("<span>Primo</span>");
 
 ---
 
-## MANIPOLIAMO IL DOM
+## Gestione del DOM
 Prendiamo in esempio questa porzione di html
 
 ```javascript
@@ -367,7 +367,7 @@ dinamico </strong> </div>
 
 ---
 
-## MANIPOLIAMO IL DOM
+## Gestione del DOM
 
 ```javascript
 <div id="blocco">
@@ -385,7 +385,7 @@ $("# blocco_interno).addClass("selezionata");
 
 ---
 
-## MANIPOLIAMO IL DOM
+## Gestione del DOM
 
 ```javascript
 <div id="blocco">
@@ -403,7 +403,7 @@ $("#blocco_interno").removeClass("selezionata");
 
 ---
 
-## MANIPOLIAMO IL DOM
+## Gestione del DOM
 
 ```javascript
 ciao
@@ -422,7 +422,7 @@ value="ciao" />
 
 ---
 
-## MANIPOLIAMO IL DOM
+## Gestione del DOM
 
 ```javascript
 <form>
@@ -438,7 +438,7 @@ value=" Hello world " />
 
 ---
 
-## MANIPOLIAMO I CSS
+## Gestione de CSS
 Possiamo gestire le regole css di un elemento attraverso la funzione .css
 //$("#elemento).css ( regola-css , valore);
 $("#elemento").css("color", "red");
@@ -448,7 +448,7 @@ $("#elemento").css("background-color", "#ffcc90");
 
 ---
 
-## MANIPOLIAMO I CSS
+## Gestione de CSS
 Possiamo gestire le regole css in gruppo utilizzando una sola chiamata alla
 funzione .css
 $("#elemento).css( {
