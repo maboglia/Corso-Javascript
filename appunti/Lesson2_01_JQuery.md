@@ -1,6 +1,31 @@
 # Jquery
 
-Utilizziamo la libreria javascript jQuery per:
+
+## Jquery è un Framework
+
+Jquery è un Framework (una collezione o libreria di codice che agevola la risoluzione di una classe
+di problemi) che permette di interagire , con semplicità e rapidità, sul DOM ( Document Object
+Model) * di una pagina HTML
+
+## PRINCIPALI CARATTERISTICHE
+
+* Cross browser ( supportato dai principali browser)
+* Grande community = Grande disponibilità di plugin
+* Leggero (opinabile...)
+* Documentazione chiara e completa
+* Semplice
+* Utilizza selettori CSS (anche Css3 )
+* Sintassi compatta, permette di ridurre la quantità di codice necessario rispetto all'uso di Javascript
+* Può gestire tutti gli elementi che compongono una pagina web ( div, immagini, span, p ... )
+
+---
+
+## jQUERY
+write less
+less, , do more
+
+
+### Utilizziamo la libreria javascript jQuery per:
 
 * Partenza del codice quando il documento (il DOM) è pronto
 * Selezionare gli elementi
@@ -25,6 +50,76 @@ $(document).ready(function() {
 //codice da eseguire al caricamento del documento
 });
 ```
+
+---
+
+## INCLUDERE JQUERY NELLE PAGINE WEB
+
+1. Scarichiamo l'ultima versione di Jquery dal sito ```http://jquery.com/``` il file avrà un nome nella forma jquery-x.x.-min.js
+2. Per usarlo nelle nostre pagine web dobbiamo linkarlo attraverso il comando ```<script>...</script>``` nella sezione ```<head />``` della nostra pagina web
+
+```javascript
+<html>
+<head>
+<script src="percorso/al/file/jquery-x.x.js"></script>
+</head>
+<body> ... </body>
+</html>
+```
+
+## "Filosofia Jquery"
+
+Jquery "
+Cerca questo elemento
+$("p"). html("Hello World");
+Fai questa azione
+
+## "Filosofia Jquery"
+
+Supponiamo di avere la seguente pagina Html
+
+```javascript
+<html>
+<head></head>
+<body>
+<div>
+<p></p>
+</div>
+</body>
+</html>
+```
+
+## "Filosofia Jquery"
+
+Inseriamo tra i tag <head> il link alla libreria jquery e l'istruzione vista poco fa
+```javascript
+<head>
+<script src="percorso/jquery.js"></script>
+<script type="javascript/text">
+$(document).ready(function(){
+$("p").html("Hello World");
+}
+</script>
+</head>
+```
+
+## "Filosofia Jquery"
+
+Otterremo visualizzando la pagina in un browser
+
+```javascript
+<html>
+<head></head>
+<body>
+<div>
+<p>Hello World</p>
+</div>
+</body>
+</html>
+```
+
+
+
 
 ## Selezionare gli elementi
 
