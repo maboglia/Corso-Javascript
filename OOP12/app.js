@@ -17,11 +17,12 @@ $(document).ready(function() {
         $("#listaProdotti").append(nuovoLi);
     });
     /*
-        $("#listaProdotti li").on("click", function(e) {
-            console.log($(this).text());
-            let i = $(this).clone();
-            $("#carrello").append(i);
-        });
-    */
+     */
+
+    $("#listaProdotti li").on("click", function(e) {
+        console.log($(this).text());
+        let i = $(this).clone();
+        $("#carrello").append(i);
+    });
 
 });
