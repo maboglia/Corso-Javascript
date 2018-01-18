@@ -13,3 +13,14 @@ td {
     padding: 2px 3px;
     border: 1px solid #ddd;
 }
+
+#schedaDettaglio {
+    width: 400px;
+    min-height: 400px;
+    position: absolute;
+    margin: 10px auto;
+    background-color: #ccc;
+    padding: 2em;
+    z-index: 10;
+    display: none;
+}

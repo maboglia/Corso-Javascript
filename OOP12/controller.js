@@ -2,6 +2,7 @@ var titolo = $("h1");
 var paragrafi = $("p");
 var elCasseRed = $(".red");
 var prodotti = [];
+var prodottiAcquistati = [];
 
 
 function caricaProdotti() {
@@ -52,6 +53,12 @@ function schedaProdotto(codProdotto) {
     return o;
 }
 
+function acquistaProdotto(codProdotto) {
+    let o = {};
+    o = schedaProdotto(codProdotto);
+    prodottiAcquistati.push(o);
+    console.log("il carrello contiene: ", prodottiAcquistati.length, " prodotti");
+}
 
 /*
 function creaOggetto(elemento, testo) {

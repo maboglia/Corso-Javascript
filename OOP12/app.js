@@ -20,10 +20,20 @@ $(document).ready(function() {
         const dato3 = $("<td>").text(e.prezzo);
         const dato4 = $("<td>").html("<button>dettaglio</button>").on("click", function(params) {
             let o = schedaProdotto(e.codice) || {};
+            $("#schedaDettaglio")
+                .html("")
+                .append("<h2>" + o.descrizione + "</h2>")
+                .append("<img src='" + o.immagine + "' alt='" + o.descrizione + "'  />")
+                .append("<p>" + o.prezzo + "</p>")
+                .append("<p><button>chiudi</button></p>").on("click", function() {
+                    $("#schedaDettaglio").hide(600);
+                })
+                .append("<p><button>acquista</button></p>")
+                .show(1000);
             console.log(o.descrizione);
         });
         const dato5 = $("<td>").html("<button>acquista</button>").on("click", function(params) {
-            alert("hai cliccato acquista " + e.codice);
+            acquistaProdotto(e.codice);
         });
 
         //7) aggiungo i td alla rigaProdotto
