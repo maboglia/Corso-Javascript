@@ -1,6 +1,22 @@
 var titolo = $("h1");
 var paragrafi = $("p");
 var elCasseRed = $(".red");
+var prodotti = [];
+
+
+function caricaProdotti() {
+
+    prodotti = [
+        new Prodotto("C00001", "Pasta Barilla", 0.5),
+        new Prodotto("C00002", "Latte Abit", 1.5),
+        new Prodotto("C00003", "Caffe Illy", 2.5)
+    ];
+
+    prodotti.push(new Prodotto("C00004", "Birra Peroni", 2.0));
+
+
+}
+
 
 //scorro i prodotti e creo dei list item
 console.log(prodotti);
