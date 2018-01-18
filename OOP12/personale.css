@@ -1,0 +1,15 @@
+.btn {
+    background-color: cadetblue;
+    color: aliceblue;
+}
+
+table {
+    padding: 4px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+td {
+    padding: 2px 3px;
+    border: 1px solid #ddd;
+}

@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- includo foglio di stile -->
+    <link rel="stylesheet" href="personale.css">
     <!-- include libreria -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
     <!-- il mio model prodotto -->
     <script src="prodotto.js"></script>
     <!-- controller: qui ho le operazioni di controllo -->
@@ -18,11 +20,19 @@
 </head>
 
 <body>
-    <h1>negozio alimentari</h1>
 
-    <button id="aggiorna">aggiorna carrello</button>
-    <ol id="carrello"></ol>
+    <div class="container">
+        <nav>
+            <button class="btn btn-primary" id="btnElenco">mostra prodotti</button>
+            <button class="btn btn-primary" id="btnCarrello">mostra carrello</button>
+        </nav>
 
+        <h1>negozio alimentari</h1>
+
+
+        <ol id="carrello"></ol>
+
+    </div>
 </body>
 
 </html>

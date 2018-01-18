@@ -17,6 +17,14 @@ function caricaProdotti() {
 
 }
 
+function messaggio() {
+    console.log("ciao");
+}
+
+function mostra(elemento) {
+    //hide, show, toggle
+    elemento.toggle(1500, messaggio);
+}
 
 //scorro i prodotti e creo dei list item
 console.log(prodotti);
@@ -31,6 +39,18 @@ function leggiProdotti() {
 
 }
 
+function schedaProdotto(codProdotto) {
+    let o = {};
+    for (const iterator of prodotti) {
+        if (iterator.codice === codProdotto) {
+            console.log("trovato!");
+            o = iterator;
+            break;
+        }
+
+    }
+    return o;
+}
 
 
 /*
