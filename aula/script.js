@@ -58,7 +58,6 @@ studenti[12].challengeJava = 1;
 studenti[13].challengeJava = 1;
 studenti[15].challengeJS = 1;
 studenti[16].challengeJS = 1;
-studenti[16].coloreCapelli = "castano";
 
 for (var i = 0; i < studenti.length; i++) {
     if (i > 0 && (i % 6) == 0) {
@@ -95,7 +94,7 @@ for (var i = 0; i < studenti.length; i++) {
         divCinturaJava.appendChild(testo);
         divCinturaJava.className = colori[studenti[i].challengeJava];
         divStudente.appendChild(divCinturaJava);
-}
+    }
 
 
     document.body.appendChild(divStudente);
@@ -103,4 +102,3 @@ for (var i = 0; i < studenti.length; i++) {
     console.log(studenti[i].presentaStudente());
 
 }
-

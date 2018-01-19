@@ -124,23 +124,6 @@ if(//this is correct){
 }
 ```
 
-
-## Mid-Lesson Breather
-Just a recap Here : 
-
-**1. Confirm and prompt**
-We can make pop-up boxes appear! 
-`confirm("I am ok");`
-`prompt("Are you ok?");`
-
-**2. Data types**
-
-a. numbers (e.g. `4.3`, `134`)
-
-b. strings (e.g. `"dogs go woof!"`, `"JavaScript expert"`)
-
-c. booleans (e.g. `false`, `5 > 4`)
-
 **3. Conditionals**
 If the first condition is met, execute the first code block. `if` it is not met, execute the code in the `else` block. 
 
@@ -241,7 +224,6 @@ a. `var myName = "Leng";`
 b. `var myAge = 30;`
 c. `var isOdd = true;`
 
-## Reviews 
 
 ### 1. Data types
 

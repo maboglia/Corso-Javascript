@@ -4,28 +4,33 @@
 
 **esercizi**
 
-* todo-list, 
-* slideshow banksy, 
 * lampadina accendi-spegni
-* progetto negozio alimentari, come da specifiche
-* le ricette del mondo 
+* todo-list 
+* slideshow 
+* negozio alimentari
+* biblioteca
+* biglietteria
+* le ricette del mondo
 * calcolatrice
-* trenino che si muove, collisione
-* RockScissorsPaper
+* trenino: animazione e collisione
+* Rock Scissors Paper
 * Guess the number
+* Lancia dadi
+* memory
 
 **Javascript advanced**
 
-* localstorage
-* sessionstorage
+* web storage
+* local & session storage
+* geolocation
 * drag & drop
 * Html5 Canvas
-* nodejs, npm
-* AngularJs vs Angular2 
-* angularjs
-* hello Angular 2
-* Angular components, routing
-* Angular services
+
+**Javascript framework & libraries**
+
+* nodejs
+* jQuery: DOM Handling, Animation, AJAX, JSON
+* Angular: components, routing, services
 
 
 ### Arrow

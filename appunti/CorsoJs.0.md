@@ -45,7 +45,7 @@ console.log('Hello, World!')
 
 ## Javascript incorporato in una pagina html
 
-```javascript
+```html
 <!doctype html>
 <html>
     <head></head>
@@ -319,7 +319,7 @@ function f(x,y){
 }
 ```
 
-[Funzioni](./Lesson1_07_Functions.md) 
+* [Appunti sulle Funzioni](./Lesson1_07_Functions.md) 
 
 ## Date Object 
 

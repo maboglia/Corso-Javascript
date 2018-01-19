@@ -50,7 +50,7 @@ console.log(a.x)
 console.log(a['x'])
 ```
 
-#Classi
+# Classi
 Una classe in JavaScript è una collezione di oggetti che ereditano proprietà di un medesimo prototipo.
 ```javascript
 function A(){
@@ -60,12 +60,15 @@ function A(){
 a=new A()
 ```
 
+In ES6 è stata introdotta la parola class, ma si tratta di 'zucchero sintattico', javascript continua ad essere un linguaggio basato sui prototipi e le funzioni.
+
 # Prototipi
 Un prototipo è un oggetto associato all'oggetto che sta definendo, e del quale va a ereditare proprietà.
 E' stabilito quando l'oggetto è creato.
 Si può accedere attraverso la variabile prototype
-Usi
+
 Si usa per aggregare funzioni a una definizione anche dopo aver istanziato l'oggetto.
+
 ```javascript
 a=new String('asdf')
 String.prototype.salutare=function(){
@@ -76,8 +79,8 @@ console.log(a.salutare())
 
 Questa non è una pratica raccomandata!
 Maggiori informazioni: stackoverflow
-Usi
 può servire per realizzare ereditarietà tra oggetti.
+
 ```javascript
 function A(){
     this.a=100
