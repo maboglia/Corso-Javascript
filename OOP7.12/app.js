@@ -43,14 +43,23 @@ $(document).ready(function() {
     /*
      */
 
-    $("#listaProdotti li").on("click", function(e) {
+    $("#listaProdotti tr").on("click", function(e) {
         console.log($(this).text());
         let i = $(this).clone();
-        $("#carrello").append(i);
+        console.log(i);
+        $("#carrello").append("<li>" + i + "</li>");
     });
 
     $("#btnElenco").click(function() {
         mostra($("#listaProdotti"));
+    });
+
+    $("#btnCarrello").click(function() {
+        $("#carrello").html("");
+        let contenuto = rigeneraCarrello();
+        $("#carrello").append(contenuto);
+        $("#carrello").after("<h2>IL VALORE DEL CARRELLO: " + valoreCarrello + "</h2>");
+        mostra($("#carrello"));
     });
 
 });

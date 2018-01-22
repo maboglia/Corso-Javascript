@@ -3,6 +3,7 @@ var paragrafi = $("p");
 var elCasseRed = $(".red");
 var prodotti = [];
 var prodottiAcquistati = [];
+var valoreCarrello = 0;
 
 
 function caricaProdotti() {
@@ -51,6 +52,22 @@ function schedaProdotto(codProdotto) {
 
     }
     return o;
+}
+
+function rigeneraCarrello() {
+    let li = "";
+    valoreCarrello = 0;
+    for (const iterator of prodottiAcquistati) {
+
+        li += "<tr>" +
+            "<td>" + iterator.codice + "<td>" +
+            "<td>" + iterator.descrizione + "<td>" +
+            "<td>" + iterator.prezzo + "<td>" +
+            "</tr>";
+
+        valoreCarrello += iterator.prezzo;
+    }
+    return li;
 }
 
 function acquistaProdotto(codProdotto) {
