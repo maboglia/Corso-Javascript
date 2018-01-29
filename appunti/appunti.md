@@ -55,7 +55,7 @@ const f3 = function(a, b) { return a + b; }
 const f3 = (a,b) => a + b;
 
 //esempio
-consto={
+const o={
 name: 'Julie', 
 greetBackwards: function() {
 const getReverseName = () => {
@@ -116,7 +116,7 @@ Math.max(...arr);
 
 
 ## findIndex
-Next up is findIndex, which is similar to indexOf in that it returns an index (or –1 if there’s no match). findIndex is more flexible, though, in that you can provide a func‐ tion that determines if an element is a match (findIndex doesn’t have an option to start at an arbitrary index, nor is there a corresponding findLastIndex):
+Next up is findIndex, which is similar to indexOf in that it returns an index (or –1 if there’s no match). findIndex is more flexible, though, in that you can provide a function that determines if an element is a match (findIndex doesn’t have an option to start at an arbitrary index, nor is there a corresponding findLastIndex):
 const arr = [{ id: 5, name: "Judith" }, { id: 7, name: "Francis" }];
 arr.findIndex(o => o.id === 5);
 arr.findIndex(o => o.name === "Francis");
@@ -154,11 +154,13 @@ map transforms the elements in the array. To what? That’s the beauty: it’s u
 const cart = [ { name: "Widget", price: 9.95 }, { name: "Gadget", price: 22.95 }];
 const names = cart.map(x => x.name);
 const prices = cart.map(x => x.price);
-const discountPrices = prices.map(x => x*0.8); const lcNames = names.map(String.toLowerCase);
+const discountPrices = prices.map(x => x*0.8); 
+const lcNames = names.map(String.toLowerCase);
 // ["Widget", "Gadget"]
 // [9.95, 22.95]
 // [7.96, 18.36]
 // ["widget", "gadget"]
+
 You may be wondering how lcNames is working: it doesn’t look like the others. All of the methods we’re discussing that take functions, including map, don’t care how you pass the function in. In the case of names, prices, and discountPrices, we’re con‐ structing our own custom function (using the arrow notation). For lcNames, we’re using a function that already exists, String.toLowerCase. This function takes a single string argument and returns the lowercased string. We could as easily have written names.map(x ⇒ x.toLowerCase()), but it’s important to understand that a function is a function, no matter what form it takes.
 
 Consider this example where we have our items and corresponding prices in two separate arrays, and we want to combine them:

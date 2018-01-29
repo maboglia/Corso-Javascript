@@ -57,16 +57,28 @@ function schedaProdotto(codProdotto) {
 function rigeneraCarrello() {
     let li = "";
     valoreCarrello = 0;
+
+    //intesto la tabella
+    li += "<tr>" +
+        "<th>codice</th>" +
+        "<th>descrizione</th>" +
+        "<th>prezzo</th>" +
+        "</tr>";
+
     for (const iterator of prodottiAcquistati) {
 
-        li += "<tr>" +
-            "<td>" + iterator.codice + "<td>" +
-            "<td>" + iterator.descrizione + "<td>" +
-            "<td>" + iterator.prezzo + "<td>" +
-            "</tr>";
-
         valoreCarrello += iterator.prezzo;
+
+        li += "<tr>" +
+            "<td>" + iterator.codice + "</td>" +
+            "<td>" + iterator.descrizione + "</td>" +
+            "<td>" + iterator.prezzo + "</td>" +
+            "</tr>";
     }
+    li += "<tr>" +
+        "<td colspan='2'>Totale carrello </td>" +
+        "<td>" + valoreCarrello + "</td>" +
+        "</tr>";
     return li;
 }
 
