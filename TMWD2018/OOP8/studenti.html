@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="">
+        var studenti = [
+
+            "pizzuti, chiara, 1990",
+            "gastaldi, stefano, 1997",
+            "maggi, federica, 1992",
+            "dibenedetto, giulia, 1990",
+            "desogus, mattia, 1992",
+            "cordova, tracy, 1991",
+
+            "zatari, miriam, 1994",
+            "iusso, andrea, 1990",
+            "federica, caiulo, 1987",
+            "mihoc, nicolas, 1995",
+            "colliard, emily, 1994",
+            "arico, paolo, 1987",
+
+            "roberta, toscano, 1991",
+            "restuccia, lorenzo, 1993",
+            "medda, marco,1995",
+            "guddemi, erika, 1994",
+            "mameli, valentina, 1989"
+
+        ];
+        var totStudenti = studenti.length;
+
+        for (var i = 0; i < totStudenti; i++) {
+            var anno = studenti[i].slice(-4);
+            var eta = 2017 - anno;
+            document.write("<h1>" + studenti[i] + " più o meno ha " + eta + " anni</h1>");
+
+        }
+    </script>
+</body>
+
+</html>
