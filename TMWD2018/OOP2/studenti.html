@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>
-		aula TMWD 2017-18
-	</title>
+    <meta charset="utf-8">
+    <title>
+        aula TMWD 2017-18
+    </title>
 </head>
+
 <body>
 
 
-<script type="text/javascript">
-	var studenti = [
-"gastaldi, stefano, 1997",
-"verdesca, alessio, 1993",
-"tornabene, bruno, 1992",
-"desogus, mattia, 1992",
-"dibenedetto, giulia, 1990",
-"maggi, federica, 1992",
-"cordova, tracy, 1991",
-"lutac, alina, 1990",
-"federica, caiulo, 1987",
-"francisca, cappuccio, 1981",
-"mihoc, nicolas, 1995",
-"colliard, emily, 1994",
-"arico, paolo, 1987",
-"roberta, toscano, 1991",
-"restuccia, lorenzo, 1993",
-"medda, marco,1995",
-"guddemi, erika, 1994",
-"mameli, valentina, 1989"
-	];
-var totStudenti = studenti.length;
+    <script type="text/javascript">
+        var studenti = [
 
-for (var i = 0;i<totStudenti; i++ ){
-	var anno = studenti[i].slice(-4);
-	var eta  = 2017 - anno;
-	document.write(   "<h1>" +  studenti[i] + " più o meno ha " + eta  + " anni</h1>" );
+            "pizzuti, chiara, 1990",
+            "gastaldi, stefano, 1997",
+            "maggi, federica, 1992",
+            "dibenedetto, giulia, 1990",
+            "desogus, mattia, 1992",
+            "cordova, tracy, 1991",
 
-}
-var numRipetizioni = prompt("quante volte vuoi ripetere?" , 100);
-var insulto = prompt("scrivi insulto");
-for (var paperino = 1 ; paperino <= numRipetizioni ; paperino++){
-	document.write(paperino + insulto + " chi legge" + "<br>");
-}
+            "zatari, miriam, 1994",
+            "iusso, andrea, 1990",
+            "federica, caiulo, 1987",
+            "mihoc, nicolas, 1995",
+            "colliard, emily, 1994",
+            "arico, paolo, 1987",
 
+            "roberta, toscano, 1991",
+            "restuccia, lorenzo, 1993",
+            "medda, marco,1995",
+            "guddemi, erika, 1994",
+            "mameli, valentina, 1989"
 
-</script>
+        ];
+        var totStudenti = studenti.length;
+
+        for (var i = 0; i < totStudenti; i++) {
+            var anno = studenti[i].slice(-4);
+            var eta = 2017 - anno;
+            document.write("<h1>" + studenti[i] + " più o meno ha " + eta + " anni</h1>");
+
+        }
+        var numRipetizioni = prompt("quante volte vuoi ripetere?", 100);
+        var insulto = prompt("scrivi insulto");
+        for (var paperino = 1; paperino <= numRipetizioni; paperino++) {
+            document.write(paperino + insulto + " chi legge" + "<br>");
+        }
+    </script>
 </body>
+
 </html>
-
-
-
-
-
