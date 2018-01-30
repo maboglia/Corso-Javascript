@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="studenti.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("#sinistra").css("border", "1px solid red").css("width", "250px").css("height", "600px").css("float", "left");
+            $("#destra").css("border", "1px solid red").css("width", "500px").css("height", "600px").css("float", "right");;
+
+            studenti.forEach(function(studente, i) {
+                $("#elencoStudenti").append("<li><a href='#' class='btnStudente' rel='" + i + "'>" + studente[0] + "</a></li>")
+            });
+
+            $(".btnStudente").click(function(params) {
+                var numeroStudente = $(this).attr("rel");
+                var stu = studenti[numeroStudente];
+                $("#destra").html("<h1>" + stu[0] + "</h1>" + "<h2>" + stu[1] + "</h2>" + "<img src='" + stu[3] + ">");
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="sinistra">
+            <ul id="elencoStudenti"></ul>
+        </div>
+        <div id="destra"></div>
+
+    </div>
+
+</body>
+
+</html>
