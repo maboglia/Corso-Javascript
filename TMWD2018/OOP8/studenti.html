@@ -9,32 +9,16 @@
 </head>
 
 <body>
+    <script src="studenti.js">
+    </script>
+
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, commodi. Quam itaque quidem numquam quisquam ipsa corporis explicabo dolore cum quo sed aut voluptates aliquam labore nisi, laudantium deleniti quod?</p>
     <script>
-        var studenti = [
-
-            ["pizzuti", "chiara", 1990, "foto.jpg"],
-            ["gastaldi", "stefano", 1997, "foto.jpg"],
-            ["maggi", "federica", 1992, "foto.jpg"],
-            ["dibenedetto", "giulia", 1990, "foto.jpg"],
-            ["desogus", "mattia", 1992, "foto.jpg"],
-            ["cordova", "tracy", 1991, "foto.jpg"],
-            ["zatari", "miriam", 1994, "foto.jpg"],
-            ["iusso", "andrea", 1990, "foto.jpg"],
-            ["federica", "caiulo", 1987, "foto.jpg"],
-            ["mihoc", "nicolas", 1995, "foto.jpg"],
-            ["colliard", "emily", 1994, "foto.jpg"],
-            ["arico", "paolo", 1987, "foto.jpg"],
-            ["roberta", "toscano", 1991, "foto.jpg"],
-            ["restuccia", "lorenzo", 1993, "foto.jpg"],
-            ["medda", "marco", 1995, "foto.jpg"],
-            ["guddemi", "erika", 1994, "foto.jpg"],
-            ["mameli", "valentina", 1989, "foto.jpg"]
-
-        ];
         var totStudenti = studenti.length;
 
-        studenti.forEach(function(lorenzo, i, s) {
-            document.write("<h1>cognome: " + lorenzo[0] + " ha + o - " + (2017 - lorenzo[2]) + "</h1>");
+        studenti.forEach(function(v) {
+            document.write("<h1>v rappresenta: " + v[2] + "</h1>");
         });
     </script>
 </body>
