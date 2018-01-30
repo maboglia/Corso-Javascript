@@ -9,38 +9,33 @@
 </head>
 
 <body>
-    <script src="">
+    <script>
         var studenti = [
 
-            "pizzuti, chiara, 1990",
-            "gastaldi, stefano, 1997",
-            "maggi, federica, 1992",
-            "dibenedetto, giulia, 1990",
-            "desogus, mattia, 1992",
-            "cordova, tracy, 1991",
-
-            "zatari, miriam, 1994",
-            "iusso, andrea, 1990",
-            "federica, caiulo, 1987",
-            "mihoc, nicolas, 1995",
-            "colliard, emily, 1994",
-            "arico, paolo, 1987",
-
-            "roberta, toscano, 1991",
-            "restuccia, lorenzo, 1993",
-            "medda, marco,1995",
-            "guddemi, erika, 1994",
-            "mameli, valentina, 1989"
+            ["pizzuti", "chiara", 1990, "foto.jpg"],
+            ["gastaldi", "stefano", 1997, "foto.jpg"],
+            ["maggi", "federica", 1992, "foto.jpg"],
+            ["dibenedetto", "giulia", 1990, "foto.jpg"],
+            ["desogus", "mattia", 1992, "foto.jpg"],
+            ["cordova", "tracy", 1991, "foto.jpg"],
+            ["zatari", "miriam", 1994, "foto.jpg"],
+            ["iusso", "andrea", 1990, "foto.jpg"],
+            ["federica", "caiulo", 1987, "foto.jpg"],
+            ["mihoc", "nicolas", 1995, "foto.jpg"],
+            ["colliard", "emily", 1994, "foto.jpg"],
+            ["arico", "paolo", 1987, "foto.jpg"],
+            ["roberta", "toscano", 1991, "foto.jpg"],
+            ["restuccia", "lorenzo", 1993, "foto.jpg"],
+            ["medda", "marco", 1995, "foto.jpg"],
+            ["guddemi", "erika", 1994, "foto.jpg"],
+            ["mameli", "valentina", 1989, "foto.jpg"]
 
         ];
         var totStudenti = studenti.length;
 
-        for (var i = 0; i < totStudenti; i++) {
-            var anno = studenti[i].slice(-4);
-            var eta = 2017 - anno;
-            document.write("<h1>" + studenti[i] + " più o meno ha " + eta + " anni</h1>");
-
-        }
+        studenti.forEach(function(lorenzo, i, s) {
+            document.write("<h1>cognome: " + lorenzo[0] + " ha + o - " + (2017 - lorenzo[2]) + "</h1>");
+        });
     </script>
 </body>
 
