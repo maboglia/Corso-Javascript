@@ -22,7 +22,7 @@ Model) * di una pagina HTML
 
 ## jQUERY
 write less
-less, , do more
+less, do more
 
 
 ### Utilizziamo la libreria javascript jQuery per:
