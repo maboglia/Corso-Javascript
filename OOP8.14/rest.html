@@ -1,0 +1,28 @@
+<script src="jquery-3.2.1.min.js"></script>
+
+<div class="row" id="miaLista">
+
+</div>	
+
+<script type="text/javascript">
+
+
+
+$.getJSON( "document.json", function( data ) {
+  var items = [];
+  
+  $.each( data.aula, function( key, val ) {
+    items.push( "<div class='col-lg-4'><h2>" + val.nome + "<br/>" + val.cognome +  "</h2><img class='img-circle' src='img/" + val.foto + "' alt='Foto di " + val.cognome + "' /> " +" </div>" );
+  });
+ 
+  $( "#miaLista" ).append(items.join( "" ));
+
+	$('img').css({
+		width:"100px", 
+		height:"100px" 
+		});
+
+});
+
+
+</script>

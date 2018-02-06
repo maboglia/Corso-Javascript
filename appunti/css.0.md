@@ -26,7 +26,7 @@ Di seguito le pseudo-classi supportate da tutti i browser:
 * :active
 
 
-## esempio psudo-classe
+## esempio pseudo-classe
 
 ```html
 <h1>Titolo in verde</h1>

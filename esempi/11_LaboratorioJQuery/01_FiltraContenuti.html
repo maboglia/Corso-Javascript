@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $("document").ready(function() {
+
+            var titoli = $("body > h2");
+
+            var elenco = $("<ul id='argomenti'>");
+
+            var argomentoConta = 0;
+
+
+            titoli.each(function(indx, elem) {
+
+                $(this).html("<a name='argomento" + argomentoConta + "'></a>" + $(this).html());
+
+                elenco.append($("<li><a href='#argomento" + argomentoConta++ + "'> " + $(this).text() + "</a></li>"));
+            });
+
+            $("body h1").after(elenco);
+        });
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1><a href="#jquery" aria-hidden="true" class="anchor" id="user-content-jquery"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Jquery</h1>
+    <h2><a href="#jquery-è-un-framework" aria-hidden="true" class="anchor" id="user-content-jquery-è-un-framework"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Jquery
+        è un Framework</h2>
+    <p>Jquery è un Framework (una collezione o libreria di codice che agevola la risoluzione di una classe di problemi) che permette di interagire , con semplicità e rapidità, sul DOM ( Document Object Model) * di una pagina HTML</p>
+    <h2><a href="#principali-caratteristiche" aria-hidden="true" class="anchor" id="user-content-principali-caratteristiche"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PRINCIPALI
+        CARATTERISTICHE
+    </h2>
+    <ul>
+        <li>Cross browser ( supportato dai principali browser)</li>
+        <li>Grande community = Grande disponibilità di plugin</li>
+        <li>Leggero (opinabile...)</li>
+        <li>Documentazione chiara e completa</li>
+        <li>Semplice</li>
+        <li>Utilizza selettori CSS (anche Css3 )</li>
+        <li>Sintassi compatta, permette di ridurre la quantità di codice necessario rispetto all'uso di Javascript</li>
+        <li>Può gestire tutti gli elementi che compongono una pagina web ( div, immagini, span, p ... )</li>
+    </ul>
+    <hr>
+    <h2><a href="#jquery-1" aria-hidden="true" class="anchor" id="user-content-jquery-1"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>jQUERY</h2>
+    <p>write less less, , do more</p>
+    <h3><a href="#utilizziamo-la-libreria-javascript-jquery-per" aria-hidden="true" class="anchor" id="user-content-utilizziamo-la-libreria-javascript-jquery-per"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Utilizziamo
+        la libreria javascript jQuery per:</h3>
+    <ul>
+        <li>Partenza del codice quando il documento (il DOM) è pronto</li>
+        <li>Selezionare gli elementi
+            <ul>
+                <li>selettori supportati: CSS2, CSS3, custom</li>
+            </ul>
+        </li>
+        <li>Accedere e modificare le classi CSS</li>
+        <li>Gestire gli stili CSS</li>
+        <li>Aggiungere e rimuovere contenuto e inserire elementi</li>
+        <li>Ottenere l'elemento html</li>
+        <li>Ottenere il testo contenuto nell'elemento</li>
+        <li>Cambiare l'HTML e/o il testo contenuto</li>
+        <li>Aggiungere nuovo contenuto ad un elemento esistente</li>
+        <li>Gestire gli eventi</li>
+        <li>Mostrare e nascondere elementi</li>
+        <li>Aggiungere animazioni ed effetti</li>
+        <li>Gestire le chiamate asincrone (AJAX)</li>
+        <li>Creare e processare dati inJSON</li>
+    </ul>
+    <h2><a href="#partenza-del-codice-quando-il-documento-il-dom-è-pronto" aria-hidden="true" class="anchor" id="user-content-partenza-del-codice-quando-il-documento-il-dom-è-pronto"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Partenza
+        del codice quando il documento (il DOM) è pronto</h2>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-c1">document</span>).<span class="pl-en">ready</span>(<span class="pl-k">function</span>() {
+<span class="pl-c"><span class="pl-c">//</span>codice da eseguire al caricamento del documento</span>
+});</pre></div>
+    <hr>
+    <h2><a href="#includere-jquery-nelle-pagine-web" aria-hidden="true" class="anchor" id="user-content-includere-jquery-nelle-pagine-web"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>INCLUDERE
+        JQUERY NELLE PAGINE WEB</h2>
+    <ol>
+        <li>Scarichiamo l'ultima versione di Jquery dal sito <code>http://jquery.com/</code> il file avrà un nome nella forma jquery-x.x.-min.js</li>
+        <li>Per usarlo nelle nostre pagine web dobbiamo linkarlo attraverso il comando <code>&lt;script&gt;...&lt;/script&gt;</code> nella sezione <code>&lt;head /&gt;</code> della nostra pagina web</li>
+    </ol>
+    <div class="highlight highlight-source-js"><pre><span class="pl-k">&lt;</span>html<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>head<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>script src<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>percorso/al/file/jquery-x.x.js<span class="pl-pds">"</span></span><span class="pl-k">&gt;&lt;</span><span class="pl-k">/</span>script<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span><span class="pl-k">/</span>head<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>body<span class="pl-k">&gt;</span> <span class="pl-k">...</span> <span class="pl-k">&lt;</span><span class="pl-k">/</span>body<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span><span class="pl-k">/</span>html<span class="pl-k">&gt;</span></pre></div>
+    <h2><a href="#filosofia-jquery" aria-hidden="true" class="anchor" id="user-content-filosofia-jquery"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>"Filosofia
+        Jquery"
+    </h2>
+    <p>Jquery " Cerca questo elemento $("p"). html("Hello World"); Fai questa azione</p>
+    <h2><a href="#filosofia-jquery-1" aria-hidden="true" class="anchor" id="user-content-filosofia-jquery-1"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>"Filosofia
+        Jquery"
+    </h2>
+    <p>Supponiamo di avere la seguente pagina Html</p>
+    <div class="highlight highlight-source-js"><pre><span class="pl-k">&lt;</span>html<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>head<span class="pl-k">&gt;&lt;</span><span class="pl-k">/</span>head<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>body<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>p<span class="pl-k">&gt;&lt;</span><span class="pl-k">/</span>p<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span><span class="pl-k">/</span>div<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span><span class="pl-k">/</span>body<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span><span class="pl-k">/</span>html<span class="pl-k">&gt;</span></pre></div>
+    <h2><a href="#filosofia-jquery-2" aria-hidden="true" class="anchor" id="user-content-filosofia-jquery-2"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>"Filosofia
+        Jquery"
+    </h2>
+    <p>Inseriamo tra i tag il link alla libreria jquery e l'istruzione vista poco fa</p>
+    <div class="highlight highlight-source-js"><pre><span class="pl-k">&lt;</span>head<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>script src<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>percorso/jquery.js<span class="pl-pds">"</span></span><span class="pl-k">&gt;&lt;</span><span class="pl-k">/</span>script<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>script type<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>javascript/text<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+<span class="pl-en">$</span>(<span class="pl-c1">document</span>).<span class="pl-en">ready</span>(<span class="pl-k">function</span>(){
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>).<span class="pl-en">html</span>(<span class="pl-s"><span class="pl-pds">"</span>Hello World<span class="pl-pds">"</span></span>);
+}
+<span class="pl-k">&lt;</span><span class="pl-k">/</span>script<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span><span class="pl-k">/</span>head<span class="pl-k">&gt;</span></pre></div>
+    <h2><a href="#filosofia-jquery-3" aria-hidden="true" class="anchor" id="user-content-filosofia-jquery-3"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>"Filosofia
+        Jquery"
+    </h2>
+    <p>Otterremo visualizzando la pagina in un browser</p>
+    <div class="highlight highlight-source-js"><pre><span class="pl-k">&lt;</span>html<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>head<span class="pl-k">&gt;&lt;</span><span class="pl-k">/</span>head<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>body<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>p<span class="pl-k">&gt;</span>Hello World<span class="pl-k">&lt;</span><span class="pl-k">/</span>p<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span><span class="pl-k">/</span>div<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span><span class="pl-k">/</span>body<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span><span class="pl-k">/</span>html<span class="pl-k">&gt;</span></pre></div>
+    <h2><a href="#selezionare-gli-elementi" aria-hidden="true" class="anchor" id="user-content-selezionare-gli-elementi"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Selezionare
+        gli elementi</h2>
+    <p>La principale caratteristica della funzione jQuery() (abbreviata in $() ) è quella di selezionare elementi HTML per modificarli: basta passare un parametro stringa (tra apici doppi ["] o singoli ['] ) come negli esempi che seguono:</p>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>div<span class="pl-pds">"</span></span>);
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioId<span class="pl-pds">"</span></span>);
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>.miaClasse<span class="pl-pds">"</span></span>);
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>p#mioId<span class="pl-pds">"</span></span>);
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>ul li a.nav<span class="pl-pds">"</span></span>);</pre></div>
+    <h2><a href="#selettori-css-2--css-3" aria-hidden="true" class="anchor" id="user-content-selettori-css-2--css-3"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>selettori
+        css 2 / css 3</h2>
+    <p>jQuery supporta tutti i selettori anche quelli avanzati e quelli del CSS3</p>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>p &gt; a<span class="pl-pds">"</span></span>);
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>input[type=text]<span class="pl-pds">"</span></span>);
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>a:first<span class="pl-pds">"</span></span>);
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>p:odd<span class="pl-pds">"</span></span>);
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>li:first-child<span class="pl-pds">"</span></span>);</pre></div>
+    <h2><a href="#jquery-supporta-poi-alcuni-selettori-custom" aria-hidden="true" class="anchor" id="user-content-jquery-supporta-poi-alcuni-selettori-custom"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>jQuery
+        supporta poi alcuni selettori custom:</h2>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>:animated<span class="pl-pds">"</span></span>);
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>:button<span class="pl-pds">"</span></span>); selects any button <span class="pl-en">elements</span> (inputs or buttons)
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>:radio<span class="pl-pds">"</span></span>);
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>:checkbox<span class="pl-pds">"</span></span>); selects checkboxes
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>:checked<span class="pl-pds">"</span></span>);
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>:header<span class="pl-pds">"</span></span>); selects header <span class="pl-en">elements</span> (h1, h2, h3, etc.)</pre></div>
+    <h2><a href="#accedere-e-modificare-le-classi-css" aria-hidden="true" class="anchor" id="user-content-accedere-e-modificare-le-classi-css"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Accedere
+        e modificare le classi CSS</h2>
+    <p>Con jQuery è facile aggiungere, scambiare o rimuovere classi CSS: ecco i tre metodi</p>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>div<span class="pl-pds">"</span></span>).<span class="pl-en">addClass</span>(<span class="pl-s"><span class="pl-pds">"</span>content<span class="pl-pds">"</span></span>);
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>div<span class="pl-pds">"</span></span>).<span class="pl-en">removeClass</span>(<span class="pl-s"><span class="pl-pds">"</span>content<span class="pl-pds">"</span></span>); removes <span class="pl-k">class</span> <span class="pl-s"><span class="pl-pds">"</span>content<span class="pl-pds">"</span></span> from all <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span> elements
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>div<span class="pl-pds">"</span></span>).<span class="pl-en">toggleClass</span>(<span class="pl-s"><span class="pl-pds">"</span>content<span class="pl-pds">"</span></span>);</pre></div>
+    <p>Se un elemento è di una determinata classe allora esegui il codice:</p>
+    <div class="highlight highlight-source-js"><pre><span class="pl-k">if</span> (<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-en">hasClass</span>(<span class="pl-s"><span class="pl-pds">"</span>content<span class="pl-pds">"</span></span>)) {
+ 
+}
+</pre></div>
+    <h2><a href="#gestire-gli-stili-css-con-jquery" aria-hidden="true" class="anchor" id="user-content-gestire-gli-stili-css-con-jquery"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Gestire
+        gli stili Css con Jquery</h2>
+    <p>Ecco come modificare i css con jQuery:</p>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>).<span class="pl-en">css</span>(<span class="pl-s"><span class="pl-pds">"</span>width<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>400px<span class="pl-pds">"</span></span>);
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-en">css</span>(<span class="pl-s"><span class="pl-pds">"</span>color<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>blue<span class="pl-pds">"</span></span>) makes text color blue on element #mioElemento
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>ul<span class="pl-pds">"</span></span>).<span class="pl-en">css</span>(<span class="pl-s"><span class="pl-pds">"</span>border<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>solid 1px #ccc<span class="pl-pds">"</span></span>)</pre></div>
+    <h2><a href="#aggiungere-e-rimuovere-contenuto-e-inserire-elementi" aria-hidden="true" class="anchor" id="user-content-aggiungere-e-rimuovere-contenuto-e-inserire-elementi"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aggiungere
+        e rimuovere contenuto e inserire elementi</h2>
+    <h3><a href="#ottenere-lelemento-html" aria-hidden="true" class="anchor" id="user-content-ottenere-lelemento-html"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ottenere
+        l'elemento html</h3>
+    <div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> mioElementHTMLo <span class="pl-k">=</span> <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-en">html</span>();</pre></div>
+    <h3><a href="#ottenere-solo-il-testo-contenuto-nel-tag" aria-hidden="true" class="anchor" id="user-content-ottenere-solo-il-testo-contenuto-nel-tag"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ottenere
+        solo il testo contenuto nel tag</h3>
+    <div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> mioElementHTMLo <span class="pl-k">=</span> <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-c1">text</span>();</pre></div>
+    <h3><a href="#cambiare-lhtml-eo-il-testo" aria-hidden="true" class="anchor" id="user-content-cambiare-lhtml-eo-il-testo"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cambiare
+        l'HTML e/o il Testo</h3>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-en">html</span>(<span class="pl-s"><span class="pl-pds">"</span>&lt;p&gt;Questo è il nuovo contenuto&lt;/p&gt;<span class="pl-pds">"</span></span>);
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>Questo è il nuovo contenuto.<span class="pl-pds">"</span></span>); <span class="pl-c"><span class="pl-c">//</span> questo sostituisce il testo presente</span></pre></div>
+    <h3><a href="#far-seguire-appendere-del-contenuto-ad-un-elemento" aria-hidden="true" class="anchor" id="user-content-far-seguire-appendere-del-contenuto-ad-un-elemento"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Far
+        seguire (appendere) del contenuto ad un elemento</h3>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-c1">append</span>(<span class="pl-s"><span class="pl-pds">"</span>&lt;p&gt;Questo lo aggiungo.&lt;/p&gt;<span class="pl-pds">"</span></span>);
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>).<span class="pl-c1">append</span>(<span class="pl-s"><span class="pl-pds">"</span>&lt;p&gt;Questo pure.&lt;/p&gt;<span class="pl-pds">"</span></span>); <span class="pl-c"><span class="pl-c">//</span> Aggiunge questo contenuto ad ogni paragrafo</span></pre></div>
+    <h3><a href="#altri-comandi" aria-hidden="true" class="anchor" id="user-content-altri-comandi"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Altri
+        comandi
+    </h3>
+    <div class="highlight highlight-source-js"><pre>    <span class="pl-en">appendTo</span>()
+    <span class="pl-en">prepend</span>()
+    <span class="pl-en">prependTo</span>()
+    <span class="pl-en">before</span>()
+    <span class="pl-en">insertBefore</span>()
+    <span class="pl-en">after</span>()
+    <span class="pl-en">insertAfter</span>()</pre></div>
+    <ul>
+        <li>lavorano in modo simile con specifiche peculiarità</li>
+        <li>Ulteriori informazioni jQuery.com</li>
+    </ul>
+    <h2><a href="#gli-eventi-intercettare-il-click-del-mouse-con-jquery" aria-hidden="true" class="anchor" id="user-content-gli-eventi-intercettare-il-click-del-mouse-con-jquery"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Gli
+        Eventi: intercettare il click del mouse con jQuery</h2>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>a<span class="pl-pds">"</span></span>).<span class="pl-c1">click</span>(<span class="pl-k">function</span>() {
+<span class="pl-c"><span class="pl-c">//</span> il codice presente viene eseguito onclick!</span>
+});</pre></div>
+    <ul>
+        <li>
+            <p>Il codice dentro function() viene eseguito quando un link viene cliccato</p>
+        </li>
+        <li>
+            <p>Altri comuni eventi inclusi in jQuery</p>
+            <ul>
+                <li>blur()</li>
+                <li>focus()</li>
+                <li>hover()</li>
+                <li>keydown()</li>
+                <li>load()</li>
+                <li>mousemove()</li>
+                <li>resize()</li>
+                <li>scroll()</li>
+                <li>submit()</li>
+                <li>select()</li>
+            </ul>
+        </li>
+    </ul>
+    <h3><a href="#mostrare-e-nascondere-elementi-con-il-jquery" aria-hidden="true" class="anchor" id="user-content-mostrare-e-nascondere-elementi-con-il-jquery"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mostrare
+        e nascondere elementi con il jQuery</h3>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-en">hide</span>(<span class="pl-s"><span class="pl-pds">"</span>slow<span class="pl-pds">"</span></span>, <span class="pl-k">function</span>() {
+<span class="pl-c"><span class="pl-c">//</span> nasconde</span>
+}
+
+<span class="pl-c"><span class="pl-c">//</span>mostra</span>
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-en">show</span>(<span class="pl-s"><span class="pl-pds">"</span>fast<span class="pl-pds">"</span></span>, <span class="pl-k">function</span>() {
+<span class="pl-c"><span class="pl-c">//</span> qui dentro viene eseguito una volta che l'elemento è stato mostrato</span>
+}
+
+<span class="pl-c"><span class="pl-c">//</span> scambia: se è nascosto mostra e se è visibile nasconde</span>
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-c1">toggle</span>(<span class="pl-c1">1000</span>, <span class="pl-k">function</span>() {
+}</pre></div>
+    <div class="highlight highlight-source-js"><pre>    <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-en">fadeOut</span>(<span class="pl-s"><span class="pl-pds">"</span>slow<span class="pl-pds">"</span></span>, <span class="pl-k">function</span>() {
+    <span class="pl-k">do</span> something when fade out finished
+    }
+
+
+    <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-en">fadeIn</span>(<span class="pl-s"><span class="pl-pds">"</span>fast<span class="pl-pds">"</span></span>, <span class="pl-k">function</span>() {
+    <span class="pl-k">do</span> something when fade <span class="pl-k">in</span> finished
+    }</pre></div>
+    <div class="highlight highlight-source-js"><pre>    <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-en">fadeTo</span>(<span class="pl-c1">2000</span>, <span class="pl-c1">0.4</span>, <span class="pl-k">function</span>() {
+    <span class="pl-c"><span class="pl-c">//</span> do something when fade is finished</span>
+    }</pre></div>
+    <div class="highlight highlight-source-js"><pre>    <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-en">slideDown</span>(<span class="pl-s"><span class="pl-pds">"</span>fast<span class="pl-pds">"</span></span>, <span class="pl-k">function</span>() {
+    <span class="pl-k">do</span> something when slide down is finished
+    }
+
+
+    <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-en">slideUp</span>(<span class="pl-s"><span class="pl-pds">"</span>slow<span class="pl-pds">"</span></span>, <span class="pl-k">function</span>() {
+    <span class="pl-k">do</span> something when slide up is finished
+    }
+
+    <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-en">slideToggle</span>(<span class="pl-c1">1000</span>, <span class="pl-k">function</span>() {
+    <span class="pl-c"><span class="pl-c">//</span> do something when slide up/down is finished</span>
+    }</pre></div>
+    <h2><a href="#animate" aria-hidden="true" class="anchor" id="user-content-animate"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Animate</h2>
+    <div class="highlight highlight-source-js"><pre>    <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mioElemento<span class="pl-pds">"</span></span>).<span class="pl-c1">animate</span>(
+    {
+    opacity<span class="pl-k">:</span> <span class="pl-c1">.3</span>,
+    width<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>500px<span class="pl-pds">"</span></span>,
+    height<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>700px<span class="pl-pds">"</span></span>
+    }, <span class="pl-c1">2000</span>, <span class="pl-k">function</span>() {
+    <span class="pl-c"><span class="pl-c">//</span> optional callback after animation completes</span>
+    }
+    );</pre></div>
+    <h2><a href="#oggetto-jquery-" aria-hidden="true" class="anchor" id="user-content-oggetto-jquery-"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Oggetto
+        jQuery() $()</h2>
+    <ul>
+        <li>jQuery() oppure $() Permette di selezionare e creare elementi del DOM Può avere come parametro:</li>
+        <li>Selettore CSS $("p.evidenziato") Restituisce un array di oggetti, eventualmente vuoto</li>
+        <li>Oggetti javascript $(this.value) Restituisce un array di oggetti contenente l’elemento passato come parametro</li>
+        <li>Codice HTML $("Ciao Mondo") Crea un elemento del DOM e restituisce un array di oggetti contenente l’elemento appena creato</li>
+    </ul>
+    <h2><a href="#selettori-tag-html" aria-hidden="true" class="anchor" id="user-content-selettori-tag-html"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Selettori
+        TAG HTML</h2>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(elemento)</pre></div>
+    <ul>
+        <li>selezionare gli elementi HTML passati come parametro
+            <ul>
+                <li>$("a") tutti i link (e ancore) della pagina</li>
+                <li>$("p") tutti i paragrafi della pagina</li>
+                <li>$("a,p") tutti i link e i paragrafi della pagina</li>
+            </ul>
+        </li>
+    </ul>
+    <h2><a href="#selettori-di-id" aria-hidden="true" class="anchor" id="user-content-selettori-di-id"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Selettori
+        di ID</h2>
+    <ul>
+        <li>Permette di selezionare l’elemento della pagina che ha l’id passato come parametro</li>
+        <li><code>$(#idelemento)</code> elemento della pagina con attributo id="principale"</li>
+        <li><code>$("div#principale")</code> div della pagina con attributo id="principale"</li>
+        <li><code>$("#principale")</code> Essendo l’id univoco all’interno della pagina la selezione del div poteva essere omessa</li>
+    </ul>
+    <h2><a href="#selettori-di-classe" aria-hidden="true" class="anchor" id="user-content-selettori-di-classe"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Selettori
+        di CLASSE</h2>
+    <ul>
+        <li><code>$(.nomeclasse)</code> Per selezionare gli elementi della pagina che hanno la classe passata come parametro</li>
+        <li><code>$(".evidenziato")</code> Elementi della pagina che hanno classe evidenziato</li>
+        <li><code>$("div.evidenziato")</code> tutti i div della pagina con classe evidenziato</li>
+    </ul>
+    <h2><a href="#selettori-per-attributi" aria-hidden="true" class="anchor" id="user-content-selettori-per-attributi"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Selettori
+        per ATTRIBUTI</h2>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(elemento[attributo])</pre></div>
+    <p>Permette di selezionare gli elementi della pagina che hanno l’attributo passato come parametro tutte le immagini in cui è</p>
+    <p>$("img[title]") tutti gli elementi img in cui è specificato l’attributo title $("input[value]") tutti gli elementi input in cui è specificato l’attributo value</p>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(elemento[attributo<span class="pl-k">=</span>x])</pre></div>
+    <pre><code>Permette di selezionare gli elementi della pagina che hanno l’attributo passato come parametro uguale al valore X 
+</code></pre>
+    <p>$("img[title=‘logo’]") tutte le immagini in cui l’attributo titolo è uguale a ‘logo’ $("input[type=‘radio’]") tutti gli elementi input di tipo radio</p>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(elemento[attributoˆ<span class="pl-k">=</span>x])</pre></div>
+    <pre><code>Permette di selezionare gli elementi della pagina che hanno l’attributo passato come parametro che inizia per X tutte le immagini in cui l’attributo titolo inizia con ‘logo’
+</code></pre>
+    <p>$("a[hrefˆ=‘http://’]") tutti i link con indirizzo non relativo $("img[title^='logo']")
+    </p>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(elemento[attributo$<span class="pl-k">=</span>x])</pre></div>
+    <pre><code>Permette di selezionare gli elementi della pagina che hanno l’attributo passato come parametro che finisce per X
+$("img[src$='.png']")
+</code></pre>
+    <p>tutte le immagini con estensione png $("a[href$='.pdf']") tutti i link a file pdf</p>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(elemento[attributo<span class="pl-k">*=</span>x])</pre></div>
+    <p>Permette di selezionare gli elementi della pagina che hanno l’attributo passato come parametro che contiene la stringa X tutte le immagini in cui l’attributo titolo contiene la stringa ‘logo’ $("a[href*='it.wikipedia.org']") tutti i link che contengono
+        nell’indirizzo la stringa ‘it.wikipedia.org’ $("img[title*='logo']")
+    </p>
+    <h2><a href="#selettori-gerarchici" aria-hidden="true" class="anchor" id="user-content-selettori-gerarchici"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Selettori
+        GERARCHICI
+    </h2>
+    <ul>
+        <li>l'istruzione</li>
+    </ul>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(padre <span class="pl-k">&gt;</span> figli)</pre></div>
+    <ul>
+        <li>
+            <p>Permette di selezionare gli elementi "figli" che sono discendenti diretti dell’elemento "padre" tutte le liste che sono contenute direttamente in un div</p>
+        </li>
+        <li>
+            <p><code>$(div &gt; li)</code> errato!!! Selezionerebbe tutti gli elementi di una lista contenuti direttamente in un div. Gli elementi di una lista devono essere contenuti in elementi ul o ol: <code>$(div &gt; ul)</code></p>
+        </li>
+    </ul>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(fratello<span class="pl-k">+</span>sorelle)</pre></div>
+    <pre><code>Permette di selezionare gli elementi "sorelle" che sono direttamente preceduti da un elemento "fratello"
+</code></pre>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>.A + .B<span class="pl-pds">"</span></span>)</pre></div>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(fratello<span class="pl-k">~</span>sorelle)</pre></div>
+    <pre><code>Permette di selezionare gli elementi "sorelle" che sono preceduti da un elemento "fratello"
+</code></pre>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>.A ~ .B<span class="pl-pds">"</span></span>)</pre></div>
+    <div class="highlight highlight-source-js"><pre><span class="pl-s"><span class="pl-pds">`</span><span class="pl-pds">`</span><span class="pl-pds">`</span>$(padri:has(discendenti))<span class="pl-pds">`</span><span class="pl-pds">`</span><span class="pl-pds">`</span></span></pre></div>
+    <pre><code>Permette di selezionare gli elementi "padri" che hanno almeno un "discendente" passato come parametro tutti gli ul che hanno come discendente almeno un link
+</code></pre>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>div:has(img)<span class="pl-pds">"</span></span>) tutti i div che hanno come
+discendente almeno un’immagine
+    <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>ul:has(a)<span class="pl-pds">"</span></span>)</pre></div>
+    <h2><a href="#selettori-di-posizione" aria-hidden="true" class="anchor" id="user-content-selettori-di-posizione"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Selettori
+        di Posizione</h2>
+    <ul>
+        <li>
+            <p><code>$(:first) $(:last)</code> Permettono di selezionare il primo (:first) e ultimo (:last) elemento di un insieme il primo link della pagina</p>
+        </li>
+        <li>
+            <p><code>$("p.evidenziato:first")</code> il primo paragrafo con class "evidenziato"</p>
+        </li>
+        <li>
+            <p><code>$("img[src*=logo]:last")</code> ultima immagine che contenga nell’indirizzo la parola logo</p>
+        </li>
+        <li>
+            <p>Questi selettori sono zero-based: utilizzano come indice iniziale lo 0</p>
+        </li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>selettore</th>
+                <th>descrizione</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>$(:first-child) $(:last-child)</code></td>
+                <td>Per selezionare il primo (:first-child) e l’ultimo (:last-child) elemento discendente</td>
+            </tr>
+            <tr>
+                <td><code>$("p.evidenziato:first-child")</code></td>
+                <td>Per selezionare il primo elemento contenuto in ogni paragrafo con class "evidenziato"</td>
+            </tr>
+            <tr>
+                <td><code>$("li:last-child")</code></td>
+                <td>Per selezionare l'ultimo elemento contenuto in ogni li</td>
+            </tr>
+            <tr>
+                <td><code>$("div:first-child")</code></td>
+                <td>Per selezionare il primo elemento contenuto in ogni div</td>
+            </tr>
+            <tr>
+                <td><code>$(:even) $(:odd)</code></td>
+                <td>Permettono di selezionare gli elementi in posizioni pari (:even) e dispari (:odd)</td>
+            </tr>
+            <tr>
+                <td><code>$("li:odd")</code></td>
+                <td>i list item di posizione dispari</td>
+            </tr>
+            <tr>
+                <td><code>$("table.zebra tr:even")</code></td>
+                <td>le righe in posizione pari delle tabelle che hanno class "zebra"</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2><a href="#selettori-cardinali-di-posizione" aria-hidden="true" class="anchor" id="user-content-selettori-cardinali-di-posizione"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Selettori
+        Cardinali di Posizione</h2>
+    <ul>
+        <li><code>$(:nth-child(n))</code> e <code>$(:nth-child(even|odd))</code> Permettono di selezionare gli elementi discendenti in posizioni uguale a n</li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>selettore</th>
+                <th>descrizione</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>$("tr:nth-child(4)")</td>
+                <td>il quarto elemento contenuto in ogni tr</td>
+            </tr>
+            <tr>
+                <td>$("tr:nth-child(even)")</td>
+                <td>gli elementi in posizione pari in ogni tr</td>
+            </tr>
+            <tr>
+                <td>$("tr:nth-child(odd)")</td>
+                <td>dispari in ogni tr gli elementi in posizione</td>
+            </tr>
+        </tbody>
+    </table>
+    <ul>
+        <li>Questi selettori sono zero-based: utilizzano come indice iniziale lo 0</li>
+        <li><code>$(:eq(n))</code>, <code>$(:lt(n))</code> e <code>$(:gt(n))</code> Permettono di selezionare gli elementi in posizioni uguale, maggiore o minore di n</li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>selettore</th>
+                <th>descrizione</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>$("tr:eq(4)")</td>
+                <td>il quinto elemento tr</td>
+            </tr>
+            <tr>
+                <td>$("tr:lt(4)")</td>
+                <td>i primi cinque tr</td>
+            </tr>
+            <tr>
+                <td>$("tr:gt(4)")</td>
+                <td>dal sesto tr in poi</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2><a href="#selettori-custom" aria-hidden="true" class="anchor" id="user-content-selettori-custom"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Selettori
+        Custom
+    </h2>
+    <table>
+        <thead>
+            <tr>
+                <th>selettore</th>
+                <th>descrizione</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>:button</td>
+                <td>seleziona tutti i bottoni</td>
+            </tr>
+            <tr>
+                <td>:checkbox</td>
+                <td>seleziona tutte le checkbox</td>
+            </tr>
+            <tr>
+                <td>:radio</td>
+                <td>seleziona tutti i radio button</td>
+            </tr>
+            <tr>
+                <td>:checked</td>
+                <td>seleziona le check box e i radio button che sono selezionati</td>
+            </tr>
+            <tr>
+                <td>:disabled, :enabled</td>
+                <td>elementi di input disabilitati o abilitati</td>
+            </tr>
+            <tr>
+                <td>$("li:not(.evidenziato)")</td>
+                <td>gli elementi li che non hanno classe evidenziato</td>
+            </tr>
+            <tr>
+                <td>:hidden</td>
+                <td>elementi nascosti</td>
+            </tr>
+            <tr>
+                <td>:visible</td>
+                <td>elementi visisbili</td>
+            </tr>
+            <tr>
+                <td>:text</td>
+                <td>seleziona textbox</td>
+            </tr>
+            <tr>
+                <td>:filter(selettore)</td>
+                <td>applica un ulteriore selettore all'insieme selezionato</td>
+            </tr>
+            <tr>
+                <td>:contains(cerca)</td>
+                <td>seleziona gli elementi che contengono il testo "cerca"</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2><a href="#operazione-su-gli-oggetti-selezionaticreati" aria-hidden="true" class="anchor" id="user-content-operazione-su-gli-oggetti-selezionaticreati"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Operazione
+        su gli oggetti selezionati/creati</h2>
+    <p>Navigazione del DOM</p>
+    <p>$(selettore).children([selettore]) figli diretti dell'insieme selezionato $(selettore).next() elemento successivo a quello selezionato $(selettore).parent([selettore]) padre dell'elemento selezionato $(selettore).parents([selettore]) $(selettore).find(selettore)
+    </p>
+    <h2><a href="#operazione-su-gli-oggetti-selezionaticreati-1" aria-hidden="true" class="anchor" id="user-content-operazione-su-gli-oggetti-selezionaticreati-1"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Operazione
+        su gli oggetti selezionati/creati</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Manipolazione del DOM</th>
+                <th>metodi disponibili</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Inserire elementi</td>
+                <td>after, append, before, prepend, html, text, wrap, clone, value</td>
+            </tr>
+            <tr>
+                <td>Cancellare elementi</td>
+                <td>empty, remove, removeAttr</td>
+            </tr>
+            <tr>
+                <td>Modifica elementi</td>
+                <td>attr, addClass, removeClass, toggleClass, css, hide, show, toggle</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2><a href="#operazione-su-gli-oggetti-selezionaticreati-2" aria-hidden="true" class="anchor" id="user-content-operazione-su-gli-oggetti-selezionaticreati-2"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Operazione
+        su gli oggetti selezionati/creati</h2>
+    <ul>
+        <li>Esempi Manipolazione del DOM</li>
+    </ul>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>li<span class="pl-pds">"</span></span>).<span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>testo lista<span class="pl-pds">"</span></span>).<span class="pl-en">insertAfter</span>(<span class="pl-s"><span class="pl-pds">"</span>li:first<span class="pl-pds">"</span></span>);
+<span class="pl-c"><span class="pl-c">//</span>inserisce un elemento li appena creato dopo il primo li del documento</span>
+
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>div#principale<span class="pl-pds">"</span></span>).<span class="pl-c1">append</span>(<span class="pl-s"><span class="pl-pds">"</span>dentro il div<span class="pl-pds">"</span></span>);
+<span class="pl-c"><span class="pl-c">//</span>inserisce un paragrafo dentro il div che ha id principale</span>
+
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>input#email<span class="pl-pds">"</span></span>).<span class="pl-c1">value</span>()
+<span class="pl-c"><span class="pl-c">//</span>valore della input box con id email</span>
+
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>span<span class="pl-pds">"</span></span>).<span class="pl-en">wrap</span>(<span class="pl-s"><span class="pl-pds">"</span>div<span class="pl-pds">"</span></span>)
+<span class="pl-c"><span class="pl-c">//</span>crea un div che contiene tutti gli elementi span della pagina</span>
+
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>p.evidenziato<span class="pl-pds">"</span></span>).<span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>Sono evidenziato<span class="pl-pds">"</span></span>);
+<span class="pl-c"><span class="pl-c">//</span>imposta il testo dei paragrafi di classe evidenziano con la</span>
+stringa passata come parametro
+
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>img.logo<span class="pl-pds">"</span></span>).<span class="pl-en">css</span>(<span class="pl-s"><span class="pl-pds">"</span>border<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>solid orange 3px<span class="pl-pds">"</span></span>);
+<span class="pl-c"><span class="pl-c">//</span>cambia lo stile a tutte le immagini di classe logo</span></pre></div>
+    <ul>
+        <li>Permette di scorrere il vettore di elementi selezionati e di eseguire una funzione per ogni elemento</li>
+    </ul>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(selettore).<span class="pl-en">each</span>()</pre></div>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(img).<span class="pl-en">each</span>(<span class="pl-k">function</span>(<span class="pl-smi">i</span>){
+    <span class="pl-en">$</span>(<span class="pl-c1">this</span>).<span class="pl-en">attr</span>(<span class="pl-s"><span class="pl-pds">"</span>alt<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>immagine <span class="pl-pds">"</span></span><span class="pl-k">+</span>i);
+})</pre></div>
+    <h2><a href="#operazione-su-gli-oggetti-selezionaticreati-3" aria-hidden="true" class="anchor" id="user-content-operazione-su-gli-oggetti-selezionaticreati-3"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Operazione
+        su gli oggetti selezionati/creati</h2>
+    <ul>
+        <li>
+            <p>Concatenazione operazioni</p>
+        </li>
+        <li>
+            <p>E' possibile concatenare più azioni su uno stesso selettore,</p>
+        </li>
+        <li>
+            <p>se le operazioni precedenti non alterano l'insieme di oggetti restituiti dal selettore.</p>
+        </li>
+        <li>
+            <p>nasconde tutti gli elementi di classe invisibile e aggiunge la classe sparito</p>
+        </li>
+    </ul>
+    <p><code>$(.invisibile).hide().addClass("sparito")</code></p>
+    <ul>
+        <li>crea un immagine con attributo src="img/test.jpg", di classe logo e la appende al div con id principale</li>
+    </ul>
+    <p><code>$("").attr("src","img/test.jpg").addClass("logo").appendTo("div#principale")</code></p>
+    <h2><a href="#operazione-su-gli-oggetti-selezionaticreati-4" aria-hidden="true" class="anchor" id="user-content-operazione-su-gli-oggetti-selezionaticreati-4"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Operazione
+        su gli oggetti selezionati/creati</h2>
+    <ul>
+        <li>Concatenazione Avanzata .end()</li>
+        <li>NB: alcune funzioni alterano l'insiemi di oggetti restituiti dal selettore</li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>selettore</th>
+                <th>descrizione</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>$(div p:first)</code></td>
+                <td>Seleziona il primo paragrafo di ogni DIV</td>
+            </tr>
+            <tr>
+                <td><code>.addClass("primoParagrafo")</code></td>
+                <td>Aggiunge la classe primoParagrafo</td>
+            </tr>
+            <tr>
+                <td><code>.find("a:first")</code></td>
+                <td>Seleziona il primo link del primo Paragrafo di ogni div</td>
+            </tr>
+            <tr>
+                <td><code>.text("primo link")</code></td>
+                <td>Modifica il testo in "primo link"</td>
+            </tr>
+            <tr>
+                <td><code>Ritorna alla selezione precedente (primo</code></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code>.css("border","solid 5px");</code></td>
+                <td>Modifica lo stile del bordo</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2><a href="#eventi-supportati" aria-hidden="true" class="anchor" id="user-content-eventi-supportati"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Eventi
+        supportati
+    </h2>
+    <ul>
+        <li>dblclick</li>
+        <li>load</li>
+        <li>unload</li>
+        <li>submit</li>
+        <li>focus</li>
+        <li>blur</li>
+        <li>change</li>
+        <li>select</li>
+        <li>resize</li>
+        <li>keydown</li>
+        <li>keypress</li>
+        <li>keyup</li>
+        <li>scroll</li>
+        <li>mousemove</li>
+        <li>mousedown</li>
+        <li>mouseup</li>
+        <li>mouseover</li>
+        <li>error</li>
+    </ul>
+    <h2><a href="#tipologia-di-eventi-javascript" aria-hidden="true" class="anchor" id="user-content-tipologia-di-eventi-javascript"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tipologia
+        di Eventi Javascript</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>EVENTO</th>
+                <th>DESCRIZIONE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>blur, focus</td>
+                <td>Inviati ad un elemento quando rispettivamente perde il focus od ottiene il focus.</td>
+            </tr>
+            <tr>
+                <td>focusin, focusout</td>
+                <td>Inviato ad un elemento se esso o un suo discendente rispettivamente ottiene o perde il focus</td>
+            </tr>
+            <tr>
+                <td>load</td>
+                <td>Inviato ad un elemento quando esso e tutti i suo discendenti sono stati completamente caricati</td>
+            </tr>
+            <tr>
+                <td>resize</td>
+                <td>Inviato all'elemento windows quando la finestra del browser ha cambiato dimensioni</td>
+            </tr>
+            <tr>
+                <td>scroll</td>
+                <td>Inviato ad un elemento quando l'utente ha effettuato lo scroll in un differente punto dell'elemento stesso</td>
+            </tr>
+            <tr>
+                <td>unload</td>
+                <td>Inviato all'oggetto window quando l'utente naviga fuori dalla pagina (chiusura del browser, click su un link, a volte anche il semplice refresh)</td>
+            </tr>
+            <tr>
+                <td>click, dbclick</td>
+                <td>Inviati ad un elemento quando il mouse è sopra di esso e viene effettuato un click o un doppio click</td>
+            </tr>
+            <tr>
+                <td>mousedown, mouseup</td>
+                <td>Inviati ad un elemento quando il mouse è sopra di esso e viene rispettivamente premuto o rilasciato il bottone del mouse</td>
+            </tr>
+            <tr>
+                <td>mouseover, mouseout, mousemove</td>
+                <td>Eventi inviati all'elemento in cui il puntatore del mouse entre (mouseover), in cui esce (mouseout) o in cui si sta mouvendo (mousemove)</td>
+            </tr>
+            <tr>
+                <td>keydown,keypress, keyup</td>
+                <td>Eventi inviati quando un tasto viene premuto (keydown) è stato rilasciato (keyup) o è stato premuto (keypress)</td>
+            </tr>
+            <tr>
+                <td>select</td>
+                <td>Inviato ad un elemento quando viene selezionato del test all'interno di esso.</td>
+            </tr>
+            <tr>
+                <td>change</td>
+                <td>Evento inviato ad un elemento che ha cambiato il proprio valore.</td>
+            </tr>
+            <tr>
+                <td>submit</td>
+                <td>Evento inviato quando l'utente tenta di fare il submit di un form</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2><a href="#on" aria-hidden="true" class="anchor" id="user-content-on"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>on</h2>
+    <p><code>$(selettore).on(evento,[dati],function(evento){...})</code></p>
+    <p>Permette di collegare gli eventi ad un selettore e di eseguire la funzione associata</p>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>:text<span class="pl-pds">"</span></span>).<span class="pl-en">on</span>(<span class="pl-s"><span class="pl-pds">'</span>focusin<span class="pl-pds">'</span></span>, <span class="pl-k">function</span>(){
+<span class="pl-c1">this</span>.<span class="pl-en">addClass</span>(<span class="pl-s"><span class="pl-pds">'</span>inserimento<span class="pl-pds">'</span></span>);
+}).<span class="pl-en">on</span>(<span class="pl-s"><span class="pl-pds">'</span>focusout<span class="pl-pds">'</span></span>,<span class="pl-k">function</span>(){
+<span class="pl-c1">this</span>.<span class="pl-en">removeClass</span>(<span class="pl-s"><span class="pl-pds">'</span>inserimento<span class="pl-pds">'</span></span>);
+})</pre></div>
+    <p>Per ogni casella di testo aggiunge la classe inserimento quando il focus è sull'oggetto e rimuove la stessa classe quando il focus non è più dell'oggetto
+    </p>
+    <h2><a href="#sintassi-abbreviata-eventi" aria-hidden="true" class="anchor" id="user-content-sintassi-abbreviata-eventi"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sintassi
+        abbreviata eventi</h2>
+    <ul>
+        <li><code>$(selettore).on(evento,[dati],function(evento){...})</code></li>
+        <li><code>$(selettore).evento([dati],function(evento){...})</code></li>
+    </ul>
+    <div class="highlight highlight-source-js"><pre>    <span class="pl-c"><span class="pl-c">//</span>nasconde i listitem al click su di essi</span>
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>li<span class="pl-pds">"</span></span>).<span class="pl-c1">click</span>(<span class="pl-k">function</span>(){<span class="pl-en">$</span>(<span class="pl-c1">this</span>).<span class="pl-en">hide</span>()});
+
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#mostraNascosti<span class="pl-pds">"</span></span>).<span class="pl-en">mouseover</span>(<span class="pl-k">function</span>(){
+    <span class="pl-c"><span class="pl-c">//</span>quando il mouse passa sopra l'elemento con id="mostraNascondi" gli elementi li nascosti vengano visualizzati</span>
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>li:hidden<span class="pl-pds">"</span></span>).<span class="pl-en">show</span>();
+});
+
+<span class="pl-c"><span class="pl-c">//</span>esempio passaggio dati alle funzioni di callback degli eventi</span>
+<span class="pl-k">var</span> messaggio<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>ciao mondo<span class="pl-pds">"</span></span>
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>li<span class="pl-pds">"</span></span>).<span class="pl-c1">click</span>({msg<span class="pl-k">:</span>messaggio},<span class="pl-k">function</span>(<span class="pl-smi">evento</span>){
+<span class="pl-en">alert</span>(<span class="pl-smi">evento</span>.<span class="pl-c1">data</span>.<span class="pl-smi">msg</span>)
+});</pre></div>
+    <h2><a href="#proprietà-oggetto-evento" aria-hidden="true" class="anchor" id="user-content-proprietà-oggetto-evento"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Proprietà
+        Oggetto evento</h2>
+    <p>Le funzioni di callback (richiamate al verificarsi di ogni evento) hanno come parametro un oggetto che descrive l'evento occorso.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>proprietà</th>
+                <th>Descrizione</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>.currentTarget</td>
+                <td>Elemento del DOM che ha rilanciato l'evento</td>
+            </tr>
+            <tr>
+                <td>.data</td>
+                <td>I dati opzionali passati dalla funzione on</td>
+            </tr>
+            <tr>
+                <td>.pageX</td>
+                <td>Ascissa della posizione del mouse</td>
+            </tr>
+            <tr>
+                <td>.pageY</td>
+                <td>Ordinata della posizione del mouse</td>
+            </tr>
+            <tr>
+                <td>.target</td>
+                <td>Elemento del DOM in cui è stato generato l'evento</td>
+            </tr>
+            <tr>
+                <td>.timeStamp</td>
+                <td>Quando si è verificato un evento (millisecondi passati dal 1 gennaio 1970)</td>
+            </tr>
+            <tr>
+                <td>.type</td>
+                <td>Descrive la natura dell'evento</td>
+            </tr>
+            <tr>
+                <td>.which</td>
+                <td>Nel caso di eventi scatenati da mouse o tastiera indica (in codice) quale bottone o tasto è stato premuto.</td>
+            </tr>
+            <tr>
+                <td>.keyCode</td>
+                <td>Per avere informazioni sul carattere inserito si utilizza</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2><a href="#funzioni-oggetto-evento" aria-hidden="true" class="anchor" id="user-content-funzioni-oggetto-evento"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Funzioni
+        Oggetto evento</h2>
+    <p>L'oggetto evento offre alcuni utili metodi Metodo Descrizione</p>
+    <ul>
+        <li><code>.preventDefault()</code> Non fa eseguire la funzione di default legata all'evento.</li>
+    </ul>
+    <p>Es. disattivare tutti i link di una pagina:</p>
+    <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>a<span class="pl-pds">"</span></span>).<span class="pl-en">on</span>(<span class="pl-s"><span class="pl-pds">'</span>click<span class="pl-pds">'</span></span>,<span class="pl-k">function</span>(<span class="pl-smi">evento</span>){
+<span class="pl-smi">evento</span>.<span class="pl-c1">preventDefault</span>();
+});</pre></div>
+    <ul>
+        <li><code>.stopPropagation()</code> Impedisce l'inoltro dell'evento ad ogni elemento padre</li>
+        <li><code>.stopImmediatePropagation()</code> Impedisce l'inoltro dell'evento ad ogni altro elemento del DOM</li>
+    </ul>
+    <h2><a href="#lanciare-eventi" aria-hidden="true" class="anchor" id="user-content-lanciare-eventi"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Lanciare
+        eventi
+    </h2>
+    <p>E' possibile tramite jQuery lanciare eventi, sia standard che personalizzati
+        <code>$(selettore).trigger(evento, [dati])</code></p>
+    <ul>
+        <li>
+            <p>Esempio: <code>$("a#link").trigger('click')</code> invia un click all'ancora con id uguale a link</p>
+        </li>
+        <li>
+            <p>Sintassi abbreviata <code>$(selettore).evento([dati])</code></p>
+        </li>
+        <li>
+            <p>Esempio <code>$("a#link").click()</code></p>
+        </li>
+    </ul>
+    <hr>
+    <p>by Emiliano Castellina is licensed under a Creative Commons Attribuzione Non commerciale<br> Condividi allo stesso modo 3.0 Unported License.</p>
+
+</body>
+
+</html>

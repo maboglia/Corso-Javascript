@@ -100,5 +100,8 @@ for (var i = 0; i < studenti.length; i++) {
     document.body.appendChild(divStudente);
 
     console.log(studenti[i].presentaStudente());
+    console.dir(studenti);
+    var studentiJSON = JSON.stringify(studenti);
+    console.dir(studentiJSON);
 
 }
