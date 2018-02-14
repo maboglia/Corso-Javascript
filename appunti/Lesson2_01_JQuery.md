@@ -35,11 +35,11 @@
     - [Selettori di Posizione](#selettori-di-posizione)
     - [Selettori Cardinali di Posizione](#selettori-cardinali-di-posizione)
     - [Selettori Custom](#selettori-custom)
-    - [Operazione su gli oggetti selezionati/creati](#operazione-su-gli-oggetti-selezionaticreati)
-    - [Operazione su gli oggetti selezionati/creati](#operazione-su-gli-oggetti-selezionaticreati)
-    - [Operazione su gli oggetti selezionati/creati](#operazione-su-gli-oggetti-selezionaticreati)
-    - [Operazione su gli oggetti selezionati/creati](#operazione-su-gli-oggetti-selezionaticreati)
-    - [Operazione su gli oggetti selezionati/creati](#operazione-su-gli-oggetti-selezionaticreati)
+    - [Operazione sugli oggetti selezionati/creati](#operazione-sugli-oggetti-selezionaticreati)
+    - [Operazione sugli oggetti selezionati/creati](#operazione-sugli-oggetti-selezionaticreati)
+    - [Operazione sugli oggetti selezionati/creati](#operazione-sugli-oggetti-selezionaticreati)
+    - [Operazione sugli oggetti selezionati/creati](#operazione-sugli-oggetti-selezionaticreati)
+    - [Operazione sugli oggetti selezionati/creati](#operazione-sugli-oggetti-selezionaticreati)
     - [Eventi supportati](#eventi-supportati)
     - [Tipologia di Eventi Javascript](#tipologia-di-eventi-javascript)
     - [on](#on)
@@ -555,7 +555,7 @@ $("li:not(.evidenziato)")| gli elementi li che non hanno classe evidenziato
 :filter(selettore)|applica un ulteriore selettore all'insieme selezionato
 :contains(cerca)|seleziona gli elementi che contengono il testo "cerca"
 
-## Operazione su gli oggetti selezionati/creati
+## Operazione sugli oggetti selezionati/creati
 
 Navigazione del DOM
 
@@ -565,7 +565,7 @@ $(selettore).parent([selettore]) padre dell'elemento selezionato
 $(selettore).parents([selettore])
 $(selettore).find(selettore)
 
-## Operazione su gli oggetti selezionati/creati
+## Operazione sugli oggetti selezionati/creati
 
 Manipolazione del DOM|metodi disponibili
 ---|---
@@ -573,7 +573,7 @@ Inserire elementi|after, append, before, prepend, html, text, wrap, clone, value
 Cancellare elementi|empty, remove, removeAttr
 Modifica elementi|attr, addClass, removeClass, toggleClass, css, hide, show, toggle
 
-## Operazione su gli oggetti selezionati/creati
+## Operazione sugli oggetti selezionati/creati
 
 * Esempi Manipolazione del DOM
 
@@ -584,7 +584,7 @@ $("li").text("testo lista").insertAfter("li:first");
 $("div#principale").append("dentro il div");
 //inserisce un paragrafo dentro il div che ha id principale
 
-$("input#email").value()
+$("input#email").val()
 //valore della input box con id email
 
 $("span").wrap("div")
@@ -610,7 +610,7 @@ $(img).each(function(i){
 })
 ```
 
-## Operazione su gli oggetti selezionati/creati
+## Operazione sugli oggetti selezionati/creati
 
 * Concatenazione operazioni
 * E' possibile concatenare più azioni su uno stesso selettore,
@@ -624,7 +624,7 @@ $(img).each(function(i){
 
 `$("").attr("src","img/test.jpg").addClass("logo").appendTo("div#principale")`
 
-## Operazione su gli oggetti selezionati/creati
+## Operazione sugli oggetti selezionati/creati
 
 * Concatenazione Avanzata .end()
 * NB: alcune funzioni alterano l'insiemi di oggetti restituiti dal selettore
