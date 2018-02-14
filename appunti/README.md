@@ -8,4 +8,4 @@
 ## JQuery
 
 * [JQuery - Introduzione](Lesson2_01_JQuery.md)
-* [JQuery - Esempi ](Lesson2_03_JQuery.md)
+* [JQuery - Esempi](Lesson2_03_JQuery.md)
