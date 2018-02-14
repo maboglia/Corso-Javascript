@@ -2,5 +2,10 @@
 
 ## Javascript
 
-* [Introduzione JS - Fondamenti](CorsoJs.0.md)
-* [Introduzione JS - Manipolare il DOM](CorsoJs.1.md)
+* [Javascript - Fondamenti](CorsoJs.0.md)
+* [Javascript - Javascript nel browser](CorsoJs.1.md)
+
+## JQuery
+
+* [JQuery - Introduzione](Lesson2_01_JQuery.md)
+* [JQuery - Esempi ](Lesson2_03_JQuery.md)
