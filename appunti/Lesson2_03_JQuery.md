@@ -12,20 +12,21 @@
 	- [FILTRI SU ELEMENTI FORM](#filtri-su-elementi-form)
 	- [FILTRI SU ELEMENTI FORM](#filtri-su-elementi-form)
 	- [Gestione del DOM](#gestione-del-dom)
+	- [prepend()](#prepend)
+	- [before()](#before)
+	- [append()](#append)
+	- [after()](#after)
 	- [Gestione del DOM](#gestione-del-dom)
-	- [Gestione del DOM](#gestione-del-dom)
-	- [Gestione del DOM](#gestione-del-dom)
-	- [Gestione del DOM](#gestione-del-dom)
-	- [Gestione del DOM](#gestione-del-dom)
-	- [Gestione del DOM](#gestione-del-dom)
-	- [Gestione del DOM](#gestione-del-dom)
-	- [Gestione del DOM](#gestione-del-dom)
-	- [Gestione del DOM](#gestione-del-dom)
-	- [Gestione de CSS](#gestione-de-css)
-	- [Gestione de CSS](#gestione-de-css)
+	- [addClass()](#addclass)
+	- [removeClass()](#removeclass)
+	- [html()](#html)
+	- [val()](#val)
+	- [Gestione stili CSS in linea](#gestione-stili-css-in-linea)
+	- [Gestione stili CSS in linea](#gestione-stili-css-in-linea)
 	- [ATTRIBUTI](#attributi)
 	- [SET & GET](#set-get)
-	- [SET & GET](#set-get)
+	- [GETTERS](#getters)
+	- [SETTERS](#setters)
 	- [GLI EVENTI](#gli-eventi)
 	- [GLI EVENTI](#gli-eventi)
 	- [GLI EVENTI](#gli-eventi)
@@ -261,7 +262,7 @@ http://api.jquery.com/category/manipulation/
 
 ---
 
-## Gestione del DOM
+## prepend()
 Prendiamo in esempio questa porzione di html
 
 ```javascript
@@ -277,7 +278,7 @@ $("h1").prepend("<span>Primo</span>");
 ```
 
 
-## Gestione del DOM
+## before()
 Prendiamo in esempio questa porzione di html
 
 ```javascript
@@ -295,7 +296,7 @@ $("h1").before("<span>Primo</span>");
 
 ---
 
-## Gestione del DOM
+## append()
 Prendiamo in esempio questa porzione di html
 
 ```javascript
@@ -312,7 +313,7 @@ $("h1").append("<span>Primo</span>");
 
 ---
 
-## Gestione del DOM
+## after()
 Prendiamo in esempio questa porzione di html
 
 ```javascript
@@ -342,14 +343,13 @@ $("#blocco_interno").html("<strong>Ciao , sono un testo dinamico</strong>");
 <div id="blocco">
 <h1>Esempio</h1>
 <span>Primo</span>
-<div id="blocco_interno"> <strong>Ciao , sono un testo
-dinamico </strong> </div>
+<div id="blocco_interno"> <strong>Ciao , sono un testo dinamico </strong> </div>
 </div>
 ```
 
 ---
 
-## Gestione del DOM
+## addClass()
 
 ```javascript
 <div id="blocco">
@@ -367,7 +367,7 @@ $("# blocco_interno).addClass("selezionata");
 
 ---
 
-## Gestione del DOM
+## removeClass()
 
 ```javascript
 <div id="blocco">
@@ -385,7 +385,7 @@ $("#blocco_interno").removeClass("selezionata");
 
 ---
 
-## Gestione del DOM
+## html()
 
 ```javascript
 ciao
@@ -404,7 +404,7 @@ value="ciao" />
 
 ---
 
-## Gestione del DOM
+## val()
 
 ```javascript
 <form>
@@ -420,32 +420,32 @@ value=" Hello world " />
 
 ---
 
-## Gestione de CSS
+## Gestione stili CSS in linea
 Possiamo gestire le regole css di un elemento attraverso la funzione .css
-//$("#elemento).css ( regola-css , valore);
-$("#elemento").css("color", "red");
-$("#elemento").css("height", "100px");
-$("#elemento").css("border", "1px solid red");
-$("#elemento").css("background-color", "#ffcc90");
+* ```//$("#elemento).css ( regola-css , valore);```
+* ```$("#elemento").css("color", "red");```
+* ```$("#elemento").css("height", "100px");```
+* ```$("#elemento").css("border", "1px solid red");```
+* ```$("#elemento").css("background-color", "#ffcc90");```
 
----
 
-## Gestione de CSS
-Possiamo gestire le regole css in gruppo utilizzando una sola chiamata alla
-funzione .css
-$("#elemento).css( {
-regola-css : valore ,
-regola-css : valore ,
-regola-css : valore ,
-....
-} )
+## Gestione stili CSS in linea
+Possiamo gestire le regole css in gruppo utilizzando una sola chiamata alla funzione .css
+
+	$("#elemento).css( {
+	regola-css : valore ,
+	regola-css : valore ,
+	regola-css : valore ,
+	} );
+
+```javascript
 $("#elemento").css({ "color": "red",
 "height" : "100px",
 "border" : "1px solid red",
 "background-color" : "#ffcc90"
 });
+```
 
----
 
 ## ATTRIBUTI
 LETTURA E SCRITTURA
@@ -463,19 +463,20 @@ Possiamo leggere e scrivere una proprietà CSS .
 
 ---
 
-## SET & GET
-GET
-.html()
-.attr('id')
-.val()
-.width()
+## GETTERS
+
+* ```.html()```
+* ```.attr('id')```
+* ```.val()```
+* ```.width()```
 
 ---
-SET
-.html('<p>ciao</p>)
-.attr('id','blocco_testo')
-.val('ciao')
-.width('120px')
+## SETTERS
+
+* ```.html('<p>ciao</p>)```
+* ```.attr('id','blocco_testo')```
+* ```.val('ciao')```
+* ```.width('120px')```
 
 ## GLI EVENTI
 

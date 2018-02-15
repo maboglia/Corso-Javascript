@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function Rettangolo(b, h) {
+            this.base = b;
+            this.altezza = h;
+            this.area = function() {
+                return this.base * this.altezza;
+            };
+        }
+
+        let mioRettangolo = new Rettangolo(10, 15);
+        console.log(mioRettangolo.area());
+        Rettangolo.prototype.perimetro = function() {
+            return 2 * (this.base + this.altezza);
+        };
+        Rettangolo.prototype.toString = function() {
+            return "Il mio rettangolo di dimensioni: " +
+                this.base + ", " + this.altezza +
+                "ha l'area di superficie " + this.area();
+
+        };
+        console.log(mioRettangolo.perimetro());
+        console.log(mioRettangolo.toString());
+        console.log(typeof mioRettangolo);
+        console.log(mioRettangolo instanceof Rettangolo);
+
+        Rettangolo.prototype.equals = function(altroOggetto) {
+            return (this.base == altroOggetto.base && this.altezza == altroOggetto.altezza)
+        }
+
+        let mioRettangolo2 = new Rettangolo(10, 15);
+
+        console.log(mioRettangolo.equals(mioRettangolo2));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

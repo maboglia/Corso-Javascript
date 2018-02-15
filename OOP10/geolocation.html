@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+    <script>
+        let bottone = document.createElement("button");
+        let testo = document.createTextNode("cliccami");
+        bottone.appendChild(testo);
+        document.body.appendChild(bottone);
+        bottone.addEventListener("click", function(argument) {
+
+            let x = navigator.geolocation.getCurrentPosition(rilevaPosizione);
+
+            console.log(argument.coords.latitude);
+            console.log(argument.coords.longitude);
+            console.log(argument.coords.altitude);
+
+        });
+
+
+        function rilevaPosizione(argument)
+
+
+        if (navigator.geolocation) {
+            console.log(navigator.geolocation);
+
+        }
+    </script>
+</body>
+
+</html>

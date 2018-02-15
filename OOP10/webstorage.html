@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function isSupportato() {
+            try {
+                localStorage.setItem("test", "hello localstorage");
+                sessionStorage.setItem("loggedIn", true);
+                return true;
+            } catch (error) {
+                return false;
+            }
+        }
+
+        //if (isSupportato()) console.log("il localstorage è supportato!");
+        console.log(localStorage.getItem("test"));
+        console.log(localStorage.test);
+        console.log(localStorage["test"]);
+        localStorage.removeItem("test");
+        console.log(localStorage.test);
+
+        (sessionStorage.loggedIn) ? console.log("loggato"): console.log("slogato");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
