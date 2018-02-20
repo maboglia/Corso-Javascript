@@ -61,9 +61,21 @@
     <!-- Page Content -->
     <div class="container">
         <div class="row">
+        <select class="form-control" name="tendina" id="tendina">
+            <option value="0">Seleziona un frutto esotico</option>
+            <option value="1">Avocado</option>
+            <option value="2">Avocado</option>
+            <option value="3">Avocado</option>
 
+        </select>
         <input class="form-control" type="text" id="campoFiltro" placeholder="cerca un frutto">
         <button class="btn btn-primary" id="btnFiltro">Cerca</button>
+                    
+            
+        </div>
+
+        <div class="row">
+
 
             <table id="calories-table" class="table table-striped dataTable" aria-describedby="calories-table_info" width="725" border="0" cellspacing="0" cellpadding="0">
                 <colgroup>
@@ -308,15 +320,26 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
+
+
         $("#btnFiltro").click(function (argument) {
-            var daCercare = $("#campoFiltro").val();
+             daCercare = $("#campoFiltro").val();
             // $("td:contains("+  daCercare +")").css("color","red");
             $("td:contains("+  daCercare +")").parent().hide(3000);
 
             console.log(daCercare);
         });
 
+        $("#tendina").change(function (argument) {
+            console.log($("#tendina").val());
+        });
 
+        var prova = $("#calories-table").find("tr");
+
+        $.each(prova, function (indice, elemento) {
+            var voce = $(elemento).find("td:first").text();
+        $("#tendina").append("<option value='"+ voce +"'>"+ voce +"</option>");            
+        });
 
 
 
