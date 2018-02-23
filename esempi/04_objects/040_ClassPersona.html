@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script>
+        class Studente {
+
+            //non poi  dichiarare variabili diistanaza qui
+            //let a =  "non sipuò";
+
+            constructor(cognome, nome) {
+                this.cognome = cognome;
+                this.nome = nome;
+                this.matricola = ++Studente.matricola;
+            }
+
+            stampaInfo() {
+                return this.nome + " " + this.cognome + " mat: " + this.matricola;
+            }
+
+        }
+
+        Studente.matricola = 0;
+        let studente = new Studente("mauro", "bogliaccino");
+        let studente2 = new Studente("paolo", "bogliaccino");
+
+        console.log(studente.cognome)
+        console.log(studente.nome)
+        console.log(studente.stampaInfo())
+        console.log(studente2.stampaInfo())
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
