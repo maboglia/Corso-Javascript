@@ -4,13 +4,9 @@
 - [Jquery](#jquery)
     - [Jquery è un Framework](#jquery-%C3%A8-un-framework)
     - [PRINCIPALI CARATTERISTICHE](#principali-caratteristiche)
-    - [jQUERY](#jquery)
         - [Utilizziamo la libreria javascript jQuery per:](#utilizziamo-la-libreria-javascript-jquery-per)
     - [Partenza del codice quando il documento (il DOM) è pronto](#partenza-del-codice-quando-il-documento-il-dom-%C3%A8-pronto)
     - [INCLUDERE JQUERY NELLE PAGINE WEB](#includere-jquery-nelle-pagine-web)
-    - ["Filosofia Jquery"](#filosofia-jquery)
-    - ["Filosofia Jquery"](#filosofia-jquery)
-    - ["Filosofia Jquery"](#filosofia-jquery)
     - ["Filosofia Jquery"](#filosofia-jquery)
     - [Selezionare gli elementi](#selezionare-gli-elementi)
     - [selettori css 2 / css 3](#selettori-css-2-css-3)
@@ -24,7 +20,7 @@
         - [Far seguire (appendere) del contenuto ad un elemento](#far-seguire-appendere-del-contenuto-ad-un-elemento)
         - [Altri comandi](#altri-comandi)
     - [Gli Eventi: intercettare il click del mouse con jQuery](#gli-eventi-intercettare-il-click-del-mouse-con-jquery)
-        - [Mostrare e nascondere elementi con il jQuery](#mostrare-e-nascondere-elementi-con-il-jquery)
+        - [Mostrare e nascondere elementi con jQuery](#mostrare-e-nascondere-elementi-con-jquery)
     - [Animate](#animate)
     - [Oggetto jQuery() $()](#oggetto-jquery)
     - [Selettori TAG HTML](#selettori-tag-html)
@@ -52,6 +48,8 @@
 
 ## Jquery è un Framework
 
+* write less, do more
+
 Jquery è un Framework (una collezione o libreria di codice che agevola la risoluzione di una classe
 di problemi) che permette di interagire , con semplicità e rapidità, sul DOM ( Document Object
 Model) * di una pagina HTML
@@ -66,12 +64,6 @@ Model) * di una pagina HTML
 * Utilizza selettori CSS (anche Css3 )
 * Sintassi compatta, permette di ridurre la quantità di codice necessario rispetto all'uso di Javascript
 * Può gestire tutti gli elementi che compongono una pagina web ( div, immagini, span, p ... )
-
----
-
-## jQUERY
-write less
-less, do more
 
 
 ### Utilizziamo la libreria javascript jQuery per:
@@ -118,30 +110,15 @@ $(document).ready(function() {
 
 ## "Filosofia Jquery"
 
-Jquery "
-Cerca questo elemento
-$("p"). html("Hello World");
-Fai questa azione
-
-## "Filosofia Jquery"
-
-Supponiamo di avere la seguente pagina Html
+```javascript
+//Cerca questo elemento
+$("p")
+//Fai questa azione
+.html("Hello World");
+```
 
 ```javascript
 <html>
-<head></head>
-<body>
-<div>
-<p></p>
-</div>
-</body>
-</html>
-```
-
-## "Filosofia Jquery"
-
-Inseriamo tra i tag <head> il link alla libreria jquery e l'istruzione vista poco fa
-```javascript
 <head>
 <script src="percorso/jquery.js"></script>
 <script type="javascript/text">
@@ -150,25 +127,13 @@ $("p").html("Hello World");
 }
 </script>
 </head>
-```
-
-## "Filosofia Jquery"
-
-Otterremo visualizzando la pagina in un browser
-
-```javascript
-<html>
-<head></head>
 <body>
 <div>
-<p>Hello World</p>
+<p></p>
 </div>
 </body>
 </html>
 ```
-
-
-
 
 ## Selezionare gli elementi
 
@@ -181,7 +146,6 @@ $(".miaClasse");
 $("p#mioId");
 $("ul li a.nav");
 ```
-
 
 ## selettori css 2 / css 3
 
@@ -211,8 +175,11 @@ $(":header"); selects header elements (h1, h2, h3, etc.)
 Con jQuery è facile aggiungere, scambiare o rimuovere classi CSS: ecco i tre metodi
 
 ```javascript
+//aggiunge la classe "content" da tutti i <div>
 $("div").addClass("content");
-$("div").removeClass("content"); removes class "content" from all <div> elements
+//rimuove la classe "content" da tutti i <div>
+$("div").removeClass("content"); 
+//fa lo switch della classe "content" da tutti i <div>
 $("div").toggleClass("content");
 ```
 
@@ -220,7 +187,7 @@ Se un elemento è di una determinata classe allora esegui il codice:
 
 ```javascript
 if ($("#mioElemento").hasClass("content")) {
- 
+    //codice
 }
 
 ```
@@ -231,8 +198,8 @@ Ecco come modificare i css con jQuery:
 
 ```javascript
 $("p").css("width", "400px");
-$("#mioElemento").css("color", "blue") makes text color blue on element #mioElemento
-$("ul").css("border", "solid 1px #ccc")
+$("#mioElemento").css("color", "blue");
+$("ul").css("border", "solid 1px #ccc");
 ```
 
 ## Aggiungere e rimuovere contenuto e inserire elementi
@@ -301,7 +268,7 @@ $("a").click(function() {
   * submit()
   * select()
 
-### Mostrare e nascondere elementi con il jQuery
+### Mostrare e nascondere elementi con jQuery
 
 ```javascript
 $("#mioElemento").hide("slow", function() {
@@ -320,33 +287,33 @@ $("#mioElemento").toggle(1000, function() {
 
 ```javascript
     $("#mioElemento").fadeOut("slow", function() {
-    do something when fade out finished
+        //fai qualcosa quando termina l'effetto
     }
 
 
     $("#mioElemento").fadeIn("fast", function() {
-    do something when fade in finished
+        //fai qualcosa quando termina l'effetto
     }
 ```
 
 ```javascript
     $("#mioElemento").fadeTo(2000, 0.4, function() {
-    // do something when fade is finished
+        //fai qualcosa quando termina l'effetto
     }
 ```
 
 ```javascript
     $("#mioElemento").slideDown("fast", function() {
-    do something when slide down is finished
+        //fai qualcosa quando termina l'effetto
     }
 
 
     $("#mioElemento").slideUp("slow", function() {
-    do something when slide up is finished
+        //fai qualcosa quando termina l'effetto
     }
 
     $("#mioElemento").slideToggle(1000, function() {
-    // do something when slide up/down is finished
+        //fai qualcosa quando termina l'effetto
     }
 ```
 
@@ -359,7 +326,7 @@ $("#mioElemento").toggle(1000, function() {
     width: "500px",
     height: "700px"
     }, 2000, function() {
-    // optional callback after animation completes
+    // fai qualcosa quando termina l'animazione
     }
     );
 ```
@@ -396,122 +363,46 @@ $(elemento)
 * `$("div.evidenziato")` tutti i div della pagina con classe evidenziato
 
 ## Selettori per ATTRIBUTI
-
-```javascript
-$(elemento[attributo])
-```
-
-Permette di selezionare gli elementi della pagina che hanno l’attributo passato come parametro tutte le immagini in cui è
-
-$("img[title]") tutti gli elementi img in cui è specificato l’attributo title
-$("input[value]") tutti gli elementi input in cui è specificato l’attributo value
-
-```javascript
-$(elemento[attributo=x])
-```
-
-    Permette di selezionare gli elementi della pagina che hanno l’attributo passato come parametro uguale al valore X 
-    
-$("img[title=‘logo’]") tutte le immagini in cui l’attributo titolo è uguale a ‘logo’
-$("input[type=‘radio’]") tutti gli elementi input di tipo radio
-     
-
-
-
-```javascript
-$(elemento[attributoˆ=x])
-```
-
-    Permette di selezionare gli elementi della pagina che hanno l’attributo passato come parametro che inizia per X tutte le immagini in cui l’attributo titolo inizia con ‘logo’
-$("a[hrefˆ=‘http://’]") tutti i link con indirizzo
-non relativo
-    $("img[title^='logo']")
-     
-
-
-```javascript
-$(elemento[attributo$=x])
-```
-
-    Permette di selezionare gli elementi della pagina che hanno l’attributo passato come parametro che finisce per X
-    $("img[src$='.png']")
-tutte le immagini con
-estensione png
-    $("a[href$='.pdf']")
-tutti i link a file pdf
-
-
-
-```javascript
-$(elemento[attributo*=x])
-```
-Permette di selezionare gli elementi della pagina che hanno l’attributo passato come parametro che contiene la stringa X tutte le immagini in cui l’attributo titolo contiene la stringa ‘logo’
-$("a[href*='it.wikipedia.org']") tutti i link che
-contengono nell’indirizzo la stringa ‘it.wikipedia.org’
-    $("img[title*='logo']")
+selettore|descrizione
+---|---
+```$(elemento[attributo])``` | elementi della pagina che hanno l’attributo passato come parametro
+```$(elemento[attributo=x])``` | elementi della pagina che hanno l’attributo passato come parametro uguale al valore x 
+```$(elemento[attributoˆ=x])``` | elementi della pagina che hanno l’attributo passato come parametro che inizia per x 
+```$(elemento[attributo$=x])```| elementi della pagina che hanno l’attributo passato come parametro che finisce per x
+```$(elemento[attributo*=x])``` | elementi della pagina che hanno l’attributo passato come parametro che contiene la stringa x 
+```$("input[value]")``` | elementi input in cui è specificato l’attributo value
+```$("input[type=‘radio’]")``` | elementi input di tipo radio
+```$("a[hrefˆ=‘http://’]")``` | i link con indirizzo non relativo
+```$("a[href*='it.wikipedia.org']")``` | i link che contengono nell’indirizzo la stringa ‘it.wikipedia.org’
+```$("a[href$='.pdf']")``` | i link a file pdf
+```$("img[title]")``` | elementi img in cui è specificato l’attributo title
+```$("img[title=‘logo’]")``` | le immagini in cui l’attributo titolo è uguale a ‘logo’
+```$("img[src$='.png']")``` | le immagini con estensione png
+```$("img[title^='logo']")``` | le immagini in cui l’attributo titolo inizia con ‘logo’
+```$("img[title*='logo']")``` | le immagini in cui l’attributo titolo contiene la stringa ‘logo’
      
 
 ## Selettori GERARCHICI
-
-* l'istruzione 
-```javascript
-$(padre > figli)
-```
-
-* Permette di selezionare gli elementi "figli" che sono discendenti diretti dell’elemento "padre" tutte le liste che sono contenute direttamente in un div
-
-* `$(div > li)` errato!!! Selezionerebbe tutti gli elementi di una lista contenuti direttamente in un div. Gli elementi di una lista devono essere contenuti in elementi ul o ol: `$(div > ul)`
-     
-
-
-
-```javascript
-$(fratello+sorelle)
-```
-
-    Permette di selezionare gli elementi "sorelle" che sono direttamente preceduti da un elemento "fratello"
-
-```javascript
-$(".A + .B")
-```
-
-
-
-
-```javascript
-$(fratello~sorelle)
-```
-
-    Permette di selezionare gli elementi "sorelle" che sono preceduti da un elemento "fratello"
-```javascript
-$(".A ~ .B")
-```
-
-
-
-```javascript
-```$(padri:has(discendenti))```
-```
-
-    Permette di selezionare gli elementi "padri" che hanno almeno un "discendente" passato come parametro tutti gli ul che hanno come discendente almeno un link
-
-```javascript
-$("div:has(img)") tutti i div che hanno come
-discendente almeno un’immagine
-    $("ul:has(a)")
-```
+selettore|descrizione
+---|---
+```$(padre > figli)```| elementi "figli" che sono discendenti diretti dell’elemento "padre" 
+```$(fratello+sorelle)```|
+```$(".A + .B")```|Permette di selezionare gli elementi "sorelle" che sono direttamente preceduti da un elemento "fratello"
+```$(fratello~sorelle)```|
+```$(".A ~ .B")```|Permette di selezionare gli elementi "sorelle" che sono preceduti da un elemento "fratello"
+```$(padri:has(discendenti))```|Permette di selezionare gli elementi "padri" che hanno almeno un "discendente" passato come parametro 
+```$("ul:has(a)")```|tutti gli ul che hanno come discendente almeno un link
+```$("div:has(img)") ```|tutti i div che hanno comediscendente almeno un’immagine
+```$(div > li)```|errato!!! Selezionerebbe tutti gli elementi di una lista contenuti direttamente in un div.
 
 ## Selettori di Posizione
 
-* `$(:first) $(:last)` Permettono di selezionare il primo (:first) e ultimo (:last) elemento di un insieme il primo link della pagina
-* `$("p.evidenziato:first")` il primo paragrafo con class "evidenziato"
-* `$("img[src*=logo]:last")` ultima immagine che contenga nell’indirizzo la parola logo
-
-
-* Questi selettori sono zero-based: utilizzano come indice iniziale lo 0
-
 selettore|descrizione
 ---|---
+Questi selettori sono zero-based| utilizzano come indice iniziale lo 0
+```$(:first) $(:last)```| Permettono di selezionare il primo (:first) e ultimo (:last) elemento di un insieme il primo link della pagina
+```$("p.evidenziato:first")```| il primo paragrafo con class "evidenziato"
+```$("img[src*=logo]:last")```| ultima immagine che contenga nell’indirizzo la parola logo
 `$(:first-child) $(:last-child)`|Per selezionare il primo (:first-child) e l’ultimo (:last-child) elemento discendente
 `$("p.evidenziato:first-child") `|Per selezionare il primo elemento contenuto in ogni paragrafo con class "evidenziato" 
 `$("li:last-child")`|Per selezionare l'ultimo elemento contenuto in ogni li
