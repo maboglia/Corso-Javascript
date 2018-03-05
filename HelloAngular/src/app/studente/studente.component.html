@@ -1,0 +1,14 @@
+<h2>Studenti del corso TSS</h2>
+<ul class="studenti">
+    <li *ngFor="let studente of studenti" (click)="onSelect(studente)">{{studente.nome}}</li>
+</ul>
+<div *ngIf="studenteSelezionato">
+    questo compare solo se esiste studente selezionato
+    <input [(ngModel)]="studenteSelezionato.nome" placeholder="qui scrivi il nome">
+</div>
+
+
+<h1>{{ studenteSelezionato.nome | uppercase}}</h1>
+<p>
+    says: intervallo! funge!
+</p>
