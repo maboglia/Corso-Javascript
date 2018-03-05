@@ -1,0 +1,24 @@
+npm uninstall -g @angular/cli
+
+npm cache clean
+
+npm cache verify
+
+//installa angular 2
+npm install -g @angular/cli@latest
+
+//creo un ws
+mkdir workspace_angular
+
+//creo un nuovo progetto angular
+ng new Angular2Test
+
+//faccio partire il server per angular
+ng serve --open
+
+
+//apro il progetto con VisualStudioCode
+manipolo il file app.component.ts
+
+//tutorial su angular.io
+https://angular.io/tutorial
