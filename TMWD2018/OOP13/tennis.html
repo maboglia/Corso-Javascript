@@ -57,7 +57,7 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <div class="container">
-                <h1 class="display-3">Hello, world!</h1>
+                <h1 class="display-3">Quadrangolare di tennis!</h1>
 
                 <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
                 <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
@@ -67,21 +67,30 @@
         <div class="container">
             <!-- Example row of columns -->
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6 imgTennista">
                     <h2>Heading</h2>
                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
                     </p>
                     <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                     <div class="nascosto">QUesto è un testo nascosto che sarà mostrato alla pressione del botton.</div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 imgTennista">
                     <h2>Heading</h2>
                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
                     </p>
                     <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                     <div class="nascosto">QUesto è un testo nascosto che sarà mostrato alla pressione del botton.</div>
                 </div>
-                <div class="col-md-4">
+            </div>
+            <div class="row">
+                <div class="col-md-6 imgTennista">
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
+                        amet risus.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <div class="nascosto">QUesto è un testo nascosto che sarà mostrato alla pressione del botton.</div>
+                </div>
+                <div class="col-md-6 imgTennista">
                     <h2>Heading</h2>
                     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
                         amet risus.</p>
@@ -112,10 +121,92 @@
         <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
 
         <script>
+            //oggetto federer
+
+            var tennisti = [
+                //posizione 0
+                {
+                    nome: "Roger",
+                    cognome: "Federer",
+                    bio: "",
+                    foto: "federer.jpg"
+                },
+
+                //posizione 1
+                {
+                    nome: "Maria",
+                    cognome: "Sharapova",
+                    bio: "",
+                    foto: "sharapova.jpg"
+                },
+                //posiz 2
+                {
+                    nome: "Novak",
+                    cognome: "Djokovic",
+                    bio: " Novak Đoković, detto Nole, è un tennista serbo. Soprannominato Djoker, è ritenuto uno dei tennisti più forti della storia ed è stato numero 1 al mondo per 223 settimane, di cui 122 consecutive;attualmente occupa la 14 ª posizione del ranking ATP.Wikipedia Nascita: 22 maggio 1987(età 30), Belgrado, Serbia Coniuge: Jelena Ristic ",
+                    foto: "djokovic.jpg"
+                },
+                //posiz 3
+                {
+                    nome: "Serena",
+                    cognome: "Williams",
+                    bio: "",
+                    foto: "williams.jpg"
+                }
+            ];
+
             $(function() {
 
 
+                $(".imgTennista").each(function(i, e) {
+                    //qui modifico l'heading di ciascun box sostituendo il cognome del tennista
+                    $(e).find("h2").text(tennisti[i].cognome);
+
+                    $(e).find("p:first").remove();
+                    $("<img>")
+                        .attr("src", "img/" + tennisti[i].foto)
+                        .addClass("img img-fluid rounded")
+                        .css("width", "200px")
+                        .css("height", "200px")
+                        .data("paperino", i)
+                        .attr("alt", "foto di " + tennisti[i].nome + tennisti[i].cognome)
+                        .appendTo($(e));
+
+                });
+
+                $("img").click(function() {
+                    console.log($(this).attr("src"));
+                    schedaTennista($(this).data("paperino"));
+                });
+
+
+
+
+
             });
+
+            function schedaTennista(idTennista) {
+                var tennista = tennisti[idTennista];
+                $(".container:eq(1)").find("div.row").hide();
+
+                $("<div>")
+                    .attr("id", "schedaDettaglio")
+                    .addClass("col-md-12")
+                    .append("<h2>" + tennista.nome + " " + tennista.cognome + "</h2>")
+                    .append("<img src='img/" + tennista.foto + "'>")
+                    .append(tennista.bio)
+                    .appendTo($(".container:eq(1)"));
+
+                $("#schedaDettaglio")
+                    .prepend("<button class='pull-right btn btn-secondary'>chiudi</button>")
+                    .click(ripristina);
+
+            }
+
+            function ripristina() {
+                $("#schedaDettaglio").remove();
+                $(".container:eq(1)").find("div.row").show();
+            }
         </script>
 
 
