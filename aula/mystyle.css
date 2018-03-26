@@ -1,0 +1,77 @@
+/* @override 
+	http://www.bogliaccino.it/exercises/json/mystyle.css */
+
+body {
+    background: #EEE7D5;
+    font-family: 'Libre Baskerville';
+}
+
+#studentibox {
+    width: 400px;
+    margin: 0 auto;
+    background: #93A1A1;
+    padding: 1px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#studentibox h3,
+#studentibox h4 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+#studentibox h3 {
+    font-size: 2em;
+    line-height: .9em;
+    font-family: 'Wendy One';
+    color: #115F79;
+}
+
+#studentibox h4 {
+    color: #973C26;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 1.2em;
+}
+
+#studentibox h5 {
+    color: #973d26;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 1.1em;
+    width: 80%;
+    margin: 0;
+}
+
+#studentibox img {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+#studentibox p {
+    color: #1E3A40;
+    width: 380px;
+    margin: 0;
+    font-size: .9em;
+}
+
+#studentibox #next_btn,
+#studentibox #prev_btn {
+    background: #d33682;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+#studentibox a#next_btn,
+#studentibox a#prev_btn {
+    text-decoration: none;
+    color: #FFF;
+}
