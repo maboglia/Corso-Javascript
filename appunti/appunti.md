@@ -59,12 +59,12 @@ const f3 = (a,b) => a + b;
 
 //esempio
 const o={
-name: 'Julie', 
+    name: 'Julie', 
 greetBackwards: function() {
-const getReverseName = () => {
-let nameBackwards = '';
+    const getReverseName = () => {
+        let nameBackwards = '';
 for(let i=this.name.length-1; i>=0; i--) {
-nameBackwards += this.name[i]; }
+    nameBackwards += this.name[i]; }
 return nameBackwards; };
 return `${getReverseName()} si eman ym ,olleH`; },
     };
@@ -72,7 +72,26 @@ return `${getReverseName()} si eman ym ,olleH`; },
 
 ```
 
+#### esempi 'estremi', le variazioni possibili nella sintassi sono un rischio: si perde chiarezza
 
+* sintatticamente anonime
+* problemi nella minificazione
+* meglio assegnarle ad una var
+*  
+
+```javascript
+=>3
+()=>3
+x=>3
+(...x)=>3
+(x,y)=>3
+//uno  statement deve essere wrappato
+x => { try {5; } catch(e){}  }
+x => { return true;  }
+//se ritorni un oggetto devi wrapparlo tra parentesi
+x => ({ x: y  })
+
+```
 ### call
 call, which is a method available on all functions that allows you to call the function with a specific value of this:
 

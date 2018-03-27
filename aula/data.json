@@ -1,0 +1,574 @@
+{ "speakers" : [
+  {
+      "matricola": "15",
+      "nome": "Andrea",
+      "cognome": "Gastaldo",
+      "residenza": "Torino",
+      "image": "gastaldo.jpg",
+      "data_nascita": "1986-05-28",
+      "job_title": "web developer",
+      "skill": [
+        "C",
+        "Java",
+        "Html5",
+        "Sql"
+      ],
+      "programmi": [
+        "android studio",
+        "sublime text",
+        "eclipse",
+        "xcode"
+      ],
+      "corso_ITS": {
+       "Materia_pref" : "Frontend base",
+       "Materia_pref2" : "Programmazione IOs",
+      "Materia_pref3" :  "Front-end avanzato"
+      }
+    }
+,
+{
+  "matricola": "3",
+  "nome": "Flavio",
+  "cognome": "Alescio",
+  "residenza": "Torino",
+  "image": "alescio.jpg",
+  "data_nascita": "1991-06-02",
+  "job_title": "back-end developer, android developer, iOS developer, front-end developer",
+  "skill" :[
+    "Php",
+    "Java",
+    "Html5",
+    "MySql",
+    "mongoDB",
+    "Swift"
+  ],
+  "programmi": [
+    "android studio",
+    "atom",
+    "eclipse",
+    "xCode"
+  ],
+  "corso_ITS": {
+   "materia_pref1" : "MySQL",
+   "materia_pref2" : "noSQL",
+  "materia_pref3" :  "Android"
+  }
+},
+{
+      "matricola": "24",
+      "nome": "Francesco",
+      "cognome": "Barolo",
+      "residenza": "Torino",
+      "image": "barolo.jpg",
+      "data_nascita": "1994-10-27",
+      "job_title": "studente",
+      "skill": [
+        "Php",
+        "Java",
+        "Html5",
+        "Sql"
+      ],
+      "programmi": [
+        "android studio",
+        "sublime text",
+        "netbeans"
+      ],
+      "corso_ITS": {
+       "materia_pref1" : "Java Android",
+       "materia_pref2" : "Web Standard 2",
+      "materia_pref3" :  "Front-end avanzato"
+      }
+    },
+
+    {
+    "matricola": "25",
+    "nome": "Luigi",
+    "cognome": "Catanoso",
+    "residenza": "San Mauro Torinese",
+    "image": "catanoso.png",
+    "data_nascita": "1986-07-21",
+    "job_title": "IT Professional, Architect, Operator",
+    "skill": [
+        "Active Directory",
+        "Windows Server",
+        "Hyper-V",
+        "VMware",
+        "Networking"
+    ],
+    "programmi": [
+        "Visual Studio",
+        "Team Foundation Server",
+        "Release Management for Visual Studio",
+        "Office Online Server",
+        "SharePoint Server",
+        "SQL Server",
+        "Windows 10"
+    ],
+    "corso_ITS": {
+        "materia_pref1": "Approfondimenti didattici",
+        "materia_pref2": "Basi di dati non relazionali (NoSQL)",
+        "materia_pref3": "Copyright e norme giuridiche del mondo digitale",
+        "materia_pref4": "Digital marketing",
+        "materia_pref5": "Fondamenti di basi di dati",
+        "materia_pref6": "Inglese",
+        "materia_pref7": "Laboratorio di preparazione project work",
+        "materia_pref8": "Metodologie e strumenti di project management",
+        "materia_pref9": "Orientamento"
+    }
+},  {
+      "matricola": "6",
+      "nome": "Luca",
+      "cognome": "Cinnirella",
+      "residenza": "Torino",
+      "image": "Cinnirella_.JPG",
+      "data_nascita": "1994-12-27",
+      "job_title": "diploma: tecnico servizi turistici",
+      "skill": [
+        "photoshop",
+        "js",
+        "Html5",
+        "css3"
+      ],
+      "programmi": [
+        "Atom",
+        "Photoshop",
+        "mongoDB"
+      ],
+      "corso_ITS": {
+       "materia_pref1" : "Fornt-end di base",
+       "materia_pref2" : "noSQL",
+      "materia_pref3" :  "Front-end avanzato"
+      }
+    },
+
+    {
+  "matricola": "26",
+  "nome": "francesco",
+  "cognome": "de Chirico",
+  "residenza": "carmagnola",
+  "image": "francesco.png",
+  "data_nascita": "1995-02-24",
+  "job_title": "studente",
+  "skill": [
+    "html",
+    "java",
+    "vb.net",
+    "sql"
+  ],
+  "programmi": [
+    "visual basic",
+    "atom",
+    "eclipse"
+  ],
+  "corso_ITS": {
+   "materia_pref1" : "java gestionale",
+   "materia_pref2" : "swift",
+  "materia_pref3" :  "front-end di base"
+  }
+}, {
+      "matricola": "27",
+      "nome": "Robert",
+      "cognome": "de Jong",
+      "residenza": "Torino",
+      "image": "robert.jpg",
+      "data_nascita": "1991-07-02",
+      "job_title": "sviluppatore videogames",
+      "skill": [
+        "Php",
+        "Java",
+        "Html5",
+        "Sql",
+        "NoSql"
+      ],
+      "programmi": [
+        "android studio",
+        "netBeans",
+        "eclipse",
+        "MongoDB"
+      ],
+      "corso_ITS": {
+       "materia_pref1" : "Programmazione base Java",
+       "materia_pref2" : "Front-End base e avanzato, HTML5",
+       "materia_pref3" :  "Visal Design"
+      }
+    },
+
+    {
+  "matricola": "9",
+  "nome": "Lorenzo",
+  "cognome": "Dessimoni",
+  "residenza": "Torino",
+  "image": "dessimoni.png",
+  "data_nascita": "1993-12-11",
+  "job_title": "iOS developer, android developer",
+  "skill": [
+    "Java",
+    "Swift",
+    "Php",
+    "C"
+  ],
+  "programmi": [
+    "android studio",
+    "xcode",
+    "eclipse"
+  ],
+  "corso_ITS": {
+    "materia_pref1": "Java Android",
+    "materia_pref2": "Swift iOS",
+    "materia_pref3": "Sql"
+  }
+}, {
+      "matricola": "17",
+      "nome": "Mirko",
+      "cognome": "Ligori",
+      "residenza": "Novi Ligure",
+      "image": "mirko.jpg",
+      "data_nascita": "1994-09-16",
+      "job_title": "Informatico",
+      "skill": [
+        "Swift",
+        "Java",
+        "Html5",
+        "Sql",
+        "Css"
+      ],
+      "programmi": [
+        "xcode",
+        "sublime text",
+        "eclipse"
+      ],
+      "corso_ITS": {
+       "materia_pref1" : "IOS",
+       "materia_pref2" : "Front-end",
+      "materia_pref3" :  "Front-end avanzato"
+      }
+    } ,   {
+      "matricola": "2",
+      "nome": "Domenico",
+      "cognome": "Aggiunto",
+      "residenza": "trana",
+      "image": "dome.png",
+      "data_nascita": "1990-09-19",
+      "job_title": "Qualifica programmatore android",
+      "skill": [
+        "Php",
+        "Java",
+        "Html5",
+        "Sql",
+        "Swift"
+      ],
+      "programmi": [
+        "android studio",
+        "sublime text",
+        "eclipse",
+        "xcode",
+        "codeblock"
+      ],
+      "corso_ITS": {
+       "materia_pref1" : "Java Android",
+       "materia_pref2" : "Front-end",
+      "materia_pref3" :  "Swift"
+      }
+    },
+{
+      "matricola": "13",
+      "nome": "Sabato",
+      "cognome": "Galasso",
+      "residenza": "Torino",
+      "image": "galasso.jpg",
+      "data_nascita": "1990-11-27",
+      "job_title": "formatore, consulente informatico",
+      "skill": [
+        "Php",
+        "Java",
+        "Html5",
+        "Sql"
+      ],
+      "programmi": [
+        "android studio",
+        "sublime text",
+        "eclipse"
+      ],
+      "corso_ITS": {
+       "materia_pref1" : "Java Android",
+       "materia_pref2" : "Php" ,
+      "materia_pref3" :  "Html-Css"
+      }
+    },
+
+    {
+  "matricola": "14",
+  "nome": "Giuseppe",
+  "cognome": "Galtieri",
+  "residenza": "Torino",
+  "image": "galtieri.jpg",
+  "data_nascita": "1989-07-16",
+  "job_title": "studente ITS, perito informatico",
+  "skill": [
+    "Java",
+    "Swift",
+    "Java Android",
+    "SQL",
+    "HTML",
+    "CSS",
+    "C",
+    "Javascript",
+    "English"
+  ],
+  "programmi": [
+    "Android Studio",
+    "Sublime text",
+    "Eclipse",
+    "Xcode",
+    "Netbeans",
+    "Photoshop",
+    "Illustrator",
+    "MongoDB",
+    "Dev-C++"
+  ],
+  "corso_ITS": {
+    "materia_pref1": "Java",
+    "materia_pref2": "Android",
+    "materia_pref3": "Front-end"
+  }
+},
+
+{
+  "matricola": "20",
+  "nome": "Giovanni",
+  "cognome": "Sabia",
+  "residenza": "Torino",
+  "image": "sabia.jpg",
+  "data_nascita": "1994-06-29",
+  "job_title": "studente ITS, perito informatico",
+  "skill": [
+    "C",
+    "Java",
+    "HTML5",
+    "CSS3",
+    "SQL",
+    "Php",
+    "Javascript",
+    "Swift"
+  ],
+  "programmi": [
+    "Android Studio",
+    "Atom",
+    "Sublime text",
+    "Eclipse",
+    "Netbeans",
+    "MySql",
+    "MongoDB",
+    "Dev-C++",
+    "Xcode"
+  ],
+  "corso_ITS": {
+    "materia_pref1": "Android",
+    "materia_pref2": "Front-end",
+    "materia_pref3": "Database"
+  }
+},
+ {
+      "matricola": "21",
+      "nome": "Cristian",
+      "cognome": "Santacruz",
+      "residenza": "Poirino",
+      "image": "santos.jpg",
+      "data_nascita": "1994-12-19",
+      "job_title": "Perito informatico",
+      "skill": [
+        "Php",
+        "Java",
+        "Html5",
+        "Sql"
+      ],
+      "programmi": [
+        "android studio",
+        "eclipse",
+        "Brackets"
+      ],
+      "corso_ITS": {
+       "materia_pref1" : "Java",
+       "materia_pref2" : "Basi di dati",
+      "materia_pref3" :  "Front-end avanzato"
+      }
+    },
+
+    {
+      "matricola": "23",
+      "nome": "Luca",
+      "cognome": "Zambon",
+      "residenza": "Torino",
+      "image": "zambon.png",
+      "data_nascita": "1995-03-07",
+      "job_title": "web developer, front-end developer, designer",
+      "skill": [
+        "css",
+        "html5",
+        "sql",
+        "php"
+      ],
+      "programmi": [
+        "xcode",
+        "brackets",
+        "photoshop"
+      ],
+      "corso_ITS": {
+       "materia_pref1" : "visual Design",
+       "materia_pref2" : "front-end base",
+       "materia_pref3" :  "swift"
+      }
+    },
+
+
+       {
+      "matricola": "28",
+      "nome": "Manuel",
+      "cognome": "Frizziero",
+      "residenza": "Nichelino",
+      "image": "FrizzieroManuel.jpg",
+      "data_nascita": "1993-11-18",
+      "job_title": "studente",
+      "skill": [
+        "C",
+        "Php",
+        "Java",
+        "HTML",
+        "Css",
+        "Sql",
+        "Mongodb",
+        "Swift"
+      ],
+      "programmi": [
+        "Android Studio",
+        "Eclipse",
+        "Dev-C++",
+        "Atom",
+        "Netbeans",
+        "Mongodb",
+        "MySQL",
+        "X-Code"
+      ],
+      "corso_ITS": {
+       "Materia_pref": "Database",
+       "Materia_pref2": "Front-end di base",
+       "Materia_pref3": "Inglese"
+      }
+    },
+
+        {
+      "matricola": "5",
+      "nome": "Dario",
+      "cognome": "Capozzi",
+      "residenza" : "Avellino",
+      "domicilio" : "Torino",
+      "image": "DarioCapozzi.jpg",
+      "data_nascita": "1985-01-30",
+      "job_title": "Perito informatico",
+      "skill": [
+        "HTML",
+        "JavaScript",
+        "di molto un po'",
+        "di altro meno!!"
+      ],
+      "programmi": [
+        "Photoshop",
+        "Dreamwevaer",
+        "Eclipse"
+      ],
+      "corso_ITS": {
+       "Materia_pref" : "Front-end avanzato",
+       "Materia_pref2" : "PHP, MySQL",
+      "Materia_pref3" :  "Front-end di base"
+      }
+    },
+        {
+      "matricola": "0",
+      "nome": "Orlando",
+      "cognome": "Fatibene",
+      "residenza": "Torino",
+      "image": "fatibene.png",
+      "data_nascita": "1992-11-24",
+      "job_title": "front-end developer, designer",
+      "skill": [
+        "Php",
+        "Java",
+        "Html5",
+  "Swift",
+        "Sql"
+      ],
+      "programmi": [
+        "android studio",
+        "xcode",
+        "eclipse"
+      ],
+      "corso_ITS": {
+       "Materia_pref" : "Java Android",
+       "Materia_pref2" : "Web Standard 2",
+      "Materia_pref3" :  "Front-end avanzato"
+      }
+    }, 
+        {
+      "matricola": "11",
+      "nome": "Andrea",
+      "cognome": "Di Piazza",
+      "residenza": "Torino",
+      "image": "andrea_di_piazza.jpg",
+      "data_nascita": "1991-08-30",
+      "job_title": "Studente ITS",
+      "skill": [
+        "Php",
+        "Design",
+        "Html5/css",
+        "Sql"
+      ],
+      "programmi": [
+        "Illustrator",
+        "sublime text",
+        "eclipse"
+      ],
+      "corso_ITS": {
+       "Materia_pref" : "Visual Design",
+       "Materia_pref2" : "Web Standard 2",
+      "Materia_pref3" :  "Front-end avanzato"
+      }
+    },
+
+     {
+      "matricola": "10",
+      "nome": "Giulio",
+      "cognome": "Di Lago",
+      "residenza": "Torino",
+      "image": "giulio.jpg",
+      "data_nascita": "1992-03-12",
+      "job_title": "studente ITS",
+      "skill": [
+        "Capotecnico Perito Meccanico",
+        "Dottore in economia aziendale",
+        "Diplomando in CODING e PROGRAMMAZIONE"
+      ],
+      "programmi": [
+        "fluid sim",
+        "cad",
+        "catia",
+        "android studio",
+        "atom",
+        "eclips",
+        "netbeans",
+        "xcode",
+        "mongodb",
+        "MySql",
+        "Javascript",
+        "Dev-c++"
+        ],
+      "corso_ITS": {
+       "Materia_pref" : "java android",
+       "Materia_pref2" : "swift",
+      "Materia_pref3" :  "front-end"
+      }
+    }
+
+
+
+
+  ]}

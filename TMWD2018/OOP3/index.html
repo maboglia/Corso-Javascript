@@ -1,60 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-    <style>
-     </style>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
+<div class="container">	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	 	consequat.
+	 </p>
+	 <figure>
+	 	<figcaption><h3 id="titoloFoto">gatto volante</h3></figcaption>
+	 	<img src="img/gatto_volante.jpg" id="fotoCopertina" >
+
+	 </figure>
+	 <div>
+	 	
+		 <button onclick="cambiaImmagine()">Cambia immagine</button>
+		 <button onclick="lanciaSlideshow()">Play</button>
+
+	 </div>
 	
-		<input type="text" id = "mio_testo" name = "">
-	
+	<div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+</div>
 
-	<button id="bottone" onclick="inserimento()">inserisci</button>
-
-	<button id="bottone2" onclick="riordina()">riordina</button>
-	
-
-	 <ul id="elenco">
-
-        </ul>
-<script>
-	var mio_testo = document.getElementById('mio_testo');
-	var bottone = document.getElementById('bottone');
-	var elenco = document.getElementById('elenco');
-	var cosedafare= [];
-	var html = "";
-
-	function inserimento(argument) {
-		 cosedafare.push(mio_testo.value);
-		console.dir(cosedafare);
-		stampaelenco();
-	}
-		console.dir(cosedafare);
-
-	function stampaelenco(argument) {
-		html = "";
-
-		for (var i = cosedafare.length - 1; i >= 0; i--) {
-			html = html + "<li>" + cosedafare[i] + "</li>";
-		}
-		elenco.innerHTML = html;
-		}
-		
-		function riordina(argument) {
-		html = "";
-
-		for (var i = 0;	i < cosedafare.length ; i++) {
-			html = html + "<li>" + cosedafare[i] + "</li>";
-		}
-		elenco.innerHTML = html;
-	}
-	
-</script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
-
 </html>

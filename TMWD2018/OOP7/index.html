@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.evidenzia {background-color: #ccc; color: #c00;} 
+
+	</style>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		
+		$("document").ready(function () {
+
+
+			var bottone = $("<button>").text("even").attr("id", "mioBottone");
+			var bottone2 = $("<button>").text("odd").attr("id", "mioBottone2");
+			var bottone3 = $("<button>").text("toggle").attr("id", "mioBottone3");
+
+			$("table").before(bottone);
+			$("table").before(bottone2);
+			$("table").before(bottone3);
+
+			$("#mioBottone").click(function () {
+
+				$("tr:odd").removeClass("evidenzia");
+				$("tr:even").addClass("evidenzia");
+
+			});
+
+			$("#mioBottone2").click(function () {
+
+				$("tr:even").removeClass("evidenzia");
+				$("tr:odd").addClass("evidenzia");
+
+			});
+
+			$("#mioBottone3").click(function () {
+
+				//$("tr").toggleClass("evidenzia");
+				$("tr:odd").toggle(3000, function () {
+					alert("è finita!")
+				});
+
+			});
+
+			//var testo = $("tr:first").text("<td>paperino</td><td></td><td></td>");
+			//console.log(testo);
+			
+
+
+			//tutto quello che scrivo qui in mezzo sarà eseguito quando l'intero documento sarà stato scaricato
+
+
+
+		});
+
+
+	</script>
+
+</head>
+<body>
+
+
+
+<table>
+	
+<tr><td>ASIAN</td><td>FISH TONKATSU</td><td>80</td></tr>
+<tr><td>ASIAN</td><td>STEAMED RICE, SAUTEED YOUNG CORN, CARROTS & SNOW PEAS</td><td></td></tr>
+<tr><td>CONTINENTAL 1</td><td>BEEF BOURGUIGNON</td><td>80</td></tr>
+<tr><td>CONTINENTAL 1</td><td>MASHED POTATOES , SAUTEED BROCCOLI, CARROTS & RED BELL PEPPER</td><td></td></tr>
+<tr><td>CONTINENTAL 2</td><td>CHICKEN PICATTA</td><td>80</td></tr>
+<tr><td>CONTINENTAL 2</td><td>STEAMED RICE, SAUTEED BROCCOLI, CARROTS & RED BELL PEPPER</td><td></td></tr>
+<tr><td>PASTA</td><td>FETTUCINE WITH ALFREDO SAUCE</td><td>80</td></tr>
+<tr><td>VEGETARIAN</td><td>SPINACH RISOTTO</td><td>80</td></tr>
+<tr><td>SALADS</td><td>MIXED FRUIT PLATE</td><td>55</td></tr>
+<tr><td>SALADS</td><td>GREEK SALAD PLATE</td><td>55</td></tr>
+<tr><td>SALADS</td><td>MINI FRUIT CUP - MIXED FRUIT</td><td>55</td></tr>
+<tr><td>SALADS</td><td>MINI SALAD CUPS - CAESAR SALAD</td><td>55</td></tr>
+<tr><td>SANDWICHES</td><td>HAM & CHEESE PANINI</td><td>55</td></tr>
+<tr><td>SANDWICHES</td><td>CHICKEN CAESAR PANINI</td><td>55</td></tr>
+<tr><td>SANDWICHES</td><td>BEEF PASTRAMI SANDWICH</td><td>55</td></tr>
+<tr><td>SANDWICHES</td><td>EGG SALAD CLUB SANDWICH</td><td>60</td></tr>
+<tr><td>ASIAN</td><td>BEEF YAKINIKU</td><td>80</td></tr>
+<tr><td>ASIAN</td><td>STEAMED RICE, SAUTEED GARLIC BOKCHOY</td><td></td></tr>
+<tr><td>CONTINENTAL 1</td><td>BREADED MAHI & VEGETABLES W/ LEMON BUTTER</td><td>80</td></tr>
+<tr><td>CONTINENTAL 1</td><td>STEAMED RICE, SAUTEED GREEN BEANS, TURNIPS & CARROTS</td><td></td></tr>
+<tr><td>CONTINENTAL 2</td><td>ROASTED PORK LOIN WITH APPLES</td><td>80</td></tr>
+<tr><td>CONTINENTAL 2</td><td>STEAMED RICE, SAUTEED GREEN BEANS, TURNIPS & CARROTS</td><td></td></tr>
+<tr><td>PASTA</td><td>BAKED MEAT & CHEESE LASAGNA</td><td>80</td></tr>
+<tr><td>VEGETARIAN</td><td>BAKED PENNE WITH PESTO SAUCE</td><td>80</td></tr>
+<tr><td>FRESH FRUITS</td><td>PLATE - MIXED FRUITS</td><td>55</td></tr>
+<tr><td>FRESH FRUITS</td><td>CUP - MIXED FRUITS</td><td>55</td></tr>
+<tr><td>SALADS</td><td>PLATE - COBB SALAD</td><td>55</td></tr>
+<tr><td>SALADS</td><td>CUP - GARDEN SALAD</td><td>55</td></tr>
+<tr><td>SANDWICHES</td><td>CHICKEN CAESAR</td><td>55</td></tr>
+<tr><td>Please request for</td><td>ROAST BEEF SANDWICH</td><td>55</td></tr>
+<tr><td>White or Wheat</td><td>GRILLED HAM & CHEESE</td><td>55</td></tr>
+<tr><td>Bread</td><td>CAPRESE PANINI MELT (v)</td><td>55</td></tr> 	 	 	 	 
+  	 	 	 	 	 	 
+
+</table>
+</body>
+</html>
