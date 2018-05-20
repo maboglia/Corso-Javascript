@@ -1,0 +1,50 @@
+        body {
+        background: #f6f6ed;
+        font-family: arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #wrapper {
+        text-align: left;
+        width: 960px;
+        margin: 0 auto;
+    }
+    
+    #letter-container {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        position: absolute;
+        top: -205px;
+    }
+    
+    .letter-box {
+        height: 210px;
+        width: 30px;
+        position: relative;
+        background: #191919;
+        float: left;
+        margin: 0px 3px 6px 3px;
+        color: #F7F7F7;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .letter-box p {
+        font-size: 18px;
+        padding: 170px 0px;
+    }
+    
+    .space-alert {
+        background: #191919;
+        padding: 20px;
+        width: 400px;
+        position: relative;
+        top: 390px;
+        margin: 0 auto;
+        display: none;
+        text-align: center;
+        color: #FFF;
+        font-size: 18px;
