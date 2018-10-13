@@ -1,23 +1,21 @@
-#Lesson1
+# Array
+* perché devi saper utilizzare gli array
+* creazione di un array
+* accesso a i dati di un array
+* array non omogenei
 
-    Arrays
-    perché devi saper utilizzare gli array
-    creazione di un array
-    accesso a i dati di un array
-    array non omogenei
-
-    lavorare con gli array
-        trova la lunghezza di un array
-        aggiungere elementi a un array
-        aggiungere array
-        trasformare un array in una stringa
+* lavorare con gli array
+* trova la lunghezza di un array
+* aggiungere elementi a un array
+* aggiungere array
+* trasformare un array in una stringa
 
 
 
-    cose utili da fare con un array
-        trova la strada di casa
-        decision maker
-        crea un generatore di frasi random
+* cose utili da fare con un array
+* trova la strada di casa
+* decision maker
+* crea un generatore di frasi random
 
 ---
 
