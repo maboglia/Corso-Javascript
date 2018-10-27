@@ -37,6 +37,8 @@ var student7 = 'Ciccio';
 var students = ['Paperino', 'Pippo', 'Pluto', 'Paperina', 'Topolino', 'Minnie', 'Ciccio'];
 ```
 ---
+s
+## laboratorio, prova a:
 
 * accedere agli elementi di un array
 * si possono avere oggetti differenti in un array
@@ -50,20 +52,21 @@ var students = ['Paperino', 'Pippo', 'Pluto', 'Paperina', 'Topolino', 'Minnie', 
 ---
 ## metodi principali
 
-metodo|descrizione
----|---
+        metodo         |                             descrizione
+---------------------- | -------------------------------------------------------------------
 valueOf() e toString() | convertire array a stringhe
-join()| come to string, ma puoi usare un separatore
-push()| aggiunge elementi all'array
-pop()| rimuove l'ultimo elemento dell'array
-shift()| rimuove il primo elemento di un'array
-indice dell|'array per accedere / modificare un valore
-delete:| lascia buchi undefined, usare pop o splice
-splice()| 
-sort()|  ordinare un array
-reverse()| invertire l'ordine di un array
-concat()| unire array
-slice()| restituisce una parte di array indicato dagli argomenti start e end
+join()                 | come to string, ma puoi usare un separatore
+push()                 | aggiunge elementi all'array
+pop()                  | rimuove l'ultimo elemento dell'array
+shift()                | rimuove il primo elemento di un'array
+indexOf()              | per accedere / modificare un valore
+delete:                | lascia buchi undefined, usare pop o splice
+splice()               |
+sort()                 | ordinare un array
+reverse()              | invertire l'ordine di un array
+concat()               | unire array
+slice()                | restituisce una parte di array indicato dagli argomenti start e end
+tostring()             | Converts an array to a string.
 
 ## Inserire Elementi
 
@@ -124,8 +127,6 @@ bothClasses.join(' and ');
 ```
 
 ---
-
-#Lesson 6 Data Structure
 
 ## Review 
 ### 1. Declare array 
