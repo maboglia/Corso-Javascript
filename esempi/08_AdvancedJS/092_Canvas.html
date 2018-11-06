@@ -1,0 +1,74 @@
+<!doctype html/>
+<html lang="it">
+<head>
+	<meta charset="utf-8" />
+	<title>Canvas</title>
+
+	<style type="text/css">
+		#output {
+			border: 1px solid red;
+			width: 800px;
+			height: 600px;
+		}
+	</style>
+
+</head>
+<body>
+	<h1>Canvas</h1>
+
+	<canvas id="output" width="640px" height="480px">
+
+	</canvas>
+	<button id="btnStartCanvas">Prova</button>
+
+<script type="text/javascript">
+
+var btn = document.getElementById("btnStartCanvas");
+var output = document.getElementById("output");
+
+btn.addEventListener('click', listener, false);
+
+function listener() {
+	//alert();
+	var contesto = output.getContext("2d");
+	var mioMov = new Date();
+
+	contesto.fillStyle='red';
+	contesto.strokeStyle='blue';
+
+	contesto.beginPath();
+	contesto.moveTo(0, 0);
+	contesto.lineTo(100, 100);
+	contesto.lineTo(0, 100);
+	contesto.lineTo(0, 0);
+	contesto.stroke();
+	contesto.fill();
+	contesto.closePath();
+
+	contesto.strokeRect(100, 10, 190, 90);
+
+	contesto.font = "18pt Arial";
+	contesto.fillText("Viva EmilioZ!", 110, 50);
+	contesto.strokeStyle='black';
+	contesto.strokeText("Viva EmilioZ!", 110, 50);
+
+	var movimento = mioMov.getSeconds() +50;
+	console.log(movimento);
+
+	contesto.clearRect(0, 0, 800, 600);
+
+	contesto.beginPath();
+	contesto.arc(75 + movimento, 250, 75, 0, 2 * Math.PI);
+	contesto.fillStyle='purple';
+	contesto.fill();
+
+	window.requestAnimationFrame(listener);
+
+
+}
+
+
+</script>
+
+</body>
+</html>

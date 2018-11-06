@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">   
+	<script src="jquery-2.1.1.js"></script>	 
+</head>
+<body>
+
+    <canvas width="400" height="400" id="myCanvas">
+	</canvas>     
+	
+</body>
+<script>
+    var context = $('#myCanvas')[0].getContext("2d");  
+    context.fillStyle='blue';
+    context.arc(200, 200, 130, 0, 2 * Math.PI, true);
+    context.fill();
+    context.lineWidth = 2;
+    context.translate(200,200);
+    setInterval(drawSecond, 1000);
+    
+    function drawSecond() {
+         context.strokeStyle = 'blue';
+         context.beginPath();      
+         context.moveTo(0,0);
+         context.lineTo(0,-120);  
+         context.stroke();
+         
+         context.rotate((2 * Math.PI) / 60);
+         context.beginPath();     
+         context.strokeStyle = 'white';   
+         context.moveTo(0,0);
+         context.lineTo(0,-120);  
+         context.stroke();
+    }
+</script>
+</html>

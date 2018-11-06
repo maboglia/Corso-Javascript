@@ -1,0 +1,30 @@
+<html>
+    <body>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $("#click").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#click2").offset().top
+                    }, 2000);
+                });
+                $("#click2").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#click").offset().top
+                    }, 2000);
+                });
+            });
+            </script>
+    <button id="click2">Vai al fondo</button>
+    
+<div id="div1" style="height: 1000px; width: 100px">
+        Test
+    </div>
+    <br/>
+    <div id="div2" style="height: 1000px; width: 100px">
+        Test 2
+    </div>
+    <button id="click">Vai in cima</button>
+</body>
+    </html>

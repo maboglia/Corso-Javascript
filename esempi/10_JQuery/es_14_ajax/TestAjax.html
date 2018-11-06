@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Test Ajax con JQuery</title>
+</head>
+<body>
+
+
+<button id="caricaTXT">Carica un testo</button>
+<button id="caricaTXT2">Carica un altro testo</button>
+<button id="caricaHTML">Carica html page</button>
+
+
+<div id="mio_contenitore"></div>
+
+
+<script type="text/javascript" src="../config/js/jquery.js"></script>
+
+<script type="text/javascript">
+
+$("#mio_contenitore").css({
+	width: '500px',
+	height: '500px',
+	border: '1px solid red',
+	padding: '5px'
+});
+
+var i =0;
+
+$("#caricaTXT").click(function(event) {	
+	$("#mio_contenitore").load('datiprova.txt');
+});
+
+$("#caricaTXT2").click(function(event) {	
+	$("#mio_contenitore").load('datiprova2.txt');
+});
+
+
+$("#caricaHTML").click(function(event) {	
+	$("#mio_contenitore").load('datiprova.html h1');
+});
+
+
+
+
+</script>
+
+
+</body>
+</html>

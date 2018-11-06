@@ -1,0 +1,79 @@
+<!DOCTYPE html/>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <style type="text/css">
+  #qualcosa {background-color: yellow;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+  }
+
+  .mini {
+    width:150px;
+  }
+  </style>
+</head>
+<body>
+
+  <button id="carica_txt">carica_txt</button>
+  <button id="carica_html">carica_html</button>
+  <button id="carica_php">carica_php</button>
+  <button id="carica_ajax">carica_ajax</button>
+
+  <div id="qualcosa">
+    <h1 class="titolo">testo</h1>
+
+
+
+
+  </div>
+
+
+
+  <script type="text/javascript" src="../config/js/jquery.js">
+  </script>
+
+
+  <script type="text/javascript">
+  $(document).ready(function () {
+    
+
+//1 metodo load()    
+
+// $("#carica_txt").click(function(event) {
+//   $("#qualcosa").load('datiprova.txt');
+// });
+
+// $("#carica_html").click(function(event) {
+//   $("#qualcosa").load('datiprova.html');
+// });
+
+// $("#carica_php").click(function(event) {
+//   $("#qualcosa").load('datiprova.php');
+// });
+
+$("#carica_ajax").click(function(event) {
+
+    $.ajax({
+      url: 'slide2.html',
+      data: '',
+      success: function (argument) {
+        alert(argument);
+      },
+      error:  function (argument) {
+        alert("errore grave");
+      }, 
+      dataType: "text"
+    });
+
+});
+
+
+  });
+
+  </script>
+
+</body>
+</html>

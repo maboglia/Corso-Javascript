@@ -1,0 +1,73 @@
+Web Storage Source Code
+Section 3, Lecture 16
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript HTML5 discoveryvip</title>
+<meta name="description" content="Discoveryvip.com course tutorial">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+OUTPUT:
+<div id="output">Nothing Yet</div>
+<div id="hitarea" class="pickmove">click</div>
+<div id="dropoff" ondrop="dropme(event);" ondragover="dropover(event);"></div>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+	
+
+
+var btn = document.getElementById('hitarea');
+var output = document.getElementById('output');
+//btn.onclick = myeve;
+btn.addEventListener('click',myeve ,false);
+function isupported(){
+try {
+localStorage.setItem("test", "hello World");
+//localStorage.removeItem("test");
+return true;
+} catch (e) {
+return false;
+}
+}
+if(isupported()){console.log('works');}else{console.log('not working');}
+localStorage.testa = "my value";
+localStorage.setItem('testb','my next value');
+localStorage['testc'] = "another value";
+console.log(localStorage.testa);
+console.log(localStorage.getItem('testb'));
+console.log(localStorage['testc']);
+/*
+//elimina
+//delete localStorage.testa;
+//localStorage.clear();
+
+
+//visite alla pagina
+console.log(localStorage.visitc);
+if(!localStorage.visitc){
+console.log('run once');
+localStorage.visitc = 1;
+}else{
+localStorage.visitc++;
+}
+console.log(localStorage.visitc);
+*/
+var myNumber = Math.floor((Math.random()*1000)+1);
+sessionStorage.setItem ('testone',myNumber);
+console.log(sessionStorage.getItem('testone'));
+sessionStorage.removeItem('testone');
+function myeve(){
+output.innerHTML = 'CHANGE';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!-- Drag and Drop Source Code
+Section 2, Lecture 7
+ONLINE SOURCE CODE http://codepen.io/discoveryvip/pen/Myjbjo
+**********************HTML*************** -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript HTML5 discoveryvip</title>
+    <meta name="description" content="Discoveryvip.com course tutorial">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        #output {
+            background-color: beige;
+            font-size: 24px;
+            padding: 10%;
+        }
+        
+        .pickmove {
+            border: 1px solid black;
+            margin: 25px;
+            width: 200px;
+            height: 100px;
+            overflow: hidden;
+        }
+        
+        #dropoff {
+            border: 1px solid black;
+            width: 400px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        OUTPUT:
+        <div id="output">Nothing Yet</div>
+        <div id="pickup1" class="pickmove" draggable="true" ondragstart="mydrag(event);">carta n. 1</div>
+        <div id="pickup2" class="pickmove" draggable="true" ondragstart="mydrag(event);">carta n. 2</div>
+        <img id="pickup3" src="download.jpg" draggable="true" ondragstart="mydrag(event);">
+        <div id="dropoff" ondrop="dropme(event);" ondragover="dropover(event);"></div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        //Drag and Drop Source Code
+
+        function mydrag(e) {
+            e.dataTransfer.setData("text/plain", e.target.id);
+            e.dropEffect = "move";
+        }
+
+        function dropover(e) {
+            //console.log(e);
+            e.preventDefault();
+        }
+
+        function dropme(e) {
+            e.preventDefault();
+            var myInfo = e.dataTransfer.getData("text");
+            console.log(e);
+            var pickupdata = document.getElementById(myInfo);
+            var ncontent = '';
+            if (pickupdata.tagName == "DIV") {
+                ncontent = pickupdata.innerHTML;
+            } else {
+                ncontent = "<img src='" + pickupdata.src + "' />";
+            }
+            document.getElementById('dropoff').innerHTML = ncontent;
+        }
+
+        //*************SCRIPT*****************
+        //*************Event Listeners Source Code*****************
+        //1
+        var btn = document.getElementById('pickup1');
+        var output = document.getElementById('output');
+
+        //funzione di gestione
+        function myevento(evento) {
+            evento.target.innerHTML = 'HAi CAMBIATO IL CONTENUTO: ' + evento;
+            console.log(evento);
+        }
+
+        //2
+        btn.onclick = myevento;
+
+        //3
+        btn.addEventListener('dblclick', myevento, false);
+
+        //4
+        //btn.addEventListener('mousemove', myevento, false);
+    </script>
+</body>
+
+</html>

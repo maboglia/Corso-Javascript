@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Strict Mode Test</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Strict Mode</h1>
+        </header>
+        <div>
+            <p id="mainContent">This is just a simple page.</p>
+        </div>
+        <!-- <script src="script.js"></script> -->
+        <script>
+            //'use strict';
+            // didn't use var
+            var foo = "Hello world";
+
+            // new object with two properties with the same name
+            var myObject = {
+                samename: 1,
+                samename: 2
+            };
+
+            // function with the same name for multiple parameters
+            function myFunction(a, b, a) {
+                return a + b;
+            }
+
+            document.getElementById("mainContent").innerHTML = myFunction(5, 4, 3);
+        </script>
+
+    </div>
+</body>
+
+</html>

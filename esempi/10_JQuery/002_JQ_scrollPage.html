@@ -1,0 +1,47 @@
+<html>
+
+<body>
+
+    <!-- 
+
+Scroll to an element
+
+
+
+ -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var i = 0;
+            // $('html, body').animate({
+            //     scrollTop: $("#target").offset().top
+            // }, 1000);
+
+            $('#click2').on('click', function(event) {
+                $('html, body').animate({
+                    scrollTop: $("#target").offset().top
+                }, 1000);
+            });
+            $(window).scroll(function(params) {
+                i > 1000 ? i = 0 : i += 50;
+                $("img").animate({
+                    'left': i + "px"
+                }, 1000);
+                console.log('stai scorrendo' + i);
+            });
+        });
+    </script>
+    <button id="click2">Vai al fondo</button>
+
+    <div id="div1" style="height: 1000px; width: 100px">
+        <img style="position:relative" src="https://vignette.wikia.nocookie.net/fighterpedia/images/8/8a/Mario_move.gif/revision/latest?cb=20120116023516">
+    </div>
+    <br/>
+    <div id="target" style="height: 1000px; width: 100px">
+        Test 2
+    </div>
+    <button id="click">Vai in cima</button>
+</body>
+
+</html>

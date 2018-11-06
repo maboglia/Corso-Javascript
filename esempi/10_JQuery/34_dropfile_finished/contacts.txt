@@ -1,0 +1,3 @@
+[{"contactName":"James Cook","phoneNumber":"55521882","emailAddress":"james@testing.com","companyName":"2","notes":"This is a note","lastContacted":"09/18/2014"},
+{"contactName":"William Pitt","phoneNumber":"555919911","emailAddress":"william@testing.com","companyName":"3","notes":"Test","lastContacted":"09/01/2014"},
+{"contactName":"Dane Cameron","phoneNumber":"555291111","emailAddress":"dane@testing.com","companyName":"3","notes":"My note","lastContacted":"09/18/2014"}]

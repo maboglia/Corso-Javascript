@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>geolocation html5</title>
+</head>
+
+<body>
+
+    <div id="output">
+
+    </div>
+
+    <button id="btnGeo">Geo</button>
+
+
+    <script type="text/javascript">
+        var btnGeo = document.getElementById("btnGeo");
+        var mOutPut = document.getElementById("output");
+
+        btnGeo.addEventListener("click", myPosition);
+
+        if (navigator.geolocation) {
+            console.log(navigator.geolocation);
+            var x = navigator.geolocation.getCurrentPosition(myPosition);
+            console.log(x);
+        }
+
+        function myPosition(argument) {
+            console.log(argument.coords.latitude);
+            console.log(argument.coords.longitude);
+            console.log(argument.coords.altitude);
+
+            mOutPut.innerHTML = "" + argument.coords.latitude;
+        }
+    </script>
+
+
+
+</body>
+
+
+</html>

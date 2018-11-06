@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+		<title>canvas html5</title>
+<style type="text/css">
+	#output {
+		border: 1px solid blue;
+		width: 640px;
+		height: 480px;
+	}
+
+
+</style>
+
+
+</head>
+<body>
+
+	<canvas id="output">
+
+	</canvas>
+
+	<button id="btnDisegna">disegna</button>
+
+
+<script type="text/javascript">
+	var btnDisegna = document.getElementById("btnDisegna");
+	var output = document.getElementById("output");
+
+	btnDisegna.addEventListener("click", disegna);
+
+	function disegna () {
+		
+		var contesto = output.getContext("2d");
+
+		contesto.beginPath();
+		contesto.fillStyle="red";
+		contesto.strokeStyle="black";
+
+		contesto.moveTo(0, 0);
+		contesto.lineTo(10, 15);
+		// contesto.lineTo(150, 200);
+		// contesto.lineTo(200, 100);
+		contesto.stroke();
+		contesto.closePath();
+
+		contesto.font = '40pt Arial';
+		contesto.fillText("hello world", 10, 100);
+		contesto.strokeText("hello world", 10, 100);
+
+		//contesto.fillRect(10, 10, 100, 100);
+
+	}
+
+</script>
+
+</body>
+</html>

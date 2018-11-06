@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">   
+	<script src="jquery-2.1.1.js"></script>	 
+</head>
+<body>
+    <canvas width="800" height="800" id="myCanvas">
+
+	</canvas>      
+</body>
+
+<script>
+    var context = $('#myCanvas')[0].getContext("2d"); 
+    context.beginPath();   
+    context.moveTo(400,400);
+    var currentX = 400;
+    var currentY = 400;
+    for (var i = 0; i < 10000; i++) {
+        var r = Math.random();
+        if (r < 0.25) {
+            currentX = currentX-3;
+        } else if (r < 0.5) {
+            currentX = currentX+3;
+        } else if (r < 0.75) {
+            currentY = currentY - 3;
+        } else {
+            currentY = currentY + 3;
+        }
+        context.lineTo(currentX, currentY);
+    }
+    context.stroke();
+</script>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <meta charset="utf-8">    
+         <style>
+			.box {
+				height:200px;
+				width:200px;
+				display:inline-block;
+				border: 2px solid black;
+			}	
+         </style>
+		 
+			<script>
+			function allowDrop(evt) {
+				evt.preventDefault();
+			}
+
+			function startDragging(evt) {
+				evt.dataTransfer.setData("Color", evt.target.style.background);
+				evt.target.style.opacity = 0.3;
+			}
+
+			function dragEnded(evt) {
+				evt.target.style.opacity = 1.0;
+			}
+
+			function drop(evt) {
+				var color = evt.dataTransfer.getData("Color");
+				evt.target.style.background = color;
+				setBorderSize(evt, '2px');
+			}
+			
+			function setBorderSize(evt, size) {
+				evt.currentTarget.style.border =  size + " solid black";
+			}
+			
+			</script>
+
+</head>
+<body>
+	<div ondragend="dragEnded(event)" ondragstart="startDragging(event)" draggable="true" class="box" style="background:red"></div>
+	<div ondragend="dragEnded(event)" ondragstart="startDragging(event)" draggable="true" class="box" style="background:green"></div>
+	<div ondragend="dragEnded(event)" ondragstart="startDragging(event)" draggable="true" class="box" style="background:blue"></div>
+	<p>
+	<div ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="setBorderSize(event, '4px')" ondragleave="setBorderSize(event, '2px')" class="box"></div>
+	<div ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="setBorderSize(event, '4px')" ondragleave="setBorderSize(event, '2px')" class="box"></div>
+	<div ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="setBorderSize(event, '4px')" ondragleave="setBorderSize(event, '2px')" class="box"></div>
+</body>
+</html>

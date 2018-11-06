@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Building Wrapper Objects</title>
+<script type="text/javascript">
+function BetterSelect(oSelList) {
+	this.objSelectList = oSelList;
+	this.objSelectList.onchange = this.selectionChanged;
+}
+BetterSelect.prototype.clear = function() {
+	this.objSelectList.options.length = 0;
+}
+BetterSelect.prototype.fill = function(aValues) {
+	this.clear();
+	for (var i=0; i < aValues.length; i++) {
+		this.objSelectList.options[i] = new Option(aValues[i]);
+	}
+}
+BetterSelect.prototype.find = function(strToFind,bSelect) {
+	var indx = -1;
+	this.objSelectList.options.selectedIndex = -1;
+	for (var i=0; i<this.getCount(); i++) {
+		if (this.objSelectList.options[i].text == strToFind) {
+			indx = i;
+			if (bSelect)
+				this.objSelectList.options.selectedIndex = i;
+		}
+	}
+	return indx;
+}
+BetterSelect.prototype.getCount = function() {
+	return this.objSelectList.options.length;
+}
+BetterSelect.prototype.selectionChanged = function() {
+	alert("selection changed!");
+}
+
+var mySelectList = null;
+window.onload = function() {
+	mySelectList = new BetterSelect(document.getElementById('theList'));
+}
+function fillList() {
+	mySelectList.fill(["one","two","three","four","five"]);
+}
+function findIt() {
+	mySelectList.find(document.getElementById('txtToFind').value, true);
+}
+</script>
+</head>
+
+<body>
+
+<form action="" method="post">
+	<select multiple="multiple" name="Select1" id="theList" style="width: 152px; height: 226px">
+	</select>
+<br />
+	<input name="Button1" type="button" value="Fill The List" onclick="fillList()" />
+	<input name="Button4" onclick="mySelectList.clear()" type="button" value="Clear The List" /><br />
+	<input name="Button2" onclick="alert(mySelectList.getCount())" type="button" value="What's The Count?" /><br />
+	<input name="Text1" type="text" id="txtToFind"/><input name="Button3" type="button" value="Search" onclick="findIt()" /></form>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html/>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <style type="text/css">
+  #qualcosa {background-color: yellow;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+  }
+
+  .mini {
+    width:150px;
+  }
+  </style>
+</head>
+<body>
+
+
+  <div id="qualcosa">
+    <h1 class="titolo">testo</h1>
+
+
+
+
+  </div>
+
+
+
+  <script type="text/javascript" src="../config/js/jquery.js">
+  </script>
+
+
+  <script type="text/javascript">
+      $("document").ready(function() {
+        getData();
+      });
+      
+      function getData() {
+        $.ajax({
+          url: "datiprova.txt",
+          type: 'GET',
+          dataType: 'text',
+          data: {param1: 'value1'},
+        })
+        .done(successFn)
+        .fail(function(xhr, status, strErr) {
+        console.dir(xhr);
+        console.log("There was an error!");
+      })
+        .always(function() {
+          console.log("complete");
+        });
+        
+      }
+
+      function successFn(result) {alert();
+        console.log("Setting result");
+        $("#qualcosa").append(result);
+      }
+      function errorFn(xhr, status, strErr) {
+        alert(strErr);
+        console.log("There was an error!");
+      }
+  </script>
+
+</body>
+</html>

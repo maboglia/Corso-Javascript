@@ -1,0 +1,39 @@
+<style type="text/css">
+    .skill {
+        background-color: rgb(250, 173, 6);
+        width: 0px;
+        height: 50px;
+        margin: 10px 0;
+        border: 1px solid black;
+    }
+</style>
+
+<button id="ingrandisci">ingrandisci</button>
+
+<div class="skill" data-percentuale="">CSS</div>
+<div class="skill" data-percentuale="90">HTML</div>
+<div class="skill" data-percentuale="100">Javascript</div>
+<div class="skill" data-percentuale="">Java</div>
+<div class="skill" data-percentuale="100">PHP</div>
+<div class="skill" data-percentuale="15">C#</div>
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js">
+</script>
+
+
+<script type="text/javascript">
+    $("#ingrandisci").click(function(event) {
+        /* Act on the event */
+        var elementi = $(".skill");
+        $(".skill").each(function(data) {
+            let larghezza = $(this).data('percentuale') || Math.floor(Math.random() * 100);
+
+            $(this).animate({
+                width: (larghezza) + "%"
+            }, 1000);
+            // elementi[data].css("width", larghezza+"px");
+        });
+    });
+</script>
