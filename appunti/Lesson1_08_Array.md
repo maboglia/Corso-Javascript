@@ -1,27 +1,20 @@
 # Array
-* perché devi saper utilizzare gli array
-* creazione di un array
-* accesso a i dati di un array
-* array non omogenei
 
-* lavorare con gli array
-* trova la lunghezza di un array
+
+## laboratorio, prova a:
+
+* accedere agli elementi di un array
+* si possono avere oggetti differenti in un array
+* gli array sono oggetti
+* proprietà e metodi degli array
+* la proprietà length
 * aggiungere elementi a un array
-* aggiungere array
-* trasformare un array in una stringa
+* scorrere gli elementi di un array
+* JS non supporta gli array associativi
+* la differenza tra array e oggetti
 
 
-
-* cose utili da fare con un array
-* trova la strada di casa
-* decision maker
-* crea un generatore di frasi random
-
-
-*   JS array
-    cos'è un array
-
-###creare un array
+### creare un array
 ```javascript
 var student1 = 'Paperino';
 var student2 = 'Pippo';
@@ -36,22 +29,9 @@ var student7 = 'Ciccio';
 var students = ['Paperino', 'Pippo', 'Pluto', 'Paperina', 'Topolino', 'Minnie', 'Ciccio'];
 ```
 
-
-## laboratorio, prova a:
-
-* accedere agli elementi di un array
-* si possono avere oggetti differenti in un array
-* gli array sono oggetti
-* proprietà e metodi degli array
-* la proprietà length
-* aggiungere elementi a un array
-* scorrere gli elementi di un array
-* JS non supporta gli array associativi
-* la differenza tra array e oggetti
----
 ## metodi principali
 
-| metodo                 | descrizione                                                         |
+|         metodo         |                             descrizione                             |
 | ---------------------- | ------------------------------------------------------------------- |
 | valueOf() e toString() | convertire array a stringhe                                         |
 | join()                 | come to string, ma puoi usare un separatore                         |
@@ -67,10 +47,11 @@ var students = ['Paperino', 'Pippo', 'Pluto', 'Paperina', 'Topolino', 'Minnie', 
 | slice()                | restituisce una parte di array indicato dagli argomenti start e end |
 | tostring()             | Converts an array to a string.                                      |
 
+
 ## Inserire Elementi
 
 ```javascript
-students.push('Mako');
+students.push('Gino');
 ```
 
 
@@ -98,7 +79,7 @@ students[0]
 ## Indicizzare un array
 
 ```javascript
-students[1] = 'Simon';
+students[1] = 'Simone';
 students;
 ```
 
@@ -116,33 +97,30 @@ var bothClasses = mondayClass.concat(tuesdayClass);
 
 ```javascript
 bothClasses.toString();
-bothClasses.join(' and ');
+bothClasses.join(' e ');
 ```
 
-
-## Review 
-
-### 1. Dichiarare array 
+## Dichiarare array 
 
 ```javascript
 var list=["one","two","three"];
 ```
 
-### 2. Accedere array
+## Accedere array
 ```javascript
 var languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
 
 console.log(languages[2]); //Output: JavaScript
 ```
 
-### 3. Array Properties 
+## Array Properties 
 ```javascript
 var languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
 
 console.log(languages.length);
 ```
 
-### 3. Iterare su elementi array 
+## Iterare su elementi array 
 ```javascript
 var languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
 
@@ -151,19 +129,10 @@ for(var i=0; i < languages.length; i++){
 }
 ```
 
-### 1. Array eterogenei
-Heterogeneous - `Mixture` of Arrays
-
-Examples: 
-```javascript
-var pronouns = ["I", "you", "we"];
-var numbers = [1, 2, 3];
-```
-
-### 2. Arrays di Arrays 
+## Array di Array 
 
 ```javascript
-var twoDimensional = [[1, 1], [1, 1]];
+var biDimensionale = [[1, 1], [1, 1]];
 
 ```
 
@@ -172,13 +141,13 @@ var twoDimensional = [[1, 1], [1, 1]];
 | 1   | 1     |
 | 1   | 1     |
 
-### 3. Array irregolari
+## Array irregolari
 
 ```javascript
 var jagged=[[1,1,1,1],[2,2,2],[3,3]];
 ```
 
-### 1. Array eterogenei
+## Array eterogenei
 
 ```javascript
 var me={
@@ -188,7 +157,7 @@ var me={
 var myArray=[1,true,"lala",me];
 ```
 
-### 2. Array Multi-dimensionali irregolari
+## Array Multi-dimensionali irregolari
 
 ```javascript
 var me={
@@ -199,7 +168,7 @@ var me={
 newArray=[[1,1,1],[me],[2,2],[3]];
 ```
 
-### 3. Modificare un oggetto esistente
+## Modificare un oggetto esistente
 
 ```javascript
 var myInterest=["Coding","Running","Reading"];
