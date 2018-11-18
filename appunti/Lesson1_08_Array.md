@@ -51,21 +51,21 @@ var students = ['Paperino', 'Pippo', 'Pluto', 'Paperina', 'Topolino', 'Minnie', 
 ---
 ## metodi principali
 
-        | metodo                 | descrizione                                                         |
-        | ---------------------- | ------------------------------------------------------------------- |
-        | valueOf() e toString() | convertire array a stringhe                                         |
-        | join()                 | come to string, ma puoi usare un separatore                         |
-        | push()                 | aggiunge elementi all'array                                         |
-        | pop()                  | rimuove l'ultimo elemento dell'array                                |
-        | shift()                | rimuove il primo elemento di un'array                               |
-        | indexOf()              | per accedere / modificare un valore                                 |
-        | delete:                | lascia buchi undefined, usare pop o splice                          |
-        | splice()               |
-        | sort()                 | ordinare un array                                                   |
-        | reverse()              | invertire l'ordine di un array                                      |
-        | concat()               | unire array                                                         |
-        | slice()                | restituisce una parte di array indicato dagli argomenti start e end |
-        | tostring()             | Converts an array to a string.                                      |
+| metodo                 | descrizione                                                         |
+| ---------------------- | ------------------------------------------------------------------- |
+| valueOf() e toString() | convertire array a stringhe                                         |
+| join()                 | come to string, ma puoi usare un separatore                         |
+| push()                 | aggiunge elementi all'array                                         |
+| pop()                  | rimuove l'ultimo elemento dell'array                                |
+| shift()                | rimuove il primo elemento di un'array                               |
+| indexOf()              | per accedere / modificare un valore                                 |
+| delete:                | lascia buchi undefined, usare pop o splice                          |
+| splice()               |                                                                     |
+| sort()                 | ordinare un array                                                   |
+| reverse()              | invertire l'ordine di un array                                      |
+| concat()               | unire array                                                         |
+| slice()                | restituisce una parte di array indicato dagli argomenti start e end |
+| tostring()             | Converts an array to a string.                                      |
 
 ## Inserire Elementi
 
