@@ -1,42 +1,4 @@
-# appunti
-
-## javascript
-
-**esercizi**
-
-* lampadina accendi-spegni
-* todo-list 
-* slideshow 
-* negozio alimentari
-* biblioteca
-* biglietteria
-* le ricette del mondo
-* calcolatrice
-* trenino: animazione e collisione
-* Rock Scissors Paper
-* Guess the number
-* Lancia dadi
-* memory
-* 9 quadrati cambia colore
-* quadrato rotante
-* 
-
-**Javascript advanced**
-
-* web storage
-* local & session storage
-* geolocation
-* drag & drop
-* Html5 Canvas
-
-**Javascript framework & libraries**
-
-* nodejs
-* jQuery: DOM Handling, Animation, AJAX, JSON
-* Angular: components, routing, services
-
-
-### Arrow
+# Arrow
 
 Arrow functions allow you to simplify syntax in three ways:
 • You can omit the word function.
