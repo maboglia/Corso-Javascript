@@ -299,6 +299,7 @@ spazio vuoto.
 ## Il float
 è la proprietà che utilizzerai maggiormente anche se all'inizio la sua
 gestione potrà sembrarti problematica.
+
 ### La w3c definisce il float come segue:
 "...un box che viene spostato a sinistra o a destra rispetto la
 riga corrente. La caratteristica più interessante di un float è che
