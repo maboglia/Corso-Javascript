@@ -1,0 +1,11 @@
+section{margin:0 auto;width: 60%;height:95%;}
+.breadcrumbs::before {content: "BREADCRUMBS";}
+.breadcrumbs::before{
+	display: table;padding:2px 4px;
+	background-color: orange;
+	color:#333;opacity: 0.3;
+	position: absolute;
+	top:0;
+	left:0;
+	font-size: 0.8em;
+}

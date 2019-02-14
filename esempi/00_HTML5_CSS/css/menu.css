@@ -1,0 +1,34 @@
+*{box-sizing: border-box;}
+body {font: 100%/147% 'Roboto',Helvetica,Times,sans-serif;position: relative;}
+header,footer,aside,nav,section,main{position: relative;}
+header,footer,aside,nav,section{background: #eee;padding: 30px;}
+main::after, ul::after{
+	content:"";
+	display: table;
+	clear:left;
+}
+header::before {content: "HEADER";}
+nav::before {content: "NAV";}
+main::before {content: "MAIN";}
+section::before {content: "SECTION";}
+aside::before {content: "ASIDE";}
+footer::before {content: "FOOTER";}
+header::before, main::before, nav::before, section::before, aside::before, footer::before
+{display: table;padding:4px 6px;background-color: orange;color:#333;opacity: 0.3;position: absolute;top:0;left:0;} 
+section,aside{float:left;}
+a{text-decoration: none;}
+
+nav{padding:0;}
+nav ul{padding:0;margin:0;}
+h1 {font-size: 3em;}
+h2 {font-size: 2.5em;}
+h3 {font-size: 2.0em;}
+h4 {font-size: 1.5em;}
+h5 {font-size: 1.0em;}
+h6 {font-size: 0.8em;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}

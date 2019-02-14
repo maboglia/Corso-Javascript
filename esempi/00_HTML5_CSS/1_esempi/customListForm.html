@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom List e form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ON OFF Normalize -->
+  <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  
+
+  <!-- ON OFF custom style: usare stle in linea prendendo le regole dal css -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/custom.css"> -->
+  <style>
+  
+    *, ::after, ::before {box-sizing: border-box;}
+    body {font: 100%/147% 'Roboto',Helvetica,Times,sans-serif;margin:0;color:#333;}
+    .container{width: 500px;margin:0 auto;margin-top:30px;}
+    ul, ol {list-style-type: none;}
+    ol{counter-reset: pallo;}
+    ol li {margin: 12px 0;}
+    li::before{
+      counter-increment: pallo;
+      content: counters(pallo,".");
+      padding: .2rem;
+      margin-bottom: 6px; 
+      background: DodgerBlue;
+      color: white;
+    }
+    </style>
+
+</head>
+<body>
+  <div class="container">
+
+    <!-- custom unordered list-->
+    <!-- <ul>
+      <li>Caffé
+        <ul>
+          <li>Macchiato</li>
+          <li>Corretto</li>
+        </ul>
+      </li>
+      <li>The</li>
+      <li>Latte</li>
+      <li>Cioccolata</li>
+      <li>Marocchino</li>
+    </ul> -->
+    <!-- fine custom unordered list-->
+
+    <!-- custom form-->
+    <!-- <form  action="#" method="post" name="getDati">
+      <input type="radio" id="genere1" name="genere" value="uomo" checked="">
+      <label for="genere1">Uomo</label><br>
+      <input type="radio" id="genere2" name="genere" value="donna">
+      <label for="genere2">Donna</label><br>
+
+      <p>Interessi</p>
+      
+      <input type="checkbox" name="foto" id="foto">
+      <label for="foto">Fotografia</label>
+      
+      <input type="checkbox" id="informatica">
+      <label for="informatica">Informatica</label>
+      
+      <input type="checkbox" id="psico">
+      <label for="psico">Psicologia</label><br>
+      <br><br><br>
+
+ 
+        <select id="professione" name="professione">
+          <option value="" selected="">Scegli la professione</option>
+          <option value="Impiegato">Impiegato</option>
+          <option value="Operaio">Operaio</option>
+          <option value="Libero professionista">Libero professionista</option>
+          <option value="Disoccupato">Disoccupato</option>
+        </select>
+
+    </form> -->
+    <!-- fine custom form-->
+
+    <!-- custom ordered list numbers -->
+    <!-- <ol>
+      <li>inviare una email</li>
+      <li>attendere la ricevuta</li>
+      <li>cliccare sul link ricevuto per avviare la conferema
+        <ol >
+          <li>Errore 1: Lorem</li>
+          <li>Errore 2: Sit dolor</li>
+        </ol>
+      </li>
+      <li>riceverete una mail di avvenuta convalida</li>
+      <li>accedete al portale</li>
+    </ol> -->
+    <!-- fine custom ordered list numbers -->
+
+    <!-- counters nidificati -->
+    <!-- <div class="book">
+      <section>
+        <h1>Capitolo</h1>
+        <h2>Titolo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Titolo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+      <section>
+        <h1>Capitolo</h1>
+        <h2>Titolo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Titolo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+      <section>
+      <h1>Capitolo</h1>
+      <h2>Titolo</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h2>Titolo</h2>
+      <h3>Titolo</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+    </div> -->
+    <!-- fine counters nidificati -->
+
+  <footer>
+    
+  </footer>
+</div>
+</body>
+</html>

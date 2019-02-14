@@ -1,0 +1,31 @@
+*, ::after, ::before {box-sizing: border-box;}
+html,body{height: 100%} /* per potere usare le altezze relative */
+body {font: 100%/147% 'Roboto',Helvetica,Times,sans-serif;margin:0;color:#333;}
+.container{width: 600px;margin: 0 auto;height: 100% /* per potere usare le altezze relative */ ;}
+header,nav,main,section,article,aside,footer {
+	border:1px solid #666; /* serve solo per evidenziare le sezioni */
+	position: relative; /* serve solo per le label create con ::before */
+}
+nav{height: 5%;}
+header{height: 15%}
+main{height: 70%}
+section{height: 100%;}
+aside{height: 100%;}
+footer{height: 10%}
+nav,header,main,section,aside,footer{width:100%;}
+
+header::before {content: "HEADER";}
+nav::before {content: "NAV";}
+main::before {content: "MAIN";}
+section::before {content: "SECTION";}
+aside::before {content: "ASIDE";}
+footer::before {content: "FOOTER";}
+.breadcrumbs::before {content: "BREADCRUMBS";}
+header::before, nav::before, main::before, section::before, aside::before, footer::before, .breadcrumbs::before
+{display: table;padding:2px 4px;background-color: orange;color:#333;opacity: 0.3;position: absolute;top:0;left:0;font-size: 0.8em;}
+
+.navFixed{position: absolute;left:0;width: 100px;background-color: #ededed;padding-left: 0;list-style-type:none;}
+.navFixed li {padding: 1rem;border-bottom:1px solid #dedede;}
+.navFixed a{text-decoration: none;color:#333;}
+.navFixed li.active {background-color: red;color: white;}
+.navFixed li:hover {background-color: rgba(255,0,0,.3);}

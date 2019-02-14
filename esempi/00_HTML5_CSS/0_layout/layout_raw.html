@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Esercizi HTML</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	header, footer, aside, nav, aside, section {border:1px solid gray;text-align:center;}
+	header, footer, aside, aside, section {padding:30px;}
+	section{width:calc(70% - 62px);float:left;}
+	aside{width: calc(30% - 62px);float:left;}
+	.clearfix{clear: left;}
+	main::after {
+    content: "";
+    display:table;
+    clear: both;}
+	</style>
+</head>
+	<body>
+		<header>
+			header
+		</header>
+		<nav>
+			nav
+		</nav>
+		<main>
+			<section>
+				section
+			</section>
+			<aside>
+				aside
+			</aside>	
+		</main>
+		<!-- <br class="clearfix01"> -->
+		<footer>
+			footer
+		</footer>
+	</body> 
+</html>

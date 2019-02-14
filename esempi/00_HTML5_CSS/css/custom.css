@@ -1,0 +1,169 @@
+*, ::after, ::before {box-sizing: border-box;}
+html,body{height: 100%} /* per potere usare le altezze relative */
+body {font: 100%/147% 'Roboto',Helvetica,Times,sans-serif;margin:0;color:#333;}
+.container {margin:0 auto;width:900px;}
+
+/* custom unordered list */
+ul, ol{list-style-type: none;}
+
+
+ul li::before, label::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900;/* assegna i glifi agli pseudo elementi, dipende dal link in head */
+}
+
+/*ul li:before {
+    content: "\2688";
+    color: DodgerBlue;
+    margin-right: 10px;
+    font-size: .7rem;
+    position: relative;
+    top: -2px;
+}*/
+/*ul li ul li:before {
+    content: "\2686";
+    color: DodgerBlue;
+    margin-right: 10px;
+    font-size: .7rem;
+    position: relative;
+    top: -2px;
+}*/
+
+/* fine custom unordered list */
+
+/* custom form */
+/* custom radio */
+input[type=radio],input[type=checkbox] {opacity: 0;}
+input[type=radio],input[type=checkbox]{
+	position: relative;
+    left: 21px;
+    top:-2px;
+}
+
+input[type=radio] + label::before {
+	content: "";
+    border: 2px solid DodgerBlue;
+    border-radius: 50%;
+    padding: 8px;
+    width: 16px;
+    margin-right: 6px;
+    display: inline-block;
+    top: 3px;
+    position: relative;
+}
+
+input[type=radio]:checked + label::before {
+	content: "";
+    border: 2px solid DodgerBlue;
+    background: DodgerBlue;
+    border-radius: 50%;
+    padding: 8px;
+    width: 16px;
+    margin-right: 6px;
+    display: inline-block;
+    top: 3px;
+    position: relative;
+}
+
+/* custom checkbox */
+input[type=checkbox] + label::before {
+	content: "";
+    border: 2px solid DodgerBlue;
+    padding: 8px;
+    width: 16px;
+    margin-right: 6px;
+    display: inline-block;
+    top: 3px;
+    position: relative;
+}
+
+input[type=checkbox]:checked + label::before {
+	content: "";
+    border: 2px solid DodgerBlue;
+    background: DodgerBlue;
+    padding: 8px;
+    width: 16px;
+    margin-right: 6px;
+    display: inline-block;
+    top: 3px;
+    position: relative;
+}
+
+/* attivazione focus */
+
+input[type="radio"]:focus + label::before, input[type="checkbox"]:focus + label::before {
+    outline: rgb(59, 153, 252) auto 5px; /* outline-color, outline-style, outline-width */
+}
+
+
+/* custom select */
+/* reset select */
+/* PASSO 1 */
+select {
+   -webkit-appearance: none; 
+   -moz-appearance: none;
+}
+select::-ms-expand {
+    display: none; /* hide the default arrow in ie10 and ie11 */
+}
+
+select{
+    width: 300px;
+    position: relative;
+    color: white;
+    margin: 0;
+    border: 0;
+    height: 2.6em;
+    border-radius: 0;
+    padding: 0.6em 0.8em;
+    background: DodgerBlue url('../img/arrow_down_white.svg') 95% 10px no-repeat;
+}
+
+/* fine custom form */
+
+
+/* custom ordered list */
+ul, ol{list-style-type: none;}
+ol {counter-reset: section;}/* section è fittizzio */
+li::before{
+	counter-increment: section;
+	content: counters(section,".");
+    /*content: counters(section,".") " ";*/
+    /*content: "sez. "counters(section,"."); con etichetta */
+	padding-right:.3rem;
+	color:DodgerBlue;
+}
+
+/* fine custom ordered list */
+
+
+/* counters nidificati */
+
+.book {
+    counter-reset: section;
+}
+
+h1 {
+    counter-reset: subsection;
+}
+
+h1::before {
+    counter-increment: section;
+    content: counter(section) ". ";
+}
+
+h2::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+}
+
+h2 {
+    counter-reset: subsubsection;
+}
+
+h3::before {
+    counter-increment: subsubsection;
+    content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
+}
+/*
+h2{padding-left:1rem;}
+h3, p {padding-left:2rem;}*/

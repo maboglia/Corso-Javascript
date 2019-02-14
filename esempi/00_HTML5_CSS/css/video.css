@@ -1,0 +1,19 @@
+*{box-sizing: border-box;}
+body {font: 100%/147% 'Roboto',Helvetica,Times,sans-serif;margin:0;color:#333;}
+
+
+/*video::-webkit-media-controls-enclosure {
+  display:none !important;
+}*/
+
+
+/*video::-webkit-media-controls-enclosure */
+/*video::-webkit-media-controls-panel{display:none !important;}*/
+video::-webkit-media-controls-mute-button{
+	/*background-color: red !important;*/
+	background-image: none;
+	background-image: url(../img/smile_small.png);
+}
+
+video::-webkit-media-controls-mute-button::after{content: "\2605";}
+/*div {background-image: url(../img/smile_small.png);}*/
