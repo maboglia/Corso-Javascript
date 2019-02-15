@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Form</title>
+ 
+    <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+ <body>
+ 	<h1>I Form</h1>
+<form action="" autocomplete="on">
+<fieldset>
+	<legend>Dati anagrafici</legend>
+	<label for="nomee">Nome</label>
+	<input type="text" name="nome" id="nomee" maxlength="10" placeholder="inserisci il tuo nome" required><br>
+	Cognome
+	<input type="text" name="cognome" autocomplete="off"><br>
+	password <input type="password" name="cognome"><br><br>
+	Data di nascita: <input type="text" size="10"><br>
+
+</fieldset>
+<fieldset>
+	<legend>Dati sensibili</legend>
+<input type="radio" name="gender" value="male" checked> Maschio<br> 
+<input type="radio" name="gender" value="female"> Femmina<br> 
+<input type="radio" name="gender" value="other"> Altro
+<br>
+</fieldset>
+<input type="checkbox" name="vehicle1" value="Bicicletta"> Ho una bicicletta<br>   <input type="checkbox" name="vehicle2" value="Automobile"> Ho un’automobile 
+<br>
+
+<select name="auto" size="2" multiple style="width: 100%"> 
+	<option value="volvo">Volvo</option> 
+	<option value="saab">Saab</option> 
+	<option value="fiat" selected>Fiat</option> 
+	<option value="audi">Audi</option> 
+</select>
+<br>
+<select> 
+	<optgroup label="Auto svedesi"> 
+		<option value="volvo">Volvo</option> 
+		<option value="saab">Saab</option> 
+	</optgroup> 
+	<optgroup label="Auto tedesche"> 
+		<option value="mercedes">Mercedes</option> 
+		<option value="audi">Audi</option> 
+	</optgroup> 
+</select>
+<br>
+
+
+Scegli il tuo colore preferito:
+<input type="color" name="color">
+<br>
+inserisci la data di nascita
+<input type="date" name="bdate">
+<br>
+Voti
+<input type="number" name="quantity" min="18" max="30">
+<br>
+<input type="range" name="points">
+<br>
+Scegli un ora: <input type="time" name="user_time">
+<br>
+
+Inserisci la tua home page: <input type="url" name="homepage" autofocus>
+<br>
+Quantità (da 1 a 5): <input type="number" name="quantity" min="1" max="5">
+
+<input type="reset">
+<input type="submit">
+
+
+</form>
+
+
+</form>
+
+ </body> 
+</html>

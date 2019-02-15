@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Esempio di iFrame</title>
+ 
+    <meta charset="utf-8" />
+ <style>
+ 	.rwd-video {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+}
+.rwd-video iframe,
+.rwd-video object,
+.rwd-video embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+ </style>
+</head>
+ <body>
+    
+<!-- <div class="rwd-video"> -->
+	<iframe src="https://www.youtube-nocookie.com/embed/41qC3w3UUkU?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!-- </div> -->
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.9644480919246!2d7.677834415200183!3d45.066232267931206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886d6c24c94fcd%3A0x1745e2aae993e367!2sImmaginazione+e+Lavoro!5e0!3m2!1sit!2sit!4v1524748776461" style="width:100%;height:400px; border:0" allowfullscreen></iframe>
+ </body>
+</html>
+
+<!-- Tecnica n°1: solo CSS
+Per utilizzare questa tecnica occorre inserire l' iframe in un tag HTML con una classe CSS a piacere:
+
+<div class="rwd-video">
+	<iframe src="//www.youtube.com/embed/-lmlmt1Omew?rel=0" allowfullscreen="" frameborder="0" height="315" width="560">
+	</iframe>
+</div>
+L'idea è di utilizzare questo tag HTML per creare lo spazio in cui renderizzare il video, e di posizionare poi il video in maniera assoluta all'interno di questo spazio:
+
+.rwd-video {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+}
+.rwd-video iframe,
+.rwd-video object,
+.rwd-video embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+L'elemento con classe .rwd-video deve coprire tutta la larghezza a disposizione e l'altezza deve adattarsi per mantenere il rapporto. È per questo che viene impostata l'height a 0 e padding-bottom a 56.25%, perché la percentuale del padding è calcolata in relazione alla width, cosa altrimenti non possibile.
+
+La percentuale è di 56.25% per mantenere un aspect ratio di 16:9.
+
+9 / 16 = 0,5625
+Mentre calcoliamo un padding-top di circa 30px per lasciare lo spazio per la barra del video.
+
+Tecnica n°2: plugin jQuery
+Mentre la prima tecnica è da preferire nel caso abbiate il pieno controllo sull'inserimento di un embed, ci sono dei casi in cui ciò non è possibile, come nel caso in cui sia il vostro cliente a inserire direttamente un embed dentro un articolo del proprio blog aziendale.
+
+In tal caso è impensabile fargli capire che per rendere il video responsive occorre wrappare l'embed dentro un tag HTML.
+
+Per rendere automaticamente un embed responsive possiamo utilizzare questo piccolo plugin di jQuery: FitVid.js. E richiamarlo in questo modo:
+
+$('.container').fitVids();
+L'idea alla base di questo plugin è semplicissima: ricerca all'interno del tag su cui è invocato la presenza di embed di YouTube (o di Vimeo, o di un servizio a vostra scelta) ed effettua in automatico il wrapping e l'assegnazione delle proprietà CSS viste nella tecnica numero 1 (calcolando però dinamicamente l'aspect ratio).
+
+L'embed responsive è servito! ;) -->

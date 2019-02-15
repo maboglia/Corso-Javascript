@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+<title>Il mio Blog!</title>
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=0.2, maximum-scale=1.0">
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<style>
+/* fix per il float */
+main:after,ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+
+<body>
+<main>
+<div><h1>Il mio Blog!</h1></div>
+<div>
+<ul id="indice" style="list-style: none;">
+  <li style="float:left;"><a href="#home">Home</a></li>
+  <li style="float:left;"><a href="#news">News</a></li>
+  <li style="float:left;"><a href="#contact">Contact</a></li>
+  <li style="float:left;"><a href="#about">About</a></li>
+  <li style="float:left;"><a href="#capitolo1">Capitolo II</a></li>
+  <li style="float:left;"><a href="#capitolo2">Capitolo III</a></li>
+</ul>
+</div>
+<!-- <div style="clear:left;"></div> -->
+<!-- genera un problema, il float è ereditato -->
+<div style="float:left;width:70%;"> 
+<!-- soluzione al problema generato dal float -->
+<!-- <div style="clear:left;width:70%;"> -->
+	
+	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+</div>
+<div style="float:left;width:30%">
+<ul id="indice">
+  <li><a href="#home">Correlati</a></li>
+  <li><a href="#news">Allegati</a></li>
+  <li><a href="#contact">Archivio</a></li>
+</ul>
+</div>
+</main>
+<div>
+	<address>
+	<p>informazioni di contatto</p>
+	</address>
+</div>
+
+</body>
+</html>

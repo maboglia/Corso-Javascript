@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+        }
+        
+        img {
+            -webkit-transition: scale 0.3s;
+            /* Safari */
+            transition: scale 0.3s;
+            opacity: 0.5;
+            transition: transform .3s ease, opacity 1s;
+            -webkit-transition: -webkit-transform .3s ease, opacity 1s;
+        }
+        
+        div:hover img {
+            transform: scale3d(1.1, 1.1, 1);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Zoom effect</h1>
+    <p>l'hover sull'immagine prodice un effetto zoom</p>
+
+    <div>
+        <img src="info.png">
+    </div>
+
+
+</body>
+
+</html>
