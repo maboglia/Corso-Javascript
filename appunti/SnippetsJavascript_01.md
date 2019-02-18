@@ -1,5 +1,6 @@
 # Snippets Javascript
 
+---
 ## Aggiungere JavaScript alla tua pagina web
 
 ```html
@@ -23,6 +24,7 @@
 
 ---
 
+---
 ## Chiedere informazioni all'utente
 
 ```html
@@ -45,6 +47,7 @@
 </body>
 </html>
 ```
+---
 ## Modificare la pagina
 
 ```html
@@ -58,6 +61,7 @@ document.getElementById("name").innerHTML = "Piacere di conoscerti, " + name;
 
 ---
 
+---
 ## Modificare la pagina
 
 ```html
@@ -82,6 +86,7 @@ document.getElementById("name").innerHTML = "Piacere di conoscerti, " + name;
 </html>
 ```
 
+---
 ## Creare un semplice form per gestire i dati
 
 ```html
@@ -106,6 +111,7 @@ document.getElementById("name").innerHTML = "Piacere di conoscerti, " + name;
 </html>
 ```
 
+---
 ## Validare Input
 
 ```javascript
@@ -144,6 +150,7 @@ function myFunction() {
 </html> 
 ```
 
+---
 ## Banner a rotazione
 
 ```javascript
@@ -175,6 +182,7 @@ function myFunction() {
         'border = "0" > < /a>');
 </script>
 ```
+---
 ## Navigator Object
 
 ```javascript
@@ -193,6 +201,7 @@ function myFunction() {
 </body>
 </html>	
 ```
+---
 ## The Browser
 
 ```javascript

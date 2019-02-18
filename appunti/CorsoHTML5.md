@@ -35,15 +35,18 @@ il tipo di documento, nel caso dell’esempio: HTML5
 ``</body>``
 ``</html>``
 
+---
 ## Struttura di una pagina HTML
 
 ![struttura](img/strutturaHTML5.png)
 
+---
 ## Visualizzazione del documento: il browser
 * Lo scopo di un browser è di leggere documenti HTML e visualizzarli.
 * Il browser non visualizza i tag HTML, ma li utilizza per determinare come
 visualizzare il documento:
 
+---
 ## ``<! DOCTYPE>``
 La dichiarazione `<!DOCTYPE>` rappresenta il tipo di documento e aiuta i browser a interpretare,
 e quindi visualizzare correttamente le pagine Web.
@@ -51,6 +54,7 @@ Deve apparire solo una volta, nella parte superiore della pagina (prima di quals
 La dichiarazione `<!DOCTYPE>` per HTML5 è:
 `<!DOCTYPE html>`
 
+---
 ## ``<head>``
 L'elemento `<head>` è un contenitore per i metadati. I metadati HTML
 sono dati relativi al documento HTML. I metadati non vengono
@@ -66,6 +70,7 @@ L'elemento `<head>` è posizionato tra il tag `<html>` e il tag `<body>`:
 i metadati generalmente definiscono: il titolo del documento, il set di
 caratteri, gli stili, i collegamenti, gli script e altre meta informazioni.
 
+---
 ## Strumenti
 * Le pagine Web possono essere create e modificate utilizzando un semplice editor di testo
 come Notepad (PC) o TextEdit (Mac).
@@ -80,6 +85,7 @@ sostituzione molto potenti.
 * https://caniuse.com/
 * https://validator.w3.org/
 
+---
 ## Elementi HTML
 Un elemento HTML di solito consiste in un tag di inizio e un tag di
 fine, con il contenuto inserito all’interno:
@@ -90,6 +96,7 @@ L' elemento `<p>` definisce un paragrafo . Ha un tag iniziale `<p>` e
 un tag finale `</p>`.
 Il contenuto dell'elemento è: Il mio primo paragrafo.
 
+---
 ## Elementi vuoti
 Gli elementi HTML senza contenuto sono chiamati elementi vuoti.
 `<br>` è un elemento vuoto senza un tag di chiusura (`<br>` definisce un'interruzione
@@ -104,6 +111,7 @@ Gli elementi HTML possono essere nidificati (gli elementi possono contenere
 elementi). Tutti i documenti HTML sono costituiti da elementi HTML nidificati.
 Come vedremo ci sono alcune eccezioni.
 
+---
 ## Elementi Block
 Un elemento a livello di blocco inizia sempre su una nuova riga e occupa
 l'intera larghezza disponibile (si estende a sinistra e a destra fino ad
@@ -112,6 +120,7 @@ L'elemento `<h1>` è un elemento a livello di blocco.
 `<h1>`Ciao,`</h1>`
 `<h2>`mondo!`</h2>`
 
+---
 ## Elementi a livello di blocco in HTML:
 `<address>`
 `<article>`
@@ -145,6 +154,7 @@ L'elemento `<h1>` è un elemento a livello di blocco.
 `<video>`
 
 
+---
 ## Elementi Inline
 Gli elementi del tipo inline si dispongono uno di fianco all’altro e occupano solo la
 larghezza necessaria per mostrare il contenuto.
@@ -187,6 +197,7 @@ Elementi in linea in HTML:
 `<var>`
 La maggior parte dei browser visualizza l'elemento `<img>` come elemento inline-block.
 
+---
 ## Attributi HTML
 * Tutti gli elementi HTML possono avere attributi
 * Gli attributi forniscono informazioni aggiuntive su
@@ -195,6 +206,7 @@ un elemento
 * Gli attributi di solito vengono rappresentati da
 coppie nome / valore tipo: nome = "valore"
 
+---
 ## lang
 La lingua viene dichiarata con l'attributo lang dichiarato all’interno del tag `<html>`.
 Dichiarare una lingua è importante per le applicazioni di accessibilità (screen
@@ -211,14 +223,17 @@ Una pagina italiana avrà la dichiarazione seguente:
 `<html lang="it">`
 * https://www.w3schools.com/tags/ref_language_codes.asp
 
+---
 ## href
 I collegamenti HTML sono definiti con il tag `<a>`. L'indirizzo del link è specificato
 nell’attributo href (Hypertext REFerence):
 `<a href="https://www.miosito.it">`Questo è un il collegamento al mio sito`</a>`
+---
 ## src
 Le immagini HTML sono definite con il tag `<img>`.
 Il nome del file dell'immagine viene specificato nell’attributo src:
 `<img src="torino.jpg">`
+---
 ## width, height
 Le immagini in HTML hanno un set di attributi relativi alla dimensione che specificano la
 larghezza e l'altezza dell'immagine:
@@ -226,6 +241,7 @@ larghezza e l'altezza dell'immagine:
 I valori relativi alle dimensioni sono da intendersi in pixel: larghezza = "800" significa
 larghezza 800 px.
 
+---
 ## alt
 L' attributo alt specifica un testo alternativo da utilizzare, quando un'immagine non può essere
 visualizzata.
@@ -233,12 +249,14 @@ Il valore dell'attributo può essere letto dagli screen reader. In questo modo, 
 la pagina Web, ad esempio una persona ipovedente, può capire cosa rappresenta l'elemento.
 `<img src="torino.jpg" alt="foto panoramica della città di Torino che ritrae piazza
 Vittorio Veneto vista dal monte dei Cappuccini">`
+---
 ## title
 title viene aggiunto ad un elemento. Il valore dell'attributo verrà visualizzato come suggerimento
 (testo in fumetto) quando si passa il mouse sopra l’elemento:
 `<p title="Suggerimento...">`Il mio paragrafo`</p>`
 `<a href="https://www.miosito.it" title="Visita il mio sito">`Questo è un il collegamento al
 mio sito`</a>`
+---
 ## style
 L' attributo style è usato per specificare lo stile di un elemento, come il colore, il carattere, la
 dimensione, l’allineamento, ecc.
@@ -254,6 +272,7 @@ L' attributo href può essere scritto senza virgolette:
 correttamente l'attributo titolo, perché contiene uno spazio:
 `<p title=informazioni sul corso>`
 
+---
 ## Virgolette singole o doppie?
 Le doppie virgolette attorno ai valori degli attributi sono le
 più comuni in HTML, ma è possibile utilizzare anche
@@ -264,6 +283,7 @@ doppie virgolette, è necessario utilizzare le virgolette singole:
 Oppure:
 `<p title="Camillo Benso, 'Conte di Cavour' ">`
 
+---
 ## Commenti HTML
 I tag di commento vengono utilizzati per inserire commenti nel codice sorgente HTML.
 Puoi aggiungere commenti al tuo sorgente HTML usando la seguente sintassi:
@@ -280,6 +300,7 @@ HTML, una alla volta, per cercare errori:
 `<img src="torino.jpg" alt=“Foto panoramica di Torino">`
 -->`
 
+---
 ## Elementi HTML
 Heading (intestazioni)
 I titoli sono definiti con i tag da `<h1>` a `<h6>`.
@@ -292,6 +313,7 @@ importante.
 `<h5>`Titolo 5`</h5>`
 `<h6>`Titolo 6`</h6>`
 
+---
 ## Le intestazioni sono importanti
 I motori di ricerca utilizzano i titoli per indicizzare la struttura e il contenuto delle tue
 pagine web.
@@ -313,6 +335,7 @@ tuo codice HTML.
 Il browser rimuoverà spazi aggiuntivi e linee aggiuntive quando viene visualizzata la
 pagina:
 
+---
 ## ``<div>``
 L'elemento `<div>` (HTML Content Division) è spesso usato come contenitore per altri elementi
 HTML.
@@ -324,6 +347,7 @@ Se utilizzato insieme ai CSS, l'elemento `<div>` può essere utilizzato per crea
 milioni di abitanti.`</p>`
 `</div>`
 
+---
 ## ``<span>``
 L'elemento `<span>` non ha attributi obbligatori, ma style, classe e id vengono
 utilizzati frequentemente.

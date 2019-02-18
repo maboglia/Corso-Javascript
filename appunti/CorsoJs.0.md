@@ -2,6 +2,7 @@
 <!-- TOC -->
 
 - [Corso Javascript](#corso-javascript)
+  - [](#)
   - [JavaScript è un linguaggio di programmazione](#javascript-%C3%A8-un-linguaggio-di-programmazione)
   - [ruolo di js nel web design](#ruolo-di-js-nel-web-design)
   - [Risorse disponibili online](#risorse-disponibili-online)
@@ -50,6 +51,7 @@
 - [Ricapitolando](#ricapitolando)
 
 <!-- /TOC -->
+---
 ## JavaScript è un linguaggio di programmazione 
 
 utilizzato comunemente come parte dell'esperienza di navigazione, permette di creare interazioni con l'utente, 
@@ -57,12 +59,14 @@ controllare la navigazione, gestire la comunicazione asincrona, e modificare il 
 
 ___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 
+---
 ## ruolo di js nel web design
 
 * Html: contenuto
 * Css: presentazione
 * Js: comportamento
 
+---
 ## Risorse disponibili online
 
 * [Javascript reference](https://developer.mozilla.org/it/docs/Web/JavaScript) 
@@ -75,6 +79,7 @@ ___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 * [it.html.net tutorials - html - css](http://it.html.net/tutorials/)
 * [web-link.it/web/html5](https://www.web-link.it/web/html5)
 
+---
 ## Hello, World
 
 Hello, World! nel browser
@@ -90,11 +95,13 @@ Hello, World! nel terminale
 console.log('Hello, World!')
 ```
 
+---
 ## Esecuzione del codice
 * Interpretazione in una pagina web 
 * Interpretazione in  una console del browser 
 * Interpretazione in terminale (node.js) 
 
+---
 ## Javascript incorporato in una pagina html
 
 ```html
@@ -109,6 +116,7 @@ console.log('Hello, World!')
 </html>
 ```
 
+---
 ## Javascript collegato ad una pagina html
 ```html
 <!doctype html>
@@ -124,6 +132,7 @@ console.log('Hello, World!')
 // file esempio.js
 alert('Hello world')
 ```
+---
 ## Come mostrare a video i dati
 * window
     * [window.alert()]()
@@ -138,8 +147,10 @@ alert('Hello world')
 
 # Strutture del linguaggio 
 
+---
 ## JavaScript è __CASE SENSITIVE__
 
+---
 ## Terminare le istruzioni con punto e virgola (;)
 * E' possibile l'uso del carattere (;) per la separazione di frasi, 
     si può omettere se queste si trovano su linee differenti (non fatelo!)
@@ -147,11 +158,13 @@ alert('Hello world')
     la istruzione successiva non può interpretarsi come continuazione della precedente.
 
 
+---
 ## Convenzioni di naming: 
 * CamelCase, 
 * camelCase, 
 * snake_case
 
+---
 ## Identificatori
 Gli identificatori in javascript cominciano con 
 * una lettera,
@@ -164,6 +177,7 @@ seguito da
 * underline,
 * e caratteri di dollaro
 
+---
 ### Per esempio
 
 ```javascript
@@ -173,6 +187,7 @@ var $indice;
 var $__$__$;
 ```
 
+---
 ## Parole chiave riservate
 -|-|-|-
 ---|---|---|---
@@ -193,31 +208,39 @@ do | import | short | while
 double | in | static | with
 
 
+---
 #### instanceof
 Verifica se un oggetto è instanza di qualche prototipo.
 
+---
 #### typeof
 Ritorna una stringa indicante il tipo di dato che ha una variabile.
 [esempio](../esempi/01_basic_foundations/010_confirm.html)
 
+---
 #### delete
 Operatore che rimuove proprietà di un oggetto.
 
+---
 #### use strict
 Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
 
+---
 #### const
 Parola chiave per la dichiarazione di una costante.
 [esempio](../esempi/01_basic_foundations/008_const.html)
 
+---
 #### var, let
 Parola chiave per la dichiarazione di una variabile.
 
+---
 ## Variabili
 * identificatore e visibilità (scope)
 * dichiarazione e inizializzazione di variabili
 * [esempi](../esempi/01_basic_foundations/001_var.html)
 
+---
 ## operatori
 * [precedenza degli operatori](../esempi/01_basic_foundations/011_precedenzaOperatori.html)
 * [operatori di assegnamento](../esempi/01_basic_foundations/013_assignment.html)
@@ -227,6 +250,7 @@ Parola chiave per la dichiarazione di una variabile.
 * [operatori logici OR](../esempi/01_basic_foundations/019_ORLogico.html)
 * [operatori su stringhe](../esempi/03_arrays_strings/017_comparaStringhe.html)
 
+---
 ## Commenti
 Esistono due tipi di commenti:
 ```javascript
@@ -243,6 +267,7 @@ var a = 5; //assegno la variabile
 ```
 
 
+---
 ## Literals - Letterali (valori letterali per i tipi di dato)
 tipo                |    esempio
 ------------ | -------------
@@ -258,11 +283,13 @@ Valore undefined    |    undefined
 
 # Strutture del linguaggio
 
+---
 ## Costrutti di controllo del flusso
 * [Strutture condizionali](./Lesson1_05_Control_flow.md)
     * [esempio if](../esempi/01_basic_foundations/018_ANDLogico.html)
     * [esempio switch](../esempi/02_control_flow/02_switch.js)
 
+---
 ## Costrutti di iterazione (cicli)
 * [For Loop](./Lesson1_05_Control_flow.md) 
     * [esempi](../esempi/02_control_flow/02_for_loop.js)
@@ -272,6 +299,7 @@ Valore undefined    |    undefined
 
 # Tipi di dato
 
+---
 ## Boolean
 * Boolean è la rappresentazione di tipo oggetto di una variabile logica.
 * Booleans
@@ -281,6 +309,7 @@ Valore undefined    |    undefined
     * Boolean() verifica se un'espressione è booleana
 
 
+---
 ### Per esempio
 
 ```javascript
@@ -299,6 +328,7 @@ NaN
 ''
 ```
 
+---
 ### Altri esempi
 
 * [esempio boolean](../esempi/01_basic_foundations/012_boolean.html)
@@ -307,9 +337,11 @@ NaN
 * [esempio OR Logico](../esempi/01_basic_foundations/020_ORLogico.html)
 
 
+---
 ## Number
 Number è la rappresentazione di tipo oggetto di un tipo numerico.
     
+---
 ### JS numbers
 
 * i numeri in JS sono SEMPRE float a 64-bit
@@ -326,6 +358,7 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
     * toPrecision()
     * valueOf()
 
+---
 ### Per esempio:
 
 ```javascript
@@ -338,6 +371,7 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 6.023e23    // numero decimale in notazione esponenziale.
 ```
 
+---
 ### Math Object
 
 Per lavorare con i Number, puoi usare Math che è l'oggetto che concentra molte constanti e funzioni matematiche.
@@ -346,12 +380,14 @@ Per lavorare con i Number, puoi usare Math che è l'oggetto che concentra molte 
 
 ---
 
+---
 ## String
 
 String è la rappresentazione di tipo oggetto di una stringa.
 
 * [String Object](./Lesson1_06_StringObject.md)
 
+---
 ## valore nullo e valore undefined
 
 Rappresentano l'assenza di un valore in una variabile o nel ritorno di una function.
@@ -361,6 +397,7 @@ var a=null
 var b=undefined
 ```
 
+---
 ## Funzioni
 
 Le funzioni se dichiarano con la parola riservata funzione.
@@ -373,6 +410,7 @@ function f(x,y){
 
 * [Appunti sulle Funzioni](./Lesson1_07_Functions.md) 
 
+---
 ## Date Object 
 
 * Date è l'oggetto utilizzato per la rappresentazione di date.
@@ -383,21 +421,25 @@ function f(x,y){
 * metodi get e metodi set
 
 
+---
 ### codice esempio
 
 [es data](../esempi/01_date.js)
 
 
+---
 ## Array
 
 * [JS array](Lesson1_08_Array.md)
 
 ---
 
+---
 ## Objects
 
 * [JS Objects](./Lesson1_09_Object.md)
 
+---
 ## Timers
 
 Sono funzioni invocate dopo un tempo determinato.
@@ -409,6 +451,7 @@ funzione | significato
 `clearTimeout()` | Resetta i timer
 `clearInterval()` | Resetta i timer
 
+---
 ### Per esempio
 
 ```javascript

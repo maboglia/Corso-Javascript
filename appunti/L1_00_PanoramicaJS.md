@@ -1,5 +1,6 @@
 ## Inizia a programmare
 
+---
 ### 1. Length (String)
 Per conoscere la lunghezza di una stringa, scrivine il nome tra apici. Quindi aggiungi un punto e la keyword length:
 
@@ -7,6 +8,7 @@ Per conoscere la lunghezza di una stringa, scrivine il nome tra apici. Quindi ag
 "yourName".length;
 ```
 
+---
 ### 2. Operazioni matematiche di base 
 
 **Less Numbers**
@@ -19,6 +21,7 @@ Per conoscere la lunghezza di una stringa, scrivine il nome tra apici. Quindi ag
 3*5/5;
 ```
 
+---
 ### 3. Commenti 
 ```javascript
 // This is a comment that the computer will ignore. 
@@ -27,6 +30,7 @@ Per conoscere la lunghezza di una stringa, scrivine il nome tra apici. Quindi ag
 
 The `//` sign is for comments. A comment is a line of text that JavaScript won't try to run as code. It's just for humans to read.
 
+---
 ### 4. Confirm 
 ```javascript
 confirm("I feel awesome!");
@@ -35,6 +39,7 @@ confirm("I am ready to go.");
 
 These boxes can be used on websites to **confirm** things with users. You've probably seen them pop up when you try to delete important things or leave a website with unsaved changes.
 
+---
 ### 5. Prompt
 ```javascript
 prompt("What is your name?");
@@ -43,6 +48,7 @@ prompt("What is Ubuntu?");
 
 The program need some input to start an actions.You can do this by using a **prompt**.
 
+---
 ### 6. Console.log 
 You may have noticed that the interpreter doesn't print out every single thing it does. So if we want to know what it's thinking, we sometimes have to ask it to speak to us.
 
@@ -57,16 +63,19 @@ console.log("Hello");
 
 
 ## Data Type 
+---
 ### 1. Numbers 
 Are quantities, just like you're used to. You can do math with them.
 
 To make a numero in your code, just write a number as numerals without quotes: `42`, `190.12334`.
 
+---
 ### 2. Strings
 Are sequences of characters, like the letters `a-z`, spaces, and even numbers. These are all strings: `"Ryan"`, `"4"` and `"What is your name?"` Strings are extremely useful as labels, names, and content for your programs.
 
 To write a string, surround words with quotes: `"What is your name?"`
 
+---
 ### 3. Boolean
 Is either `true` or `false`.
 
@@ -76,6 +85,7 @@ For example, comparing two numbers returns a true or false result:
 2) `5 < 4` is `false`
 
 ## Dive-in a little (Decision Making)
+---
 ### 1. Comparison Operator 
 List of comparison operators :
 
@@ -90,6 +100,7 @@ List of comparison operators :
 console.log(15 > 4); // 15 > 4 evaluates to true, so true is printed.
 ```
 
+---
 ### 2. If statement
 
 Say we want to write a program that asks whether your name is longer than 7 letters. If the answer is yes, we can respond with "You have a long name!" We can do this with an `if statement`: 
@@ -102,6 +113,7 @@ if( "myName".length >= 7 ) {
 
 An `if` statement is made up of the `if` keyword, a condition like we've seen before, and a pair of curly braces `{ }`. If the answer to the condition is yes, the code inside the curly braces will run.
 
+---
 ### 3. If-Else statement 
 
 In addition to doing something when the condition is true, we can do something else if the condition is `false`. For example, if your name is shorter than 7 letters, we can respond with "You have a short name!" We can do this using an `if / else` statement:
@@ -137,6 +149,7 @@ if (12 / 4 === "Ari".length) {
 }
 ```
 
+---
 ### 1. Maths 
 Just like we learn maths in school. The operator has orders:  
 
@@ -167,6 +180,7 @@ Output:
  The answer makes sense!
 ```
 
+---
 ### 1. Modulo (%)
 Like in maths, Modulo is the **remainder** of a division.  
 
@@ -186,6 +200,7 @@ if(2%2===0 ) {
 }
 ```
 
+---
 ### 2. Substrings 
 Sometimes you would like not to display the whole strings just for like preview. Example Gmail inbox. 
 
@@ -225,6 +240,7 @@ b. `var myAge = 30;`
 c. `var isOdd = true;`
 
 
+---
 ### 1. Data types
 
 1. strings (e.g. `"dogs go woof!"`)
@@ -234,6 +250,7 @@ c. `var isOdd = true;`
 
 We store data values in variables. We can bring back the values of these variables by typing the variable name.
 
+---
 ### 2. Manipulating numbers & strings
 
 1. comparisons (e.g. `>`, `<=`)
@@ -241,5 +258,6 @@ We store data values in variables. We can bring back the values of these variabl
 3. string length (e.g. `"Emily".length;`)
 4. substrings (e.g. `"hi".substring(0, 1);`)
 
+---
 ### 3. console.log( ) 
 Prints into the console whatever we put in the parentheses.
