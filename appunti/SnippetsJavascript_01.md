@@ -22,7 +22,6 @@
 </html>
 ```
 
----
 
 ---
 ## Chiedere informazioni all'utente
@@ -58,8 +57,6 @@
 ```javascript
 document.getElementById("name").innerHTML = "Piacere di conoscerti, " + name;
 ```
-
----
 
 ---
 ## Modificare la pagina
