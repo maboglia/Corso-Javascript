@@ -2,6 +2,7 @@
 ___alistapart.com___
 
 ---
+
 ## Regole dei fogli di stile
 come l'HTML anche un foglio di stile è un  documento di testo composto da
 
@@ -16,6 +17,7 @@ h1 {color: #ffcc00;}
 ```
 
 ---
+
 ## Le pseudo-classi
 non sono riferite ad un elemento come le classi e gli id ma applicano delle proprietà ai diversi stati di uno stesso elemento.
 Per esempio un comunissimo link? All'inizio ha un colore, poi passandoci sopra con il cursore questo colore cambia
@@ -29,6 +31,7 @@ Di seguito le pseudo-classi supportate da tutti i browser:
 
 
 ---
+
 ## esempio pseudo-classe
 
 ```html
@@ -48,6 +51,7 @@ color: #000000;
 
 
 ---
+
 ## Pseudo-elementi
 come per le pseudo-classi non sono riferiti ad un elemento
 in particolare ma ne selezionano una sotto parte.
@@ -61,6 +65,7 @@ a tutti gli elementi di un documento html.
 
 
 ---
+
 ## Altre proprietà
 
 * text-align (left, right, center, justify)
@@ -79,6 +84,7 @@ a tutti gli elementi di un documento html.
 
 
 ---
+
 ## Le proprietà di background
 
 * background-image (url, none)
@@ -104,6 +110,7 @@ background: url(img/bg.png) no-repeat #CCCCCC;
 
 
 ---
+
 ## I divisori
 sono gli elementi che utilizzeremo per strutturare la nostra
 pagina web e sono caratterizzati dal tag <div> e ci aiuteranno a
@@ -111,6 +118,7 @@ sezionare la nostra pagina e a raggruppare più elementi.
 
 
 ---
+
 ## Le proprietà
 
 * width (larghezza relativa allo spazio per i contenuti)
@@ -127,6 +135,7 @@ sezionare la nostra pagina e a raggruppare più elementi.
 
 
 ---
+
 ## Il visual formatting model
 insieme al box model è uno degli elementi fondamentali per la realizzazione di impaginazioni complesse.
 Il visual formatting model tratta essenzialmente il comportamento di un box in relazione agli altri presenti nella stessa pagina e ne
@@ -134,6 +143,7 @@ definisce il posizionamento.
 
 
 ---
+
 ## Position
 è la proprietà fondamentale per la gestione della posizione degli elementi sulla pagina. Si applica a tutti gli elementi e non è
 ereditaria.
@@ -147,6 +157,7 @@ I valori di position sono:
 
 
 ---
+
 ## Il flusso e la posizione relativa
 ogni elemento ha una posizione naturale nel flusso della pagina,
 lo spostamento degli elementi in relazione alla posizione originale
@@ -170,6 +181,7 @@ top: 10px;
 
 
 ---
+
 ## Il posizionamento assoluto
 con la dichiarazione position:absolute è possibile posizionare il box in un
 punto esatto della pagina indipendentemente dal flusso e non ha alcuna
@@ -200,6 +212,7 @@ width:500px;
 
 
 ---
+
 ## Posizionamento fisso
 
 con la dichiarazione position:fixed il box dell'elemento viene, come
@@ -224,6 +237,7 @@ height: 200px;
 
 
 ---
+
 ## Controllare Il flusso
 La proprietà clear impedisce ad un elemento di fluire accanto ad un
 altro. Si applica solo agli elementi blocco e non è ereditata.
@@ -241,6 +255,7 @@ Clear risolve questo problema.
 
 
 ---
+
 ## Z-index
 quando si usa il posizionamento assoluto o relativo è possibile che
 gli elementi si sovrappongano. Per decidere quale elemento deve
@@ -271,6 +286,7 @@ z-index: 1;
 
 
 ---
+
 ## Overflow
 quando il contenuto del nostro riquadro è più grande del riquadro
 stesso (che sia un testo o un'immagine) può essere controllato grazie
@@ -293,6 +309,7 @@ overflow: auto;
 
 
 ---
+
 ## Display
 conosciamo la differenza tra gli elementi block e inline.
 la proprietà display è molto utile in quanto permette di variare la
@@ -307,6 +324,7 @@ elenco) o di cambiare la sua natura (block level, inline).
 
 
 ---
+
 ## Visibility
 da non confondere con il display:none. La proprietà visibility
 permette di nascondere un elemento della pagina il quale però
@@ -322,11 +340,13 @@ spazio vuoto.
 
 
 ---
+
 ## Il float
 è la proprietà che utilizzerai maggiormente anche se all'inizio la sua
 gestione potrà sembrarti problematica.
 
 ---
+
 ### La w3c definisce il float come segue:
 "...un box che viene spostato a sinistra o a destra rispetto la
 riga corrente. La caratteristica più interessante di un float è che
@@ -343,6 +363,7 @@ La prorietà float non è ereditaria ed ha tre valori:
 
 
 ---
+
 ## Collassare i margini
 l'espressione collassare i margini [collapsing margins] significa che
 margini adiacenti (non li separa nessuna area di bordo o padding) di due
@@ -354,6 +375,7 @@ margini verticali di più paragrafi in successione. Un approfondimento:
 
 
 ---
+
 ## Caratteristiche
 I blocchi flottanti consecutivi si dispongono uno di fianco
 all'altro. Ad esempio se più box hanno la proprietà float:left
@@ -375,6 +397,7 @@ farai molta fatica a strutturare il tuo layout.
 
 
 ---
+
 ## Altre caratteristiche
 Se ad un elemento viene assegnata la proprietà float, questo
 verrà tolto dal normale flusso e sarà posizionato nel punto
@@ -392,6 +415,7 @@ http://alistapart.com/article/css-floats-101
 
 
 ---
+
 ## comporre un layout
 
 In breve
@@ -408,9 +432,11 @@ dallo stesso lato anche se opposti.
 
 
 ---
+
 ## formattare i moduli
 
 ---
+
 ### I moduli
 Le parti fondamentali di un modulo sono due:
 l'insieme di campi, etichette e pulsanti che l'utente
@@ -422,6 +448,7 @@ elemento.
 
 
 ---
+
 ## Etichette `<label>`
 
 * Casella di testo `<input type="text">`
@@ -432,6 +459,7 @@ elemento.
 
 
 ---
+
 ## Per iniziare
 un modulo deve essere racchiuso all'interno dei tag `<form>`, elemento
 block level che necessita di alcuni attributi per poter funzionare:
@@ -446,6 +474,7 @@ riferimento nella pagina web.
 
 
 ---
+
 ## Organizzazione dei contenuti
 Qualora volessimo ragruppare in macro aree le
 informazioni di un modulo è possibile utilizzare i tag
@@ -469,6 +498,7 @@ Email: <input type="text" size="30" /><br />
 
 
 ---
+
 ## Il tag `<input>`
 Il tag più utilizzato per creare i campi di un form è il tag
 `<input>` che non richiede chiusura.
@@ -498,6 +528,7 @@ Password: <input type="password" name="pass" maxlength="10" />
 
 
 ---
+
 ## Pulsanti d'opzione e pulsanti di controllo
 sono degli elementi molto utili all'interno di un form e permettono
 all'utente di effettuare delle scelte.
@@ -531,6 +562,7 @@ Large: <input type="radio" name="scegli" value="S"/>
 
 
 ---
+
 ## Etichette
 Accanto ad ogni elemento di un form possiamo inserire un
 semplice testo indentificativo. Ad esempio accanto ad un `<input>`
@@ -552,6 +584,7 @@ stesso valore).
 
 
 ---
+
 ## Elenchi a discesa
 sono la migliore soluzione per offrire agli utenti una scelta tra più opzioni
 predefinite. Il tag per questo tipo di elemento è `<select>` dentro il quale
@@ -598,6 +631,7 @@ value: consente la selezione multipla attraverso il tasto CTRL o CMD
 
 ---
 
+
 ## Area di testo
 il tag `<textarea>` permette di creare degli spazi all'interno di un
 modulo in cui l'utente può scrivere del testo. A differenza delle normali
@@ -612,16 +646,9 @@ A ogni textarea possono essere associati i seguenti attributi:
 
 è preferibile formattare la textarea tramite CSS per definire altezza e larghezza
 
-```html
-<form method="post" action="showform.php">
-<label for="messaggio">Lascia un messaggio</label>
-<textarea name="testo" class="nomeclasse" id="messaggio">
-Inserire qui il testo
-</textarea>
-</form>
-```
 
 ---
+
 ## Altri elementi di un form
 
 * `<input type="file">` permette di creare una casella per il carimento di file.
@@ -632,6 +659,7 @@ Inserire qui il testo
 * `<button type="submit">` bottone per l'invio del modulo con immagine.
 
 ---
+
 
 ## Altri attributi
 
