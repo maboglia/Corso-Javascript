@@ -422,13 +422,13 @@ elemento.
 
 
 ---
-## Etichette <label>
+## Etichette `<label>`
 
-* Casella di testo <input type="text">
-* Elenco a discesa <select><option>
-* Casella di controllo <input type="checkbox">
-* Pulsante invio <input type="submit">
-* Area di testo <textarea>
+* Casella di testo `<input type="text">`
+* Elenco a discesa `<select><option>`
+* Casella di controllo `<input type="checkbox">`
+* Pulsante invio `<input type="submit">`
+* Area di testo `<textarea>`
 
 
 ---
@@ -607,7 +607,7 @@ A ogni textarea possono essere associati i seguenti attributi:
 * name: identifica i dati inviati allo script
 * rows: definire il numero di righe
 * cols: definire la larghezza
-* rows e cols non sono obbligatori, 
+* rows e cols non sono obbligatori,
 
 è preferibile formattare la textarea tramite CSS per definire altezza e larghezza
 
