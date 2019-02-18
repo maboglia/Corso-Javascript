@@ -614,15 +614,6 @@ A ogni textarea possono essere associati i seguenti attributi:
 ```html
 <form method="post" action="showform.php">
 <label for="messaggio">Lascia un messaggio</label>
-<textarea name="testo" rows="5" cols="40" id="messaggio">
-Inserire qui il testo
-</textarea>
-</form>
-```
-
-```html
-<form method="post" action="showform.php">
-<label for="messaggio">Lascia un messaggio</label>
 <textarea name="testo" class="nomeclasse" id="messaggio">
 Inserire qui il testo
 </textarea>
