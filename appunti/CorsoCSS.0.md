@@ -601,12 +601,15 @@ value: consente la selezione multipla attraverso il tasto CTRL o CMD
 il tag `<textarea>` permette di creare degli spazi all'interno di un
 modulo in cui l'utente può scrivere del testo. A differenza delle normali
 aree di testo possono essere più grandi e quindi contenere più righe.
+
 A ogni textarea possono essere associati i seguenti attributi:
+
 * name: identifica i dati inviati allo script
 * rows: definire il numero di righe
 * cols: definire la larghezza
-rows e cols non sono obbligatori, è preferibile formattare la textarea
-tramite CSS per definire altezza e larghezza
+* rows e cols non sono obbligatori, 
+
+è preferibile formattare la textarea tramite CSS per definire altezza e larghezza
 
 ```html
 <form method="post" action="showform.php">
