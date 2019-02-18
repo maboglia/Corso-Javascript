@@ -426,7 +426,7 @@ elemento.
 
 ---
 ## Per iniziare
-un modulo deve essere racchiuso all'interno dei tag <form>, elemento
+un modulo deve essere racchiuso all'interno dei tag `<form>`, elemento
 block level che necessita di alcuni attributi per poter funzionare:
 action per indirizzare il modulo al server, all' URL o all'indirizzo di
 posta elettronica.
@@ -442,7 +442,7 @@ riferimento nella pagina web.
 ## Organizzazione dei contenuti
 Qualora volessimo ragruppare in macro aree le
 informazioni di un modulo è possibile utilizzare i tag
-<fieldset> e <legend>.
+`<fieldset>` e` <legend>`.
 
 
 ```html
@@ -462,10 +462,10 @@ Email: <input type="text" size="30" /><br />
 
 
 ---
-## Il tag <input>
+## Il tag `<input>`
 Il tag più utilizzato per creare i campi di un form è il tag
-<input> che non richiede chiusura.
-Ad ogni <input> deve essere associato ad un attributo che
+`<input>` che non richiede chiusura.
+Ad ogni `<input>` deve essere associato ad un attributo che
 ne determini la tipologia, il nome (ad esempio per interagire
 con JavaScript) e il valore (il testo visualizzato).
 
@@ -526,9 +526,9 @@ Large: <input type="radio" name="scegli" value="S"/>
 ---
 ## Etichette
 Accanto ad ogni elemento di un form possiamo inserire un
-semplice testo indentificativo. Ad esempio accanto ad un <input>
+semplice testo indentificativo. Ad esempio accanto ad un `<input>`
 per l'inserimento del nome potremmo scrivere semplicemente
-"Nome". XHTML ha un tag apposito ovvero <label>
+"Nome". XHTML ha un tag apposito ovvero `<label>`
 Un'attributo di label è "for" che consente di associare l'etichetta
 all'elemento "id" dell'elemento corrispondente (che avranno lo
 stesso valore).
@@ -591,7 +591,7 @@ value: consente la selezione multipla attraverso il tasto CTRL o CMD
 
 ---
 ## Area di testo
-il tag <textarea> permette di creare degli spazi all'interno di un
+il tag `<textarea>` permette di creare degli spazi all'interno di un
 modulo in cui l'utente può scrivere del testo. A differenza delle normali
 aree di testo possono essere più grandi e quindi contenere più righe.
 A ogni textarea possono essere associati i seguenti attributi:
