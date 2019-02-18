@@ -646,7 +646,6 @@ A ogni textarea possono essere associati i seguenti attributi:
 
 è preferibile formattare la textarea tramite CSS per definire altezza e larghezza
 
-
 ---
 
 ## Altri elementi di un form
