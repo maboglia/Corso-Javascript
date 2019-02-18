@@ -597,6 +597,7 @@ value: consente la selezione multipla attraverso il tasto CTRL o CMD
 
 
 ---
+
 ## Area di testo
 il tag `<textarea>` permette di creare degli spazi all'interno di un
 modulo in cui l'utente può scrivere del testo. A differenza delle normali
@@ -620,9 +621,9 @@ Inserire qui il testo
 </form>
 ```
 
-
 ---
 ## Altri elementi di un form
+
 * `<input type="file">` permette di creare una casella per il carimento di file.
 * `<input type="submit">` bottone per l'invio del modulo, fondamentale.
 * `<input type="reset">` bottone per ripristinare il modulo.
@@ -630,19 +631,21 @@ Inserire qui il testo
 * `<input type="image">` creare un'immagine attiva.
 * `<button type="submit">` bottone per l'invio del modulo con immagine.
 
-
 ---
-## Altri attributi
-* tabindex=n per ordinare la navigazione del form tramite il tasto tab.
-* accesskey=x per impostare le scorciatoie di tastiera.
-* disable="disabled" disabilita un elemento.
-* readonly="readonly" disabilita la scrittura.
 
-puoi personalizzare ogni caratteristica di questi
-elementi attraverso i CSS. Altezza, larghezza,
-bordo, sfondo, tipo di carattere, margini etc.
-Questo permetterà di rendere i tuoi form ancora più
-usabili e sicuramente più gradevoli.
-Puoi formattare direttamente il selettore o applicare
-una classe come faresti con qualunque altro tag.
+## Altri attributi
+
+* `tabindex=n` per ordinare la navigazione del form tramite il tasto tab.
+* `accesskey=x` per impostare le scorciatoie di tastiera.
+* `disable="disabled"` disabilita un elemento.
+* `readonly="readonly"` disabilita la scrittura.
+
+Puoi personalizzare ogni caratteristica di questi elementi attraverso i CSS. 
+
+Altezza, larghezza, bordo, sfondo, tipo di carattere, margini etc. 
+
+Questo permetterà di rendere i tuoi form ancora più usabili e sicuramente più gradevoli. 
+
+Puoi formattare direttamente il selettore o applicare una classe come faresti con qualunque altro tag.
+
 ---
