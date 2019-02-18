@@ -609,6 +609,7 @@ value: consente la selezione multipla attraverso il tasto CTRL o CMD
 </fieldset>
 </form>
 ```
+---
 
 ```html
 <form>
