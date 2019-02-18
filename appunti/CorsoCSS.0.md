@@ -159,6 +159,7 @@ La posizione viene determinata attraverso le seguenti proprietà:
 * right
 * left
 * bottom
+* 
 ```css
 div.relativo {
 position:relative;
@@ -173,14 +174,18 @@ top: 10px;
 con la dichiarazione position:absolute è possibile posizionare il box in un
 punto esatto della pagina indipendentemente dal flusso e non ha alcuna
 influenza sulla posizione degli altri blocchi.
+
 La posizione viene determinata attraverso le proprietà: top, right, bottom, left
 a partire da un determinato punto di riferimento iniziale.
+
 L'elemento assoluto è posizionato in rapporto al suo div "contenitore" posto
 che anche quest'ultimo abbia la sua proprietà position impostata con un
 valore diverso da "static".
+
 Diversamente l'elemento con proprietà position:absolute si posizionerà in
 base all'elemento radice HTML (normalemente, l'area visiva della finestra del
 browser) sempre in alto a sinistra.
+
 Un elemento posizionato in modo assoluto scrorre insieme al resto del
 documento.
 
@@ -196,10 +201,12 @@ width:500px;
 
 ---
 ## Posizionamento fisso
+
 con la dichiarazione position:fixed il box dell'elemento viene, come
 per absolute, sottratto al normale flusso del documento. La differenza
 sta nel fatto che per fixed il box contenitore è sempre il cosiddetto
 viewport (l'area interna del borwser).
+
 La caratteristica sostanziale è che un box in posizione fissa non
 scorre con il resto del documento rimanendo fisso nella posizione che
 abbiamo definito.
@@ -547,10 +554,10 @@ stesso valore).
 ---
 ## Elenchi a discesa
 sono la migliore soluzione per offrire agli utenti una scelta tra più opzioni
-predefinite. Il tag per questo tipo di elemento è <select> dentro il quale
-inseriremo i tag <option> per definire ogni singola scelta.
-Il tag <select> può presentare i seguenti attributi:
-Il tag <option> può presentare i seguenti attributi:
+predefinite. Il tag per questo tipo di elemento è `<select>` dentro il quale
+inseriremo i tag `<option>` per definire ogni singola scelta.
+Il tag `<select>` può presentare i seguenti attributi:
+Il tag `<option>` può presentare i seguenti attributi:
 name: identifica i dati inviati allo script
 multiple: consente la selezione multipla attraverso il tasto CTRL o CMD
 selected: per selezionare una voce di default
@@ -622,12 +629,12 @@ Inserire qui il testo
 
 ---
 ## Altri elementi di un form
-* <input type="file"> permette di creare una casella per il carimento di file.
-* <input type="submit"> bottone per l'invio del modulo, fondamentale.
-* <input type="reset"> bottone per ripristinare il modulo.
-* <input type="hidden"> per nascondere un campo input.
-* <input type="image"> creare un'immagine attiva.
-* <button type="submit"> bottone per l'invio del modulo con immagine.
+* `<input type="file">` permette di creare una casella per il carimento di file.
+* `<input type="submit">` bottone per l'invio del modulo, fondamentale.
+* `<input type="reset">` bottone per ripristinare il modulo.
+* `<input type="hidden">` per nascondere un campo input.
+* `<input type="image">` creare un'immagine attiva.
+* `<button type="submit">` bottone per l'invio del modulo con immagine.
 
 
 ---
