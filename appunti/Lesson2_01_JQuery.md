@@ -396,10 +396,10 @@ selettore|descrizione
 
 selettore|descrizione
 ---|---
-Questi selettori sono zero-based| utilizzano come indice iniziale lo 0
-```$(:first) $(:last)```| Permettono di selezionare il primo (:first) e ultimo (:last) elemento di un insieme il primo link della pagina
-```$("p.evidenziato:first")```| il primo paragrafo con class "evidenziato"
-```$("img[src*=logo]:last")```| ultima immagine che contenga nell’indirizzo la parola logo
+Questi selettori sono zero-based | utilizzano come indice iniziale lo 0
+`$(:first) $(:last)`| Permettono di selezionare il primo (:first) e ultimo (:last) elemento di un insieme il primo link della pagina
+`$("p.evidenziato:first")`| il primo paragrafo con class "evidenziato"
+`$("img[src*=logo]:last")`| ultima immagine che contenga nell’indirizzo la parola logo
 `$(:first-child) $(:last-child)`|Per selezionare il primo (:first-child) e l’ultimo (:last-child) elemento discendente
 `$("p.evidenziato:first-child") `|Per selezionare il primo elemento contenuto in ogni paragrafo con class "evidenziato" 
 `$("li:last-child")`|Per selezionare l'ultimo elemento contenuto in ogni li
@@ -459,9 +459,6 @@ $(selettore).parent([selettore]) padre dell'elemento selezionato
 $(selettore).parents([selettore])
 $(selettore).find(selettore)
 
----
-
-## Operazione sugli oggetti selezionati/creati
 
 Manipolazione del DOM|metodi disponibili
 ---|---
@@ -471,7 +468,7 @@ Modifica elementi|attr, addClass, removeClass, toggleClass, css, hide, show, tog
 
 ---
 
-## Operazione sugli oggetti selezionati/creati
+## Operazione sugli oggetti selezionati
 
 * Esempi Manipolazione del DOM
 
@@ -510,7 +507,7 @@ $(img).each(function(i){
 
 ---
 
-## Operazione sugli oggetti selezionati/creati
+## Operazione sugli oggetti creati
 
 * Concatenazione operazioni
 * E' possibile concatenare più azioni su uno stesso selettore,
@@ -582,7 +579,6 @@ select | Inviato ad un elemento quando viene selezionato del test all'interno di
 change | Evento inviato ad un elemento che ha cambiato il proprio valore. 
 submit | Evento inviato quando l'utente tenta di fare il submit di un form
 
-
 ---
 
 ## on
@@ -598,6 +594,7 @@ this.addClass('inserimento');
 this.removeClass('inserimento');
 })
 ```
+
 Per ogni casella di testo aggiunge la classe
 inserimento quando il focus è sull'oggetto e rimuove
 la stessa classe quando il focus non è più
@@ -664,7 +661,6 @@ evento.preventDefault();
 
 * ```.stopPropagation()``` Impedisce l'inoltro dell'evento ad ogni elemento padre
 * ```.stopImmediatePropagation()``` Impedisce l'inoltro dell'evento ad ogni altro elemento del DOM
-
 
 ---
 
