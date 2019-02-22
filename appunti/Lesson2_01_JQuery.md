@@ -60,14 +60,12 @@ $(document).ready(function() {
 1. Scarichiamo l'ultima versione di Jquery dal sito ```http://jquery.com/``` il file avrà un nome nella forma jquery-x.x.-min.js
 2. Per usarlo nelle nostre pagine web dobbiamo linkarlo attraverso il comando ```<script>...</script>``` nella sezione ```<head />``` della nostra pagina web
 
-```javascript
-<html>
-<head>
-<script src="percorso/al/file/jquery-x.x.js"></script>
-</head>
-<body> ... </body>
-</html>
-```
+    `<html>`
+    `<head>`
+    `<script src="percorso/al/file/jquery-x.x.js"></script>`
+    `</head>`
+    `<body> ... </body>`
+    `</html>`
 
 ---
 
