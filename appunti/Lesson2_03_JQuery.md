@@ -28,9 +28,7 @@ Selettori.
 ```
 
 
-
 ---
-
 ## FILTRI
 
 I filtri permettono di ottenere una maggiore precisione nella selezione degli elementi fatta con i selettori
@@ -57,9 +55,7 @@ I filtri permettono di ottenere una maggiore precisione nella selezione degli el
 	* :submit
 	* :disabled
 	* :checked
-
 ---
-
 ## FILTRI SU TABELLE
 
 Cognome | Provincia | #
@@ -76,13 +72,9 @@ YASMINE|RM|assente
 * ```$("tr:even").css ("background-color", "#eff3ea");```
 * ```$( "td:contains('assente')" ).css('color','red');```
 * ```$( "td[align=left]").css('text-align','center');```
-
 ---
-
 ## FILTRI SU MODULI
-
 ---
-
 ### checkbox
 
 ```javascript
@@ -104,9 +96,7 @@ function dammi_selezionati(){
 }
 </script>
 ```
-
 ---
-
 ### option
 
 ```javascript
@@ -132,18 +122,14 @@ function dammi_selezionato(){
 </script>
 ```
 
-
 ---
-
 ## manipolare il DOM
 
 	Alcune funzioni che permettono di manipolare il DOM, 
 	per un elenco completo vedi la documentazione su
 	http://api.jquery.com/category/manipulation/
 
-
 ---
-
 ## prepend()
 
 ```javascript
@@ -157,9 +143,7 @@ $("h1").prepend("<span>Primo</span>");
 
 ```
 
-
 ---
-
 ## before()
 
 ```javascript
@@ -172,9 +156,7 @@ $("h1").prepend("<span>Primo</span>");
 $("h1").before("<span>Primo</span>");
 
 ```
-
 ---
-
 ## append()
 
 ```javascript
@@ -186,9 +168,7 @@ $("h1").before("<span>Primo</span>");
 $("h1").append("<span>Primo</span>");
 
 ```
-
 ---
-
 ## after()
 
 ```javascript
@@ -200,9 +180,7 @@ $("h1").append("<span>Primo</span>");
 $("h1").after("<span>Primo</span>");
 
 ```
-
 ---
-
 ## html()
 
 ```javascript
@@ -214,9 +192,7 @@ $("h1").after("<span>Primo</span>");
 $("#blocco_interno").html("<strong>Ciao , sono un testo dinamico</strong>");
 
 ```
-
 ---
-
 ## addClass()
 
 ```javascript
@@ -228,9 +204,7 @@ $("#blocco_interno").html("<strong>Ciao , sono un testo dinamico</strong>");
 $("# blocco_interno).addClass("selezionata");
 
 ```
-
 ---
-
 ## removeClass()
 
 ```javascript
@@ -242,9 +216,7 @@ $("# blocco_interno).addClass("selezionata");
 
 $("#blocco_interno").removeClass("selezionata");
 ```
-
 ---
-
 ## html() + val()
 
 ```javascript
@@ -256,9 +228,7 @@ $("#blocco_interno").removeClass("selezionata");
 
 $("span"). html( $("#testo").val());
 ```
-
 ---
-
 ## val()
 
 ```javascript
@@ -268,9 +238,7 @@ $("span"). html( $("#testo").val());
 <span></span>
 
 $("#testo).val('Hello world') ;
-```
----
-
+---```
 ---
 
 ## .css()
@@ -302,9 +270,7 @@ $("#elemento").css({ "color": "red",
 });
 ```
 
-
 ---
-
 ## ATTRIBUTI SET & GET
 
 Con Jquery possiamo leggere e impostare i valori per ogni attributo del DOM, ad esempio:
@@ -312,9 +278,7 @@ Con Jquery possiamo leggere e impostare i valori per ogni attributo del DOM, ad 
 * leggere e scrivere dinamicamente dentro un elemento p
 * leggere e scrivere il contenuto di un input text 
 * leggere e scrivere una proprietà CSS 
-
 ---
-
 ---
 
 ## GETTERS
@@ -324,9 +288,7 @@ Con Jquery possiamo leggere e impostare i valori per ogni attributo del DOM, ad 
 * ```.val()```
 * ```.width()```
 
----
----
-
+------
 ## SETTERS
 
 * ```.html('<p>ciao</p>)```
@@ -334,9 +296,7 @@ Con Jquery possiamo leggere e impostare i valori per ogni attributo del DOM, ad 
 * ```.val('ciao')```
 * ```.width('120px')```
 
-
 ---
-
 ## GLI EVENTI
 
 Con jquery possiamo intercettare alcuni eventi e dar seguito ad una operazione quando questi si verificano
@@ -379,9 +339,7 @@ $('#box').slideUp()
 </body>
 <html>
 ```
-
 ---
-
 ## DOM ready() Eseguire una funzione solo al caricamento della pagina
 
 ```html
@@ -403,9 +361,7 @@ $(function() {
 </script>
 </head>
 ```
-
 ---
-
 ## eventi legati al mouse
 
 * mouseover
@@ -432,9 +388,7 @@ alert('Ciao, sono una finestra attivata da un evento');
 </html>
 ```
 
-
 ---
-
 ## eventi legati alla pressione di tasti
 
 * keydown
@@ -465,9 +419,7 @@ $('p').append(' '+evento.which+' '+String.fromCharCode(keycode));
 </body>
 </html>
 ```
-
 ---
-
 ## GLI EFFETTI
 
 jQuery ci permettere di realizzare dei semplici
@@ -481,9 +433,7 @@ Gli effetti li possiamo raggruppare in 4 tipologie
 * Slide up / Slide Down
 * Animate
 
-
 ---
-
 ### slideUp()
 
 ```javascript
@@ -504,9 +454,7 @@ $("#box").slideUp();
 </body>
 </html>
 ```
-
 ---
-
 ### slideDown()
 
 ```javascript
@@ -529,9 +477,7 @@ display:none;"></div>
 </html>
 ```
 
-
 ---
-
 ## Ottenere un effetto Apri/chiudi
 
 ```javascript
@@ -552,9 +498,7 @@ $("#box").slideToggle();
 </body>
 </html>
 ```
-
 ---
-
 ---
 
 ## Gestire la velocità dell'animazione
@@ -577,9 +521,7 @@ $("#box").slideToggle(3000);
 </body>
 </html>
 ```
-
 ---
-
 ---
 
 ## Eseguire un'azione al completamento dell'animazione
@@ -604,9 +546,7 @@ alert("Animazione completata");
 </body>
 </html>
 ```
-
 ---
-
 ---
 
 ## ANIMATE
@@ -630,17 +570,13 @@ function() { alert("Animazione completata"); }
 <div id="box" style="width: 100px; height: 100px; background-color: red;position:
 relative; "></div>
 ```
-
 ---
-
 ## Scroller di pagina
 
 Lo scroller di pagina viene usato per spostarsi velocemente tra i contenuti di una pagina web.
 Un tipico esempio sono le ancore "torna su" che troviamo alla fine di un testo che
 permettono con un click di tornare in cima allo stesso
-
 ---
-
 ## Scroller di pagina verticale
 
 ```javascript
@@ -659,9 +595,7 @@ $('html,body').animate({scrollTop: $("#"+id).offset().top},1000);
 Testo Primo Blocco 1
 </div>
 ```
-
 ---
-
 ## Scroller di pagina orizzontale
 
 ```javascript
@@ -680,9 +614,7 @@ $('html,body').animate({ scrollLeft: : $("#"+id).offset().left},1000);
 Testo Primo Blocco 1
 </div>
 ```
-
 ---
-
 ## SLIDER DI IMMAGINI
 
 ```javascript
@@ -703,15 +635,11 @@ fadeIn(700).end().appendTo($('#blocco'));}, 3000);
 <img src="gallery/3.jpg" />
 </div>
 ```
-
 ---
-
 ## VALIDARE i moduli
 
 Molto utili per guidare l'utente nella compilazione e segnalare degli errori.
-
 ---
-
 ## Implementiamo il form
 
 ```javascript
@@ -731,9 +659,7 @@ Molto utili per guidare l'utente nella compilazione e segnalare degli errori.
 <input type="button" id="invia" name="invia" value="invia" onclick="controlla()" />
 </li>
 ```
-
 ---
-
 ## FORM VALIDATION: LOGICA
 
 ```javascript
@@ -753,9 +679,7 @@ else
 </script>
 ```
 
-
 ---
-
 ## Bottone torna su
 
 ```javascript
@@ -769,9 +693,7 @@ return false;
 
 ```html
 <a class="top" href="#">Back to top</a>
-```
----
-
+---```
 ## Controlla see img sono caricate
 
 ```javascript
@@ -779,18 +701,14 @@ $('img').load(function() {
 console.log('image load successful');
 });
 ```
-
 ---
-
 ## Ripara immagini mancanti
 
 ```javascript
 $('img').error(function(){
 $(this).attr('src', 'img/broken.png');
 });
-```
----
-
+---```
 ## Toggle class su hover
 
 ```javascript
@@ -800,18 +718,14 @@ $(this).addClass('hover');
 $(this).removeClass('hover');
 }
 );
-``` 
----
-
+---``` 
 ## Disabilitare input fields
 
 ```javascript
 $('input[type="submit"]').attr("disabled", true);
 
 $('input[type="submit"]').removeAttr("disabled");
-```
----
-
+---```
 ## ferma il caricamento links
 
 ```javascript
@@ -819,9 +733,7 @@ $('a.no-link').click(function(e){
 e.preventDefault();
 });
 ```
-
 ---
-
 ## Toggle fade/slide
 
 ```javascript
@@ -835,10 +747,8 @@ $( “.btn" ).click(function() {
 $( “.element" ).slideToggle("slow");
 });
 ```
- 
----
-
-## Semplice accordion
+ ---
+ ## Semplice accordion
 
 ```javascript
 // Close all Panels
@@ -851,26 +761,20 @@ $('.content').not(next).slideUp('fast');
 return false;
 });
 ```
-
 ---
-
 ## Fai 2 div con la stessa altezza
 
 ```javascript
 $('.div').css('min-height', $('.main-div').height());
 ```
-
 ---
-
 ## ul zebra style
 
 ```javascript
 $('li:odd').css('background', '#E8E8E8');
 ```
 
-
 ---
-
 ## Invia data asando il metodo GET
 
 
@@ -882,9 +786,7 @@ jQuery( document ).ready(function() {
 	});
 });
 ```
-
 ---
-
 ## Invia data asando il metodo POST
 
 
@@ -895,9 +797,7 @@ jQuery("button").click(function(){
     });
 });
 ```
-
 ---
-
 ## Recevi testo da una webpage
 
 ```javascript
@@ -909,9 +809,7 @@ jQuery( document ).ready(function() {
 });
 </script>
 ```
-
 ---
-
 ## Prendi tutti i valori da un form e inviali ad una pagina web
 
 ```javascript
@@ -925,9 +823,7 @@ jQuery( document ).ready(function() {
 	});
 });
 ```
-
 ---
-
 ## Ricevi JSON data
 
 ```javascript
@@ -942,9 +838,7 @@ jQuery.getJSON( "http://yoursite.com/test.json", function( data ) {
         jQuery( "#container" ).html(obj.name + ", " + obj.age);
 });
 ```
-
 ---
-
 ## Come mostrare tutti i sotto elementi in jQuery
 
 ```javascript
@@ -960,9 +854,7 @@ $("#link3").click(function(){
 });
 //This will show all child elements, on click.
 ```
-
 ---
-
 ## jQuery.unique()
 
 ```javascript
@@ -978,9 +870,7 @@ $( "div:eq(2)" ).text( "jQuery is very fun to" + divs.length + " learn.." )
 // Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on
 // arrays of DOM elements, not strings or numbers.
 ```
-
 ---
-
 ## jQuery Dimensions
 
 
@@ -1000,9 +890,7 @@ $( "div:eq(2)" ).text( "jQuery is very fun to" + divs.length + " learn.." )
 });
 //Method returns the width and height of an element.
 ```
-
 ---
-
 ## jQuery.each()
 
 ```javascript
@@ -1015,9 +903,7 @@ $( "div:eq(2)" ).text( "jQuery is very fun to" + divs.length + " learn.." )
 });
 //jQuery's each() function is used to loop through each element of the target jQuery object.
 ```
-
 ---
-
 ## Fade out page 
 
 
@@ -1034,9 +920,7 @@ $('body').fadeIn(500);
 
 //Whole page is faded out when you are clicking on links
 ```
-
 ---
-
 ## Submit form 
 
 
@@ -1051,9 +935,7 @@ $('input[type="checkbox"]').change(function(){
 
 //This will delay before submitting form that is reset each time another checkbox is clicked.
 ```
-
 ---
-
 ## jQuery getJSON() Method
 
 
@@ -1068,9 +950,7 @@ $('input[type="checkbox"]').change(function(){
 
 //Get JSON data using an AJAX request, and output the result.
 ```
-
 ---
-
 ## Aggiungere icone ai link con jQuery
 
 
@@ -1084,9 +964,7 @@ $('input[type="checkbox"]').change(function(){
 
 //This is very useful when you want add icon to href.
 ```
-
 ---
-
 ## Assegnare la classe "active" alla navbar con jQuery
 
 
