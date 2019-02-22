@@ -88,7 +88,7 @@ $("p")
 
 ## Selezionare gli elementi
 
-La principale caratteristica della funzione jQuery() (abbreviata in $() ) è quella di selezionare elementi HTML per modificarli: basta passare un parametro stringa (tra apici doppi `["]` o singoli `[']` ) come negli esempi che seguono:
+La principale caratteristica della funzione jQuery() (abbreviata in `$()` ) è quella di selezionare elementi HTML per modificarli: basta passare un parametro stringa (tra apici doppi  o singoli ) come negli esempi che seguono:
 
 ```javascript
 $("div");
