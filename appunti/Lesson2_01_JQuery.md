@@ -168,7 +168,6 @@ $("ul").css("border", "solid 1px #ccc");
 ## Aggiungere e rimuovere contenuto e inserire elementi
 
 
----
 
 ### Ottenere l'elemento html
 
@@ -262,6 +261,8 @@ $("#mioElemento").toggle(1000, function() {
 }
 ```
 
+---
+
 ```javascript
     $("#mioElemento").fadeOut("slow", function() {
         //fai qualcosa quando termina l'effetto
@@ -278,6 +279,8 @@ $("#mioElemento").toggle(1000, function() {
         //fai qualcosa quando termina l'effetto
     }
 ```
+
+---
 
 ```javascript
     $("#mioElemento").slideDown("fast", function() {
