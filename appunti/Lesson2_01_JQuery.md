@@ -358,21 +358,21 @@ $(elemento)
 ## Selettori per ATTRIBUTI
 selettore|descrizione
 ---|---
-```$(elemento[attributo])``` | elementi della pagina che hanno l’attributo passato come parametro
-```$(elemento[attributo=x])``` | elementi della pagina che hanno l’attributo passato come parametro uguale al valore x 
-```$(elemento[attributoˆ=x])``` | elementi della pagina che hanno l’attributo passato come parametro che inizia per x 
-```$(elemento[attributo$=x])```| elementi della pagina che hanno l’attributo passato come parametro che finisce per x
-```$(elemento[attributo*=x])``` | elementi della pagina che hanno l’attributo passato come parametro che contiene la stringa x 
-```$("input[value]")``` | elementi input in cui è specificato l’attributo value
-```$("input[type=‘radio’]")``` | elementi input di tipo radio
-```$("a[hrefˆ=‘http://’]")``` | i link con indirizzo non relativo
-```$("a[href*='it.wikipedia.org']")``` | i link che contengono nell’indirizzo la stringa ‘it.wikipedia.org’
-```$("a[href$='.pdf']")``` | i link a file pdf
-```$("img[title]")``` | elementi img in cui è specificato l’attributo title
-```$("img[title=‘logo’]")``` | le immagini in cui l’attributo titolo è uguale a ‘logo’
-```$("img[src$='.png']")``` | le immagini con estensione png
-```$("img[title^='logo']")``` | le immagini in cui l’attributo titolo inizia con ‘logo’
-```$("img[title*='logo']")``` | le immagini in cui l’attributo titolo contiene la stringa ‘logo’
+`$(elemento[attributo])` | elementi della pagina che hanno l’attributo passato come parametro
+`$(elemento[attributo=x])` | elementi della pagina che hanno l’attributo passato come parametro uguale al valore x 
+`$(elemento[attributoˆ=x])` | elementi della pagina che hanno l’attributo passato come parametro che inizia per x 
+`$(elemento[attributo$=x])`| elementi della pagina che hanno l’attributo passato come parametro che finisce per x
+`$(elemento[attributo*=x])` | elementi della pagina che hanno l’attributo passato come parametro che contiene la stringa x 
+`$("input[value]")` | elementi input in cui è specificato l’attributo value
+`$("input[type=‘radio’]")` | elementi input di tipo radio
+`$("a[hrefˆ=‘http://’]")` | i link con indirizzo non relativo
+`$("a[href*='it.wikipedia.org']")` | i link che contengono nell’indirizzo la stringa ‘it.wikipedia.org’
+`$("a[href$='.pdf']")` | i link a file pdf
+`$("img[title]")` | elementi img in cui è specificato l’attributo title
+`$("img[title=‘logo’]")` | le immagini in cui l’attributo titolo è uguale a ‘logo’
+`$("img[src$='.png']")` | le immagini con estensione png
+`$("img[title^='logo']")` | le immagini in cui l’attributo titolo inizia con ‘logo’
+`$("img[title*='logo']")` | le immagini in cui l’attributo titolo contiene la stringa ‘logo’
      
 
 ---
@@ -380,15 +380,15 @@ selettore|descrizione
 ## Selettori GERARCHICI
 selettore|descrizione
 ---|---
-```$(padre > figli)```| elementi "figli" che sono discendenti diretti dell’elemento "padre" 
-```$(fratello+sorelle)```|
-```$(".A + .B")```|Permette di selezionare gli elementi "sorelle" che sono direttamente preceduti da un elemento "fratello"
-```$(fratello~sorelle)```|
-```$(".A ~ .B")```|Permette di selezionare gli elementi "sorelle" che sono preceduti da un elemento "fratello"
-```$(padri:has(discendenti))```|Permette di selezionare gli elementi "padri" che hanno almeno un "discendente" passato come parametro 
-```$("ul:has(a)")```|tutti gli ul che hanno come discendente almeno un link
-```$("div:has(img)") ```|tutti i div che hanno comediscendente almeno un’immagine
-```$(div > li)```|errato!!! Selezionerebbe tutti gli elementi di una lista contenuti direttamente in un div.
+`$(padre > figli)`| elementi "figli" che sono discendenti diretti dell’elemento "padre" 
+`$(fratello+sorelle)`|
+`$(".A + .B")`|Permette di selezionare gli elementi "sorelle" che sono direttamente preceduti da un elemento "fratello"
+`$(fratello~sorelle)`|
+`$(".A ~ .B")`|Permette di selezionare gli elementi "sorelle" che sono preceduti da un elemento "fratello"
+`$(padri:has(discendenti))`|Permette di selezionare gli elementi "padri" che hanno almeno un "discendente" passato come parametro 
+`$("ul:has(a)")`|tutti gli ul che hanno come discendente almeno un link
+`$("div:has(img)") `|tutti i div che hanno comediscendente almeno un’immagine
+`$(div > li)`|errato!!! Selezionerebbe tutti gli elementi di una lista contenuti direttamente in un div.
 
 ---
 
