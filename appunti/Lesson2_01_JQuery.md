@@ -54,7 +54,6 @@ $(document).ready(function() {
 
 ---
 
----
 
 ## INCLUDERE JQUERY NELLE PAGINE WEB
 
@@ -81,7 +80,7 @@ $("p")
 .html("Hello World");
 ```
 
-```javascript
+```html
 <html>
 <head>
 <script src="percorso/jquery.js"></script>
