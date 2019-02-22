@@ -121,14 +121,12 @@ function dammi_selezionato(){
 } ;
 </script>
 ```
-
 ---
 ## manipolare il DOM
 
 	Alcune funzioni che permettono di manipolare il DOM, 
 	per un elenco completo vedi la documentazione su
 	http://api.jquery.com/category/manipulation/
-
 ---
 ## prepend()
 
@@ -142,7 +140,6 @@ function dammi_selezionato(){
 $("h1").prepend("<span>Primo</span>");
 
 ```
-
 ---
 ## before()
 
@@ -238,9 +235,8 @@ $("span"). html( $("#testo").val());
 <span></span>
 
 $("#testo).val('Hello world') ;
----```
+```
 ---
-
 ## .css()
 
 Possiamo gestire le regole css di un elemento attraverso la funzione .css
@@ -269,7 +265,6 @@ $("#elemento").css({ "color": "red",
 "background-color" : "#ffcc90"
 });
 ```
-
 ---
 ## ATTRIBUTI SET & GET
 
@@ -279,23 +274,19 @@ Con Jquery possiamo leggere e impostare i valori per ogni attributo del DOM, ad 
 * leggere e scrivere il contenuto di un input text 
 * leggere e scrivere una proprietà CSS 
 ---
----
-
 ## GETTERS
 
 * ```.html()```
 * ```.attr('id')```
 * ```.val()```
 * ```.width()```
-
-------
+---
 ## SETTERS
 
 * ```.html('<p>ciao</p>)```
 * ```.attr('id','blocco_testo')```
 * ```.val('ciao')```
 * ```.width('120px')```
-
 ---
 ## GLI EVENTI
 
@@ -322,7 +313,7 @@ $("button").click(function(){
 });
 
 ```
-
+---
 ```javascript
 <html>
 <head>
@@ -387,7 +378,6 @@ alert('Ciao, sono una finestra attivata da un evento');
 </body>
 </html>
 ```
-
 ---
 ## eventi legati alla pressione di tasti
 
@@ -432,7 +422,6 @@ Gli effetti li possiamo raggruppare in 4 tipologie
 * Hide / Show
 * Slide up / Slide Down
 * Animate
-
 ---
 ### slideUp()
 
@@ -476,7 +465,6 @@ display:none;"></div>
 </body>
 </html>
 ```
-
 ---
 ## Ottenere un effetto Apri/chiudi
 
@@ -499,8 +487,6 @@ $("#box").slideToggle();
 </html>
 ```
 ---
----
-
 ## Gestire la velocità dell'animazione
 
 ```javascript
@@ -522,8 +508,6 @@ $("#box").slideToggle(3000);
 </html>
 ```
 ---
----
-
 ## Eseguire un'azione al completamento dell'animazione
 
 ```javascript
@@ -547,8 +531,6 @@ alert("Animazione completata");
 </html>
 ```
 ---
----
-
 ## ANIMATE
 
 Con la funzione animate, si possono creare "transizioni" sulle proprietà css di tipo numerico di un oggetto.
@@ -639,7 +621,7 @@ fadeIn(700).end().appendTo($('#blocco'));}, 3000);
 ## VALIDARE i moduli
 
 Molto utili per guidare l'utente nella compilazione e segnalare degli errori.
----
+
 ## Implementiamo il form
 
 ```javascript
@@ -773,7 +755,6 @@ $('.div').css('min-height', $('.main-div').height());
 ```javascript
 $('li:odd').css('background', '#E8E8E8');
 ```
-
 ---
 ## Invia data asando il metodo GET
 
