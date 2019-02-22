@@ -80,22 +80,10 @@ $("p")
 .html("Hello World");
 ```
 
-```html
-    <html>
-    <head>
-    <script src="percorso/jquery.js"></script>
-    <script type="javascript/text">
+```javascript
     $(document).ready(function(){
     $("p").html("Hello World");
     }
-    </script>
-    </head>
-    <body>
-    <div>
-    <p></p>
-    </div>
-    </body>
-    </html>
 ```
 
 ---
