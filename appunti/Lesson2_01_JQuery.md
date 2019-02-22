@@ -6,9 +6,7 @@
 * Jquery è un Framework (una collezione o libreria di codice che agevola la risoluzione di una classe di problemi) che 
 * permette di interagire , con semplicità e rapidità, sul 
 * DOM (Document Object Model) * di una pagina HTML
-
 ---
-
 ## PRINCIPALI CARATTERISTICHE
 
 * Cross browser ( supportato dai principali browser)
@@ -19,9 +17,7 @@
 * Utilizza selettori CSS (anche Css3 )
 * Sintassi compatta, permette di ridurre la quantità di codice necessario rispetto all'uso di Javascript
 * Può gestire tutti gli elementi che compongono una pagina web ( div, immagini, span, p ... )
-
 ---
-
 ### Utilizziamo la libreria javascript jQuery per:
 
 * Partenza del codice quando il documento (il DOM) è pronto
@@ -39,9 +35,7 @@
 * Aggiungere animazioni ed effetti
 * Gestire le chiamate asincrone (AJAX)
 * Creare e processare dati inJSON
-
 ---
-
 ## Partenza del codice quando il documento (il DOM) è pronto
 
 
@@ -54,9 +48,7 @@ $(document).ready(function() {
 });
 
 ```
-
 ---
-
 
 ## INCLUDERE JQUERY NELLE PAGINE WEB
 
@@ -69,9 +61,7 @@ $(document).ready(function() {
     `</head>`
     `<body> ... </body>`
     `</html>`
-
 ---
-
 ## Filosofia Jquery
 
 ```javascript
@@ -86,9 +76,7 @@ $(document).ready(function(){
 $("p").html("Hello World");
 }
 ```
-
 ---
-
 ## Selezionare gli elementi
 
 La principale caratteristica della funzione `jQuery()` (abbreviata in `$()` ) è quella di selezionare elementi HTML per modificarli: basta passare un parametro stringa (tra apici doppi  o singoli ) come negli esempi che seguono:
@@ -100,9 +88,7 @@ $(".miaClasse");
 $("p#mioId");
 $("ul li a.nav");
 ```
-
 ---
-
 ## selettori css 2 / css 3
 
 jQuery supporta tutti i selettori anche quelli avanzati e quelli del CSS3
@@ -114,9 +100,7 @@ $("a:first");
 $("p:odd");
 $("li:first-child");
 ```
-
 ---
-
 ## jQuery supporta poi alcuni selettori custom:
 
 ```javascript
@@ -127,9 +111,7 @@ $(":checkbox"); selects checkboxes
 $(":checked");
 $(":header"); selects header elements (h1, h2, h3, etc.)
 ```
-
 ---
-
 ## Accedere e modificare le classi CSS
 
 Con jQuery è facile aggiungere, scambiare o rimuovere classi CSS: ecco i tre metodi
@@ -151,9 +133,7 @@ if ($("#mioElemento").hasClass("content")) {
 }
 
 ```
-
 ---
-
 ## Gestire gli stili Css con Jquery
 
 Ecco come modificare i css con jQuery:
@@ -163,9 +143,7 @@ $("p").css("width", "400px");
 $("#mioElemento").css("color", "blue");
 $("ul").css("border", "solid 1px #ccc");
 ```
-
 ---
-
 ## Aggiungere e rimuovere contenuto e inserire elementi
 
 
@@ -175,35 +153,27 @@ $("ul").css("border", "solid 1px #ccc");
 ```javascript
 var mioElementHTMLo = $("#mioElemento").html();
 ```
-
 ---
-
 ### Ottenere solo il testo contenuto nel tag
 
 ```javascript
 var mioElementHTMLo = $("#mioElemento").text();
 ```
-
 ---
-
 ### Cambiare l'HTML e/o il Testo
 
 ```javascript
 $("#mioElemento").html("<p>Questo è il nuovo contenuto</p>");
 $("#mioElemento").text("Questo è il nuovo contenuto."); // questo sostituisce il testo presente
 ```
-
 ---
-
 ### Far seguire (appendere) del contenuto ad un elemento
 
 ```javascript
 $("#mioElemento").append("<p>Questo lo aggiungo.</p>");
 $("p").append("<p>Questo pure.</p>"); // Aggiunge questo contenuto ad ogni paragrafo
 ```
-
 ---
-
 ### Altri comandi
 
 ```javascript
@@ -218,9 +188,7 @@ $("p").append("<p>Questo pure.</p>"); // Aggiunge questo contenuto ad ogni parag
 
 * lavorano in modo simile con specifiche peculiarità
 * Ulteriori informazioni  jQuery.com
-
 ---
-
 ## Gli Eventi: intercettare il click del mouse con jQuery
 
 ```javascript
@@ -242,9 +210,7 @@ $("a").click(function() {
   * scroll()
   * submit()
   * select()
-
 ---
-
 ### Mostrare e nascondere elementi con jQuery
 
 ```javascript
@@ -261,9 +227,7 @@ $("#mioElemento").show("fast", function() {
 $("#mioElemento").toggle(1000, function() {
 }
 ```
-
 ---
-
 ```javascript
     $("#mioElemento").fadeOut("slow", function() {
         //fai qualcosa quando termina l'effetto
@@ -280,9 +244,7 @@ $("#mioElemento").toggle(1000, function() {
         //fai qualcosa quando termina l'effetto
     }
 ```
-
 ---
-
 ```javascript
     $("#mioElemento").slideDown("fast", function() {
         //fai qualcosa quando termina l'effetto
@@ -297,9 +259,7 @@ $("#mioElemento").toggle(1000, function() {
         //fai qualcosa quando termina l'effetto
     }
 ```
-
 ---
-
 ## Animate
 
 ```javascript
@@ -313,18 +273,14 @@ $("#mioElemento").toggle(1000, function() {
     }
     );
 ```
-
 ---
-
 ## Oggetto jQuery() $()
 
 * jQuery() oppure $() Permette di selezionare e creare elementi del DOM Può avere come parametro:
 * Selettore CSS $("p.evidenziato") Restituisce un array di oggetti, eventualmente vuoto
 * Oggetti javascript $(this.value) Restituisce un array di oggetti contenente l’elemento passato come parametro
 * Codice HTML $("Ciao Mondo")      Crea un elemento del DOM e restituisce un array di oggetti contenente l’elemento appena creato
-
 ---
-
 ## Selettori TAG HTML
 
 ```javascript
@@ -335,26 +291,20 @@ $(elemento)
   * $("a") tutti i link (e ancore) della pagina
   * $("p") tutti i paragrafi della pagina
   * $("a,p") tutti i link e i paragrafi della pagina
-
 ---
-
 ## Selettori di ID
 
 * Permette di selezionare l’elemento della pagina che ha l’id passato come parametro
 * `$(#idelemento)` elemento della pagina con attributo id="principale"
 * `$("div#principale")` div della pagina con attributo id="principale"
 * `$("#principale")` Essendo l’id univoco all’interno della pagina la selezione del div poteva essere omessa
-
 ---
-
 ## Selettori di CLASSE
 
 * `$(.nomeclasse)` Per selezionare gli elementi della pagina che hanno la classe passata come parametro 
 * `$(".evidenziato")` Elementi della pagina che hanno classe evidenziato
 * `$("div.evidenziato")` tutti i div della pagina con classe evidenziato
-
 ---
-
 ## Selettori per ATTRIBUTI
 selettore|descrizione
 ---|---
@@ -374,9 +324,7 @@ selettore|descrizione
 `$("img[title^='logo']")` | le immagini in cui l’attributo titolo inizia con ‘logo’
 `$("img[title*='logo']")` | le immagini in cui l’attributo titolo contiene la stringa ‘logo’
      
-
 ---
-
 ## Selettori GERARCHICI
 selettore|descrizione
 ---|---
@@ -389,9 +337,7 @@ selettore|descrizione
 `$("ul:has(a)")`|tutti gli ul che hanno come discendente almeno un link
 `$("div:has(img)") `|tutti i div che hanno comediscendente almeno un’immagine
 `$(div > li)`|errato!!! Selezionerebbe tutti gli elementi di una lista contenuti direttamente in un div.
-
 ---
-
 ## Selettori di Posizione
 
 selettore|descrizione
@@ -407,9 +353,7 @@ Questi selettori sono zero-based | utilizzano come indice iniziale lo 0
 `$(:even) $(:odd)`|Permettono di selezionare gli elementi in posizioni pari (:even) e dispari (:odd)
 `$("li:odd")`|i list item di posizione dispari
 `$("table.zebra tr:even")`|le righe in posizione pari delle tabelle che hanno class "zebra"
-     
----
-
+     ---
 ## Selettori Cardinali di Posizione 
 
 * `$(:nth-child(n))` e `$(:nth-child(even|odd))` Permettono di selezionare gli elementi discendenti in posizioni uguale a n
@@ -428,9 +372,7 @@ selettore|descrizione
 $("tr:eq(4)")|il quinto elemento tr
 $("tr:lt(4)")|i primi cinque tr
 $("tr:gt(4)")|dal sesto tr in poi
-
 ---
-
 ## Selettori Custom
 
 selettore|descrizione
@@ -446,9 +388,7 @@ $("li:not(.evidenziato)")| gli elementi li che non hanno classe evidenziato
 :text| seleziona textbox
 :filter(selettore)|applica un ulteriore selettore all'insieme selezionato
 :contains(cerca)|seleziona gli elementi che contengono il testo "cerca"
-
 ---
-
 ## Operazione sugli oggetti selezionati/creati
 
 Navigazione del DOM
@@ -465,9 +405,7 @@ Manipolazione del DOM|metodi disponibili
 Inserire elementi|after, append, before, prepend, html, text, wrap, clone, value
 Cancellare elementi|empty, remove, removeAttr
 Modifica elementi|attr, addClass, removeClass, toggleClass, css, hide, show, toggle
-
 ---
-
 ## Operazione sugli oggetti selezionati
 
 * Esempi Manipolazione del DOM
@@ -504,9 +442,7 @@ $(img).each(function(i){
     $(this).attr("alt","immagine "+i);
 })
 ```
-
 ---
-
 ## Operazione sugli oggetti creati
 
 * Concatenazione operazioni
@@ -520,9 +456,7 @@ $(img).each(function(i){
 * crea un immagine con attributo src="img/test.jpg", di classe logo e la appende al div con id principale
 
 `$("").attr("src","img/test.jpg").addClass("logo").appendTo("div#principale")`
-
 ---
-
 ## Operazione sugli oggetti selezionati/creati
 
 * Concatenazione Avanzata .end()
@@ -536,9 +470,7 @@ selettore|descrizione
 `.text("primo link")`|Modifica il testo in "primo link"
 `Ritorna alla selezione precedente (primo`
 `.css("border","solid 5px");`|Modifica lo stile del bordo
-
 ---
-
 ## Eventi supportati
 
 * dblclick
@@ -559,9 +491,7 @@ selettore|descrizione
 * mouseup
 * mouseover
 * error
-
 ---
-
 ## Tipologia di Eventi Javascript
 EVENTO | DESCRIZIONE
 ------ | -----------
@@ -578,9 +508,7 @@ keydown,keypress, keyup | Eventi inviati quando un tasto viene premuto (keydown)
 select | Inviato ad un elemento quando viene selezionato del test all'interno di esso. 
 change | Evento inviato ad un elemento che ha cambiato il proprio valore. 
 submit | Evento inviato quando l'utente tenta di fare il submit di un form
-
 ---
-
 ## on
 
 `$(selettore).on(evento,[dati],function(evento){...})`
@@ -599,9 +527,7 @@ Per ogni casella di testo aggiunge la classe
 inserimento quando il focus è sull'oggetto e rimuove
 la stessa classe quando il focus non è più
 dell'oggetto
-
 ---
-
 ## Sintassi abbreviata eventi
 
 * `$(selettore).on(evento,[dati],function(evento){...})`
@@ -623,9 +549,7 @@ $("li").click({msg:messaggio},function(evento){
 alert(evento.data.msg)
 });
 ```
-
 ---
-
 ## Proprietà Oggetto evento
 
 Le funzioni di callback (richiamate al verificarsi di ogni evento) hanno come parametro un oggetto che descrive l'evento occorso.
@@ -641,9 +565,7 @@ proprietà|Descrizione
 .type|Descrive la natura dell'evento
 .which|Nel caso di eventi scatenati da mouse o tastiera indica (in codice) quale bottone o tasto è stato premuto.
 .keyCode|Per avere informazioni sul carattere inserito si utilizza
-
 ---
-
 ## Funzioni Oggetto evento
 
 L'oggetto evento offre alcuni utili metodi
@@ -661,9 +583,7 @@ evento.preventDefault();
 
 * `.stopPropagation()` Impedisce l'inoltro dell'evento ad ogni elemento padre
 * `.stopImmediatePropagation()` Impedisce l'inoltro dell'evento ad ogni altro elemento del DOM
-
 ---
-
 ## Lanciare eventi
 
 E' possibile tramite jQuery lanciare eventi, sia standard che personalizzati
@@ -673,9 +593,7 @@ E' possibile tramite jQuery lanciare eventi, sia standard che personalizzati
 
 * Sintassi abbreviata `$(selettore).evento([dati])`
 * Esempio `$("a#link").click()`
-
 ---
-
 by Emiliano Castellina is licensed under a Creative Commons 
 Attribuzione   Non commerciale   
 Condividi allo stesso modo 3.0 Unported License.
