@@ -67,11 +67,11 @@ PIETRO|MI|presente
 YASMINE|RM|assente
 
 
-* ```$("th").css("background-color", "#9bbb59");```
-* ```$("tr:odd").css ("background-color", "#dee7d1");```
-* ```$("tr:even").css ("background-color", "#eff3ea");```
-* ```$( "td:contains('assente')" ).css('color','red');```
-* ```$( "td[align=left]").css('text-align','center');```
+* `$("th").css("background-color", "#9bbb59");`
+* `$("tr:odd").css ("background-color", "#dee7d1");`
+* `$("tr:even").css ("background-color", "#eff3ea");`
+* `$( "td:contains('assente')" ).css('color','red');`
+* `$( "td[align=left]").css('text-align','center');`
 ---
 ## FILTRI SU MODULI
 ---
@@ -242,10 +242,10 @@ $("#testo).val('Hello world') ;
 Possiamo gestire le regole css di un elemento attraverso la funzione .css
 
 * sintassi: $("#elemento).css ( regola-css , valore);
-* ```$("#elemento").css("color", "red");```
-* ```$("#elemento").css("height", "100px");```
-* ```$("#elemento").css("border", "1px solid red");```
-* ```$("#elemento").css("background-color", "#ffcc90");```
+* `$("#elemento").css("color", "red");`
+* `$("#elemento").css("height", "100px");`
+* `$("#elemento").css("border", "1px solid red");`
+* `$("#elemento").css("background-color", "#ffcc90");`
 
 
 ```javascript
@@ -276,17 +276,17 @@ Con Jquery possiamo leggere e impostare i valori per ogni attributo del DOM, ad 
 ---
 ## GETTERS
 
-* ```.html()```
-* ```.attr('id')```
-* ```.val()```
-* ```.width()```
+* `.html()`
+* `.attr('id')`
+* `.val()`
+* `.width()`
 ---
 ## SETTERS
 
-* ```.html('<p>ciao</p>)```
-* ```.attr('id','blocco_testo')```
-* ```.val('ciao')```
-* ```.width('120px')```
+* `.html('<p>ciao</p>)`
+* `.attr('id','blocco_testo')`
+* `.val('ciao')`
+* `.width('120px')`
 ---
 ## GLI EVENTI
 
