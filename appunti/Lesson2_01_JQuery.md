@@ -3,10 +3,9 @@
 ## Jquery è un Framework
 
 * write less, do more
-
-Jquery è un Framework (una collezione o libreria di codice che agevola la risoluzione di una classe
-di problemi) che permette di interagire , con semplicità e rapidità, sul DOM ( Document Object
-Model) * di una pagina HTML
+* Jquery è un Framework (una collezione o libreria di codice che agevola la risoluzione di una classe di problemi) che 
+* permette di interagire , con semplicità e rapidità, sul 
+* DOM (Document Object Model) * di una pagina HTML
 
 ---
 
@@ -20,7 +19,6 @@ Model) * di una pagina HTML
 * Utilizza selettori CSS (anche Css3 )
 * Sintassi compatta, permette di ridurre la quantità di codice necessario rispetto all'uso di Javascript
 * Può gestire tutti gli elementi che compongono una pagina web ( div, immagini, span, p ... )
-
 
 ---
 
@@ -46,10 +44,15 @@ Model) * di una pagina HTML
 
 ## Partenza del codice quando il documento (il DOM) è pronto
 
+
 ```javascript
+
 $(document).ready(function() {
+
 //codice da eseguire al caricamento del documento
+
 });
+
 ```
 
 ---
@@ -58,7 +61,7 @@ $(document).ready(function() {
 ## INCLUDERE JQUERY NELLE PAGINE WEB
 
 1. Scarichiamo l'ultima versione di Jquery dal sito ```http://jquery.com/``` il file avrà un nome nella forma jquery-x.x.-min.js
-2. Per usarlo nelle nostre pagine web dobbiamo linkarlo attraverso il comando ```<script>...</script>``` nella sezione ```<head />``` della nostra pagina web
+2. Per usarlo nelle nostre pagine web dobbiamo collegarlo alla nostra pagina web col tag `<script>...</script>` 
 
     `<html>`
     `<head>`
@@ -69,26 +72,26 @@ $(document).ready(function() {
 
 ---
 
-## "Filosofia Jquery"
+## Filosofia Jquery
 
 ```javascript
-//Cerca questo elemento
+//Seleziona questo elemento
 $("p")
 //Fai questa azione
 .html("Hello World");
 ```
 
 ```javascript
-    $(document).ready(function(){
-    $("p").html("Hello World");
-    }
+$(document).ready(function(){
+$("p").html("Hello World");
+}
 ```
 
 ---
 
 ## Selezionare gli elementi
 
-La principale caratteristica della funzione jQuery() (abbreviata in `$()` ) è quella di selezionare elementi HTML per modificarli: basta passare un parametro stringa (tra apici doppi  o singoli ) come negli esempi che seguono:
+La principale caratteristica della funzione `jQuery()` (abbreviata in `$()` ) è quella di selezionare elementi HTML per modificarli: basta passare un parametro stringa (tra apici doppi  o singoli ) come negli esempi che seguono:
 
 ```javascript
 $("div");
