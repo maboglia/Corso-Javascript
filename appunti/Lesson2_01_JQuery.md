@@ -645,6 +645,7 @@ proprietà|Descrizione
 ---
 
 ## Funzioni Oggetto evento
+
 L'oggetto evento offre alcuni utili metodi
 Metodo Descrizione
 
@@ -657,6 +658,7 @@ $("a").on('click',function(evento){
 evento.preventDefault();
 });
 ```
+
 * ```.stopPropagation()``` Impedisce l'inoltro dell'evento ad ogni elemento padre
 * ```.stopImmediatePropagation()``` Impedisce l'inoltro dell'evento ad ogni altro elemento del DOM
 
@@ -674,6 +676,7 @@ E' possibile tramite jQuery lanciare eventi, sia standard che personalizzati
 * Esempio ```$("a#link").click()```
 
 ---
- by Emiliano Castellina is licensed under a Creative Commons 
- Attribuzione   Non commerciale   
- Condividi allo stesso modo 3.0 Unported License.
+
+by Emiliano Castellina is licensed under a Creative Commons 
+Attribuzione   Non commerciale   
+Condividi allo stesso modo 3.0 Unported License.
