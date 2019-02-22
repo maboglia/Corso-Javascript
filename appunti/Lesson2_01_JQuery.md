@@ -60,7 +60,7 @@ $(document).ready(function() {
 
 ## INCLUDERE JQUERY NELLE PAGINE WEB
 
-1. Scarichiamo l'ultima versione di Jquery dal sito ```http://jquery.com/``` il file avrà un nome nella forma jquery-x.x.-min.js
+1. Scarichiamo l'ultima versione di Jquery dal sito `http://jquery.com/` il file avrà un nome nella forma jquery-x.x.-min.js
 2. Per usarlo nelle nostre pagine web dobbiamo collegarlo alla nostra pagina web col tag `<script>...</script>` 
 
     `<html>`
@@ -583,7 +583,7 @@ submit | Evento inviato quando l'utente tenta di fare il submit di un form
 
 ## on
 
-```$(selettore).on(evento,[dati],function(evento){...})```
+`$(selettore).on(evento,[dati],function(evento){...})`
 
 Permette di collegare gli eventi ad un selettore e di eseguire la funzione associata
 
@@ -604,8 +604,8 @@ dell'oggetto
 
 ## Sintassi abbreviata eventi
 
-* ```$(selettore).on(evento,[dati],function(evento){...})```
-* ```$(selettore).evento([dati],function(evento){...})```
+* `$(selettore).on(evento,[dati],function(evento){...})`
+* `$(selettore).evento([dati],function(evento){...})`
 
 ```javascript
 
@@ -649,7 +649,7 @@ proprietà|Descrizione
 L'oggetto evento offre alcuni utili metodi
 Metodo Descrizione
 
-* ```.preventDefault()``` Non fa eseguire la funzione di default legata all'evento.
+* `.preventDefault()` Non fa eseguire la funzione di default legata all'evento.
 
 Es. disattivare tutti i link di una pagina:
 
@@ -659,20 +659,20 @@ evento.preventDefault();
 });
 ```
 
-* ```.stopPropagation()``` Impedisce l'inoltro dell'evento ad ogni elemento padre
-* ```.stopImmediatePropagation()``` Impedisce l'inoltro dell'evento ad ogni altro elemento del DOM
+* `.stopPropagation()` Impedisce l'inoltro dell'evento ad ogni elemento padre
+* `.stopImmediatePropagation()` Impedisce l'inoltro dell'evento ad ogni altro elemento del DOM
 
 ---
 
 ## Lanciare eventi
 
 E' possibile tramite jQuery lanciare eventi, sia standard che personalizzati
-```$(selettore).trigger(evento, [dati])```
+`$(selettore).trigger(evento, [dati])`
 
-* Esempio: ```$("a#link").trigger('click')``` invia un click all'ancora con id uguale a link
+* Esempio: `$("a#link").trigger('click')` invia un click all'ancora con id uguale a link
 
-* Sintassi abbreviata ```$(selettore).evento([dati])```
-* Esempio ```$("a#link").click()```
+* Sintassi abbreviata `$(selettore).evento([dati])`
+* Esempio `$("a#link").click()`
 
 ---
 
