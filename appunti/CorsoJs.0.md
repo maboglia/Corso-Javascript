@@ -157,36 +157,19 @@ double | in | static | with
 
 
 ---
-#### instanceof
-Verifica se un oggetto è instanza di qualche prototipo.
 
----
-#### typeof
-Ritorna una stringa indicante il tipo di dato che ha una variabile.
-[esempio](../esempi/01_basic_foundations/010_confirm.html)
+## Variabili
 
----
-#### delete
-Operatore che rimuove proprietà di un oggetto.
+* identificatore e visibilità (scope)
+* dichiarazione e inizializzazione di variabili
+* [esempi](../esempi/01_basic_foundations/001_var.html)
 
----
-#### use strict
-Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
-
----
 #### const
 Parola chiave per la dichiarazione di una costante.
 [esempio](../esempi/01_basic_foundations/008_const.html)
 
----
 #### var, let
 Parola chiave per la dichiarazione di una variabile.
-
----
-## Variabili
-* identificatore e visibilità (scope)
-* dichiarazione e inizializzazione di variabili
-* [esempi](../esempi/01_basic_foundations/001_var.html)
 
 ---
 ## operatori
@@ -231,7 +214,6 @@ Valore undefined    |    undefined
 
 # Strutture del linguaggio
 
----
 ## Costrutti di controllo del flusso
 * [Strutture condizionali](./Lesson1_05_Control_flow.md)
     * [esempio if](../esempi/01_basic_foundations/018_ANDLogico.html)
@@ -244,10 +226,10 @@ Valore undefined    |    undefined
 * [While Loop](./Lesson1_05_Control_flow.md) 
     * [esempi](../esempi/02_control_flow/02_while_loop.js)
 
+---
 
 # Tipi di dato
 
----
 ## Boolean
 * Boolean è la rappresentazione di tipo oggetto di una variabile logica.
 * Booleans
@@ -256,15 +238,12 @@ Valore undefined    |    undefined
     * undefined e null
     * Boolean() verifica se un'espressione è booleana
 
-
----
-### Per esempio
-
 ```javascript
 //Valori logici
 var a=true
 var b=false
 ```
+
 Sono valori falsi i seguenti:
 
 ```javascript
@@ -284,12 +263,29 @@ NaN
 * [esempio OR Logico](../esempi/01_basic_foundations/019_ORLogico.html)
 * [esempio OR Logico](../esempi/01_basic_foundations/020_ORLogico.html)
 
+---
+## Objects
+
+* [JS Objects](./Lesson1_09_Object.md)
+
+#### instanceof
+Verifica se un oggetto è instanza di qualche prototipo.
+
+#### typeof
+Ritorna una stringa indicante il tipo di dato che ha una variabile.
+[esempio](../esempi/01_basic_foundations/010_confirm.html)
+
+#### delete
+Operatore che rimuove proprietà di un oggetto.
+
+#### use strict
+Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
 
 ---
+
 ## Number
 Number è la rappresentazione di tipo oggetto di un tipo numerico.
-    
----
+
 ### JS numbers
 
 * i numeri in JS sono SEMPRE float a 64-bit
@@ -307,6 +303,7 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
     * valueOf()
 
 ---
+
 ### Per esempio:
 
 ```javascript
@@ -320,15 +317,13 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 ```
 
 ---
-### Math Object
+
+## Math Object
 
 Per lavorare con i Number, puoi usare Math che è l'oggetto che concentra molte constanti e funzioni matematiche.
 
 * [Math Object](./Lesson1_05_MathObject.md)
 
----
-
----
 ## String
 
 String è la rappresentazione di tipo oggetto di una stringa.
@@ -336,6 +331,7 @@ String è la rappresentazione di tipo oggetto di una stringa.
 * [String Object](./Lesson1_06_StringObject.md)
 
 ---
+
 ## valore nullo e valore undefined
 
 Rappresentano l'assenza di un valore in una variabile o nel ritorno di una function.
@@ -368,26 +364,16 @@ function f(x,y){
 * formati e metodi per le date
 * metodi get e metodi set
 
-
----
 ### codice esempio
 
 [es data](../esempi/01_date.js)
 
-
 ---
+
 ## Array
 
 * [JS array](Lesson1_08_Array.md)
 
----
-
----
-## Objects
-
-* [JS Objects](./Lesson1_09_Object.md)
-
----
 ## Timers
 
 Sono funzioni invocate dopo un tempo determinato.

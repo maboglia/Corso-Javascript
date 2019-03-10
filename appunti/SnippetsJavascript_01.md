@@ -24,6 +24,7 @@
 
 
 ---
+
 ## Chiedere informazioni all'utente
 
 ```html
@@ -46,8 +47,10 @@
 </body>
 </html>
 ```
+
 ---
-## Modificare la pagina
+
+## Modificare la pagina 1
 
 ```html
 <h1 id="name"></h1>
@@ -59,7 +62,8 @@ document.getElementById("name").innerHTML = "Piacere di conoscerti, " + name;
 ```
 
 ---
-## Modificare la pagina
+
+## Modificare la pagina 2
 
 ```html
 <html>
@@ -67,7 +71,7 @@ document.getElementById("name").innerHTML = "Piacere di conoscerti, " + name;
     <meta charset="UTF-8">
     <title>La mia pagina web</title>
     <script>
-   
+
     var saluta = function(){
         var name = prompt("Come ti chiami?");
         document.getElementById("name").innerHTML = "Piacere di conoscerti, " + name;
@@ -84,6 +88,7 @@ document.getElementById("name").innerHTML = "Piacere di conoscerti, " + name;
 ```
 
 ---
+
 ## Creare un semplice form per gestire i dati
 
 ```html
@@ -109,6 +114,7 @@ document.getElementById("name").innerHTML = "Piacere di conoscerti, " + name;
 ```
 
 ---
+
 ## Validare Input
 
 ```javascript
@@ -144,17 +150,19 @@ function myFunction() {
 </script>
 
 </body>
-</html> 
+</html>
 ```
 
 ---
+
 ## Banner a rotazione
+Scorro 2 array in parallelo
 
 ```javascript
 <script>
     var img_width = "468";
     var img_height = "60";
-    var img_title = "Click Here";
+    var img_title = "Clicca qui";
 
     var ad = new Array()
         // inserire qui le immagini sorgente
@@ -179,74 +187,58 @@ function myFunction() {
         'border = "0" > < /a>');
 </script>
 ```
+
 ---
+
 ## Navigator Object
+Uso un ciclo `for...in` per scorrere le proprietà di un oggetto
 
 ```javascript
 <html>
 <head><title>Navigator Object</title></head>
 <body>
-  <big>
+  <ul>
     <script type="text/javascript">
       for(var property in navigator){
          str="navigator"+"."+ property;
-         document.write(property+ "&nbsp;&nbsp;<em>"+   
-               str+"</em><br />");   
-       }
+         document.write("<li></lI>"+property + ": " + str +"</li>");
+         }
     </script>
-  </big>
+  </ul>
 </body>
-</html>	
+</html>
 ```
+
 ---
-## The Browser
+
+## Riconoscere il Browser
 
 ```javascript
 
-<html><head><title>The Navigator Object</title></head>
-<body>
-<h2>About The Browser</h2>
-<script language="JavaScript">
-    var BrowserName= navigator.appName;
-    var BrowserVersion = navigator.appVersion;
-    var BrowserAgent= navigator.userAgent;
-    var platform=navigator.platform;
-    document.write("<font size='+1'>");
-    document.write("<b>The Browser's name  is:</b> " +
-                    BrowserName + "<br>");
-    document.write("<b>The Browser version is:</b> " +
-                    BrowserVersion + "<br>");
-    document.write("<b>The Browser's \"user agent\" is:</b> " +
-                    BrowserAgent + "<br>");
-    document.write("<b>The Browser's platform is:</b> " +
-                    platform + "<br>");
-    document.write("</font>");
-</script>
-</body>
+<html>
+    <head>
+        <title>Navigator Object</title>
+    </head>
+    <body>
+        <h2>About The Browser</h2>
+        <script language="JavaScript">
+            var BrowserName= navigator.appName;
+            var BrowserVersion = navigator.appVersion;
+            var BrowserAgent= navigator.userAgent;
+            var platform=navigator.platform;
+            document.write("<font size='+1'>");
+            document.write("<b>Browser's name  is:</b> " +
+                            BrowserName + "<br>");
+            document.write("<b>Browser version is:</b> " +
+                            BrowserVersion + "<br>");
+            document.write("<b>Browser's \"user agent\" is:</b> " +
+                            BrowserAgent + "<br>");
+            document.write("<b>Browser's platform is:</b> " +
+                            platform + "<br>");
+            document.write("</font>");
+        </script>
+    </body>
 </html>
 
 ```
-```javascript
 
-```
-```javascript
-
-```
-```javascript
-
-```
-```javascript
-
-```
-```javascript
-
-```
-```javascript
-
-```
-```javascript
-
-```
-```javascript
-
-```
