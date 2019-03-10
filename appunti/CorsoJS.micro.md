@@ -1,24 +1,26 @@
-# Corso Javascript
+# Corso Javascript 
 
-* Javascript introduzione, 
-* variabili e tipi
+## macro-progettazione
+
+* Javascript introduzione
+  * variabili e tipi
+  * operatori, booleans, logici
+  * array
+  * stringhe (metodi sulle stringhe)
+  * oggetti javascript
 * javascript funzionale
-* oggetti javascript
-* primo JSON short bio studente
-* esercizi javascript per la gestione degli eventi
-* esercizi base
-* operatori, booleans, logici
-* gioco	trenino che si muove, collisione
-* array, 
-* stringhe (metodi sulle stringhe)
+
 * esercizi: 
+  * esercizi base
+  * esercizi javascript per la gestione degli eventi
+  * primo JSON short bio studente
   * todo-list, 
   * slideshow banksy, 
+  * gioco	trenino che si muove, collisione
   * lampadina accendi-spegni
-* array e oggetti
+  * ideazione e sviluppo pagina web le ricette del mondo
+
 * BOM e DOM 
-* esempi js 22-27    
-* ideazione e sviluppo pagina web le ricette del mondo
 * calcolatrice
 * localstorage
 * sessionstorage

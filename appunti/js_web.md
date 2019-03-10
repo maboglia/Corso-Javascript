@@ -1,4 +1,5 @@
 # The JavaScript Language 
+
 ### CLIENT-SIDE JAVASCRIPT 
 
 ### What you need to know…  
@@ -10,13 +11,9 @@
 * Handling events 
 * Client-Side Storage  
 * Scripted Media and Graphics 
-* HTML5 APIs 
- 
+* HTML5 APIs
 
 ---
-JavaScript 
-2 
-
 
 ### The Window object 
 * The Window object is the main entry point to all client-
@@ -38,9 +35,6 @@ window.location = "https://www.w3schools.com"; 
 setTimeout(function() { alert("hello world"); }, 2000); 
 
 ---
-JavaScript 
-3 
-
 
 ### The Document object 
 * One of the most important properties of the 
@@ -56,9 +50,6 @@ between them) based on the value of its id attribute 
 var timestamp = document.getElementById("timestamp"); 
 
 ---
-JavaScript 
-4 
-
 
 
 ### The Document object 
@@ -83,9 +74,6 @@ timestamp.style.backgroundColor = "yellow"; 
 timestamp.className = "highlight"; 
 
 ---
-JavaScript 
-5 
-
 
 ### Event handler properties 
 * Important properties on Window, Document, and 
@@ -103,9 +91,6 @@ timestamp.onclick = function() {  
 } 
 
 ---
-JavaScript 
-6 
-
 
 ### Example 
 ```html
@@ -137,9 +122,6 @@ JavaScript 
 </head> 
 ```
 ---
-JavaScript 
-7 
-
 
 ### Example 
 ```html
@@ -163,8 +145,6 @@ registering appropriate event handlers 
 presentation, and behavior is called Dynamic HTML 
 
 ---
-JavaScript 
-8 
 
 ### Embedding JavaScript in HTML 
 * Client-side JavaScript code is embedded within 
@@ -177,9 +157,6 @@ HTML documents in four ways: 
 * JavaScript is best embedded in HTML documents using script elements with src attributes 
 
 ---
-JavaScript 
-9 
-
 
 ### Inline JavaScript code 
 * Between <script> and </script> tags 
@@ -201,9 +178,6 @@ window.onload = displayTime;   // Start displaying the time when docume
 </script> 
 ```
 ---
-JavaScript 
-10 
-
 
 ### Inline JavaScript code 
 ```html
@@ -235,9 +209,6 @@ JavaScript 
 ```
 
 ---
-JavaScript 
-11 
-
 
 ### External JavaScript code 
 * Scripts can be placed in external files  
@@ -258,9 +229,6 @@ different web pages 
 ```
 
 ---
-JavaScript 
-12 
-
 
 ### Event handlers in HTML 
 * JavaScript code in a script is executed once: when the 
@@ -280,9 +248,6 @@ onclick="document.bgColor=changeColor()"/> 
 onclick="document.bgColor='white'"/> 
 
 ---
-JavaScript 
-13 
-
 
 ### Basic interaction methods 
 * Alert dialog box 
@@ -298,10 +263,8 @@ JavaScript 
 </script> 
 </head> 
 ```
----
-JavaScript 
-14 
 
+---
 
 ### Basic interaction methods 
 * Confirmation dialog box  
@@ -320,10 +283,8 @@ consent on any option 
   } 
 </script> 
 ```
----
-JavaScript 
-15 
 
+---
 
 ### Basic interaction methods 
 * Prompt dialog box  
@@ -342,9 +303,8 @@ Cancel 
 //--> 
 </script> 
 ```
+
 ---
-JavaScript 
-16 
 
 ### JavaScript display possibilities 
 * JavaScript can “display” data in different ways 
@@ -356,8 +316,6 @@ JavaScript 
 http://www.w3schools.com/js/js_output.asp  
 
 ---
-JavaScript 
-17 
 
 ### JavaScript display possibilities 
 * Using document.write() after an HTML 
@@ -382,8 +340,6 @@ HTML 
 ```
 
 ---
-JavaScript 
-18 
 
 ### JavaScript display possibilities 
 * To access an HTML element, JavaScript can use the document.getElementById(id) method 
@@ -405,11 +361,9 @@ JavaScript 
 </body> 
 </html>
  
-``` 
+```
 
 ---
-JavaScript 
-19 
 
 ### JavaScript display possibilities 
 * Example of innerHTML property
@@ -427,11 +381,9 @@ JavaScript 
 </body> 
 </html> 
 
-``` 
+```
 
 ---
-JavaScript 
-20 
 
 ### JavaScript display possibilities 
 * In your browser, you can use the console.log() method to display data 
@@ -453,11 +405,9 @@ console.log(5 + 6); 
  
 </body> 
 </html> 
-``` 
+```
 
 ---
-JavaScript 
-21 
 
 ### Scripting documents 
 * Client-side JavaScript exists to turn static HTML documents into interactive web applications 
@@ -472,25 +422,18 @@ JavaScript 
 * How to work with HTML forms 
 
 ---
-JavaScript 
-22 
-
 
 ### Document Object Model (DOM) 
 * The Document Object Model, or DOM, is the fundamental API for representing and manipulating the content of HTML (and XML) documents 
 * HTML or XML document are represented in the DOM as a tree of objects 
 
 ---
-JavaScript 
-23 
-
 
 ### Tree structure 
 * HTML documents are trees 
  
 
 Cascading Style Sheets 
-24 
 
 Tree structure 
 ```html
@@ -520,7 +463,6 @@ Tree structure 
 ```
 
 ### Cascading Style Sheets 
-25 
 
 
 ### Tree structure 
@@ -552,7 +494,6 @@ Tree structure 
 ```
 
 ### Cascading Style Sheets 
-26 
 
 The DOM structure 
 * The entire document is a Document node 
@@ -561,20 +502,14 @@ The DOM structure 
 * The texts contained in the HTML elements are Text nodes 
 * Every HTML attribute is an Attribute node 
 * Comments are Comment nodes 
-* Nodes have a hierarchical relationship to each other 
- 
+* Nodes have a hierarchical relationship to each other
 
 ---
-JavaScript 
-27 
 
 
 ### The Node object 
 * Hierarchy of the subclasses of Node 
 
----
-JavaScript 
-28 
 
 ### Selecting document elements 
 * Most client-side JavaScript programs work by manipulating one or more document elements 
@@ -587,8 +522,6 @@ JavaScript 
 * matching the specified CSS selector 
 
 ---
-JavaScript 
-29 
 
 ### Selecting elements by id 
 * Any HTML element can have an id attribute 
@@ -616,8 +549,6 @@ function getElements(/*ids...*/) { 
 ```
 
 ---
-JavaScript 
-30 
 
 ### Selecting elements by name 
 * The HTML name attribute was originally intended to 
@@ -635,8 +566,6 @@ with the getElementsByName() method 
 var radiobuttons = document.getElementsByName("favorite_color"); 
 
 ---
-JavaScript 
-31 
 
 ### Selecting elements by tag name 
 * You can select all HTML elements of a specified type (or tag 
@@ -660,9 +589,8 @@ var firstParaSpans = firstpara.getElementsByTagName("span"); 
 for(var i = 0; i < document.images.length; i++) // Loop through all images 
   document.images[i].style.display = "none"; // ...and hide them. 
 ```
+
 ---
-JavaScript 
-32 
 
 ### Selecting elements by CSS class 
 * The class attribute of an HTML element is a space-
@@ -686,9 +614,8 @@ var warnings = document.getElementsByClassName("warning"); 
 var log = document.getElementById("log"); 
 var fatal = log.getElementsByClassName("fatal error"); 
 ```
+
 ---
-JavaScript 
-33 
 
 ### Selecting elements with CSS Selectors 
 * CSS stylesheets have a very powerful syntax, known as 
@@ -710,10 +637,8 @@ var matches = document.querySelectorAll("div.note, div.alert"); 
 // "login" within a <div> of class="user-panel main" 
 var el = document.querySelector("div.user-panel.main input[name=login]"); 
 ```
----
-JavaScript 
-34 
 
+---
 
 ### Document structure and traversal 
 * Once you have selected an Element from a 
@@ -724,9 +649,6 @@ document 
 objects 
 
 ---
-JavaScript 
-35 
-
 
 ### DOM and node relationships 
 * In a node tree, the top 
@@ -741,19 +663,11 @@ number of children 
 * Siblings (brothers or 
 sisters) are nodes with 
 the same parent 
- 
- 
 
 ---
-JavaScript 
-36 
-
 
 ### The Node object properties 
 
----
-JavaScript 
-37 
 
 ### Navigation among nodes 
 * Node properties useful to navigate between 
@@ -790,8 +704,6 @@ document.childNodes[0].childNodes[1] 
 document.firstChild.firstChild.nextSibling 
 
 ---
-JavaScript 
-39 
 
 ### Example  
 * Collects the node value of an <h1> element and 
@@ -811,15 +723,15 @@ document.getElementById("demo").innerHTML = myText; 
 </body> 
 </html> 
 ```
+
 ```javascript
 <script> 
 myText = document.getElementById("intro").firstChild.nodeValue; 
 document.getElementById("demo").innerHTML = myText; 
 </script> 
 ```
+
 ---
-JavaScript 
-40 
 
 ### HTML attributes as Element properties 
 * The HTMLElement objects that represent the elements 
@@ -842,9 +754,8 @@ var image = document.images[0]; 
 var width = parseInt(image.getAttribute("WIDTH")); 
 image.setAttribute("class", "thumbnail"); 
 ```
+
 ---
-JavaScript 
-41 
 
 ### Element content 
 * Reading the innerHTML property of an Element 
@@ -866,11 +777,9 @@ element.innerHTML = "New Header"; 
 <p>"Old Header" was changed to "New Header"</p> 
 </body> 
 </html> 
-``` 
+```
 
 ---
-JavaScript 
-42 
 
 ### Creating, inserting, and deleting nodes 
 * It is also possible to alter a document at the level of 
@@ -892,9 +801,8 @@ function loadasync(url) { 
   head.appendChild(s);  
 } 
 ```
+
 ---
-JavaScript 
-43 
 
 ### Creating nodes 
 * To add a new element to the HTML DOM, you must 
@@ -913,8 +821,6 @@ var newnode = document.createTextNode("text node content"); 
 ```
 
 ---
-JavaScript 
-44  
 
 ### Inserting nodes 
 * Once you have a new node, you can insert it into the 
@@ -938,9 +844,8 @@ function insertAt(parent, child, n) { 
   else parent.insertBefore(child, parent.childNodes[n]); 
 } 
 ```
+
 ---
-JavaScript 
-45 
 
 ### Removing and replacing nodes 
 * The removeChild() method removes a node from the 
@@ -950,7 +855,7 @@ that is to be removed as the method argument 
 * Example: remove the node n from the document 
 ```javascript 
 n.parentNode.removeChild(n); 
-``` 
+```
 * n.parentNode.removeChild(n); 
 * The replaceChild() method removes one child node and 
 replaces it with a new one 
@@ -959,8 +864,6 @@ as the first argument and the node to be replaced as the second 
 argument 
 
 ---
-JavaScript 
-46 
 
 ### Replacing nodes 
 * Example  
@@ -986,10 +889,6 @@ parent.replaceChild(para,child); 
 ```
 
 ---
-JavaScript 
-47 
-
-
 
 ### HTML forms 
 * Tool to gather input from the user 
@@ -1003,22 +902,8 @@ a set of options that are only meaningful when that box is 
 checked 
 
 ---
-JavaScript 
-48 
 
-
-### HTML form elements and handlers 
-
----
-JavaScript 
-49 
-
-
-### HTML form elements and handlers 
-
----
-JavaScript 
-50 
+## HTML form elements and handlers 
 
 ### Selecting forms and form elements 
 * Standard methods like getElementById() and 
@@ -1041,8 +926,6 @@ document.forms.address.street 
 document.address.street // only for name="address", not id="address" 
 ```
 ---
-JavaScript 
-51 
 
 ### Form and element event handlers 
 * Examples 
@@ -1052,7 +935,7 @@ JavaScript 
 ... 
 <button type="reset">Clear and Start Over</button> 
 </form> 
-``` 
+```
 Enter some text: <input type="text" name="txt" value="Hello" onchange="myFunction(this.value)"> 
 ```javascript
 <script> 
@@ -1071,8 +954,6 @@ var countries = document.address.country; // Get the Select object 
 countries.options[countries.options.length] = zaire; 
 ```
 ---
-JavaScript 
-52 
 
 ### Scripting CSS style 
 * Through the style property of the Element node 
@@ -1096,8 +977,6 @@ s = e.getAttribute("style"); 
 s = e.style.cssText; 
 ```
 ---
-JavaScript 
-53 
 
 ### Handling events 
 * Client-side JavaScript programs use an 
@@ -1114,8 +993,6 @@ HTML object
                 Modify object properties 
 
 ---
-JavaScript 
-54 
 
 ### Handling events 
 * Event type  
@@ -1139,10 +1016,7 @@ about that event 
 the mouse pointer, the object associated with a keyboard event contains 
 details about the key that was pressed 
  
-
 ---
-JavaScript 
-55 
 
 ### Handling events 
 * Event propagation 
@@ -1159,8 +1033,6 @@ new page 
 * Event handlers can prevent default actions 
 
 ---
-JavaScript 
-56 
 
 ### Handling events 
 * JavaScript code can be executed when an event occurs  
@@ -1177,11 +1049,7 @@ markup for better readability 
 * Third advantage: allows you to add event listeners even when 
 you do not control the HTML markup 
  
-
 ---
-JavaScript 
-57 
-
 
 ### Handling events 
 * Example with JavaScript expression 
@@ -1204,9 +1072,6 @@ onclick="document.getElementById('p1').style.visibility='visible'"> 
 ```
 
 ---
-JavaScript 
-58 
-
 
 ### Handling events 
 * Example with function call 
@@ -1231,11 +1096,9 @@ function mUp(obj) { 
 </script> 
 </body> 
 </html> 
-``` 
+```
 
 ---
-JavaScript 
-59 
 
 ### addEventListener() 
 * The addEventListener() method attaches an event 
@@ -1252,10 +1115,7 @@ capturing 
 * You can add more than one event handler to the 
 same element 
  
-
 ---
-JavaScript 
-60 
 
 ### addEventListener() 
 * Advantages 
@@ -1274,10 +1134,7 @@ the HTML markup 
 * You can easily remove an event listener by using the 
 removeEventListener() method 
  
-
 ---
-JavaScript 
-61 
 
 ### addEventListener() 
 * Example: single event handler 
@@ -1300,8 +1157,6 @@ document.getElementById("myBtn").addEventListener("click", function() 
 ```
 
 ---
-JavaScript 
-62 
 
 ### addEventListener() 
 * Example: multiple event handlers 
@@ -1326,9 +1181,8 @@ function myThirdFunction() { 
   document.getElementById("demo").innerHTML += "Moused out!<br>"; } 
 </script> 
 ```
+
 ---
-JavaScript 
-63 
 
 ### Event propagation 
 * Two ways of event propagation in the HTML DOM: 
@@ -1344,17 +1198,12 @@ event is handled first and then the inner one 
 * http://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_usecapture 
 
 ---
-JavaScript 
-64 
 
 ### References 
-* D. Flanagan, "Javascript: the Definitive Guide. Sixth Edition", 
-O’Reilly 
-* N. C. Zakas,  "Professional JavaScript for Web Developers. 
-Third Edition", John Wiley & Sons 
+* D. Flanagan, "Javascript: the Definitive Guide. Sixth Edition", O’Reilly 
+* N. C. Zakas,  "Professional JavaScript for Web Developers. Third Edition", John Wiley & Sons 
 * ECMAScript® 2015 Language Specification 
 * http://www.ecma-international.org/ecma-262/6.0/ 
- 
 * Alex MacCaw, "Javascript Web Applications" 
 * Stoyan Stefanow, "Javascript patterns" 
 * References 
@@ -1363,33 +1212,7 @@ Third Edition", John Wiley & Sons 
 * https://developers.google.com/chrome-developer-tools/  
 * [Slides embedded references]  
  
-
 ---
-JavaScript 
-65 
-
-
-
 
 ### License 
-* This work is licensed under the Creative Commons “Attribution-
-NonCommercial-ShareAlike Unported (CC BY-NC-SA 3,0)” License. 
-* You are free: 
-* to Share - to copy, distribute and transmit the work 
-* to Remix - to adapt the work 
-* Under the following conditions: 
-* Attribution - You must attribute the work in the manner specified by the 
-author or licensor (but not in any way that suggests that they endorse you 
-or your use of the work). 
-* Noncommercial - You may not use this work for commercial purposes. 
-* Share Alike - If you alter, transform, or build upon this work, you may 
-distribute the resulting work only under the same or similar license to this 
-one. 
-* To view a copy of this license, visit 
-http://creativecommons.org/license/by-nc-sa/3.0/ 
-
----
-JavaScript 
-66 
-
-author: Laura Farinetti
+* This work is licensed under the Creative Commons “Attribution-NonCommercial-ShareAlike Unported (CC BY-NC-SA 3,0)” License. 
