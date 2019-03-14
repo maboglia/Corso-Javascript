@@ -45,7 +45,7 @@ for (var counter = 1; counter < 6; counter++) {
 }
 ```
 
-## Syntassi for loops 
+## Sintassi for loops 
 ### 1. Partenza
 
 ```javascript
@@ -58,7 +58,7 @@ Every `for` loop makes use of a counting variable. Here, our variable is called 
 
 When the `for` loop executes the code in the code block—the bit between `{ }`—it does so by starting off where `i = 1`. 
 
-### 2. Ending
+### 2. fine
 
 ```javascript
 for (var i = 1; i < 11; i = i + 1) {
