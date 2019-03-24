@@ -1,5 +1,5 @@
 # Object Oriented Programming(OOP) 
-s
+
 ## Review 
 
 ### 1. Literal Notation (Object)

@@ -1,4 +1,11 @@
-# Principali selettori jQuery 
+# Esempi Jquery
+
+## SELETTORI
+I Selettori in jquery permettono di prendere il controllo di uno o più
+oggetti di una pagina web, per seleziona un elemento si usa la
+funzione $ a cui viene passato un "qualcosa"
+
+---
 
 Selettore | Esempio | Seleziona
 --- | --- | ---
@@ -40,3 +47,27 @@ Selettore | Esempio | Seleziona
  :disabled | $(":disabled") | Elementi di input disabilitati
  :selected | $(":selected") | Elementi di input selezionati
  :checked | $(":checked") | Elementi di input spuntati (checkbox)
+
+
+Selettori principali.
+* Selettore di ID => $("#blocco")
+* Selettore di Classe => $(".elenco")
+* Selettore tramite nome TAG => $("p")
+* Selettore tramite attributi => $("[title*= titolo]")
+
+
+
+```javascript
+<body>
+<div id="blocco">  <!-- $('#blocco') -->
+<p><strong>ELENCO:</strong> III C </p> $("strong") $("p strong")
+<ul class="elenco"> <!-- $('.elenco') -->
+<li>PAOLO</li>
+<li>PIETRO</li>
+<li>CARLO</li>
+<li>YASMINE</li>
+</ul>
+<strong>Fine elenco</strong> $("strong")
+</div>
+</body>
+```

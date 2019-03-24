@@ -1,7 +1,5 @@
 # Costrutti iterativi (Loop): For 
 
-
-
 ## for
 ```javascript
 for(inizializzazione;valutatore;incrementatore){
@@ -54,10 +52,6 @@ for (var i = 1; i < 11; i = i + 1) {
 }
 ```
 
-Every `for` loop makes use of a counting variable. Here, our variable is called `i` (but it can have any name). The variable has many roles. The first part of the for loop tells the computer to start with a value of 1 for `i`. It does this by declaring the variable called `i` and giving it a value of `1`.
-
-When the `for` loop executes the code in the code block—the bit between `{ }`—it does so by starting off where `i = 1`. 
-
 ### 2. fine
 
 ```javascript
@@ -66,24 +60,7 @@ for (var i = 1; i < 11; i = i + 1) {
 }
 ```
 
-Here, this for loop will keep running until `i = 10` ( i.e. while `i < 11`). So when `i = 2`, or `i = 9`, the for loop will run. But once `i`is no longer less than 11, the loop will stop.
 
-### 2. Control the loop
-We can now control where the for loop starts and ends. What about controlling what happens in between?
-
-The examples we've looked at have used i = i + 1. This has meant we have incremented (increased) the variable i by 1 each time.
-
-**Rules to learn**
-
-1. A more efficient way to code to increment up by 1 is to write `i++`.
-
-2. We decrement down by 1 by writing `i--`.
-
-3. We can increment up by any value by writing `i += x`, where x is how much we want to increment up by. e.g., `i += 3` counts up by 3s.
-
-4. We can decrement down by any value by writing `i -= x`. (See the Hint for more.)
-
-5. Be very careful with your syntax—if you write a loop that can't properly end, it's called an **infinite loop**. It will crash your browser!
 
 
 ## Array & Loop
@@ -136,40 +113,32 @@ for (var i = 0; i < cities.length; i++) {
     console.log("I would like to visit " + cities[i]);
 }
 ```
-**How does it works?**
-
-1. Line 3 declares the array. It has 4 elements.
-2. We then start the `for` loop on line 5.
-
-3. We see `i` starts off at value 0. 
-
-4. The `for` loop runs until `i < 4` (because `cities.length` equals 4. The array `cities` has 4 elements in it; see the Hint for more.)
-
-5. We will increment `i` by 1 each time we loop over.
-
-6. We print out `cities[0]`, which is `"Melbourne"`.
-
-7. We then start the loop again. Except now `i = 1`. 
-
-8. It will print out `cities[1]`, which is `"Amman"`. 
-
-9. This continues until `i` is no longer less than `cities.length`.
-
-**Aware of :**
-
-1. Put commas( `,` ) between each element in the array.
-
-2. Put semi-colons( `;` ) between each bit of the for loop.
-
-3. Beware of infinite loops!
 
 
-## Add-Ons 
-### Searching text for your name 
-In this project, you'll be writing a short program that checks a block of text for your name.
+### for... of
 
-Specifically, it will check the text for the first letter of your name, then push (add) the number of characters equal to your name's length to an array. By inspecting the array, you'll be able to see `if` your name was mentioned!
+Nuovo in ES6, il for...of fornisce ancora un modo per ciclare su elementi di una collection. la sintassi è:
+```javascript
+    for(variable of object)
+        statement
+```
+The ```for...of``` loop can be used on arrays, but more generically, on any object that is iterable. 
 
-Try to get a hang of **loops**, **arrays**, and `if` statements.
+Here is an example of its use for looping over the contents of an array:
 
-[Sample Code Here](https://github.com/yclim95/CodeAcademy-JavaScript/blob/master/Lesson3_for_loop/script.js)
+const hand = [randFace(), randFace(), randFace()]; 
+for(let face of hand)
+console.log(`You rolled...${face}!`);
+
+```for...of``` is a great choice when you need to loop over an array, but don’t need to know the index number of each element.
+
+
+### for...in
+
+The traditional way to enumerate the properties of an object is for...in. Consider an object that has some string properties and a lone symbol property:
+const SYM = Symbol();
+consto={a:1,b:2,c:3,[SYM]:4};
+for(let prop in o) { if(!o.hasOwnProperty(prop)) continue; console.log(`${prop}: ${o[prop]}`);
+}
+
+While it’s possible to use for...in to iterate over an array, it’s gen‐ erally considered a bad idea. 

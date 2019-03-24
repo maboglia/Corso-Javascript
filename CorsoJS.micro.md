@@ -1,7 +1,5 @@
 # Corso Javascript 
 
-## macro-progettazione
-
 * Javascript introduzione
   * variabili e tipi
   * operatori, booleans, logici

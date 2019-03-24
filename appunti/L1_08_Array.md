@@ -15,6 +15,7 @@
 
 
 ### creare un array
+perché creare un array
 ```javascript
 var student1 = 'Paperino';
 var student2 = 'Pippo';
@@ -48,6 +49,19 @@ var students = ['Paperino', 'Pippo', 'Pluto', 'Paperina', 'Topolino', 'Minnie', 
 | tostring()             | Converts an array to a string.                                      |
 
 
+## Dichiarare array 
+
+```javascript
+var list=["one","two","three"];
+```
+
+## Accedere array
+```javascript
+var languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
+
+console.log(languages[2]); //Output: JavaScript
+```
+
 ## Inserire Elementi
 
 ```javascript
@@ -69,17 +83,20 @@ students.pop();
 students.length
 ```
 
+`length` è una proprietà 
+
+```javascript
+var languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
+
+console.log(languages.length);
+```
+
 ## Indicizzare un array
 
 ```javascript
 students[0]
-```
-
-
-## Indicizzare un array
-
-```javascript
 students[1] = 'Simone';
+
 students;
 ```
 
@@ -98,26 +115,6 @@ var bothClasses = mondayClass.concat(tuesdayClass);
 ```javascript
 bothClasses.toString();
 bothClasses.join(' e ');
-```
-
-## Dichiarare array 
-
-```javascript
-var list=["one","two","three"];
-```
-
-## Accedere array
-```javascript
-var languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
-
-console.log(languages[2]); //Output: JavaScript
-```
-
-## Array Properties 
-```javascript
-var languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
-
-console.log(languages.length);
 ```
 
 ## Iterare su elementi array 
@@ -166,17 +163,4 @@ var me={
 };
 
 newArray=[[1,1,1],[me],[2,2],[3]];
-```
-
-## Modificare un oggetto esistente
-
-```javascript
-var myInterest=["Coding","Running","Reading"];
-
-var myObject = {
-  name: 'Peppino',
-  type: 'Coder',
-
-  interests :myInterest
-};
 ```

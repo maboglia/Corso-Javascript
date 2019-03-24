@@ -1,7 +1,5 @@
 # JavaScript nel browser
 
----
-
 ## BOM- Browser Object Model - Window Object
 * BOM (Gli oggetti del browser)
 * DOM (Attraversamento e manipolazione)

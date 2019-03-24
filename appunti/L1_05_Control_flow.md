@@ -53,7 +53,7 @@ switch(expresion){
 
 
 ## If/Else & Else-IF & Loop
-Quick Refresher : 
+
 
 ### 1. Else-If
 
@@ -79,9 +79,7 @@ isNaN(42);  // => false
 isNaN("42"); //=> false
 ```
 
-Be careful: if you call `isNaN` on a string that looks like a number, like '42', JavaScript will try to help by automatically converting the string '42' to the number `42` and return `false` (since 42 is a number).
-
-Note that you can't just do
+you can't just do
 
 ```javascript
 isNaN(unicorns);
@@ -92,7 +90,6 @@ unless you've already defined the variable unicorns. You can, however, do
 isNaN("unicorns"); // => true
 ```
 
-EG.
 
 ```javascript
 var isEven = function(number) {
@@ -125,11 +122,6 @@ while(i<3){
 ```
 
 ### 4. Sneak Peak (Switch statement)
-As you might imagine, if you have a lot of choices you want to cover in a program, it might be annoying to type `else if ()` ten times. That's why JavaScript has the `switch` statement!
-
-`switch` allows you to preset a number of options (called `case`s), then check an expression to see if it matches any of them. If there's a match, the program will perform the action for the matching case; if there's no match, it can execute a `default` option.
-
-EG.
 ```javascript
 var lunch = prompt("What do you want for lunch?","Type your lunch choice here");
 
@@ -152,7 +144,6 @@ switch(lunch){
 ```
 
 **Syntax**
-The switch statement is put together like this:
 
 ```javascript
 switch (/*Some expression*/) {
@@ -170,28 +161,9 @@ switch (/*Some expression*/) {
 }
 ```
 
-JavaScript will try to match the expression between the `switch()` parentheses to each case. It will run the code below each case if it finds a match, and will execute the `default` code if no match is found.
-
-
-## Review 
-
-Well done! Even though we've been focusing on switch, we've covered a lot so far. You've:
-
-1. Reviewed if/else if/else
-
-2. Reviewed for and while
-
-3. Learned about the switch statement and how to use it instead of multiple if/elses
-
-4. Covered switch syntax
-
-5. Written your own switch!
-
 
 ## Logical Operator
-If we need to check 1 or more, we'll need logical operators. JavaScript has three: **and** (`&&``), **or** (`||`), and **not** (`!`).
 
-EG.
 ```javascript
 var iLoveJavaScript =true ;
 var iLoveLearning =true ;
@@ -208,7 +180,6 @@ if(iLoveJavaScript && iLoveLearning) {
 ```
 
 ### 1. And (&&)
-The logical operator and is written in JavaScript like this: `&&`. It evaluates to `true` when both expressions are `true`; if they're not, it evaluates to `false`.
 
 
 ```javascript
@@ -236,7 +207,6 @@ eat();
 ```
 
 ### 2. OR (||)
-The logical operator or is written in JavaScript like this: `||`. It evaluates to `true` when one or the other or both expressions are `true`; if they're not, it evaluates to `false`.
 
 ```javascript
 true || true;     // => true
@@ -261,7 +231,6 @@ var nap = function() {
 ```
 
 ### Not (!)
-The logical operator **not** is written in JavaScript like this: `!`. It makes true expressions `false`, and vice-versa.
 
 ```javascript
 !true;   // => false
@@ -282,19 +251,3 @@ var happy = function() {
 };
 ```
 
-
-## Recap
-In this lesson you:
-
-1. Reviewed control flow syntax
-
-2. Learned about the switch statement
-
-3. Learned about the logical operators **and** (`&&`), **or** (`||`), and **not** (`!`)
-
-
-## Add-Ons 
-### Building mini adventure game 
-Build using whatever you have learned until now. Try to utilize control structure. 
-
-[Sample code here](https://github.com/yclim95/CodeAcademy-JavaScript/blob/master/Lesson5_control_flow/script.js)
