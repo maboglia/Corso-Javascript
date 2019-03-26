@@ -8,7 +8,7 @@ var giorniDelMese = function(month, year) {
     // return new Date(year, month+1, 0).getDate();
 }
 
-console.log(giorniDelMese(1, 2017));
-console.log(giorniDelMese(2, 2017));
-console.log(giorniDelMese(9, 2017));
-console.log(giorniDelMese(12, 2017));
+console.log(giorniDelMese(1, 2019));
+console.log(giorniDelMese(2, 2019));
+console.log(giorniDelMese(9, 2019));
+console.log(giorniDelMese(12, 2019));
