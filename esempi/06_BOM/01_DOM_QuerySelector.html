@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Indice</h1>
+
+    <ul id="indice"></ul>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+    <h2>prova</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero, accusantium unde, quo eius saepe excepturi quisquam aperiam quod aut consequuntur vero adipisci non voluptate repellendus aspernatur? Natus, ut officiis!</p>
+
+
+    <script>
+        var indice = document.getElementById("indice");
+        var titoli = document.querySelectorAll("h2");
+        //console.dir(titoli);
+
+        for (var o of titoli) {
+            for (const proprieta in o) {
+                if (o.hasOwnProperty("textContent")) {
+                    console.log("s");
+                    const element = o["textContent"];
+                    console.log(element);
+                }
+            }
+        }
+
+        for (var t of titoli) {
+            var o = document.createElement("li");
+            var t = document.createTextNode(t.textContent);
+            o.appendChild(t);
+            indice.appendChild(o);
+
+        }
+    </script>
+
+
+</body>
+
+</html>

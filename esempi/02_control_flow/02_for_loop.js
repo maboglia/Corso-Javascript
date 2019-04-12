@@ -9,7 +9,7 @@ for (var i = 1; i < 5; i++) {
     while (count < i + 1) {
         console.log(count);
         count += 1;
-    };
+    }
 
 }
 
