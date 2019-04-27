@@ -18,21 +18,6 @@ while(expresion)
 ```
 
 
-#Lesson4 Loop : While
-Currently You know what is for loops. Just to remind, here is the syntax for for loop :
-
-```javascript
-for (var i = start; i < end; i++) {
-  // do something
-}
-```
-
-But what if you didn't know ahead of time when to stop looping? Say, for example, you wanted to keep choosing playing cards from a deck until you get a spade. You don't know how many cards you'll need to choose, so a `for` loop won't work.
-
-In situations like these where you don't know in advance when to stop looping, we can use a `while` loop.
-
-E.G 
-
 ```javascript
 var coinFace = Math.floor(Math.random() * 2);
 
@@ -42,8 +27,6 @@ while(coinFace === 0){
 }
 console.log("Tails! Done flipping.");
 ```
-
-## While - Basics
 
 ### 1. Syntax
 
@@ -113,7 +96,7 @@ loop();
 
 
 ## More to While Loop 
-### 1. When to "while" & when to "for"
+### 1. Quando utilizzare while o for per le iterazioni
 
 ```javascript
 for(var i=0; i<5; i++){
@@ -149,26 +132,4 @@ var getToDaChoppa = function(){
 };
 
 getToDaChoppa();
-```
-
-
-## Recap (For, DO, Do-While)
-
-
-```javascript
-for(var i=0;i<3;i++){
- console.log("lala");   
-}
-
-var i=0;
-while(i<3){
-    console.log("While loop");
-    i++;
-}
-
-var j=0;
-do{
-    console.log("DO...WHILE");
-    j++;
-}while(j>3);
 ```

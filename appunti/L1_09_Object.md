@@ -1,24 +1,4 @@
-# oggetti della vita reale (e classi)
-    proprietà e metodi
-    definizione di oggetti
-    accedere alle proprietà degli oggetti
-    accedere ai metodi degli oggetti
-    non dichiarare stringhe, numeri e booleans come oggetti
-
-
-    creare un oggetto
-        chiavi senza quote
-    accedere ai valori di un oggetto
-    aggiungere valori ad un oggetto
-        aggiungere chiavi con dot notation
-    combinare array e oggetti
-        un array di amici
-    esplorare gli oggetti in console
-    cose utili da fare con gli oggetti
-        tieni traccia delle spese
-        raccogli informazioni sui tuoi film preferiti
-
-## Oggetti
+# Oggetti
 
 Un oggetto è una valore composto, che aggrega molteplici valori, siano essi primitivi o altri tipi di collezione.
 Un oggetto in JavaScript può essere definito in 3 modi:
@@ -127,12 +107,12 @@ Ritorna la forma primitiva di un oggetto.
 ## Modificare un oggetto esistente
 
 ```javascript
-var myInterest=["Coding","Running","Reading"];
+var mieiSkill=["Coding","Running","Reading"];
 
 var myObject = {
   name: 'Peppino',
   type: 'Coder',
 
-  interests :myInterest
+  skill :mieiSkill
 };
 ```

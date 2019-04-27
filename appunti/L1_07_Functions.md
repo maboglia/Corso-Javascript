@@ -46,7 +46,7 @@ var a=(function(x,y){
 console.log(a) // 3
 ```
 
-## Altra caratteristica importante sulle funzioni in JavaScript è che può definirsi una funzione dentro un'altra funzione.
+Altra caratteristica importante sulle funzioni in JavaScript è che può definirsi una funzione dentro un'altra funzione.
 
 ```javascript
 function a(){
@@ -61,8 +61,9 @@ console.log(a())
 
 ## Varargs
 
-Come in Java, una funzione può essere invocata con più parametri di quelli definiti, o con meno.
-Tutti i parametri che sono stati inviati a una funzione possono essere acceduti attraverso l'oggetto "arguments".
+Una funzione può essere invocata con più parametri di quelli definiti, o con meno.
+
+Tutti i parametri che sono stati inviati a una funzione sono accessibili attraverso l'oggetto "arguments".
 
 ```javascript
 function a(){

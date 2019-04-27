@@ -10,11 +10,11 @@
 
 ## if
 ```javascript
-if(expresion){
+if(espressione){
     frasi
 }
 
-if(expresion){
+if(espressione){
     frasi
 }else{
     frasi
@@ -24,7 +24,7 @@ if(expresion){
 ## if else if
 
 ```javascript
-if(expresion){
+if(espressione){
     frasi
 }else if{
     frasi
@@ -35,7 +35,7 @@ if(expresion){
 ## switch
 
 ```javascript
-switch(expresion){
+switch(espressione){
     case 1:
         frasi
         break
@@ -67,81 +67,8 @@ if (/* Some condition */) {
 }
 ```
 
-### 2. isNan function 
-isNan (Is Not a number)
 
-
-```javascript
-isNaN('berry'); // => true
-isNaN(NaN); // => true
-isNaN(undefined); // => true
-isNaN(42);  // => false
-isNaN("42"); //=> false
-```
-
-you can't just do
-
-```javascript
-isNaN(unicorns);
-```
-
-unless you've already defined the variable unicorns. You can, however, do
-```javascript
-isNaN("unicorns"); // => true
-```
-
-
-```javascript
-var isEven = function(number) {
-  // Your code goes here!
-  
-  if(number%2===0){
-   return true;   
-  }
-  else if (isNaN(number))
-  {
-    return "Not a number";  
-    }
-  else{
-      return false;
-  }
-};
-
-isEven(6);
-
-```
-
-### 3. While Loop 
-
-```javascript
-var i=0;
-while(i<3){
- console.log(i);
- i++;
-}
-```
-
-### 4. Sneak Peak (Switch statement)
-```javascript
-var lunch = prompt("What do you want for lunch?","Type your lunch choice here");
-
-switch(lunch){
-  case 'sandwich':
-    console.log("Sure thing! One sandwich, coming up.");
-    break;
-  case 'soup':
-    console.log("Got it! Tomato's my favorite.");
-    break; 
-  case 'salad':
-    console.log("Sounds good! How about a caesar salad?");
-    break;
-  case 'pie':
-    console.log("Pie's not a meal!");
-    break; 
-  default:
-    console.log("Huh! I'm not sure what " + lunch + " is. How does a sandwich sound?");
-}
-```
+## Switch statement
 
 **Syntax**
 
@@ -160,6 +87,30 @@ switch (/*Some expression*/) {
        // Do yet another thing
 }
 ```
+
+
+```javascript
+var lunch = prompt("Cosa mangi?","Scegli un piatto");
+
+switch(lunch){
+  case 'panino':
+    console.log("Hai scelto panino");
+    break;
+  case 'insalata':
+    console.log("Hai scelto insalata");
+    break; 
+  case 'pizza':
+    console.log("Hai scelto pizza");
+    break;
+  case 'torta':
+    console.log("Hai scelto torta");
+    break; 
+  default:
+    console.log("");
+
+}
+```
+
 
 
 ## Logical Operator
@@ -250,4 +201,3 @@ var happy = function() {
   }
 };
 ```
-
