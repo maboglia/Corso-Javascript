@@ -1,24 +1,27 @@
-# for... of
+# for ... of
 
 Nuovo in ES6, il for...of fornisce ancora un modo per ciclare su elementi di una collection. la sintassi è:
 ```javascript
     for(variable of object)
         statement
 ```
-The ```for...of``` loop can be used on arrays, but more generically, on any object that is iterable. 
+Il ```for...of``` può essere utilizzato con qualsiasi oggetto iterabile. 
 
-Here is an example of its use for looping over the contents of an array:
+un esempio:
 
+```javascript
 const hand = [randFace(), randFace(), randFace()]; 
 for(let face of hand)
 console.log(`You rolled...${face}!`);
+```
 
-```for...of``` is a great choice when you need to loop over an array, but don’t need to know the index number of each element.
+```for...of``` si utilizza quando non è importante conoscere l'inidice dell'iterazione.
 
 ### HTMLCollection
-All of the DOM methods that return a collection do not return a JavaScript array, but an instance of HTMLCollection, which is an “array-like” object. 
-You can iterate over it with a for loop, but the Array.prototype methods (such as map, filter, and reduce) won’t be available. 
+I metodi del DOM ritornano oggetti di tipo HTMLCollection, che un oggetto simile all'array. Sip può scorrere con i cicli for tradizionali, ma non si possono usare i nuovi metodi Array.prototype.
 
-You can convert an HTMLCollection to an array by using the spread operator: [...document.getElementsByTag Name(p)].
+Per poterli utilizzare, devi convertire la HTMLCollection in un array, usando l'operatore spread `...`
 
-
+```javascript
+[...document.getElementsByTag Name(p)].
+```

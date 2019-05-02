@@ -3,13 +3,14 @@
 lo spread operator (...) serve per indicare un numero imprecisato di argomenti:
 
 ```javascript
-function addPrefisso(prefisso, ...parole) {
-
+function aggiungiEstensione(estensione, ...parole) {
+    let pathImmagine;
+    
 for(let i=0; i<parole.length; i++) {
-          prefissoedParole[i] = prefisso + parole[i];
+          pathImmagine[i] = parole[i] + estensione;
        }
-return prefissoedParole;
+return pathImmagine;
 
 }
-addPrefisso("ITS-", "Mobile", "BackEnd"); // ["ITS-Mobile", "ITS-BackEnd"]
+aggiungiEstensione(".jpg", "Mobile", "BackEnd"); // ["Mobile.jpg", "BackEnd.jpg"]
 ```

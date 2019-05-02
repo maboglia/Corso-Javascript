@@ -1,4 +1,4 @@
-# for...in
+# for ... in
 
 Il modo tradizionale per enumerare le proprietà di un oggetto è `for...in`. 
 
@@ -46,4 +46,3 @@ Object.keys(o)
 .filter(prop => prop.match(/^x/))
 .forEach(prop => console.log(`${prop}: ${o[prop]}`));
 ```
-

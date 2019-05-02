@@ -1,10 +1,21 @@
 ### some
-some returns true if it finds an element that meets the criteria (all it needs is one; it’ll stop looking after it finds the first one), and false otherwise. Example:
+
+`some` ritorna true se torva un elemento che soddisfi i criteri 
+
+
+```javascript
 const arr = [5, 7, 12, 15, 17];
-arr.some(x => x%2===0); // true; 12 is even arr.some(x => Number.isInteger(Math.sqrt(x))); // false; no squares
+
+arr.some(x => x%2===0); // true; 12 è pari 
+arr.some(x => Number.isInteger(Math.sqrt(x))); // false; non ci sono quadrati di interi
+```
 
 ### every
 
-every returns true if every element in the array passes the criteria, and false other‐ wise. every will stop looking and return false if it finds an element that doesn’t match the criteria; otherwise, it will have to scan the entire array:
+`every` ritorna true se ogni elemento soddisfa i criteri
+
+```javascript
 const arr = [4, 6, 16, 36];
-arr.every(x => x%2===0); // true; no odd numbers arr.every(x => Number.isInteger(Math.sqrt(x))); // false; 6 is not square
+arr.every(x => x%2===0); // true; no odd numbers 
+arr.every(x => Number.isInteger(Math.sqrt(x))); // false; 6 non è un quadrato di interi
+```

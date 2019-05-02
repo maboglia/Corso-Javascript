@@ -2,8 +2,16 @@
 ---
 ## JavaScript è un linguaggio di programmazione 
 
-utilizzato comunemente come parte dell'esperienza di navigazione, permette di creare interazioni con l'utente, 
-controllare la navigazione, gestire la comunicazione asincrona, e modificare il contenuto del documento. 
+utilizzato comunemente come parte dell'esperienza di navigazione, permette di creare interazioni con l'utente, controllare la navigazione, gestire la comunicazione asincrona, e modificare il contenuto del documento.
+
+Alcune cose che puoi fare con javascript
+
+* Generare dialog boxes
+* redirigere una pagina
+* aprire nuove finestre
+* intercettare eventi dell'utente: mouse, tastiera, ...
+* leggere i moduli dell'utente
+* modificare le pagine html
 
 ___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 
@@ -17,7 +25,8 @@ ___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 ---
 ## Risorse disponibili online
 
-* [Javascript reference](https://developer.mozilla.org/it/docs/Web/JavaScript) 
+* [ES2015 - ecma](http://www.ecma-international.org/ecma-262/6.0/)
+* [Mozilla Dev - Javascript reference](https://developer.mozilla.org/it/docs/Web/JavaScript)
 * [JS the right way](http://jstherightway.org/)
 * [JSinfo](https://javascript.info/)
 * [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
@@ -28,6 +37,20 @@ ___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 * [web-link.it/web/html5](https://www.web-link.it/web/html5)
 
 ---
+
+## Core JavaScript
+
+* Lexical structure
+* Types, values, and variables
+* Expressions and operators
+* Statements
+* Objects
+* Arrays
+* Functions
+* Classes and modules
+
+---
+
 ## Hello, World
 
 Hello, World! nel browser
@@ -44,12 +67,15 @@ console.log('Hello, World!')
 ```
 
 ---
+
 ## Esecuzione del codice
+
 * Interpretazione in una pagina web 
 * Interpretazione in  una console del browser 
 * Interpretazione in terminale (node.js) 
 
 ---
+
 ## Javascript incorporato in una pagina html
 
 ```html
@@ -65,6 +91,7 @@ console.log('Hello, World!')
 ```
 
 ---
+
 ## Javascript collegato ad una pagina html
 ```html
 <!doctype html>
@@ -80,8 +107,11 @@ console.log('Hello, World!')
 // file esempio.js
 alert('Hello world')
 ```
+
 ---
+
 ## Come mostrare a video i dati
+
 * window
     * [window.alert()]()
     * [window.prompt()](../esempi/01_basic_foundations/009_prompt.html)
@@ -93,39 +123,32 @@ alert('Hello world')
 * console.log()
 
 
-# Strutture del linguaggio 
-
 ---
-## JavaScript è __CASE SENSITIVE__
 
----
-## Terminare le istruzioni con punto e virgola (;)
-* E' possibile l'uso del carattere (;) per la separazione di frasi, 
-    si può omettere se queste si trovano su linee differenti (non fatelo!)
-* Gli interpreti di JavaScript trattano i fine linea come fine istruzione, se 
-    la istruzione successiva non può interpretarsi come continuazione della precedente.
-
-
----
 ## Convenzioni di naming: 
-* CamelCase, 
-* camelCase, 
-* snake_case
+
+* JavaScript è __CASE SENSITIVE__
+* Terminare le istruzioni con punto e virgola (;)
+* NomeClasse, nomeFunzione, nomeVariabile, nome_variabile, NOME_COSTANTE
 
 ---
+
 ## Identificatori
+
 Gli identificatori in javascript cominciano con 
+
 * una lettera,
 * una underline (_),
 * un carattere di dollaro ($); 
 
 seguito da 
+
 * lettere,
 * numeri,
 * underline,
-* e caratteri di dollaro
+* $
 
----
+
 ### Per esempio
 
 ```javascript
@@ -165,6 +188,7 @@ double | in | static | with
 * [esempi](../esempi/01_basic_foundations/001_var.html)
 
 #### const
+
 Parola chiave per la dichiarazione di una costante.
 [esempio](../esempi/01_basic_foundations/008_const.html)
 
@@ -173,6 +197,7 @@ Parola chiave per la dichiarazione di una variabile.
 
 ---
 ## operatori
+
 * [precedenza degli operatori](../esempi/01_basic_foundations/011_precedenzaOperatori.html)
 * [operatori di assegnamento](../esempi/01_basic_foundations/013_assignment.html)
 * [operatori di comparazione](../esempi/01_basic_foundations/016_confronto.html)
@@ -196,6 +221,9 @@ var a = 5; //assegno la variabile
     righe 
 */
 ```
+
+## use strict
+Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
 
 
 ---
@@ -278,8 +306,8 @@ Ritorna una stringa indicante il tipo di dato che ha una variabile.
 #### delete
 Operatore che rimuove proprietà di un oggetto.
 
-#### use strict
-Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
+
+
 
 ---
 
@@ -301,6 +329,8 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
     * toFixed()
     * toPrecision()
     * valueOf()
+
+#### non dichiarare stringhe, numeri e booleans come oggetti
 
 ---
 
@@ -400,25 +430,7 @@ setInterval(function(){
 
 ---
 
-## oggetti della vita reale (e classi)
-    proprietà e metodi
-    definizione di oggetti
-    accedere alle proprietà degli oggetti
-    accedere ai metodi degli oggetti
-    non dichiarare stringhe, numeri e booleans come oggetti
 
-
-    creare un oggetto
-        chiavi senza quote
-    accedere ai valori di un oggetto
-    aggiungere valori ad un oggetto
-        aggiungere chiavi con dot notation
-    combinare array e oggetti
-    esplorare gli oggetti in console
-    cose utili da fare con gli oggetti
-
-
----
 
 # Ricapitolando
 

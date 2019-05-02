@@ -7,6 +7,23 @@ Un oggetto in JavaScript può essere definito in 3 modi:
 * Instanziazione di classi. 
 * Creazione a partire da un prototipo. 
 
+
+## Caratteristiche ed pperazioni su oggetti
+
+* proprietà e metodi
+* definizione di oggetti
+* accedere alle proprietà degli oggetti
+* accedere ai metodi degli oggetti
+
+* creare un oggetto
+  * chiavi senza quote
+* accedere ai valori di un oggetto
+* aggiungere valori ad un oggetto
+  * aggiungere chiavi con dot notation
+* combinare array e oggetti
+* esplorare gli oggetti in console
+
+
 ## 1ª Forma: Definizione literal
 E' una definizione di proprietà di tipo chiave:valore.
 ```javascript
