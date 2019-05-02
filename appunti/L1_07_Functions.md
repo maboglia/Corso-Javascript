@@ -46,7 +46,7 @@ var a=(function(x,y){
 console.log(a) // 3
 ```
 
-Altra caratteristica importante sulle funzioni in JavaScript è che può definirsi una funzione dentro un'altra funzione.
+Si può definire una funzione dentro un'altra funzione.
 
 ```javascript
 function a(){
@@ -63,7 +63,7 @@ console.log(a())
 
 Una funzione può essere invocata con più parametri di quelli definiti, o con meno.
 
-Tutti i parametri che sono stati inviati a una funzione sono accessibili attraverso l'oggetto "arguments".
+Tutti i parametri che sono stati inviati a una funzione sono accessibili attraverso l'oggetto "**arguments**".
 
 ```javascript
 function a(){
@@ -71,4 +71,42 @@ function a(){
 }
 
 a(1,2,3,4,5,6)
+```
+
+
+## Creazione di oggetti: factory function
+
+```javascript
+function Quadrato(lato) {
+    return {
+        lato,
+        area(){
+            console.log(lato  * lato);
+        }
+    }
+}
+
+const quadrato1 = Quadrato(10);
+console.log(quadrato1);
+const quadrato2 = Quadrato(15);
+console.log(quadrato2);
+
+```
+
+## Creazione di oggetti: function constructors
+
+```javascript
+function Quadrato(lato) {
+    this.lato = lato;
+    this.area = function(){
+            console.log(lato  * lato);
+        }
+    }
+}
+
+const quadrato1 = new Quadrato(10);
+console.log(quadrato1);
+const quadrato2 = new Quadrato(15);
+console.log(quadrato2);
+
 ```

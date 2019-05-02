@@ -215,15 +215,15 @@ Valore undefined    |    undefined
 # Strutture del linguaggio
 
 ## Costrutti di controllo del flusso
-* [Strutture condizionali](./Lesson1_05_Control_flow.md)
+* [Strutture condizionali](./L1_05_Control_flow.md)
     * [esempio if](../esempi/01_basic_foundations/018_ANDLogico.html)
     * [esempio switch](../esempi/02_control_flow/02_switch.js)
 
 ---
 ## Costrutti di iterazione (cicli)
-* [For Loop](./Lesson1_05_Control_flow.md) 
+* [For Loop](./L1_05_Control_flow.md) 
     * [esempi](../esempi/02_control_flow/02_for_loop.js)
-* [While Loop](./Lesson1_05_Control_flow.md) 
+* [While Loop](./L1_05_Control_flow.md) 
     * [esempi](../esempi/02_control_flow/02_while_loop.js)
 
 ---
@@ -266,7 +266,7 @@ NaN
 ---
 ## Objects
 
-* [JS Objects](./Lesson1_09_Object.md)
+* [JS Objects](./L1_09_00_Object.md)
 
 #### instanceof
 Verifica se un oggetto è instanza di qualche prototipo.
@@ -322,13 +322,13 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 
 Per lavorare con i Number, puoi usare Math che è l'oggetto che concentra molte constanti e funzioni matematiche.
 
-* [Math Object](./Lesson1_05_MathObject.md)
+* [Math Object](./L1_09_01_MathObject.md)
 
 ## String
 
 String è la rappresentazione di tipo oggetto di una stringa.
 
-* [String Object](./Lesson1_06_StringObject.md)
+* [String Object](./L1_09_02_StringObject.md)
 
 ---
 
@@ -352,7 +352,7 @@ function f(x,y){
 }
 ```
 
-* [Appunti sulle Funzioni](./Lesson1_07_Functions.md) 
+* [Appunti sulle Funzioni](./L1_07_Functions.md) 
 
 ---
 ## Date Object 
@@ -372,7 +372,7 @@ function f(x,y){
 
 ## Array
 
-* [JS array](Lesson1_08_Array.md)
+* [JS array](L1_08_Array.md)
 
 ## Timers
 
@@ -429,9 +429,9 @@ setInterval(function(){
 * Tipi primitivi
 * Tipi reference
 * Booleans
-* [Function](./Lesson1_07_Functions.md) 
-* [Number](./Lesson1_05_MathObject.md)
-* [String](./Lesson1_06_StringObject.md)
-* [Array](./Lesson1_08_Array.md)
-* [Object](./Lesson1_09_Object.md)
+* [Function](./L1_07_Functions.md) 
+* [Number](./L1_05_MathObject.md)
+* [String](./L1_06_StringObject.md)
+* [Array](./L1_08_Array.md)
+* [Object](./L1_09_Object.md)
 * Timers

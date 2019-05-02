@@ -1,11 +1,11 @@
 # Oggetti
 
-Un oggetto è una valore composto, che aggrega molteplici valori, siano essi primitivi o altri tipi di collezione.
+Un oggetto è una valore composto, che aggrega molteplici valori: primitivi, collezioni o altro.
 Un oggetto in JavaScript può essere definito in 3 modi:
-Definizione literal. 
-Instanziazione di classi. 
 
-### Creazione a partire da un prototipo. 
+* Definizione literal. 
+* Instanziazione di classi. 
+* Creazione a partire da un prototipo. 
 
 ## 1ª Forma: Definizione literal
 E' una definizione di proprietà di tipo chiave:valore.
@@ -22,55 +22,12 @@ Altra maniera per definire un oggetto è instanziando una classe di un tipo di o
 a=new Object()
 b=new String('asdf')
 ```
-## Oggetti come array associativo
+### Oggetti come array associativo
 Le variabili di un oggetto si possono accedere come se fossero array associativi:
 ```javascript
 a={x:1,y:2}
 console.log(a.x)
 console.log(a['x'])
-```
-
-# Classi
-Una classe in JavaScript è una collezione di oggetti che ereditano proprietà di un medesimo prototipo.
-```javascript
-function A(){
-    this.a=10
-    this.b=11
-}
-a=new A()
-```
-
-In ES6 è stata introdotta la parola class, ma si tratta di 'zucchero sintattico', javascript continua ad essere un linguaggio basato sui prototipi e le funzioni.
-
-# Prototipi
-Un prototipo è un oggetto associato all'oggetto che sta definendo, e del quale va a ereditare proprietà.
-E' stabilito quando l'oggetto è creato.
-Si può accedere attraverso la variabile prototype
-
-Si usa per aggregare funzioni a una definizione anche dopo aver istanziato l'oggetto.
-
-```javascript
-a=new String('asdf')
-String.prototype.salutare=function(){
-    return 'ciao'
-}
-console.log(a.salutare())
-```
-
-Questa non è una pratica raccomandata!
-Maggiori informazioni: stackoverflow
-può servire per realizzare ereditarietà tra oggetti.
-
-```javascript
-function A(){
-    this.a=100
-    this.x=function(){
-        return this.a
-}}
-function B(){this.b=100}
-B.prototype=new A()
-b=new B()
-console.log(b.x())
 ```
 
 ## 3ª Forma: Object.create
@@ -102,6 +59,69 @@ Ritorna la forma primitiva di un oggetto.
 
 ### Esempi
 [objects](../esempi/04_objects)
+
+---
+
+## Creazione di oggetti: factory function
+
+```javascript
+function Quadrato(lato) {
+    return {
+        lato,
+        area(){
+            console.log(lato  * lato);
+        }
+    }
+}
+
+const quadrato1 = Quadrato(10);
+console.log(quadrato1);
+const quadrato2 = Quadrato(15);
+console.log(quadrato2);
+
+```
+
+## Creazione di oggetti: function constructors
+
+```javascript
+function Quadrato(lato) {
+    this.lato = lato;
+    this.area = function(){
+            console.log(lato  * lato);
+        }
+    }
+}
+
+const quadrato1 = new Quadrato(10);
+console.log(quadrato1);
+const quadrato2 = new Quadrato(15);
+console.log(quadrato2);
+
+```
+
+---
+
+
+```javascript
+const auto = {
+    marca: 'fiat',
+    modello: '500',
+    get librettoAuto(){
+        return `${auto.marca} ${auto.modello}`;
+    },
+    set librettoAuto(valore){
+        const splitta = valore.split('-');
+        this.marca = splitta[0];
+        this.modello = splitta[1];
+    },
+}
+
+auto.librettoAuto = 'ferrari-testarossa';
+console.log(auto);
+
+```
+
+---
 
 
 ## Modificare un oggetto esistente

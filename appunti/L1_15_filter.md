@@ -1,6 +1,6 @@
 # filter
 
-filter, as the name implies, is designed to remove unwanted things from an array. Like map, it returns a new array with elements removed. What elements? Again, that’s completely up to you. If you guessed that we’re providing a function to determine which elements to remove, you’re catching on. Let’s see some examples:
+Like map, it returns a new array with elements removed. 
     
 ```javascript
     // create a deck of playing cards

@@ -2,6 +2,17 @@
 
 Il modo tradizionale per enumerare le proprietà di un oggetto è `for...in`. 
 
+## sintassi
+
+## for/in
+```javascript
+for(variabile in collezion){
+    frasi
+}
+```
+
+
+
 Considera un oggetto che abbia qualche proprietà di tipo stringa e una proprietà di tipo symbol:
 
 ```javascript
@@ -35,3 +46,4 @@ Object.keys(o)
 .filter(prop => prop.match(/^x/))
 .forEach(prop => console.log(`${prop}: ${o[prop]}`));
 ```
+

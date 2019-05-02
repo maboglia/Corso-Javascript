@@ -26,7 +26,9 @@ update.call(madeline, 1942, 'actress');
 ```
 
 ## apply
-apply is identical to call except the way it handles function arguments. call takes arguments directly, just like a normal function. apply takes its arguments as an array:
+apply is identical to call except the way it handles function arguments. 
+call takes arguments directly, just like a normal function. 
+apply takes its arguments as an array:
 
 ```javascript
 update.apply(bruce, [1955, "actor"]);

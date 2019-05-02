@@ -52,42 +52,6 @@ switch(espressione){
 ```
 
 
-## If/Else & Else-IF & Loop
-
-
-### 1. Else-If
-
-```javascript
-if (/* Some condition */) {
-    // Do something
-} else if (/* Some other condition */) {
-    // Do something else
-} else {    // Otherwise
-    // Do a third thing
-}
-```
-
-
-## Switch statement
-
-**Syntax**
-
-```javascript
-switch (/*Some expression*/) {
-    case 'option1':
-        // Do something
-        break;
-    case 'option2':
-        // Do something else
-        break;
-    case 'option3':
-        // Do a third thing
-        break;
-    default:
-       // Do yet another thing
-}
-```
-
 
 ```javascript
 var lunch = prompt("Cosa mangi?","Scegli un piatto");
@@ -106,27 +70,8 @@ switch(lunch){
     console.log("Hai scelto torta");
     break; 
   default:
-    console.log("");
+    console.log("Non hai fame");
 
-}
-```
-
-
-
-## Logical Operator
-
-```javascript
-var iLoveJavaScript =true ;
-var iLoveLearning =true ;
-
-if(iLoveJavaScript && iLoveLearning) {
-  // if iLoveJavaScript AND iLoveLearning:
-  console.log("Awesome! Let's keep learning!");
-} else if(!(iLoveJavaScript || iLoveLearning)) {
-  // if NOT iLoveJavaScript OR iLoveLearning:
-  console.log("Let's see if we can change your mind.");
-} else {
-  console.log("You only like one but not the other? We'll work on it.");
 }
 ```
 
@@ -141,20 +86,21 @@ false && false;  // => false
 ```
 
 **Sample (AND)**
-```javascript
-var hungry=true;
-var foodHere=true;
 
-var eat = function() {
-  // Add your if/else statement here!
-  if(hungry&&foodHere){
+```javascript
+var piove=false;
+var stoBene=true;
+
+var esco = function() {
+  // se non piove e sto bene esco
+  if(piove && stoBene){
    return true;   
   }else{
       return false;
   }
 };
 
-eat();
+esco();
 ```
 
 ### 2. OR (||)
@@ -167,13 +113,14 @@ false || false;   // => false
 ```
 
 **Sample (OR)**
-```javascript
-var tired=true;
-var bored=false;
 
-var nap = function() {
-  // Add your if/else statement here!
-  if(tired||bored){
+```javascript
+var maggiorenne=true;
+var etilista=false;
+
+var requisitiAutista = function() {
+  
+  if(maggiorenne||etilista){
       return true;
   }else{
       return false;
@@ -190,11 +137,11 @@ var nap = function() {
 
 **Sample (Not)
 ```javascript
-var programming=false;
+var programmatore=false;
 
 var happy = function() {
-  // Add your if/else statement here!
-  if(!programming){
+
+    if(!programmatore){
    return true;   
   }else{
       return false;

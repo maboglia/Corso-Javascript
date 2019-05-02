@@ -6,6 +6,7 @@ while(expresion){
     frasi
 }
 ```
+
 ### codice
 [es data](../esempi/02_while_testa_croce.js)
 
@@ -19,73 +20,39 @@ while(expresion)
 
 
 ```javascript
-var coinFace = Math.floor(Math.random() * 2);
+var testaCroce = Math.floor(Math.random() * 2);
 
-while(coinFace === 0){
-	console.log("Heads! Flipping again...");
-	var coinFace = Math.floor(Math.random() * 2);
+while(testaCroce === 0){
+	console.log("Testa! Ritenta...");
+	var testaCroce = Math.floor(Math.random() * 2);
 }
-console.log("Tails! Done flipping.");
+console.log("Croce! Sarai più fortunato.");
 ```
 
-### 1. Syntax
 
-
-```javascript
-while(condition){
-    // Do something!
-}
-```
-
-### 2. Infinite Loops 
+### Infinite Loops 
 
 
 ```javascript
 understand = true;
 
 while(understand){
-	console.log("I'm learning while loops!");
-	//Change the value of 'understand' here!
-	understand=false;
+	console.log("prova microfono");
+
+    //understand=false; //guardia del ciclo
 }
 ```
 
-### 3. Ways of writing While Loops
 
-3 different ways :
 
-```javascript
-var bool = true;
-while(bool){
-    //Do something
-}
-```
-is the same this as 
+### while loops in una Function 
 
 ```javascript
-var bool = true;
-while(bool === true){
-    //Do something
-}
-```
-you could even do:
 
-```javascript
-var bool = true;
-while(bool){
-    //Do something
-}
-```
-
-### 4. Write while loops within a Function 
-
-```javascript
-//Remember to set your condition outside the loop!
- var count=0
+var count=0
 var loop = function(){
    
 	while(count<3){
-		//Your code goes here!
 		console.log("I'm looping!");
 		count++;
 	}
@@ -94,42 +61,25 @@ var loop = function(){
 loop();
 ```
 
-
-## More to While Loop 
-### 1. Quando utilizzare while o for per le iterazioni
+### Do-While Loop
 
 ```javascript
-for(var i=0; i<5; i++){
-    console.log("lala");
-}
-
-var j=0;
-while(j<3){
-    console.log("bla");
-    j++;
-}
-```
-
-### 2. Do-While Loop
-
-```javascript
-var loopCondition = false;
+var condizione = false;
 
 do {
-	console.log("I'm gonna stop looping 'cause my condition is " + loopCondition + "!");	
-} while (loopCondition);
+	console.log("La condizione è " + condizione + "!");	
+} while (condizione);
 ```
 
 ```javascript
-var getToDaChoppa = function(){
-  // Write your do/while loop here!
-  
-  var condition=false;
+var miaFunzione = function(){
+    
+  var condizione=false;
   do{
       console.log("bla");
       
-  }while(condition);
+  }while(condizione);
 };
 
-getToDaChoppa();
+miaFunzione();
 ```

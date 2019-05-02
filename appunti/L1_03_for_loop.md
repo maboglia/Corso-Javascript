@@ -1,24 +1,20 @@
 # Costrutti iterativi (Loop): For 
 
+
+## Sintassi for loops 
+1. partenza
+2. fine
+3. passo 
+
+```javascript
+for (var i = 1; i < 11; i = i + 1) {
+    /* your code here */;
+}
+```
+
 ## for
 ```javascript
 for(inizializzazione;valutatore;incrementatore){
-    frasi
-}
-```
-## for/in
-```javascript
-for(variabile in collezion){
-    frasi
-}
-```
-# Cattura di errori
-```javascript
-try{
-    frasi
-}catch(e){
-    frasi
-}finally{
     frasi
 }
 ```
@@ -40,22 +36,5 @@ Usando il for loop, si può scrivere un codice più efficiente.
 ```javascript
 for (var counter = 1; counter < 6; counter++) {
 	console.log(counter);
-}
-```
-
-## Sintassi for loops 
-### 1. Partenza
-
-```javascript
-for (var i = 1; i < 11; i = i + 1) {
-    /* your code here */;
-}
-```
-
-### 2. fine
-
-```javascript
-for (var i = 1; i < 11; i = i + 1) {
-    /* your code here */;
 }
 ```

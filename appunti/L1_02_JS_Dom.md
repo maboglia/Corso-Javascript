@@ -140,7 +140,7 @@ Sono disponibili metodi per la manipolazione del contenuto.
 
 per accedere al contenuto di un elemento, esistono due metodi
 
-* textContext, per HTMLElement
+* textContent, per HTMLElement
 * data, per Node
 
 ---
@@ -347,6 +347,8 @@ var a='asdf';
 (function b(){
     console.log(a)
 })()// asdf
+```
+```javascript
 var a='asdf';
 (function b(){
     console.log(a)
