@@ -3,7 +3,10 @@
 * [Slide css](http://www.bogliaccino.it/teaching/lab/Corsi/public/javascript/slideshow/css)
 
 
-* [Slide Javascript 1](http://www.bogliaccino.it/teaching/lab/Corsi/public/javascript/slideshow/CorsoJs.0.md)
-* [Slide Javascript 2](http://www.bogliaccino.it/teaching/lab/Corsi/public/javascript/slideshow/CorsoJs.1.md)
-* [Slide SnippetsJavascript_01](http://www.bogliaccino.it/teaching/lab/Corsi/public/javascript/slideshow/SnippetsJavascript_01.md)
+* [Slide Javascript 1](http://www.bogliaccino.it/teaching/lab/Corsi/public/javascript/slideshow/L1_01_JS_Fondamenti.md)
+* [Slide Javascript 2](http://www.bogliaccino.it/teaching/lab/Corsi/public/javascript/slideshow/L1_02_JS_Dom.md)
+* [Slide JQuery](http://www.bogliaccino.it/teaching/lab/Corsi/public/javascript/slideshow/L2_01_JQuery.md)
+* [Slide JQuery](http://www.bogliaccino.it/teaching/lab/Corsi/public/javascript/slideshow/L2_02_JQuery.md)
+* [Slide JQuery](http://www.bogliaccino.it/teaching/lab/Corsi/public/javascript/slideshow/L2_03_JQuery_filtri.md)
+
 
