@@ -9,7 +9,76 @@ Gli effetti li possiamo raggruppare in 4 tipologie
 * Slide up / Slide Down
 * Animate
 
+
 ---
+### Mostrare e nascondere elementi con jQuery: hide()
+
+```javascript
+$("#mioElemento").hide("slow", function() {
+    // nasconde
+}
+
+//mostra
+$("#mioElemento").show("fast", function() {
+    // qui dentro viene eseguito una volta che l'elemento è stato mostrato
+}
+
+// scambia: se è nascosto mostra e se è visibile nasconde
+$("#mioElemento").toggle(1000, function() {
+    }
+```
+---
+### Mostrare e nascondere elementi con jQuery: fade()
+```javascript
+    $("#mioElemento").fadeOut("slow", function() {
+        //fai qualcosa quando termina l'effetto
+    }
+
+
+    $("#mioElemento").fadeIn("fast", function() {
+        //fai qualcosa quando termina l'effetto
+    }
+```
+
+```javascript
+    $("#mioElemento").fadeTo(2000, 0.4, function() {
+        //fai qualcosa quando termina l'effetto
+    }
+```
+---
+### Mostrare e nascondere elementi con jQuery: slide()
+```javascript
+    $("#mioElemento").slideDown("fast", function() {
+        //fai qualcosa quando termina l'effetto
+    }
+
+
+    $("#mioElemento").slideUp("slow", function() {
+        //fai qualcosa quando termina l'effetto
+    }
+
+    $("#mioElemento").slideToggle(1000, function() {
+        //fai qualcosa quando termina l'effetto
+    }
+```
+---
+## Animate
+
+```javascript
+    $("#mioElemento").animate(
+    {
+    opacity: .3,
+    width: "500px",
+    height: "700px"
+    }, 2000, function() {
+    // fai qualcosa quando termina l'animazione
+    }
+    );
+```
+
+---
+
+
 
 ### slideUp()
 

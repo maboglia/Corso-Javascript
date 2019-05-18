@@ -187,3 +187,105 @@ Con Jquery possiamo leggere e impostare i valori per ogni attributo del DOM, ad 
 * `.attr('id','blocco_testo')`
 * `.val('ciao')`
 * `.width('120px')`
+
+
+---
+
+## Accedere e modificare le classi CSS
+
+Con jQuery è facile aggiungere, scambiare o rimuovere classi CSS: ecco i tre metodi
+
+```javascript
+//aggiunge la classe "content" da tutti i <div>
+$("div").addClass("content");
+//rimuove la classe "content" da tutti i <div>
+$("div").removeClass("content"); 
+//fa lo switch della classe "content" da tutti i <div>
+$("div").toggleClass("content");
+```
+
+Se un elemento è di una determinata classe allora esegui il codice:
+
+```javascript
+if ($("#mioElemento").hasClass("content")) {
+    //codice
+}
+
+```
+---
+## Gestire gli stili Css con Jquery
+
+Ecco come modificare i css con jQuery:
+
+```javascript
+$("p").css("width", "400px");
+$("#mioElemento").css("color", "blue");
+$("ul").css("border", "solid 1px #ccc");
+```
+---
+## Aggiungere e rimuovere contenuto e inserire elementi
+
+
+
+### Ottenere l'elemento html
+
+```javascript
+var mioElementHTMLo = $("#mioElemento").html();
+```
+---
+### Ottenere solo il testo contenuto nel tag
+
+```javascript
+var mioElementHTMLo = $("#mioElemento").text();
+```
+---
+### Cambiare l'HTML e/o il Testo
+
+```javascript
+$("#mioElemento").html("<p>Questo è il nuovo contenuto</p>");
+$("#mioElemento").text("Questo è il nuovo contenuto."); // questo sostituisce il testo presente
+```
+---
+### Far seguire (appendere) del contenuto ad un elemento
+
+```javascript
+$("#mioElemento").append("<p>Questo lo aggiungo.</p>");
+$("p").append("<p>Questo pure.</p>"); // Aggiunge questo contenuto ad ogni paragrafo
+```
+---
+### Altri comandi
+
+```javascript
+    appendTo()
+    prepend()
+    prependTo()
+    before()
+    insertBefore()
+    after()
+    insertAfter()
+```
+
+* lavorano in modo simile con specifiche peculiarità
+* Ulteriori informazioni  jQuery.com
+---
+## Gli Eventi: intercettare il click del mouse con jQuery
+
+```javascript
+$("a").click(function() {
+// il codice presente viene eseguito onclick!
+});
+```
+
+* Il codice dentro function() viene eseguito quando un link viene cliccato
+
+* Altri comuni eventi inclusi in jQuery
+  * blur()
+  * focus()
+  * hover()
+  * keydown()
+  * load()
+  * mousemove()
+  * resize()
+  * scroll()
+  * submit()
+  * select()
