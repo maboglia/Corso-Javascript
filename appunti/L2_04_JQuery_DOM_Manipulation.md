@@ -289,3 +289,40 @@ $("a").click(function() {
   * scroll()
   * submit()
   * select()
+## Operazione sugli oggetti selezionati
+
+* Esempi Manipolazione del DOM
+
+```javascript
+$("li").text("testo lista").insertAfter("li:first");
+//inserisce un elemento li appena creato dopo il primo li del documento
+
+$("div#principale").append("dentro il div");
+//inserisce un paragrafo dentro il div che ha id principale
+
+$("input#email").val()
+//valore della input box con id email
+
+$("span").wrap("div")
+//crea un div che contiene tutti gli elementi span della pagina
+
+$("p.evidenziato").text("Sono evidenziato");
+//imposta il testo dei paragrafi di classe evidenziano con la
+stringa passata come parametro
+
+$("img.logo").css("border","solid orange 3px");
+//cambia lo stile a tutte le immagini di classe logo
+```
+
+* Permette di scorrere il vettore di elementi selezionati e di eseguire una funzione per ogni elemento
+
+```javascript
+$(selettore).each()
+```
+
+```javascript
+$(img).each(function(i){
+    $(this).attr("alt","immagine "+i);
+})
+```
+---

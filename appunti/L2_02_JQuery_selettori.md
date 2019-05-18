@@ -185,15 +185,15 @@ Selettore | Esempio | Seleziona
 Selettore | Esempio | Seleziona
 --- | --- | ---
  :input | $(":input") | Tutti gli elementi di input (input, textarea ecc.)
- :text | $(":text") | &lt;input type="text"/&gt;
- :password | $(":password") | &lt;input type="password"/&gt;
- :radio | $(":radio") | &lt;input type="radio"/&gt;
- :checkbox | $(":checkbox") | &lt;input type="checkbox"/&gt;
- :submit | $(":submit") | &lt;input type="submit"/&gt;
- :reset | $(":reset") | &lt;input type="reset"/&gt;
- :button | $(":button") | &lt;input type="button"/&gt;
- :image | $(":image") | &lt;input type="image"/&gt;
- :file | $(":file") | &lt;input type="file"/&gt;
+ :text | $(":text") | Elementi input di tipo "`text`"
+ :password | $(":password") | Elementi input di tipo "`password`"
+ :radio | $(":radio") | Elementi input di tipo "`radio`"
+ :checkbox | $(":checkbox") | Elementi input di tipo "`checkbox`"
+ :submit | $(":submit") | Elementi input di tipo "`submit`"
+ :reset | $(":reset") | Elementi input di tipo "`reset`"
+ :button | $(":button") | Elementi input di tipo "`button`"
+ :image | $(":image") | Elementi input di tipo "`image`"
+ :file | $(":file") | Elementi input di tipo "`file`"
  :enabled | $(":enabled") | Elementi di input attivi
  :disabled | $(":disabled") | Elementi di input disabilitati
  :selected | $(":selected") | Elementi di input selezionati
