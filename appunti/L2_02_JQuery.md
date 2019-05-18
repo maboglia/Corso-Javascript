@@ -22,6 +22,11 @@ Selettore | Esempio | Seleziona
  :gt(no) | $("ul li:gt(3)") | Elementi della lista con indice superiore a 3
  :lt(no) | $("ul li:lt(3)") | Elementi della lista con indice minore di 3
  :not(selector) | $("input:not(:empty)") | Tutti gli input che non sono vuoti
+
+---
+
+Selettore | Esempio | Seleziona
+--- | --- | ---
  :header | $(":header") | Tutte le intestazioni (h1, h2 ecc.)
  :animated | $(":animated") | Tutti gli elementi animati
  :contains(text) | $(":contains('test')") | Tutti gli elementi che contengono la stringa specificata
@@ -33,6 +38,11 @@ Selettore | Esempio | Seleziona
  [attribute=value] | $("a[href='default.htm']") | Tutti gli elementi a con attributo href uguale a default.htm
  [attribute!=value] | $("a[href!='default.htm']") | Tutti gli elementi a con attributo href diverso da default.htm
  [attribute$=value] | $("img[src$='.jpg']") | Tutti gli elementi img con attributo src che termina con .jpg
+
+---
+
+Selettore | Esempio | Seleziona
+--- | --- | ---
  :input | $(":input") | Tutti gli elementi di input (input, textarea ecc.)
  :text | $(":text") | &lt;input type="text"/&gt;
  :password | $(":password") | &lt;input type="password"/&gt;
@@ -48,14 +58,16 @@ Selettore | Esempio | Seleziona
  :selected | $(":selected") | Elementi di input selezionati
  :checked | $(":checked") | Elementi di input spuntati (checkbox)
 
+---
 
-Selettori principali.
+## Selettori principali.
+
 * Selettore di ID => $("#blocco")
 * Selettore di Classe => $(".elenco")
 * Selettore tramite nome TAG => $("p")
 * Selettore tramite attributi => $("[title*= titolo]")
 
-
+---
 
 ```javascript
 <body>

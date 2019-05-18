@@ -30,13 +30,7 @@ I filtri permettono di ottenere una maggiore precisione nella selezione degli el
 ## FILTRI SU TABELLE
 
 Cognome | Provincia | #
-
----
-
-|---
-
-|---
-
+---|---|---
 MAURO|TO|presente
 PAOLO|TO|assente
 CARLO|MI|presente
@@ -54,7 +48,6 @@ YASMINE|RM|assente
 
 ## FILTRI SU MODULI
 
----
 
 ### checkbox
 
