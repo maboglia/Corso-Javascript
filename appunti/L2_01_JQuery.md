@@ -128,4 +128,9 @@ selettore|descrizione
 `.text("primo link")`|Modifica il testo in "primo link"
 `Ritorna alla selezione precedente (primo`
 `.css("border","solid 5px");`|Modifica lo stile del bordo
+
 ---
+
+## Prossimo argomento
+
+[JQuery_selettori](100_github/appunti/L2_02_JQuery_selettori.md)
