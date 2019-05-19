@@ -21,7 +21,31 @@ $("button").click(function(){
 // qualche operazione
 });
 
+---
+
 ```
+## Gli Eventi: intercettare il click del mouse con jQuery
+
+```javascript
+$("a").click(function() {
+// il codice presente viene eseguito onclick!
+});
+```
+
+* Il codice dentro function() viene eseguito quando un link viene cliccato
+
+* Altri comuni eventi inclusi in jQuery
+  * blur()
+  * focus()
+  * hover()
+  * keydown()
+  * load()
+  * mousemove()
+  * resize()
+  * scroll()
+  * submit()
+  * select()
+
 
 ---
 
