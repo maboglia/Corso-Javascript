@@ -133,4 +133,4 @@ selettore|descrizione
 
 ## Prossimo argomento
 
-[JQuery_selettori](100_github/appunti/L2_02_JQuery_selettori.md)
+[JQuery_selettori](L2_02_JQuery_selettori.md)
