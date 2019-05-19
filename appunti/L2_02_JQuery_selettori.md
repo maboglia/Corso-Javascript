@@ -213,14 +213,14 @@ Selettore | Esempio | Seleziona
 ```javascript
 <body>
 <div id="blocco">  <!-- $('#blocco') -->
-<p><strong>ELENCO:</strong> III C </p> $("strong") $("p strong")
+<p><strong>ELENCO:</strong> III C </p> <!-- $("strong") $("p strong")-->
 <ul class="elenco"> <!-- $('.elenco') -->
 <li>PAOLO</li>
 <li>PIETRO</li>
 <li>CARLO</li>
 <li>YASMINE</li>
 </ul>
-<strong>Fine elenco</strong> $("strong")
+<strong>Fine elenco</strong> <!-- $("strong")-->
 </div>
 </body>
 ```
