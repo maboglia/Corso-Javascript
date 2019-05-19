@@ -143,7 +143,7 @@ $("p").append("<p>Questo pure.</p>"); // Aggiunge questo contenuto ad ogni parag
 
 ---
 
-## prepend()
+## Esempio DOM: `prepend()`
 
 ```javascript
 <div id="blocco">
@@ -158,7 +158,7 @@ $("h1").prepend("<span>Primo</span>");
 
 ---
 
-## before()
+## Esempio DOM: `before()`
 
 ```javascript
 <div id="blocco">
@@ -173,7 +173,7 @@ $("h1").before("<span>Primo</span>");
 
 ---
 
-## append()
+## Esempio DOM: `append()`
 
 ```javascript
 <div id="blocco">
@@ -187,7 +187,7 @@ $("h1").append("<span>Primo</span>");
 
 ---
 
-## after()
+## Esempio DOM: `after()`
 
 ```javascript
 <div id="blocco">
@@ -201,7 +201,7 @@ $("h1").after("<span>Primo</span>");
 
 ---
 
-## html()
+## Esempio DOM: `html()`
 
 ```javascript
 <div id="blocco">
@@ -215,7 +215,7 @@ $("#blocco_interno").html("<strong>Ciao , sono un testo dinamico</strong>");
 
 ---
 
-## addClass()
+## Esempio DOM: `addClass()`
 
 ```javascript
 <div id="blocco">
@@ -229,7 +229,7 @@ $("# blocco_interno).addClass("selezionata");
 
 ---
 
-## removeClass()
+## Esempio DOM: `removeClass()`
 
 ```javascript
 <div id="blocco">
@@ -243,7 +243,7 @@ $("#blocco_interno").removeClass("selezionata");
 
 ---
 
-## html() + val()
+## Esempio DOM: `html()` + val()
 
 ```javascript
 
@@ -257,7 +257,7 @@ $("span"). html( $("#testo").val());
 
 ---
 
-## val()
+## Esempio DOM: `val()`
 
 ```javascript
 <form>
