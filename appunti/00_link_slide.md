@@ -16,5 +16,6 @@
 * [Slide JQuery Selettori](http://www.bogliaccino.it/teaching/lab/Corsi/public/javascript/slideshow/L2_02_JQuery_selettori.md)
 * [Slide JQuery Filtri](http://www.bogliaccino.it/teaching/lab/Corsi/public/javascript/slideshow/L2_03_JQuery_filtri.md)
 * [Slide JQuery DOM](http://www.bogliaccino.it/teaching/lab/Corsi/public/javascript/slideshow/L2_04_JQuery_DOM_Manipulation.md)
-
-
+* [Slide JQuery Eventi](http://www.bogliaccino.it/teaching/lab/Corsi/public/javascript/slideshow/L2_05_JQuery_Eventi.md)
+* [Slide JQuery Effetti](http://www.bogliaccino.it/teaching/lab/Corsi/public/javascript/slideshow/L2_06_JQuery_Effetti.md)
+* [Slide JQuery Code Snippets](http://www.bogliaccino.it/teaching/lab/Corsi/public/javascript/slideshow/L2_07_JQuery_Snippets.md)
