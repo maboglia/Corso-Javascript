@@ -130,7 +130,7 @@ $( “.element" ).slideToggle("slow");
  
  ---
 
- ## Semplice accordion
+## Semplice accordion
 
 ```javascript
 // Close all Panels
@@ -176,7 +176,7 @@ jQuery( document ).ready(function() {
 
 ---
 
-## Invia data asando il metodo POST
+## Invia data usando il metodo POST
 
 
 ```javascript
@@ -249,7 +249,6 @@ $("#link2").click(function(){
 $("#link3").click(function(){
    $("#middle2").hide(); 
 });
-//This will show all child elements, on click.
 ```
 
 ---
@@ -266,8 +265,7 @@ divs = jQuery.unique( divs );
 $( "div:eq(2)" ).text( "jQuery is very fun to" + divs.length + " learn.." )
   .css( "color", "blue" );
 
-// Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on
-// arrays of DOM elements, not strings or numbers.
+// Ordinare un array di elementi del DOM, rimuovendoi duplicati. Non funziona con stringhe o numeri
 ```
 
 ---
