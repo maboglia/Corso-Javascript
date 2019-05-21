@@ -1,0 +1,130 @@
+.
+├── codice.txt
+├── index.html
+├── js
+│   ├── index.js
+│   └── Studente.js
+├── leggimi.txt
+└── package.json
+
+
+{
+    "name": "laboratoriojs",
+    "version": "1.0.0",
+    "description": "laboratorio javascript",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "lite-server"
+    },
+    "devDependencies": {
+        "lite-server": "^2.3.0"
+    },
+    "author": "mb",
+    "license": "ISC"
+}
+
+
+
+class Studente {
+
+    constructor(nome, cognome) {
+        this.immatricola();
+        this.cognome = cognome;
+        this.nome = nome;
+        this._matricola = Studente.matricola;
+    }
+
+    //potrebbe anche essere dichiarato static
+    immatricola() {
+        //console.log(Studente.matricola);
+        console.log("Studente immatricolato");
+        return Studente.matricola += 1;
+    }
+
+    //custom toString
+    mostra() {
+        console.log(`Lo studente ${this._matricola} è una ${this.tipo} ${this.nome} prodotta da ${this.cognome}`);
+    }
+
+}
+/** proprietà "static" */
+Studente.matricola = 0;
+
+/** override del metodo tostring */
+Studente.prototype.toString = function() {
+    return `Matricola: ${this._matricola} \t nome: ${this.nome} \t cognome: ${this.cognome}`;
+}
+
+
+//collezione di aula
+
+const elenco = [{
+        "nome": "mauro",
+        "cognome": "bogliaccino"
+    },
+    {
+        "nome": "pippo",
+        "cognome": "bogliaccino"
+    }
+];
+
+let obj = JSON.parse(JSON.stringify(elenco));
+console.log(obj);
+
+obj.forEach(studente => {
+    console.log(studente);
+    $("h1").after("<h2>" + studente.nome + "</h2>");
+});
+
+
+
+const aula = [new Studente('mauro', 'bogliaccino'), new Studente('paolo', 'bogliaccino'), new Studente('pietro', 'bogliaccino')];
+
+console.log(aula);
+
+aula.forEach(studente => {
+    console.log(studente);
+    $("h1").after("<h2>" + studente.nome + "</h2>");
+});
+
+console.log("Totale aula immatricolati: ", Studente.matricola);
+
+
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laboratorio JS</title>
+</head>
+
+<body>
+
+    <h1>Laboratorio JS</h1>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/Studente.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
+
+
+1) inizializza la cartella con npm
+2) aggiungi lite-server al package.json
+3) creo i file index (html e js)
+4) eseguo npm run dev per far partire lite-server e caricare il progetto
+5) :)
+
+--
+
+1) variable scope (ambito di visibilità)
+2) global e block scope 
+3) closure
+4) closure & block scope
+5) IIFE (Immediately Invoked Function Expression)
+6) Array​.prototype​.filter() & arrow functions
+
