@@ -1,6 +1,5 @@
 # Arrow
 
-Arrow functions allow you to simplify syntax in three ways:
 Permettono di semplificare il codice in tre modi
 • puoi omettere la keyword function.
 • se la funzione ha un solo argomento, puoi omettere le parentesi.

@@ -1,4 +1,4 @@
-#Lesson5 Control Flow
+# Control Flow - Istruzioni per il controllo del flusso
 
 ## Condizioni
 * if
@@ -75,6 +75,8 @@ switch(lunch){
 }
 ```
 
+## Uso degli operatori logici
+
 ### 1. And (&&)
 
 
@@ -84,8 +86,6 @@ true && false;   // => false
 false && true;   // => false
 false && false;  // => false
 ```
-
-**Sample (AND)**
 
 ```javascript
 var piove=false;
@@ -112,7 +112,6 @@ false || true;    // => true
 false || false;   // => false
 ```
 
-**Sample (OR)**
 
 ```javascript
 var maggiorenne=true;
@@ -135,7 +134,6 @@ var requisitiAutista = function() {
 !false;  // => true
 ```
 
-**Sample (Not)
 ```javascript
 var programmatore=false;
 
