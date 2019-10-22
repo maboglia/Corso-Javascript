@@ -1,8 +1,7 @@
 # for ... in
 
-Il modo tradizionale per enumerare le proprietà di un oggetto è `for...in`. 
+Il costrutto  `for...in` fornisce un modo per enumerare le proprietà di un oggetto. 
 
-## sintassi
 
 ## for/in
 ```javascript
@@ -10,8 +9,6 @@ for(variabile in collezion){
     frasi
 }
 ```
-
-
 
 Considera un oggetto che abbia qualche proprietà di tipo stringa e una proprietà di tipo symbol:
 
@@ -24,7 +21,7 @@ for(let prop in o) {
 }
 ```
 
-E' anche possibile iterare col for in su un array (che in JS è un oggetto), ma non è una pratica consigliata.
+E' anche possibile iterare col  `for...in` su un array (che in JS è un oggetto), ma non è una pratica consigliata.
 
 ### Object.keys
 

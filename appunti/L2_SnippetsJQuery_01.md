@@ -1,8 +1,7 @@
-# Snippets Javascript
+# Snippets JQuery
 
 ```javascript
 
-//------------------------inizio jquery-------------
 
 $("#hello_jquery").click(function(event) {
 	alert("hello jquery");
@@ -276,17 +275,3 @@ function provacolore (argument) {
 }
 ```
 ---
-
-```javascript
-//ciclo di caratteri unicode 
-var stringaEsadecimale, i = 0;
-for (let carattere = 0; carattere < 1000; carattere++) {
-
-    stringaEsadecimale = `${carattere}`;
-    document.write(String.fromCharCode(stringaEsadecimale));
-    if (i % 40 == 0)
-        document.write("<br>");
-
-    i++;
-}
-```

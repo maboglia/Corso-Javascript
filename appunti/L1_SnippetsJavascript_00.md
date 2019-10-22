@@ -1,8 +1,7 @@
 # Snippets Javascript
 
 
-//Accedere al DOM 
-// individua i single element della pagina 
+## Accedere al DOM: individua i single element della pagina 
 
 //by Id
 ```javascript
@@ -28,8 +27,7 @@ var unorderedLists = document.getElementsByTagName("ul");
 var orderedLists = document.getElementsByTagName("ol");
 var mainContent = document.getElementsByTagName("main");
 
-//combinati
-//var linkNav = document.getElementById("nav").getElementsByTagName("a");
+var linkNav = document.getElementById("nav").getElementsByTagName("a");
 var linkSide = document.getElementById("right_sidebar").getElementsByTagName("a");
 ```
 
@@ -86,8 +84,7 @@ function scriviTitolo (argument) {
 ```javascript
 
 //array di allievi
-		var allievi = [
-			"Avvisato", "Barbero", "Bavato", "Brandozzi", "Borgo", "Brean", "Castagno", "Delmastro", "Lanzetti", "Lo Rillo", "Narese", "Paschetta", "Perrone", "Piazza", "Quartero", "Quatrale", "Savasta", "Scudeler", "Spano", "Zeppegno", "Bianco", "Contessa", "Donofrio", "Libore", "NKomp", "Sacchetto", "Salarzehi", "Torresin"    ];
+var allievi = ['Romolo', 'Numa Pompilio'];
 
 ```
 
@@ -143,10 +140,8 @@ function restore_home(){
 	pulisciArticolo();
 
 	scriviTitolo("Titolo Articolo");
-	scriviArticolo("<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>" +
-				"<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>");
+	scriviArticolo("<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>");
 
-	
 }
 ```
 
@@ -165,19 +160,6 @@ function modificaDOM_1(){
 
 ## 
 
-```javascript
-
-//mainTitle = document.getElementById("mainTitle");
-//console.log(mainTitle.innerHTML);
-
-//var sidebar = document.getElementById("sidebar");
-//console.log(sidebar.innerHTML);
-
-//var arrayOfH1s = mainContent.getElementsByTagName("h1");
-//arrayOfH1s[0].innerHTML = "This is a new title";
-
-//funzioni aritmetiche
-```
 
 ## 
 

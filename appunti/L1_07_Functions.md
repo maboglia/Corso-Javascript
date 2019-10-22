@@ -8,16 +8,8 @@ function f(x,y){
 }
 ```
 
-* sintassi
-* invocare le funzioni
-* return
-* perché usare le funzioni
-* l'operatore () chiama la funzione
-* funzioni usate come variabili
-* scope delle variabili: variabili globali e locali
-* ciclo vita delle variabili
-
 ## Una funzione può essere assegnata a una variabile
+(JS supporta le [First-class Function](https://wiki.developer.mozilla.org/it/docs/Glossary/First-class_Function))
 
 ```javascript
 var f=function(x){
@@ -74,7 +66,7 @@ a(1,2,3,4,5,6)
 ```
 
 
-## Creazione di oggetti: factory function
+## Creazione di oggetti con le funzioni: factory function
 
 ```javascript
 function Quadrato(lato) {
@@ -93,7 +85,7 @@ console.log(quadrato2);
 
 ```
 
-## Creazione di oggetti: function constructors
+## Creazione di oggetti (ES5): function constructors
 
 ```javascript
 function Quadrato(lato) {
@@ -109,4 +101,32 @@ console.log(quadrato1);
 const quadrato2 = new Quadrato(15);
 console.log(quadrato2);
 
+```
+
+[funzioni in ES6](./L3_ES6_11_ArrowFunctions.md)
+
+---
+
+## Hoisting
+
+* Le variabili in JavaScript hanno ambito di funzione
+* Significa che tutte le variabili dichiarate in una funzione sono visibili nel corpo della funzione
+* Anche prima di essere dichiarate.
+
+---
+
+### Esempi
+
+```javascript
+var a='asdf';
+(function b(){
+    console.log(a)
+})()// asdf
+```
+```javascript
+var a='asdf';
+(function b(){
+    console.log(a)
+    var a='qwer'
+})()// undefined
 ```

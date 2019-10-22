@@ -1,6 +1,6 @@
 ### some
 
-`some` ritorna true se torva un elemento che soddisfi i criteri 
+`some` ritorna true se trova un elemento che soddisfi i criteri 
 
 
 ```javascript

@@ -1,59 +1,64 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8"> 
-		<title>canvas html5</title>
-<style type="text/css">
-	#output {
-		border: 1px solid blue;
-		width: 640px;
-		height: 480px;
-	}
-
-
-</style>
+    <meta charset="utf-8">
+    <title>canvas html5</title>
+    <style type="text/css">
+        #output {
+            border: 1px solid blue;
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+        }
+    </style>
 
 
 </head>
+
 <body>
 
-	<canvas id="output">
+    <canvas id="output">
 
 	</canvas>
 
-	<button id="btnDisegna">disegna</button>
+    <button id="btnDisegna">disegna</button>
 
 
-<script type="text/javascript">
-	var btnDisegna = document.getElementById("btnDisegna");
-	var output = document.getElementById("output");
+    <script type="text/javascript">
+        var btnDisegna = document.getElementById("btnDisegna");
+        var output = document.getElementById("output");
 
-	btnDisegna.addEventListener("click", disegna);
+        btnDisegna.addEventListener("click", disegna);
 
-	function disegna () {
-		
-		var contesto = output.getContext("2d");
+        function disegna() {
 
-		contesto.beginPath();
-		contesto.fillStyle="red";
-		contesto.strokeStyle="black";
+            var contesto = output.getContext("2d");
 
-		contesto.moveTo(0, 0);
-		contesto.lineTo(10, 15);
-		// contesto.lineTo(150, 200);
-		// contesto.lineTo(200, 100);
-		contesto.stroke();
-		contesto.closePath();
+            contesto.beginPath();
+            contesto.lineWidth = 2;
+            contesto.fillStyle = "red";
+            contesto.strokeStyle = "black";
 
-		contesto.font = '40pt Arial';
-		contesto.fillText("hello world", 10, 100);
-		contesto.strokeText("hello world", 10, 100);
+            contesto.moveTo(0, 0);
+            contesto.lineTo(500, 250);
 
-		//contesto.fillRect(10, 10, 100, 100);
+            contesto.moveTo(100, 10);
+            contesto.lineTo(100, 150);
+            contesto.lineTo(50, 50);
+            // contesto.lineTo(200, 100);
+            contesto.stroke();
+            contesto.closePath();
 
-	}
+            contesto.font = '30pt Verdana';
+            contesto.fillText("hello world", 10, 150);
+            contesto.strokeText("hello world", 10, 150);
 
-</script>
+            //contesto.fillRect(10, 10, 100, 100);
+
+        }
+    </script>
 
 </body>
+
 </html>

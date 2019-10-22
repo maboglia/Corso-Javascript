@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Capitolo 9, Esempio 6</title>
+    <style>
+        #bannerPubblicitario {
+            position: absolute;
+            font: 12px Arial;
+            top: 4px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bannerPubblicitario" style="left: 300px;">
+        Qui c'è il testo o l'immagine
+    </div>
+
+    <script>
+        var cambiaDirezione = false;
+
+        function eseguiAnimazione() {
+            var bannerPubblicitario = document.getElementById("bannerPubblicitario");
+            var posCorrente = bannerPubblicitario.offsetLeft;
+            var nuovaPosizione;
+
+            if (!cambiaDirezione) {
+                nuovaPosizione = posCorrente + 2;
+
+                if (posCorrente >= 400) {
+                    cambiaDirezione = true;
+                }
+            } else {
+                nuovaPosizione = posCorrente - 2;
+
+                if (posCorrente <= 0) {
+                    cambiaDirezione = false;
+                }
+            }
+
+            bannerPubblicitario.style.left = nuovaPosizione + "px";
+        }
+
+        setInterval(eseguiAnimazione, 10);
+    </script>
+
+
+</body>
+
+</html>

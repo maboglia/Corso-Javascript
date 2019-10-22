@@ -1,11 +1,13 @@
-# Arrow
+# Arrow Functions
 
-Permettono di semplificare il codice in tre modi
-• puoi omettere la keyword function.
-• se la funzione ha un solo argomento, puoi omettere le parentesi.
-• se il corpo della funzione ha una singola espressione, puoi omettere le graffe e il return
+Le arrow function permettono di semplificare il codice in tre modi
+
+* puoi omettere la keyword function.
+* se la funzione ha un solo argomento, puoi omettere le parentesi.
+* se il corpo della funzione ha una singola espressione, puoi omettere le graffe e il return
 
 Le Arrow functions sono sempre anonime. 
+
 Puoi assegnarle ad una variabile, ma non si può creare una _named function_ .
 
 ```javascript
@@ -20,19 +22,6 @@ const f2 = name => `Hello, ${name}!`;
 const f3 = function(a, b) { return a + b; }
 // OR
 const f3 = (a,b) => a + b;
-
-//esempio
-const o={
-    name: 'Julie', 
-greetBackwards: function() {
-    const getReverseName = () => {
-        let nameBackwards = '';
-for(let i=this.name.length-1; i>=0; i--) {
-    nameBackwards += this.name[i]; }
-return nameBackwards; };
-return `${getReverseName()} si eman ym ,olleH`; },
-    };
-    o.greetBackwards();
 
 ```
 
@@ -58,3 +47,4 @@ x => ({ x: y  })
 
 ```
 
+Le arrow functions si utilizzano principalmente nei nuovi costrutti inseriti dalla versione ES2015 ([.filter](./L3_ES6_15_filter.md), [.map](L3_ES6_17_map.md), ...)

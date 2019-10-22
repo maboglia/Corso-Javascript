@@ -26,8 +26,7 @@ update.call(paolo, 1999, 'student');
 ```
 
 ## apply
-`apply` è identica a `call`, ma gestisce in modo differente gli argomenti: 
-devono essere passati come array
+`apply` è identica a `call`, ma gestisce in modo differente gli argomenti: devono essere passati come array
 
 ```javascript
 update.apply(mauro, [1955, "developer"]);

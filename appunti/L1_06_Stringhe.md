@@ -11,7 +11,7 @@ var c='qui un "esempio"'
 var d="un esempio 'Più'"
 ```
 
-### Sequenze di Escape 
+## Sequenze di Escape 
 sequenza | significato
 ---|---
 \O          | The NULL character
@@ -27,7 +27,7 @@ sequenza | significato
 \x[XX]      | The Latin-1
 \u[XXXX]    | The Unicode character
 
-### Parsing di Stringhe (I)
+## Parsing di Stringhe (I)
 Una stringa può essere considerata come un array di caratteri.
 Esempi:
 ```javascript
@@ -35,35 +35,25 @@ var a='stringa di testo'
 console.log(a[5]) // a
 ```
 
-### Funzioni di stringa
+## principali metodi delle stringhe
 
-    metodi delle stringhe
-    unire le stringhe
-    trovare la lunghezza di una stringa
-    trovare un carattere in una stringa
-    tagliare le stringhe
-    modificare le stringhe: tutto maiuscolo/minuscolo
-    length
-    caratteri speciali
-        apici, doppi apici, escape
-    spezzare lunghe linee di codice
     
 metodo | operazione
 ---|---
 indexOf() | cerca una stringa
 search() | cerca una stringa nella stringa data
 slice(start, end) | estrai parti di stringa
-substring(start, end) | estrai parti di stringa \nnon accetta indici negativi
+substring(start, end) | estrae parti di stringa, non accetta indici negativi
 substr(start, length) | estrai parti di stringa
 replace() | sostituisce stringhe
-toUpperCase() |
-toLowerCase() |
-concat() |
-charAt(position) |
+toUpperCase() | Trasforma la stringa in maiuscolo
+toLowerCase() | Trasforma la stringa in minuscolo
+concat() | Concatena le stringhe
+charAt(posizione) | Ritorna il carattere alla posizione (0-based)
 charCodeAt(position) | ritorna il carattere Unicode
 split(separatore) | converte una stringa in un array
 
-### esempi
+## esempi
 ```javascript
 var s = "hello, world"
 s.charAt(0)          // => "h"

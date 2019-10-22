@@ -153,3 +153,5 @@ var myObject = {
   skill :mieiSkill
 };
 ```
+
+[Le classi in ES6](./L3_ES6_09_Classi_Prototipi.md)
