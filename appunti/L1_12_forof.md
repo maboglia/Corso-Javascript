@@ -18,7 +18,7 @@ console.log(`You rolled...${face}!`);
 ```for...of``` si utilizza quando non è importante conoscere l'inidice dell'iterazione.
 
 ### HTMLCollection
-I metodi del DOM ritornano oggetti di tipo HTMLCollection, che un oggetto simile all'array. Sip può scorrere con i cicli for tradizionali, ma non si possono usare i nuovi metodi Array.prototype.
+I metodi del DOM ritornano oggetti di tipo HTMLCollection, che è un oggetto simile all'array. Si può scorrere con i cicli for tradizionali, ma non si possono usare i nuovi metodi Array.prototype.
 
 Per poterli utilizzare, devi convertire la HTMLCollection in un array, usando l'operatore spread `...`
 
