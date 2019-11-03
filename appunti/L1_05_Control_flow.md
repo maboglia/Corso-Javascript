@@ -1,5 +1,6 @@
 # Control Flow - Istruzioni per il controllo del flusso
 
+---
 ## Condizioni
 * if
 * if ... else
@@ -8,6 +9,7 @@
 * operatore ternario
 
 
+---
 ## if
 ```javascript
 if(espressione){
@@ -21,6 +23,7 @@ if(espressione){
 }
 ```
 
+---
 ## if else if
 
 ```javascript
@@ -32,6 +35,7 @@ if(espressione){
     frasi
 }
 ```
+---
 ## switch
 
 ```javascript
@@ -46,6 +50,7 @@ switch(espressione){
 	  frasi
 }
 ```
+---
 ## operatore ternario
 ```javascript
 (condizione) ? true : false ;
@@ -75,8 +80,10 @@ switch(lunch){
 }
 ```
 
+---
 ## Uso degli operatori logici
 
+---
 ### 1. And (&&)
 
 
@@ -103,6 +110,7 @@ var esco = function() {
 esco();
 ```
 
+---
 ### 2. OR (||)
 
 ```javascript
@@ -127,6 +135,7 @@ var requisitiAutista = function() {
 };
 ```
 
+---
 ### Not (!)
 
 ```javascript

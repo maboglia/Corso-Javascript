@@ -1,6 +1,7 @@
 # Snippets Javascript
 
 
+---
 ## Accedere al DOM: individua i single element della pagina 
 
 //by Id
@@ -31,6 +32,7 @@ var linkNav = document.getElementById("nav").getElementsByTagName("a");
 var linkSide = document.getElementById("right_sidebar").getElementsByTagName("a");
 ```
 
+---
 ## 
 
 ```javascript
@@ -42,6 +44,7 @@ function pulisciTitolo () {
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -53,6 +56,7 @@ function pulisciArticolo () {
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -70,6 +74,7 @@ function scriviArticolo (argument) {
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -79,6 +84,7 @@ function scriviTitolo (argument) {
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -88,6 +94,7 @@ var allievi = ['Romolo', 'Numa Pompilio'];
 
 ```
 
+---
 ## 
 
 ```javascript
@@ -101,6 +108,7 @@ function scriviArticoloCOMPLETO (argument1,argument2) {
 
 ```
 
+---
 ## 
 
 ```javascript
@@ -127,6 +135,7 @@ console.log("Link  in sidebar: ", linkSide.length);
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -145,6 +154,7 @@ function restore_home(){
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -158,9 +168,11 @@ function modificaDOM_1(){
 }
 ```
 
+---
 ## 
 
 
+---
 ## 
 
 ```javascript
@@ -183,6 +195,7 @@ function Calcola(){
 	}
 ```
 
+---
 ## 
 
 ```javascript
@@ -226,6 +239,7 @@ var i=0
 	}
 ```
 
+---
 ## 
 
 ```javascript
@@ -240,6 +254,7 @@ function Quadrati(){
 
 ```
 
+---
 ## 
 
 ```javascript
@@ -254,6 +269,7 @@ function TestaCroce(){
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -275,6 +291,7 @@ function Divisore35 () {
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -292,6 +309,7 @@ function arrayCitta (argument) {
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -307,6 +325,7 @@ function arrayNomi (argument) {
 
 ```
 
+---
 ## 
 
 ```javascript
@@ -336,6 +355,7 @@ function promptColori (argument) {
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -365,6 +385,7 @@ miaVariabile5 =  miaVariabile * miaVariabile2;
 
 ```
 
+---
 ## 
 
 ```javascript
@@ -392,6 +413,7 @@ function faiAddizioni(x, y){
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -419,6 +441,7 @@ barralaterale.appendChild(nuovaTestatina);
 //console.log(somma3);
 ```
 
+---
 ## 
 
 ```javascript
@@ -451,6 +474,7 @@ function setcolor()
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -504,6 +528,7 @@ var studente = {
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -552,6 +577,7 @@ function slideshow(){
 }
 ```
 
+---
 ## 
 
 ```javascript

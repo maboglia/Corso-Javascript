@@ -8,6 +8,8 @@ function f(x,y){
 }
 ```
 
+
+---
 ## Una funzione può essere assegnata a una variabile
 (JS supporta le [First-class Function](https://wiki.developer.mozilla.org/it/docs/Glossary/First-class_Function))
 
@@ -18,6 +20,8 @@ var f=function(x){
 f(10)
 ```
 
+
+---
 ## Come una funzione può essere assegnata a una variabile, è possibile che una funzione riceva altre funzioni come parte di suoi parametri
 
 ```javascript
@@ -28,6 +32,8 @@ var a=f(10,function(x){return x*2});
 console.log(a) // 20
 ```
 
+
+---
 ## Inoltre una funzione può essere di forma anonima e si può eseguire nella definizione.
 
 ```javascript
@@ -51,6 +57,8 @@ function a(){
 console.log(a())
 ```
 
+
+---
 ## Varargs
 
 Una funzione può essere invocata con più parametri di quelli definiti, o con meno.
@@ -66,6 +74,8 @@ a(1,2,3,4,5,6)
 ```
 
 
+
+---
 ## Creazione di oggetti con le funzioni: factory function
 
 ```javascript
@@ -85,6 +95,8 @@ console.log(quadrato2);
 
 ```
 
+
+---
 ## Creazione di oggetti (ES5): function constructors
 
 ```javascript
@@ -107,6 +119,8 @@ console.log(quadrato2);
 
 ---
 
+
+---
 ## Hoisting
 
 * Le variabili in JavaScript hanno ambito di funzione
@@ -115,6 +129,8 @@ console.log(quadrato2);
 
 ---
 
+
+---
 ### Esempi
 
 ```javascript

@@ -1,6 +1,7 @@
 # Cattura di errori
 
 
+---
 ## try...catch statement
 
 Il try...catch statement delimita un blocco di codice da provare e gestisce una eventuale situazione di errore.
@@ -30,6 +31,7 @@ catch(error) {
 }
 ```
 
+---
 ## throw
 
 L'istruzione throw chiama un'eccezione definita dall'utente. 

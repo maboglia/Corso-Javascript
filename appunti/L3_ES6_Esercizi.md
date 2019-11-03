@@ -39,6 +39,7 @@ sum(2, 5, 80, 1, 10, 12);
 //110
 
 ```
+---
 
 ## 2 Const
 
@@ -91,6 +92,7 @@ console.log(arr);
 
 ```
 
+---
 
 ## 3 Let
 
@@ -131,6 +133,7 @@ console.log(i);
 
 ```
 
+---
 
 ## 4 Hoisting
 
@@ -176,6 +179,7 @@ console.log(c);
 // Uncaught ReferenceError: c è not defined
 
 ```
+---
 
 
 ## 5  Ternary Operator
@@ -225,6 +229,7 @@ console.log(tipoNumerico(true));
 
 ```
 
+---
 
 ## 6  Arrow Functions
 
@@ -257,6 +262,7 @@ setTimeout(() => console.log(prodotto(5, 10)), 1000);
 
 ```
 
+---
 
 ## 7  Default parameters
 
@@ -312,6 +318,7 @@ moltiplicaPer(5, 10);
 
 ```
 
+---
 
 ## 8  Controllare la presenza dei parametri in una funzione
 
@@ -359,6 +366,7 @@ quadrato();
 
 ```
 
+---
 
 ## 9  Object Destructuring
 
@@ -401,6 +409,7 @@ console.log(prodotto(obj));
 
 ```
 
+---
 
 ## 10  Destructuring e Rest Operator
 
@@ -448,6 +457,7 @@ console.log(c);
 
 ```
 
+---
 
 ## 11  Spread Operator
 
@@ -489,6 +499,7 @@ console.log(arr);
 
 ```
 
+---
 
 ## 12  Copiare Array
 
@@ -535,6 +546,7 @@ console.log(b);
 
 ```
 
+---
 
 ## 13  Template Literals
 
@@ -587,6 +599,7 @@ cars.forEach(car => console.log(carInfo(car)));
 
 ```
 
+---
 
 ## 14  Object Destructuring
 
@@ -671,6 +684,7 @@ console.log(shortPerson(person2));
 
 ```
 
+---
 
 ## 15  Iterare su una Stringa
 
@@ -715,6 +729,7 @@ console.log(conteggioVocali);
 
 ```
 
+---
 
 ## 16  Scambia i valori di due variabili
 
@@ -749,6 +764,8 @@ console.log(a, b);
 
 ```
 
+---
+---
 
 ## 17  IIFE Immediately Invoked Function Expression
 
@@ -810,6 +827,7 @@ console.log(saluti.saluta("Francesca"));
 
 ```
 
+---
 
 ## 18 Classi ES6
 
@@ -864,6 +882,7 @@ console.log(arancia.priceInfo());
 
 ```
 
+---
 
 ## 19  Iterare sulle proprietà di un Object
 
@@ -916,6 +935,7 @@ console.log(sumObjectValues(numeri));
 
 ```
 
+---
 
 ## 20  somma dei positivi e quella dei negativi
 

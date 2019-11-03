@@ -18,7 +18,7 @@ for(inizializzazione;valutatore;incrementatore){
     frasi
 }
 ```
-
+--- 
 
 ## Perché usare i *for* loops ? 
 Invece di scrivere 5 linee di codice.... 

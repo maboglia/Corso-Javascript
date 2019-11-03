@@ -6,7 +6,7 @@ while(expresion){
     frasi
 }
 ```
-
+--- 
 ### codice
 [es data](../esempi/02_while_testa_croce.js)
 
@@ -29,7 +29,7 @@ while(testaCroce === 0){
 console.log("Croce! Sarai più fortunato.");
 ```
 
-
+--- 
 ### Infinite Loops 
 
 
@@ -44,7 +44,7 @@ while(understand){
 ```
 
 
-
+--- 
 ### while loops in una Function 
 
 ```javascript
@@ -60,7 +60,7 @@ var loop = function(){
 
 loop();
 ```
-
+--- 
 ### Do-While Loop
 
 ```javascript

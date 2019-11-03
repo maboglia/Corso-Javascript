@@ -1,6 +1,7 @@
 # Array
 
 
+---
 ### creare un array
 perché creare un array
 ```javascript
@@ -17,6 +18,7 @@ var student7 = 'Ciccio';
 var students = ['Paperino', 'Pippo', 'Pluto', 'Paperina', 'Topolino', 'Minnie', 'Ciccio'];
 ```
 
+---
 ## metodi principali
 
 |         metodo         |                             descrizione                             |
@@ -36,12 +38,14 @@ var students = ['Paperino', 'Pippo', 'Pluto', 'Paperina', 'Topolino', 'Minnie', 
 | tostring()             | Converts an array to a string.                                      |
 
 
+---
 ## Dichiarare array 
 
 ```javascript
 var list=["one","two","three"];
 ```
 
+---
 ## Accedere array
 ```javascript
 var languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
@@ -49,6 +53,7 @@ var languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
 console.log(languages[2]); //Output: JavaScript
 ```
 
+---
 ## Inserire Elementi
 
 ```javascript
@@ -56,6 +61,7 @@ students.push('Gino');
 ```
 
 
+---
 ## Rimuovere Elementi
 
 ```javascript
@@ -64,6 +70,7 @@ students.pop();
 
 ---
 
+---
 ## Lunghezza di un array
 
 ```javascript
@@ -78,6 +85,7 @@ var languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
 console.log(languages.length);
 ```
 
+---
 ## Indicizzare un array
 
 ```javascript
@@ -88,6 +96,7 @@ students;
 ```
 
 
+---
 ## Concatenare Arrays
 
 ```javascript
@@ -97,6 +106,7 @@ var bothClasses = mondayClass.concat(tuesdayClass);
 ```
 
 
+---
 ## Trasformare Arrays in Stringhe
 
 ```javascript
@@ -104,6 +114,7 @@ bothClasses.toString();
 bothClasses.join(' e ');
 ```
 
+---
 ## Iterare su elementi array 
 ```javascript
 var languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
@@ -113,6 +124,7 @@ for(var i=0; i < languages.length; i++){
 }
 ```
 
+---
 ## Array di Array 
 
 ```javascript
@@ -125,12 +137,14 @@ var biDimensionale = [[1, 1], [1, 1]];
 | 1   | 1     |
 | 1   | 1     |
 
+---
 ## Array irregolari
 
 ```javascript
 var jagged=[[1,1,1,1],[2,2,2],[3,3]];
 ```
 
+---
 ## Array eterogenei
 
 ```javascript
@@ -141,6 +155,7 @@ var me={
 var myArray=[1,true,"lala",me];
 ```
 
+---
 ## Array Multi-dimensionali irregolari
 
 ```javascript
@@ -153,6 +168,7 @@ newArray=[[1,1,1],[me],[2,2],[3]];
 ```
 
 
+---
 ## laboratorio, prova a:
 
 * accedere agli elementi di un array

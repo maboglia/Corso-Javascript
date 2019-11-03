@@ -9,6 +9,7 @@ $("#hello_jquery").click(function(event) {
 
 ```
 
+---
 ## 
 
 ```javascript
@@ -46,6 +47,7 @@ $("document").ready(function() {
 });
 ```
 
+---
 ## 
 
 ```javascript
@@ -76,6 +78,7 @@ $("#toggleFoto").click(function (argument) {
 	});
 ```
 
+---
 ## 
 
 ```javascript
@@ -91,6 +94,7 @@ $("#mostraMsg").click(mostra_messaggio);
 
 ```
 
+---
 ## 
 
 ```javascript
@@ -108,6 +112,7 @@ $("#showJQuery").click(function (argument) {
 });
 ```
 
+---
 ## 
 
 ```javascript
@@ -132,6 +137,7 @@ function getData () {
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -143,6 +149,7 @@ function errorFn (xhr, status, strErr) {
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -164,6 +171,7 @@ function getJSONData (url) {
 }
 ```
 
+---
 ## 
 
 ```javascript
@@ -184,6 +192,7 @@ function leggiJSON (argument) {
 
 ```
 
+---
 ## 
 
 ```javascript
@@ -209,6 +218,7 @@ function itsJSON (argument) {
 
 ```
 
+---
 ## 
 
 ```javascript
@@ -245,6 +255,7 @@ $("#loadHtml").click(function () {
 });
 ```
 
+---
 ## 
 
 ```javascript
