@@ -24,6 +24,7 @@ update.call(mauro, 1969, 'teacher');
 update.call(paolo, 1999, 'student');
 // paolo adesso vale { nome: "Paolo", dataNascita: 1999, // professione: "student" }
 ```
+---
 
 ## apply
 `apply` è identica a `call`, ma gestisce in modo differente gli argomenti: devono essere passati come array
@@ -42,6 +43,7 @@ Math.min.apply(null, arr);
 // 15
 ```
 
+---
 
 Con ES6 e lo **spread operator (...)**, possiamo ottenere lo stesso risultato di `apply`. 
 

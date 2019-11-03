@@ -22,6 +22,7 @@ class A{
 }
 const a = new A(1,2);
 ```
+---
 
 
 # Prototipi

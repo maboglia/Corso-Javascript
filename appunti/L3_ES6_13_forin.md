@@ -23,6 +23,8 @@ for(let prop in o) {
 
 E' anche possibile iterare col  `for...in` su un array (che in JS è un oggetto), ma non è una pratica consigliata.
 
+---
+
 ### Object.keys
 
 Object.keys è un modo per ricevere le chiavi di un oggetto sotto forma di array 

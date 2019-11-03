@@ -9,6 +9,7 @@ Una closure è unpo speciale tipo di oggetto che combina due cose: una funzione 
 Le closures permettono la creazione di 
 * factory functions
 * incapsulamento
+---
 
 ## Function factory
 
@@ -33,6 +34,7 @@ const moltiplicatore = x => y => y * x;
 ```
 [Altri esempi su mozilla.org](https://developer.mozilla.org/it/docs/Web/JavaScript/Chiusure)
 
+---
 
 ## Incapsulamento
 

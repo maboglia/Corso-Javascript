@@ -14,6 +14,7 @@ studenti.findIndex(o => o.nome === "Paolo"); // ritorna 1
 studenti.findIndex(o => o === 3); // ritorna -1
 studenti.findIndex(o => o.id === 17); // ritorna -1
 ```
+---
 
 ### find 
 
