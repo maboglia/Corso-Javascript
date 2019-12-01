@@ -26,11 +26,11 @@
 
 ---
 
-## installa Angular 
+## installo Angular 
 
 `npm install -g @angular/cli`
 
-## disinstalla Angular 
+## disinstallo Angular 
 
 `npm uninstall -g @angular/cli`
 
