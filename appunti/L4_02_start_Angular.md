@@ -1,4 +1,30 @@
+# Angular
 
+* PRODUTTIVITÀ numerose funzionalità e utility incluse
+* SEMPLIFICA lo sviluppo di applicazioni web dinamiche
+* MANUTENIBILITÀ codice leggibile e ben organizzato
+* RIDUCE i tempi di inserimento di nuovi membri in team e progetti
+* EFFICIENZA, PERFORMANCE E GESTIONE MEMORIA
+* ECOSISTEMA ricco di tools, librerie, componenti ready-to-use, addons
+* COMMUNITY open source, supporto/forum/articoli
+
+--- 
+
+## Elementi del framework
+
+* Components
+* Templating
+* Forms
+* Built-in Directives
+* Pipes
+* Routing
+* Modules
+* Services
+* DI
+* Server Side Communication
+* Testing
+
+---
 
 ## installa Angular 
 
