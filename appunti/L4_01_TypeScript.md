@@ -11,6 +11,8 @@
 `mkdir typescript_01`
 `cd typescript_01`
 
+---
+
 ## Hello TypeScript
 
 crea il file main.ts
@@ -28,6 +30,9 @@ verrà prodotto il file main.js
 esegui con node
 `node main.js`
 
+---
+
+
 ## TypeScript è javascript con i _tipi_ (di dato)
 ```javascript
 let a: number;
@@ -43,6 +48,9 @@ let f: any[] = [true, false, 1, 2, 'ciao'];
 `const IVA_22 = 0.22;`
 `const IVA_04 = 0.04:`
 `const IVA_10 = 0.10;`
+
+---
+
 
 ## enumerazioni
 `enum Imposte {IVA_04, IVA_10, IVA_22};`

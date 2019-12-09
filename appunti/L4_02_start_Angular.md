@@ -8,7 +8,7 @@
 * ECOSISTEMA ricco di tools, librerie, componenti ready-to-use, addons
 * COMMUNITY open source, supporto/forum/articoli
 
---- 
+---
 
 ## Elementi del framework
 
