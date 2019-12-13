@@ -36,6 +36,7 @@ il tipo di documento, nel caso dell’esempio: HTML5
 ``</html>``
 
 ---
+
 ## Struttura di una pagina HTML
 
 ![struttura](img/strutturaHTML5.png)
@@ -122,36 +123,18 @@ L'elemento `<h1>` è un elemento a livello di blocco.
 
 ---
 ## Elementi a livello di blocco in HTML:
-`<address>`
-`<article>`
-`<aside>`
-`<blockquote>`
-`<canvas>`
-`<dd>`
-`<div>`
-`<dl>`
-`<dt>`
-`<fieldset>`
-`<figcaption>`
-`<figure>`
-`<footer>`
-`<form>`
-`<h1>`-`<h6>`
-`<header>`
-`<hr>`
-`<li>`
-`<main>`
-`<nav>`
-`<noscript>`
-`<ol>`
-`<output>`
-`<p>`
-`<pre>`
-`<section>`
-`<table>`
-`<tfoot>`
-`<ul>`
-`<video>`
+...|...|...
+---|---|---
+`<address>`|`<article>`|`<aside>`
+`<blockquote>`|`<canvas>`|`<dd>`
+`<div>`|`<dl>`|`<dt>`
+`<fieldset>`|`<figcaption>`|`<figure>`
+`<footer>`|`<form>`|`<h1>`-`<h6>`
+`<header>`|`<hr>`|`<li>`
+`<main>`|`<nav>`|`<noscript>`
+`<ol>`|`<output>`|`<p>`
+`<pre>`|`<section>`|`<table>`
+`<tfoot>`|`<ul>`|`<video>`
 
 
 ---
