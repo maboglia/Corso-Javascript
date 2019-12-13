@@ -224,42 +224,55 @@ Una pagina italiana avrà la dichiarazione seguente:
 * https://www.w3schools.com/tags/ref_language_codes.asp
 
 ---
+
 ## href
+
 I collegamenti HTML sono definiti con il tag `<a>`. L'indirizzo del link è specificato
 nell’attributo href (Hypertext REFerence):
 `<a href="https://www.miosito.it">`Questo è un il collegamento al mio sito`</a>`
+
 ---
+
 ## src
+
 Le immagini HTML sono definite con il tag `<img>`.
 Il nome del file dell'immagine viene specificato nell’attributo src:
 `<img src="torino.jpg">`
----
-## width, height
-Le immagini in HTML hanno un set di attributi relativi alla dimensione che specificano la
-larghezza e l'altezza dell'immagine:
-`<img src="torino.jpg" width="800" height=“400">`
-I valori relativi alle dimensioni sono da intendersi in pixel: larghezza = "800" significa
-larghezza 800 px.
 
 ---
+
+## width, height
+
+Le immagini in HTML hanno un set di attributi relativi alla dimensione che specificano la larghezza e l'altezza dell'immagine:
+`<img src="torino.jpg" width="800" height=“400">`
+I valori relativi alle dimensioni sono da intendersi in pixel: larghezza = "800" significa larghezza 800 px.
+
+---
+
 ## alt
-L' attributo alt specifica un testo alternativo da utilizzare, quando un'immagine non può essere
-visualizzata.
-Il valore dell'attributo può essere letto dagli screen reader. In questo modo, qualcuno che "ascolta"
-la pagina Web, ad esempio una persona ipovedente, può capire cosa rappresenta l'elemento.
-`<img src="torino.jpg" alt="foto panoramica della città di Torino che ritrae piazza
-Vittorio Veneto vista dal monte dei Cappuccini">`
+
+L' attributo alt specifica un testo alternativo da utilizzare, quando un'immagine non può essere visualizzata.
+
+Il valore dell'attributo può essere letto dagli screen reader. In questo modo, qualcuno che "ascolta" la pagina Web, ad esempio una persona ipovedente, può capire cosa rappresenta l'elemento.
+
+`<img src="torino.jpg" alt="foto panoramica della città di Torino che ritrae piazza Vittorio Veneto vista dal monte dei Cappuccini">`
+
 ---
+
 ## title
-title viene aggiunto ad un elemento. Il valore dell'attributo verrà visualizzato come suggerimento
-(testo in fumetto) quando si passa il mouse sopra l’elemento:
+
+title viene aggiunto ad un elemento. Il valore dell'attributo verrà visualizzato come suggerimento (testo in fumetto) quando si passa il mouse sopra l’elemento:
+
 `<p title="Suggerimento...">`Il mio paragrafo`</p>`
-`<a href="https://www.miosito.it" title="Visita il mio sito">`Questo è un il collegamento al
-mio sito`</a>`
+`<a href="https://www.miosito.it" title="Visita il mio sito">Questo è un il collegamento al mio sito</a>`
+
 ---
+
 ## style
+
 L' attributo style è usato per specificare lo stile di un elemento, come il colore, il carattere, la
 dimensione, l’allineamento, ecc.
+
 `<p style="color:red">`Questo paragrafo è rosso!`</p>`
 
 Uso delle virgolette per i valori dell’attributo
@@ -273,7 +286,9 @@ correttamente l'attributo titolo, perché contiene uno spazio:
 `<p title=informazioni sul corso>`
 
 ---
+
 ## Virgolette singole o doppie?
+
 Le doppie virgolette attorno ai valori degli attributi sono le
 più comuni in HTML, ma è possibile utilizzare anche
 virgolette singole.
@@ -284,7 +299,9 @@ Oppure:
 `<p title="Camillo Benso, 'Conte di Cavour' ">`
 
 ---
+
 ## Commenti HTML
+
 I tag di commento vengono utilizzati per inserire commenti nel codice sorgente HTML.
 Puoi aggiungere commenti al tuo sorgente HTML usando la seguente sintassi:
 `<!-- Qui puoi inserire i tuoi commenti -->`
@@ -301,6 +318,7 @@ HTML, una alla volta, per cercare errori:
 -->`
 
 ---
+
 ## Elementi HTML
 Heading (intestazioni)
 I titoli sono definiti con i tag da `<h1>` a `<h6>`.
@@ -314,40 +332,40 @@ importante.
 `<h6>`Titolo 6`</h6>`
 
 ---
+
 ## Le intestazioni sono importanti
-I motori di ricerca utilizzano i titoli per indicizzare la struttura e il contenuto delle tue
-pagine web.
-Gli utenti scorrono velocemente le pagine in base ai titoli. È importante utilizzare i
-titoli per mostrare la struttura del documento.
-le intestazioni `<h1>` dovrebbero essere usate per le intestazioni principali, seguite
-dal `<h2>`, poi le meno importanti `<h3>` e così via.
-Nota: utilizzare le intestazioni HTML solo per i titoli. Non usare le intestazioni per
-rendere il testo di dimensioni maggiori o in grassetto.
-Dimensione del carattere delle Intestazioni
+
+I motori di ricerca utilizzano i titoli per indicizzare la struttura e il contenuto delle tue pagine web.
+Gli utenti scorrono velocemente le pagine in base ai titoli. È importante utilizzare i titoli per mostrare la struttura del documento.
+le intestazioni `<h1>` dovrebbero essere usate per le intestazioni principali, seguite dal `<h2>`, poi le meno importanti `<h3>` e così via.
+Nota: utilizzare le intestazioni HTML solo per i titoli. Non usare le intestazioni per rendere il testo di dimensioni maggiori o in grassetto.
+
+### Dimensione del carattere delle Intestazioni
+
 Ogni `<h>` ha una dimensione predefinita. Tuttavia, è possibile specificare la
 dimensione per qualsiasi intestazione con l'attributo style, utilizzando la proprietà
 CSS font-size:
 `<h1 style="font-size:36px;">`Titolo 1`</h1>`
 
 `<p>`
-Con HTML, non puoi modificare l'output aggiungendo spazi extra o linee extra nel
-tuo codice HTML.
-Il browser rimuoverà spazi aggiuntivi e linee aggiuntive quando viene visualizzata la
-pagina:
+Con HTML, non puoi modificare l'output aggiungendo spazi extra o linee extra nel tuo codice HTML.
+Il browser rimuoverà spazi aggiuntivi e linee aggiuntive quando viene visualizzata la pagina:
 
 ---
+
 ## ``<div>``
-L'elemento `<div>` (HTML Content Division) è spesso usato come contenitore per altri elementi
-HTML.
+
+L'elemento `<div>` (HTML Content Division) è spesso usato come contenitore per altri elementi HTML.
 L'elemento `<div>` non ha attributi obbligatori, ma style, class e id vengono utilizzati frequentemente.
+
 Se utilizzato insieme ai CSS, l'elemento `<div>` può essere utilizzato per creare stili di contenuto:
 `<div style="background-color:black;color:white;padding:20px;">`
 `<h2>`Roma`</h2>`
-`<p>`Roma è la capitale d’Italia. È la città più turistica e popolare in Italia, ci vivono circa 3
-milioni di abitanti.`</p>`
+`<p>`Roma è la capitale d’Italia. È la città più turistica e popolare in Italia, ci vivono circa 3 milioni di abitanti.`</p>`
 `</div>`
 
 ---
+
 ## ``<span>``
 L'elemento `<span>` non ha attributi obbligatori, ma style, classe e id vengono
 utilizzati frequentemente.
@@ -362,5 +380,3 @@ alt="Faccia sorridente"
 style="width:42px;height:42px;">`
 `</span>` Lorem ipsum dolor sit...
 `</p>`
-
-
