@@ -1,4 +1,4 @@
-# Jquery è una libreia Javascript
+# Jquery è una libreria Javascript
 
 * write less, do more
 * Jquery è un Framework che 
