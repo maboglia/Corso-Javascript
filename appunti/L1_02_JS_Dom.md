@@ -106,10 +106,10 @@ Una volta visti i metodi per selezione e introspezione, vediamo come manipolare 
 
 Sono disponibili metodi specifici per l'accesso agli attributi di un elemento.
 
-* ``getAttribute()``
-* ``setAttribute()``
-* ``hasAttribute()``
-* ``removeAttribute()``
+* `getAttribute()`
+* `setAttribute()`
+* `hasAttribute()`
+* `removeAttribute()`
 
 ---
 
