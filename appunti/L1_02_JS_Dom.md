@@ -191,9 +191,8 @@ Un evento è qualcosa che scatena una azione specifica nel browser.
 
 ## Un evento accade quando:
 
-* Termina il caricamento di un elemento della pagina. 
-* L'utente esegue azioni col mouse o la tastiera. 
-
+* Termina il caricamento di un elemento della pagina.
+* L'utente esegue azioni col mouse o la tastiera.
 * Eventi associati ad una pagina
   * Device-dependent input events
   * Tastiera, mouse, dispositivi Touch
