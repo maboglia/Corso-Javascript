@@ -226,7 +226,6 @@ b.addEventListener('click',function(){
 
 ---
 
-
 ## Tipologia di Eventi Javascript
 
 EVENTO | DESCRIZIONE
@@ -245,5 +244,4 @@ EVENTO | DESCRIZIONE
 `change` | Evento inviato ad un elemento che ha cambiato il proprio valore. 
 `submit` | Evento inviato quando l'utente tenta di fare il submit di un form
 
-
-Maggiori informazioni: http://www.quirksmode.org/js/events_mouse.html
+[Maggiori informazioni:](http://www.quirksmode.org/js/events_mouse.html)
