@@ -1,7 +1,7 @@
-# Costrutti iterativi (Loop): For 
-
+# Costrutti iterativi (Loop): Il ciclo For
 
 ## Sintassi for loops 
+
 1. partenza
 2. fine
 3. passo 
@@ -18,10 +18,11 @@ for(inizializzazione;valutatore;incrementatore){
     frasi
 }
 ```
---- 
+
+---
 
 ## Perché usare i *for* loops ? 
-Invece di scrivere 5 linee di codice.... 
+Invece di scrivere 5 linee di codice...
 
 ```javascript
 console.log(1);
@@ -31,7 +32,7 @@ console.log(4);
 console.log(5);
 ```
 
-Usando il for loop, si può scrivere un codice più efficiente. 
+Usando il for loop, si può scrivere un codice più efficiente.
 
 ```javascript
 for (var counter = 1; counter < 6; counter++) {
