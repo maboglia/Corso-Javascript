@@ -1,5 +1,7 @@
 # Costrutti iterativi (Loop): While
 
+---
+
 ## while
 
 ```javascript
