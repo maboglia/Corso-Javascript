@@ -226,6 +226,7 @@ b.addEventListener('click',function(){
 
 ---
 
+
 ## Tipologia di Eventi Javascript
 
 EVENTO | DESCRIZIONE
