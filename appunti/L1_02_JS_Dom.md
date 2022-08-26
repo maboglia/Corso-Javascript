@@ -238,6 +238,13 @@ EVENTO | DESCRIZIONE
 `click`, `dbclick` | Inviati ad un elemento quando il mouse è sopra di esso e viene effettuato un click o un doppio click
 `mousedown`, `mouseup` | Inviati ad un elemento quando il mouse è sopra di esso e viene rispettivamente premuto o rilasciato il bottone del mouse
 `mouseover`, `mouseout`, `mousemove` | Eventi inviati all'elemento in cui il puntatore del mouse entra (mouseover), esce (mouseout), si sta mouvendo (mousemove)
+
+---
+
+## Tipologia di Eventi Javascript
+
+EVENTO | DESCRIZIONE
+--- | ---
 `keydown`,`keypress`, `keyup` | Eventi inviati quando un tasto viene premuto (keydown) è stato rilasciato (keyup) o è stato premuto (keypress)
 `select` | Inviato ad un elemento quando viene selezionato del test all'interno di esso. 
 `change` | Evento inviato ad un elemento che ha cambiato il proprio valore. 
