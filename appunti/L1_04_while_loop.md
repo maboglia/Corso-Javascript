@@ -1,25 +1,26 @@
 # Costrutti iterativi (Loop): While
 
 ## while
+
 ```javascript
 while(expresion){
     frasi
 }
 ```
 
-
 ### codice
+
 [es data](../esempi/02_while_testa_croce.js)
 
 ---
 
 ## do/while
+
 ```javascript
 do {
     frasi
 while(expresion)
 ```
-
 
 ```javascript
 var testaCroce = Math.floor(Math.random() * 2);
@@ -33,7 +34,7 @@ console.log("Croce! Sarai più fortunato.");
 
 ---
 
-### Infinite Loops 
+### Infinite Loops
 
 
 ```javascript
@@ -48,7 +49,7 @@ while(understand){
 
 --- 
 
-### while loops in una Function 
+### while loops in una Function
 
 ```javascript
 
@@ -64,7 +65,7 @@ var loop = function(){
 loop();
 ```
 
---- 
+---
 
 ### Do-While Loop
 
