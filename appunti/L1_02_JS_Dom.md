@@ -8,8 +8,6 @@
 * DOM (Attraversamento e manipolazione)
 * Eventi (tipologia e gestione)
 
----
-
 ### Funzioni per dialog
 
 * `alert(messaggio)`
@@ -28,8 +26,6 @@ oggetto JS | descrizione
 `navigator`|
 `screen`|fornisce informazione relativa al browser e alla risoluzione.
 
-
----
 
 ## DOM
 
@@ -61,8 +57,6 @@ Sono disponibili molti metodi di selezione di elementi.
 * `document.getElementsByTagName(tagname)`
 * `document.getElementByClassName(classname)`
 
----
-
 ## Selettori (II)
 
 Addizionalmente ci sono selettori di tipo CSS.
@@ -82,8 +76,6 @@ Una volta stabilito un punto di partenza, si può percorrere la ramificazione
 * `lastChild`
 * `nextSibling`
 * `previousSibling`
-
----
 
 ## Tipi di nodi
 
@@ -133,8 +125,6 @@ Sono disponibili metodi per la manipolazione del contenuto.
 * `beforeend()`
 * `afterend()`
 
----
-
 ## Contenuti (II)
 
 per accedere al contenuto di un elemento, esistono due metodi
@@ -151,8 +141,6 @@ Sono disponibili tre metodi per la creazione di nuovi nodi.
 * `createElement()`
 * `createTextNode()`
 * `cloneNode()`
-
----
 
 ## Manipolazione di elementi
 
@@ -188,8 +176,6 @@ Sono disponibili vari metodi utili per conoscere le posizioni degli elementi, E 
 * Per accedere agli elementi del form, si utilizza la variabile 'elements'.
 * `document.forms.name.element.input`
 
----
-
 ## Stili
 
 * Per la modifica di proprietà CSS, si usa la propietà 'style'.
@@ -202,8 +188,6 @@ Sono disponibili vari metodi utili per conoscere le posizioni degli elementi, E 
 ## Eventi
 
 Un evento è qualcosa che scatena una azione specifica nel browser.
-
----
 
 ## Un evento accade quando:
 
