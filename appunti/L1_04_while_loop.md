@@ -6,7 +6,7 @@
 
 ```javascript
 while(expresion){
-    frasi
+    istruzioni
 }
 ```
 
@@ -20,7 +20,7 @@ while(expresion){
 
 ```javascript
 do {
-    frasi
+    istruzioni
 while(expresion)
 ```
 
