@@ -16,6 +16,7 @@ console.log(moto.size);// 3
 console.log(moto.has('BMW'));// true
 
 ```
+
 Eliminare duplicati da un array
 
 ```javascript
@@ -25,9 +26,10 @@ for (let citta of cittaVisitate.values()){
     console.log(citta);
     
 }
+```
+
 ---
 
-```
 ## Map
 
 Le Map sono collezioni di coppie chiave/valore, dotete dell proprietà size
@@ -55,6 +57,7 @@ for (const [chiave, valore] of mappaVoti) {
 }
 
 ```
+
 Creare una mappa da un altro dato strutturato e contare le occorrenze
 
 ```javascript

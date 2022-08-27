@@ -18,6 +18,7 @@ import { topPlayers } from './topPlayers' //senza estensione!!
 console.log(topPlayers);
 
 ```
+
 ---
 
 ```javascript
@@ -34,6 +35,7 @@ import {addizione, moltiplicazione} from './operazioni';
 console.log(addizione(2,3));
 console.log(moltiplicazione(3,4));
 ```
+
 ---
 
 ## Classi
@@ -62,6 +64,7 @@ console.log(panda);
 //6
 panda.libretto();
 ```
+
 ---
 
 ### Ereditarietà (e modularizzazione)
@@ -103,6 +106,7 @@ class Utilitaria extends Auto {
 const panda = new Utilitaria('Fiat','Panda', 'Blu);
 
 ```
+
 ---
 
 ## static methods
@@ -117,6 +121,7 @@ class Calcolatrice{
 console.log(Calcolatrice.addizione(7,8));
 
 ```
+
 ---
 
 ## Classi e prototype
@@ -127,6 +132,7 @@ Con i prototipi è possibile estendere proprietà e metodi della classe base, se
 
 Prima della keyword class, si usava la function per creare i tipi
 Per esempio 
+
 ```javascript
 function Auto(marca, modello) {
     this.marca = marca;

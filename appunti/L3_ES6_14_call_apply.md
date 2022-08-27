@@ -1,6 +1,7 @@
 # i metodi call e apply
 
 ## call
+
 permette di chiamare la funzione con uno specifico valore
 
 ```javascript
@@ -24,9 +25,11 @@ update.call(mauro, 1969, 'teacher');
 update.call(paolo, 1999, 'student');
 // paolo adesso vale { nome: "Paolo", dataNascita: 1999, // professione: "student" }
 ```
+
 ---
 
 ## apply
+
 `apply` è identica a `call`, ma gestisce in modo differente gli argomenti: devono essere passati come array
 
 ```javascript

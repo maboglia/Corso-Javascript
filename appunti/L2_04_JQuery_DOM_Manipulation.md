@@ -58,7 +58,6 @@ Con Jquery possiamo leggere e impostare i valori per ogni attributo del DOM, ad 
 * `.val('ciao')`
 * `.width('120px')`
 
-
 ---
 
 ## Accedere e modificare le classi CSS
@@ -93,9 +92,8 @@ $("#mioElemento").css("color", "blue");
 $("ul").css("border", "solid 1px #ccc");
 ```
 ---
+
 ## Aggiungere e rimuovere contenuto e inserire elementi
-
-
 
 ### Ottenere l'elemento html
 
@@ -139,7 +137,6 @@ $("p").append("<p>Questo pure.</p>"); // Aggiunge questo contenuto ad ogni parag
 
 * lavorano in modo simile con specifiche peculiarità
 * Ulteriori informazioni  jQuery.com
-
 
 ---
 
@@ -294,6 +291,7 @@ stringa passata come parametro
 $("img.logo").css("border","solid orange 3px");
 //cambia lo stile a tutte le immagini di classe logo
 ```
+
 ---
 
 * Permette di scorrere il vettore di elementi selezionati e di eseguire una funzione per ogni elemento
@@ -307,4 +305,3 @@ $(img).each(function(i){
     $(this).attr("alt","immagine "+i);
 })
 ```
----

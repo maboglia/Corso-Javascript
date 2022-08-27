@@ -9,8 +9,8 @@ Gli effetti li possiamo raggruppare in 4 tipologie
 * Slide up / Slide Down
 * Animate
 
-
 ---
+
 ### Mostrare e nascondere elementi con jQuery: hide()
 
 ```javascript
@@ -27,8 +27,11 @@ $("#mioElemento").show("fast", function() {
 $("#mioElemento").toggle(1000, function() {
     }
 ```
+
 ---
+
 ### Mostrare e nascondere elementi con jQuery: fade()
+
 ```javascript
     $("#mioElemento").fadeOut("slow", function() {
         //fai qualcosa quando termina l'effetto
@@ -45,8 +48,11 @@ $("#mioElemento").toggle(1000, function() {
         //fai qualcosa quando termina l'effetto
     }
 ```
+
 ---
+
 ### Mostrare e nascondere elementi con jQuery: slide()
+
 ```javascript
     $("#mioElemento").slideDown("fast", function() {
         //fai qualcosa quando termina l'effetto
@@ -61,7 +67,9 @@ $("#mioElemento").toggle(1000, function() {
         //fai qualcosa quando termina l'effetto
     }
 ```
+
 ---
+
 ## Animate
 
 ```javascript
@@ -77,8 +85,6 @@ $("#mioElemento").toggle(1000, function() {
 ```
 
 ---
-
-
 
 ### slideUp()
 
@@ -101,9 +107,7 @@ $("#box").slideUp();
 </html>
 ```
 
-
 ---
-
 
 ### slideDown()
 
@@ -294,5 +298,3 @@ fadeIn(700).end().appendTo($('#blocco'));}, 3000);
 <img src="gallery/3.jpg" />
 </div>
 ```
-
----

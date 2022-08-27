@@ -39,7 +39,7 @@ oggetto JS | descrizione
 
 ## API DOM
 
-* La manipolazione del contenuto nel browser dipende da un congiunto di funzioni e attributi che son provisti per l'oggetto document, che è di tipo HTMLDocument.
+* La manipolazione del contenuto nel browser dipende da un insieme di funzioni e attributi che son previsti per l'oggetto document, che è di tipo HTMLDocument.
 * Rappresentazione di un documento HTML
 * Notazione di navigazione
 * Gerarchia di classi DOM

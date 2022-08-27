@@ -9,6 +9,7 @@ Una closure è unpo speciale tipo di oggetto che combina due cose: una funzione 
 Le closures permettono la creazione di 
 * factory functions
 * incapsulamento
+
 ---
 
 ## Function factory

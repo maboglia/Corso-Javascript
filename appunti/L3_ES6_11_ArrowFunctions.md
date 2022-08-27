@@ -24,6 +24,7 @@ const f3 = function(a, b) { return a + b; }
 const f3 = (a,b) => a + b;
 
 ```
+
 ---
 
 ## esempi 'estremi' 

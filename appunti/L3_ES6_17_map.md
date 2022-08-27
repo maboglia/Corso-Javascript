@@ -14,7 +14,6 @@ const lcnomi = nomi.map(String.toLowerCase);
 // ["Ombrello", "Cappello"]
 ```
 
-
 ```javascript
 const items = ["Ombrello", "Cappello"];
 const prezzi = [12.20, 15.50];

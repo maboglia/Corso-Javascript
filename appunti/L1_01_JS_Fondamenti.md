@@ -1,4 +1,18 @@
+---
+marp: true
+title: Fondamenti
+paginate: true
+theme: gaia
+author: mauro
+---
+
+![bg](./ITS_BG_Slide.jpg)
+
+
+Mauro Bogliaccino
+
 # Corso Javascript
+
 
 ---
 
@@ -6,9 +20,11 @@
 
 utilizzato comunemente come parte dell'esperienza di navigazione, permette di creare interazioni con l'utente, controllare la navigazione, gestire la comunicazione asincrona, e modificare il contenuto del documento.
 
+---
+
 Alcune cose che puoi fare con javascript
 
-* Generare finesetre di dialogo
+* Generare finestre di dialogo
 * redirigere una pagina
 * aprire nuove finestre
 * intercettare eventi dell'utente: mouse, tastiera, ...
@@ -26,15 +42,15 @@ ___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 * Css: presentazione
 * Js: comportamento
 
+---
+
 ## Risorse disponibili online
 
 * [ES2015 - ecma](http://www.ecma-international.org/ecma-262/6.0/)
 * [Mozilla Dev - Javascript reference](https://developer.mozilla.org/it/docs/Web/JavaScript)
 * [JS the right way](http://jstherightway.org/)
-* [JSinfo](https://javascript.info/)
 * [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
 * [w3schools](https://www.w3schools.com/)
-* [Udacity Course](https://www.udacity.com/course/intro-to-javascript--ud803)
 * [html.it](http://www.html.it/guide/guida-javascript-di-base/)
 * [it.html.net tutorials - html - css](http://it.html.net/tutorials/)
 * [web-link.it/web/html5](https://www.web-link.it/web/html5)
@@ -52,6 +68,7 @@ ___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 * Funzioni
 * Classi e moduli
 
+---
 
 ## Hello, World
 
@@ -62,7 +79,9 @@ alert('Hello, World!')
 
 ```
 
-Hello, World! nel terminale
+---
+
+## Hello, World! nel terminale
 
 ```javascript
 console.log('Hello, World!')
@@ -76,6 +95,7 @@ console.log('Hello, World!')
 * Interpretazione in  una console del browser 
 * Interpretazione in terminale (node.js) 
 
+---
 
 ## Javascript incorporato in una pagina html
 
@@ -124,6 +144,8 @@ alert('Hello world')
 * innerHTML
 * console.log()
 
+---
+
 ## Convenzioni di naming
 
 * JavaScript è __CASE SENSITIVE__
@@ -147,6 +169,7 @@ seguito da
 * underline,
 * $
 
+---
 
 ### Per esempio
 
@@ -158,6 +181,7 @@ var $__$__$;
 ```
 
 ---
+
 ## Parole chiave riservate
 -|-|-|-
 ---|---|---|---
@@ -177,7 +201,6 @@ delete | implements | return | volatile
 do | import | short | while
 double | in | static | with
 
-
 ---
 
 ## Variabili
@@ -186,6 +209,8 @@ double | in | static | with
 * dichiarazione e inizializzazione di variabili
 * [esempi](../esempi/01_basic_foundations/001_var.html)
 
+---
+
 #### const
 
 Parola chiave per la dichiarazione di una costante.
@@ -193,6 +218,8 @@ Parola chiave per la dichiarazione di una costante.
 
 #### var, let
 Parola chiave per la dichiarazione di una variabile.
+
+---
 
 ## operatori
 
@@ -207,6 +234,7 @@ Parola chiave per la dichiarazione di una variabile.
 ---
 
 ## Commenti
+
 Esistono due tipi di commenti:
 ```javascript
 //  commento su una riga
@@ -221,12 +249,16 @@ var a = 5; //assegno la variabile
 */
 ```
 
+---
+
 ## use strict
+
 Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
 
 ---
 
-## Literals - Letterali (valori letterali per i tipi di dato)
+## Literals
+Letterali (valori letterali per i tipi di dato)
 
 tipo                |    esempio
 ------------ | -------------
@@ -248,6 +280,8 @@ Valore undefined    |    undefined
     * [esempio if](../esempi/01_basic_foundations/018_ANDLogico.html)
     * [esempio switch](../esempi/02_control_flow/02_switch.js)
 
+---
+
 ## Costrutti di iterazione (cicli)
 
 * [For Loop](./L1_05_Control_flow.md) 
@@ -258,6 +292,8 @@ Valore undefined    |    undefined
 ---
 
 # Tipi di dato
+
+---
 
 ## Boolean
 * Boolean è la rappresentazione di tipo oggetto di una variabile logica.
@@ -273,7 +309,9 @@ var a=true
 var b=false
 ```
 
-Sono valori falsi i seguenti:
+---
+
+### Sono valori falsi i seguenti:
 
 ```javascript
 undefined
@@ -293,6 +331,8 @@ NaN
 * [esempio OR Logico](../esempi/01_basic_foundations/019_ORLogico.html)
 * [esempio OR Logico](../esempi/01_basic_foundations/020_ORLogico.html)
 
+---
+
 ## Objects
 
 * [JS Objects](./L1_09_00_Object.md)
@@ -300,6 +340,8 @@ NaN
 #### instanceof
 
 Verifica se un oggetto è instanza di qualche prototipo.
+
+---
 
 #### typeof
 
@@ -317,6 +359,8 @@ Operatore che rimuove proprietà di un oggetto.
 
 Number è la rappresentazione di tipo oggetto di un tipo numerico.
 
+---
+
 ### JS numbers
 
 * i numeri in JS sono SEMPRE float a 64-bit
@@ -324,7 +368,10 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 * il prefisso 0x permette di usare i numeri esadecimali
 * In JS esiste Infinity e -Infinity
 * NaN not a number: p.es. operazioni aritmetiche con le stringhe restituiscono NaN
-* proprietà e metodi principali
+
+---
+
+### proprietà e metodi principali
     * Number()
     * parseFloat()
     * parseInt()
@@ -349,6 +396,7 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 6.023e23    // numero decimale in notazione esponenziale.
 ```
 
+---
 
 ## Math Object
 
@@ -364,6 +412,7 @@ String è la rappresentazione di tipo oggetto di una stringa.
 
 * [String Object](./L1_09_02_StringObject.md)
 
+---
 
 ## valore nullo e valore undefined
 
@@ -378,7 +427,7 @@ var b=undefined
 
 ## Funzioni
 
-Le funzioni se dichiarano con la parola riservata funzione.
+Le funzioni si dichiarano con la parola riservata funzione.
 
 ```javascript
 function f(x,y){
@@ -387,6 +436,8 @@ function f(x,y){
 ```
 
 * [Appunti sulle Funzioni](./L1_07_Functions.md) 
+
+---
 
 ## Date Object 
 
@@ -406,6 +457,8 @@ function f(x,y){
 ## Array
 
 * [JS array](L1_08_Array.md)
+
+---
 
 ## Timers
 

@@ -2,7 +2,6 @@
 
 http://api.jquery.com/category/events
 
-
 * Click
 * Doppio click
 * Focus
@@ -20,10 +19,10 @@ Si verifica questo evento
 $("button").click(function(){
 // qualche operazione
 });
+```
 
 ---
 
-```
 ## Gli Eventi: intercettare il click del mouse con jQuery
 
 ```javascript
@@ -45,7 +44,6 @@ $("a").click(function() {
   * scroll()
   * submit()
   * select()
-
 
 ---
 
@@ -129,7 +127,6 @@ alert('Ciao, sono una finestra attivata da un evento');
 * focusout
 * http://api.jquery.com/category/events/keyboard-events/
 
-
 ```javascript
 <html>
 <head>
@@ -173,8 +170,11 @@ $('p').append(' '+evento.which+' '+String.fromCharCode(keycode));
 * mouseup
 * mouseover
 * error
+
 ---
+
 ## Tipologia di Eventi Javascript
+
 EVENTO | DESCRIZIONE
 ------ | -----------
 blur, focus | Inviati ad un elemento quando rispettivamente perde il focus od ottiene il focus.
@@ -191,6 +191,7 @@ select | Inviato ad un elemento quando viene selezionato del test all'interno di
 change | Evento inviato ad un elemento che ha cambiato il proprio valore. 
 submit | Evento inviato quando l'utente tenta di fare il submit di un form
 ---
+
 ## on
 
 `$(selettore).on(evento,[dati],function(evento){...})`
@@ -209,7 +210,9 @@ Per ogni casella di testo aggiunge la classe
 inserimento quando il focus è sull'oggetto e rimuove
 la stessa classe quando il focus non è più
 dell'oggetto
+
 ---
+
 ## Sintassi abbreviata eventi
 
 * `$(selettore).on(evento,[dati],function(evento){...})`
@@ -231,7 +234,9 @@ $("li").click({msg:messaggio},function(evento){
 alert(evento.data.msg)
 });
 ```
+
 ---
+
 ## Proprietà Oggetto evento
 
 Le funzioni di callback (richiamate al verificarsi di ogni evento) hanno come parametro un oggetto che descrive l'evento occorso.
@@ -248,6 +253,7 @@ proprietà|Descrizione
 .which|Nel caso di eventi scatenati da mouse o tastiera indica (in codice) quale bottone o tasto è stato premuto.
 .keyCode|Per avere informazioni sul carattere inserito si utilizza
 ---
+
 ## Funzioni Oggetto evento
 
 L'oggetto evento offre alcuni utili metodi
@@ -265,7 +271,9 @@ evento.preventDefault();
 
 * `.stopPropagation()` Impedisce l'inoltro dell'evento ad ogni elemento padre
 * `.stopImmediatePropagation()` Impedisce l'inoltro dell'evento ad ogni altro elemento del DOM
+
 ---
+
 ## Lanciare eventi
 
 E' possibile tramite jQuery lanciare eventi, sia standard che personalizzati
@@ -275,4 +283,3 @@ E' possibile tramite jQuery lanciare eventi, sia standard che personalizzati
 
 * Sintassi abbreviata `$(selettore).evento([dati])`
 * Esempio `$("a#link").click()`
----

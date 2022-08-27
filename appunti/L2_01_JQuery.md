@@ -33,7 +33,9 @@
 * Aggiungere animazioni ed effetti
 * Gestire le chiamate asincrone (AJAX)
 * Creare e processare dati in JSON
+
 ---
+
 ## Partenza del codice quando il documento (il DOM) è pronto
 
 
@@ -46,6 +48,7 @@ $(document).ready(function() {
 });
 
 ```
+
 ---
 
 ## INCLUDERE JQUERY NELLE PAGINE WEB
@@ -60,6 +63,7 @@ $(document).ready(function() {
     `<body> ... </body>`
     `</html>`
 ---
+
 ## Filosofia Jquery
 
 ```javascript
@@ -76,13 +80,16 @@ $("p").html("Hello World");
 ```
 
 ---
+
 ## Oggetto jQuery() $()
 
 * jQuery() oppure $() Permette di selezionare e creare elementi del DOM Può avere come parametro:
 * Selettore CSS $("p.evidenziato") Restituisce un array di oggetti, eventualmente vuoto
 * Oggetti javascript $(this.value) Restituisce un array di oggetti contenente l’elemento passato come parametro
 * Codice HTML $("Ciao Mondo")      Crea un elemento del DOM e restituisce un array di oggetti contenente l’elemento appena creato
+
 ---
+
 ## Operazione sugli oggetti selezionati/creati
 
 Navigazione del DOM

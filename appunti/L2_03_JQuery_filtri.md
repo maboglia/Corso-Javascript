@@ -97,5 +97,3 @@ function dammi_selezionato(){
 } ;
 </script>
 ```
-
----

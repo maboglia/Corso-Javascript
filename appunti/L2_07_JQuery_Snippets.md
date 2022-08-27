@@ -45,7 +45,6 @@ else
 </script>
 ```
 
-
 ---
 
 ## Bottone torna su
@@ -56,14 +55,15 @@ $(document.body).animate({scrollTop : 0},800);
 return false;
 });
 
-//Create an anchor tag
 ```
 
 ```html
 <a class="top" href="#">Back to top</a>
 
 ---
+
 ```
+
 ## Controlla see img sono caricate
 
 ```javascript
@@ -80,9 +80,10 @@ console.log('image load successful');
 $('img').error(function(){
 $(this).attr('src', 'img/broken.png');
 });
+```
 
 ---
-```
+
 ## Toggle class su hover
 
 ```javascript
@@ -92,18 +93,20 @@ $(this).addClass('hover');
 $(this).removeClass('hover');
 }
 );
+``` 
 
 ---
-``` 
+
 ## Disabilitare input fields
 
 ```javascript
 $('input[type="submit"]').attr("disabled", true);
 
 $('input[type="submit"]').removeAttr("disabled");
+```
 
 ---
-```
+
 ## ferma il caricamento links
 
 ```javascript
@@ -127,8 +130,8 @@ $( “.btn" ).click(function() {
 $( “.element" ).slideToggle("slow");
 });
 ```
- 
- ---
+
+---
 
 ## Semplice accordion
 
@@ -163,7 +166,6 @@ $('li:odd').css('background', '#E8E8E8');
 ---
 
 ## Invia data asando il metodo GET
-
 
 ```javascript
 jQuery( document ).ready(function() {
@@ -287,7 +289,6 @@ $( "div:eq(2)" ).text( "jQuery is very fun to" + divs.length + " learn.." )
         $("#div1").html(txt);
     });
 });
-//Method returns the width and height of an element.
 ```
 
 ---
@@ -302,7 +303,6 @@ $( "div:eq(2)" ).text( "jQuery is very fun to" + divs.length + " learn.." )
         });
     });
 });
-//jQuery's each() function is used to loop through each element of the target jQuery object.
 ```
 
 ---
@@ -321,7 +321,6 @@ $('body').fadeIn(500);
 
 });
 
-//Whole page is faded out when you are clicking on links
 ```
 
 ---
@@ -338,7 +337,6 @@ $('input[type="checkbox"]').change(function(){
     },650);
 });
 
-//This will delay before submitting form that is reset each time another checkbox is clicked.
 ```
 
 ---
@@ -355,7 +353,6 @@ $('input[type="checkbox"]').change(function(){
     });
 });
 
-//Get JSON data using an AJAX request, and output the result.
 ```
 
 ---
@@ -371,7 +368,6 @@ $('input[type="checkbox"]').change(function(){
             ;
         });
 
-//This is very useful when you want add icon to href.
 ```
 
 ---
@@ -387,5 +383,4 @@ $('input[type="checkbox"]').change(function(){
       });
 });
 
-//This will add active class to your nav item.
 ```

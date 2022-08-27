@@ -1,6 +1,7 @@
 # Classi
 
 Una classe in JavaScript è una collezione di oggetti che ereditano proprietà di un medesimo prototipo.
+
 ```javascript
 function A(){
     this.a=10
@@ -9,7 +10,7 @@ function A(){
 a=new A()
 ```
 
-In ES6 è stata introdotta la parola class e il costruttores.
+In ES6 è stata introdotta la parola class e il costruttore.
 
 ```javascript
 class A{
@@ -22,10 +23,11 @@ class A{
 }
 const a = new A(1,2);
 ```
+
 ---
 
+## Prototipi
 
-# Prototipi
 Un prototipo è un oggetto associato all'oggetto che sta definendo, e del quale va a ereditare proprietà.
 E' stabilito quando l'oggetto è creato.
 Si può accedere attraverso la variabile prototype

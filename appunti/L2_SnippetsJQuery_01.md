@@ -260,10 +260,6 @@ $("#loadHtml").click(function () {
 
 ```javascript
 
-//------------------------------------------------
-
-
-// More on Control Flow in JS 8/14
 function provacolore (argument) {
 	var colore = prompt("Che colore vuoi?");
 
@@ -285,4 +281,3 @@ function provacolore (argument) {
 	}
 }
 ```
----
