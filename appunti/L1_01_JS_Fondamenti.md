@@ -393,7 +393,7 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 
 Per lavorare con i Number, puoi usare Math che è l'oggetto che concentra molte constanti e funzioni matematiche.
 
-* [Math Object](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_10_ObjectMath.md)
+* [Math Object](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_10_Object_Math.md)
 
 ---
 
@@ -488,7 +488,7 @@ setInterval(function(){
 * Tipi reference
 * Booleans
 * [Function](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_07_Functions.md) 
-* [Number](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_10_ObjectMath.md)
+* [Number](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_10_Object_Math.md)
 * [String](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_06_Stringhe.md)
 * [Array](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_08_Array.md)
 * [Object](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_09_Oggetti.md)
