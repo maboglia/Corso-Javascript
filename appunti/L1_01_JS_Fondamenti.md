@@ -1,5 +1,5 @@
 ---
-marp: true
+marp: false
 title: Fondamenti
 paginate: true
 theme: gaia
@@ -8,11 +8,13 @@ author: mauro
 
 ![bg](./ITS_BG_Slide.jpg)
 
+# .
 
 Mauro Bogliaccino
 
 # Corso Javascript
 
+## Fondamenti del linguaggio
 
 ---
 
@@ -136,10 +138,10 @@ alert('Hello world')
 
 * window
     * [window.alert()]()
-    * [window.prompt()](../esempi/01_basic_foundations/009_prompt.html)
-    * [window.confirm()](../esempi/01_basic_foundations/010_confirm.html)
+    * [window.prompt()](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/009_prompt.html)
+    * [window.confirm()](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/010_confirm.html)
 * document
-    * [document.write()](../esempi/01_basic_foundations/003_document_write.html)
+    * [document.write()](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/003_document_write.html)
     * document.writeln()
 * innerHTML
 * console.log()
@@ -183,23 +185,13 @@ var $__$__$;
 ---
 
 ## Parole chiave riservate
--|-|-|-
----|---|---|---
-abstract | else | instanceof | super 
-boolean | enum | int | switch
-break | export | interface | synchronized
-byte | extends | let | this
-case | false | long | throw
-catch | final | native | throws
-char | finally | new | transient
-class | float | null | true
-const | for | package | try
-continue | function | private | typeof
-debugger | goto | protected | var
-default | if | public | void
-delete | implements | return | volatile
-do | import | short | while
-double | in | static | with
+
+abstract, boolean, break, byte, case, catch, char, class, const, continue, 
+debugger, default, delete, do, double, else, enum, export, extends, false, 
+final, finally, float, for, function, goto, if, implements, import, in, instanceof, 
+int, interface, let, long, native, new, null, package, private, protected, 
+public, return, short, static, super, switch, synchronized, this, throw, throws, 
+transient, true, try, typeof, var, void, volatile, while, with
 
 ---
 
@@ -207,14 +199,14 @@ double | in | static | with
 
 * identificatore e visibilità (scope)
 * dichiarazione e inizializzazione di variabili
-* [esempi](../esempi/01_basic_foundations/001_var.html)
+* [esempi](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/001_var.html)
 
 ---
 
 #### const
 
 Parola chiave per la dichiarazione di una costante.
-[esempio](../esempi/01_basic_foundations/008_const.html)
+[esempio](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/008_const.html)
 
 #### var, let
 Parola chiave per la dichiarazione di una variabile.
@@ -223,13 +215,13 @@ Parola chiave per la dichiarazione di una variabile.
 
 ## operatori
 
-* [precedenza degli operatori](../esempi/01_basic_foundations/011_precedenzaOperatori.html)
-* [operatori di assegnamento](../esempi/01_basic_foundations/013_assignment.html)
-* [operatori di comparazione](../esempi/01_basic_foundations/016_confronto.html)
-* [operatori unari](../esempi/01_basic_foundations/014_operatoriUnari.html)
-* [operatori logici AND](../esempi/01_basic_foundations/018_ANDLogico.html)
-* [operatori logici OR](../esempi/01_basic_foundations/019_ORLogico.html)
-* [operatori su stringhe](../esempi/03_arrays_strings/017_comparaStringhe.html)
+* [precedenza degli operatori](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/011_precedenzaOperatori.html)
+* [operatori di assegnamento](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/013_assignment.html)
+* [operatori di comparazione](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/016_confronto.html)
+* [operatori unari](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/014_operatoriUnari.html)
+* [operatori logici AND](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/018_ANDLogico.html)
+* [operatori logici OR](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/019_ORLogico.html)
+* [operatori su stringhe](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/03_arrays_strings/017_comparaStringhe.html)
 
 ---
 
@@ -258,7 +250,6 @@ Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
 ---
 
 ## Literals
-Letterali (valori letterali per i tipi di dato)
 
 tipo                |    esempio
 ------------ | -------------
@@ -276,18 +267,18 @@ Valore undefined    |    undefined
 
 ## Costrutti di controllo del flusso
 
-* [Strutture condizionali](./L1_05_Control_flow.md)
-    * [esempio if](../esempi/01_basic_foundations/018_ANDLogico.html)
-    * [esempio switch](../esempi/02_control_flow/02_switch.js)
+* [Strutture condizionali](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_05_Control_flow.md)
+    * [esempio if](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/018_ANDLogico.html)
+    * [esempio switch](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/02_control_flow/02_switch.js)
 
 ---
 
 ## Costrutti di iterazione (cicli)
 
-* [For Loop](./L1_05_Control_flow.md) 
-    * [esempi](../esempi/02_control_flow/02_for_loop.js)
-* [While Loop](./L1_05_Control_flow.md) 
-    * [esempi](../esempi/02_control_flow/02_while_loop.js)
+* [For Loop](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_05_Control_flow.md) 
+    * [esempi](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/02_control_flow/02_for_loop.js)
+* [While Loop](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_05_Control_flow.md) 
+    * [esempi](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/02_control_flow/02_while_loop.js)
 
 ---
 
@@ -326,16 +317,16 @@ NaN
 
 ### Altri esempi
 
-* [esempio boolean](../esempi/01_basic_foundations/012_boolean.html)
-* [esempio AND Logico](../esempi/01_basic_foundations/018_ANDLogico.html)
-* [esempio OR Logico](../esempi/01_basic_foundations/019_ORLogico.html)
-* [esempio OR Logico](../esempi/01_basic_foundations/020_ORLogico.html)
+* [esempio boolean](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/012_boolean.html)
+* [esempio AND Logico](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/018_ANDLogico.html)
+* [esempio OR Logico](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/019_ORLogico.html)
+* [esempio OR Logico](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/020_ORLogico.html)
 
 ---
 
 ## Objects
 
-* [JS Objects](./L1_09_00_Object.md)
+* [JS Objects](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_09_Oggetti.md)
 
 #### instanceof
 
@@ -346,7 +337,7 @@ Verifica se un oggetto è instanza di qualche prototipo.
 #### typeof
 
 Ritorna una stringa indicante il tipo di dato che ha una variabile.
-[esempio](../esempi/01_basic_foundations/010_confirm.html)
+[esempio](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/010_confirm.html)
 
 #### delete
 
@@ -402,7 +393,7 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 
 Per lavorare con i Number, puoi usare Math che è l'oggetto che concentra molte constanti e funzioni matematiche.
 
-* [Math Object](./L1_09_01_MathObject.md)
+* [Math Object](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_10_ObjectMath.md)
 
 ---
 
@@ -410,7 +401,7 @@ Per lavorare con i Number, puoi usare Math che è l'oggetto che concentra molte 
 
 String è la rappresentazione di tipo oggetto di una stringa.
 
-* [String Object](./L1_09_02_StringObject.md)
+* [String Object](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_06_Stringhe.md)
 
 ---
 
@@ -435,7 +426,7 @@ function f(x,y){
 }
 ```
 
-* [Appunti sulle Funzioni](./L1_07_Functions.md) 
+* [Appunti sulle Funzioni](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_07_Functions.md) 
 
 ---
 
@@ -450,7 +441,7 @@ function f(x,y){
 
 ### codice esempio
 
-[es data](../esempi/01_date.js)
+[es data](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_date.js)
 
 ---
 
@@ -496,9 +487,9 @@ setInterval(function(){
 * Tipi primitivi
 * Tipi reference
 * Booleans
-* [Function](./L1_07_Functions.md) 
-* [Number](./L1_05_MathObject.md)
-* [String](./L1_06_StringObject.md)
-* [Array](./L1_08_Array.md)
-* [Object](./L1_09_Object.md)
+* [Function](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_07_Functions.md) 
+* [Number](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_10_ObjectMath.md)
+* [String](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_06_Stringhe.md)
+* [Array](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_08_Array.md)
+* [Object](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_09_Oggetti.md)
 * Timers
