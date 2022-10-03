@@ -60,7 +60,7 @@ console.log(typeof aNumber  ); // should print "number"
 console.log(typeof aString  ); // should print "string"
 ```
 
-###2. Check for Object's Property
+### 2. Check for Object's Property
 
 You wouldn't know it, but every object in JavaScript comes with some baggage (stay tuned for more on this!). Part of this baggage includes a method called `hasOwnProperty`. This lets us know if an object has a particular property.
 

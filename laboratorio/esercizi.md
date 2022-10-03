@@ -1,57 +1,75 @@
 # Esercizi JavaScript
 
-### warm up 1. 
+## esercizio 1
+
 Calcolare la somma dei primi quattro multipli di 13.
 
-### warm up 2. 
+## esercizio 2
+
 Verificare se la somma dei primi sette numeri primi è maggiore della somma delle prime tre potenze di due.
 
-### warm up 3. 
+## esercizio 3
+
 Verificare se 135 è dispari, 147 è pari, 12 è dispari, 200 è pari.
 
-### warm up 4. 
+## esercizio 4
+
 Calcolare l'area di un triangolo rettangolo i cui cateti sono 23 e 17.
 
-### warm up 5. 
+## esercizio 5
+
 Calcolare la circonferenza di un cerchio il cui raggio è 14.
 
-### warm up 6. 
+## esercizio 6
+
 Calcolare l'area di un cerchio il cui diametro è 47.
 
-### warm up 7. 
+## esercizio 7
+
 Calcolare l'area di un trapezio la cui base maggiore è 48, quella minore è 25 e l'altezza è 13.
 
-### warm up 8. 
+## esercizio 8
+
 Verificare se l'area di un quadrato di lato quattro è minore dell'area di un cerchio di raggio tre.
 
-### warm up 9. 
+## esercizio 9
+
 Calcolare il numero dei minuti di una giornata, di una settimana, di un mese di 30 giorni, di un anno non bisestile.
 
-### warm up 10. 
-Verificare se conviene acquistare una camicia che costa 63 € in un nego- zio che applica uno sconto fisso di 10 € o in un altro che applica uno sconto del 17%.	
+## esercizio 10
 
-## warm up 11
-prompt() + alert()
+Calcolare il numero di giorni trascorsi dalla tua data di nascita.
+
+## esercizio 11
+
+### uso di prompt() + alert()
+
 * Creare uno script che chieda il nome e il cognome all'utente prima che la pagina venga caricata.
 * Provare a chiamare una finestra di dialogo (di tipo alert) che contenga la scritta "Benvenuto"+ nome + cognome.
-* In fondo alla pagina deve essere scritto "Benvenuto"+ nome + cognome.
+* In fondo alla pagina deve essere scritto "Benvenuto "+ nome + cognome.
 
-## warm up 12
-prompt()	
+## esercizio 12
+
+### uso di prompt()	
+
 * Creare una pagina che chieda all'utente di fornire la propria autorizzazione al trattamento dei dati.
 * Nel caso non sia data, scrivere "Autorizzazione non concessa".
 * Nel caso contrario scrivere "Autorizzazione concessa".
 
 	
-## warm up 13
-prompt() + array[] 
+## esercizio 13
+
+### uso di prompt() + array[]
+
 * Creare una pagina in cui il sistema chiede all'utente il proprio nome
 * Il sistema verifica il nome e comunica all'utente se è un amministratore o meno
 * E' dato un array di nomi che hanno i diritti di amministratore
 
 	
-## warm up 14
-3 colori
+## esercizio 14
+
+### 3 colori
+
 * Chiedere tre colori in input all'utente: uno per il testo, uno per lo sfondo e uno per il titolo.
 * Chiedere all'utente la dimensione del carattere di base (da 1 a 7).
 * Determinare la dimensione e le caratteristiche di H1 (+3, grassetto), H2 (+2) e H3 (+1, grassetto, corsivo) rispetto alle caratteristiche inserite dall'utente per il carattere.
@@ -62,17 +80,20 @@ prompt() + array[]
 * Nel caso l'utente inserisca al posto dei tre colori il testo "*"deve essere caricato un foglio di stile esterno.
 
 
-## warm up 15
-* Creare una finestra pop-up per chiedere il nome dell'utente e scrivere sulla pagina HTML il messaggio "Ciao nome" formattato come heading di primo livello (tag h1). 
-*Se l'utente non inserisce il nome scrivere il messaggio "Ciao Utente Anonimo!"
+## esercizio 15
 
-## warm up 16
+* Creare una finestra pop-up per chiedere il nome dell'utente e scrivere sulla pagina HTML il messaggio "Ciao nome" formattato come heading di primo livello (tag h1).
+* Se l'utente non inserisce il nome scrivere il messaggio "Ciao Utente Anonimo!"
+
+## esercizio 16
+
 * Preparare uno script che mostri saluto adatto all'ora del giorno 
 * (es: Buon pomeriggio, Buona notte, ecc.). 
 * Usare l'oggetto Date() e cercare il metodo adatto su un sito di reference JavaScript, 
-* http://www.w3schools.com/jsref/default.asp
+* e.g. mozilla, w3schools, ...
 
-## warm up 17
+## esercizio 17
+
 * Creare un form HTML in cui l'utente deve introdurre username e password. 
 * Non consentire all'utente di schiacciare il bottone Submit se
 * Non ha inserito lo username
@@ -80,13 +101,16 @@ prompt() + array[]
 
 * In questi casi, segnalare un opportuno messaggio di errore a fianco del relativo campo del form.
 
-## warm up 18
+## esercizio 18
+
 * Creare una pagina HTML il cui colore di sfondo vari a seconda delle preferenze dell'utente, che lo seleziona tramite un'interfaccia.
 
-## warm up 19
+## esercizio 19
+
 * Creare un form HTML per selezionare un colore di sfondo da un menu a tendina. Dopo aver scelto il colore dal menu, l'utente deve premere il bottone "Change color".
 
-## warm up 20
+## esercizio 20
+
 * Creare un form HTML per selezionare un colore di sfondo da un menu a tendina. 
 * La lista di elementi include alcuni colori e l'opzione "Altro...". 
 * Se l'utente sceglie "Altro", deve comparire un campo di testo in cui scrivere il colore desiderato (in inglese, così potete usarlo direttamente come attributo del background). 
@@ -123,16 +147,19 @@ prompt() + array[]
     * Invocare la funzione con i seguenti valori: 0, 1, 23, 99.
 
 
-### 8. La media aritmetica semplice di n numeri è così definita 
+### 8. La media aritmetica semplice di n numeri è così definita
+
     * [Wikipedia, alla voce Media (statistica)]:
     * m = (x1 + x2 ... + xn) / n
 
 ### 9. Definire in JavaScript una funzione che calcola e restituisce la media aritmetica semplice degli elementi di un array a formato da n numeri.
+
     * La funzione ha un parametro: a.
     * Invocare la funzione con i seguenti valori:
         * [3, 12, 24]
         * [5, 7, 9, -12, 0].
 ### 10. Dato un array a e un valore k, il numero di occorrenze di k in a è definito
+
     come il numero degli elementi di a il cui valore è uguale a k.
     * Definire in JavaScript una funzione che calcola e restituisce il numero di
     occorrenze del valore k nell'array a.
@@ -140,19 +167,25 @@ prompt() + array[]
     * Invocare la funzione con i seguenti valori:
         * [10, −5, 34, 0], 1
         * [10, −5, 34, 0], −5.
+
+
 ### 11. Definire in JavaScript un predicato che verifica se ogni elemento di un array di numeri (tranne il primo) è pari alla somma degli elementi che lo precedono.
     * La funzione ha un parametro: a.
     * Invocare la funzione con i seguenti valori:
         * [1, 2, 6, 10, 32]
         * [1, 2, 6, 8, 31].
+
+
 ### 12. Definire in JavaScript una funzione che ha come parametro un array a di numeri e che restituisce un nuovo array che contiene le differenze tra gli elementi adiacenti di a.
+
     * La funzione ha un parametro: a.
     * Invocare la funzione con i seguenti valori:
         * [1, 2, -6, 0, 3]
         * [2, 2, 3, 3, 4, 4].    
 
 
-### 13. Scrivere un documento HTML contenente un form con i seguenti campi:
+### 13. Scrivere un documento HTML contenente un modulo con i seguenti campi:
+
 * cognome (casella di testo editabile lunga 40 caratteri)
 * nome (casella di testo editabile lunga 30 caratteri)
 * matricola (casella di testo editabile lunga 12 caratteri)
@@ -164,6 +197,7 @@ prompt() + array[]
 * bottone di reset
 
 Aggiungere al documento HTML una funzione JavaScript che esegue i seguenti controlli:
+
 * verifica che il cognome non sia vuoto;
 * verifica che il nome non sia vuoto;
 * verifica che la matricola sia un numero;
@@ -172,9 +206,8 @@ Aggiungere al documento HTML una funzione JavaScript che esegue i seguenti contr
 
 Fare in modo che, nel documento HTML, tale funzione JavaScript venga eseguita quando l'utente invia il modulo.
 
+### 14. Scrivere un documento HTML contenente un modulo con i seguenti campi:
 
-
-### 14. Scrivere un documento HTML contenente una form contenente i seguenti campi:
 * cognome e nome (casella di testo editabile lunga 50 caratteri)
 * sesso (selezionabile tramite due bottoni radio)
 * corso (da scegliere da un menu che riporta diversi corsi)
@@ -185,12 +218,13 @@ Fare in modo che, nel documento HTML, tale funzione JavaScript venga eseguita qu
 * bottone di reset
 
 Aggiungere al documento HTML una funzione JavaScript che esegue i seguenti controlli:
+
 * mentre l'utente edita i campi della form:
-    * subito dopo che l'utente ha editato il campo CAP, deve verificare che tale campo sia un numero di 5 cifre;
-    * subito dopo che l'utente ha editato il campo nome e cognome, deve verificare che tale campo non sia un numero;
+  * subito dopo che l'utente ha editato il campo CAP, deve verificare che tale campo sia un numero di 5 cifre;
+  * subito dopo che l'utente ha editato il campo nome e cognome, deve verificare che tale campo non sia un numero;
 * al momento dell'invio del messaggio:
-    * verifica che il cognome e nome non sia vuoto;
-        * verifica che il sesso sia stato selezionato;
-        * verifica che sia stato selezionato un corso;
-        * se l'utente ha dichiarato di essere uno studente lavoratore, la descrizione del lavoro svolto non può essere vuota.
+  * verifica che il cognome e nome non sia vuoto;
+  * verifica che il sesso sia stato selezionato;
+  * verifica che sia stato selezionato un corso;
+  * se l'utente ha dichiarato di essere uno studente lavoratore, la descrizione del lavoro svolto non può essere vuota.
 

@@ -5,10 +5,13 @@
 permette di chiamare la funzione con uno specifico valore
 
 ```javascript
-const mauro = { nome: "Mauro" }; const paolo = { nome: "Paolo" };
-// this function isn't associated with any object, yet // it's using 'this'!
+const mauro = { nome: "Mauro" }; 
+const paolo = { nome: "Paolo" };
+// questa funzione non è ancora associata ad alcun oggetto 
+// it's using 'this'!
 function greet() {
-return `Buongiorno, mi chiamo  ${this.nome}!`; }
+    return `Buongiorno, mi chiamo  ${this.nome}!`; 
+}
 greet();
 greet.call(mauro);
 greet.call(paolo);
@@ -18,7 +21,9 @@ greet.call(paolo);
 ```
 
 ```javascript
-function update(dataNascita, professione) { this.dataNascita = dataNascita; this.professione = professione;
+function update(dataNascita, professione) { 
+    this.dataNascita = dataNascita; 
+    this.professione = professione;
 }
 update.call(mauro, 1969, 'teacher');
 // mauro adesso vale { nome: "Mauro", dataNascita: 1969, // professione: "teacher" }
@@ -42,7 +47,8 @@ update.apply(paolo, [1918, "coder"]);
 ```javascript
 const arr = [2, 3, -5, 15, 7]; 
 Math.min.apply(null, arr); 
-// -5 Math.max.apply(null, arr); 
+// -5 
+Math.max.apply(null, arr); 
 // 15
 ```
 
@@ -59,5 +65,5 @@ Math.max(...arr);
 ```javascript
 const nuovaPersona = [1969, "martial-artist"];
 update.call(mauro, ...nuovaPersona);
-// equivalent to apply(mauro, nuovaPersona)
+// identico a apply(mauro, nuovaPersona)
 ```
