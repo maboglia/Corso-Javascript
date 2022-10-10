@@ -1,8 +1,10 @@
 # Document Object Model
 
 
-## DOM Nodes
 
+---
+
+## DOM Nodes
 
 ### Selecting Nodes
 
@@ -12,6 +14,8 @@
 * `var myelements = document.body.getElementsByTagName("*");`
 * `var mynode = document.querySelector(".myclass");`
 * `var mynodes = document.querySelectorAll(".myclass");`
+
+---
 
 ### Traversing DOM Tree
 
@@ -38,6 +42,8 @@ second = third.previousElementSibling;
 mylist = first.parentNode;
 ```
 
+---
+
 ```javascript
 mylist.childNodes[0]; // whitespace text node
 mylist.childNodes[1]; // li node
@@ -49,6 +55,8 @@ mylist.childNodes[2].nodeName; // #text
 
 
 ```
+
+---
 
 ### Creating Nodes
 
@@ -73,6 +81,8 @@ newitem.innerHTML; // "<b>Another</b> new list item"
 
 ```
 
+---
+
 ### Removing Nodes
 
 ```javascript
@@ -82,6 +92,8 @@ mylist.replaceChild(removedNode, mylist.firstElementChild);
 
 
 ```
+
+---
 
 ## Attribute Nodes
 
