@@ -1,8 +1,28 @@
+---
+marp: false
+title: Fondamenti
+paginate: true
+author: mauro
+---
+![bg](./ITS_BG_Slide.jpg)
+
+Mauro Bogliaccino
+
 # JQuery code snippets utili
+
+## JQuery: gestire gli effetti
+
+---
+![bg](./ITS_BG_Slide.jpg)
+
+
 
 ## VALIDARE i moduli
 
 Molto utili per guidare l'utente nella compilazione e segnalare degli errori.
+
+---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Implementiamo il form
 
@@ -25,27 +45,33 @@ Molto utili per guidare l'utente nella compilazione e segnalare degli errori.
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## FORM VALIDATION: LOGICA
 
 ```javascript
 function controlla(){
-$(".obbligatorio ").each( function(){
-if( ($(this).val()=="") ){
-errore=true;
-$(this).prev().addClass('rosso');
-}
-else{ $(this).prev().removeClass('rosso'); }
-})
-if(errore==true)
-{ alert("Il form contiene errore/i, si prega di correggere."); }
-else
-{alert("Complimenti! Non ci sono errori!"); }
+    $(".obbligatorio ").each( function(){
+    if( ($(this).val()=="") ){
+        errore=true;
+        $(this).prev().addClass('rosso');
+    }
+    else{ 
+        $(this).prev().removeClass('rosso'); 
+    }})
+
+    if(errore==true) { 
+        alert("Il form contiene errore/i, si prega di correggere."); 
+    }
+    else {
+        alert("Complimenti! Non ci sono errori!"); 
+    }
 }
 </script>
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Bottone torna su
 
@@ -59,10 +85,10 @@ return false;
 
 ```html
 <a class="top" href="#">Back to top</a>
+```
 
 ---
-
-```
+![bg](./ITS_BG_Slide.jpg)
 
 ## Controlla see img sono caricate
 
@@ -73,6 +99,7 @@ console.log('image load successful');
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Ripara immagini mancanti
 
@@ -83,6 +110,7 @@ $(this).attr('src', 'img/broken.png');
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Toggle class su hover
 
@@ -96,6 +124,7 @@ $(this).removeClass('hover');
 ``` 
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Disabilitare input fields
 
@@ -106,6 +135,7 @@ $('input[type="submit"]').removeAttr("disabled");
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## ferma il caricamento links
 
@@ -116,6 +146,7 @@ e.preventDefault();
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Toggle fade/slide
 
@@ -132,6 +163,7 @@ $( “.element" ).slideToggle("slow");
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Semplice accordion
 
@@ -148,6 +180,7 @@ return false;
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Fai 2 div con la stessa altezza
 
@@ -156,6 +189,7 @@ $('.div').css('min-height', $('.main-div').height());
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## ul zebra style
 
@@ -164,6 +198,7 @@ $('li:odd').css('background', '#E8E8E8');
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Invia data asando il metodo GET
 
@@ -177,9 +212,9 @@ jQuery( document ).ready(function() {
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Invia data usando il metodo POST
-
 
 ```javascript
 jQuery("button").click(function(){
@@ -190,6 +225,7 @@ jQuery("button").click(function(){
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Recevi testo da una webpage
 
@@ -204,6 +240,7 @@ jQuery( document ).ready(function() {
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Prendi tutti i valori da un form e inviali ad una pagina web
 
@@ -220,6 +257,7 @@ jQuery( document ).ready(function() {
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Ricevi JSON data
 
@@ -237,6 +275,7 @@ jQuery.getJSON( "http://yoursite.com/test.json", function( data ) {
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Come mostrare tutti i sotto elementi in jQuery
 
@@ -254,6 +293,7 @@ $("#link3").click(function(){
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## jQuery.unique()
 
@@ -271,9 +311,9 @@ $( "div:eq(2)" ).text( "jQuery is very fun to" + divs.length + " learn.." )
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## jQuery Dimensions
-
 
 ```javascript
  $(document).ready(function(){
@@ -292,6 +332,7 @@ $( "div:eq(2)" ).text( "jQuery is very fun to" + divs.length + " learn.." )
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## jQuery.each()
 
@@ -306,9 +347,9 @@ $( "div:eq(2)" ).text( "jQuery is very fun to" + divs.length + " learn.." )
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Fade out page 
-
 
 ```javascript
 
@@ -324,9 +365,9 @@ $('body').fadeIn(500);
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Submit form 
-
 
 ```javascript
  var tId;
@@ -340,9 +381,9 @@ $('input[type="checkbox"]').change(function(){
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## jQuery getJSON() Method
-
 
 ```javascript
  $("button").click(function(){
@@ -356,9 +397,9 @@ $('input[type="checkbox"]').change(function(){
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Aggiungere icone ai link con jQuery
-
 
 ```javascript
  $(document).ready(function() {
@@ -371,9 +412,9 @@ $('input[type="checkbox"]').change(function(){
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Assegnare la classe "active" alla navbar con jQuery
-
 
 ```javascript
  $(function() {
@@ -382,5 +423,4 @@ $('input[type="checkbox"]').change(function(){
             $( this ).addClass( 'active' );
       });
 });
-
 ```

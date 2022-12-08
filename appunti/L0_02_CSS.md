@@ -112,6 +112,7 @@ background: url(img/bg.png) no-repeat #CCCCCC;
 ---
 
 ## I divisori
+
 sono gli elementi che utilizzeremo per strutturare la nostra
 pagina web e sono caratterizzati dal tag <div> e ci aiuteranno a
 sezionare la nostra pagina e a raggruppare più elementi.

@@ -6,7 +6,7 @@ theme: gaia
 author: mauro
 ---
 
-![bg](./ITS_BG_Slide.jpg)
+![bg](./background-IL.jpg)
 
 #
 

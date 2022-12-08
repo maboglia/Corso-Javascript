@@ -1,6 +1,9 @@
 # String
+
 ---
+
 ## Stringhe di testo
+
 Si possono usare gli apici semplici o gli apici doppi come delimitatori validi per la dichiarazione di una variabile tipo stringa di testo.
 Esempi:
 
@@ -10,8 +13,11 @@ var b="stringa di testo"
 var c='qui un "esempio"'
 var d="un esempio 'Più'"
 ```
+
 ---
+
 ## Sequenze di Escape 
+
 sequenza | significato
 ---|---
 \O          | The NULL character
@@ -26,18 +32,22 @@ sequenza | significato
 \\          | Backslash
 \x[XX]      | The Latin-1
 \u[XXXX]    | The Unicode character
+
 ---
+
 ## Parsing di Stringhe (I)
 Una stringa può essere considerata come un array di caratteri.
 Esempi:
+
 ```javascript
 var a='stringa di testo'
 console.log(a[5]) // a
 ```
+
 ---
+
 ## principali metodi delle stringhe
 
-    
 metodo | operazione
 ---|---
 indexOf() | cerca una stringa
@@ -52,8 +62,11 @@ concat() | Concatena le stringhe
 charAt(posizione) | Ritorna il carattere alla posizione (0-based)
 charCodeAt(position) | ritorna il carattere Unicode
 split(separatore) | converte una stringa in un array
+
 ---
+
 ## esempi
+
 ```javascript
 var s = "hello, world"
 s.charAt(0)          // => "h"

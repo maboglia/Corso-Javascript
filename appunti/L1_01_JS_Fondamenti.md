@@ -2,13 +2,9 @@
 marp: false
 title: Fondamenti
 paginate: true
-theme: gaia
 author: mauro
 ---
-
-![bg](./ITS_BG_Slide.jpg)
-
-# .
+![bg](./background-IL.jpg)
 
 Mauro Bogliaccino
 
@@ -17,12 +13,16 @@ Mauro Bogliaccino
 ## Fondamenti del linguaggio
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## JavaScript è un linguaggio di programmazione 
 
 utilizzato comunemente come parte dell'esperienza di navigazione, permette di creare interazioni con l'utente, controllare la navigazione, gestire la comunicazione asincrona, e modificare il contenuto del documento.
 
 ---
+![bg](./background-IL.jpg)
+
 
 Alcune cose che puoi fare con javascript
 
@@ -37,6 +37,8 @@ Alcune cose che puoi fare con javascript
 ___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## ruolo di js nel web design
 
@@ -45,6 +47,8 @@ ___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 * Js: comportamento
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Risorse disponibili online
 
@@ -58,6 +62,8 @@ ___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 * [web-link.it/web/html5](https://www.web-link.it/web/html5)
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Fondamenti del linguaggio
 
@@ -71,6 +77,8 @@ ___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 * Classi e moduli
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Hello, World
 
@@ -82,6 +90,8 @@ alert('Hello, World!')
 ```
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Hello, World! nel terminale
 
@@ -90,6 +100,8 @@ console.log('Hello, World!')
 ```
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Esecuzione del codice
 
@@ -98,6 +110,8 @@ console.log('Hello, World!')
 * Interpretazione in terminale (node.js) 
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Javascript incorporato in una pagina html
 
@@ -114,6 +128,8 @@ console.log('Hello, World!')
 ```
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Javascript collegato ad una pagina html
 
@@ -133,6 +149,8 @@ alert('Hello world')
 ```
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Come mostrare a video i dati
 
@@ -147,6 +165,8 @@ alert('Hello world')
 * console.log()
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Convenzioni di naming
 
@@ -155,6 +175,8 @@ alert('Hello world')
 * NomeClasse, nomeFunzione, nomeVariabile, nome_variabile, NOME_COSTANTE
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Identificatori
 
@@ -172,6 +194,8 @@ seguito da
 * $
 
 ---
+![bg](./background-IL.jpg)
+
 
 ### Per esempio
 
@@ -183,6 +207,8 @@ var $__$__$;
 ```
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Parole chiave riservate
 
@@ -194,6 +220,8 @@ public, return, short, static, super, switch, synchronized, this, throw, throws,
 transient, true, try, typeof, var, void, volatile, while, with
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Variabili
 
@@ -202,6 +230,8 @@ transient, true, try, typeof, var, void, volatile, while, with
 * [esempi](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/001_var.html)
 
 ---
+![bg](./background-IL.jpg)
+
 
 #### const
 
@@ -212,6 +242,8 @@ Parola chiave per la dichiarazione di una costante.
 Parola chiave per la dichiarazione di una variabile.
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## operatori
 
@@ -224,6 +256,8 @@ Parola chiave per la dichiarazione di una variabile.
 * [operatori su stringhe](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/03_arrays_strings/017_comparaStringhe.html)
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Commenti
 
@@ -242,12 +276,16 @@ var a = 5; //assegno la variabile
 ```
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## use strict
 
 Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Literals
 
@@ -262,6 +300,8 @@ Valore nullo        |    null
 Valore undefined    |    undefined
 
 ---
+![bg](./background-IL.jpg)
+
 
 # Strutture del linguaggio
 
@@ -272,6 +312,8 @@ Valore undefined    |    undefined
     * [esempio switch](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/02_control_flow/02_switch.js)
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Costrutti di iterazione (cicli)
 
@@ -281,10 +323,14 @@ Valore undefined    |    undefined
     * [esempi](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/02_control_flow/02_while_loop.js)
 
 ---
+![bg](./background-IL.jpg)
+
 
 # Tipi di dato
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Boolean
 * Boolean è la rappresentazione di tipo oggetto di una variabile logica.
@@ -301,6 +347,8 @@ var b=false
 ```
 
 ---
+![bg](./background-IL.jpg)
+
 
 ### Sono valori falsi i seguenti:
 
@@ -314,6 +362,8 @@ NaN
 ```
 
 ---
+![bg](./background-IL.jpg)
+
 
 ### Altri esempi
 
@@ -323,6 +373,8 @@ NaN
 * [esempio OR Logico](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/020_ORLogico.html)
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Objects
 
@@ -333,6 +385,8 @@ NaN
 Verifica se un oggetto è instanza di qualche prototipo.
 
 ---
+![bg](./background-IL.jpg)
+
 
 #### typeof
 
@@ -345,12 +399,16 @@ Operatore che rimuove proprietà di un oggetto.
 
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Number
 
 Number è la rappresentazione di tipo oggetto di un tipo numerico.
 
 ---
+![bg](./background-IL.jpg)
+
 
 ### JS numbers
 
@@ -361,8 +419,11 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 * NaN not a number: p.es. operazioni aritmetiche con le stringhe restituiscono NaN
 
 ---
+![bg](./background-IL.jpg)
+
 
 ### proprietà e metodi principali
+
     * Number()
     * parseFloat()
     * parseInt()
@@ -374,6 +435,8 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 #### non dichiarare stringhe, numeri e booleans come oggetti
 
 ---
+![bg](./background-IL.jpg)
+
 
 ### Per esempio:
 
@@ -388,6 +451,8 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 ```
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Math Object
 
@@ -396,6 +461,8 @@ Per lavorare con i Number, puoi usare Math che è l'oggetto che concentra molte 
 * [Math Object](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_10_Object_Math.md)
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## String
 
@@ -404,6 +471,8 @@ String è la rappresentazione di tipo oggetto di una stringa.
 * [String Object](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_06_Stringhe.md)
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## valore nullo e valore undefined
 
@@ -415,6 +484,8 @@ var b=undefined
 ```
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Funzioni
 
@@ -429,6 +500,8 @@ function f(x,y){
 * [Appunti sulle Funzioni](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_07_Functions.md) 
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Date Object 
 
@@ -444,12 +517,16 @@ function f(x,y){
 [es data](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_date.js)
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Array
 
 * [JS array](L1_08_Array.md)
 
 ---
+![bg](./background-IL.jpg)
+
 
 ## Timers
 
@@ -463,6 +540,8 @@ funzione | significato
 `clearInterval()` | Resetta i timer
 
 ---
+![bg](./background-IL.jpg)
+
 
 ### Per esempio
 
@@ -477,6 +556,8 @@ setInterval(function(){
 ```
 
 ---
+![bg](./background-IL.jpg)
+
 
 # Ricapitolando
 

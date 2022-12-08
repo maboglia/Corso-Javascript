@@ -1,6 +1,26 @@
+---
+marp: false
+title: Fondamenti
+paginate: true
+author: mauro
+---
+![bg](./ITS_BG_Slide.jpg)
+
+Mauro Bogliaccino
+
+# Corso Javascript
+
+## JQuery: gestire gli eventi
+
+---
+![bg](./ITS_BG_Slide.jpg)
+
 # JQuery: GLI EVENTI
 
 http://api.jquery.com/category/events
+
+---
+![bg](./ITS_BG_Slide.jpg)
 
 * Click
 * Doppio click
@@ -12,9 +32,12 @@ http://api.jquery.com/category/events
 * Caricamento della pagina
 * Ridimensionamento
 
+---
+![bg](./ITS_BG_Slide.jpg)
+
 Struttura di una funzione per intercettare un evento
-Quando su questo/i elemento/i
-Si verifica questo evento
+Quando su questo/i elemento/i Si verifica questo evento
+
 ```javascript
 $("button").click(function(){
 // qualche operazione
@@ -22,6 +45,7 @@ $("button").click(function(){
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Gli Eventi: intercettare il click del mouse con jQuery
 
@@ -33,19 +57,21 @@ $("a").click(function() {
 
 * Il codice dentro function() viene eseguito quando un link viene cliccato
 
+---
+![bg](./ITS_BG_Slide.jpg)
+
 * Altri comuni eventi inclusi in jQuery
-  * blur()
-  * focus()
+  * blur(), focus(), submit(), select()
   * hover()
   * keydown()
   * load()
   * mousemove()
   * resize()
   * scroll()
-  * submit()
-  * select()
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ```javascript
 <html>
@@ -61,10 +87,12 @@ $('#box').slideUp()
 <input type="button" value="cliccami" id="pulsante" />
 <div id="box" style="width:100px; height:100px; background-color:red"></div>
 </body>
-<html>
+</html>
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## DOM ready() Eseguire una funzione solo al caricamento della pagina
 
@@ -78,6 +106,9 @@ $(document).ready(function() {
 </head>
 ```
 
+---
+![bg](./ITS_BG_Slide.jpg)
+
 ```html
 <head>
 <script type="text/javascript">
@@ -89,6 +120,8 @@ $(function() {
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## eventi legati al mouse
 
@@ -97,6 +130,9 @@ $(function() {
 * mousedown
 * mouseleave
 * ...
+
+---
+![bg](./ITS_BG_Slide.jpg)
 
 ```javascript
 <html>
@@ -117,6 +153,8 @@ alert('Ciao, sono una finestra attivata da un evento');
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## eventi legati alla pressione di tasti
 
@@ -126,6 +164,10 @@ alert('Ciao, sono una finestra attivata da un evento');
 * focusin,
 * focusout
 * http://api.jquery.com/category/events/keyboard-events/
+
+---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ```javascript
 <html>
@@ -149,29 +191,23 @@ $('p').append(' '+evento.which+' '+String.fromCharCode(keycode));
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
-## Eventi supportati
+
+## Alcuni eventi supportati
 
 * dblclick
-* load
-* unload
-* submit
-* focus
-* blur
-* change
-* select
+* load, unload
+* submit, focus, blur, change, select
+* keydown, keypress, keyup
+* mousemove, mousedown, mouseup, mouseover
 * resize
-* keydown
-* keypress
-* keyup
 * scroll
-* mousemove
-* mousedown
-* mouseup
-* mouseover
 * error
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Tipologia di Eventi Javascript
 
@@ -183,6 +219,17 @@ load | Inviato ad un elemento quando esso e tutti i suo discendenti sono stati c
 resize | Inviato all'elemento windows quando la finestra del browser ha cambiato dimensioni
 scroll | Inviato ad un elemento quando l'utente ha effettuato lo scroll in un differente punto dell'elemento stesso
 unload | Inviato all'oggetto window quando l'utente naviga fuori dalla pagina (chiusura del browser, click su un link, a volte anche il semplice refresh)
+
+
+
+---
+![bg](./ITS_BG_Slide.jpg)
+
+
+## Tipologia di Eventi Javascript 2
+
+EVENTO | DESCRIZIONE
+------ | -----------
 click, dbclick | Inviati ad un elemento quando il mouse è sopra di esso e viene effettuato un click o un doppio click
 mousedown, mouseup | Inviati ad un elemento quando il mouse è sopra di esso e viene rispettivamente premuto o rilasciato il bottone del mouse
 mouseover, mouseout, mousemove | Eventi inviati all'elemento in cui il puntatore del mouse entre (mouseover), in cui esce (mouseout) o in cui si sta mouvendo (mousemove)
@@ -190,7 +237,10 @@ keydown,keypress, keyup | Eventi inviati quando un tasto viene premuto (keydown)
 select | Inviato ad un elemento quando viene selezionato del test all'interno di esso. 
 change | Evento inviato ad un elemento che ha cambiato il proprio valore. 
 submit | Evento inviato quando l'utente tenta di fare il submit di un form
+
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## on
 
@@ -206,17 +256,26 @@ this.removeClass('inserimento');
 })
 ```
 
+---
+![bg](./ITS_BG_Slide.jpg)
+
 Per ogni casella di testo aggiunge la classe
 inserimento quando il focus è sull'oggetto e rimuove
 la stessa classe quando il focus non è più
 dell'oggetto
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Sintassi abbreviata eventi
 
 * `$(selettore).on(evento,[dati],function(evento){...})`
 * `$(selettore).evento([dati],function(evento){...})`
+
+---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ```javascript
 
@@ -236,6 +295,8 @@ alert(evento.data.msg)
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Proprietà Oggetto evento
 
@@ -252,7 +313,10 @@ proprietà|Descrizione
 .type|Descrive la natura dell'evento
 .which|Nel caso di eventi scatenati da mouse o tastiera indica (in codice) quale bottone o tasto è stato premuto.
 .keyCode|Per avere informazioni sul carattere inserito si utilizza
+
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Funzioni Oggetto evento
 
@@ -260,6 +324,11 @@ L'oggetto evento offre alcuni utili metodi
 Metodo Descrizione
 
 * `.preventDefault()` Non fa eseguire la funzione di default legata all'evento.
+  * `.stopPropagation()` Impedisce l'inoltro dell'evento ad ogni elemento padre
+  * `.stopImmediatePropagation()` Impedisce l'inoltro dell'evento ad ogni altro elemento del DOM
+
+---
+![bg](./ITS_BG_Slide.jpg)
 
 Es. disattivare tutti i link di una pagina:
 
@@ -269,10 +338,10 @@ evento.preventDefault();
 });
 ```
 
-* `.stopPropagation()` Impedisce l'inoltro dell'evento ad ogni elemento padre
-* `.stopImmediatePropagation()` Impedisce l'inoltro dell'evento ad ogni altro elemento del DOM
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Lanciare eventi
 

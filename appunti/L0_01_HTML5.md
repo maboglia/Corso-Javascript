@@ -145,39 +145,21 @@ Di seguito è rappresentato un elemento `<a>` incorporato all'interno di un
 paragrafo.
 `<p>``<a href="http://www.saggiamente.com">` Vai al sito
 saggiamente.com`</a>``</p>`
-Elementi in linea in HTML:
-`<a>`
-`<abbr>`
-`<acronym>`
-`<b>`
-`<bdo>`
-`<big>`
-`<br>`
-`<button>`
-`<cite>`
-`<code>`
-`<dfn>`
-`<em>`
-`<i>`
-`<img>`
-`<input>`
-`<kbd>`
-`<label>`
-`<map>`
-`<object>`
-`<q>`
-`<samp>`
-`<script>`
-`<select>`
-`<small>`
-`<span>`
-`<strong>`
-`<sub>`
-`<sup>`
-`<textarea>`
-`<time>`
-`<tt>`
-`<var>`
+
+---
+
+Elementi|in|linea|HTML
+---|---|---|---
+`<a>`|`<input>`|`<cite>`|`<select>`
+`<abbr>`|`<kbd>`|`<code>`|`<small>`
+`<acronym>`|`<label>`|`<dfn>`|`<span>`
+`<b>`|`<map>`|`<em>`|`<strong>`
+`<bdo>`|`<object>`|`<i>`|`<sub>`
+`<big>`|`<q>`|`<img>`|`<sup>`
+`<br>`|`<samp>`|`<textarea>`|`<tt>`
+`<button>`|`<script>`|`<time>`|`<var>`
+
+
 La maggior parte dei browser visualizza l'elemento `<img>` come elemento inline-block.
 
 ---
@@ -350,6 +332,7 @@ Se utilizzato insieme ai CSS, l'elemento `<div>` può essere utilizzato per crea
 ---
 
 ## ``<span>``
+
 L'elemento `<span>` non ha attributi obbligatori, ma style, classe e id vengono
 utilizzati frequentemente.
 Se utilizzato insieme ai CSS, l'elemento `<span>` può essere utilizzato per

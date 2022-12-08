@@ -4,17 +4,17 @@ Le gallery in javascript negli ultimi anni hanno avuto un ruolo
 predominante sul web e sono andate a sostituire la maggior
 parte di quelle sviluppate in Flash.
 Alcuni vantaggi :
+
 * Semplicità di utilizzo
 * Il codice è parte integrante della pagina web
 * La maggior parte permette di realizzare il "Progressive enhancement"
 * Molti plugin disponibili sul web, per esempio: http://fancybox.net/
 
-
-
 Il primo passo è l'importazione all'interno della nostra pagina della libreria
 Jquery, del file che contiene il codice javascript della nostra galleria
 ( jquery.fancybox-1.3.4.pack.js) e il file css della stessa (jquery.fancybox-
 1.3.4.css)
+
 ```javascript
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
@@ -59,6 +59,7 @@ esecuzione la libreria FancyBox
 ## GALLERY FOTOGRAFICA : IMPOSTIAMO
 Molti plugin permettono di settare alcuni aspetti o comportamenti dello
 stesso, di seguito alcuni settaggi possibili della libreria.
+
 ```javascript
 $("a#example2").fancybox({
 'overlayShow' : false,
@@ -81,14 +82,18 @@ $("a#example4").fancybox({
 ```
 
 ## GALLERY FOTOGRAFICA : IMPORTAZIONE
+
 Per la gallery l'importazione delle librerie rimane uguale
+
 ```javascript
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css"
 media="screen" />
 ```
+
 ## GALLERY FOTOGRAFICA : HTML
+
 Il codice HTML cambierà in :
 
 ```javascript
@@ -106,7 +111,8 @@ Il codice HTML cambierà in :
 </a>
 ```
 
-## GALLERY FOTOGRAFICA : IMPOSTIAMO
+## GALLERY FOTOGRAFICA: IMPOSTIAMO
+
 Adesso diciamo alla libreria su quali elementi deve agire, nel nostro caso su
 tutti quelli elementi che hanno tra i loro attributi il tag rel="gruppo"
 ```javascript
@@ -117,6 +123,5 @@ $("a[rel=gruppo]").fancybox();
 </script>
 ```
 
-## GALLERY FOTOGRAFICA : IMPOSTIAMO
 Adesso possiamo visualizzare la pagina all'interno di un browser e vedere in
 esecuzione la libreria FancyBox

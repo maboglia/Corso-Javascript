@@ -120,13 +120,17 @@ Calcolare il numero di giorni trascorsi dalla tua data di nascita.
 
 ## Esercizi
 
-### 1. Calcolare il costo di un viaggio in automobile, sapendo che la lunghezza è 750 Km, che il consumo di gasolio è 3,2 litri ogni 100 Km, che un litro di gasolio costa 1,432 €, che due terzi del percorso prevedono un pedaggio pari a 1,2 € ogni 10 Km.
+### 1. Calcolare il costo di un viaggio in automobile, 
+sapendo che la lunghezza è 750 Km, che il consumo di gasolio è 3,2 litri ogni 100 Km, che un litro di gasolio costa 1,432 €, che due terzi del percorso prevedono un pedaggio pari a 1,2 € ogni 10 Km.
 
-### 2. Calcolare il costo di una telefonata, sapendo che la durata è pari a 4 minuti e 23 secondi, che il costo alla chiamata è pari a 0,15 €, che i primi 30 secondi sono gratis, che il resto della telefonata costa 0,24 € al minuto.
+### 2. Calcolare il costo di una telefonata, 
+sapendo che la durata è pari a 4 minuti e 23 secondi, che il costo alla chiamata è pari a 0,15 €, che i primi 30 secondi sono gratis, che il resto della telefonata costa 0,24 € al minuto.
 
-### 3. Calcolare il costo di un biglietto aereo acquistato una settimana prima della partenza, sapendo che il costo di base è pari a 200 € (se acquistato il giorno della partenza) e che questo costo diminuisce del 2,3% al giorno (se acquistato prima del giorno della partenza).
+### 3. Calcolare il costo di un biglietto aereo acquistato una settimana prima della partenza, 
+sapendo che il costo di base è pari a 200 € (se acquistato il giorno della partenza) e che questo costo diminuisce del 2,3% al giorno (se acquistato prima del giorno della partenza).
 
-### 4. Calcolare il costo di un prodotto usando la seguente formula costo=( prezzo prezzo * 0,20 ) − sconto e sapendo che il prezzo è 100 € e lo sconto è 30 €.
+### 4. Calcolare il costo di un prodotto usando la seguente formula 
+costo=( prezzo prezzo * 0,20 ) − sconto e sapendo che il prezzo è 100 € e lo sconto è 30 €.
 
 ### 5. Calcolare la rata mensile di un mutuo annuale usando la seguente formula 
     * rata = importo * (1+tasso) / 12

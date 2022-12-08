@@ -6,10 +6,13 @@ Adesso animeremo una parte di un famoso doodle di google,
 in particolare il leone dell'illustrazione.
 
 ## ANIMAZIONE: JQUERY E SPRITE
+
 Al solito abbiamo bisogno della nostra libreria Jquery
+
 ```javascript
 <script type="text/javascript" src="jquery.js"></script>
 ```
+
 e un paio di immagini, di cui una sprite
 
 ## ANIMAZIONE: CODICE HTML

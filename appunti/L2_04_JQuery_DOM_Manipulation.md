@@ -1,7 +1,26 @@
+---
+marp: false
+title: Fondamenti
+paginate: true
+author: mauro
+---
+![bg](./ITS_BG_Slide.jpg)
+
+Mauro Bogliaccino
+
+# Corso Javascript
+
+## JQuery: manipolare il DOM
+
+---
+![bg](./ITS_BG_Slide.jpg)
+
 # JQuery: manipolare il DOM
 
 http://api.jquery.com/category/manipulation/
 
+---
+![bg](./ITS_BG_Slide.jpg)
 
 ## .css()
 
@@ -13,6 +32,8 @@ Possiamo gestire le regole css di un elemento attraverso la funzione .css
 * `$("#elemento").css("border", "1px solid red");`
 * `$("#elemento").css("background-color", "#ffcc90");`
 
+---
+![bg](./ITS_BG_Slide.jpg)
 
 ```javascript
 //accorpare le regole in un oggetto
@@ -22,6 +43,9 @@ regolaCss : "valore",
 regolaCss : "valore" //l'ultimo lemento senza virgola
 } );
 ```
+
+---
+![bg](./ITS_BG_Slide.jpg)
 
 ```javascript
 //accorpare le regole in un oggetto
@@ -33,6 +57,8 @@ $("#elemento").css({ "color": "red",
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## ATTRIBUTI SET & GET
 
@@ -42,6 +68,9 @@ Con Jquery possiamo leggere e impostare i valori per ogni attributo del DOM, ad 
 * leggere e scrivere il contenuto di un input text 
 * leggere e scrivere una proprietà CSS 
 
+---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## GETTERS
 
@@ -49,6 +78,9 @@ Con Jquery possiamo leggere e impostare i valori per ogni attributo del DOM, ad 
 * `.attr('id')`
 * `.val()`
 * `.width()`
+
+---
+![bg](./ITS_BG_Slide.jpg)
 
 
 ## SETTERS
@@ -59,6 +91,8 @@ Con Jquery possiamo leggere e impostare i valori per ogni attributo del DOM, ad 
 * `.width('120px')`
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Accedere e modificare le classi CSS
 
@@ -73,6 +107,9 @@ $("div").removeClass("content");
 $("div").toggleClass("content");
 ```
 
+---
+![bg](./ITS_BG_Slide.jpg)
+
 Se un elemento è di una determinata classe allora esegui il codice:
 
 ```javascript
@@ -81,6 +118,9 @@ if ($("#mioElemento").hasClass("content")) {
 }
 
 ```
+
+---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Gestire gli stili Css con Jquery
 
@@ -91,9 +131,15 @@ $("p").css("width", "400px");
 $("#mioElemento").css("color", "blue");
 $("ul").css("border", "solid 1px #ccc");
 ```
+
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Aggiungere e rimuovere contenuto e inserire elementi
+
+---
+![bg](./ITS_BG_Slide.jpg)
 
 ### Ottenere l'elemento html
 
@@ -107,6 +153,9 @@ var mioElementHTMLo = $("#mioElemento").html();
 var mioElementHTMLo = $("#mioElemento").text();
 ```
 
+---
+![bg](./ITS_BG_Slide.jpg)
+
 ### Cambiare l'HTML e/o il Testo
 
 ```javascript
@@ -114,14 +163,18 @@ $("#mioElemento").html("<p>Questo è il nuovo contenuto</p>");
 $("#mioElemento").text("Questo è il nuovo contenuto."); // questo sostituisce il testo presente
 ```
 
+---
+![bg](./ITS_BG_Slide.jpg)
+
 ### Far seguire (appendere) del contenuto ad un elemento
 
 ```javascript
 $("#mioElemento").append("<p>Questo lo aggiungo.</p>");
 $("p").append("<p>Questo pure.</p>"); // Aggiunge questo contenuto ad ogni paragrafo
-``
+```
+
 ---
-`
+![bg](./ITS_BG_Slide.jpg)
 
 ### Altri comandi
 
@@ -135,10 +188,15 @@ $("p").append("<p>Questo pure.</p>"); // Aggiunge questo contenuto ad ogni parag
     insertAfter()
 ```
 
+---
+![bg](./ITS_BG_Slide.jpg)
+
 * lavorano in modo simile con specifiche peculiarità
 * Ulteriori informazioni  jQuery.com
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Esempio DOM: `prepend()`
 
@@ -154,6 +212,8 @@ $("h1").prepend("<span>Primo</span>");
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Esempio DOM: `before()`
 
@@ -169,6 +229,8 @@ $("h1").before("<span>Primo</span>");
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Esempio DOM: `append()`
 
@@ -183,6 +245,8 @@ $("h1").append("<span>Primo</span>");
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Esempio DOM: `after()`
 
@@ -197,6 +261,8 @@ $("h1").after("<span>Primo</span>");
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Esempio DOM: `html()`
 
@@ -211,6 +277,8 @@ $("#blocco_interno").html("<strong>Ciao , sono un testo dinamico</strong>");
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Esempio DOM: `addClass()`
 
@@ -225,6 +293,8 @@ $("# blocco_interno).addClass("selezionata");
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Esempio DOM: `removeClass()`
 
@@ -239,6 +309,8 @@ $("#blocco_interno").removeClass("selezionata");
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Esempio DOM: `html()` + val()
 
@@ -253,6 +325,8 @@ $("span"). html( $("#testo").val());
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Esempio DOM: `val()`
 
@@ -266,6 +340,8 @@ $("#testo).val('Hello world') ;
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## Operazione sugli oggetti selezionati
 
@@ -280,7 +356,15 @@ $("div#principale").append("dentro il div");
 
 $("input#email").val()
 //valore della input box con id email
+```
 
+---
+![bg](./ITS_BG_Slide.jpg)
+
+
+## Operazione sugli oggetti selezionati 2
+
+```javascript
 $("span").wrap("div")
 //crea un div che contiene tutti gli elementi span della pagina
 
@@ -293,8 +377,10 @@ $("img.logo").css("border","solid orange 3px");
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
-* Permette di scorrere il vettore di elementi selezionati e di eseguire una funzione per ogni elemento
+
+## Scorre il vettore di elementi selezionati ed esegue una funzione per ogni elemento
 
 ```javascript
 $(selettore).each()

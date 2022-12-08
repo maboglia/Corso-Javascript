@@ -1,4 +1,21 @@
-## JQuery: FILTRI
+---
+marp: false
+title: Fondamenti
+paginate: true
+author: mauro
+---
+![bg](./ITS_BG_Slide.jpg)
+
+Mauro Bogliaccino
+
+# Corso Javascript
+
+## JQuery: i filtri
+
+---
+![bg](./ITS_BG_Slide.jpg)
+
+# JQuery: FILTRI
 
 I filtri permettono di ottenere una maggiore precisione nella selezione degli elementi fatta con i selettori
 
@@ -8,15 +25,24 @@ I filtri permettono di ottenere una maggiore precisione nella selezione degli el
 	* :not()
 	* :eq()
 
+---
+![bg](./ITS_BG_Slide.jpg)
+
 * Filtri sul contenuto ( Content Filter)
 	* :empty
 	* :contains(text)
 	* :has(selector)
 
+---
+![bg](./ITS_BG_Slide.jpg)
+
 * Filtri sugli attributi ( Attribute )
 	* [attribute]
 	* [attribute=value]
 	* [attribute!=value]
+
+---
+![bg](./ITS_BG_Slide.jpg)
 
 * Filtri sugli elementi dei form ( Form )
 	* :input
@@ -26,6 +52,8 @@ I filtri permettono di ottenere una maggiore precisione nella selezione degli el
 	* :checked
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## FILTRI SU TABELLE
 
@@ -45,21 +73,28 @@ YASMINE|RM|assente
 * `$( "td[align=left]").css('text-align','center');`
 
 ---
+![bg](./ITS_BG_Slide.jpg)
+
 
 ## FILTRI SU MODULI
 
 
 ### checkbox
 
-```javascript
+```html
 <form name="nome_form" id="id_form">
-<label>Colori preferiti</label>
+	<label>Colori preferiti</label>
 <input type="checkbox" value="rosso" /> Rosso
 <input type="checkbox" value="giallo" /> Giallo
 <input type="checkbox" value="blu" /> Blu
 <input type="button" value="sono selezionati..." onclick="dammi_selezionati()" />
 </form>
+```
 
+---
+![bg](./ITS_BG_Slide.jpg)
+
+```javascript
 <script type="text/javascript">
 function dammi_selezionati(){
 	var stringa='';
@@ -72,6 +107,7 @@ function dammi_selezionati(){
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ### option
 

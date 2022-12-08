@@ -32,7 +32,7 @@ for (let citta of cittaVisitate.values()){
 
 ## Map
 
-Le Map sono collezioni di coppie chiave/valore, dotete dell proprietà size
+Le Map sono collezioni di coppie chiave/valore, dotate della proprietà size
 
 ```javascript
 let garage = new Map();

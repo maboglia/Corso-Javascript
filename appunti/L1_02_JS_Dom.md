@@ -1,4 +1,19 @@
-# JavaScript nel browser
+---
+marp: false
+title: Fondamenti
+paginate: true
+author: mauro
+---
+![bg](./background-IL.jpg)
+
+Mauro Bogliaccino
+
+# Corso Javascript
+
+## JavaScript nel browser
+
+---
+![bg](./background-IL.jpg)
 
 ## BOM- Browser Object Model - Window Object
 
@@ -8,16 +23,20 @@
 * DOM (Attraversamento e manipolazione)
 * Eventi (tipologia e gestione)
 
+---
+![bg](./background-IL.jpg)
+
 ### Funzioni per dialog
 
 * `alert(messaggio)`
 * `res=confirm(messaggio)`
 * `res=prompt(messaggio, valore_default)`
 
-
 ---
+![bg](./background-IL.jpg)
 
 ## API Window
+
 oggetto JS | descrizione
 
 
@@ -26,6 +45,8 @@ oggetto JS | descrizione
 `navigator`|
 `screen`|fornisce informazione relativa al browser e alla risoluzione.
 
+---
+![bg](./background-IL.jpg)
 
 ## DOM
 
@@ -36,6 +57,7 @@ oggetto JS | descrizione
 * Ogni elemento se converte in un nodo e ogni porzione di testo in un nodo di testo.
 
 ---
+![bg](./background-IL.jpg)
 
 ## API DOM
 
@@ -47,6 +69,7 @@ oggetto JS | descrizione
 * Maggiori informazioni: http://www.javascriptkit.com/domref/
 
 ---
+![bg](./background-IL.jpg)
 
 ## Selezionare elementi - Selettori (I)
 
@@ -57,6 +80,9 @@ Sono disponibili molti metodi di selezione di elementi.
 * `document.getElementsByTagName(tagname)`
 * `document.getElementByClassName(classname)`
 
+---
+![bg](./background-IL.jpg)
+
 ## Selettori (II)
 
 Addizionalmente ci sono selettori di tipo CSS.
@@ -65,6 +91,7 @@ Addizionalmente ci sono selettori di tipo CSS.
 * `document.querySelectorAll(selector)`
 
 ---
+![bg](./background-IL.jpg)
 
 ## Attraversare il DOM -  Traversing
 
@@ -77,6 +104,9 @@ Una volta stabilito un punto di partenza, si può percorrere la ramificazione
 * `nextSibling`
 * `previousSibling`
 
+---
+![bg](./background-IL.jpg)
+
 ## Tipi di nodi
 
 i nodi hanno alcune proprietà che si possono consultare, per vederne le caratteristiche.
@@ -86,6 +116,7 @@ i nodi hanno alcune proprietà che si possono consultare, per vederne le caratte
 * `nodeName`
 
 ---
+![bg](./background-IL.jpg)
 
 ## Traversing (II)
 
@@ -96,11 +127,15 @@ i nodi hanno alcune proprietà che si possono consultare, per vederne le caratte
 * `previousElementSibling`
 * `childElementCount`
 
+---
+![bg](./background-IL.jpg)
+
 # Manipolare elementi del DOM
 
 Una volta visti i metodi per selezione e introspezione, vediamo come manipolare il DOM.
 
 ---
+![bg](./background-IL.jpg)
 
 ## Attributi
 
@@ -112,6 +147,7 @@ Sono disponibili metodi specifici per l'accesso agli attributi di un elemento.
 * `removeAttribute()`
 
 ---
+![bg](./background-IL.jpg)
 
 ## Contenuti (I)
 
@@ -125,6 +161,9 @@ Sono disponibili metodi per la manipolazione del contenuto.
 * `beforeend()`
 * `afterend()`
 
+---
+![bg](./background-IL.jpg)
+
 ## Contenuti (II)
 
 per accedere al contenuto di un elemento, esistono due metodi
@@ -133,6 +172,7 @@ per accedere al contenuto di un elemento, esistono due metodi
 * data, per Node
 
 ---
+![bg](./background-IL.jpg)
 
 ## Creazione di nodi
 
@@ -152,6 +192,7 @@ Ci sono metodi per la manipolazione di nodi dell'albero.
 * `replaceChild()`
 
 ---
+![bg](./background-IL.jpg)
 
 ## Posizionamento (I)
 
@@ -168,6 +209,7 @@ Sono disponibili vari metodi utili per conoscere le posizioni degli elementi, E 
 * `scrollIntoView(x,y)`
 
 ---
+![bg](./background-IL.jpg)
 
 ## Gestione dei Form HTML
 
@@ -175,6 +217,9 @@ Sono disponibili vari metodi utili per conoscere le posizioni degli elementi, E 
 * Inoltre esiste il parametro `document.forms` che permette di accedere attraverso gli attributi name e id
 * Per accedere agli elementi del form, si utilizza la variabile 'elements'.
 * `document.forms.name.element.input`
+
+---
+![bg](./background-IL.jpg)
 
 ## Stili
 
@@ -184,30 +229,30 @@ Sono disponibili vari metodi utili per conoscere le posizioni degli elementi, E 
 * `document.querySelector('selector').style`
 
 ---
+![bg](./background-IL.jpg)
 
 ## Eventi
 
 Un evento è qualcosa che scatena una azione specifica nel browser.
+
+---
+![bg](./background-IL.jpg)
 
 ## Un evento accade quando:
 
 * Termina il caricamento di un elemento della pagina.
 * L'utente esegue azioni col mouse o la tastiera.
 * Eventi associati ad una pagina
-  * Device-dependent input events
-  * Tastiera, mouse, dispositivi Touch
+  * Tastiera, mouse, dispositivi Touch, click
   * Device-independent input events
-  * Click
-  * User interface events
-  * Fuoco, cambi, submit
-  * State-change events
-  * Cambio di stato in generale
+  * User interface events: focus, change, submit
+  * State-change events, Cambio di stato in generale
   * API-specific events
   * DnD, Players
-  * Timers and error handlers
-  * Temporizzatori, errori
+  * Timers and error handlers: temporizzatori, errori
 
 ---
+![bg](./background-IL.jpg)
 
 ## Cattura di eventi
 
@@ -224,6 +269,7 @@ b.addEventListener('click',function(){
 ```
 
 ---
+![bg](./background-IL.jpg)
 
 ## Tipologia di Eventi Javascript
 
@@ -240,6 +286,7 @@ EVENTO | DESCRIZIONE
 `mouseover`, `mouseout`, `mousemove` | Eventi inviati all'elemento in cui il puntatore del mouse entra (mouseover), esce (mouseout), si sta mouvendo (mousemove)
 
 ---
+![bg](./background-IL.jpg)
 
 ## Tipologia di Eventi Javascript
 

@@ -1,6 +1,26 @@
+---
+marp: false
+title: Fondamenti
+paginate: true
+author: mauro
+---
+![bg](./ITS_BG_Slide.jpg)
+
+Mauro Bogliaccino
+
+# Corso Javascript
+
+## JQuery: gestire gli effetti
+
+---
+![bg](./ITS_BG_Slide.jpg)
+
 # jQuery: GLI EFFETTI
 
 http://api.jquery.com/category/effects/
+
+---
+![bg](./ITS_BG_Slide.jpg)
 
 Gli effetti li possiamo raggruppare in 4 tipologie
 
@@ -10,8 +30,9 @@ Gli effetti li possiamo raggruppare in 4 tipologie
 * Animate
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
-### Mostrare e nascondere elementi con jQuery: hide()
+## Mostrare e nascondere elementi con jQuery: hide()
 
 ```javascript
 $("#mioElemento").hide("slow", function() {
@@ -29,8 +50,9 @@ $("#mioElemento").toggle(1000, function() {
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
-### Mostrare e nascondere elementi con jQuery: fade()
+## Mostrare e nascondere elementi con jQuery: fade()
 
 ```javascript
     $("#mioElemento").fadeOut("slow", function() {
@@ -50,8 +72,9 @@ $("#mioElemento").toggle(1000, function() {
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
-### Mostrare e nascondere elementi con jQuery: slide()
+## Mostrare e nascondere elementi con jQuery: slide()
 
 ```javascript
     $("#mioElemento").slideDown("fast", function() {
@@ -69,6 +92,7 @@ $("#mioElemento").toggle(1000, function() {
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Animate
 
@@ -85,8 +109,9 @@ $("#mioElemento").toggle(1000, function() {
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
-### slideUp()
+## slideUp()
 
 ```javascript
 <html>
@@ -108,8 +133,9 @@ $("#box").slideUp();
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
-### slideDown()
+## slideDown()
 
 ```javascript
 <html>
@@ -132,6 +158,7 @@ display:none;"></div>
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Ottenere un effetto Apri/chiudi
 
@@ -155,6 +182,7 @@ $("#box").slideToggle();
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Gestire la velocità dell'animazione
 
@@ -178,6 +206,7 @@ $("#box").slideToggle(3000);
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Eseguire un'azione al completamento dell'animazione
 
@@ -203,6 +232,7 @@ alert("Animazione completata");
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## ANIMATE
 
@@ -227,6 +257,7 @@ relative; "></div>
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Scroller di pagina
 
@@ -235,6 +266,7 @@ Un tipico esempio sono le ancore "torna su" che troviamo alla fine di un testo c
 permettono con un click di tornare in cima allo stesso
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Scroller di pagina verticale
 
@@ -256,6 +288,7 @@ Testo Primo Blocco 1
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## Scroller di pagina orizzontale
 
@@ -277,6 +310,7 @@ Testo Primo Blocco 1
 ```
 
 ---
+![bg](./ITS_BG_Slide.jpg)
 
 ## SLIDER DI IMMAGINI
 
