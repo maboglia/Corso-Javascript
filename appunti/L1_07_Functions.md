@@ -129,7 +129,6 @@ console.log(quadrato2);
 * Anche prima di essere dichiarate.
 ---
 
-
 ---
 
 ### Esempi
