@@ -1,0 +1,7 @@
+js_map_chaining.png
+js_map_obj.png
+js_map_obj_short.png
+js_map.png
+js_reduce.png
+SchemaJS.jpg
+strutturaHTML5.png
