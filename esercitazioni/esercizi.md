@@ -1,20 +1,6 @@
 # Esercizi JavaScript
 
-## esercizio 1
-
-Calcolare la somma dei primi quattro multipli di 13.
-
-## esercizio 2
-
-Verificare se la somma dei primi sette numeri primi è maggiore della somma delle prime tre potenze di due.
-
-## esercizio 3
-
-Verificare se 135 è dispari, 147 è pari, 12 è dispari, 200 è pari.
-
-## esercizio 4
-
-Calcolare l'area di un triangolo rettangolo i cui cateti sono 23 e 17.
+## Geometria
 
 ## esercizio 5
 
@@ -32,6 +18,8 @@ Calcolare l'area di un trapezio la cui base maggiore è 48, quella minore è 2
 
 Verificare se l'area di un quadrato di lato quattro è minore dell'area di un cerchio di raggio tre.
 
+## Tempo
+
 ## esercizio 9
 
 Calcolare il numero dei minuti di una giornata, di una settimana, di un mese di 30 giorni, di un anno non bisestile.
@@ -40,33 +28,6 @@ Calcolare il numero dei minuti di una giornata, di una settimana, di un mese di 
 
 Calcolare il numero di giorni trascorsi dalla tua data di nascita.
 
-## esercizio 11
-
-### uso di prompt() + alert()
-
-* Creare uno script che chieda il nome e il cognome all'utente prima che la pagina venga caricata.
-* Provare a chiamare una finestra di dialogo (di tipo alert) che contenga la scritta "Benvenuto"+ nome + cognome.
-* In fondo alla pagina deve essere scritto "Benvenuto "+ nome + cognome.
-
-## esercizio 12
-
-### uso di prompt()	
-
-* Creare una pagina che chieda all'utente di fornire la propria autorizzazione al trattamento dei dati.
-* Nel caso non sia data, scrivere "Autorizzazione non concessa".
-* Nel caso contrario scrivere "Autorizzazione concessa".
-
-	
-## esercizio 13
-
-### uso di prompt() + array[]
-
-* Creare una pagina in cui il sistema chiede all'utente il proprio nome
-* Il sistema verifica il nome e comunica all'utente se è un amministratore o meno
-* E' dato un array di nomi che hanno i diritti di amministratore
-
-	
-## esercizio 14
 
 ### 3 colori
 
@@ -77,7 +38,7 @@ Calcolare il numero di giorni trascorsi dalla tua data di nascita.
 
 * Controllare che il colore dello sfondo, quello del titolo e quello del testo siano diversi.
 * Nel caso due o più dei colori assegnati dall'utente siano uguali, devono essere presenti regole che determinino che colore devono assumere titolo, testo e sfondo.
-* Nel caso l'utente inserisca al posto dei tre colori il testo "*"deve essere caricato un foglio di stile esterno.
+* Nel caso l'utente inserisca al posto dei tre colori il testo "*" deve essere caricato un foglio di stile esterno.
 
 
 ## esercizio 15
@@ -130,22 +91,14 @@ sapendo che la durata è pari a 4 minuti e 23 secondi, che il costo alla chiamat
 sapendo che il costo di base è pari a 200 € (se acquistato il giorno della partenza) e che questo costo diminuisce del 2,3% al giorno (se acquistato prima del giorno della partenza).
 
 ### 4. Calcolare il costo di un prodotto usando la seguente formula 
-costo=( prezzo prezzo * 0,20 ) − sconto e sapendo che il prezzo è 100 € e lo sconto è 30 €.
+costo=( prezzo + prezzo * 0,20 ) − sconto e sapendo che il prezzo è 100 € e lo sconto è 30 €.
 
 ### 5. Calcolare la rata mensile di un mutuo annuale usando la seguente formula 
     * rata = importo * (1+tasso) / 12
     * e sapendo che l'importo annuale è 240 € e il tasso è il 5%.
 
 
-### 6. Definire in JavaScript una funzione che verifica se l'intersezione dell'intervallo [a, b) con l'intervallo [c, d) è vuota.
-    * la funzione ha quattro parametri: a, b, c, d.
-    * Invocare la funzione con i seguenti valori: 
-        * 2, 4, 5, 7;
-        * 2, 4, 4, 7;
-        * 2, 4, 3, 7;
-        * 5, 7, 2, 4; 
-        * 4, 7, 2, 4; 
-        * 3, 7, 2, 4.
+
 ### 7. Definire in JavaScript una funzione che calcola e restituisce la somma delle cifre di un intero che appartiene all'intervallo [0, 100].
     * La funzione ha un parametro: n.
     * Invocare la funzione con i seguenti valori: 0, 1, 23, 99.
@@ -162,22 +115,6 @@ costo=( prezzo prezzo * 0,20 ) − sconto e sapendo che il prezzo è 100 € 
     * Invocare la funzione con i seguenti valori:
         * [3, 12, 24]
         * [5, 7, 9, -12, 0].
-### 10. Dato un array a e un valore k, il numero di occorrenze di k in a è definito
-
-    come il numero degli elementi di a il cui valore è uguale a k.
-    * Definire in JavaScript una funzione che calcola e restituisce il numero di
-    occorrenze del valore k nell'array a.
-    * La funzione ha due parametri: a, k.
-    * Invocare la funzione con i seguenti valori:
-        * [10, −5, 34, 0], 1
-        * [10, −5, 34, 0], −5.
-
-
-### 11. Definire in JavaScript un predicato che verifica se ogni elemento di un array di numeri (tranne il primo) è pari alla somma degli elementi che lo precedono.
-    * La funzione ha un parametro: a.
-    * Invocare la funzione con i seguenti valori:
-        * [1, 2, 6, 10, 32]
-        * [1, 2, 6, 8, 31].
 
 
 ### 12. Definire in JavaScript una funzione che ha come parametro un array a di numeri e che restituisce un nuovo array che contiene le differenze tra gli elementi adiacenti di a.
