@@ -29,6 +29,15 @@ Calcolare il numero dei minuti di una giornata, di una settimana, di un mese di 
 Calcolare il numero di giorni trascorsi dalla tua data di nascita.
 
 
+## esercizio 16
+
+* Preparare uno script che mostri saluto adatto all'ora del giorno 
+* (es: Buon pomeriggio, Buona notte, ecc.). 
+* Usare l'oggetto Date() e cercare il metodo adatto su un sito di reference JavaScript, 
+* e.g. mozilla, w3schools, ...
+
+
+
 ### 3 colori
 
 * Chiedere tre colori in input all'utente: uno per il testo, uno per lo sfondo e uno per il titolo.
@@ -39,28 +48,6 @@ Calcolare il numero di giorni trascorsi dalla tua data di nascita.
 * Controllare che il colore dello sfondo, quello del titolo e quello del testo siano diversi.
 * Nel caso due o più dei colori assegnati dall'utente siano uguali, devono essere presenti regole che determinino che colore devono assumere titolo, testo e sfondo.
 * Nel caso l'utente inserisca al posto dei tre colori il testo "*" deve essere caricato un foglio di stile esterno.
-
-
-## esercizio 15
-
-* Creare una finestra pop-up per chiedere il nome dell'utente e scrivere sulla pagina HTML il messaggio "Ciao nome" formattato come heading di primo livello (tag h1).
-* Se l'utente non inserisce il nome scrivere il messaggio "Ciao Utente Anonimo!"
-
-## esercizio 16
-
-* Preparare uno script che mostri saluto adatto all'ora del giorno 
-* (es: Buon pomeriggio, Buona notte, ecc.). 
-* Usare l'oggetto Date() e cercare il metodo adatto su un sito di reference JavaScript, 
-* e.g. mozilla, w3schools, ...
-
-## esercizio 17
-
-* Creare un form HTML in cui l'utente deve introdurre username e password. 
-* Non consentire all'utente di schiacciare il bottone Submit se
-* Non ha inserito lo username
-* La password non ha almeno 5 caratteri
-
-* In questi casi, segnalare un opportuno messaggio di errore a fianco del relativo campo del form.
 
 ## esercizio 18
 
@@ -95,7 +82,7 @@ costo=( prezzo + prezzo * 0,20 ) − sconto e sapendo che il prezzo è 100 € e
 
 ### 5. Calcolare la rata mensile di un mutuo annuale usando la seguente formula 
     * rata = importo * (1+tasso) / 12
-    * e sapendo che l'importo annuale è 240 € e il tasso è il 5%.
+    * e sapendo che l'importo annuale è 6000 € e il tasso è il 5%.
 
 
 
@@ -109,21 +96,16 @@ costo=( prezzo + prezzo * 0,20 ) − sconto e sapendo che il prezzo è 100 € e
     * [Wikipedia, alla voce Media (statistica)]:
     * m = (x1 + x2 ... + xn) / n
 
-### 9. Definire in JavaScript una funzione che calcola e restituisce la media aritmetica semplice degli elementi di un array a formato da n numeri.
+Definire in JavaScript una funzione che calcola e restituisce la media aritmetica semplice degli elementi di un array a formato da n numeri.
 
     * La funzione ha un parametro: a.
     * Invocare la funzione con i seguenti valori:
         * [3, 12, 24]
         * [5, 7, 9, -12, 0].
 
+   
 
-### 12. Definire in JavaScript una funzione che ha come parametro un array a di numeri e che restituisce un nuovo array che contiene le differenze tra gli elementi adiacenti di a.
-
-    * La funzione ha un parametro: a.
-    * Invocare la funzione con i seguenti valori:
-        * [1, 2, -6, 0, 3]
-        * [2, 2, 3, 3, 4, 4].    
-
+# Controllo moduli html
 
 ### 13. Scrivere un documento HTML contenente un modulo con i seguenti campi:
 
@@ -169,3 +151,12 @@ Aggiungere al documento HTML una funzione JavaScript che esegue i seguenti contr
   * verifica che sia stato selezionato un corso;
   * se l'utente ha dichiarato di essere uno studente lavoratore, la descrizione del lavoro svolto non può essere vuota.
 
+
+## esercizio 17
+
+* Creare un form HTML in cui l'utente deve introdurre username e password. 
+* Non consentire all'utente di schiacciare il bottone Submit se
+* Non ha inserito lo username
+* La password non ha almeno 5 caratteri
+
+* In questi casi, segnalare un opportuno messaggio di errore a fianco del relativo campo del form.
