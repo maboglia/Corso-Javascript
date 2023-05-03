@@ -1,0 +1,15 @@
+{
+    "name": "laboratoriojs",
+    "version": "1.0.0",
+    "description": "laboratorio javascript",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "lite-server"
+    },
+    "devDependencies": {
+        "lite-server": "^2.3.0"
+    },
+    "author": "mb",
+    "license": "ISC"
+}

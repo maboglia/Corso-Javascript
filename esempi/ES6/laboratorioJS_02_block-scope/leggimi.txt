@@ -1,0 +1,10 @@
+1) inizializza la cartella con npm
+2) aggiungi lite-server al package.json
+3) creo i file index (html e js)
+4) eseguo npm run dev per far partire lite-server e caricare il progetto
+5) :)
+
+--
+
+1) variable scope (ambito di visibilità)
+2) global e block scope 
