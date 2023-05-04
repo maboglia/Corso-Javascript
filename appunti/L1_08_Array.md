@@ -192,6 +192,8 @@ arr.length; // 3
 
 ```
 
+---
+
 ## Estrai un elemento
 
 ```javascript
@@ -200,6 +202,8 @@ arr[1]; // 'world'
 
 
 ```
+
+---
 
 ## Ricerca in avanti un elemento partendo da un indice (default: 0)
 
@@ -213,6 +217,8 @@ arr.indexOf(5, 1); // 2
 
 
 ```
+
+---
 
 ## Ricerca all'indietro di un elemento partendo da un indice (predefinito: this.length-1)
 
@@ -228,6 +234,8 @@ arr.lastIndexOf(3, -2); // 0
 
 ```
 
+---
+
 ## Concatena l'array corrente con valori dati e/o array di valori dati
 
 ```javascript
@@ -237,6 +245,8 @@ arr; // [1,2,3]
 
 
 ```
+
+---
 
 ## (sul posto) Aggiunge nuovi elementi alla fine di un array
 
@@ -265,6 +275,8 @@ arr.length; // 9
 
 ```
 
+---
+
 ## (sul posto) Antepone i nuovi elementi all'inizio di un array
 
 ```javascript
@@ -274,6 +286,8 @@ arr; // [6,7,[8,9],3,4,5]
 
 
 ```
+
+---
 
 ## (sul posto) Rimuove (e restituisce) l'ultimo elemento in un array
 
@@ -285,6 +299,8 @@ arr; // [3,4]
 
 ```
 
+---
+
 ## (sul posto) Rimuove (e restituisce) il primo elemento in un array
 
 ```javascript
@@ -294,6 +310,8 @@ arr; // [4,5]
 
 
 ```
+
+---
 
 ## (sul posto) Estrarre alcuni elementi (e facoltativamente inserirne di nuovi nella posizione)
 
@@ -326,6 +344,8 @@ arr; // [0,1,2,'3',[4],null,5,6,7,8,9]
 
 ```
 
+---
+
 ## filter() seleziona alcuni elementi da un array
 
 ```javascript
@@ -336,6 +356,8 @@ arr; // [1,2,3,4,5,7,9]
 
 
 ```
+
+---
 
 ## every() si ferma quando ottiene un valore falso
 
@@ -349,12 +371,16 @@ arr1.every(isOdd); // true
 arr2.every(isOdd); // false
 ```
 
+---
+
 ## some() si ferma una volta ottenuto un valore vero
 
 ```javascript
 arr1.some(isEven); // false
 arr2.some(isEven); // true
 ```
+
+---
 
 ## map() e forEach() esaminano l'intero elenco
 
@@ -367,6 +393,8 @@ arr1.map(addTen); // [11,13,15,17,19]
 
 
 ```
+
+---
 
 ## Possiamo anche ottenere l'indice corrente all'interno delle nostre funzioni durante l'enumerazione
 
@@ -390,6 +418,8 @@ arr.map(function(elm, i, ref) {
 ##      ["0 hello", "1 world", "2 js"]
 ```
 
+---
+
 ## reduce() o reduceRight()
 
 ```javascript
@@ -405,6 +435,8 @@ var square = function(n) { return n * n; };
 
 
 ```
+
+---
 
 ## (sul posto) Ordina un array
 
@@ -422,6 +454,8 @@ nums; // [1,2,3,4,10]
 
 ```
 
+---
+
 ## (sul posto) Inverte un array
 
 ```javascript
@@ -431,6 +465,8 @@ arr; // [5,4,3]
 
 
 ```
+
+---
 
 ## Unisci un array di stringhe in un'unica stringa
 
@@ -442,6 +478,8 @@ arr.join(''); // 'helloJSworld'
 
 
 ```
+
+---
 
 ## Estrai una copia di subarray
 
