@@ -16,7 +16,7 @@ var d="un esempio 'Più'"
 
 ---
 
-## Sequenze di Escape 
+## Sequenze di Escape
 
 sequenza | significato
 ---|---
@@ -36,6 +36,7 @@ sequenza | significato
 ---
 
 ## Parsing di Stringhe (I)
+
 Una stringa può essere considerata come un array di caratteri.
 Esempi:
 
@@ -80,6 +81,147 @@ s.indexOf("l", 3)    // => 3
 s.split(", ")        // => ["hello", "world"]
 s.replace("h", "H")  // => "Hello, world"
 s.toUpperCase()      // => "HELLO, WORLD"
+```
+
+---
+
+## Ottieni la lunghezza di una stringa (simile a un array di caratteri)
+
+```javascript
+var str = 'Hello';
+str.length; // 5
+'Hello'.length; // 5
+
+```
+
+---
+
+## Estrai un carattere da una stringa (simile a un array di caratteri)
+
+```javascript
+'ABCDE'.charAt(3); // 'D'
+'ABCDE' [3]; // 'D'
+
+```
+
+---
+
+## Estrai una sottostringa
+
+```javascript
+'ABCDE'.slice(2); // 'CDE'
+'ABCDE'.slice(-3); // 'CDE'
+'ABCDE'.slice(1, 3); // 'BC'
+'ABCDE'.slice(1, -2); // 'BC'
+'ABCDE'.slice(-3, -1); // 'CD'
+
+'ABCDE'.substr(2); // 'CDE'
+'ABCDE'.substr(-3); // 'CDE'
+'ABCDE'.substr(1, 2); // 'BC'
+'ABCDE'.substr(-3, 2); // 'CD'
+
+'ABCDE'.substring(2); // 'CDE'
+'ABCDE'.substring(1, 3); // 'BC'
+
+```
+
+---
+
+## Ottieni il valore Unicode numerico di un carattere
+
+```javascript
+'ABCDE'.charCodeAt(3); // 68
+
+```
+
+---
+
+## Dal valore Unicode numerico
+
+```javascript
+String.fromCharCode(68); // 'D'
+String.fromCharCode(65, 66, 67, 68); // 'ABCD'
+
+```
+
+---
+
+## Cerca una sottostringa
+
+```javascript
+'To be, or not to be'.indexOf('BE'); // -1
+'To be, or not to be'.indexOf('be'); // 3
+'To be, or not to be'.indexOf('be', 4); // 17
+'To be, or not to be'.lastIndexOf('be'); // 17
+'To be, or not to be'.lastIndexOf('be', 16); // 3
+
+```
+
+---
+
+## Trova il primo indice corrispondente per una RegExp
+
+```javascript
+'To be, or not to be'.search(/be/); // 3
+'To be, or not to be'.search(/be(?!,)/); // 17
+
+```
+
+---
+
+## Usa RegExp per trovare una corrispondenza con una stringa
+
+```javascript
+'To be, or not to be'.match(/be/); // ['be']
+'To be, or not to be'.match(/be/g); // ['be', 'be']
+'To be, or not to be'.match(/o./g); // ['o ', 'or', 'ot', 'o ']
+
+```
+
+---
+
+## Divide una stringa in un array
+
+```javascript
+'Mela,Pera,Banana'.split(','); // [ 'Mela', 'Pera', 'Banana' ]
+
+```
+
+---
+
+## Concatena più stringhe
+
+```javascript
+'Hello' + ' ' + 'world!'; // 'Hello world!'
+
+```
+
+---
+
+## Trasforma tra lettere maiuscole e minuscole
+
+```javascript
+'Hello'.toUpperCase(); // 'HELLO'
+'Hello'.toLowerCase(); // 'hello'
+
+```
+
+---
+
+## Taglia gli spazi bianchi da entrambe le estremità
+
+```javascript
+'  Hello world!     '.trim(); // 'Hello world!'
+
+```
+
+---
+
+## Sostituisci una parte di una stringa usando RegExp
+
+```javascript
+var str = 'Rosa rossa, rosa bella e profumata.';
+str.replace(/[Rr]osa/g, 'gardenia'); // 'gardenia rossa, gardenia bella e profumata.'
 ```
 
 [altri esempi](../esempi/03_arrays_strings)
