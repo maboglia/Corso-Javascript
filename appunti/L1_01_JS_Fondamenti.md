@@ -9,17 +9,19 @@ Mauro Bogliaccino
 
 # Corso Javascript
 
+---
+
 ## Fondamenti del linguaggio
 
----
+Javascript è un linguaggio di scripting (supporta gli script) per le pagine Web, ma viene utilizzato anche in ambienti diversi dal browser. È un linguaggio di scripting potente, leggero, interpretato, con funzioni di prima classe (ovvero il linguaggio supporta il passaggio di funzioni come argomenti ad altre funzioni).
 
-
-## JavaScript è un linguaggio di programmazione 
-
-utilizzato comunemente come parte dell'esperienza di navigazione, permette di creare interazioni con l'utente, controllare la navigazione, gestire la comunicazione asincrona, e modificare il contenuto del documento.
+Per aggiungere interattività dinamica alle pagine Web, Javascript è incorporato in Hypertext Markup Language (HTML). Poiché funziona sul lato client del Web, può essere utilizzato per progettare/programmare il comportamento delle pagine Web al verificarsi di un particolare evento. Questo è il motivo per cui è ampiamente utilizzato per il comportamento delle pagine web.
 
 ---
 
+## JavaScript è un linguaggio di programmazione
+
+Javascript è utilizzato comunemente come parte dell'esperienza di navigazione, permette di creare interazioni con l'utente, controllare la navigazione, gestire la comunicazione asincrona, e modificare il contenuto del documento.
 
 Alcune cose che puoi fare con javascript
 
@@ -35,7 +37,6 @@ ___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 
 ---
 
-
 ## ruolo di js nel web design
 
 * Html: contenuto
@@ -43,7 +44,6 @@ ___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 * Js: comportamento
 
 ---
-
 
 ## Risorse disponibili online
 
@@ -58,7 +58,6 @@ ___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 
 ---
 
-
 ## Fondamenti del linguaggio
 
 * Struttura sintattica
@@ -72,7 +71,6 @@ ___Fonte: <https://en.wikipedia.org/wiki/JavaScript___>
 
 ---
 
-
 ## Hello, World
 
 Hello, World! nel browser
@@ -84,7 +82,6 @@ alert('Hello, World!')
 
 ---
 
-
 ## Hello, World! nel terminale
 
 ```javascript
@@ -93,15 +90,13 @@ console.log('Hello, World!')
 
 ---
 
-
 ## Esecuzione del codice
 
-* Interpretazione in una pagina web 
-* Interpretazione in  una console del browser 
-* Interpretazione in terminale (node.js) 
+* Interpretazione in una pagina web
+* Interpretazione in  una console del browser
+* Interpretazione in terminale (node.js)
 
 ---
-
 
 ## Javascript incorporato in una pagina html
 
@@ -118,7 +113,6 @@ console.log('Hello, World!')
 ```
 
 ---
-
 
 ## Javascript collegato ad una pagina html
 
@@ -139,21 +133,19 @@ alert('Hello world')
 
 ---
 
-
 ## Come mostrare a video i dati
 
 * window
-    * [window.alert()]()
-    * [window.prompt()](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/009_prompt.html)
-    * [window.confirm()](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/010_confirm.html)
+  * [window.alert()]()
+  * [window.prompt()](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/009_prompt.html)
+  * [window.confirm()](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/010_confirm.html)
 * document
-    * [document.write()](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/003_document_write.html)
-    * document.writeln()
+  * [document.write()](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/003_document_write.html)
+  * document.writeln()
 * innerHTML
 * console.log()
 
 ---
-
 
 ## Convenzioni di naming
 
@@ -163,16 +155,15 @@ alert('Hello world')
 
 ---
 
-
 ## Identificatori
 
-Gli identificatori in javascript cominciano con 
+Gli identificatori in javascript cominciano con
 
 * una lettera,
 * una underline (_),
-* un carattere di dollaro ($); 
+* un carattere di dollaro ($);
 
-seguito da 
+seguito da
 
 * lettere,
 * numeri,
@@ -180,7 +171,6 @@ seguito da
 * $
 
 ---
-
 
 ### Per esempio
 
@@ -193,18 +183,16 @@ var $__$__$;
 
 ---
 
-
 ## Parole chiave riservate
 
-abstract, boolean, break, byte, case, catch, char, class, const, continue, 
-debugger, default, delete, do, double, else, enum, export, extends, false, 
-final, finally, float, for, function, goto, if, implements, import, in, instanceof, 
-int, interface, let, long, native, new, null, package, private, protected, 
-public, return, short, static, super, switch, synchronized, this, throw, throws, 
+abstract, boolean, break, byte, case, catch, char, class, const, continue,
+debugger, default, delete, do, double, else, enum, export, extends, false,
+final, finally, float, for, function, goto, if, implements, import, in, instanceof,
+int, interface, let, long, native, new, null, package, private, protected,
+public, return, short, static, super, switch, synchronized, this, throw, throws,
 transient, true, try, typeof, var, void, volatile, while, with
 
 ---
-
 
 ## Variabili
 
@@ -214,17 +202,16 @@ transient, true, try, typeof, var, void, volatile, while, with
 
 ---
 
-
 #### const
 
 Parola chiave per la dichiarazione di una costante.
 [esempio](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/008_const.html)
 
 #### var, let
+
 Parola chiave per la dichiarazione di una variabile.
 
 ---
-
 
 ## operatori
 
@@ -238,10 +225,10 @@ Parola chiave per la dichiarazione di una variabile.
 
 ---
 
-
 ## Commenti
 
 Esistono due tipi di commenti:
+
 ```javascript
 //  commento su una riga
 
@@ -257,13 +244,11 @@ var a = 5; //assegno la variabile
 
 ---
 
-
 ## use strict
 
 Direttiva per l'interprete di JavaScript, che indica l'uso del modo strict.
 
 ---
-
 
 ## Literals
 
@@ -279,40 +264,37 @@ Valore undefined    |    undefined
 
 ---
 
-
 # Strutture del linguaggio
 
 ## Costrutti di controllo del flusso
 
 * [Strutture condizionali](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_05_Control_flow.md)
-    * [esempio if](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/018_ANDLogico.html)
-    * [esempio switch](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/02_control_flow/02_switch.js)
+  * [esempio if](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/018_ANDLogico.html)
+  * [esempio switch](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/02_control_flow/02_switch.js)
 
 ---
-
 
 ## Costrutti di iterazione (cicli)
 
-* [For Loop](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_05_Control_flow.md) 
-    * [esempi](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/02_control_flow/02_for_loop.js)
-* [While Loop](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_05_Control_flow.md) 
-    * [esempi](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/02_control_flow/02_while_loop.js)
+* [For Loop](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_05_Control_flow.md)
+  * [esempi](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/02_control_flow/02_for_loop.js)
+* [While Loop](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_05_Control_flow.md)
+  * [esempi](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/02_control_flow/02_while_loop.js)
 
 ---
-
 
 # Tipi di dato
 
 ---
 
-
 ## Boolean
+
 * Boolean è la rappresentazione di tipo oggetto di una variabile logica.
 * Booleans
-    * operazioni logiche
-    * comparazione tra numeri e valori booleani
-    * undefined e null
-    * Boolean() verifica se un'espressione è booleana
+  * operazioni logiche
+  * comparazione tra numeri e valori booleani
+  * undefined e null
+  * Boolean() verifica se un'espressione è booleana
 
 ```javascript
 //Valori logici
@@ -322,8 +304,7 @@ var b=false
 
 ---
 
-
-### Sono valori falsi i seguenti:
+### Sono valori falsi i seguenti
 
 ```javascript
 undefined
@@ -336,7 +317,6 @@ NaN
 
 ---
 
-
 ### Altri esempi
 
 * [esempio boolean](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/012_boolean.html)
@@ -345,7 +325,6 @@ NaN
 * [esempio OR Logico](https://github.com/maboglia/Corso-HTML5-Javascript/tree/master/esempi/01_basic_foundations/020_ORLogico.html)
 
 ---
-
 
 ## Objects
 
@@ -357,7 +336,6 @@ Verifica se un oggetto è instanza di qualche prototipo.
 
 ---
 
-
 #### typeof
 
 Ritorna una stringa indicante il tipo di dato che ha una variabile.
@@ -367,16 +345,13 @@ Ritorna una stringa indicante il tipo di dato che ha una variabile.
 
 Operatore che rimuove proprietà di un oggetto.
 
-
 ---
-
 
 ## Number
 
 Number è la rappresentazione di tipo oggetto di un tipo numerico.
 
 ---
-
 
 ### JS numbers
 
@@ -387,7 +362,6 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 * NaN not a number: p.es. operazioni aritmetiche con le stringhe restituiscono NaN
 
 ---
-
 
 ### proprietà e metodi principali
 
@@ -403,8 +377,7 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 
 ---
 
-
-### Per esempio:
+### Per esempio
 
 ```javascript
   12 // numero intero in base decimale.
@@ -418,7 +391,6 @@ Number è la rappresentazione di tipo oggetto di un tipo numerico.
 
 ---
 
-
 ## Math Object
 
 Per lavorare con i Number, puoi usare Math che è l'oggetto che concentra molte constanti e funzioni matematiche.
@@ -427,7 +399,6 @@ Per lavorare con i Number, puoi usare Math che è l'oggetto che concentra molte 
 
 ---
 
-
 ## String
 
 String è la rappresentazione di tipo oggetto di una stringa.
@@ -435,7 +406,6 @@ String è la rappresentazione di tipo oggetto di una stringa.
 * [String Object](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_06_Stringhe.md)
 
 ---
-
 
 ## valore nullo e valore undefined
 
@@ -448,7 +418,6 @@ var b=undefined
 
 ---
 
-
 ## Funzioni
 
 Le funzioni si dichiarano con la parola riservata funzione.
@@ -459,12 +428,11 @@ function f(x,y){
 }
 ```
 
-* [Appunti sulle Funzioni](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_07_Functions.md) 
+* [Appunti sulle Funzioni](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_07_Functions.md)
 
 ---
 
-
-## Date Object 
+## Date Object
 
 * Date è l'oggetto utilizzato per la rappresentazione di date.
 * Internamente, questa rappresentazione è un numero che rappresenta i millisecondi trascorsi dalla data: 1 di gennaio del 1970.
@@ -479,13 +447,11 @@ function f(x,y){
 
 ---
 
-
 ## Array
 
 * [JS array](L1_08_Array.md)
 
 ---
-
 
 ## Timers
 
@@ -499,7 +465,6 @@ funzione | significato
 `clearInterval()` | Resetta i timer
 
 ---
-
 
 ### Per esempio
 
@@ -515,17 +480,16 @@ setInterval(function(){
 
 ---
 
-
 # Ricapitolando
 
 * Convenzioni del linguaggio e dialogs
 * Variabili
-* Operatori 
-* Costrutti condizionali e iterativi 
+* Operatori
+* Costrutti condizionali e iterativi
 * Tipi primitivi
 * Tipi reference
 * Booleans
-* [Function](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_07_Functions.md) 
+* [Function](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_07_Functions.md)
 * [Number](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_10_Object_Math.md)
 * [String](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_06_Stringhe.md)
 * [Array](https://github.com/maboglia/Corso-HTML5-Javascript/blob/master/appunti/L1_08_Array.md)

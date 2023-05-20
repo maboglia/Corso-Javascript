@@ -1,5 +1,14 @@
 # TypeScript
 
+## Installa Node.js
+
+`https://nodejs.org/en/download`
+
+## Verifica la versione
+
+* `node -v`
+* `npm -v`
+* Aggiorna npm `npm install -g npm@latest`
 
 ## Installa TypeScript
 `npm install -g typescript`
