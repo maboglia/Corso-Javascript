@@ -4,19 +4,22 @@
 
 `https://nodejs.org/en/download`
 
-## Verifica la versione
+## Verifica la versione node e npm
 
 * `node -v`
 * `npm -v`
 * Aggiorna npm `npm install -g npm@latest`
 
 ## Installa TypeScript
+
 `npm install -g typescript`
 
-## Verifica la versione
+## Verifica la versione TypeScript
+
 `tsc --version`
 
 ## Crea una dir e accedi
+
 `mkdir typescript_01`
 `cd typescript_01`
 
@@ -33,6 +36,7 @@ function saluta(msg) {
 var saluto = 'Hello TypeScript';
 saluta(saluto);
 ```
+
 salva ed esegui il comando
 `tsc main.ts`
 verrà prodotto il file main.js
@@ -41,8 +45,8 @@ esegui con node
 
 ---
 
-
 ## TypeScript è javascript con i _tipi_ (di dato)
+
 ```javascript
 let a: number;
 let b: boolean;
@@ -60,12 +64,13 @@ let f: any[] = [true, false, 1, 2, 'ciao'];
 
 ---
 
-
 ## enumerazioni
+
 `enum Imposte {IVA_04, IVA_10, IVA_22};`
 `Imposte.IVA_04`
 
 ## Asserzioni
+
 ```javascript
 let msg;
 msg = 'Hello';
