@@ -1,20 +1,3 @@
----
-marp: false
-title: Fondamenti
-paginate: true
-author: mauro
----
-![bg](./ITS_BG_Slide.jpg)
-
-Mauro Bogliaccino
-
-# Corso Javascript
-
-## Angular: per iniziare
-
----
-![bg](./ITS_BG_Slide.jpg)
-
 # Angular
 
 * PRODUTTIVITÀ numerose funzionalità e utility incluse
@@ -26,7 +9,6 @@ Mauro Bogliaccino
 * COMMUNITY open source, supporto/forum/articoli
 
 ---
-![bg](./ITS_BG_Slide.jpg)
 
 ## Elementi del framework
 
@@ -43,7 +25,6 @@ Mauro Bogliaccino
 * Testing
 
 ---
-![bg](./ITS_BG_Slide.jpg)
 
 ## installo Angular 
 
@@ -56,7 +37,7 @@ Mauro Bogliaccino
 `npm cache verify`
 
 ---
-![bg](./ITS_BG_Slide.jpg) 
+
 
 ## creo un workspace
 `mkdir workspace_angular`
@@ -68,7 +49,6 @@ Mauro Bogliaccino
 `cd my-app`
 
 ---
-![bg](./ITS_BG_Slide.jpg)
 
 ## faccio partire il server per Angular
 `ng serve --open`
