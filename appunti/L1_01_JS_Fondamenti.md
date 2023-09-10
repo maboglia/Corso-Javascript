@@ -416,6 +416,28 @@ var a=null
 var b=undefined
 ```
 
+In JavaScript, `null` e `undefined` sono due valori speciali che rappresentano la mancanza di valore o dati non definiti, ma hanno differenze chiave:
+
+1. __`undefined`__: Questo valore viene assegnato automaticamente a una variabile che è stata dichiarata ma non inizializzata con un valore. In altre parole, se hai dichiarato una variabile ma non le hai assegnato alcun valore, il suo valore sarà `undefined`. Ad esempio:
+
+   ```javascript
+   let variabileNonInizializzata;
+   console.log(variabileNonInizializzata); // Stampa: undefined
+   ```
+
+   `undefined` indica che la variabile esiste, ma non ha un valore definito. È importante notare che `undefined` è anche il valore restituito quando si cerca di accedere a una proprietà di un oggetto che non esiste.
+
+2. __`null`__: Questo valore è assegnato esplicitamente da un programmatore per indicare l'assenza intenzionale di valore o dati in una variabile o in una proprietà di un oggetto. In altre parole, `null` è un valore che indica che non c'è nulla o che il valore è stato azzerato. Ad esempio:
+
+   ```javascript
+   let variabileNullo = null;
+   console.log(variabileNullo); // Stampa: null
+   ```
+
+   `null` è spesso utilizzato quando si desidera indicare che una variabile o una proprietà di un oggetto è vuota o non ha un valore valido.
+
+In sintesi, la differenza principale è che `undefined` indica che una variabile esiste ma non è stata inizializzata, mentre `null` indica che è stata assegnata intenzionalmente l'assenza di valore. Entrambi sono valori falsy in JavaScript, il che significa che valutano a `false` in un contesto booleano.
+
 ---
 
 ## Funzioni
