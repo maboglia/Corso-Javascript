@@ -50,3 +50,26 @@ x => ({ x: y  })
 ```
 
 Le arrow functions si utilizzano principalmente nei nuovi costrutti inseriti dalla versione ES2015 ([.filter](./L3_ES6_15_filter.md), [.map](L3_ES6_17_map.md), ...)
+
+---
+
+Ecco un esercizio che mostra il funzionamento delle arrow function in ES6:
+
+**Obiettivo dell'esercizio:** Creare una funzione freccia che calcoli la somma di due numeri e restituisca il risultato.
+
+```javascript
+// Definire una funzione freccia che accetti due parametri
+const somma = (a, b) => {
+  return a + b;
+};
+
+// Chiamare la funzione e memorizzare il risultato in una variabile
+const risultato = somma(5, 7);
+
+// Stampare il risultato a console
+console.log(`La somma è: ${risultato}`);
+```
+
+In questo esercizio, abbiamo definito una funzione freccia chiamata `somma` che prende due parametri `a` e `b` e restituisce la loro somma. Successivamente, abbiamo chiamato la funzione con gli argomenti `5` e `7` e abbiamo memorizzato il risultato nella variabile `risultato`. Infine, abbiamo stampato il risultato a console.
+
+Le arrow function sono una sintassi più compatta per definire funzioni in ES6 e sono particolarmente utili quando si desidera mantenere il contesto della funzione padre, come nell'esempio sopra.
