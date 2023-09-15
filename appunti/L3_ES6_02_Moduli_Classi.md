@@ -122,30 +122,3 @@ console.log(Calcolatrice.addizione(7,8));
 
 ```
 
----
-
-## Classi e prototype
-
-Javascript è un linguaggio (di scripting) orientato agli oggetti e basato sui prototipi
-
-Con i prototipi è possibile estendere proprietà e metodi della classe base, senza la necessità di ridefinirne il blocco di codice
-
-Prima della keyword class, si usava la function per creare i tipi
-Per esempio 
-
-```javascript
-function Auto(marca, modello) {
-    this.marca = marca;
-    this.modello = modello;
-    //arrow e interpolazione funzionano!
-    this.libretto = () => `Auto ${this.marca} ${this.modello} `;
-}
- 
-//modifico la funzione/classe accedendo al prototipo
-Auto.prototype.colore = "Rosso";
-//in questo caso la lambda expression NON FUNZIONA
-AUto.prototype.libretto = () => `${this.marca}`;
-//this non è definito correttamente, 
-//occorre usare una funzione anonima 'tradizionale'
-
-```
