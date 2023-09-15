@@ -7,6 +7,7 @@ Le funzioni in JavaScript formano closures. Una closure è la combinazione di un
 Una closure è unpo speciale tipo di oggetto che combina due cose: una funzione e l'ambito in cui questa è stata creata. L'ambito consiste in qualsiasi variabile locale che era nel suo scope nel momento in cui la closure è stata creata.
 
 Le closures permettono la creazione di 
+
 * factory functions
 * incapsulamento
 

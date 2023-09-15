@@ -30,3 +30,22 @@ Per poterli utilizzare, devi convertire la HTMLCollection in un array, usando l'
 ```javascript
 [...document.getElementsByTag Name(p)].
 ```
+
+---
+
+Ecco un esercizio che mostra il funzionamento del ciclo `for...of` in ES6:
+
+**Obiettivo dell'esercizio:** Utilizzare un ciclo `for...of` per iterare attraverso gli elementi di un array e stampare ciascun elemento.
+
+```javascript
+// Definire un array di elementi
+const colors = ["Rosso", "Verde", "Blu", "Giallo"];
+
+// Utilizzare il ciclo for...of per iterare attraverso gli elementi dell'array
+console.log("Colori dell'array:");
+for (const color of colors) {
+  console.log(color);
+}
+```
+
+In questo esercizio, abbiamo un array chiamato `colors` che contiene una lista di colori. Utilizzando il ciclo `for...of`, iteriamo attraverso gli elementi dell'array e stampiamo ciascun colore a console. Il ciclo `for...of` semplifica notevolmente l'iterazione attraverso array e oggetti iterabili in JavaScript.

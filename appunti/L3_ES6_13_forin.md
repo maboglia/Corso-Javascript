@@ -10,16 +10,28 @@ for(variabile in collezion){
 }
 ```
 
-Considera un oggetto che abbia qualche proprietà di tipo stringa e una proprietà di tipo symbol:
+In ES6, è più comune utilizzare il ciclo `for...of` per iterare attraverso gli elementi di un array o di un oggetto iterabile, mentre il ciclo `for...in` viene utilizzato per iterare attraverso le chiavi (proprietà) di un oggetto. Ecco un esercizio che mostra come funziona il ciclo `for...in`:
+
+**Obiettivo dell'esercizio:** Utilizzare un ciclo `for...in` per iterare attraverso le chiavi di un oggetto e stamparle.
 
 ```javascript
-const SYM = Symbol();
-const o={a:1,b:2,c:3,[SYM]:4};
-for(let prop in o) { 
-    if(!o.hasOwnProperty(prop)) continue; 
-    console.log(`${prop}: ${o[prop]}`);
+// Definire un oggetto con alcune chiavi
+const person = {
+  nome: "Mario",
+  cognome: "Rossi",
+  età: 30,
+  professione: "Ingegnere"
+};
+
+// Utilizzare il ciclo for...in per iterare attraverso le chiavi dell'oggetto
+console.log("Chiavi dell'oggetto 'person':");
+for (const key in person) {
+  console.log(key);
 }
 ```
+
+In questo esercizio, abbiamo un oggetto chiamato `person` con alcune chiavi come "nome", "cognome", "età" e "professione". Utilizzando il ciclo `for...in`, iteriamo attraverso le chiavi dell'oggetto e stampiamo ciascuna chiave a console. Questo è utile quando si desidera ottenere l'elenco delle chiavi di un oggetto per scopi di introspezione o manipolazione dei dati.
+
 
 E' anche possibile iterare col  `for...in` su un array (che in JS è un oggetto), ma non è una pratica consigliata.
 

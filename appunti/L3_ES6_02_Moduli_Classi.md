@@ -69,7 +69,7 @@ panda.libretto();
 
 ### Ereditarietà (e modularizzazione)
 
-potremmo scrivere tutto su un unico file, ma possiamopiù opportunamente suddividere il codice su moduli autorappresentativi, più facilmente condivisibili e gestibili
+potremmo scrivere tutto su un unico file, ma possiamo più opportunamente suddividere il codice su moduli autorappresentativi, più facilmente condivisibili e gestibili
 
 ```javascript
 //file Auto.js
