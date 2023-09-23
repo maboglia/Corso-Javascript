@@ -4,14 +4,14 @@ title: Corso di programmazione Javascript
 paginate: true
 author: mauro
 ---
-![bg contain](./background-IL.jpg)
+![bg contain](./ITS_BG_Slide.jpg)
 
 Mauro Bogliaccino
 
 # Corso di programmazione Javascript
 
 ---
-![bg contain](./background-IL.jpg)
+![bg contain](./ITS_BG_Slide.jpg)
 
 ## Esercizio - Mostra i discendenti dentro a un albero
 
@@ -20,7 +20,7 @@ C'è un albero organizzato come `ul/li` annidati.
 Scrivi il codice che aggiunge a ogni `<li>` il numero dei suoi discendenti. Salta le foglie (i nodi senza figli).
 
 ---
-![bg contain](./background-IL.jpg)
+![bg contain](./ITS_BG_Slide.jpg)
 
     Animals [9]
         Mammals [4]

@@ -5,7 +5,7 @@ paginate: true
 author: mauro
 ---
 
-![bg contain](./background-IL.jpg)
+![bg contain](./ITS_BG_Slide.jpg)
 
 Mauro Bogliaccino
 
@@ -13,12 +13,12 @@ Mauro Bogliaccino
 
 
 ---
-![bg contain](./background-IL.jpg)
+![bg contain](./ITS_BG_Slide.jpg)
 
 ## Stampare una single-linked list
 
 ---
-![bg contain](./background-IL.jpg)
+![bg contain](./ITS_BG_Slide.jpg)
 
 Ipotizziamo di avere una single-linked list:
 
@@ -41,7 +41,7 @@ let list = {
 ```
 
 ---
-![bg contain](./background-IL.jpg)
+![bg contain](./ITS_BG_Slide.jpg)
 
 * Scrivi una funzione `printList(list)` che ritorna gli elementi uno ad uno, in console o in un alert box.
 * Crea due varianti della soluzione: iterativa e ricorsiva.

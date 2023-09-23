@@ -5,7 +5,7 @@ paginate: true
 author: mauro
 ---
 
-![bg](./background-IL.jpg)
+![bg](./ITS_BG_Slide.jpg)
 
 #
 
@@ -49,7 +49,7 @@ Scrivi una funzione che dato un numero intero, mostri a video il msg 'pari' o 'd
 
 ## Proprietà di un oggetto
 
-Scrivi una funzione che dato un oggetto ne mostri a video del proprietà
+Scrivi una funzione che dato un oggetto ne mostri a video le proprietà
 
 ---
 

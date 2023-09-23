@@ -6,7 +6,7 @@ theme: gaia
 author: mauro
 ---
 
-![bg](./background-IL.jpg)
+![bg](./ITS_BG_Slide.jpg)
 
 #
 
@@ -25,7 +25,7 @@ Scrivi una funzione che dati due interi consecutivi, ritorni un array contenente
 
 ## Numero compreso
 
-Scrivi una funzione che dato un array di numeri verifichi se un numero intero fornito in argomento è compresso nell'array
+Scrivi una funzione che dato un array di numeri verifichi se un numero intero fornito in argomento è compreso nell'array
 
 ---
 
@@ -57,8 +57,10 @@ Scrivi una funzione che dato un array di numeri ritorni il valore massimo conten
 
 Scrivi un programma che dichiari 2 array di 10 elementi interi e li riempia con numeri casuali da 1 a 10.
 Il programma prende in input dall'utente il tipo di operazione aritmetica da effettuare, una delle seguenti:
+
 * addizione
 * sottrazione
 * moltiplicazione
 * divisione
+
 Ed esegue il calcolo tra ogni elemento dei due array salvando ciascun risultato in un terzo array di appoggio.

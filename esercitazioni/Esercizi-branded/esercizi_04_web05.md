@@ -4,14 +4,14 @@ title: Corso di programmazione Javascript
 paginate: true
 author: mauro
 ---
-![bg contain](./background-IL.jpg)
+![bg contain](./ITS_BG_Slide.jpg)
 
 Mauro Bogliaccino
 
 # Corso di programmazione Javascript
 
 ---
-![bg contain](./background-IL.jpg)
+![bg contain](./ITS_BG_Slide.jpg)
 
 
 ## Esercizio - Cattura i collegamenti (link) nell'elemento
@@ -20,7 +20,7 @@ Fate in modo che tutti i link dentro l'elemento con `id="contents"` chiedano all
 Se risponde no, allora non deve seguire il link.
 
 ---
-![bg contain](./background-IL.jpg)
+![bg contain](./ITS_BG_Slide.jpg)
 
 Dettagli:
 

@@ -4,21 +4,21 @@ title: Corso di programmazione Javascript
 paginate: true
 author: mauro
 ---
-![bg contain](./background-IL.jpg)
+![bg contain](./ITS_BG_Slide.jpg)
 
 Mauro Bogliaccino
 
 # Corso di programmazione Javascript
 
 ---
-![bg contain](./background-IL.jpg)
+![bg contain](./ITS_BG_Slide.jpg)
 
 ## Esercizio - Ordina la tabella
 
 Data la seguente tabella:
 
 ---
-![bg contain](./background-IL.jpg)
+![bg contain](./ITS_BG_Slide.jpg)
 
 ```html
 <table>
@@ -45,7 +45,7 @@ Data la seguente tabella:
 ```
 
 ---
-![bg contain](./background-IL.jpg)
+![bg contain](./ITS_BG_Slide.jpg)
 
 
 Scrivi il codice per ordinare la tabella in base alla colonna "name" (prima colonna).

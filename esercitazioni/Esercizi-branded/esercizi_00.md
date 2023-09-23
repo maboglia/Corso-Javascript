@@ -5,7 +5,7 @@ paginate: true
 author: mauro
 ---
 
-![bg](./background-IL.jpg)
+![bg](./ITS_BG_Slide.jpg)
 
 Mauro Bogliaccino
 

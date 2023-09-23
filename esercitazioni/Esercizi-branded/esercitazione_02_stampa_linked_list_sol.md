@@ -73,7 +73,7 @@ function printList(list) {
 }
 ```
 
-…Ma potrebbe portare ad errori. In futuro potremmo voler estendere una funzione, fare qualcos altro con la lista. Se modifichiamo list, perderemmo questa capacità.
+Ma potrebbe portare ad errori. In futuro potremmo voler estendere una funzione, fare qualcos altro con la lista. Se modifichiamo list, perderemmo questa capacità.
 
 Parlando della scelta dei nomi delle variabili, list è la lista stessa. Il primo elemento. E dovrebbe rimanere tale.
 
