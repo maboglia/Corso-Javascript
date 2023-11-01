@@ -1,6 +1,5 @@
 ## 1  Somma di numeri
 
-
 ```javascript
 /*
 Scrivere una funzione sum() che ritorni la somma di un numero arbitrario di valori passati in argomento.
@@ -19,6 +18,7 @@ sum(10, 20, 5);
 sum(2, 5, 80, 1, 10, 12);
 //110
 ```
+
 ---
 
 ```javascript
@@ -39,10 +39,10 @@ sum(2, 5, 80, 1, 10, 12);
 //110
 
 ```
+
 ---
 
 ## 2 Const
-
 
 ```javascript
 /* 
@@ -71,6 +71,7 @@ console.log(arr);
 // [1, 2, 3, 4]
 
 ```
+
 ---
 
 ```javascript
@@ -96,7 +97,6 @@ console.log(arr);
 
 ## 3 Let
 
-
 ```javascript
 /*
 cambia codice per generare l'ouput indicato.
@@ -116,6 +116,7 @@ console.log(i);
 // DOPO: 10
 
 ```
+
 ---
 
 ```javascript
@@ -136,7 +137,6 @@ console.log(i);
 ---
 
 ## 4 Hoisting
-
 
 ```javascript
 /*
@@ -160,6 +160,7 @@ console.log(c);
 // Uncaught ReferenceError: c è not defined
 
 ```
+
 ---
 
 ```javascript
@@ -179,11 +180,10 @@ console.log(c);
 // Uncaught ReferenceError: c è not defined
 
 ```
+
 ---
 
-
 ## 5  Ternary Operator
-
 
 ```javascript
 /*
@@ -210,6 +210,7 @@ console.log(tipoNumerico(true));
 // Non è un numero
 
 ```
+
 ---
 
 ```javascript
@@ -233,7 +234,6 @@ console.log(tipoNumerico(true));
 
 ## 6  Arrow Functions
 
-
 ```javascript
 /*
 Usa le arrow functions invece delle funzioni tradizionali,
@@ -251,6 +251,7 @@ setTimeout(function() {
 // 50
 
 ```
+
 ---
 
 ```javascript
@@ -265,7 +266,6 @@ setTimeout(() => console.log(prodotto(5, 10)), 1000);
 ---
 
 ## 7  Default parameters
-
 
 ```javascript
 /*
@@ -296,6 +296,7 @@ moltiplicaPer(5, 10);
 // 50
 
 ```
+
 ---
 
 ```javascript
@@ -322,7 +323,6 @@ moltiplicaPer(5, 10);
 
 ## 8  Controllare la presenza dei parametri in una funzione
 
-
 ```javascript
 /*
 Lancia un Error quando la funzione quadrato() viene chiamata senza argomenti.
@@ -344,6 +344,7 @@ quadrato();
 // an argument!
 
 ```
+
 ---
 
 ```javascript
@@ -370,7 +371,6 @@ quadrato();
 
 ## 9  Object Destructuring
 
-
 ```javascript
 /*
 Dichiara la funzione prodotto() che dovrà moltiplicare i valori 
@@ -390,6 +390,7 @@ console.log(prodotto(obj));
 // 300
 
 ```
+
 ---
 
 ```javascript
@@ -413,7 +414,6 @@ console.log(prodotto(obj));
 
 ## 10  Destructuring e Rest Operator
 
-
 ```javascript
 /*
 Assegna i valori alle variabili a, b, c usando la destrutturazione e il parametro rest.
@@ -436,6 +436,7 @@ console.log(c);
 // [3, 4, 5, 6, 7]
 
 ```
+
 ---
 
 ```javascript
@@ -461,7 +462,6 @@ console.log(c);
 
 ## 11  Spread Operator
 
-
 ```javascript
 /*
 Usa lo Spread Operator per costruire un array di variabili.
@@ -481,6 +481,7 @@ console.log(arr);
 // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
 ```
+
 ---
 
 ```javascript
@@ -503,7 +504,6 @@ console.log(arr);
 
 ## 12  Copiare Array
 
-
 ```javascript
 /*
 Crea una copia dell'array a
@@ -525,6 +525,7 @@ console.log(b);
 // [1, 2, 3, "nuovoElemento"]
 
 ```
+
 ---
 
 ```javascript
@@ -550,7 +551,6 @@ console.log(b);
 
 ## 13  Template Literals
 
-
 ```javascript
 /*
 Scrivi una funzione carInfo() che ritorni informazioni su ciascuna auto.
@@ -575,6 +575,7 @@ cars.forEach(car => console.log(carInfo(car)));
 è 120000€ ed è un'auto costosa. */
 
 ```
+
 ---
 
 ```javascript
@@ -602,7 +603,6 @@ cars.forEach(car => console.log(carInfo(car)));
 ---
 
 ## 14  Object Destructuring
-
 
 ```javascript
 /*
@@ -640,6 +640,7 @@ console.log(shortPerson(person2));
 // {n: "Paolo", c: "Italia", a: 25, p: 0}
 
 ```
+
 ---
 
 ```javascript
@@ -688,7 +689,6 @@ console.log(shortPerson(person2));
 
 ## 15  Iterare su una Stringa
 
-
 ```javascript
 /*
 Conta il numero di vocali nella stringa
@@ -707,6 +707,7 @@ console.log(conteggioVocali);
 // 8
 
 ```
+
 ---
 
 ```javascript
@@ -733,7 +734,6 @@ console.log(conteggioVocali);
 
 ## 16  Scambia i valori di due variabili
 
-
 ```javascript
 /*
 Scambia i valori a e b, senza utilizzare una variabile temporanea di appoggio.
@@ -750,6 +750,7 @@ console.log(a, b);
 // secondo primo
 
 ```
+
 ---
 
 ```javascript
@@ -768,7 +769,6 @@ console.log(a, b);
 ---
 
 ## 17  IIFE Immediately Invoked Function Expression
-
 
 ```javascript
 /*
@@ -793,6 +793,7 @@ console.log(saluti.saluta("Francesca"));
 // Buongiorno da Francesca
 
 ```
+
 ---
 
 ```javascript
@@ -831,7 +832,6 @@ console.log(saluti.saluta("Francesca"));
 
 ## 18 Classi ES6
 
-
 ```javascript
 /*
 Riscrivi il codice seguente usando le classi ES6
@@ -857,6 +857,7 @@ console.log(arancia.priceInfo());
 // Prezzo di un/una Arancia è 3$
 
 ```
+
 ---
 
 ```javascript
@@ -886,7 +887,6 @@ console.log(arancia.priceInfo());
 
 ## 19  Iterare sulle proprietà di un Object
 
-
 ```javascript
 /*
 Scrivi una funzione sumObjectValues() che sommi tutti i valori delle proprietà numeriche dell'oggetto.
@@ -906,6 +906,7 @@ console.log(sumObjectValues(numeri));
 //42
 
 ```
+
 ---
 
 ```javascript
@@ -939,7 +940,6 @@ console.log(sumObjectValues(numeri));
 
 ## 20  somma dei positivi e quella dei negativi
 
-
 ```javascript
 /*
 Scrivi una funzione sommaPiuMeno() che prenda in argomento un array di valori numerici e ritorni la somma dei positivi e quella dei negativi.
@@ -960,6 +960,7 @@ console.log(sommaPiuMeno(numeri));
 // {piu: 74, meno: -54}
 
 ```
+
 ---
 
 ```javascript

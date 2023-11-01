@@ -1,13 +1,10 @@
 # Cattura di errori
 
-
 ---
+
 ## try...catch statement
 
 Il try...catch statement delimita un blocco di codice da provare e gestisce una eventuale situazione di errore.
-
-
-
 
 ```javascript
 try{
@@ -18,7 +15,6 @@ try{
     frasi
 }
 ```
-
 
 ```javascript
 try {
@@ -32,15 +28,14 @@ catch(error) {
 ```
 
 ---
+
 ## throw
 
-L'istruzione throw chiama un'eccezione definita dall'utente. 
+L'istruzione throw chiama un'eccezione definita dall'utente.
 
-L'esecuzione della funzione corrente si interrompe (ovvero i comandi successivi a throw non verranno eseguiti), e il controllo verrà passato al primo blocco catch nella pila delle chiamate. 
+L'esecuzione della funzione corrente si interrompe (ovvero i comandi successivi a throw non verranno eseguiti), e il controllo verrà passato al primo blocco catch nella pila delle chiamate.
 
 Se non è previsto nessun blocco catch esiste nella funzione chiamante, il programma verrà terminato.
-
-
 
 ```javascript
 function getRectArea(width, height) {

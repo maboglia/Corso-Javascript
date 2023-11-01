@@ -1,6 +1,7 @@
 # Snippets Javascript
 
 ---
+
 ## Aggiungere JavaScript alla tua pagina web
 
 ```html
@@ -24,7 +25,7 @@
 
 ---
 
-## ciclo di caratteri unicode 
+## ciclo di caratteri unicode
 
 ```javascript
 var stringaEsadecimale, i = 0;
@@ -71,7 +72,6 @@ for (let carattere = 0; carattere < 1000; carattere++) {
 ```html
 <h1 id="name"></h1>
 ```
-
 
 ```javascript
 document.getElementById("name").innerHTML = "Piacere di conoscerti, " + name;
@@ -172,6 +172,7 @@ function myFunction() {
 ---
 
 ## Banner a rotazione
+
 Scorro 2 array in parallelo
 
 ```javascript
@@ -207,6 +208,7 @@ Scorro 2 array in parallelo
 ---
 
 ## Navigator Object
+
 Uso un ciclo `for...in` per scorrere le proprietà di un oggetto
 
 ```javascript
@@ -257,4 +259,3 @@ Uso un ciclo `for...in` per scorrere le proprietà di un oggetto
 </html>
 
 ```
-

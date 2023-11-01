@@ -3,12 +3,12 @@
 Un oggetto è una valore composto, che aggrega molteplici valori: primitivi, collezioni o altro.
 Un oggetto in JavaScript può essere definito in 3 modi:
 
-* Definizione literal. 
-* Instanziazione di classi. 
-* Creazione a partire da un prototipo. 
-
+* Definizione literal.
+* Instanziazione di classi.
+* Creazione a partire da un prototipo.
 
 ---
+
 ## Caratteristiche ed pperazioni su oggetti
 
 * proprietà e metodi
@@ -24,10 +24,12 @@ Un oggetto in JavaScript può essere definito in 3 modi:
 * combinare array e oggetti
 * esplorare gli oggetti in console
 
-
 ---
+
 ## 1ª Forma: Definizione literal
+
 E' una definizione di proprietà di tipo chiave:valore.
+
 ```javascript
 a={
     x:1,
@@ -35,16 +37,24 @@ a={
     z:function(a){return a}
 }
 ```
+
 ---
+
 ## 2ª Forma: Instanziazione di classi
+
 Altra maniera per definire un oggetto è instanziando una classe di un tipo di oggetto pre-definito in JavaScript o con una propria definizione di classe.
+
 ```javascript
 a=new Object()
 b=new String('asdf')
 ```
+
 ---
+
 ### Oggetti come array associativo
+
 Le variabili di un oggetto si possono accedere come se fossero array associativi:
+
 ```javascript
 a={x:1,y:2}
 console.log(a.x)
@@ -52,9 +62,12 @@ console.log(a['x'])
 ```
 
 ---
+
 ## 3ª Forma: Object.create
+
 Costruisce un nuovo oggetto a partire da un prototipo stabilito.
-```javascript                
+
+```javascript
 function A(){
     this.f=function(){return 'asdf'}
 }
@@ -72,21 +85,25 @@ console.log(Object.keys(new A()))
 ```
 
 ---
+
 ## Object
+
 La classe Object, possiede vari metodi:
 `toString()`
 Ritorna la rappresentazione in stringa di un oggetto.
 `valueOf()`
 Ritorna la forma primitiva di un oggetto.
 
-
 ---
+
 ### Esempi
+
 [objects](../esempi/04_objects)
 
 ---
 
 ---
+
 ## Creazione di oggetti: factory function
 
 ```javascript
@@ -107,6 +124,7 @@ console.log(quadrato2);
 ```
 
 ---
+
 ## Creazione di oggetti: function constructors
 
 ```javascript
@@ -126,7 +144,6 @@ console.log(quadrato2);
 ```
 
 ---
-
 
 ```javascript
 const auto = {
@@ -149,8 +166,8 @@ console.log(auto);
 
 ---
 
-
 ---
+
 ## Modificare un oggetto esistente
 
 ```javascript

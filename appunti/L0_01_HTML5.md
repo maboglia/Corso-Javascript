@@ -1,4 +1,5 @@
 # Cos'è l'HTML?
+
 * HTML è il linguaggio di markup standard per la creazione di pagine Web.
 * HTML sta per Hyper Text Markup Language
 * HTML descrive la struttura delle pagine Web usando il markup
@@ -10,6 +11,7 @@
 contenuto della pagina
 
 Tag HTML
+
 * I tag HTML sono nomi di elementi circondati da
 parentesi angolari:
 * ``<p>`` contenuto... ``</p>``
@@ -42,13 +44,17 @@ il tipo di documento, nel caso dell’esempio: HTML5
 ![struttura](img/strutturaHTML5.png)
 
 ---
+
 ## Visualizzazione del documento: il browser
+
 * Lo scopo di un browser è di leggere documenti HTML e visualizzarli.
 * Il browser non visualizza i tag HTML, ma li utilizza per determinare come
 visualizzare il documento:
 
 ---
+
 ## ``<! DOCTYPE>``
+
 La dichiarazione `<!DOCTYPE>` rappresenta il tipo di documento e aiuta i browser a interpretare,
 e quindi visualizzare correttamente le pagine Web.
 Deve apparire solo una volta, nella parte superiore della pagina (prima di qualsiasi tag HTML).
@@ -56,7 +62,9 @@ La dichiarazione `<!DOCTYPE>` per HTML5 è:
 `<!DOCTYPE html>`
 
 ---
+
 ## ``<head>``
+
 L'elemento `<head>` è un contenitore per i metadati. I metadati HTML
 sono dati relativi al documento HTML. I metadati non vengono
 visualizzati.
@@ -72,7 +80,9 @@ i metadati generalmente definiscono: il titolo del documento, il set di
 caratteri, gli stili, i collegamenti, gli script e altre meta informazioni.
 
 ---
+
 ## Strumenti
+
 * Le pagine Web possono essere create e modificate utilizzando un semplice editor di testo
 come Notepad (PC) o TextEdit (Mac).
 * Tuttavia, per la scrittura di codice HTML raccomandiamo editor HTML professionali come
@@ -80,14 +90,16 @@ come Notepad (PC) o TextEdit (Mac).
 * Gli editor professionali aiutano nella scrittura e lettura del codice e offrono funzioni di ricerca e
 sostituzione molto potenti.
 * Strumenti di sviluppo del browser
-* disegnare wireframe: applicazione (pencil), https://pencil.evolus.vn/
-* disegnare wireframe: servizio web (esempio), https://wireframe.cc/
+* disegnare wireframe: applicazione (pencil), <https://pencil.evolus.vn/>
+* disegnare wireframe: servizio web (esempio), <https://wireframe.cc/>
 * utilità:
-* https://caniuse.com/
-* https://validator.w3.org/
+* <https://caniuse.com/>
+* <https://validator.w3.org/>
 
 ---
+
 ## Elementi HTML
+
 Un elemento HTML di solito consiste in un tag di inizio e un tag di
 fine, con il contenuto inserito all’interno:
 `< tagname >` contenuto ... `< / tagname >`
@@ -98,7 +110,9 @@ un tag finale `</p>`.
 Il contenuto dell'elemento è: Il mio primo paragrafo.
 
 ---
+
 ## Elementi vuoti
+
 Gli elementi HTML senza contenuto sono chiamati elementi vuoti.
 `<br>` è un elemento vuoto senza un tag di chiusura (`<br>` definisce un'interruzione
 di riga, `<hr>` definisce una riga, `<img>` per inserire un’immagine...).
@@ -113,7 +127,9 @@ elementi). Tutti i documenti HTML sono costituiti da elementi HTML nidificati.
 Come vedremo ci sono alcune eccezioni.
 
 ---
+
 ## Elementi Block
+
 Un elemento a livello di blocco inizia sempre su una nuova riga e occupa
 l'intera larghezza disponibile (si estende a sinistra e a destra fino ad
 occupare tutto lo spazio disponibile).
@@ -122,7 +138,9 @@ L'elemento `<h1>` è un elemento a livello di blocco.
 `<h2>`mondo!`</h2>`
 
 ---
-## Elementi a livello di blocco in HTML:
+
+## Elementi a livello di blocco in HTML
+
 ...|...|...
 ---|---|---
 `<address>`|`<article>`|`<aside>`
@@ -136,9 +154,10 @@ L'elemento `<h1>` è un elemento a livello di blocco.
 `<pre>`|`<section>`|`<table>`
 `<tfoot>`|`<ul>`|`<video>`
 
-
 ---
+
 ## Elementi Inline
+
 Gli elementi del tipo inline si dispongono uno di fianco all’altro e occupano solo la
 larghezza necessaria per mostrare il contenuto.
 Di seguito è rappresentato un elemento `<a>` incorporato all'interno di un
@@ -159,11 +178,12 @@ Elementi|in|linea|HTML
 `<br>`|`<samp>`|`<textarea>`|`<tt>`
 `<button>`|`<script>`|`<time>`|`<var>`
 
-
 La maggior parte dei browser visualizza l'elemento `<img>` come elemento inline-block.
 
 ---
+
 ## Attributi HTML
+
 * Tutti gli elementi HTML possono avere attributi
 * Gli attributi forniscono informazioni aggiuntive su
 un elemento
@@ -172,7 +192,9 @@ un elemento
 coppie nome / valore tipo: nome = "valore"
 
 ---
+
 ## lang
+
 La lingua viene dichiarata con l'attributo lang dichiarato all’interno del tag `<html>`.
 Dichiarare una lingua è importante per le applicazioni di accessibilità (screen
 reader) e per i motori di ricerca:
@@ -186,7 +208,8 @@ Le prime due lettere specificano la lingua (en). Se c'è un dialetto, usa altre 
 lettere (US) *.
 Una pagina italiana avrà la dichiarazione seguente:
 `<html lang="it">`
-* https://www.w3schools.com/tags/ref_language_codes.asp
+
+* <https://www.w3schools.com/tags/ref_language_codes.asp>
 
 ---
 
@@ -285,6 +308,7 @@ HTML, una alla volta, per cercare errori:
 ---
 
 ## Elementi HTML
+
 Heading (intestazioni)
 I titoli sono definiti con i tag da `<h1>` a `<h6>`.
 `<h1>`definisce la voce più importante. `<h6>`definisce l'intestazione meno

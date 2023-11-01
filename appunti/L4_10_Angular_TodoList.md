@@ -10,9 +10,7 @@ Questo ti darà un'idea di come iniziare con Angular creando una piccola app pra
 1. Assicurati di avere Node.js installato sul tuo computer.
 2. Installa Angular CLI eseguendo il seguente comando nel terminale:
 
-   ```
-   npm install -g @angular/cli
-   ```
+` npm install -g @angular/cli `
 
 ---
 
@@ -21,9 +19,7 @@ Questo ti darà un'idea di come iniziare con Angular creando una piccola app pra
 1. Apri il terminale e vai nella cartella dove vuoi creare il tuo progetto.
 2. Esegui il comando per creare un nuovo progetto Angular:
 
-   ```
-   ng new todo-app
-   ```
+` ng new todo-app `
 
 ---
 
@@ -31,15 +27,13 @@ Questo ti darà un'idea di come iniziare con Angular creando una piccola app pra
 
 1. Vai nella cartella del progetto:
 
-   ```
+```
    cd todo-app
-   ```
+```
 
 2. Crea un nuovo componente chiamato `todo`:
 
-   ```
-   ng generate component todo
-   ```
+` ng generate component todo `
 
 ---
 
@@ -100,9 +94,7 @@ Apri il file `src/app/app.component.html` e sostituisci tutto il contenuto con i
 1. Assicurati di essere nella cartella principale del progetto.
 2. Esegui l'app Angular con il seguente comando:
 
-   ```
-   ng serve
-   ```
+` ng serve `
 
 3. Apri il tuo browser e visita `http://localhost:4200`. Dovresti vedere l'app To-Do List in azione!
 
