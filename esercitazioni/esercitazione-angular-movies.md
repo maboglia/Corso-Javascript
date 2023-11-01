@@ -136,3 +136,71 @@ Modifica il file HTML per mostrare i film ottenuti dall'API.
 ```
 
 Assicurati di effettuare il binding dei dati ottenuti dall'API all'interno del tuo componente. Questo esempio mostra come visualizzare i titoli dei film popolari ottenuti dall'API di TMDb. Puoi estendere questo esempio aggiungendo più funzionalità, come la visualizzazione di immagini, descrizioni, valutazioni, ecc., a seconda dei dati forniti dall'API.
+
+---
+
+# Gestisci le valutazioni
+
+Per attribuire una valutazione ai film e memorizzarla all'interno dell'applicazione, puoi utilizzare vari metodi. Un'opzione è quella di creare un modello per le valutazioni dei film e utilizzare un servizio per gestire e memorizzare queste valutazioni.
+
+Ecco un'idea di come potresti gestire la valutazione dei film all'interno del tuo progetto Angular:
+
+1. **Creazione di un Modello per le Valutazioni:**
+   Crea un modello TypeScript per le valutazioni all'interno del progetto Angular. Questo modello rappresenterà la struttura di una valutazione.
+
+   ```typescript
+   // rating.model.ts
+   export interface Rating {
+     movieId: number;
+     value: number;
+   }
+   ```
+
+2. **Modifica del Servizio per Gestire le Valutazioni:**
+   Aggiungi al servizio `MovieService` metodi per gestire le valutazioni. Ad esempio, un metodo per aggiungere una valutazione al film.
+
+   ```typescript
+   // movie.service.ts
+   import { Injectable } from '@angular/core';
+   import { HttpClient } from '@angular/common/http';
+   import { Observable } from 'rxjs';
+   import { Rating } from './rating.model';
+
+   @Injectable({
+     providedIn: 'root'
+   })
+   export class MovieService {
+     private apiKey = 'YOUR_API_KEY';
+     private apiUrl = 'https://api.themoviedb.org/3';
+     private ratings: Rating[] = []; // Array per memorizzare le valutazioni
+
+     constructor(private http: HttpClient) {}
+
+     getMovies(): Observable<any> {
+       return this.http.get(`${this.apiUrl}/movie/popular?api_key=${this.apiKey}`);
+     }
+
+     // Metodo per aggiungere una valutazione
+     addRating(movieId: number, value: number): void {
+       this.ratings.push({ movieId, value });
+     }
+
+     // Metodo per ottenere le valutazioni
+     getRatings(): Rating[] {
+       return this.ratings;
+     }
+   }
+   ```
+
+3. **Aggiunta di un Componente per Valutare i Film:**
+   Crea un componente che consenta agli utenti di assegnare una valutazione a un film. Ad esempio, un componente con una lista di film e la possibilità di assegnare una valutazione.
+
+   Questo componente potrebbe includere un form o un sistema di valutazione (es. stelle) per consentire agli utenti di dare una valutazione a ciascun film.
+
+4. **Salvataggio delle Valutazioni:**
+   Quando l'utente assegna una valutazione, utilizza il metodo del servizio `MovieService` per salvare questa valutazione nel servizio stesso. In questo esempio, le valutazioni vengono memorizzate in un array all'interno del servizio stesso, ma in un'applicazione reale, potresti voler salvare queste informazioni in un database o in un backend.
+
+5. **Visualizzazione delle Valutazioni:**
+   Per visualizzare le valutazioni assegnate, potresti utilizzare il servizio `MovieService` per ottenere le valutazioni salvate e mostrarle insieme ai dettagli del film.
+
+Ricorda che questo esempio è semplificato e serve come base per gestire le valutazioni all'interno dell'applicazione. Potresti voler estendere queste funzionalità, ad esempio aggiungendo la gestione degli utenti e delle loro valutazioni, la persistenza dei dati, o altre funzionalità in base alle esigenze dell'applicazione.
