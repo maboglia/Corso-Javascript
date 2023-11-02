@@ -39,7 +39,16 @@ Alcuni dei servizi popolari che offrono accesso a queste informazioni sono:
 
 Ricorda che molti di questi servizi potrebbero richiedere la registrazione e l'ottenimento di una chiave API per l'accesso. Assicurati di leggere attentamente la documentazione fornita da ciascun servizio per capire i termini e le condizioni d'uso delle loro API e per comprendere come effettuare le richieste corrette per ottenere i dati necessari.
 
+---
+
 In alternativa sono disponibili i seguenti endpoint
+
+- [film JSON](http://bogliaccino.it/api/public/film.php?type=film)
+- [top250_imdb JSON](http://bogliaccino.it/api/public/film.php?type=top250_imdb)
+- [cartoni JSON](http://bogliaccino.it/api/public/film.php?type=cartoni)
+- [50cartoni JSON](http://bogliaccino.it/api/public/film.php?type=50cartoni)
+- [games JSON](http://bogliaccino.it/api/public/film.php?type=games)
+- [pokemon JSON](http://bogliaccino.it/api/public/film.php?type=pokemon)
 
 ---
 
