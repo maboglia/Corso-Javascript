@@ -4,8 +4,9 @@ title: Fondamenti
 paginate: true
 author: mauro
 ---
+![logo](ITS_LOGO.jpg)
 
-Mauro Bogliaccino
+## Mauro Bogliaccino
 
 # Corso Javascript
 

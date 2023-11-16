@@ -4,19 +4,19 @@ title: Corso di programmazione Javascript
 paginate: true
 author: mauro
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Mauro Bogliaccino
 
 # Corso di programmazione Javascript
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 ## Esercizio - Aggiungi un option ad una select
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Abbiamo una select `<select>`:
 
@@ -28,7 +28,7 @@ Abbiamo una select `<select>`:
 ```
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Utilizza JavaScript per:
 

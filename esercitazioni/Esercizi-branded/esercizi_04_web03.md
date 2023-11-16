@@ -4,14 +4,14 @@ title: Corso di programmazione Javascript
 paginate: true
 author: mauro
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Mauro Bogliaccino
 
 # Corso di programmazione Javascript
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 
 

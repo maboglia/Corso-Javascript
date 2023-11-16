@@ -3,11 +3,27 @@ marp: false
 title: Fondamenti
 paginate: true
 author: mauro
+size: 4:3
 ---
+![logo](ITS_LOGO.jpg)
 
-Mauro Bogliaccino
+## Mauro Bogliaccino
 
 # Corso Javascript
+
+* Convenzioni del linguaggio e dialogs
+* Variabili
+* Operatori
+* Costrutti condizionali e iterativi
+* Tipi primitivi
+* Tipi reference
+* Boolean
+* Function
+* Number
+* String
+* Array
+* Object
+* Timers
 
 ---
 

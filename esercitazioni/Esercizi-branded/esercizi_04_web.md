@@ -4,19 +4,19 @@ title: Corso di programmazione Javascript
 paginate: true
 author: mauro
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Mauro Bogliaccino
 
 # Corso di programmazione Javascript
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 ## Esercizio - Controlla i form di registrazione
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Creare una pagina web con un form di registrazione, ed effettuare tutti i controlli:
 
@@ -28,12 +28,12 @@ Creare una pagina web con un form di registrazione, ed effettuare tutti i contro
 In caso di errore, si deve visualizzare una finestra con l'elenco degli errori e, al click su OK, si deve chiudere la finestra di errore e ricaricare quella di inserimento
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 ## Esercizio - Aggiungi un option ad una select
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Abbiamo una select `<select>`:
 
@@ -45,7 +45,7 @@ Abbiamo una select `<select>`:
 ```
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Utilizza JavaScript per:
 
@@ -57,21 +57,21 @@ Nota, se hai fatto tutto giusto, l'alert dovrebbe mostrare blues.
 
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 ## Esercizio - Galleria di immagini
 
 Crea una galleria di immagini dove l'immagine principale cambi al click su una thumbnail. Mostra un elenco di thumbnail, possibilmente scorrevole, mostrate in orizzontale sotto l'immagine principale.
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 ## Esercizio - Perché "return false" non funziona?
 
 Perché nel seguente codice return false non funziona?
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 ```javascript
 <script>
@@ -85,14 +85,14 @@ Perché nel seguente codice return false non funziona?
 `<a href="https://w3.org" onclick="handler()">il browser andrà su w3.org</a>`
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Il browser navigherà verso all'URL al click, ma non è ciò che vogliamo.
 
 Come si può sistemare?
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 ## Esercizio - Cattura i collegamenti (link) nell'elemento
 
@@ -100,7 +100,7 @@ Fate in modo che tutti i link dentro l'elemento con `id="contents"` chiedano all
 Se risponde no, allora non deve seguire il link.
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Dettagli:
 
@@ -108,14 +108,14 @@ Dettagli:
 * Il contenuto può contenere tags annidati. Anche dentro i links, per esempio potremmo avere `<a href=".."><i>...</i></a>`.
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 ## Esercizio - Crea una lista puntata da un oggetto
 
 Scrivi una funzione createTree che crea una lista ul/li annidata partendo dall'oggetto annidato.
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Ad esempio:
 
@@ -140,7 +140,7 @@ let data = {
 ```
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 La sintassi:
 
@@ -149,7 +149,7 @@ let container = document.getElementById('container');
 createTree(container, data); 
 ```
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Il risultato (l'albero) dovrebbe somigliare a questo:
 
@@ -165,7 +165,7 @@ Il risultato (l'albero) dovrebbe somigliare a questo:
             magnolia
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Scegli uno dei due metodi per risolvere la task:
 
@@ -173,14 +173,14 @@ Scegli uno dei due metodi per risolvere la task:
 * Crea i nodi dell'albero e appendili utilizzando i metodi del DOM.
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Sarebbe grandioso se riuscissi con entrambi :)
 
 P.S. L'albero non dovrebbe avere elementi extra ad esempio `<ul></ul>` vuoti come foglie.
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 ## Esercizio - Mostra i discendenti dentro a un albero
 
@@ -189,7 +189,7 @@ C'è un albero organizzato come `ul/li` annidati.
 Scrivi il codice che aggiunge a ogni `<li>` il numero dei suoi discendenti. Salta le foglie (i nodi senza figli).
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
     Animals [9]
         Mammals [4]
@@ -208,7 +208,7 @@ Scrivi il codice che aggiunge a ogni `<li>` il numero dei suoi discendenti. Salt
         Sea [1]
             Sea trout
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 ## Esercizio - Inserisci l'HTML nella lista
 
@@ -222,14 +222,14 @@ Scrivi il codice per inserire` <li>2</li><li>3</li>` tra i due `<li>` sotto:
 ```
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 ## Esercizio - Ordina la tabella
 
 Data la seguente tabella:
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 ```html
 <table>
@@ -256,7 +256,7 @@ Data la seguente tabella:
 ```
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 
 Scrivi il codice per ordinare la tabella in base alla colonna "name" (prima colonna).

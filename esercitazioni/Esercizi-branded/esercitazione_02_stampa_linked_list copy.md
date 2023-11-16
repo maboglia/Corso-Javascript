@@ -4,19 +4,16 @@ title: Corso di programmazione Javascript
 paginate: true
 author: mauro
 ---
-![bg contain](./ITS_BG_Slide.jpg)
 
 Mauro Bogliaccino
 
 # Corso di programmazione Javascript
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
 
 ## Esercizi sugli oggetti - Somma le proprietà dell'oggetto
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
 
 Abbiamo un oggetto che memorizza il salario dei dipendenti del team:
 
@@ -29,19 +26,16 @@ let stipendi = {
 ```
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
 
 Scrivi il codice per sommare tutti i salari contenuti e memorizza il risultato in sum. Dovrebbe essere 390.
 
 Se stipendi è vuoto il risultato dovrebbe essere 0.
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
 
 ## Esercizi sugli oggetti - Moltiplica le proprietà dell'oggetto
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
 
 Crea una funzione `multiplyNumeric(obj)` che moltiplica tutte le proprietà numeriche di obj per 2.
 
@@ -57,7 +51,6 @@ let menu = {
 ```
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
 
 Dopo aver chiamato la funzione...
 
@@ -73,7 +66,6 @@ menu = {
 ```
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
 
 Nota che `multiplyNumeric()` non deve ritornare nulla. Deve solamente **modificare** l’oggetto.
 

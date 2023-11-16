@@ -4,19 +4,19 @@ title: Corso di programmazione Javascript
 paginate: true
 author: mauro
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Mauro Bogliaccino
 
 # Corso di programmazione Javascript
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 ## Esercizio - Controlla i form di registrazione
 
 ---
-![bg contain](./ITS_BG_Slide.jpg)
+
 
 Creare una pagina web con un form di registrazione, ed effettuare tutti i controlli:
 
