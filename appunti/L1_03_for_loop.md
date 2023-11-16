@@ -1,6 +1,6 @@
 # Costrutti iterativi (Loop): Il ciclo For
 
-## Sintassi for loops 
+## Sintassi for loop
 
 1. partenza
 2. fine
@@ -21,7 +21,7 @@ for(inizializzazione;valutatore;incrementatore){
 
 ---
 
-## Perché usare i *for* loops ? 
+## Perché usare i cicli *for*  ? 
 Invece di scrivere 5 linee di codice...
 
 ```javascript

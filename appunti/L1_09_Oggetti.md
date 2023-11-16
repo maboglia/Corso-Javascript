@@ -102,7 +102,6 @@ Ritorna la forma primitiva di un oggetto.
 
 ---
 
----
 
 ## Creazione di oggetti: factory function
 
@@ -164,7 +163,6 @@ console.log(auto);
 
 ```
 
----
 
 ---
 

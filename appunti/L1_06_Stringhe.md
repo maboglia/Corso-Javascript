@@ -115,6 +115,7 @@ str.length; // 5
 'ABCDE'.slice(1, -2); // 'BC'
 'ABCDE'.slice(-3, -1); // 'CD'
 
+//substr è deprecato, mantenuto per retrocompatiblità
 'ABCDE'.substr(2); // 'CDE'
 'ABCDE'.substr(-3); // 'CDE'
 'ABCDE'.substr(1, 2); // 'BC'
