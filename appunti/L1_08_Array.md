@@ -414,7 +414,7 @@ arr.map(function(elm, i, ref) {
 ##      hello 0 true
 ##      world 1 true
 ##      js 2 true
-## And the array is returned:
+## 
 ##      ["0 hello", "1 world", "2 js"]
 ```
 
