@@ -1,21 +1,8 @@
-Docente:
-Mauro BOgliaccino
-
-Data:
-18/6/2019
-
-Tempo della prova
-8 ore
-
-
-
 # My Personal Web site
 
 * Esercitazione: realizzare un sito web single page responsive 
 * Tecnologie: Html5, CSS, Javascript
-* Librerie: è possibile utilizzare Bootstrap e **JQuery**.
-* Non è ammesso l'uso di template preimpostati (*startbootstrap* e simili)
-* è ammesso il template base *bootstrap fixed menu*
+* Librerie: è possibile utilizzare framework e librerie
 
 ![wireframe](./personal_web_wf.png)
 

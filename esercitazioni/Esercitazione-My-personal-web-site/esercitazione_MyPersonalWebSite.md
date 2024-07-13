@@ -1,6 +1,6 @@
  # My Personal Web site
 
-Esercitazione: progettare e realizzare un sito web con Bootstrap e Javascript / JQuery, utilizzando un tema a tua scelta.
+Esercitazione: progettare e realizzare un sito web utilizzando un tema a tua scelta.
 
 Come prova in itinere del corso realizzate un portfolio web per mostrare i vostri lavori.
 
