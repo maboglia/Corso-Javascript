@@ -10,3 +10,5 @@
 * [Mozilla Dev](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [javascript.info](https://it.javascript.info/)
 * [Eloquent JavaScript](https://eloquentjavascript.net/)
+
+* [The Concise TypeScript Book in italiano](https://gibbok.github.io/typescript-book/it-it/): guida gratuita e open source per approfondire TypeScript dopo JavaScript.
